@@ -96,3 +96,72 @@ uv run python scripts/evaluate.py         # 평가
 - 숫자·모델명은 코드에 쓰지 말고 `configs/*.yaml` 에서 불러오기
 - LLM 은 `get_llm(config)`, 임베딩은 `get_embeddings(config)` 로만 생성
 - `.env`, `data/` 는 커밋하지 않기
+
+---
+# Korean RFP RAG Agent (`kor-rfp-rag-agent`)
+
+A Retrieval-Augmented Generation (RAG) pipeline designed to parse, index, and query complex Korean Request for Proposal (RFP / 제안요청서) documents. Built across an iterative 5-phase engineering workflow—from structured document and table extraction to hybrid retrieval and end-to-end validation.
+
+---
+
+## Key Features
+
+- **Korean RFP Document & Table Parsing:** Extracts structured text blocks and complex multi-row tables from Korean RFP documents into normalized JSONL representations (`documents.jsonl`, `tables.jsonl`, `indexable_blocks.jsonl`).
+- **Hybrid Retrieval Architecture:** Combines character-level sparse/dense vector search (`char_vectors.npz`) with structured SQLite chunk storage (`chunks.sqlite3`) for high-recall Korean keyword and semantic matching.
+- **Grounded Generation & Validation:** Synthesizes accurate, citation-backed responses to RFP requirements and evaluates retrieval/generation quality across test queries.
+
+---
+
+## Project Architecture & Phases
+
+| Phase | Directory | Core Focus |
+| :--- | :--- | :--- |
+| **Phase 2** | `rfp_phase2_local_20261111/` | Document ingestion, table extraction, and block-level preprocessing |
+| **Phase 3** | `rfp_phase3_local_20261111/` | Chunking strategy, SQLite metadata store, and character vector indexing |
+| **Phase 4–5** | `rfp_phase5_local_20261111/` | RAG agent orchestration, prompt engineering, and final validation notebooks |
+
+> **Note:** Large raw datasets, `.jsonl` artifacts, vector indexes (`.npz`), and SQLite databases (`.sqlite3`) are excluded from version control via `.gitignore` to keep the repository lightweight.
+
+---
+
+## Setup & Installation
+
+### 1. Clone the repository
+```bash
+git clone [https://github.com/TheMostEvident/kor-rfp-rag-agent.git](https://github.com/TheMostEvident/kor-rfp-rag-agent.git)
+cd kor-rfp-rag-agent
+```
+
+### 2. Install dependencies
+This project uses `uv` (or standard `pip`) with `pyproject.toml`:
+```bash
+# Using uv (recommended)
+uv sync
+
+# Or using standard venv + pip
+python -m venv .venv
+source .venv/bin/activate
+pip install -e .
+```
+
+### 3. Configure environment variables
+Create a `.env` file in the project root and add your OpenAI API key:
+```env
+OPENAI_API_KEY=your_openai_api_key_here
+```
+
+---
+
+## Usage
+
+1. **Data Preprocessing & Indexing (Phases 2–3):** Run the ingestion and indexing scripts/notebooks to generate local chunks and vector indexes from your Korean RFP source files.
+2. **RAG Evaluation & Querying (Phase 5):** Open `rfp_phase5_local_20261111/notebooks/11_younggwan_phase5_final_validation(1).ipynb` in Jupyter or VS Code to run the end-to-end RAG validation pipeline.
+
+---
+
+## Tech Stack
+
+- **Language:** Python 3.11+
+- **LLM & Embeddings:** OpenAI API (`python-dotenv` for environment management)
+- **Storage & Search:** SQLite3, NumPy / SciPy sparse/dense vector search
+- **Dependency Management:** `uv` (`pyproject.toml`, `uv.lock`)
