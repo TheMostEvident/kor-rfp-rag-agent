@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-11",
+  "scope": "local_document_parsing_and_source_traceability",
+  "implementation_and_regression_complete": true,
+  "source_files": 100,
+  "unique_contents": 99,
+  "original_and_staged_raw_sha256_all_match": true,
+  "automatic_evidence": {
+    "total": 684,
+    "exact_matches": 680,
+    "normalized_matches": 4,
+    "unmatched": 0,
+    "resolved_matches": 683,
+    "ambiguous_matches": 1
+  },
+  "numeric_priority_pages_visually_reviewed": 17,
+  "reviewed_transcription_blocks": 3,
+  "unit_tests": {
+    "tests_run": 82,
+    "passed": true,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "validation_type": "local unittest; no RAG/LLM performance measurement"
+  },
+  "notebook_executed_code_cells": 11,
+  "limits": [
+    "HWP 표 1개 및 PDF 구조 미확정 표 후보 248개는 재검수 상태로 보존",
+    "PDF 표와 벡터/저텍스트 경고는 휴리스틱이며 오류 확정 건수가 아님",
+    "모든 원문 페이지·그림의 의미를 수동 검수한 것은 아님",
+    "RAG 검색·생성 정확도와 비용은 이번 단계에서 측정하지 않음"
+  ],
+  "openai_api_calls": 0,
+  "github_changes": 0,
+  "remote_application_mutations": 0
+}

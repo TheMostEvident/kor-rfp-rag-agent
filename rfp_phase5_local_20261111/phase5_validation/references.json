@@ -1,0 +1,688 @@
+{
+  "version": "phase5-final-references-v1",
+  "samples": [
+    {
+      "sample_id": "D01",
+      "split": "dev",
+      "file_name": "인천공항시설관리(주)_2026_2026년도 귀속 연말정산 위탁운영 용역_과업내용서.hwp",
+      "doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+      "source_sha256": "7a592ea538ed00d8dca697c8cab8fadd110ec2a15902f8235b80bb7d960027bc",
+      "expected_chunks": 18,
+      "planned_calls": 1
+    },
+    {
+      "sample_id": "D02",
+      "split": "dev",
+      "file_name": "서울특별시_2026_2027년 글로벌 패션브랜드 육성 용역_제안요청서.hwpx",
+      "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+      "source_sha256": "081719865dd99a38ba822b39869efcf75b37add88f8d07741c8f8bf141060484",
+      "expected_chunks": 154,
+      "planned_calls": 6
+    },
+    {
+      "sample_id": "D03",
+      "split": "dev",
+      "file_name": "한국주택금융공사_2023_HF 인사이트 시스템 개발_제안요청서.hwp",
+      "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+      "source_sha256": "8c293ac2bb077438c0aaa974746d203a9196ec3eaa0d2c7971e5f6d3e4a28e28",
+      "expected_chunks": 442,
+      "planned_calls": 19
+    },
+    {
+      "sample_id": "D04",
+      "split": "dev",
+      "file_name": "한국주택금융공사_2021_부동산 등기정보 시스템 구축_제안요청서.hwp",
+      "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+      "source_sha256": "a3159eeb228799678e146447a070ba3c6f609e9723667c1fe768c75cf76b325c",
+      "expected_chunks": 202,
+      "planned_calls": 11
+    },
+    {
+      "sample_id": "D05",
+      "split": "dev",
+      "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+      "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+      "source_sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+      "expected_chunks": 245,
+      "planned_calls": 13
+    },
+    {
+      "sample_id": "R06",
+      "split": "final",
+      "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+      "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+      "source_sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+      "expected_chunks": 55,
+      "planned_calls": 4
+    },
+    {
+      "sample_id": "R07",
+      "split": "final",
+      "file_name": "한국정보통신진흥협회_2026_2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수_제안요청서.hwp",
+      "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+      "source_sha256": "3cd93bd8e0f92667d7f0d681d7c64070f810f6ff0035f2ea564a7b56f19072c1",
+      "expected_chunks": 51,
+      "planned_calls": 3
+    }
+  ],
+  "rows": [
+    {
+      "sample_id": "D01",
+      "field_id": "project_name",
+      "label": "사업명",
+      "expected": "2026년도 귀속 연말정산 위탁운영 용역",
+      "conditions": "사업연도 2026을 문서 작성일·실제 수행 종료연도와 구별한다.",
+      "source_reference": "문단 10 외 1곳\nD01-01-01~02"
+    },
+    {
+      "sample_id": "D01",
+      "field_id": "issuing_agency",
+      "label": "발주기관",
+      "expected": "[부분확인]\n본문에 인천공항시설관리(주)가 등장한다. 발주기관 역할의 최종 확인은 원본 표지·공고 대조가 필요하다.",
+      "conditions": "파일명만으로 발주기관을 확정하지 않는다. 상주 장소와 발주기관 역할을 구별한다.",
+      "source_reference": "문단 25 외 3곳\nD01-02-01~04"
+    },
+    {
+      "sample_id": "D01",
+      "field_id": "purpose",
+      "label": "목적",
+      "expected": "세무 전문업체의 교육·신고자료 검토로 업무를 효율화하고, 세법 정보·상담으로 연말정산 오류를 최소화한다.",
+      "conditions": "효율적 업무처리와 신고오류 최소화 목적을 모두 포함한다.",
+      "source_reference": "문단 80 외 1곳\nD01-03-01~02"
+    },
+    {
+      "sample_id": "D01",
+      "field_id": "scope_requirements",
+      "label": "주요 범위·필수요건",
+      "expected": "안내문·IU 매뉴얼, 오류 검증, 상담·자료 접수와 입력 보조, 지급명세서·결과보고서, 증빙 편철·제출, 부당공제 후속 처리와 개인정보 보호·자료 반납/파기를 수행한다.",
+      "conditions": "예정인원 4,200명 이내는 추정치이며 변동 가능. 상세 과업표·인력 상주·주 2회 이상 총괄책임자 방문 조건도 확인한다.",
+      "source_reference": "문단 64 외 15곳\nD01-04-01~16"
+    },
+    {
+      "sample_id": "D01",
+      "field_id": "budget_vat",
+      "label": "예산·VAT",
+      "expected": "사업예산 57,246,000원, 부가가치세 제외. 단가계약으로 실제 대상인원에 대하여 정산·지급한다.",
+      "conditions": "부가세 제외를 포함으로 바꾸지 않는다. 예정 총액과 실제 정산금액을 구별한다.",
+      "source_reference": "문단 72 외 1곳\nD01-05-01~02"
+    },
+    {
+      "sample_id": "D01",
+      "field_id": "duration",
+      "label": "수행기간",
+      "expected": "계약체결일~2027.3.17. 당해 연도 부당 공제자 통보 시 후속절차 지원은 과업기간 이후에도 포함된다.",
+      "conditions": "종료일만 적고 기간 이후 지원 의무를 누락하지 않는다.",
+      "source_reference": "문단 61 외 2곳\nD01-06-01~03"
+    },
+    {
+      "sample_id": "D01",
+      "field_id": "eligibility",
+      "label": "참가·수행자격",
+      "expected": "[부분확인]\n총괄책임자는 세무사 자격과 연말정산 3년 이상 경력. 상주인력은 연말정산 2년 이상 경력자 3명 이상이다.",
+      "conditions": "이는 수행인력 요건이다. 별도의 입찰 참가업체 자격이 모두 확인됐다고 쓰지 않는다.",
+      "source_reference": "문단 165 외 2곳\nD01-07-01~03"
+    },
+    {
+      "sample_id": "D01",
+      "field_id": "submission_documents",
+      "label": "입찰 제출서류",
+      "expected": "[미확인]\n입찰 제출서류 목록은 현재 추출 본문에서 확인하지 못했다. 착수·준공 제출문서는 별도로 존재한다.",
+      "conditions": "착수계·공정예정표·준공계·결과보고서를 입찰 제출서류로 바꾸지 않는다.",
+      "source_reference": "문단 254 외 7곳\nD01-08-01~08"
+    },
+    {
+      "sample_id": "D01",
+      "field_id": "submission_deadline",
+      "label": "제출기한",
+      "expected": "[미확인]\n입찰 마감 연월일·시각은 현재 추출 본문에서 확인하지 못했다.",
+      "conditions": "계약 시작 후 7일 이내 착수계 제출, 준공 완료기한을 입찰 마감으로 사용하지 않는다.",
+      "source_reference": "문단 122 외 3곳\nD01-09-01~04"
+    },
+    {
+      "sample_id": "D01",
+      "field_id": "submission_method",
+      "label": "제출방식",
+      "expected": "[미확인]\n입찰 접수 경로는 현재 추출 본문에서 확인하지 못했다.",
+      "conditions": "착수·준공 문서 제출이나 홈페이지의 서식 게시 위치를 입찰 접수 방법으로 사용하지 않는다.",
+      "source_reference": "문단 256 외 1곳\nD01-10-01~02"
+    },
+    {
+      "sample_id": "D01",
+      "field_id": "evaluation",
+      "label": "평가기준·선정방식",
+      "expected": "[부분확인]\n낙찰자 선정방식은 적격심사(제한적최저가) 낙찰제. 세부 평가항목·배점은 현재 추출 본문에서 확인하지 못했다.",
+      "conditions": "선정방식을 남기되 세부 배점표를 추정하지 않는다.",
+      "source_reference": "문단 74\nD01-11-01"
+    },
+    {
+      "sample_id": "D02",
+      "field_id": "project_name",
+      "label": "사업명",
+      "expected": "2027년 글로벌 패션브랜드 육성 용역",
+      "conditions": "파일명상의 2026년과 사업명 2027년을 구별한다.",
+      "source_reference": "문단 65\nD02-01-01"
+    },
+    {
+      "sample_id": "D02",
+      "field_id": "issuing_agency",
+      "label": "발주기관",
+      "expected": "서울특별시. 담당부서는 뷰티패션산업과로 표시되어 있다.",
+      "conditions": "발주기관과 부서·현지 협력기관 CNMI를 혼동하지 않는다.",
+      "source_reference": "문단 157 외 3곳\nD02-02-01~04"
+    },
+    {
+      "sample_id": "D02",
+      "field_id": "purpose",
+      "label": "목적",
+      "expected": "국내 유망 디자이너 브랜드의 글로벌 인지도를 높이고 현지 마케팅·세일즈로 해외 패션시장 공략을 지원한다.",
+      "conditions": "인지도 향상과 해외 시장 공략 목적을 보존한다.",
+      "source_reference": "문단 73 외 1곳\nD02-03-01~02"
+    },
+    {
+      "sample_id": "D02",
+      "field_id": "scope_requirements",
+      "label": "주요 범위·필수요건",
+      "expected": "2027 아시아 패션 세일즈 프로그램과 밀라노 패션위크 파트너십 프로그램을 운영한다. 전시 콘텐츠·현지 홍보·세일즈·네트워킹 등을 포함한다.",
+      "conditions": "장소는 아시아 쇼룸 등과 밀라노. 세부사항은 제안 및 서울시·CNMI 협의에 따라 변동 가능하다.",
+      "source_reference": "문단 77 외 13곳\nD02-04-01~14"
+    },
+    {
+      "sample_id": "D02",
+      "field_id": "budget_vat",
+      "label": "예산·VAT",
+      "expected": "용역비 650,000,000원, 부가세 포함.",
+      "conditions": "650백만원과 650,000,000원을 같은 금액으로 대조하되 VAT 조건을 보존한다.",
+      "source_reference": "문단 69\nD02-05-01"
+    },
+    {
+      "sample_id": "D02",
+      "field_id": "duration",
+      "label": "수행기간",
+      "expected": "[표기차이 확인]\n개요는 2026.12~2027.11 중 프로그램 진행기간 10개월. 상반기는 2026.11.30~2027.4.30(5개월), 하반기는 2027.7.1~11.30(5개월)로 기재되어 있다.",
+      "conditions": "개요 시작월과 상반기 시작일의 표기 차이를 숨기거나 임의 수정하지 않는다. 10개월을 연속 일정으로 단정하지 않는다.",
+      "source_reference": "문단 66 외 2곳\nD02-06-01~03"
+    },
+    {
+      "sample_id": "D02",
+      "field_id": "eligibility",
+      "label": "참가·수행자격",
+      "expected": "[공고문 참조]\n입찰 참가자격은 공고문 참조로 명시되어 있다.",
+      "conditions": "별도 공고문이 없는 상태에서 업종·실적·지역 요건을 추정하지 않는다.",
+      "source_reference": "문단 123\nD02-07-01"
+    },
+    {
+      "sample_id": "D02",
+      "field_id": "submission_documents",
+      "label": "입찰 제출서류",
+      "expected": "입찰참가신청서·위임/재직·등록/등기/인감·각종 서약·공동수급 서류(해당 시)와 제안서 공문·수행능력평가서·내용제안서/발표자료·USB·가격제안서를 제출한다.",
+      "conditions": "내용제안서와 요약본 각 11부(원본 각1, 평가용 각10), USB1개. 평가용 익명 처리, 가격제안서 별도 밀봉·날인을 보존한다.",
+      "source_reference": "문단 177 외 26곳\nD02-08-01~27"
+    },
+    {
+      "sample_id": "D02",
+      "field_id": "submission_deadline",
+      "label": "제출기한",
+      "expected": "[공고문 참조]\n입찰등록·가격투찰 일시 및 제안서 제출 일시·장소는 입찰공고문에 따른다.",
+      "conditions": "문서 작성일·행사일·프로그램 일정을 입찰 마감으로 바꾸지 않는다.",
+      "source_reference": "문단 156 외 1곳\nD02-09-01~02"
+    },
+    {
+      "sample_id": "D02",
+      "field_id": "submission_method",
+      "label": "제출방식",
+      "expected": "등록·가격투찰은 나라장터 전자입찰. 제안서와 가격입찰서는 직접 방문 접수하며 우편·이메일은 불가하다.",
+      "conditions": "G2B 금액과 수기가격제안서 금액이 같아야 한다. 전자입찰 미참여 시 무효라는 조건을 남긴다.",
+      "source_reference": "문단 155 외 6곳\nD02-10-01~07"
+    },
+    {
+      "sample_id": "D02",
+      "field_id": "evaluation",
+      "label": "평가기준·선정방식",
+      "expected": "기술능력 90%+가격 10%. 정량20점·정성70점·가격10점 구조이며 종합점수 70점 이상을 협상적격자로 선정한다.",
+      "conditions": "다른 RFP의 기술점수 85% 기준을 가져오지 않는다. 동점은 기술점수 우선, 그마저 같으면 추첨이다.",
+      "source_reference": "문단 131 외 6곳\nD02-11-01~07"
+    },
+    {
+      "sample_id": "D03",
+      "field_id": "project_name",
+      "label": "사업명",
+      "expected": "HF 인사이트 시스템 개발",
+      "conditions": "사업명과 일반적인 AI 시스템 명칭을 혼동하지 않는다.",
+      "source_reference": "문단 11 외 1곳\nD03-01-01~02"
+    },
+    {
+      "sample_id": "D03",
+      "field_id": "issuing_agency",
+      "label": "발주기관",
+      "expected": "한국주택금융공사",
+      "conditions": "표지의 발주기관 표기와 기관명을 함께 확인한다.",
+      "source_reference": "문단 12 외 1곳\nD03-02-01~02"
+    },
+    {
+      "sample_id": "D03",
+      "field_id": "purpose",
+      "label": "목적",
+      "expected": "인터넷 데이터를 룰베이스·머신러닝/딥러닝으로 분석해 공사에 대한 국민 요구와 긍·부정 인식을 파악하는 시스템을 구축한다.",
+      "conditions": "경제·금융 이슈 파악과 공사 관련 인식·요구 분석을 포함한다.",
+      "source_reference": "문단 105 외 4곳\nD03-03-01~05"
+    },
+    {
+      "sample_id": "D03",
+      "field_id": "scope_requirements",
+      "label": "주요 범위·필수요건",
+      "expected": "인터넷 기사·댓글·카페·블로그·커뮤니티·유튜브 등의 수집, 이슈·연관어·감성 분석, 시각화 보고와 내부 업무시스템 구현을 포함한다.",
+      "conditions": "최소10분 단위 수집, 용역 개시 후 데이터 적재(과거자료 제외), 긍·부정 정확도 최소90% 및 산출·유지 방법론, 지속 수급·알고리즘 교체 가능성을 확인한다.",
+      "source_reference": "문단 131 외 15곳\nD03-04-01~16"
+    },
+    {
+      "sample_id": "D03",
+      "field_id": "budget_vat",
+      "label": "예산·VAT",
+      "expected": "사업예산 688백만원, 부가세 포함. 개발498백만원+HW구입190백만원으로 구성된다.",
+      "conditions": "총액·개발·HW의 구분을 유지한다. 발주기관 사정에 따른 예산·기간·일정 조정 가능성도 확인한다.",
+      "source_reference": "문단 99 외 2곳\nD03-05-01~03"
+    },
+    {
+      "sample_id": "D03",
+      "field_id": "duration",
+      "label": "수행기간",
+      "expected": "계약일로부터 5개월이며 안정화·시스템모니터링 1개월이 그 안에 포함된다.",
+      "conditions": "5+1=6개월로 바꾸지 않는다. 발주기관 내부 사정에 따른 조정 가능성을 남긴다.",
+      "source_reference": "문단 97 외 1곳\nD03-06-01~02"
+    },
+    {
+      "sample_id": "D03",
+      "field_id": "eligibility",
+      "label": "참가·수행자격",
+      "expected": "입찰등록·법령상 자격, 부정당 제재 해당 없음, SW사업자(1468), 직접생산확인증명서(정보시스템개발서비스 8111159901), 유효한 중소기업·소상공인 확인서 등을 모두 갖춰야 한다.",
+      "conditions": "20억원 미만으로 대기업·중견 SW사업자 참여 제한. 공동이행만 허용, 대표 포함5개사 이내·최소지분10%, 기타는 공고문 참조.",
+      "source_reference": "문단 2616 외 12곳\nD03-07-01~13"
+    },
+    {
+      "sample_id": "D03",
+      "field_id": "submission_documents",
+      "label": "입찰 제출서류",
+      "expected": "[부분확인]\n전체 제출서류 목록은 공고문에 따르며 본문에 정성·정량 제출서류 표가 별도로 있다.",
+      "conditions": "사업자등록·등기·인감·위임/재직·완납증명·SW신고·청렴·하도급·개인정보·공동수급·직접생산 서류, 신용평가·실적·중소기업 확인 등을 해당 조건에 따라 구별한다.",
+      "source_reference": "문단 2774 외 21곳\nD03-08-01~22"
+    },
+    {
+      "sample_id": "D03",
+      "field_id": "submission_deadline",
+      "label": "제출기한",
+      "expected": "[공고문 참조]\n제출 기한은 입찰공고문에 따른다.",
+      "conditions": "사업기간·제안발표 일정을 입찰 마감으로 바꾸지 않는다.",
+      "source_reference": "문단 2774\nD03-09-01"
+    },
+    {
+      "sample_id": "D03",
+      "field_id": "submission_method",
+      "label": "제출방식",
+      "expected": "[부분확인]\n제출 장소·전체 제출사항은 공고문에 따른다. 가격입찰은 국가종합전자조달시스템을 이용한다.",
+      "conditions": "계약 체결 후 제안서를 PDF로 공사에 제출한다는 조건을 입찰 접수 경로와 구별한다. 원본/사본 확인·날인 조건을 확인한다.",
+      "source_reference": "문단 2650 외 3곳\nD03-10-01~04"
+    },
+    {
+      "sample_id": "D03",
+      "field_id": "evaluation",
+      "label": "평가기준·선정방식",
+      "expected": "종합100점=기술90점+가격10점. 가격이 예정가격 이하이며 기술 배점의85% 이상인 업체가 협상적격자다. 기술평가는 순위 간3점 차등점수제를 적용한다.",
+      "conditions": "85%는 전체100점 기준이 아니다. 협상은 합산 고득점 순이며 차순위 협상·재공고 조건을 확인한다.",
+      "source_reference": "문단 2644 외 9곳\nD03-11-01~10"
+    },
+    {
+      "sample_id": "D04",
+      "field_id": "project_name",
+      "label": "사업명",
+      "expected": "부동산 등기정보 시스템 구축",
+      "conditions": "등기부 발급 서비스와 시스템 구축 사업명을 구별한다.",
+      "source_reference": "문단 6 외 1곳\nD04-01-01~02"
+    },
+    {
+      "sample_id": "D04",
+      "field_id": "issuing_agency",
+      "label": "발주기관",
+      "expected": "한국주택금융공사. 본문 청렴계약 이행서약서의 발주자 문구와 원본·공고를 함께 대조한다.",
+      "conditions": "다른 사업명이 남은 현장실사 서식은 이 사업의 사업명 근거로 사용하지 않는다.",
+      "source_reference": "문단 1900 외 3곳\nD04-02-01~04"
+    },
+    {
+      "sample_id": "D04",
+      "field_id": "purpose",
+      "label": "목적",
+      "expected": "수기 발급·육안 확인하던 등기사항전부증명서와 토지·건축물대장 정보를 데이터로 받아 업무를 전산화·자동화한다.",
+      "conditions": "부동산뿐 아니라 법인 등기와 대장 정보도 포함한다.",
+      "source_reference": "문단 114 외 2곳\nD04-03-01~03"
+    },
+    {
+      "sample_id": "D04",
+      "field_id": "scope_requirements",
+      "label": "주요 범위·필수요건",
+      "expected": "부동산·법인 등기사항전부증명서와 토지·건축물대장 데이터를 실시간으로 제공한다.",
+      "conditions": "연간 등기발급 예상318,000건은 가격 제안의 참고량이며 대금은 제공량에 따라 달라진다. 세부 기능요건은 원문 요구사항 절도 확인한다.",
+      "source_reference": "문단 118 외 2곳\nD04-04-01~03"
+    },
+    {
+      "sample_id": "D04",
+      "field_id": "budget_vat",
+      "label": "예산·VAT",
+      "expected": "사업예산은 280백만원 이내이며 부가세 포함. 대금은 예산 이내에서 데이터 제공량에 따라 증감한다.",
+      "conditions": "상한인 ‘이내’를 보존한다. 예상318,000건과 확정 납품·정산량을 혼동하지 않는다.",
+      "source_reference": "문단 122 외 2곳\nD04-05-01~03"
+    },
+    {
+      "sample_id": "D04",
+      "field_id": "duration",
+      "label": "수행기간",
+      "expected": "계약체결일로부터365일. 외부 정보연계 협의 지연 시 단계적 오픈 및 과업 조정이 가능하다.",
+      "conditions": "365일을 임의로12개월로 치환하지 않고 조정 조건을 함께 기록한다.",
+      "source_reference": "문단 124 외 1곳\nD04-06-01~02"
+    },
+    {
+      "sample_id": "D04",
+      "field_id": "eligibility",
+      "label": "참가·수행자격",
+      "expected": "입찰등록·관련 자격, 컴퓨터 관련 서비스사업 SW사업자 신고와 직접생산증명서가 필요하며 대기업·중견기업 참여가 제한된다.",
+      "conditions": "공동이행만 허용, 대표 포함5개사 이내·최소지분10%. 기타는 공고문 참조.",
+      "source_reference": "문단 577 외 12곳\nD04-07-01~13"
+    },
+    {
+      "sample_id": "D04",
+      "field_id": "submission_documents",
+      "label": "입찰 제출서류",
+      "expected": "[부분확인]\n전체 제출서류·일시·장소는 공고문 참고. 본문 정성 제안서 합본 서류와 원본 제출 조건을 확인한다.",
+      "conditions": "사업자등록·등기·인감·위임/재직·완납·SW신고·청렴·일반현황·하도급·개인정보 등 해당 서류를 구별한다.",
+      "source_reference": "문단 628 외 19곳\nD04-08-01~20"
+    },
+    {
+      "sample_id": "D04",
+      "field_id": "submission_deadline",
+      "label": "제출기한",
+      "expected": "[공고문 참조]\n제출 일시는 공고문 참고이다.",
+      "conditions": "입찰 마감 날짜·시간을 사업기간에서 추정하지 않는다.",
+      "source_reference": "문단 628\nD04-09-01"
+    },
+    {
+      "sample_id": "D04",
+      "field_id": "submission_method",
+      "label": "제출방식",
+      "expected": "[부분확인]\n접수 일시·장소 등은 공고문에 따른다. 가격입찰은 국가종합전자조달시스템을 이용한다.",
+      "conditions": "원본 제출·사본 확인날인 조건과 계약 후 제안서 CD3장 제출을 입찰 제출 방식과 구별한다.",
+      "source_reference": "문단 604 외 4곳\nD04-10-01~05"
+    },
+    {
+      "sample_id": "D04",
+      "field_id": "evaluation",
+      "label": "평가기준·선정방식",
+      "expected": "제한경쟁·협상계약. 기술90점+가격10점, 기술 배점의85% 이상을 협상적격자로 선정한다.",
+      "conditions": "합산 동점은 기술점수, 그마저 같으면 큰 배점 세부항목 점수 순이다. 기술85%를 전체85점으로 바꾸지 않는다.",
+      "source_reference": "문단 132 외 7곳\nD04-11-01~08"
+    },
+    {
+      "sample_id": "D05",
+      "field_id": "project_name",
+      "label": "사업명",
+      "expected": "AI 기반 관광 B2C 플랫폼 통합 ISP 수립",
+      "conditions": "ISP 수립을 실제 플랫폼 구축·운영 계약으로 바꾸지 않는다.",
+      "source_reference": "문단 19 외 2곳\nD05-01-01~03"
+    },
+    {
+      "sample_id": "D05",
+      "field_id": "issuing_agency",
+      "label": "발주기관",
+      "expected": "한국관광공사. 담당부서는 관광AX기획팀으로 표시되어 있다.",
+      "conditions": "설명회 장소와 제출 우편주소·담당부서의 역할을 구별한다.",
+      "source_reference": "문단 29 외 4곳\nD05-02-01~05"
+    },
+    {
+      "sample_id": "D05",
+      "field_id": "purpose",
+      "label": "목적",
+      "expected": "B2C 채널 기능·VOC 창구를 통합해 AX 기반과 운영 효율을 높이고, AI 여행비서 역할·1330 연계를 설계하며, 데이터 환류·개방 기반의 공공 AI 인프라를 조성한다.",
+      "conditions": "플랫폼 통합·AI 여행비서·데이터 활용의 세 가지 목적을 구별한다.",
+      "source_reference": "문단 52 외 8곳\nD05-03-01~09"
+    },
+    {
+      "sample_id": "D05",
+      "field_id": "scope_requirements",
+      "label": "주요 범위·필수요건",
+      "expected": "11개 B2C 채널 현황·통합전략, 통합회원·개인정보 정책, 플랫폼/데이터 활용 구조, 단계별 로드맵, 목업과 구축 RFP를 마련한다.",
+      "conditions": "현황 분석·목표모델·이행계획과 후속 구축용RFP를 구분한다. 사업 종료 이후 예산대응 자료보완 의무도 확인한다.",
+      "source_reference": "문단 61 외 8곳\nD05-04-01~09"
+    },
+    {
+      "sample_id": "D05",
+      "field_id": "budget_vat",
+      "label": "예산·VAT",
+      "expected": "과업예산248,775,000원, VAT 포함. 제안가격에는 사업 관련 모든 세금 등을 포함한다.",
+      "conditions": "본 용역 예산과 향후 플랫폼 구축 예상예산을 섞지 않는다.",
+      "source_reference": "문단 81 외 2곳\nD05-05-01~03"
+    },
+    {
+      "sample_id": "D05",
+      "field_id": "duration",
+      "label": "수행기간",
+      "expected": "계약체결일부터2026.10.30까지이며, 과업 종료 후 정산 및 결과보고서 제출 시까지라는 조건이 붙는다.",
+      "conditions": "달력상 종료일만 적지 않는다. 사업 종료 이후 예산대응 자료보완 조건도 확인한다.",
+      "source_reference": "문단 77 외 1곳\nD05-06-01~02"
+    },
+    {
+      "sample_id": "D05",
+      "field_id": "eligibility",
+      "label": "참가·수행자격",
+      "expected": "G2B SW사업자(컴퓨터 관련 서비스업1468) 등록, 관련 법상 자격과 중소기업 요건 등을 모두 충족해야 한다.",
+      "conditions": "대기업·중견기업·상호출자제한기업집단 참여 제한. 공동이행5개 이하·최소지분10%, 하도급 허용. 유효 확인서·실적 등 제출서류를 원문에서 대조한다.",
+      "source_reference": "문단 1748 외 19곳\nD05-07-01~20"
+    },
+    {
+      "sample_id": "D05",
+      "field_id": "submission_documents",
+      "label": "입찰 제출서류",
+      "expected": "가격제안서/세부산출1부, 제안서/요약본 각1부, 입찰참가 등록서류 및 부속자료를 제출한다.",
+      "conditions": "우편은USB(PPT/PDF)만 제출·인쇄본 불필요. 입찰참가/신용평가/인력/PM재직/중소기업/공동수급 등 조건별 서류를 빠뜨리지 않는다.",
+      "source_reference": "문단 2078 외 23곳\nD05-08-01~24"
+    },
+    {
+      "sample_id": "D05",
+      "field_id": "submission_deadline",
+      "label": "제출기한",
+      "expected": "[공고문 참조]\n입찰 제출기한은 입찰공고에 명기된 기한에 따른다.",
+      "conditions": "사전설명회 신청4월29일15시·설명회4월30일14시를 입찰 마감으로 사용하지 않는다. 우편은 마감 전 도착분만 접수한다.",
+      "source_reference": "문단 84 외 5곳\nD05-09-01~06"
+    },
+    {
+      "sample_id": "D05",
+      "field_id": "submission_method",
+      "label": "제출방식",
+      "expected": "가격은 나라장터 전자입찰. 제안서/부속서류는 전자우편 또는 우편, 사전협의 시 방문 제출 가능하다.",
+      "conditions": "방문 제출 가능 조건·우편 도착 기준·USB 제출 조건을 구별한다. 설명회 신청용 이메일과 제안서 제출 경로를 섞지 않는다.",
+      "source_reference": "문단 2079 외 8곳\nD05-10-01~09"
+    },
+    {
+      "sample_id": "D05",
+      "field_id": "evaluation",
+      "label": "평가기준·선정방식",
+      "expected": "기술90점(계량10+비계량80)+가격10점. 기술76.5점(85%) 미만은 협상적격자에서 제외한다.",
+      "conditions": "PM 직접발표, 최고·최저 각1개 제외 평균, 동점은 기술·큰 배점 항목 순. 최종 낙찰업체·실제계약금액은 이 RFP만으로 확정하지 않는다.",
+      "source_reference": "문단 1781 외 9곳\nD05-11-01~10"
+    },
+    {
+      "sample_id": "R06",
+      "field_id": "project_name",
+      "label": "사업명",
+      "expected": "조합 전산시스템 고도화 사업(전면개편)",
+      "conditions": "표지의 약칭과 사업개요의 정식 사업명을 대조한다.",
+      "source_reference": "PDF p.3\nR06-01-01"
+    },
+    {
+      "sample_id": "R06",
+      "field_id": "issuing_agency",
+      "label": "발주기관",
+      "expected": "[부분확인]\n건설엔지니어링공제조합. 본문 통합전산시스템 명칭과 조합 조직체계가 근거이며 원본 발주자 표기를 함께 확인한다.",
+      "conditions": "파일명만으로 기관을 확정하지 않는다.",
+      "source_reference": "PDF p.13 외 1곳\nR06-02-01~02"
+    },
+    {
+      "sample_id": "R06",
+      "field_id": "purpose",
+      "label": "목적",
+      "expected": "노후 전산시스템 HW·SW를 개편해 안정적인 운영기반과 업무 효율성·조합원 서비스 만족도를 높인다.",
+      "conditions": "노후 부품·버전 제약 및 대내/대외 기대효과를 구별한다.",
+      "source_reference": "PDF p.3\nR06-03-01"
+    },
+    {
+      "sample_id": "R06",
+      "field_id": "scope_requirements",
+      "label": "주요 범위·필수요건",
+      "expected": "홈페이지·공제업무관리·경영관리통합 등3개 시스템 전반을 고도화하고 클라우드 서버·DB·보안·기존 운영종료 지원 등 요구사항을 수행한다.",
+      "conditions": "세부 기능·성능·테스트·보안·프로젝트 관리/지원 요구사항은 요구사항 목록과 상세 절에 대조한다.",
+      "source_reference": "PDF p.5 외 2곳\nR06-04-01~03"
+    },
+    {
+      "sample_id": "R06",
+      "field_id": "budget_vat",
+      "label": "예산·VAT",
+      "expected": "[원본 확인 필요]\n추출 원문 예정가격 표기는 “1,189,000,0000원”으로 자릿수/쉼표가 불규칙하다. 직접경비·부가세 등 일체비용 포함이라고 명시되어 있다.",
+      "conditions": "원본 PDF·공고에서 금액을 확인하기 전에는 1,189,000,000원 등으로 임의 정정·환산하지 않는다.",
+      "source_reference": "PDF p.3\nR06-05-01"
+    },
+    {
+      "sample_id": "R06",
+      "field_id": "duration",
+      "label": "수행기간",
+      "expected": "2025.6~2026.8, 계약체결 후 약15개월. 세부 일정은 전체15개월 내 개발여건에 따라 조정 가능하다.",
+      "conditions": "무상 하자보수는 준공일로부터1년으로 별도 조건이다.",
+      "source_reference": "PDF p.3 외 2곳\nR06-06-01~03"
+    },
+    {
+      "sample_id": "R06",
+      "field_id": "eligibility",
+      "label": "참가·수행자격",
+      "expected": "입찰 제한기간이 아닌 SW사업자로, 최근5년 내 금융·보험·공제 분야 계약금액10억원(VAT포함) 이상 개발실적1건 이상을 갖춰야 한다. 공동수급·하도급은 불허한다.",
+      "conditions": "참여인력은 소속1년 이상 계속근로 직원, PM은 전체기간 개발현장 상주. 법령의 현행 해석을 덧붙이지 않고 문서 조건으로 검토한다.",
+      "source_reference": "PDF p.42 외 2곳\nR06-07-01~03"
+    },
+    {
+      "sample_id": "R06",
+      "field_id": "submission_documents",
+      "label": "입찰 제출서류",
+      "expected": "[부분확인]\n제안서와 사전 제출할 발표자료, 정량평가용 신용등급 확인서·개발실적 증빙이 본문에 제시된다. 입찰 등록서류 전체 목록은 별도 확인이 필요하다.",
+      "conditions": "입찰 시 증빙과 계약체결 시 전 직원 보안유지각서를 구분한다. 제안서 본문200페이지 이내 조건도 확인한다.",
+      "source_reference": "PDF p.42 외 2곳\nR06-08-01~03"
+    },
+    {
+      "sample_id": "R06",
+      "field_id": "submission_deadline",
+      "label": "제출기한",
+      "expected": "[미확인]\n입찰서/제안서 마감 연월일·시각은 현재 추출 원문에서 확인하지 못했다. 발표 일시·장소는 별도 공지다.",
+      "conditions": "2025.5.19 문서일자, 사업 시작월, 발표 별도공지로 입찰 마감을 채우지 않는다.",
+      "source_reference": "PDF p.1 외 1곳\nR06-09-01~02"
+    },
+    {
+      "sample_id": "R06",
+      "field_id": "submission_method",
+      "label": "제출방식",
+      "expected": "[부분확인]\n제안서는 제본 후 제출하고 발표자료는 사전 제출한다. 입찰 접수 경로(방문·우편·전자)는 현재 추출 원문에서 확정하지 못했다.",
+      "conditions": "제본 규격이나 PPT 발표 방식이 입찰 접수 경로를 뜻하지 않는다.",
+      "source_reference": "PDF p.43 외 1곳\nR06-10-01~02"
+    },
+    {
+      "sample_id": "R06",
+      "field_id": "evaluation",
+      "label": "평가기준·선정방식",
+      "expected": "협상계약, 기술90점(정량10+정성80)+가격10점. 기술배점90점의80% 이상이 협상적격 기준이다.",
+      "conditions": "가격평가는 예정가격 대비88% 미만10점,88~95%5점,95%초과2점. 다른 RFP의85% 기준을 가져오지 않는다.",
+      "source_reference": "PDF p.45 외 2곳\nR06-11-01~03"
+    },
+    {
+      "sample_id": "R07",
+      "field_id": "project_name",
+      "label": "사업명",
+      "expected": "2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수",
+      "conditions": "GPU 구매사업으로 단정하지 않고 자원 공급·유지보수라는 사업명을 보존한다.",
+      "source_reference": "문단 10 외 2곳\nR07-01-01~03"
+    },
+    {
+      "sample_id": "R07",
+      "field_id": "issuing_agency",
+      "label": "발주기관",
+      "expected": "(사)한국정보통신진흥협회가 운영기관으로 명시되어 있다.",
+      "conditions": "원문 역할명은 운영기관이며 이를 명시해 기관과 역할을 함께 기록한다.",
+      "source_reference": "문단 12 외 1곳\nR07-02-01~02"
+    },
+    {
+      "sample_id": "R07",
+      "field_id": "purpose",
+      "label": "목적",
+      "expected": "초거대 AI 연구에 필요한 GPU와 안정적인 연구환경을 제공해 국내 연구진 지원·AI R&D 및 산업 경쟁력을 높인다.",
+      "conditions": "인프라 공급과 연구 촉진 목적을 구별한다.",
+      "source_reference": "문단 61 외 3곳\nR07-03-01~04"
+    },
+    {
+      "sample_id": "R07",
+      "field_id": "scope_requirements",
+      "label": "주요 범위·필수요건",
+      "expected": "클라우드 GPU 최소960장 이상을 동적할당으로 제공하고 운영·장애대응·연구환경·사용량 모니터링·연구자 지원을 수행한다.",
+      "conditions": "국내 보유자원, A100 포함 시 H100 이상70%(672장)이상. 미할당/준비시간·최소960장 미충족 참여불가·자원 미소진 시 추가제공/크레딧 조건을 확인한다.",
+      "source_reference": "문단 71 외 18곳\nR07-04-01~19"
+    },
+    {
+      "sample_id": "R07",
+      "field_id": "budget_vat",
+      "label": "예산·VAT",
+      "expected": "사업비15,300,000,000원(153억원), 부가가치세 포함. 모델별 협상 시간당 단가×사용시간으로 월별 또는 지정기간 정산한다.",
+      "conditions": "사용시간은1시간 단위. 누적 사용료가 예산한도에 도달하면 자원 제공기간이 축소될 수 있다.",
+      "source_reference": "문단 57 외 3곳\nR07-05-01~04"
+    },
+    {
+      "sample_id": "R07",
+      "field_id": "duration",
+      "label": "수행기간",
+      "expected": "계약체결일~2026.12.31. 자원 제공은 최대8개월 또는 예산 소진 시까지이며 추진현황·예산 소진에 따라 종료일 연장 가능하다.",
+      "conditions": "준비시간은 자원 제공시간에서 제외. 미소진 자원은 계약기간 후 추가제공 또는 크레딧 형태로 제공하는 조건을 보존한다.",
+      "source_reference": "문단 55 외 8곳\nR07-06-01~09"
+    },
+    {
+      "sample_id": "R07",
+      "field_id": "eligibility",
+      "label": "참가·수행자격",
+      "expected": "GPU960장 이상 보유·할당과 동적할당 운영 역량을 가진 기업/컨소시엄. 공급 클라우드 사업자는 CSAP를 획득해야 한다.",
+      "conditions": "컨소시엄은 주관·참여 공급사 모두 CSAP 등 보안인증 필요. 경쟁입찰 자격과 부정당업자 제외 조건을 함께 확인한다.",
+      "source_reference": "문단 347 외 4곳\nR07-07-01~05"
+    },
+    {
+      "sample_id": "R07",
+      "field_id": "submission_documents",
+      "label": "입찰 제출서류",
+      "expected": "[별도 문서 참조]\n입찰서류 및 제안서 제출은 입찰유의서 참조로 명시되어 있다.",
+      "conditions": "본문 제안서 작성지침·객관적 증빙 요구만으로 전체 입찰 서류 목록을 만들어내지 않는다.",
+      "source_reference": "문단 511 외 1곳\nR07-08-01~02"
+    },
+    {
+      "sample_id": "R07",
+      "field_id": "submission_deadline",
+      "label": "제출기한",
+      "expected": "[별도 문서 참조]\n제출 기한은 입찰유의서 등을 추가 확인해야 하며, 이 RFP만으로 구체 마감일·시각을 확정하지 않는다.",
+      "conditions": "2026.12.31은 사업 종료일이다. 발표회 세부 일정 별도통보와 입찰 마감을 구별한다.",
+      "source_reference": "문단 55 외 2곳\nR07-09-01~03"
+    },
+    {
+      "sample_id": "R07",
+      "field_id": "submission_method",
+      "label": "제출방식",
+      "expected": "[별도 문서 참조]\n입찰서류 및 제안서 제출 방법은 입찰유의서 참조 범위로 남긴다.",
+      "conditions": "사업수행 산출물의 이메일/USB 제출 조건을 입찰 제안서 제출 경로로 바꾸지 않는다.",
+      "source_reference": "문단 327 외 1곳\nR07-10-01~02"
+    },
+    {
+      "sample_id": "R07",
+      "field_id": "evaluation",
+      "label": "평가기준·선정방식",
+      "expected": "일반경쟁·협상계약이며 기술평가100%. 기술배점85% 이상이 협상적격 기준이다.",
+      "conditions": "사업수행능력5·전략방법론25·사업관리등50·연구자지원20. 최고·최저각1개 제외 평균, 동점처리와 사업관리 우선 조건도 확인한다.",
+      "source_reference": "문단 360 외 26곳\nR07-11-01~27"
+    }
+  ],
+  "reference_status": "draft_for_source_comparison",
+  "human_review_is_not_prefilled": true
+}

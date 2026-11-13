@@ -1,0 +1,47 @@
+{
+  "created_at": "2026-11-11T09:30:18.470097+09:00",
+  "source_files": 100,
+  "unique_contents": 99,
+  "parser_module_sha256": {
+    "hwp": "e422bab50810cc584521f3f12a9a7fd1f61d437649a203ab6bcee0e74845f520",
+    "hwpx": "14d9f95f61ae5013dd2ca9ac88b7c800ab8defa9aad03b654de62f37945efabd",
+    "pdf": "239aefc5b38c80031dd9b9f7a6c092cb9e3ba2c9c0788cb0549ba2e72b38e779"
+  },
+  "code_sha256": {
+    "local_ingest/__init__.py": "049c94c3dee4525bea89e54de08e41a6285bae421a5abe9ca779c352fb415286",
+    "local_ingest/hwp.py": "e422bab50810cc584521f3f12a9a7fd1f61d437649a203ab6bcee0e74845f520",
+    "local_ingest/hwpx.py": "14d9f95f61ae5013dd2ca9ac88b7c800ab8defa9aad03b654de62f37945efabd",
+    "local_ingest/loader.py": "08a6541181a4ea71bbe9dbfa8163fae6413ddcbd7a203113e523f05823f69496",
+    "local_ingest/ocr.py": "db301bbb5192f85664685e46b7d6fa5e9914916a49585e85c0d883efc3171ab0",
+    "local_ingest/pdf.py": "239aefc5b38c80031dd9b9f7a6c092cb9e3ba2c9c0788cb0549ba2e72b38e779",
+    "local_ingest/provenance.py": "f370b1cd9e44034a46d3b5b272ada46a73cbdc87164ddcc38c041bd70636ec11",
+    "local_ingest/quality.py": "758d1638589e66c080fb2f4800f827689f7e30477e853850fbcd318eff70db79"
+  },
+  "entrypoint_sha256": "e7bf70ceb395ab0d7321cd891dce31a83ee4f840835c5d29129ab2b2fbabca8c",
+  "source_manifest_sha256": "a446d65cc00ddb8cb64d88a85a85aa7f2656ebc8b37cd42a1f2a7a3daecffc34",
+  "source_annotation_files_sha256": {
+    "data/numeric_page_reviews.json": "e74c14c5fbfcb4f10823d580e3976932131d941b7e856fae8bd8ad79d739fbb9",
+    "data/reviewed_transcriptions.json": "e7f9f160bfb52aea1720b6f1cceea10740abc0d8aa2f546dfab956e0ae9bdc99"
+  },
+  "processed_files_sha256": {
+    "data/processed/documents.jsonl": "b2acd993e4a19bba37519c9b59440f74b983a8fd6a1c076a8e4c41424dd74338",
+    "data/processed/indexable_blocks.jsonl": "a58944eee6d90d030b8df95bdcddd73b525a6236d3a6f44451a0b77c7aaf5337",
+    "data/processed/tables.jsonl": "f1888aa4188d73435345fe780f429d5f14254e5140934be1ba34b64cf3b93446"
+  },
+  "evaluation_files_sha256": {
+    "eval/questions.dev.jsonl": "7c0c0c0f45f38d6d09eaccf40c546994dc5ece73321e0dc9be6f9e8aedbde6b6",
+    "eval/questions.holdout.jsonl": "3caf203d84ffab767ac0bb6d70a8b1d2223caf92b71c0c7503c9df21414ec02d",
+    "eval/questions.smoke.dev.jsonl": "a84bcca04331f183588584b0753d6fa2ca382ec94aa03a7923f3e8ccbbed558a"
+  },
+  "python_version": "3.12.14",
+  "dependencies": {
+    "pypdf": "6.21.4",
+    "PyMuPDF": "1.26.6"
+  },
+  "local_processing": true,
+  "openai_api_calls": 0,
+  "remote_file_mutations": 0,
+  "evidence_links_checked": 684,
+  "phase2_implementation_ready": true,
+  "not_a_rag_performance_measurement": true
+}

@@ -1,0 +1,74 @@
+{
+  "reviewed_case_ids": [
+    "S001",
+    "S002",
+    "S003",
+    "S004",
+    "S005",
+    "S006",
+    "S007",
+    "S008",
+    "S009",
+    "S010",
+    "S011",
+    "S012"
+  ],
+  "findings": [
+    {
+      "case_id": "S009",
+      "fact_id": "f10",
+      "category": "semantic_deadline_narrowing",
+      "severity": "medium",
+      "issue": "expected_value가 요약표 이메일 제출을 접수당일로 제한하나 원문은 제안서 접수 당일까지로 정하여 그 이전 제출도 허용하는 표현이다.",
+      "current_value": "금융결제원 분당센터 IT기획부 직접방문 제출; 제안서 주요항목 요약표파일은 접수당일 담당자 이메일 제출",
+      "recommended_value": "금융결제원 분당센터 IT기획부 직접방문 제출; 제안서 주요항목 요약표 파일은 제안서 접수 당일까지 입찰담당자 이메일로 제출",
+      "source": {
+        "doc_id": "1Z_uprLTKoO42-p82xQ5Z8d2bDwBItW7t",
+        "block_id": "b00009",
+        "locator": "PDF p.10",
+        "quote": "□ (첨부 3) 제안서 양식 중 “10. 제안서 주요항목 요약표”는 파일 형태로 \n제안서 접수 당일까지 입찰담당자 이메일(exthd@kftc.or.kr)로 제출할 것\n "
+      }
+    },
+    {
+      "case_id": "S005",
+      "fact_id": "f8",
+      "category": "evidence_coverage",
+      "severity": "medium",
+      "issue": "제출서류 expected_value는 조직·참여인력, 이력사항, 확약서, 청렴계약 이행각서, 개인정보 동의서까지 요구하지만 첫 quote가 제안업체 일반현황의 중간에서 잘려 해당 목록을 인용하지 못한다. 두 번째 quote는 공고서 참조만 뒷받침한다.",
+      "recommendation": "b00000의 가. 제안서 구비서류부터 실제 다음 소제목인 줄 시작의 나. 제안서 구성 전까지를 약300자 인용하여 목록 전체를 뒷받침한다.",
+      "meaning_check": "expected_value의 해당 내용 자체는 authoritative 원문에서 확인됨. 사실값 오류가 아니라 인용 범위의 근거 누락이다.",
+      "evidence_blocks": [
+        "b00000",
+        "b00000"
+      ]
+    },
+    {
+      "case_id": "S009",
+      "fact_id": "f8",
+      "category": "evidence_coverage",
+      "severity": "medium",
+      "issue": "입찰신청서·보증금·사업자등록·법인인감·납세증명 등의 expected_value는 본문에 실제 존재하나 두 quote 모두 목록 후반부터 시작하여 앞선 필수 서류들을 뒷받침하지 못한다.",
+      "recommendation": "b00004의 5. 제출서류부터 6. 업체선정 방법 전까지 188자 전체를 인용한다.",
+      "meaning_check": "expected_value의 해당 내용 자체는 authoritative 원문에서 확인됨. 사실값 오류가 아니라 인용 범위의 근거 누락이다.",
+      "evidence_blocks": [
+        "b00004",
+        "b00004"
+      ]
+    },
+    {
+      "case_id": "S011",
+      "fact_id": "f4",
+      "category": "evidence_coverage",
+      "severity": "medium",
+      "issue": "지정MSP 협업 조건은 b00009의 실제 원문에 존재하지만 현재 quote는 클라우드 비용 문장 중간에서 끝나 MSP 조건을 포함하지 않는다.",
+      "recommendation": "b00009에서 조합이 지정하는 Managed Service Provider와 협업하여 클라우드서비스를 구성해야 한다는 문장까지 quote를 확장하거나 별도 quote를 추가한다.",
+      "meaning_check": "expected_value의 해당 내용 자체는 authoritative 원문에서 확인됨. 사실값 오류가 아니라 인용 범위의 근거 누락이다.",
+      "evidence_blocks": [
+        "b00004",
+        "b00009",
+        "b00010"
+      ]
+    }
+  ],
+  "limitations": "정확히 S001~S012의 12개만 검수했다. 모든 required_value와 질문·11항목 mapping을 검토하고 authoritative 원문의 인용 및 관련 문맥을 대조했다. 기계적 인용 존재·sha256·block_id·locator 검증 277건은 통과했으나, 별도로 의미 검수에서 날짜 범위 축소 1건과 인용 범위의 의미상 근거 누락 3건을 구분했다. 미기재 항목은 전체 추출문 키워드 재검색과 해당 계약·제출 조항 대조로 점검했으며, 원본 PDF/HWP 시각 재렌더와 모든 부속 문단의 완전성 전수재독은 수행하지 않았다. S001~S004의 착수·준공자료를 입찰 제출자료로 오인한 항목은 발견되지 않았고, 미확인을 실제 공고에도 없다는 뜻으로 단정하지 않도록 제한되어 있다. S011의 문서77 예정가격 1,189,000,0000원 원문 표기는 보존되어 있으며 약15개월·VAT 포함 조건도 일치한다. S009의 문서72는 총예산 수치 미확인과 입찰가격 VAT 포함 조건을 별도로 다루므로 budget must_include mapping은 해당 VAT 사실을 포함하는 의미에서 타당하다. 원문 예정가격 1억원 예시를 실제 예산으로 사용하지 않았다. 공고문·정정공고 등 외부 문서는 확인하지 않았다."
+}

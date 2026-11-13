@@ -1,0 +1,24 @@
+{
+  "created_at_utc": "2026-11-11T08:16:25.399893+00:00",
+  "version": "rfp-phase4-v1",
+  "files_sha256": {
+    "rfp_phase4/__init__.py": "d523769148a03f0648bd8c749344eacba311aca5d982ad822b51175a8f4706cd",
+    "rfp_phase4/costs.py": "9b914ba06173b4cd0817dd561f4b46177cef18783efdf85b5e1746ea40ca7da6",
+    "rfp_phase4/evaluation.py": "f4ce83c6c4620ca077b79b83f513c40e7cf36a24731b5fd8af6534056f092da2",
+    "rfp_phase4/evidence.py": "c43fbd3dd15f53e3e86791f2a67e999ba0ba71e759e60ada147be3c22518ca4f",
+    "rfp_phase4/llm.py": "71c4496e3f51ac49c64b4a10fe9bebfb46cc01c22a76bc81a8044beb726718f0",
+    "rfp_phase4/rag.py": "b63764c36bb606f66981163b3814975f9625917abf694497745a1153528269ab",
+    "rfp_phase4/runtime.py": "7618f6e66d4a7dccefc9bddc0d4141427410b0e2b0c5fab470ae4febf8c765d5",
+    "rfp_phase4/semantic.py": "abd88879a74e8a2ed02c0c979b38ce3c3491a5db547027f286258838efc10112",
+    "rfp_phase4/summarization.py": "9c9c7eb573d837b3886b60e6d5f5deb70bf6be8369ce1e934cbdba873bf01398",
+    "run_phase4.py": "0d41f0d1ccafd926b68c360a247d4328bbe7829531c350d3e3185f9649cb97e6",
+    "configs/phase4.json": "7ea88c1433525884e1fc1c5ff6671cc946cb07e54a0840e64b3796bbb2b533f6",
+    "requirements-phase4.txt": "eb95c7d2727a4d6da0f3d3f8807bcc2a6aeb09c547e1c62bc9720bd4a30f7023",
+    "notebooks/05_younggwan_phase4_grounded_answers.ipynb": "48cbe0638f963d1b13f627006fd57f21638c3912f698528d14c918de523ab8de",
+    "README.md": "140404130f07cce8bab0b60a0b5e01e7ade73b6c7be83cf72bc2ed0437a6eea7"
+  },
+  "phase3_run_manifest_sha256": "553a6514e76aa3f05d06e2203782ead72a4e86054af4f72b68375f77814a8d35",
+  "live_openai_calls_performed_here": 0,
+  "holdout_queries_evaluated_in_phase4": 0,
+  "semantic_answer_quality_measured": false
+}

@@ -1,0 +1,14 @@
+{
+  "version": "phase5-surface-audit-v1",
+  "claim_count": 6,
+  "flag_count": 0,
+  "flag_counts": {},
+  "flags": [],
+  "source_validation_reported": true,
+  "semantic_accuracy": null,
+  "semantic_entailment_verified": false,
+  "automatic_answer_correctness": null,
+  "api_calls": 0,
+  "scope": "주장별 인용의 숫자·단위·VAT·조건 표면 비교. 인용의 관련성·정답성·요약 완전성은 사람 검토가 필요합니다.",
+  "zero_flags_means_semantically_correct": false
+}

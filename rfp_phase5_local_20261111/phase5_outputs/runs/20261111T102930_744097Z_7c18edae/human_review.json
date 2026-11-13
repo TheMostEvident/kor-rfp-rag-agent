@@ -1,0 +1,124 @@
+{
+  "version": "phase5-human-review-v1",
+  "case_id": "20261111T102930_744097Z_7c18edae",
+  "answer_fingerprint": "370fa842217efef30fe513a2f1cd821138db19db32b89cd161e404d55052f5cf",
+  "document_ids": [
+    "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu"
+  ],
+  "reviewer": "",
+  "rows": [
+    {
+      "row_id": "project_name",
+      "label": "사업명",
+      "state": "not_processed",
+      "claims": [],
+      "supported": null,
+      "complete": null,
+      "conditions_preserved": null,
+      "notes": ""
+    },
+    {
+      "row_id": "issuing_agency",
+      "label": "발주기관",
+      "state": "not_processed",
+      "claims": [],
+      "supported": null,
+      "complete": null,
+      "conditions_preserved": null,
+      "notes": ""
+    },
+    {
+      "row_id": "purpose",
+      "label": "목적",
+      "state": "not_processed",
+      "claims": [],
+      "supported": null,
+      "complete": null,
+      "conditions_preserved": null,
+      "notes": ""
+    },
+    {
+      "row_id": "scope_requirements",
+      "label": "주요 범위·필수요건",
+      "state": "not_processed",
+      "claims": [],
+      "supported": null,
+      "complete": null,
+      "conditions_preserved": null,
+      "notes": ""
+    },
+    {
+      "row_id": "budget_vat",
+      "label": "예산·VAT",
+      "state": "not_processed",
+      "claims": [],
+      "supported": null,
+      "complete": null,
+      "conditions_preserved": null,
+      "notes": ""
+    },
+    {
+      "row_id": "duration",
+      "label": "수행기간",
+      "state": "not_processed",
+      "claims": [],
+      "supported": null,
+      "complete": null,
+      "conditions_preserved": null,
+      "notes": ""
+    },
+    {
+      "row_id": "eligibility",
+      "label": "참가·수행자격",
+      "state": "not_processed",
+      "claims": [],
+      "supported": null,
+      "complete": null,
+      "conditions_preserved": null,
+      "notes": ""
+    },
+    {
+      "row_id": "submission_documents",
+      "label": "입찰 제출서류",
+      "state": "not_processed",
+      "claims": [],
+      "supported": null,
+      "complete": null,
+      "conditions_preserved": null,
+      "notes": ""
+    },
+    {
+      "row_id": "submission_deadline",
+      "label": "제출기한",
+      "state": "not_processed",
+      "claims": [],
+      "supported": null,
+      "complete": null,
+      "conditions_preserved": null,
+      "notes": ""
+    },
+    {
+      "row_id": "submission_method",
+      "label": "제출방식",
+      "state": "not_processed",
+      "claims": [],
+      "supported": null,
+      "complete": null,
+      "conditions_preserved": null,
+      "notes": ""
+    },
+    {
+      "row_id": "evaluation",
+      "label": "평가기준",
+      "state": "not_processed",
+      "claims": [],
+      "supported": null,
+      "complete": null,
+      "conditions_preserved": null,
+      "notes": ""
+    }
+  ],
+  "instructions": "각 항목의 주장과 인용을 대조한 뒤 supported, complete, conditions_preserved를 true/false로 기록하세요. 미확인·공고문 참조 항목도 상태가 적절한지 검토하세요. null은 미검토입니다.",
+  "automatic_semantic_pass": false,
+  "api_calls": 0
+}

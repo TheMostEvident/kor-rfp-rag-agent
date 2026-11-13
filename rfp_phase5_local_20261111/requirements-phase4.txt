@@ -1,0 +1,6 @@
+-r requirements-local.txt
+jupyterlab>=4,<5
+ipykernel>=6,<8
+# Optional network behavior remains explicitly disabled in the notebook by default.
+# SDK family is documentation-checked; live OpenAI integration is not measured here.
+openai>=3,<4

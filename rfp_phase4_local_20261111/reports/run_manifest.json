@@ -1,0 +1,35 @@
+{
+  "created_at_utc": "2026-11-11T07:12:33.560083+00:00",
+  "python": "3.12.14",
+  "files_sha256": {
+    "data/source_documents.jsonl": "b2acd993e4a19bba37519c9b59440f74b983a8fd6a1c076a8e4c41424dd74338",
+    "data/documents_manifest.json": "a446d65cc00ddb8cb64d88a85a85aa7f2656ebc8b37cd42a1f2a7a3daecffc34",
+    "data/source_evidence_validation.json": "d280fabecc49aae778039c39949c9397fa27906aa139af0dfc07c685c2d3c2f1",
+    "data/chunks.jsonl": "9ef3ecb6e41234ea2463fb17a158f95b24fd2ee66d427097bb3799eeb886f604",
+    "configs/default.json": "cbdd4cf04feb39075d97e4a5f0d9df532ad55067e1f8308684f2c39c8609c019",
+    "eval/questions.dev.jsonl": "7c0c0c0f45f38d6d09eaccf40c546994dc5ece73321e0dc9be6f9e8aedbde6b6",
+    "eval/questions.holdout.jsonl": "3caf203d84ffab767ac0bb6d70a8b1d2223caf92b71c0c7503c9df21414ec02d",
+    "reports/evidence_chunk_alignment.json": "7537620447fd856e2b76c4c3413e7b7eeaad449540065b37abc9b981587bf276",
+    "reports/chunk_integrity.json": "2e81b70cbefba4860e15440963672a64773f6ff33522e52a5a6f63d617a81be1",
+    "reports/chunk_audit.json": "07ae41b74dd332db0bc8a1b6394eeb6b64b2b22e2184048ef9678e39c8de08f3",
+    "reports/index_build.json": "c50e5d94c27ce9f5a2d43ca89729972664c7a55ffe56e7c631fbee8d9fc041fd",
+    "index/char_idf.npy": "ca7223c1f8d71d9be2193f847d8f8408aa79507811d438c382574e4cf76f2b37",
+    "index/char_vectors.npz": "df2c8304ccf4ee614da449bf9019328a711ab1b563a412f2dcca37da480c29c8",
+    "index/char_vocabulary.json": "797dbbfa54655bae7fe253bb3bf11b1f7a5c6c00c691299d10b72f16025b4262",
+    "index/chunks.sqlite3": "99483b9a5ca2482e2a0907c12fd185480b542098e35fa1f3d045d88050f2f79e",
+    "index/index_meta.json": "c4c1030726db2e2d53830906043950cec8422e657227c05257bb896bd66a5c05"
+  },
+  "code_sha256": {
+    "run_phase3.py": "b089fa86affe62cedbd93b7aa5e705a7113c9ea6e6d42f66ecd6d5c035ac77f2",
+    "local_rag/__init__.py": "23e7de457174bdb5ac8d9176f23817f0d5533f2e42d0aafe27c7966f2d538ff2",
+    "local_rag/chunking.py": "9c9722857c3118982c8aa2950a1470929980425ba018510a12928c82af2fd066",
+    "local_rag/embeddings.py": "677d26ef1a9a7983bfe187522006fa4d430bd0feba2d816204fa27685e5236c3",
+    "local_rag/evaluation.py": "cd3ddcaeafbc3b094b9f308c5f79d1219cfe396de6175ced3ffc511814febc03",
+    "local_rag/io.py": "7543b3b07af4b34ddfabdd87214849f66c2f2545f5966d03708e4190d3432b15",
+    "local_rag/quality.py": "613aa009e297f0e9acadb26c53c79e64ab3fac69705a0f96243aaa610314c65e",
+    "local_rag/retrieval.py": "7ae3fcad4ca551125a91e447d4478a6806eada764ff8ce188c04ac06eaccb240",
+    "local_rag/session.py": "6f1ddd974e3cb19e248737aba37a4075bd55e5aeded16caa8eabcd6eaa5d4096"
+  },
+  "api_calls": 0,
+  "network_calls": 0
+}

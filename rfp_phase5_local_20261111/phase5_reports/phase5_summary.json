@@ -1,0 +1,29 @@
+{
+  "phase": 5,
+  "implementation_status": "offline_verified_live_summary_pending",
+  "source_documents": 99,
+  "source_file_ids": 100,
+  "indexed_chunks": 18266,
+  "fields": 11,
+  "offline_tests": 365,
+  "offline_test_failures": 0,
+  "live_api_calls_on_build_host": 0,
+  "semantic_accuracy": null,
+  "semantic_summary_completeness_verified": false,
+  "user_phase4_logs_observed_successful": [
+    "fact F001",
+    "comparison C001"
+  ],
+  "phase5_live_model_results_observed": false,
+  "human_review_recorded": false,
+  "public_api_scope_default": 5,
+  "default_summary_doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+  "default_summary_chunks": 18,
+  "default_summary_map_calls": 1,
+  "default_summary_request_bytes": 31301,
+  "default_max_output_tokens_per_request": 6000,
+  "initial_notebook_flags_all_false": true,
+  "phase4_citation_policy": "unique_whitespace_or_two_whole_line_fragments_v2",
+  "github_or_drive_modified": false,
+  "scope": "근거 기반 답변·11항목 전체 요약 고도화. 후속 대화·정식 평가·업무 도구/에이전트 완성은 이후 범위."
+}

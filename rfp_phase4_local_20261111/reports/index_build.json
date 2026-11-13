@@ -1,0 +1,70 @@
+{
+  "schema_version": "rfp-local-search-v1",
+  "chunk_count": 18266,
+  "canonical_document_count": 99,
+  "feature_count": 100000,
+  "index_fingerprint": "b784f5cd9f85f178f72c1faf99ebdfc89d97684e35c81b3dfc1563d0a1907fea",
+  "chunks_fingerprint": "ad89e1457dab68d0d3d76a44f34e7bd621df6ab699be0176f7e70a7a074c8d7f",
+  "config_fingerprint": "8528c42dbcc35d93ace46f266cc304ff981be02e3f76d9b49a387c38528c07f8",
+  "config": {
+    "ngram_range": [
+      2,
+      4
+    ],
+    "max_features": 100000,
+    "min_df": 2,
+    "rrf_k": 60,
+    "bm25_weight": 1.0,
+    "char_tfidf_weight": 1.0,
+    "fts_metadata_weight": 0.25,
+    "query_max_chars": 4000,
+    "term_expansions": {
+      "budget": [
+        "예산",
+        "사업비",
+        "용역비",
+        "소요예산",
+        "예정가격",
+        "사업금액",
+        "추정금액"
+      ],
+      "duration": [
+        "수행기간",
+        "사업기간",
+        "용역기간",
+        "계약기간",
+        "과업기간"
+      ],
+      "qualification": [
+        "참가자격",
+        "입찰자격",
+        "입찰참가",
+        "제안자격"
+      ],
+      "submissiondeadline": [
+        "제출기한",
+        "마감",
+        "접수기한",
+        "제출마감",
+        "접수마감"
+      ],
+      "submissiondocuments": [
+        "제출서류",
+        "구비서류",
+        "제출자료",
+        "제안서류"
+      ],
+      "submissionmethod": [
+        "제출방법",
+        "제출방식",
+        "접수방법"
+      ],
+      "vat": [
+        "부가세",
+        "부가가치세",
+        "vat"
+      ]
+    }
+  },
+  "cache_reused": false
+}

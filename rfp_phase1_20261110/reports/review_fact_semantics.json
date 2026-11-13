@@ -1,0 +1,55 @@
+{
+  "reviewed_case_ids": [
+    "F001",
+    "F002",
+    "F003",
+    "F004",
+    "F005",
+    "F006",
+    "F007",
+    "F008",
+    "F009",
+    "F010",
+    "F011",
+    "F012",
+    "F013",
+    "F014",
+    "F015",
+    "F016",
+    "F017",
+    "F018",
+    "F019",
+    "F020",
+    "F021",
+    "F022",
+    "F023",
+    "F024",
+    "F025"
+  ],
+  "findings": [
+    {
+      "case_id": "F016",
+      "field": "required_behaviors[1]",
+      "severity": "minor",
+      "issue": "“과거 누적모델 5종”이라는 지시에서 과거라는 시간 해석이 원문과 다름. 표의 누계 총 5종은 2024년 2종, 2025년 1종, 2026년 1종, 2027년 1종을 합한 값으로 2027년 신규 모델까지 포함함. 질문 및 required_facts의 신규 1개·후보 3+2개·시범 2개 이상 값은 정확함.",
+      "suggested_correction": "“2024~2027년 누계 모델 총 5종과 2027년 신규 최종 개발모델 1개를 구분한다.” 또는 과거라는 단어 삭제.",
+      "evidence": [
+        {
+          "doc_id": "1fmwaCwhTRFFf3sdOofxsM61Z0Dnf1PAT",
+          "sha256": "0da1dccd8107f2c259a8eeb9d5ae462a3262804657d557f6222898f51451de6e",
+          "block_id": "b00000",
+          "locator": "Contents/section0.xml",
+          "quote": "표준분석모델\n’24년 \n2종 \n(상권, 축제)\n\n’25년 \n1종 \n(공공시설물 5개)\n\n’26년 \n1종\n(유휴공간 입지분석)\n(공공시설물 3개 추가)\n\n’27년 \n1종\n※ 누계 총 5종"
+        }
+      ]
+    }
+  ],
+  "limitations": "25개 case의 질문·expected_value·required_behaviors를 인용 및 추출 본문의 해당 조항 주변 맥락과 대조했다. 예산 단위/VAT, 기간 기준점, 제출공고 위임, 공동수급/하도급, 일부 자격조항을 완전한 참가 가능 판정으로 바꾸는지 검토했다. 모든 인용의 exact substring·SHA·block_id·locator 일치도 재확인했다. 25개 문서의 시각 원본 전 페이지 및 외부 입찰공고·정정공고·법령 해석은 검수 범위에 포함하지 않았으며, 새로운 자격 판정을 수행하지 않았다. 원본 cases_fact.json은 수정하지 않음.",
+  "validation_summary": {
+    "cases": 25,
+    "facts": 38,
+    "quotes": 39,
+    "question_expected_value_semantic_errors": 0,
+    "required_behavior_minor_findings": 1
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "checked_date": "2026-11-11",
+  "implementation": "output/rfp_phase3_local_20261111/local_rag/embeddings.py",
+  "unit_tests": "output/rfp_phase3_local_20261111/tests/test_embeddings.py",
+  "validation": {
+    "network_free_fake_sdk_and_collection_tests": 20,
+    "test_command": "python3 -m unittest discover -s tests -p 'test_embeddings.py' -v",
+    "result": "passed",
+    "real_openai_calls": 0,
+    "real_chroma_integration_executed": false,
+    "optional_packages_installed": false,
+    "real_vector_quality_measured": false,
+    "real_embedding_cost_measured": false
+  },
+  "official_documentation": [
+    {
+      "url": "https://developers.openai.com/api/reference/python/resources/embeddings/methods/create",
+      "verified_by": "parent coordinator",
+      "claims_checked": [
+        "client.embeddings.create accepts model, input list, encoding_format float, dimensions",
+        "text-embedding-3 series supports dimensions",
+        "Maximum input is 8192 tokens; total inputs per request cannot exceed 300000 tokens",
+        "Response data includes per-item index and embedding, and response includes usage"
+      ]
+    },
+    {
+      "url": "https://docs.trychroma.com/reference/python/client",
+      "verified_by": "embedding adapter worker, primary documentation opened",
+      "claims_checked": [
+        "PersistentClient(path=...) uses a local persistence directory",
+        "get_or_create_collection accepts metadata, embedding_function, and configuration",
+        "If the named collection exists, new metadata is ignored; implementation must compare returned metadata",
+        "Passing embedding_function=None avoids the default embedding function",
+        "get_max_batch_size reports the maximum supported batch size"
+      ]
+    },
+    {
+      "url": "https://docs.trychroma.com/reference/python/collection",
+      "verified_by": "embedding adapter worker, primary documentation opened",
+      "claims_checked": [
+        "upsert accepts explicit ids, embeddings, and metadatas",
+        "query supports query_embeddings, n_results, where, and include distances/metadatas",
+        "query result IDs, distances, and metadata are nested by query",
+        "count reports collection item count"
+      ]
+    },
+    {
+      "url": "https://docs.trychroma.com/docs/collections/configure",
+      "verified_by": "embedding adapter worker, primary documentation opened",
+      "claims_checked": [
+        "configuration hnsw space cosine selects cosine distance",
+        "Chroma defaults to l2 unless explicitly configured",
+        "Cosine distance is one minus cosine similarity and is not calibrated answer confidence"
+      ]
+    }
+  ],
+  "design": {
+    "default_enabled": false,
+    "key_source": "OPENAI_API_KEY environment only; never saved by adapter",
+    "source_allowlist": "Explicit canonical document ID to current raw SHA256 mapping required before embedding any corpus chunk",
+    "cache_key": "SHA256 of model, dimensions, and exact unnormalized input SHA256",
+    "cache_payload": "Vectors and hashes only; original source text is not stored in the embedding cache",
+    "local_index_payload": "Full chunks stored in manifest.json for source hydration; Chroma stores explicit vectors and flat source references",
+    "token_budget": "Conservative UTF8 byte upper bound, explicitly labeled rather than reported as actual tokenizer count",
+    "default_session_budget_upper_bound": 250000,
+    "session_budget": "Unique uncached inputs are preflighted before first call; attempted calls consume budget even on failure; SDK retries disabled",
+    "pricing": "No monetary estimate or fabricated fixed API prices; token upper-bound cap controls usage",
+    "scope": "Aliases resolve to canonical IDs before query embedding; unknown IDs fail, explicit empty scope returns no results and makes no API request",
+    "collection_reuse": "Corpus/source/model/dimensions mismatch fails rather than reusing or deleting the collection",
+    "scores": "Negative cosine distance, not confidence or correctness probability",
+    "local_baseline": "Independent BM25/character-TFIDF/RRF/MMR defaults do not depend on this module"
+  },
+  "limits": [
+    "No live SDK/API/Chroma integration was executed because packages and an API key were unavailable",
+    "Only verified text-embedding-3-small and text-embedding-3-large model names are accepted",
+    "The conservative byte bound may reject inputs that a model tokenizer would accept; rechunk or later add a verified tokenizer instead of treating bytes as exact tokens",
+    "Full corpus may exceed the default session upper-bound budget and will stop before requests; review and explicitly set a larger cap before opting in",
+    "Source SHA allowlisting checks the approved source version; exact source-span recovery is enforced by the separate chunk quality validation, not by retrieving raw files inside this adapter",
+    "manifest.json and local Chroma data contain source-derived data and remain in the selected local index directory"
+  ],
+  "stored_vector_integrity_limitation": "Chroma load checks collection metadata and count; alteration of stored vector values under unchanged IDs/count is not exhaustively detected. Local embedding cache input/value integrity is separately checked."
+}

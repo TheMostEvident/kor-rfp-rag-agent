@@ -1,0 +1,826 @@
+{
+  "version": "phase5-human-review-v1",
+  "case_id": "20261111T111052_567782Z_c689d44b",
+  "answer_fingerprint": "da6fa6dea0e73142f669ae355e7ffbff7d1add1bd41cd3541dd90cc35f52b34b",
+  "document_ids": [
+    "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu"
+  ],
+  "reviewer": "",
+  "rows": [
+    {
+      "row_id": "project_name",
+      "label": "사업명",
+      "state": "evidence_found",
+      "claims": [
+        {
+          "text": "2026년도 귀속 연말정산 위탁운영 용역",
+          "mode": "fact",
+          "citations": [
+            {
+              "chunk_id": "rfp:7a592ea538ed00d8:a092b9e6d7a3dbe7c8631089",
+              "quote": "2026년도 귀속 연말정산 위탁운영 용역",
+              "quote_start": 0,
+              "quote_end": 22,
+              "doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+              "sha256": "7a592ea538ed00d8dca697c8cab8fadd110ec2a15902f8235b80bb7d960027bc",
+              "file_name": "인천공항시설관리(주)_2026_2026년도 귀속 연말정산 위탁운영 용역_과업내용서.hwp",
+              "locator": "BodyText/Section0 / paragraph 10 … BodyText/Section0 / paragraph 11",
+              "source_ranges": [
+                {
+                  "collection": "blocks",
+                  "block_id": "BodyText/Section0:paragraph:10:record:2341",
+                  "locator": "BodyText/Section0 / paragraph 10",
+                  "char_start": 0,
+                  "char_end": 22,
+                  "chunk_start": 0,
+                  "chunk_end": 22,
+                  "section": "BodyText/Section0",
+                  "table_id": "BodyText/Section0:table:0001",
+                  "row": 2,
+                  "col": 0
+                }
+              ],
+              "source_method": "raw_parser",
+              "quality_flags": [
+                "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+                "document:HWP_LAYOUT_NOT_RENDERED",
+                "document:NON_TEXT_OBJECTS_PRESENT"
+              ],
+              "provenance_verified": true,
+              "semantic_entailment_verified": false,
+              "section": "BodyText/Section0"
+            }
+          ]
+        }
+      ],
+      "supported": null,
+      "complete": null,
+      "conditions_preserved": null,
+      "notes": ""
+    },
+    {
+      "row_id": "issuing_agency",
+      "label": "발주기관",
+      "state": "not_found_in_processed_input",
+      "claims": [],
+      "supported": null,
+      "complete": null,
+      "conditions_preserved": null,
+      "notes": ""
+    },
+    {
+      "row_id": "purpose",
+      "label": "목적",
+      "state": "evidence_found",
+      "claims": [
+        {
+          "text": "세무 전문업체를 통한 연말정산 교육 및 신고자료 검토 업무 대행을 통한 연말정산 업무의 효율적 추진, 개정 세법에 대한 정보자료 제공, 연말정산 방법 교육 및 상담을 통한 연말정산 신고오류 최소화",
+          "mode": "fact",
+          "citations": [
+            {
+              "chunk_id": "rfp:7a592ea538ed00d8:b981068191e2b609a8f1be09",
+              "quote": "세무 전문업체를 통한 연말정산 교육 및 신고자료 검토 업무 대행을 통한 연말정산 업무의 효율적 추진",
+              "quote_start": 380,
+              "quote_end": 435,
+              "doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+              "sha256": "7a592ea538ed00d8dca697c8cab8fadd110ec2a15902f8235b80bb7d960027bc",
+              "file_name": "인천공항시설관리(주)_2026_2026년도 귀속 연말정산 위탁운영 용역_과업내용서.hwp",
+              "locator": "BodyText/Section0 / paragraph 56 … BodyText/Section0 / paragraph 85",
+              "source_ranges": [
+                {
+                  "collection": "blocks",
+                  "block_id": "BodyText/Section0:paragraph:80:record:12738",
+                  "locator": "BodyText/Section0 / paragraph 80",
+                  "char_start": 14,
+                  "char_end": 69,
+                  "chunk_start": 380,
+                  "chunk_end": 435,
+                  "section": "BodyText/Section0"
+                }
+              ],
+              "source_method": "raw_parser",
+              "quality_flags": [
+                "document:HWP_LAYOUT_NOT_RENDERED",
+                "document:NON_TEXT_OBJECTS_PRESENT"
+              ],
+              "provenance_verified": true,
+              "semantic_entailment_verified": false,
+              "section": "BodyText/Section0"
+            },
+            {
+              "chunk_id": "rfp:7a592ea538ed00d8:b981068191e2b609a8f1be09",
+              "quote": "개정 세법에 대한 정보자료 제공, 연말정산 방법 교육 및 상담을 통한 연말정산 신고오류 최소화",
+              "quote_start": 453,
+              "quote_end": 505,
+              "doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+              "sha256": "7a592ea538ed00d8dca697c8cab8fadd110ec2a15902f8235b80bb7d960027bc",
+              "file_name": "인천공항시설관리(주)_2026_2026년도 귀속 연말정산 위탁운영 용역_과업내용서.hwp",
+              "locator": "BodyText/Section0 / paragraph 56 … BodyText/Section0 / paragraph 85",
+              "source_ranges": [
+                {
+                  "collection": "blocks",
+                  "block_id": "BodyText/Section0:paragraph:82:record:13082",
+                  "locator": "BodyText/Section0 / paragraph 82",
+                  "char_start": 17,
+                  "char_end": 69,
+                  "chunk_start": 453,
+                  "chunk_end": 505,
+                  "section": "BodyText/Section0"
+                }
+              ],
+              "source_method": "raw_parser",
+              "quality_flags": [
+                "document:HWP_LAYOUT_NOT_RENDERED",
+                "document:NON_TEXT_OBJECTS_PRESENT"
+              ],
+              "provenance_verified": true,
+              "semantic_entailment_verified": false,
+              "section": "BodyText/Section0"
+            }
+          ]
+        }
+      ],
+      "supported": null,
+      "complete": null,
+      "conditions_preserved": null,
+      "notes": ""
+    },
+    {
+      "row_id": "scope_requirements",
+      "label": "주요 범위·필수요건",
+      "state": "evidence_found",
+      "claims": [
+        {
+          "text": "연말정산 안내문 및 더존 IU 입력 매뉴얼 작성 및 배포, IU 반영사항 오류 검증 및 프로그램 테스트, 원천세 신고 자료 및 지급명세서 비교 검증, 임직원 상담 등 문의 응대, 인천공항시설관리(주) 내 상주하여 연말정산 서류 접수, IU 입력보조, 서류·전산대조의 검토, 오류 검증 등, 휴가, 휴직, 정년퇴직자 등에 따른 임직원 부재시 부재자 서류취합 및 자료등록, 중도입사자(전직장 소득합산) 및 중도퇴직자 정산자료 검토지원, 전산매체 신고 시 오류 검증 등, 지급명세서 제출 및 오류 시 수정 제출, 주요 문의내용 및 답변서 제출, 2026년 귀속 연말정산 결과보고서 제출, 연말정산 증빙서류 보관용 서류박스(지정 규격) 구매, 편철 및 최종 제출, 국세청으로부터 부당 공제자 통보 시 후속처리 절차 지원(재신고·재계산 처리), 개인정보보호법 등 관련 법령 및 우리 회사의 사내 개인정보처리 규정 준수, 개인정보처리에 따른 보안서약서 제출 및 과업 완료 후 관련 수집 자료의 안전한 파기 및 반납 처리",
+          "mode": "fact",
+          "citations": [
+            {
+              "chunk_id": "rfp:7a592ea538ed00d8:dbbceeb83154d2cd023671b6",
+              "quote": "연말정산 안내문 및 더존 IU 입력 매뉴얼 작성 및 배포",
+              "quote_start": 21,
+              "quote_end": 52,
+              "doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+              "sha256": "7a592ea538ed00d8dca697c8cab8fadd110ec2a15902f8235b80bb7d960027bc",
+              "file_name": "인천공항시설관리(주)_2026_2026년도 귀속 연말정산 위탁운영 용역_과업내용서.hwp",
+              "locator": "BodyText/Section0 / paragraph 88 … BodyText/Section0 / paragraph 112",
+              "source_ranges": [
+                {
+                  "collection": "blocks",
+                  "block_id": "BodyText/Section0:paragraph:91:record:14422",
+                  "locator": "BodyText/Section0 / paragraph 91",
+                  "char_start": 1,
+                  "char_end": 32,
+                  "chunk_start": 21,
+                  "chunk_end": 52,
+                  "section": "BodyText/Section0",
+                  "table_id": "BodyText/Section0:table:0004",
+                  "row": 1,
+                  "col": 1
+                }
+              ],
+              "source_method": "raw_parser",
+              "quality_flags": [
+                "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+                "document:HWP_LAYOUT_NOT_RENDERED",
+                "document:NON_TEXT_OBJECTS_PRESENT"
+              ],
+              "provenance_verified": true,
+              "semantic_entailment_verified": false,
+              "section": "BodyText/Section0"
+            },
+            {
+              "chunk_id": "rfp:7a592ea538ed00d8:dbbceeb83154d2cd023671b6",
+              "quote": "IU 반영사항 오류 검증 및 프로그램 테스트",
+              "quote_start": 54,
+              "quote_end": 78,
+              "doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+              "sha256": "7a592ea538ed00d8dca697c8cab8fadd110ec2a15902f8235b80bb7d960027bc",
+              "file_name": "인천공항시설관리(주)_2026_2026년도 귀속 연말정산 위탁운영 용역_과업내용서.hwp",
+              "locator": "BodyText/Section0 / paragraph 88 … BodyText/Section0 / paragraph 112",
+              "source_ranges": [
+                {
+                  "collection": "blocks",
+                  "block_id": "BodyText/Section0:paragraph:92:record:14580",
+                  "locator": "BodyText/Section0 / paragraph 92",
+                  "char_start": 1,
+                  "char_end": 25,
+                  "chunk_start": 54,
+                  "chunk_end": 78,
+                  "section": "BodyText/Section0",
+                  "table_id": "BodyText/Section0:table:0004",
+                  "row": 1,
+                  "col": 1
+                }
+              ],
+              "source_method": "raw_parser",
+              "quality_flags": [
+                "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+                "document:HWP_LAYOUT_NOT_RENDERED",
+                "document:NON_TEXT_OBJECTS_PRESENT"
+              ],
+              "provenance_verified": true,
+              "semantic_entailment_verified": false,
+              "section": "BodyText/Section0"
+            },
+            {
+              "chunk_id": "rfp:7a592ea538ed00d8:dbbceeb83154d2cd023671b6",
+              "quote": "원천세 신고 자료 및 지급명세서 비교 검증",
+              "quote_start": 80,
+              "quote_end": 103,
+              "doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+              "sha256": "7a592ea538ed00d8dca697c8cab8fadd110ec2a15902f8235b80bb7d960027bc",
+              "file_name": "인천공항시설관리(주)_2026_2026년도 귀속 연말정산 위탁운영 용역_과업내용서.hwp",
+              "locator": "BodyText/Section0 / paragraph 88 … BodyText/Section0 / paragraph 112",
+              "source_ranges": [
+                {
+                  "collection": "blocks",
+                  "block_id": "BodyText/Section0:paragraph:93:record:14716",
+                  "locator": "BodyText/Section0 / paragraph 93",
+                  "char_start": 1,
+                  "char_end": 24,
+                  "chunk_start": 80,
+                  "chunk_end": 103,
+                  "section": "BodyText/Section0",
+                  "table_id": "BodyText/Section0:table:0004",
+                  "row": 1,
+                  "col": 1
+                }
+              ],
+              "source_method": "raw_parser",
+              "quality_flags": [
+                "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+                "document:HWP_LAYOUT_NOT_RENDERED",
+                "document:NON_TEXT_OBJECTS_PRESENT"
+              ],
+              "provenance_verified": true,
+              "semantic_entailment_verified": false,
+              "section": "BodyText/Section0"
+            },
+            {
+              "chunk_id": "rfp:7a592ea538ed00d8:dbbceeb83154d2cd023671b6",
+              "quote": "인천공항시설관리(주) 내 상주하여 연말정산 서류 접수, IU 입력보조, 서류·전산대조의 검토, 오류 검증 등",
+              "quote_start": 158,
+              "quote_end": 218,
+              "doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+              "sha256": "7a592ea538ed00d8dca697c8cab8fadd110ec2a15902f8235b80bb7d960027bc",
+              "file_name": "인천공항시설관리(주)_2026_2026년도 귀속 연말정산 위탁운영 용역_과업내용서.hwp",
+              "locator": "BodyText/Section0 / paragraph 88 … BodyText/Section0 / paragraph 112",
+              "source_ranges": [
+                {
+                  "collection": "blocks",
+                  "block_id": "BodyText/Section0:paragraph:97:record:15409",
+                  "locator": "BodyText/Section0 / paragraph 97",
+                  "char_start": 1,
+                  "char_end": 61,
+                  "chunk_start": 158,
+                  "chunk_end": 218,
+                  "section": "BodyText/Section0",
+                  "table_id": "BodyText/Section0:table:0004",
+                  "row": 3,
+                  "col": 1
+                }
+              ],
+              "source_method": "raw_parser",
+              "quality_flags": [
+                "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+                "document:HWP_LAYOUT_NOT_RENDERED",
+                "document:NON_TEXT_OBJECTS_PRESENT"
+              ],
+              "provenance_verified": true,
+              "semantic_entailment_verified": false,
+              "section": "BodyText/Section0"
+            },
+            {
+              "chunk_id": "rfp:7a592ea538ed00d8:dbbceeb83154d2cd023671b6",
+              "quote": "휴가, 휴직, 정년퇴직자 등에 따른 임직원 부재시 부재자 서류취합 및 자료등록",
+              "quote_start": 220,
+              "quote_end": 263,
+              "doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+              "sha256": "7a592ea538ed00d8dca697c8cab8fadd110ec2a15902f8235b80bb7d960027bc",
+              "file_name": "인천공항시설관리(주)_2026_2026년도 귀속 연말정산 위탁운영 용역_과업내용서.hwp",
+              "locator": "BodyText/Section0 / paragraph 88 … BodyText/Section0 / paragraph 112",
+              "source_ranges": [
+                {
+                  "collection": "blocks",
+                  "block_id": "BodyText/Section0:paragraph:98:record:15693",
+                  "locator": "BodyText/Section0 / paragraph 98",
+                  "char_start": 1,
+                  "char_end": 44,
+                  "chunk_start": 220,
+                  "chunk_end": 263,
+                  "section": "BodyText/Section0",
+                  "table_id": "BodyText/Section0:table:0004",
+                  "row": 3,
+                  "col": 1
+                }
+              ],
+              "source_method": "raw_parser",
+              "quality_flags": [
+                "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+                "document:HWP_LAYOUT_NOT_RENDERED",
+                "document:NON_TEXT_OBJECTS_PRESENT"
+              ],
+              "provenance_verified": true,
+              "semantic_entailment_verified": false,
+              "section": "BodyText/Section0"
+            },
+            {
+              "chunk_id": "rfp:7a592ea538ed00d8:dbbceeb83154d2cd023671b6",
+              "quote": "중도입사자(전직장 소득합산) 및 중도퇴직자 정산자료 검토지원",
+              "quote_start": 265,
+              "quote_end": 298,
+              "doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+              "sha256": "7a592ea538ed00d8dca697c8cab8fadd110ec2a15902f8235b80bb7d960027bc",
+              "file_name": "인천공항시설관리(주)_2026_2026년도 귀속 연말정산 위탁운영 용역_과업내용서.hwp",
+              "locator": "BodyText/Section0 / paragraph 88 … BodyText/Section0 / paragraph 112",
+              "source_ranges": [
+                {
+                  "collection": "blocks",
+                  "block_id": "BodyText/Section0:paragraph:99:record:15919",
+                  "locator": "BodyText/Section0 / paragraph 99",
+                  "char_start": 1,
+                  "char_end": 34,
+                  "chunk_start": 265,
+                  "chunk_end": 298,
+                  "section": "BodyText/Section0",
+                  "table_id": "BodyText/Section0:table:0004",
+                  "row": 3,
+                  "col": 1
+                }
+              ],
+              "source_method": "raw_parser",
+              "quality_flags": [
+                "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+                "document:HWP_LAYOUT_NOT_RENDERED",
+                "document:NON_TEXT_OBJECTS_PRESENT"
+              ],
+              "provenance_verified": true,
+              "semantic_entailment_verified": false,
+              "section": "BodyText/Section0"
+            },
+            {
+              "chunk_id": "rfp:7a592ea538ed00d8:dbbceeb83154d2cd023671b6",
+              "quote": "전산매체 신고 시 오류 검증 등",
+              "quote_start": 309,
+              "quote_end": 326,
+              "doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+              "sha256": "7a592ea538ed00d8dca697c8cab8fadd110ec2a15902f8235b80bb7d960027bc",
+              "file_name": "인천공항시설관리(주)_2026_2026년도 귀속 연말정산 위탁운영 용역_과업내용서.hwp",
+              "locator": "BodyText/Section0 / paragraph 88 … BodyText/Section0 / paragraph 112",
+              "source_ranges": [
+                {
+                  "collection": "blocks",
+                  "block_id": "BodyText/Section0:paragraph:102:record:16397",
+                  "locator": "BodyText/Section0 / paragraph 102",
+                  "char_start": 1,
+                  "char_end": 18,
+                  "chunk_start": 309,
+                  "chunk_end": 326,
+                  "section": "BodyText/Section0",
+                  "table_id": "BodyText/Section0:table:0004",
+                  "row": 4,
+                  "col": 1
+                }
+              ],
+              "source_method": "raw_parser",
+              "quality_flags": [
+                "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+                "document:HWP_LAYOUT_NOT_RENDERED",
+                "document:NON_TEXT_OBJECTS_PRESENT"
+              ],
+              "provenance_verified": true,
+              "semantic_entailment_verified": false,
+              "section": "BodyText/Section0"
+            },
+            {
+              "chunk_id": "rfp:7a592ea538ed00d8:dbbceeb83154d2cd023671b6",
+              "quote": "지급명세서 제출 및 오류 시 수정 제출",
+              "quote_start": 328,
+              "quote_end": 349,
+              "doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+              "sha256": "7a592ea538ed00d8dca697c8cab8fadd110ec2a15902f8235b80bb7d960027bc",
+              "file_name": "인천공항시설관리(주)_2026_2026년도 귀속 연말정산 위탁운영 용역_과업내용서.hwp",
+              "locator": "BodyText/Section0 / paragraph 88 … BodyText/Section0 / paragraph 112",
+              "source_ranges": [
+                {
+                  "collection": "blocks",
+                  "block_id": "BodyText/Section0:paragraph:103:record:16521",
+                  "locator": "BodyText/Section0 / paragraph 103",
+                  "char_start": 1,
+                  "char_end": 22,
+                  "chunk_start": 328,
+                  "chunk_end": 349,
+                  "section": "BodyText/Section0",
+                  "table_id": "BodyText/Section0:table:0004",
+                  "row": 4,
+                  "col": 1
+                }
+              ],
+              "source_method": "raw_parser",
+              "quality_flags": [
+                "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+                "document:HWP_LAYOUT_NOT_RENDERED",
+                "document:NON_TEXT_OBJECTS_PRESENT"
+              ],
+              "provenance_verified": true,
+              "semantic_entailment_verified": false,
+              "section": "BodyText/Section0"
+            },
+            {
+              "chunk_id": "rfp:7a592ea538ed00d8:dbbceeb83154d2cd023671b6",
+              "quote": "주요 문의내용 및 답변서 제출",
+              "quote_start": 351,
+              "quote_end": 367,
+              "doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+              "sha256": "7a592ea538ed00d8dca697c8cab8fadd110ec2a15902f8235b80bb7d960027bc",
+              "file_name": "인천공항시설관리(주)_2026_2026년도 귀속 연말정산 위탁운영 용역_과업내용서.hwp",
+              "locator": "BodyText/Section0 / paragraph 88 … BodyText/Section0 / paragraph 112",
+              "source_ranges": [
+                {
+                  "collection": "blocks",
+                  "block_id": "BodyText/Section0:paragraph:104:record:16651",
+                  "locator": "BodyText/Section0 / paragraph 104",
+                  "char_start": 1,
+                  "char_end": 17,
+                  "chunk_start": 351,
+                  "chunk_end": 367,
+                  "section": "BodyText/Section0",
+                  "table_id": "BodyText/Section0:table:0004",
+                  "row": 4,
+                  "col": 1
+                }
+              ],
+              "source_method": "raw_parser",
+              "quality_flags": [
+                "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+                "document:HWP_LAYOUT_NOT_RENDERED",
+                "document:NON_TEXT_OBJECTS_PRESENT"
+              ],
+              "provenance_verified": true,
+              "semantic_entailment_verified": false,
+              "section": "BodyText/Section0"
+            },
+            {
+              "chunk_id": "rfp:7a592ea538ed00d8:dbbceeb83154d2cd023671b6",
+              "quote": "2026년 귀속 연말정산 결과보고서 제출",
+              "quote_start": 369,
+              "quote_end": 391,
+              "doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+              "sha256": "7a592ea538ed00d8dca697c8cab8fadd110ec2a15902f8235b80bb7d960027bc",
+              "file_name": "인천공항시설관리(주)_2026_2026년도 귀속 연말정산 위탁운영 용역_과업내용서.hwp",
+              "locator": "BodyText/Section0 / paragraph 88 … BodyText/Section0 / paragraph 112",
+              "source_ranges": [
+                {
+                  "collection": "blocks",
+                  "block_id": "BodyText/Section0:paragraph:105:record:16771",
+                  "locator": "BodyText/Section0 / paragraph 105",
+                  "char_start": 1,
+                  "char_end": 23,
+                  "chunk_start": 369,
+                  "chunk_end": 391,
+                  "section": "BodyText/Section0",
+                  "table_id": "BodyText/Section0:table:0004",
+                  "row": 4,
+                  "col": 1
+                }
+              ],
+              "source_method": "raw_parser",
+              "quality_flags": [
+                "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+                "document:HWP_LAYOUT_NOT_RENDERED",
+                "document:NON_TEXT_OBJECTS_PRESENT"
+              ],
+              "provenance_verified": true,
+              "semantic_entailment_verified": false,
+              "section": "BodyText/Section0"
+            },
+            {
+              "chunk_id": "rfp:7a592ea538ed00d8:dbbceeb83154d2cd023671b6",
+              "quote": "연말정산 증빙서류 보관용 서류박스(지정 규격) 구매, 편철 및 최종 제출",
+              "quote_start": 393,
+              "quote_end": 433,
+              "doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+              "sha256": "7a592ea538ed00d8dca697c8cab8fadd110ec2a15902f8235b80bb7d960027bc",
+              "file_name": "인천공항시설관리(주)_2026_2026년도 귀속 연말정산 위탁운영 용역_과업내용서.hwp",
+              "locator": "BodyText/Section0 / paragraph 88 … BodyText/Section0 / paragraph 112",
+              "source_ranges": [
+                {
+                  "collection": "blocks",
+                  "block_id": "BodyText/Section0:paragraph:106:record:16903",
+                  "locator": "BodyText/Section0 / paragraph 106",
+                  "char_start": 1,
+                  "char_end": 41,
+                  "chunk_start": 393,
+                  "chunk_end": 433,
+                  "section": "BodyText/Section0",
+                  "table_id": "BodyText/Section0:table:0004",
+                  "row": 4,
+                  "col": 1
+                }
+              ],
+              "source_method": "raw_parser",
+              "quality_flags": [
+                "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+                "document:HWP_LAYOUT_NOT_RENDERED",
+                "document:NON_TEXT_OBJECTS_PRESENT"
+              ],
+              "provenance_verified": true,
+              "semantic_entailment_verified": false,
+              "section": "BodyText/Section0"
+            },
+            {
+              "chunk_id": "rfp:7a592ea538ed00d8:dbbceeb83154d2cd023671b6",
+              "quote": "국세청으로부터 부당 공제자 통보 시 후속처리 절차 지원(재신고·재계산 처리)",
+              "quote_start": 447,
+              "quote_end": 489,
+              "doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+              "sha256": "7a592ea538ed00d8dca697c8cab8fadd110ec2a15902f8235b80bb7d960027bc",
+              "file_name": "인천공항시설관리(주)_2026_2026년도 귀속 연말정산 위탁운영 용역_과업내용서.hwp",
+              "locator": "BodyText/Section0 / paragraph 88 … BodyText/Section0 / paragraph 112",
+              "source_ranges": [
+                {
+                  "collection": "blocks",
+                  "block_id": "BodyText/Section0:paragraph:108:record:17361",
+                  "locator": "BodyText/Section0 / paragraph 108",
+                  "char_start": 1,
+                  "char_end": 43,
+                  "chunk_start": 447,
+                  "chunk_end": 489,
+                  "section": "BodyText/Section0",
+                  "table_id": "BodyText/Section0:table:0004",
+                  "row": 5,
+                  "col": 1
+                }
+              ],
+              "source_method": "raw_parser",
+              "quality_flags": [
+                "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+                "document:HWP_LAYOUT_NOT_RENDERED",
+                "document:NON_TEXT_OBJECTS_PRESENT"
+              ],
+              "provenance_verified": true,
+              "semantic_entailment_verified": false,
+              "section": "BodyText/Section0"
+            },
+            {
+              "chunk_id": "rfp:7a592ea538ed00d8:dbbceeb83154d2cd023671b6",
+              "quote": "개인정보보호법 등 관련 법령 및 우리 회사의 사내 개인정보처리 규정 준수",
+              "quote_start": 501,
+              "quote_end": 541,
+              "doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+              "sha256": "7a592ea538ed00d8dca697c8cab8fadd110ec2a15902f8235b80bb7d960027bc",
+              "file_name": "인천공항시설관리(주)_2026_2026년도 귀속 연말정산 위탁운영 용역_과업내용서.hwp",
+              "locator": "BodyText/Section0 / paragraph 88 … BodyText/Section0 / paragraph 112",
+              "source_ranges": [
+                {
+                  "collection": "blocks",
+                  "block_id": "BodyText/Section0:paragraph:111:record:17859",
+                  "locator": "BodyText/Section0 / paragraph 111",
+                  "char_start": 1,
+                  "char_end": 41,
+                  "chunk_start": 501,
+                  "chunk_end": 541,
+                  "section": "BodyText/Section0",
+                  "table_id": "BodyText/Section0:table:0004",
+                  "row": 6,
+                  "col": 1
+                }
+              ],
+              "source_method": "raw_parser",
+              "quality_flags": [
+                "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+                "document:HWP_LAYOUT_NOT_RENDERED",
+                "document:NON_TEXT_OBJECTS_PRESENT"
+              ],
+              "provenance_verified": true,
+              "semantic_entailment_verified": false,
+              "section": "BodyText/Section0"
+            },
+            {
+              "chunk_id": "rfp:7a592ea538ed00d8:dbbceeb83154d2cd023671b6",
+              "quote": "개인정보처리에 따른 보안서약서 제출 및 과업 완료 후 관련 수집 자료의 안전한 파기 및 반납 처리",
+              "quote_start": 543,
+              "quote_end": 597,
+              "doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+              "sha256": "7a592ea538ed00d8dca697c8cab8fadd110ec2a15902f8235b80bb7d960027bc",
+              "file_name": "인천공항시설관리(주)_2026_2026년도 귀속 연말정산 위탁운영 용역_과업내용서.hwp",
+              "locator": "BodyText/Section0 / paragraph 88 … BodyText/Section0 / paragraph 112",
+              "source_ranges": [
+                {
+                  "collection": "blocks",
+                  "block_id": "BodyText/Section0:paragraph:112:record:18063",
+                  "locator": "BodyText/Section0 / paragraph 112",
+                  "char_start": 1,
+                  "char_end": 55,
+                  "chunk_start": 543,
+                  "chunk_end": 597,
+                  "section": "BodyText/Section0",
+                  "table_id": "BodyText/Section0:table:0004",
+                  "row": 6,
+                  "col": 1
+                }
+              ],
+              "source_method": "raw_parser",
+              "quality_flags": [
+                "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+                "document:HWP_LAYOUT_NOT_RENDERED",
+                "document:NON_TEXT_OBJECTS_PRESENT"
+              ],
+              "provenance_verified": true,
+              "semantic_entailment_verified": false,
+              "section": "BodyText/Section0"
+            }
+          ]
+        }
+      ],
+      "supported": null,
+      "complete": null,
+      "conditions_preserved": null,
+      "notes": ""
+    },
+    {
+      "row_id": "budget_vat",
+      "label": "예산·VAT",
+      "state": "evidence_found",
+      "claims": [
+        {
+          "text": "사업예산은 57,246,000원(부가가치세 제외)",
+          "mode": "fact",
+          "citations": [
+            {
+              "chunk_id": "rfp:7a592ea538ed00d8:b981068191e2b609a8f1be09",
+              "quote": "사업예산 : 57,246,000원(부가가치세 제외)",
+              "quote_start": 257,
+              "quote_end": 285,
+              "doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+              "sha256": "7a592ea538ed00d8dca697c8cab8fadd110ec2a15902f8235b80bb7d960027bc",
+              "file_name": "인천공항시설관리(주)_2026_2026년도 귀속 연말정산 위탁운영 용역_과업내용서.hwp",
+              "locator": "BodyText/Section0 / paragraph 56 … BodyText/Section0 / paragraph 85",
+              "source_ranges": [
+                {
+                  "collection": "blocks",
+                  "block_id": "BodyText/Section0:paragraph:72:record:11818",
+                  "locator": "BodyText/Section0 / paragraph 72",
+                  "char_start": 3,
+                  "char_end": 31,
+                  "chunk_start": 257,
+                  "chunk_end": 285,
+                  "section": "BodyText/Section0"
+                }
+              ],
+              "source_method": "raw_parser",
+              "quality_flags": [
+                "document:HWP_LAYOUT_NOT_RENDERED",
+                "document:NON_TEXT_OBJECTS_PRESENT"
+              ],
+              "provenance_verified": true,
+              "semantic_entailment_verified": false,
+              "section": "BodyText/Section0"
+            }
+          ]
+        }
+      ],
+      "supported": null,
+      "complete": null,
+      "conditions_preserved": null,
+      "notes": ""
+    },
+    {
+      "row_id": "duration",
+      "label": "수행기간",
+      "state": "evidence_found",
+      "claims": [
+        {
+          "text": "계약체결일 ～ 2027. 3. 17",
+          "mode": "fact",
+          "citations": [
+            {
+              "chunk_id": "rfp:7a592ea538ed00d8:b981068191e2b609a8f1be09",
+              "quote": "기간 : 계약체결일 ～ 2027. 3. 17",
+              "quote_start": 52,
+              "quote_end": 76,
+              "doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+              "sha256": "7a592ea538ed00d8dca697c8cab8fadd110ec2a15902f8235b80bb7d960027bc",
+              "file_name": "인천공항시설관리(주)_2026_2026년도 귀속 연말정산 위탁운영 용역_과업내용서.hwp",
+              "locator": "BodyText/Section0 / paragraph 56 … BodyText/Section0 / paragraph 85",
+              "source_ranges": [
+                {
+                  "collection": "blocks",
+                  "block_id": "BodyText/Section0:paragraph:61:record:10332",
+                  "locator": "BodyText/Section0 / paragraph 61",
+                  "char_start": 3,
+                  "char_end": 27,
+                  "chunk_start": 52,
+                  "chunk_end": 76,
+                  "section": "BodyText/Section0"
+                }
+              ],
+              "source_method": "raw_parser",
+              "quality_flags": [
+                "document:HWP_LAYOUT_NOT_RENDERED",
+                "document:NON_TEXT_OBJECTS_PRESENT"
+              ],
+              "provenance_verified": true,
+              "semantic_entailment_verified": false,
+              "section": "BodyText/Section0"
+            }
+          ]
+        }
+      ],
+      "supported": null,
+      "complete": null,
+      "conditions_preserved": null,
+      "notes": ""
+    },
+    {
+      "row_id": "eligibility",
+      "label": "참가·수행자격",
+      "state": "evidence_found",
+      "claims": [
+        {
+          "text": "총괄책임자는 세무사 자격 소지자로 연말정산 업무 3년 이상의 유경험자로 하며, 인천공항시설관리(주) 상주 근무인력은 연말정산 업무 2년 이상의 유경험자 3명 이상으로 한다.",
+          "mode": "fact",
+          "citations": [
+            {
+              "chunk_id": "rfp:7a592ea538ed00d8:3a71051e783614acb43784d9",
+              "quote": "총괄책임자는 세무사 자격 소지자로 연말정산 업무 3년 이상의 유경험자로 하며, 인천공항시설관리(주) 상주 근무인력은 연말정산 업무 2년 이상의 유경험자 3명 이상으로 한다.",
+              "quote_start": 111,
+              "quote_end": 207,
+              "doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+              "sha256": "7a592ea538ed00d8dca697c8cab8fadd110ec2a15902f8235b80bb7d960027bc",
+              "file_name": "인천공항시설관리(주)_2026_2026년도 귀속 연말정산 위탁운영 용역_과업내용서.hwp",
+              "locator": "BodyText/Section0 / paragraph 155 … BodyText/Section0 / paragraph 181",
+              "source_ranges": [
+                {
+                  "collection": "blocks",
+                  "block_id": "BodyText/Section0:paragraph:165:record:25535",
+                  "locator": "BodyText/Section0 / paragraph 165",
+                  "char_start": 3,
+                  "char_end": 99,
+                  "chunk_start": 111,
+                  "chunk_end": 207,
+                  "section": "BodyText/Section0"
+                }
+              ],
+              "source_method": "raw_parser",
+              "quality_flags": [
+                "document:HWP_LAYOUT_NOT_RENDERED",
+                "document:NON_TEXT_OBJECTS_PRESENT"
+              ],
+              "provenance_verified": true,
+              "semantic_entailment_verified": false,
+              "section": "BodyText/Section0"
+            }
+          ]
+        }
+      ],
+      "supported": null,
+      "complete": null,
+      "conditions_preserved": null,
+      "notes": ""
+    },
+    {
+      "row_id": "submission_documents",
+      "label": "입찰 제출서류",
+      "state": "not_found_in_processed_input",
+      "claims": [],
+      "supported": null,
+      "complete": null,
+      "conditions_preserved": null,
+      "notes": ""
+    },
+    {
+      "row_id": "submission_deadline",
+      "label": "제출기한",
+      "state": "not_found_in_processed_input",
+      "claims": [],
+      "supported": null,
+      "complete": null,
+      "conditions_preserved": null,
+      "notes": ""
+    },
+    {
+      "row_id": "submission_method",
+      "label": "제출방식",
+      "state": "not_found_in_processed_input",
+      "claims": [],
+      "supported": null,
+      "complete": null,
+      "conditions_preserved": null,
+      "notes": ""
+    },
+    {
+      "row_id": "evaluation",
+      "label": "평가기준",
+      "state": "not_found_in_processed_input",
+      "claims": [],
+      "supported": null,
+      "complete": null,
+      "conditions_preserved": null,
+      "notes": ""
+    }
+  ],
+  "instructions": "각 항목의 주장과 인용을 대조한 뒤 supported, complete, conditions_preserved를 true/false로 기록하세요. 미확인·공고문 참조 항목도 상태가 적절한지 검토하세요. null은 미검토입니다.",
+  "automatic_semantic_pass": false,
+  "api_calls": 0
+}

@@ -1,0 +1,39 @@
+{
+  "passed": false,
+  "checks": {
+    "document_scope": true,
+    "source_version": true,
+    "plan_matches": true,
+    "all_source_chunks_listed": true,
+    "all_chunks_validated_once": false,
+    "execution_completed": false,
+    "answer_present": false,
+    "answer_status_usable": false,
+    "no_batch_errors": false,
+    "live_model_origin": false,
+    "batch_order_preserved": true,
+    "exact_model_requests_match": false,
+    "task_matches": true,
+    "quotes_revalidated": false,
+    "eleven_fields_in_order": true,
+    "field_display_matches_validated_claims": true,
+    "no_unprocessed_fields": false,
+    "field_states_match_claims": true
+  },
+  "failed_checks": [
+    "all_chunks_validated_once",
+    "execution_completed",
+    "answer_present",
+    "answer_status_usable",
+    "no_batch_errors",
+    "live_model_origin",
+    "exact_model_requests_match",
+    "quotes_revalidated",
+    "no_unprocessed_fields"
+  ],
+  "validation_errors": [
+    "응답 상태 값이 올바르지 않습니다."
+  ],
+  "semantic_quality_verified": false,
+  "partial_status_is_not_automatic_failure_or_pass": true
+}

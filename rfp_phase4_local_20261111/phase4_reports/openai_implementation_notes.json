@@ -1,0 +1,70 @@
+{
+  "implementation": "rfp_phase4/llm.py",
+  "default_model": "gpt-5.4-mini",
+  "official_sources": [
+    {
+      "url": "https://developers.openai.com/api/docs/models/gpt-5.4-mini.md",
+      "verified_by": "parent root",
+      "used_for": "explicit model ID and reasoning effort none; no latest-model fallback"
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/guides/structured-outputs.md",
+      "verified_by": "parent root",
+      "used_for": "Responses text.format json_schema strict structure"
+    },
+    {
+      "url": "https://developers.openai.com/api/reference/resources/responses/methods/create.md",
+      "verified_by": "parent root",
+      "used_for": "Responses create input/model/store/max_output_tokens/reasoning fields"
+    }
+  ],
+  "execution_here": {
+    "real_openai_calls": 0,
+    "sdk_installed": false,
+    "model_quality_measured": false,
+    "offline_llm_contract_tests": 22
+  },
+  "guards": [
+    "explicit enabled and OPENAI_API_KEY before generate/preflight",
+    "canonical ID + raw SHA source allowlist",
+    "full serialized UTF8 request byte cap including prompt/schema overhead",
+    "aggregate planned-call/byte budget before first request",
+    "max_output_tokens per request",
+    "SDK retries disabled;90-second timeout",
+    "attempts reserved even when API fails",
+    "source-free credential-free error messages"
+  ],
+  "cache": {
+    "type": "SQLite exact request cache",
+    "identity_includes": [
+      "prompt version",
+      "all request input",
+      "schema",
+      "model",
+      "reasoning configuration",
+      "all LLMConfig fields",
+      "live versus injected-test-client namespace"
+    ],
+    "validation": "request exact equality + stored response checksum + structural answer checks",
+    "cache_hit_current_usage": "zero current calls/tokens; original usage retained separately",
+    "scope": "API result cache; not semantic correctness validation"
+  },
+  "usage_fields": [
+    "input_tokens",
+    "cached_input_tokens",
+    "output_tokens",
+    "total_tokens",
+    "api_calls",
+    "usage_reported",
+    "latency_ms"
+  ],
+  "known_limitations": [
+    "UTF8 request bytes are size controls, not exact tokenizer counts or a cost estimate.",
+    "Quota counters apply to this client instance, not all processes or API accounts.",
+    "Planned calls do not guarantee semantic coverage or avoid all partial execution after external failures.",
+    "store=False is a request storage flag; this code does not promise zero data retention.",
+    "Structural answer validation is separate from exact quote provenance and human semantic entailment review.",
+    "client injection is intended only for explicitly labelled offline test doubles.",
+    "Model access, account balance, live SDK compatibility, actual pricing and generated-answer quality remain unmeasured here."
+  ]
+}

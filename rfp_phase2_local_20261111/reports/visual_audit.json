@@ -1,0 +1,239 @@
+{
+  "audit_date": "2026-11-11",
+  "scope": "Local, read-only original PDF visual sampling for Phase 2",
+  "pdf_sample_pages": 5,
+  "pdf_sample_documents": 5,
+  "rendered_review": true,
+  "all_original_pdf_pages_reviewed": false,
+  "samples": [
+    {
+      "doc_id": "16ustuZ1tzqsZYXqAQbGqwmn9DDoPwUeW",
+      "file_name": "한국해양과학기술원_2025_KIOST 연구선 빅데이터 통합관리시스템 구축_제안요청서 및 과업지시서_수정.pdf",
+      "sha256": "cd6392bd9e9e7d6c1a75e7a6c572caf22fa51d19fa9890a69514ac8d8cc9ad95",
+      "physical_page": 4,
+      "location": "PDF p.4",
+      "rendered_review": true,
+      "render_method": "PyMuPDF page rendering at 1.5x scale; image opened and visually inspected",
+      "fields_checked": [
+        {
+          "field": "budget",
+          "visual_value": "165,000,000원(부가가치세 포함)"
+        },
+        {
+          "field": "duration",
+          "visual_value": "계약체결일로부터 2025년 11월 30일 까지"
+        }
+      ],
+      "findings": [
+        {
+          "code": "VISUAL_VALUES_SUPPORTED",
+          "severity": "info",
+          "detail": "표제·예산·VAT·고정 종료일이 PDF 본문 추출과 일치. C004의 KIOST 쪽 비교값을 확인함."
+        }
+      ],
+      "printed_page_labels": [
+        "1"
+      ]
+    },
+    {
+      "doc_id": "1EMKe6hKnikAMXKJFufR5rU-nUBDguhJJ",
+      "file_name": "한국보훈복지의료공단_2026_2026년 통합요양정보시스템 유지관리 용역_제안요청서.pdf",
+      "sha256": "ec6ea84b6046d8e8da427233e85b7a0f83628dc2f16bf1e1dfd8818a1ebd639c",
+      "physical_page": 4,
+      "location": "PDF p.4",
+      "rendered_review": true,
+      "render_method": "PyMuPDF page rendering at 1.5x scale; image opened and visually inspected",
+      "fields_checked": [
+        {
+          "field": "budget",
+          "visual_value": "380백만원(VAT포함, 2년)"
+        },
+        {
+          "field": "budget_period_note",
+          "visual_value": "본사업비는 1차년도 사업예산 기준이며 2차년도 예산 확정에 따라 계약금액 조정 가능"
+        },
+        {
+          "field": "duration",
+          "visual_value": "계약일로부터 2년(24개월); 2026.05.05~2027.05.04 및 2027.05.05~2028.05.04"
+        },
+        {
+          "field": "table",
+          "visual_value": "내부 사용자 / 통합요양 정보시스템 / 26.05.05~28.05.04 / 8개 보훈요양원 및 보훈원 사용 업무시스템"
+        }
+      ],
+      "findings": [
+        {
+          "code": "SOURCE_CONTRADICTION_CONFIRMED",
+          "severity": "warning",
+          "detail": "예산 적용기간의 2년 표기와 1차년도 기준 주의문구가 같은 원문에 함께 보임. C018에서 단일 기준으로 확정하지 않는 처리가 타당함."
+        },
+        {
+          "code": "BASELINE_PDFPLUMBER_TABLE_CELL_OMISSION",
+          "severity": "high",
+          "detail": "pdfplumber 기본 표 추출은 실제 첫 데이터셀의 내부/사용자를 null로 반환. PyMuPDF find_tables는 해당 셀을 복구함. 실제 빈 셀이라는 확정은 금지.",
+          "baseline_engine": "pdfplumber.find_tables().extract()",
+          "alternative_engine": "PyMuPDF Page.find_tables().extract()",
+          "pipeline_resolution": "not_assessed_in_this_visual_audit"
+        }
+      ],
+      "printed_page_labels": [
+        "1"
+      ]
+    },
+    {
+      "doc_id": "1C_gC6ejtZNk9evO0A5pBpCvqpdxz63Sa",
+      "file_name": "우체국시설관리단_2026_2026년 정보시스템(인프라·응용) 통합 유지보수 용역 사업_제안요청서.pdf",
+      "sha256": "7566a59ff8df1a99bd6aba8dd2eaa2b9234634a0e530426a9b8fcbf03cef3e6e",
+      "physical_page": 4,
+      "location": "PDF p.4",
+      "rendered_review": true,
+      "render_method": "PyMuPDF page rendering at 1.5x scale; image opened and visually inspected",
+      "fields_checked": [
+        {
+          "field": "budget",
+          "visual_value": "899,969,257원(부가세 포함)"
+        },
+        {
+          "field": "duration",
+          "visual_value": "계약일로부터 12개월(1년)"
+        },
+        {
+          "field": "extension",
+          "visual_value": "차기 사업자 선정까지 계속 수행 가능, 비용은 기존 계약과 동일. 1개월 미만은 365기준 일할계산"
+        }
+      ],
+      "findings": [
+        {
+          "code": "VISUAL_VALUES_SUPPORTED",
+          "severity": "info",
+          "detail": "기간·비용·연장 및 일할 계산 조건이 같은 사업개요 문맥에 있고, C018 근거 값과 일치함."
+        }
+      ],
+      "printed_page_labels": [
+        "1"
+      ]
+    },
+    {
+      "doc_id": "1AdcUT3ExwGgqjIbCcxQkyJQEDK8QHlqu",
+      "file_name": "경기도체육회_2026_전국체육대회 모바일 플랫폼 구축 용역_제안요청서.pdf",
+      "sha256": "029f11371de44491d83d1c4491e18252190f7ad2247dbce1d746b22d8e2a0c0c",
+      "physical_page": 3,
+      "location": "PDF p.3",
+      "rendered_review": true,
+      "render_method": "PyMuPDF page rendering at 1.5x scale; image opened and visually inspected",
+      "fields_checked": [
+        {
+          "field": "large_company_floor_table",
+          "visual_value": "매출액 8천억원 이상 대기업 80억원 이상 / 미만 대기업 40억원 이상 / 요건을 갖춘 중견기업 20억원 이상"
+        },
+        {
+          "field": "qualification",
+          "visual_value": "본 사업은 대기업 참여 제한 사업임. 해당 표는 일반 하한 기준이며 본 사업 참가 가능 판정으로 바꾸지 않음."
+        },
+        {
+          "field": "joint_contract",
+          "visual_value": "단독 또는 공동수급 가능, 5개 기업 이내, 대표자 포함 구성원별 최소지분율 5% 이상(대표자 50% 이상)"
+        }
+      ],
+      "findings": [
+        {
+          "code": "TABLE_ROW_ASSOCIATIONS_VISUALLY_SUPPORTED",
+          "severity": "info",
+          "detail": "pdfplumber 표 추출의 각 기업 분류와 80/40/20억원 열 값이 실제 렌더와 일치함."
+        },
+        {
+          "code": "TWO_PRINTED_PAGES_ON_ONE_PHYSICAL_PAGE",
+          "severity": "info",
+          "detail": "물리 p.3에 인쇄 쪽수 -4-, -5-가 나란히 들어 있음. 출처는 물리 p.3를 기본으로 유지해야 함."
+        }
+      ],
+      "printed_page_labels": [
+        "4",
+        "5"
+      ]
+    },
+    {
+      "doc_id": "1XuHMGElCN1wjEBBucRF55JWKMCePUmUM",
+      "file_name": "한국예탁결제원_2024_차세대시스템(1단계) 구축 사업_제안요청서.pdf",
+      "sha256": "10574559caefec0344e890c3558d686f55aa80e3d971a607a7201a2834af8876",
+      "physical_page": 3,
+      "location": "PDF p.3",
+      "rendered_review": true,
+      "render_method": "PyMuPDF page rendering at 1.5x scale; image opened and visually inspected",
+      "fields_checked": [
+        {
+          "field": "project_name",
+          "visual_value": "차세대시스템(1단계) 구축 사업"
+        },
+        {
+          "field": "duration",
+          "visual_value": "계약체결일로부터 16개월 이내"
+        },
+        {
+          "field": "budget",
+          "visual_value": "71,620,000,000원 이내(부가세 포함)"
+        },
+        {
+          "field": "schedule_table_remarks",
+          "visual_value": "사전공개:나라장터; 입찰공고:나라장터·당사 홈페이지; 설명회:당사 서울사옥 12층; 계약체결:계약 체결일로부터 16개월 이내"
+        }
+      ],
+      "findings": [
+        {
+          "code": "OUTLINED_NUMERIC_TEXT_OMISSION",
+          "severity": "critical",
+          "detail": "충분한 본문 텍스트가 있는 페이지이지만 (1단계)의 숫자, 본문 사업기간의 16, 예산 71,620,000,000이 pypdf plain/layout 및 PyMuPDF get_text에서 누락됨. 실제 숫자는 PDF의 작은 곡선 drawing path로 렌더됨. 예산 숫자 영역 [145,300,252,325]에 자형 모양의 path 14개를 확인함. 저텍스트/이미지 여부만으로 품질 통과를 선언하면 안 됨.",
+          "missing_visual_strings": [
+            "1단계",
+            "16개월",
+            "71,620,000,000"
+          ],
+          "needs_manual_or_local_ocr_review": true,
+          "visual_transcription_must_remain_separate_from_automatic_text": true
+        },
+        {
+          "code": "BASELINE_PDFPLUMBER_REMARK_COLUMN_OMISSION",
+          "severity": "high",
+          "detail": "pdfplumber 기본 표 추출이 일정표 비고 열을 전부 null로 반환했으나 렌더에는 나라장터·사옥12층·16개월 등이 보임. PyMuPDF find_tables는 이 표의 해당 값을 복구함.",
+          "baseline_engine": "pdfplumber.find_tables().extract()",
+          "alternative_engine": "PyMuPDF Page.find_tables().extract()",
+          "pipeline_resolution": "not_assessed_in_this_visual_audit"
+        }
+      ],
+      "printed_page_labels": [
+        "1"
+      ]
+    }
+  ],
+  "supporting_text_audit": {
+    "case_id": "C004",
+    "doc_id": "1l00GwcV8rvLRVKt3P-RbFl-v-4jyRjIX",
+    "format": "hwp",
+    "rendered_review": false,
+    "method": "fresh original-byte HWP paragraph extraction",
+    "confirmed_source_text": [
+      {
+        "locator": "BodyText/Section0 / paragraph 63",
+        "text": "〇 사업예산: 금 165,000,000원(부가세포함)"
+      },
+      {
+        "locator": "BodyText/Section0 / paragraph 64",
+        "text": "(감리 111,000,000원, 개인정보 영향평가 55,000,000원)"
+      }
+    ],
+    "finding": "총액 165,000,000원과 감리111,000,000원+개인정보영향평가55,000,000원의 합계 불일치가 실제 원문 텍스트에 존재. HWP 시각 레이아웃은 이번 PDF 표본 검수 범위 밖."
+  },
+  "summary": {
+    "critical_numeric_omission_pages": 1,
+    "baseline_table_omission_pages": 2,
+    "source_contradiction_confirmed_pdf_pages": 1,
+    "pdf_values_visually_checked_without_critical_numeric_omission": 4
+  },
+  "limitations": [
+    "5개 물리 페이지 표본 검수로 나머지 PDF 또는 전체 표의 완전성을 보증하지 않는다.",
+    "렌더에서 읽은 수동 전사 값은 자동 파서의 추출값으로 표시하거나 조용히 섞어 넣지 않는다.",
+    "여기서 비교한 표 누락은 기본 pdfplumber 엔진의 관측 결과이며 최종 Phase 2 파이프라인의 fallback 반영 여부는 별도 검증해야 한다.",
+    "C004의 실제 금액 합계 충돌 문서는 HWP이므로 원본 텍스트를 별도 대조했으며 렌더 검수를 수행했다고 표시하지 않는다.",
+    "PNG는 임시 시각 점검 자료로만 보관하며 최종 사용자 산출물에 포함하지 않는다."
+  ]
+}

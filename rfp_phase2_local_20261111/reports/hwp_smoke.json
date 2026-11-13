@@ -1,0 +1,766 @@
+{
+  "files": 47,
+  "successes": 47,
+  "elapsed_seconds": 1.842,
+  "tables": 3877,
+  "explicit": 3876,
+  "unresolved": 1,
+  "text_comparison_mismatches": [],
+  "invalid_utf16_sequences": 1,
+  "records": [
+    {
+      "doc_id": "1vS0gKvI2Twk7z4E0eYSPxC5C_Dp7ONRO",
+      "name": "서울특별시_2026_2027년 재난정보관리시스템 유지관리 용역_제안요청서.hwpx",
+      "success": true,
+      "blocks": 4882,
+      "tables": 175,
+      "explicit": 175,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1wVR2B8RyCsod3YKjxacOb0i-wnUEFdlK",
+      "name": "인천공항시설관리(주)_2026_스마트패스 전용 출국장 운영 위탁 용역_과업내용서.hwp",
+      "success": true,
+      "blocks": 136,
+      "tables": 13,
+      "explicit": 13,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1dowigrTCTftGNYZnQ4vcp3udlbbd5Jis",
+      "name": "인천공항시설관리(주)_2026_인천공항 중수도시설 탈수슬러지 내부 수집·운반 및 외부 위탁 처리 용역_과업내용서.hwp",
+      "success": true,
+      "blocks": 164,
+      "tables": 20,
+      "explicit": 20,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+      "name": "인천공항시설관리(주)_2026_2026년도 귀속 연말정산 위탁운영 용역_과업내용서.hwp",
+      "success": true,
+      "blocks": 169,
+      "tables": 8,
+      "explicit": 8,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1598Hw8H5ir8TMaeiDYxI2o3J0DHjbkmS",
+      "name": "한국교통연구원_2026_인천공항 민간투자사업 관리이행계획 용역 중 사업추진방식 검토를 위한 재무분석_제안요청서_v1.0.hwp",
+      "success": true,
+      "blocks": 417,
+      "tables": 21,
+      "explicit": 21,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1dlsH9e52YIgjlNguew5sdvl-OrxWFs1L",
+      "name": "한국교통연구원_2026_민자도로 미납통행료 통합관리시스템 개인정보 영향평가 기능개선_제안요청서.hwp",
+      "success": true,
+      "blocks": 1304,
+      "tables": 40,
+      "explicit": 40,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "16ZOh4tAjsvz7_CyhMxKX-TABv22AIkWx",
+      "name": "독립기념관_2017_정보전략계획(ISP) 수립_제안요청서.hwp",
+      "success": true,
+      "blocks": 2079,
+      "tables": 81,
+      "explicit": 81,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "10VgdhAr_mMFerirAiK1UX3aNihfNFj0K",
+      "name": "고용노동부_2023_공정채용전산시스템 구축을 위한 정보전략계획(ISP) 수립_제안요청서.hwp",
+      "success": true,
+      "blocks": 2327,
+      "tables": 80,
+      "explicit": 80,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1YMcfFvzqquBL5I6I6OFMFG1ioFrjow6y",
+      "name": "한국콘텐츠진흥원_2021_정보화전략계획(ISP) 수립_제안요청서.hwp",
+      "success": true,
+      "blocks": 2643,
+      "tables": 111,
+      "explicit": 111,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1a-V5Targ1Cm2lz9Qrvx_0sDnhb2vE2Bu",
+      "name": "건강보험심사평가원_2020_차세대 보건의료빅데이터개방시스템 구축을 위한 정보전략계획(ISP) 수립_제안요청서.hwp",
+      "success": true,
+      "blocks": 1671,
+      "tables": 76,
+      "explicit": 76,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1cHsWc9-ZkDSUqn7v1hwyIzUK9kZiWqW0",
+      "name": "동의대학교_2026_차세대정보시스템 구축을 위한 BPR 기반의 ISP 수립_제안요청서.hwp",
+      "success": true,
+      "blocks": 3515,
+      "tables": 105,
+      "explicit": 105,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1xaFt1nrVYKhFlTuHNSOJgyrF7FhR90iL",
+      "name": "중소기업중앙회_2023_전사 데이터 통합을 위한 전략 수립·설계 ISMP_제안요청서_제출서류 하도급 관련 내용 추가.hwp",
+      "success": true,
+      "blocks": 1835,
+      "tables": 72,
+      "explicit": 72,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1Ctu3fu4uwYM4YbcJHm5KofzjDkVWhK3g",
+      "name": "한국토지주택공사_2018_건설기술정보시스템 고도화를 위한 ISMP 수립용역_제안요청서.hwp",
+      "success": true,
+      "blocks": 1237,
+      "tables": 40,
+      "explicit": 40,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1pzpo8ChZsm8EgtyKLzQ7GfQPBhi8qLZV",
+      "name": "한국지질자원연구원_2018_차세대 통합정보 포털시스템 마스터플랜(ISMP) 수립_제안요청서.hwp",
+      "success": true,
+      "blocks": 1350,
+      "tables": 62,
+      "explicit": 62,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1iy9KfQOw3bqa77H2Qo8wwiw0-E-X7OJa",
+      "name": "대한체육회_2021_스포츠클럽 종합정보시스템 마스터플랜(ISMP) 수립_제안요청서.hwp",
+      "success": true,
+      "blocks": 2810,
+      "tables": 135,
+      "explicit": 135,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1CoFw_qExHFvwtLbRwD4vkgqIon1WBzgp",
+      "name": "한국데이터산업진흥원_2026_2026년 AI·데이터 문제해결은행 맞춤지원 용역_제안요청서.hwp",
+      "success": true,
+      "blocks": 1223,
+      "tables": 61,
+      "explicit": 61,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "15aZg4x0h7cM71rtiHOBpJmExpej-cuR5",
+      "name": "한국언론진흥재단_2024_AI 메타데이터 구축 및 미디어 공공 AI 플랫폼 구축을 위한 ISP 수립_제안요청서_조달청 의견반영.hwp",
+      "success": true,
+      "blocks": 1512,
+      "tables": 68,
+      "explicit": 68,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+      "name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+      "success": true,
+      "blocks": 3146,
+      "tables": 120,
+      "explicit": 120,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+      "name": "한국정보통신진흥협회_2026_2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수_제안요청서.hwp",
+      "success": true,
+      "blocks": 533,
+      "tables": 21,
+      "explicit": 21,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1NtUmrjOWSxPDGb9-rnzaj745RS1tm4GA",
+      "name": "중소기업중앙회_2026_중소기업·소상공인 데이터 플랫폼 구축_제안요청서_2.1.hwp",
+      "success": true,
+      "blocks": 5804,
+      "tables": 172,
+      "explicit": 172,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "11CIxqRm5aQMOgXiuLp-I-JSfXfVbyGBN",
+      "name": "국토연구원_2022_2023~2025년 전산자원 통합유지보수 사업_제안요청서.hwp",
+      "success": true,
+      "blocks": 2323,
+      "tables": 77,
+      "explicit": 77,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "14f70wfqAqipngV6_uC04QrdgoWNXLGlv",
+      "name": "한국학호남진흥원_2025_2025년 소장 국학자료 원문이미지 DB 구축 용역_제안요청서.hwp",
+      "success": true,
+      "blocks": 1599,
+      "tables": 81,
+      "explicit": 80,
+      "unresolved": 1,
+      "warnings": {
+        "INVALID_UTF16_REPLACED": 1,
+        "TABLE_COORDINATES_UNRESOLVED": 1,
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 1
+    },
+    {
+      "doc_id": "1ZZD1GBN53RqC3tbT2w04mXfvXYs4uIht",
+      "name": "한국법제연구원_2022_통합정보시스템 고도화_제안요청서_최종.hwp",
+      "success": true,
+      "blocks": 2670,
+      "tables": 76,
+      "explicit": 76,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1jTD6IxSLJz5hrZxDyzCecph0iNZhXjjJ",
+      "name": "산업연구원_2025_2026년도 통합정보시스템 운영 및 유지관리 사업_제안요청서_수정.hwp",
+      "success": true,
+      "blocks": 4176,
+      "tables": 106,
+      "explicit": 106,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1CmE6rt1cYm1kWsth5GW1LZ9p8mwi3ytJ",
+      "name": "한국토지주택공사_2023_종이문서 내용증명 효력 대체를 위한 전자문서 유통 및 원본 증명플랫폼 구축_제안요청서.hwp",
+      "success": true,
+      "blocks": 1231,
+      "tables": 63,
+      "explicit": 63,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1zz_G1Ude3WZ0WXOJ8d83OcmqnvSZ9_6-",
+      "name": "새도약기금(주)_2026_결산지원 및 세무대리 용역_제안요청서_과업지시서 포함.hwp",
+      "success": true,
+      "blocks": 788,
+      "tables": 45,
+      "explicit": 45,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1xWS-RBK-kmWd7zxJqx4P5YnKIE_pMs2P",
+      "name": "한국주택금융공사_2021_RPA기반 자산관리 자동화시스템 고도화_제안요청서.hwp",
+      "success": true,
+      "blocks": 3564,
+      "tables": 115,
+      "explicit": 115,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+      "name": "한국주택금융공사_2023_HF 인사이트 시스템 개발_제안요청서.hwp",
+      "success": true,
+      "blocks": 5396,
+      "tables": 245,
+      "explicit": 245,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+      "name": "한국주택금융공사_2021_부동산 등기정보 시스템 구축_제안요청서.hwp",
+      "success": true,
+      "blocks": 3209,
+      "tables": 89,
+      "explicit": 89,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1Vs4zjMGMvvc2LlmZfJJYymoOAowguRwF",
+      "name": "한국은행_2024_전자계약시스템 구축_제안요청서.hwp",
+      "success": true,
+      "blocks": 3766,
+      "tables": 146,
+      "explicit": 146,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1l00GwcV8rvLRVKt3P-RbFl-v-4jyRjIX",
+      "name": "전남대학교병원_2021_차세대 병원정보시스템 구축 감리 및 개인정보영향평가_제안요청서.hwp",
+      "success": true,
+      "blocks": 1817,
+      "tables": 78,
+      "explicit": 78,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1xz7SvO9D-Fxv8Kt7LJgmalbaweUw2EnQ",
+      "name": "동의대학교_2025_차세대 그룹웨어 재구축_제안요청서.hwp",
+      "success": true,
+      "blocks": 2251,
+      "tables": 55,
+      "explicit": 55,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1cvH283_zLsDsY0ckJtjvUyZTPkTrcvI3",
+      "name": "은행권청년창업재단_2025_디캠프 통합시스템 구축_제안요청서.hwp",
+      "success": true,
+      "blocks": 1448,
+      "tables": 68,
+      "explicit": 68,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1pAst4NSqKtfAz79_mwrCdyMJ-TyHbuQ4",
+      "name": "한국저작권위원회_2016_차세대 업무지원 시스템 구축 사업_제안요청서.hwp",
+      "success": true,
+      "blocks": 3325,
+      "tables": 171,
+      "explicit": 171,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1FB_yRt6qzEEM37X5rQhplMNgbaNE0334",
+      "name": "연구개발특구진흥재단_2026_2026년 정보시스템(HW) 통합유지보수 용역_제안요청서.hwp",
+      "success": true,
+      "blocks": 2764,
+      "tables": 126,
+      "explicit": 126,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "144uKo5SrowxjhePog79gp3bAF8UEmFhp",
+      "name": "한국교육개발원_2026_2026년 디지털교육시스템 재구축 및 유지관리 사업 감리_제안요청서_수정.hwp",
+      "success": true,
+      "blocks": 1362,
+      "tables": 74,
+      "explicit": 74,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1kEi6KqkHNXULnxfkVu9GvEBTDrAa_0do",
+      "name": "한국해외인프라도시개발지원공사_2026_2025-26 경제혁신 파트너십 프로그램(EIPP) 필리핀 정부 데이터센터 구축 사업모델 설계 및 예비타당성조사_제안요청서_재공고.hwp",
+      "success": true,
+      "blocks": 678,
+      "tables": 31,
+      "explicit": 31,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1vFExTsYTuGJrEiHFRWfnlhHi_C9_DD0f",
+      "name": "한국산업기술진흥원_2024_KIAT 차세대 경영관리시스템 구축을 위한 마스터플랜(ISMP) 수립_제안요청서.hwp",
+      "success": true,
+      "blocks": 1584,
+      "tables": 53,
+      "explicit": 53,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1v1DALkWlDsXw0A6UI3BPbseMizPidPp-",
+      "name": "대한소방공제회_2022_중장기 정보화전략계획(ISP) 수립 용역_제안요청서_안.hwp",
+      "success": true,
+      "blocks": 1841,
+      "tables": 82,
+      "explicit": 82,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "101NcRKlfaH8xySktzY6qHtxqoZweYm_U",
+      "name": "한국지질자원연구원_2021_차세대 통합정보시스템 구축 감리용역_제안요청서.hwp",
+      "success": true,
+      "blocks": 1127,
+      "tables": 43,
+      "explicit": 43,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1jErDHXt97nu-WfR_ATA10e69RAI9w8uw",
+      "name": "중소기업기술정보진흥원_2025_2025년 대민정보시스템 통합운영체계 소규모 고도화_제안요청서_수정.hwp",
+      "success": true,
+      "blocks": 3606,
+      "tables": 140,
+      "explicit": 140,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1fs-0NkQhX02YQutTwkQsjSt5opxhJ8ds",
+      "name": "한국보건산업진흥원_2011_고객가치 창출 위한 중장기 정보화전략계획(ISP) 수립 용역_제안요청서.hwp",
+      "success": true,
+      "blocks": 1192,
+      "tables": 41,
+      "explicit": 41,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "175HvAdrzxnxgTkznqw9dmHlwwvtNBUDR",
+      "name": "한국해외인프라도시개발지원공사_2020_KIND 정보화전략계획(ISP) 수립_제안요청서_최종.hwp",
+      "success": true,
+      "blocks": 1561,
+      "tables": 70,
+      "explicit": 70,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1UbUehThgNJ13DAG_bkv25yMOfZfoSbgV",
+      "name": "국토연구원_2025_디지털 국토연구원 2030 정보화전략계획을 위한 ISP_제안요청서.hwp",
+      "success": true,
+      "blocks": 1983,
+      "tables": 73,
+      "explicit": 73,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1Z8-gw0xi7FV1SrotWiQdjQVUsNb3WOL9",
+      "name": "연구개발특구진흥재단_2015_정보화전략계획수립(ISP) 사업_제안요청서.hwp",
+      "success": true,
+      "blocks": 2019,
+      "tables": 73,
+      "explicit": 73,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "1d83yOtnEEHyPI597cC_cvgW8721pOCCL",
+      "name": "한국방송광고진흥공사_2023_홈페이지 통합 유지보수_제안요청서.hwp",
+      "success": true,
+      "blocks": 2065,
+      "tables": 83,
+      "explicit": 83,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    },
+    {
+      "doc_id": "10mxnQkrTtCqlg1KUf0GZ_Wm59BEldTn0",
+      "name": "독립기념관_2019_2019년 소장자료 DB 구축 및 시스템 보완_제안요청서.hwp",
+      "success": true,
+      "blocks": 2705,
+      "tables": 92,
+      "explicit": 92,
+      "unresolved": 0,
+      "warnings": {
+        "HWP_LAYOUT_NOT_RENDERED": 1,
+        "NON_TEXT_OBJECTS_PRESENT": 1
+      },
+      "raw_unchanged": true,
+      "matches_prior_visible_text": true,
+      "invalid_utf16_sequences": 0
+    }
+  ]
+}

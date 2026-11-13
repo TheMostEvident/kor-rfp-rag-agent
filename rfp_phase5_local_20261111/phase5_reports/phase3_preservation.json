@@ -1,0 +1,136 @@
+{
+  "all_preserved": true,
+  "files_checked": 32,
+  "api_calls": 0,
+  "files": [
+    {
+      "path": "local_rag/__init__.py",
+      "sha256": "23e7de457174bdb5ac8d9176f23817f0d5533f2e42d0aafe27c7966f2d538ff2"
+    },
+    {
+      "path": "local_rag/chunking.py",
+      "sha256": "9c9722857c3118982c8aa2950a1470929980425ba018510a12928c82af2fd066"
+    },
+    {
+      "path": "local_rag/embeddings.py",
+      "sha256": "677d26ef1a9a7983bfe187522006fa4d430bd0feba2d816204fa27685e5236c3"
+    },
+    {
+      "path": "local_rag/evaluation.py",
+      "sha256": "cd3ddcaeafbc3b094b9f308c5f79d1219cfe396de6175ced3ffc511814febc03"
+    },
+    {
+      "path": "local_rag/io.py",
+      "sha256": "7543b3b07af4b34ddfabdd87214849f66c2f2545f5966d03708e4190d3432b15"
+    },
+    {
+      "path": "local_rag/quality.py",
+      "sha256": "613aa009e297f0e9acadb26c53c79e64ab3fac69705a0f96243aaa610314c65e"
+    },
+    {
+      "path": "local_rag/retrieval.py",
+      "sha256": "7ae3fcad4ca551125a91e447d4478a6806eada764ff8ce188c04ac06eaccb240"
+    },
+    {
+      "path": "local_rag/session.py",
+      "sha256": "6f1ddd974e3cb19e248737aba37a4075bd55e5aeded16caa8eabcd6eaa5d4096"
+    },
+    {
+      "path": "data/chunks.jsonl",
+      "sha256": "9ef3ecb6e41234ea2463fb17a158f95b24fd2ee66d427097bb3799eeb886f604"
+    },
+    {
+      "path": "data/documents_manifest.json",
+      "sha256": "a446d65cc00ddb8cb64d88a85a85aa7f2656ebc8b37cd42a1f2a7a3daecffc34"
+    },
+    {
+      "path": "data/source_documents.jsonl",
+      "sha256": "b2acd993e4a19bba37519c9b59440f74b983a8fd6a1c076a8e4c41424dd74338"
+    },
+    {
+      "path": "data/source_evidence_validation.json",
+      "sha256": "d280fabecc49aae778039c39949c9397fa27906aa139af0dfc07c685c2d3c2f1"
+    },
+    {
+      "path": "index/char_idf.npy",
+      "sha256": "ca7223c1f8d71d9be2193f847d8f8408aa79507811d438c382574e4cf76f2b37"
+    },
+    {
+      "path": "index/char_vectors.npz",
+      "sha256": "df2c8304ccf4ee614da449bf9019328a711ab1b563a412f2dcca37da480c29c8"
+    },
+    {
+      "path": "index/char_vocabulary.json",
+      "sha256": "797dbbfa54655bae7fe253bb3bf11b1f7a5c6c00c691299d10b72f16025b4262"
+    },
+    {
+      "path": "index/chunks.sqlite3",
+      "sha256": "99483b9a5ca2482e2a0907c12fd185480b542098e35fa1f3d045d88050f2f79e"
+    },
+    {
+      "path": "index/index_meta.json",
+      "sha256": "c4c1030726db2e2d53830906043950cec8422e657227c05257bb896bd66a5c05"
+    },
+    {
+      "path": "reports/chunk_audit.json",
+      "sha256": "07ae41b74dd332db0bc8a1b6394eeb6b64b2b22e2184048ef9678e39c8de08f3"
+    },
+    {
+      "path": "reports/chunk_integrity.json",
+      "sha256": "2e81b70cbefba4860e15440963672a64773f6ff33522e52a5a6f63d617a81be1"
+    },
+    {
+      "path": "reports/dev_evaluation.json",
+      "sha256": "b6af6b54e54670534615d9ea31555bd05cf4506bcf3b59c812be520202bc12b4"
+    },
+    {
+      "path": "reports/embedding_adapter_notes.json",
+      "sha256": "7d74cd786f41a862b3d7f4dc385da6548cc1907ad3c29408dfc7d741d8aaa932"
+    },
+    {
+      "path": "reports/evidence_chunk_alignment.json",
+      "sha256": "7537620447fd856e2b76c4c3413e7b7eeaad449540065b37abc9b981587bf276"
+    },
+    {
+      "path": "reports/frozen_configuration.json",
+      "sha256": "53e49627ad490fab8c313701be3b472a01b2c9431b3ede007ec40f12ce8d672b"
+    },
+    {
+      "path": "reports/holdout_evaluation.json",
+      "sha256": "bc7b51f4f89d418a73e9ff77e62b70b3a7e50502ab568ddb6d7d91dce0d98ec2"
+    },
+    {
+      "path": "reports/index_build.json",
+      "sha256": "c50e5d94c27ce9f5a2d43ca89729972664c7a55ffe56e7c631fbee8d9fc041fd"
+    },
+    {
+      "path": "reports/notebook_execution.json",
+      "sha256": "9aa0a720c8027168a05893d0b1ab8678c651eefbe9813c1747db727b37695490"
+    },
+    {
+      "path": "reports/phase3_summary.json",
+      "sha256": "d72b56e65a93d66d076a5387c7c656b43549622d11d988a439fb7b271ed3f702"
+    },
+    {
+      "path": "reports/reference_influence.json",
+      "sha256": "8966906b8e79513ef309ccdad7560f7adca069c3d86e95ac889b9a08840bd904"
+    },
+    {
+      "path": "reports/retrieval_notes.json",
+      "sha256": "8bc39ef81547194319d16702a03262835d7fa87f34ce233f0295e8c8de42b1d8"
+    },
+    {
+      "path": "reports/run_manifest.json",
+      "sha256": "553a6514e76aa3f05d06e2203782ead72a4e86054af4f72b68375f77814a8d35"
+    },
+    {
+      "path": "reports/selection.json",
+      "sha256": "9c2871f341b18011c47977a32bd1dc82ee8d75d386076d78ea63dc029a05f5c0"
+    },
+    {
+      "path": "reports/test_results.json",
+      "sha256": "643fe2b82156375d255946f8440736a5bfcb9611ae7c8aae1dbeea4164d336ea"
+    }
+  ],
+  "scope": "Phase3 code, sources, chunks, index and historical reports preserved from existing Phase4 package."
+}

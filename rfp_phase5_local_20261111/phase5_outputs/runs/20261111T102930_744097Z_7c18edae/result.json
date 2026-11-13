@@ -1,0 +1,263 @@
+{
+  "status": "error",
+  "execution_status": "incomplete",
+  "doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+  "valid": false,
+  "claims": [],
+  "missing_information": [
+    "사업명: 미실행·미처리",
+    "발주기관: 미실행·미처리",
+    "목적: 미실행·미처리",
+    "주요 범위·필수요건: 미실행·미처리",
+    "예산·VAT: 미실행·미처리",
+    "수행기간: 미실행·미처리",
+    "참가·수행자격: 미실행·미처리",
+    "입찰 제출서류: 미실행·미처리",
+    "제출기한: 미실행·미처리",
+    "제출방식: 미실행·미처리",
+    "평가기준: 미실행·미처리",
+    "일부 원문 청크를 검증된 요약으로 처리하지 못했습니다. 전체 문서 요약으로 확정할 수 없습니다."
+  ],
+  "errors": [
+    "map-0001:batch_failed:LLMError"
+  ],
+  "answer_generated": false,
+  "markdown": "| 항목 | 내용 | 확인 상태 |\n| --- | --- | --- |\n| 사업명 | 아직 요약을 실행하지 않았거나 이 항목을 처리하지 못했습니다. | 미실행·미처리 |\n| 발주기관 | 아직 요약을 실행하지 않았거나 이 항목을 처리하지 못했습니다. | 미실행·미처리 |\n| 목적 | 아직 요약을 실행하지 않았거나 이 항목을 처리하지 못했습니다. | 미실행·미처리 |\n| 주요 범위·필수요건 | 아직 요약을 실행하지 않았거나 이 항목을 처리하지 못했습니다. | 미실행·미처리 |\n| 예산·VAT | 아직 요약을 실행하지 않았거나 이 항목을 처리하지 못했습니다. | 미실행·미처리 |\n| 수행기간 | 아직 요약을 실행하지 않았거나 이 항목을 처리하지 못했습니다. | 미실행·미처리 |\n| 참가·수행자격 | 아직 요약을 실행하지 않았거나 이 항목을 처리하지 못했습니다. | 미실행·미처리 |\n| 입찰 제출서류 | 아직 요약을 실행하지 않았거나 이 항목을 처리하지 못했습니다. | 미실행·미처리 |\n| 제출기한 | 아직 요약을 실행하지 않았거나 이 항목을 처리하지 못했습니다. | 미실행·미처리 |\n| 제출방식 | 아직 요약을 실행하지 않았거나 이 항목을 처리하지 못했습니다. | 미실행·미처리 |\n| 평가기준 | 아직 요약을 실행하지 않았거나 이 항목을 처리하지 못했습니다. | 미실행·미처리 |\n\n추가 확인 사항:\n\n- 일부 입력이 미처리 상태입니다\\. 이 결과를 전체 문서 요약으로 확정할 수 없습니다\\.\n\n입력 처리율과 인용문 출처를 검사했습니다. 항목의 정확성·조건 보존·요약 완전성은 사람이 원문과 대조해야 합니다.",
+  "source_chunk_ids": [
+    "rfp:7a592ea538ed00d8:a092b9e6d7a3dbe7c8631089",
+    "rfp:7a592ea538ed00d8:7dc335b16b1558e6b8b01413",
+    "rfp:7a592ea538ed00d8:f4c22283c4653cd578793f54",
+    "rfp:7a592ea538ed00d8:cd42d4371b5329490bb1b02b",
+    "rfp:7a592ea538ed00d8:5fc159b3fdef431d0a26e660",
+    "rfp:7a592ea538ed00d8:b981068191e2b609a8f1be09",
+    "rfp:7a592ea538ed00d8:dbbceeb83154d2cd023671b6",
+    "rfp:7a592ea538ed00d8:7e42d073e1d33a172f38a340",
+    "rfp:7a592ea538ed00d8:f016bf104189babcc5826c26",
+    "rfp:7a592ea538ed00d8:dc07bcf68b4cb7e31e385904",
+    "rfp:7a592ea538ed00d8:3a71051e783614acb43784d9",
+    "rfp:7a592ea538ed00d8:4f3cd1e3e6881325bb917f62",
+    "rfp:7a592ea538ed00d8:31db9888d4ddcb8f10d98bcd",
+    "rfp:7a592ea538ed00d8:30a9382a4b30aa80c01a3581",
+    "rfp:7a592ea538ed00d8:709b184c588861489923b48b",
+    "rfp:7a592ea538ed00d8:0c13290021000b5b33ef7669",
+    "rfp:7a592ea538ed00d8:e08ff186c0b3ccf19323ad2a",
+    "rfp:7a592ea538ed00d8:5045f236ada3294483a9ff0e"
+  ],
+  "processed_chunk_ids": [],
+  "response_received_chunk_ids": [],
+  "request_attempted_chunk_ids": [
+    "rfp:7a592ea538ed00d8:a092b9e6d7a3dbe7c8631089",
+    "rfp:7a592ea538ed00d8:7dc335b16b1558e6b8b01413",
+    "rfp:7a592ea538ed00d8:f4c22283c4653cd578793f54",
+    "rfp:7a592ea538ed00d8:cd42d4371b5329490bb1b02b",
+    "rfp:7a592ea538ed00d8:5fc159b3fdef431d0a26e660",
+    "rfp:7a592ea538ed00d8:b981068191e2b609a8f1be09",
+    "rfp:7a592ea538ed00d8:dbbceeb83154d2cd023671b6",
+    "rfp:7a592ea538ed00d8:7e42d073e1d33a172f38a340",
+    "rfp:7a592ea538ed00d8:f016bf104189babcc5826c26",
+    "rfp:7a592ea538ed00d8:dc07bcf68b4cb7e31e385904",
+    "rfp:7a592ea538ed00d8:3a71051e783614acb43784d9",
+    "rfp:7a592ea538ed00d8:4f3cd1e3e6881325bb917f62",
+    "rfp:7a592ea538ed00d8:31db9888d4ddcb8f10d98bcd",
+    "rfp:7a592ea538ed00d8:30a9382a4b30aa80c01a3581",
+    "rfp:7a592ea538ed00d8:709b184c588861489923b48b",
+    "rfp:7a592ea538ed00d8:0c13290021000b5b33ef7669",
+    "rfp:7a592ea538ed00d8:e08ff186c0b3ccf19323ad2a",
+    "rfp:7a592ea538ed00d8:5045f236ada3294483a9ff0e"
+  ],
+  "input_chunk_coverage": 0.0,
+  "validated_chunk_coverage": 0.0,
+  "batch_outcomes": [
+    {
+      "batch_id": "map-0001",
+      "chunk_ids": [
+        "rfp:7a592ea538ed00d8:a092b9e6d7a3dbe7c8631089",
+        "rfp:7a592ea538ed00d8:7dc335b16b1558e6b8b01413",
+        "rfp:7a592ea538ed00d8:f4c22283c4653cd578793f54",
+        "rfp:7a592ea538ed00d8:cd42d4371b5329490bb1b02b",
+        "rfp:7a592ea538ed00d8:5fc159b3fdef431d0a26e660",
+        "rfp:7a592ea538ed00d8:b981068191e2b609a8f1be09",
+        "rfp:7a592ea538ed00d8:dbbceeb83154d2cd023671b6",
+        "rfp:7a592ea538ed00d8:7e42d073e1d33a172f38a340",
+        "rfp:7a592ea538ed00d8:f016bf104189babcc5826c26",
+        "rfp:7a592ea538ed00d8:dc07bcf68b4cb7e31e385904",
+        "rfp:7a592ea538ed00d8:3a71051e783614acb43784d9",
+        "rfp:7a592ea538ed00d8:4f3cd1e3e6881325bb917f62",
+        "rfp:7a592ea538ed00d8:31db9888d4ddcb8f10d98bcd",
+        "rfp:7a592ea538ed00d8:30a9382a4b30aa80c01a3581",
+        "rfp:7a592ea538ed00d8:709b184c588861489923b48b",
+        "rfp:7a592ea538ed00d8:0c13290021000b5b33ef7669",
+        "rfp:7a592ea538ed00d8:e08ff186c0b3ccf19323ad2a",
+        "rfp:7a592ea538ed00d8:5045f236ada3294483a9ff0e"
+      ],
+      "request_bytes": 31301,
+      "status": "error",
+      "valid": false,
+      "usage": {},
+      "live_api": false,
+      "cache_hit": false,
+      "api_called": false,
+      "reason": "batch_failed:LLMError"
+    }
+  ],
+  "map_calls": 1,
+  "plan_fingerprint": "626f5bf661f3781d715b87a8834009a2fdccf53ea3c106754c4d86b5023be5a9",
+  "preflight": {
+    "valid": true,
+    "request_count": 1,
+    "uncached_requests": 1,
+    "cached_requests": 0,
+    "input_bytes_to_reserve": 31301,
+    "remaining_calls": 30,
+    "remaining_input_bytes": 600000,
+    "budget_scope": "This client instance, UTF-8 request bytes; not a price or tokenizer estimate"
+  },
+  "aggregation_method": "deterministic_merge_of_source_validated_map_claims",
+  "semantic_coverage_verified": false,
+  "semantic_entailment_verified": false,
+  "answer_correctness_verified": false,
+  "usage": {
+    "api_calls": 1,
+    "live_api_calls": 1,
+    "mock_calls": 0,
+    "input_tokens": 8752,
+    "output_tokens": 1569,
+    "total_tokens": 10321,
+    "usage_unknown_attempts": 0,
+    "cached_input_tokens": 0,
+    "scope": "Counters for this summary invocation; failed attempts may have unknown token usage."
+  },
+  "input_coverage_definition": "Fraction of indexed chunks with a completed model/cache response. Validated coverage separately requires valid source citations.",
+  "scope": "Full-document map input and citation provenance only; semantic accuracy/completeness needs review.",
+  "partial_batch_count": 0,
+  "elapsed_seconds": 7.40790991600079,
+  "latency_ms": 7407.912416005274,
+  "llm_session_usage": {
+    "api_calls": 1,
+    "live_api_calls": 1,
+    "mock_calls": 0,
+    "cache_hits": 0,
+    "failed_attempts": 1,
+    "attempted_input_bytes": 31301,
+    "reserved_max_output_tokens": 6000,
+    "reported_input_tokens": 8752,
+    "reported_output_tokens": 1569,
+    "reported_cached_input_tokens": 0,
+    "reported_total_tokens": 10321,
+    "usage_unknown_attempts": 0,
+    "request_latency_ms": 6807.261333997303,
+    "max_calls": 30,
+    "max_total_input_bytes": 600000,
+    "execution_mode": "live_openai",
+    "enabled": true,
+    "budget_unit": "UTF-8 serialized request bytes; not token count or currency"
+  },
+  "field_contract_failures": [],
+  "fields": [
+    {
+      "field_id": "project_name",
+      "label": "사업명",
+      "state": "not_processed",
+      "claims": [],
+      "notes": []
+    },
+    {
+      "field_id": "issuing_agency",
+      "label": "발주기관",
+      "state": "not_processed",
+      "claims": [],
+      "notes": []
+    },
+    {
+      "field_id": "purpose",
+      "label": "목적",
+      "state": "not_processed",
+      "claims": [],
+      "notes": []
+    },
+    {
+      "field_id": "scope_requirements",
+      "label": "주요 범위·필수요건",
+      "state": "not_processed",
+      "claims": [],
+      "notes": []
+    },
+    {
+      "field_id": "budget_vat",
+      "label": "예산·VAT",
+      "state": "not_processed",
+      "claims": [],
+      "notes": []
+    },
+    {
+      "field_id": "duration",
+      "label": "수행기간",
+      "state": "not_processed",
+      "claims": [],
+      "notes": []
+    },
+    {
+      "field_id": "eligibility",
+      "label": "참가·수행자격",
+      "state": "not_processed",
+      "claims": [],
+      "notes": []
+    },
+    {
+      "field_id": "submission_documents",
+      "label": "입찰 제출서류",
+      "state": "not_processed",
+      "claims": [],
+      "notes": []
+    },
+    {
+      "field_id": "submission_deadline",
+      "label": "제출기한",
+      "state": "not_processed",
+      "claims": [],
+      "notes": []
+    },
+    {
+      "field_id": "submission_method",
+      "label": "제출방식",
+      "state": "not_processed",
+      "claims": [],
+      "notes": []
+    },
+    {
+      "field_id": "evaluation",
+      "label": "평가기준",
+      "state": "not_processed",
+      "claims": [],
+      "notes": []
+    }
+  ],
+  "field_ids": [
+    "project_name",
+    "issuing_agency",
+    "purpose",
+    "scope_requirements",
+    "budget_vat",
+    "duration",
+    "eligibility",
+    "submission_documents",
+    "submission_deadline",
+    "submission_method",
+    "evaluation"
+  ],
+  "task": "phase5_field_summary_map_v1",
+  "field_schema_fingerprint": "9c03ffa648c65e8c8eb9e2681362e00c00aeadad15c24722e1ad824bdfabae37",
+  "semantic_quality_verified": false,
+  "automatic_conflict_resolution": false,
+  "field_uncertainty_notes": [],
+  "phase4_missing_information": [
+    "사업 개요: 검증된 근거를 확보하지 못했습니다.",
+    "요구사항: 검증된 근거를 확보하지 못했습니다.",
+    "예산·부가세: 검증된 근거를 확보하지 못했습니다.",
+    "사업기간: 검증된 근거를 확보하지 못했습니다.",
+    "참가자격: 검증된 근거를 확보하지 못했습니다.",
+    "제출 방식·기한: 검증된 근거를 확보하지 못했습니다.",
+    "평가 기준: 검증된 근거를 확보하지 못했습니다.",
+    "일부 원문 청크를 검증된 요약으로 처리하지 못했습니다. 전체 문서 요약으로 확정할 수 없습니다."
+  ]
+}

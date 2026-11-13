@@ -1,0 +1,50 @@
+{
+  "snapshot_date": "2026-11-10",
+  "file_count": 100,
+  "unique_content_count": 99,
+  "detected_format_counts": {
+    "hwpx": 23,
+    "hwp": 47,
+    "pdf": 30
+  },
+  "assigned_unique_document_splits": {
+    "dev": 60,
+    "holdout": 39
+  },
+  "format_warnings": [
+    {
+      "doc_id": "1vS0gKvI2Twk7z4E0eYSPxC5C_Dp7ONRO",
+      "name": "서울특별시_2026_2027년 재난정보관리시스템 유지관리 용역_제안요청서.hwpx",
+      "warnings": [
+        "extension_does_not_match_magic"
+      ]
+    },
+    {
+      "doc_id": "14f70wfqAqipngV6_uC04QrdgoWNXLGlv",
+      "name": "한국학호남진흥원_2025_2025년 소장 국학자료 원문이미지 DB 구축 용역_제안요청서.hwp",
+      "warnings": [
+        "one_invalid_utf16_unit_replaced_in_extracted_text"
+      ]
+    }
+  ],
+  "year_unconfirmed_count": 3,
+  "duplicate_groups": [
+    {
+      "sha256": "2ebe4f67d0d96038ce7cf19fcb2ee2508b8ae326769186a57dd77224ae4a3e0e",
+      "doc_ids": [
+        "1xKsQBA7bQBUP-6K1LxUgPJyPRfn1vPzV",
+        "1n-HK-TE9dzF1Gcu36vaU3Duib4ZJoP8t"
+      ]
+    }
+  ],
+  "extracted_blocks": 102162,
+  "extracted_characters": 6390760,
+  "pdf_empty_text_pages": [],
+  "parsing_quality_status": "text_extracted_with_known_limitations",
+  "limitations": [
+    "본문 추출 성공은 원본 표의 행·열, 그림, 도식과 문서 의미의 완전 보존을 뜻하지 않는다.",
+    "HWP/HWPX 위치는 인쇄 페이지가 아닌 내부 섹션·문단 또는 XML 경로다.",
+    "확장자 불일치와 UTF-16 불량 문자 각 1건은 Phase 2 원본 파싱 검증 대상으로 유지한다."
+  ],
+  "rag_performance_measured": false
+}

@@ -1,0 +1,10 @@
+{
+  "basis": "사용자가 mid-project-rfp-public 전체 폴더를 공개 RFP 자료로 지정하고 OpenAI API RAG 실습을 요청했다.",
+  "scope": "현재 2026-11-10 스냅샷의 100개 파일/고유 내용 99개에서 추출한 텍스트 및 필요한 출처 메타데이터",
+  "per_document_field": "data/documents.json의 api_scope, api_scope_basis",
+  "source_classification": "user_declared_public_rfp",
+  "private_documents_in_current_scope": false,
+  "future_added_documents_included_automatically": false,
+  "executed_openai_api_calls_in_phase1": 0,
+  "legal_or_source_publication_audit_claimed": false
+}

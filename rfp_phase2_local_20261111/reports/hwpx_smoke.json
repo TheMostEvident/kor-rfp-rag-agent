@@ -1,0 +1,684 @@
+{
+  "parser": "local_hwpx_v1",
+  "files": 23,
+  "parsed": 23,
+  "failed": 0,
+  "seconds": 11.134,
+  "tables": 2845,
+  "cells": 78940,
+  "unresolved_tables": 0,
+  "reference_exact_phase1_count": 21,
+  "logical_text_coverage_equal_count": 23,
+  "rows": [
+    {
+      "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+      "index": 0,
+      "name": "서울특별시_2026_2027년 글로벌 패션브랜드 육성 용역_제안요청서.hwpx",
+      "status": "parsed",
+      "blocks": 1446,
+      "tables": 79,
+      "cells": 1283,
+      "unresolved_tables": 0,
+      "reference_exact_phase1": true,
+      "logical_text_coverage_equal": true,
+      "all_locators_present": true,
+      "block_ids_unique": true,
+      "warnings": [],
+      "raw_sha256_unchanged": true,
+      "reference_whitespace_equivalent_phase1": true
+    },
+    {
+      "doc_id": "1r9U5jWIS2dH5sWME9V3sYAWsfGJK7f-Z",
+      "index": 1,
+      "name": "서울특별시_2026_2027년~2028년 운수사업관리시스템 운영 및 유지관리 용역_제안요청서_안_수정.hwpx",
+      "status": "parsed",
+      "blocks": 5308,
+      "tables": 186,
+      "cells": 5530,
+      "unresolved_tables": 0,
+      "reference_exact_phase1": true,
+      "logical_text_coverage_equal": true,
+      "all_locators_present": true,
+      "block_ids_unique": true,
+      "warnings": [
+        {
+          "code": "NON_TEXT_OBJECTS_PRESENT",
+          "locator": "Contents/section0.xml",
+          "message": "그림·수식·OLE·차트의 내부 의미는 텍스트 파싱만으로 판독하지 않습니다.",
+          "counts": {
+            "pic": 4
+          }
+        },
+        {
+          "code": "NON_TEXT_OBJECTS_PRESENT",
+          "locator": "Contents/section1.xml",
+          "message": "그림·수식·OLE·차트의 내부 의미는 텍스트 파싱만으로 판독하지 않습니다.",
+          "counts": {
+            "equation": 1
+          }
+        }
+      ],
+      "raw_sha256_unchanged": true,
+      "reference_whitespace_equivalent_phase1": true
+    },
+    {
+      "doc_id": "1F2r3WEuclWA4qqGeHKd2Cve2Z-5aGCVS",
+      "index": 2,
+      "name": "서울특별시_2026_2027년 침수예측 정보시스템 유지관리_제안요청서_안.hwpx",
+      "status": "parsed",
+      "blocks": 4590,
+      "tables": 170,
+      "cells": 4690,
+      "unresolved_tables": 0,
+      "reference_exact_phase1": true,
+      "logical_text_coverage_equal": true,
+      "all_locators_present": true,
+      "block_ids_unique": true,
+      "warnings": [
+        {
+          "code": "NON_TEXT_OBJECTS_PRESENT",
+          "locator": "Contents/section0.xml",
+          "message": "그림·수식·OLE·차트의 내부 의미는 텍스트 파싱만으로 판독하지 않습니다.",
+          "counts": {
+            "pic": 8
+          }
+        },
+        {
+          "code": "NON_TEXT_OBJECTS_PRESENT",
+          "locator": "Contents/section1.xml",
+          "message": "그림·수식·OLE·차트의 내부 의미는 텍스트 파싱만으로 판독하지 않습니다.",
+          "counts": {
+            "equation": 1
+          }
+        }
+      ],
+      "raw_sha256_unchanged": true,
+      "reference_whitespace_equivalent_phase1": true
+    },
+    {
+      "doc_id": "1sfm6lUnIJweumey2Xf_A9s1_Q3qqAVpG",
+      "index": 3,
+      "name": "서울특별시_2026_2027년 서울1인가구 포털 운영 및 유지관리 용역_제안요청서.hwpx",
+      "status": "parsed",
+      "blocks": 5026,
+      "tables": 182,
+      "cells": 5041,
+      "unresolved_tables": 0,
+      "reference_exact_phase1": true,
+      "logical_text_coverage_equal": true,
+      "all_locators_present": true,
+      "block_ids_unique": true,
+      "warnings": [
+        {
+          "code": "NON_TEXT_OBJECTS_PRESENT",
+          "locator": "Contents/section0.xml",
+          "message": "그림·수식·OLE·차트의 내부 의미는 텍스트 파싱만으로 판독하지 않습니다.",
+          "counts": {
+            "pic": 2
+          }
+        },
+        {
+          "code": "NON_TEXT_OBJECTS_PRESENT",
+          "locator": "Contents/section1.xml",
+          "message": "그림·수식·OLE·차트의 내부 의미는 텍스트 파싱만으로 판독하지 않습니다.",
+          "counts": {
+            "pic": 1,
+            "equation": 1
+          }
+        }
+      ],
+      "raw_sha256_unchanged": true,
+      "reference_whitespace_equivalent_phase1": true
+    },
+    {
+      "doc_id": "1fmwaCwhTRFFf3sdOofxsM61Z0Dnf1PAT",
+      "index": 4,
+      "name": "서울특별시_2026_2027년 서울형 빅데이터 표준분석모델 개발 및 운영_제안요청서.hwpx",
+      "status": "parsed",
+      "blocks": 4689,
+      "tables": 168,
+      "cells": 5046,
+      "unresolved_tables": 0,
+      "reference_exact_phase1": true,
+      "logical_text_coverage_equal": true,
+      "all_locators_present": true,
+      "block_ids_unique": true,
+      "warnings": [
+        {
+          "code": "NON_TEXT_OBJECTS_PRESENT",
+          "locator": "Contents/section0.xml",
+          "message": "그림·수식·OLE·차트의 내부 의미는 텍스트 파싱만으로 판독하지 않습니다.",
+          "counts": {
+            "pic": 2
+          }
+        },
+        {
+          "code": "NON_TEXT_OBJECTS_PRESENT",
+          "locator": "Contents/section1.xml",
+          "message": "그림·수식·OLE·차트의 내부 의미는 텍스트 파싱만으로 판독하지 않습니다.",
+          "counts": {
+            "pic": 4
+          }
+        },
+        {
+          "code": "NON_TEXT_OBJECTS_PRESENT",
+          "locator": "Contents/section4.xml",
+          "message": "그림·수식·OLE·차트의 내부 의미는 텍스트 파싱만으로 판독하지 않습니다.",
+          "counts": {
+            "pic": 1
+          }
+        }
+      ],
+      "raw_sha256_unchanged": true,
+      "reference_whitespace_equivalent_phase1": true
+    },
+    {
+      "doc_id": "1WurPq0NFZWcrH3Pv7-I0uUrh4vI32WXw",
+      "index": 5,
+      "name": "서울특별시_2026_2027 서울패션위크 트레이드쇼 운영 용역_제안요청서.hwpx",
+      "status": "parsed",
+      "blocks": 1298,
+      "tables": 68,
+      "cells": 1067,
+      "unresolved_tables": 0,
+      "reference_exact_phase1": true,
+      "logical_text_coverage_equal": true,
+      "all_locators_present": true,
+      "block_ids_unique": true,
+      "warnings": [],
+      "raw_sha256_unchanged": true,
+      "reference_whitespace_equivalent_phase1": true
+    },
+    {
+      "doc_id": "1m91j7dxXyL1mACr5_i8SuDDBtVJ3kUdt",
+      "index": 6,
+      "name": "교육부_2023_교육분야 행정감사 혁신방안 연구_제안요청서.hwpx",
+      "status": "parsed",
+      "blocks": 450,
+      "tables": 19,
+      "cells": 437,
+      "unresolved_tables": 0,
+      "reference_exact_phase1": true,
+      "logical_text_coverage_equal": true,
+      "all_locators_present": true,
+      "block_ids_unique": true,
+      "warnings": [
+        {
+          "code": "NON_TEXT_OBJECTS_PRESENT",
+          "locator": "Contents/section0.xml",
+          "message": "그림·수식·OLE·차트의 내부 의미는 텍스트 파싱만으로 판독하지 않습니다.",
+          "counts": {
+            "pic": 1
+          }
+        }
+      ],
+      "raw_sha256_unchanged": true,
+      "reference_whitespace_equivalent_phase1": true
+    },
+    {
+      "doc_id": "1gfUGse358dtZ76JEy6aE9zAlX_U06TBg",
+      "index": 7,
+      "name": "교육부_2025_고등교육기관 기록물 보존 및 활용을 위한 기록관리 체계 개선 연구_제안요청서.hwpx",
+      "status": "parsed",
+      "blocks": 390,
+      "tables": 18,
+      "cells": 396,
+      "unresolved_tables": 0,
+      "reference_exact_phase1": true,
+      "logical_text_coverage_equal": true,
+      "all_locators_present": true,
+      "block_ids_unique": true,
+      "warnings": [],
+      "raw_sha256_unchanged": true,
+      "reference_whitespace_equivalent_phase1": true
+    },
+    {
+      "doc_id": "1EQrriyIFdXChV8ggaPQeSiTqIiV0Vwrx",
+      "index": 8,
+      "name": "서울특별시 소방재난본부_2026_드론 및 통합관제시스템 구매 설치_제안요청서.hwpx",
+      "status": "parsed",
+      "blocks": 5217,
+      "tables": 169,
+      "cells": 5454,
+      "unresolved_tables": 0,
+      "reference_exact_phase1": true,
+      "logical_text_coverage_equal": true,
+      "all_locators_present": true,
+      "block_ids_unique": true,
+      "warnings": [
+        {
+          "code": "NON_TEXT_OBJECTS_PRESENT",
+          "locator": "Contents/section0.xml",
+          "message": "그림·수식·OLE·차트의 내부 의미는 텍스트 파싱만으로 판독하지 않습니다.",
+          "counts": {
+            "pic": 2
+          }
+        },
+        {
+          "code": "NON_TEXT_OBJECTS_PRESENT",
+          "locator": "Contents/section1.xml",
+          "message": "그림·수식·OLE·차트의 내부 의미는 텍스트 파싱만으로 판독하지 않습니다.",
+          "counts": {
+            "equation": 1
+          }
+        }
+      ],
+      "raw_sha256_unchanged": true,
+      "reference_whitespace_equivalent_phase1": true
+    },
+    {
+      "doc_id": "1BXohWiMwG6Y4cLlxKJM_IVXCmvTmKnsK",
+      "index": 9,
+      "name": "서울특별시_2026_2027년 에코마일리지(누리집, 건물, 승용차, 녹색실천) 시스템 운영 및 유지관리_제안요청서.hwpx",
+      "status": "parsed",
+      "blocks": 5028,
+      "tables": 176,
+      "cells": 4919,
+      "unresolved_tables": 0,
+      "reference_exact_phase1": true,
+      "logical_text_coverage_equal": true,
+      "all_locators_present": true,
+      "block_ids_unique": true,
+      "warnings": [
+        {
+          "code": "NON_TEXT_OBJECTS_PRESENT",
+          "locator": "Contents/section0.xml",
+          "message": "그림·수식·OLE·차트의 내부 의미는 텍스트 파싱만으로 판독하지 않습니다.",
+          "counts": {
+            "pic": 1
+          }
+        },
+        {
+          "code": "NON_TEXT_OBJECTS_PRESENT",
+          "locator": "Contents/section1.xml",
+          "message": "그림·수식·OLE·차트의 내부 의미는 텍스트 파싱만으로 판독하지 않습니다.",
+          "counts": {
+            "equation": 1
+          }
+        }
+      ],
+      "raw_sha256_unchanged": true,
+      "reference_whitespace_equivalent_phase1": true
+    },
+    {
+      "doc_id": "14S5JZ_eGGmYNhadH9j4yTFiLCextru3T",
+      "index": 10,
+      "name": "서울특별시_2026_2027년 서울 부동산동향분석시스템 운영 및 통합유지관리 용역_제안요청서.hwpx",
+      "status": "parsed",
+      "blocks": 4671,
+      "tables": 155,
+      "cells": 4865,
+      "unresolved_tables": 0,
+      "reference_exact_phase1": true,
+      "logical_text_coverage_equal": true,
+      "all_locators_present": true,
+      "block_ids_unique": true,
+      "warnings": [
+        {
+          "code": "NON_TEXT_OBJECTS_PRESENT",
+          "locator": "Contents/section0.xml",
+          "message": "그림·수식·OLE·차트의 내부 의미는 텍스트 파싱만으로 판독하지 않습니다.",
+          "counts": {
+            "pic": 1
+          }
+        },
+        {
+          "code": "NON_TEXT_OBJECTS_PRESENT",
+          "locator": "Contents/section1.xml",
+          "message": "그림·수식·OLE·차트의 내부 의미는 텍스트 파싱만으로 판독하지 않습니다.",
+          "counts": {
+            "pic": 3,
+            "equation": 1
+          }
+        }
+      ],
+      "raw_sha256_unchanged": true,
+      "reference_whitespace_equivalent_phase1": true
+    },
+    {
+      "doc_id": "11b_E7njNxjC73j6Cuk_DIrJNuODkFsL_",
+      "index": 12,
+      "name": "서울특별시_2026_2027년 본관청사 영상·음향설비 유지관리 용역_제안요청서.hwpx",
+      "status": "parsed",
+      "blocks": 3971,
+      "tables": 147,
+      "cells": 3661,
+      "unresolved_tables": 0,
+      "reference_exact_phase1": true,
+      "logical_text_coverage_equal": true,
+      "all_locators_present": true,
+      "block_ids_unique": true,
+      "warnings": [],
+      "raw_sha256_unchanged": true,
+      "reference_whitespace_equivalent_phase1": true
+    },
+    {
+      "doc_id": "1Hp2qPBf8jq7oNd-lxpvqrfBke76nH5q7",
+      "index": 13,
+      "name": "서울특별시_2026_2027년 서울 영테크 재무정보시스템 운영 및 유지관리 용역_제안요청서_사전규격.hwpx",
+      "status": "parsed",
+      "blocks": 4913,
+      "tables": 172,
+      "cells": 4909,
+      "unresolved_tables": 0,
+      "reference_exact_phase1": true,
+      "logical_text_coverage_equal": true,
+      "all_locators_present": true,
+      "block_ids_unique": true,
+      "warnings": [
+        {
+          "code": "NON_TEXT_OBJECTS_PRESENT",
+          "locator": "Contents/section0.xml",
+          "message": "그림·수식·OLE·차트의 내부 의미는 텍스트 파싱만으로 판독하지 않습니다.",
+          "counts": {
+            "pic": 1
+          }
+        },
+        {
+          "code": "NON_TEXT_OBJECTS_PRESENT",
+          "locator": "Contents/section1.xml",
+          "message": "그림·수식·OLE·차트의 내부 의미는 텍스트 파싱만으로 판독하지 않습니다.",
+          "counts": {
+            "equation": 1
+          }
+        }
+      ],
+      "raw_sha256_unchanged": true,
+      "reference_whitespace_equivalent_phase1": true
+    },
+    {
+      "doc_id": "17yA51-wumavNjJ6QYgJetmQg1J7NNn3A",
+      "index": 14,
+      "name": "서울특별시_2026_서울특별시환경교육센터 관리 및 운영_제안요청서.hwpx",
+      "status": "parsed",
+      "blocks": 1896,
+      "tables": 99,
+      "cells": 1917,
+      "unresolved_tables": 0,
+      "reference_exact_phase1": true,
+      "logical_text_coverage_equal": true,
+      "all_locators_present": true,
+      "block_ids_unique": true,
+      "warnings": [
+        {
+          "code": "NON_TEXT_OBJECTS_PRESENT",
+          "locator": "Contents/section0.xml",
+          "message": "그림·수식·OLE·차트의 내부 의미는 텍스트 파싱만으로 판독하지 않습니다.",
+          "counts": {
+            "pic": 5
+          }
+        }
+      ],
+      "raw_sha256_unchanged": true,
+      "reference_whitespace_equivalent_phase1": true
+    },
+    {
+      "doc_id": "1RZRd0tIku73WuBhheTx0Ya8AwSMBp1zd",
+      "index": 15,
+      "name": "서울특별시_2026_2027년 응답소·민원분석시스템 운영 및 유지관리 용역_제안요청서.hwpx",
+      "status": "parsed",
+      "blocks": 7585,
+      "tables": 310,
+      "cells": 7680,
+      "unresolved_tables": 0,
+      "reference_exact_phase1": true,
+      "logical_text_coverage_equal": true,
+      "all_locators_present": true,
+      "block_ids_unique": true,
+      "warnings": [
+        {
+          "code": "NON_TEXT_OBJECTS_PRESENT",
+          "locator": "Contents/section0.xml",
+          "message": "그림·수식·OLE·차트의 내부 의미는 텍스트 파싱만으로 판독하지 않습니다.",
+          "counts": {
+            "pic": 4
+          }
+        },
+        {
+          "code": "NON_TEXT_OBJECTS_PRESENT",
+          "locator": "Contents/section1.xml",
+          "message": "그림·수식·OLE·차트의 내부 의미는 텍스트 파싱만으로 판독하지 않습니다.",
+          "counts": {
+            "pic": 1,
+            "equation": 8
+          }
+        }
+      ],
+      "raw_sha256_unchanged": true,
+      "reference_whitespace_equivalent_phase1": true
+    },
+    {
+      "doc_id": "12hznYfRCJ-ouZwHIt5yyaSNABtMaig3f",
+      "index": 21,
+      "name": "법제처_2024_정부입법 통합 플랫폼 구축 정보화전략계획 수립_제안요청서.hwpx",
+      "status": "parsed",
+      "blocks": 2439,
+      "tables": 85,
+      "cells": 2515,
+      "unresolved_tables": 0,
+      "reference_exact_phase1": true,
+      "logical_text_coverage_equal": true,
+      "all_locators_present": true,
+      "block_ids_unique": true,
+      "warnings": [
+        {
+          "code": "NON_TEXT_OBJECTS_PRESENT",
+          "locator": "Contents/section0.xml",
+          "message": "그림·수식·OLE·차트의 내부 의미는 텍스트 파싱만으로 판독하지 않습니다.",
+          "counts": {
+            "pic": 4
+          }
+        }
+      ],
+      "raw_sha256_unchanged": true,
+      "reference_whitespace_equivalent_phase1": true
+    },
+    {
+      "doc_id": "10SowRByVfYiIaTqD5yKoAfmz3bpcgZRB",
+      "index": 22,
+      "name": "경기도_2024_2025년~2026년 정보시스템 통합유지관리 용역_제안요청서_안.hwpx",
+      "status": "parsed",
+      "blocks": 3718,
+      "tables": 122,
+      "cells": 4018,
+      "unresolved_tables": 0,
+      "reference_exact_phase1": true,
+      "logical_text_coverage_equal": true,
+      "all_locators_present": true,
+      "block_ids_unique": true,
+      "warnings": [],
+      "raw_sha256_unchanged": true,
+      "reference_whitespace_equivalent_phase1": true
+    },
+    {
+      "doc_id": "1IDHcStbxWMMQunKKA_gmKuqIpQOCcMpJ",
+      "index": 32,
+      "name": "한국콘텐츠진흥원_2023_스토리움 정보시스템마스터플랜(ISMP) 수립_제안요청서_복사본.hwpx",
+      "status": "parsed",
+      "blocks": 2923,
+      "tables": 108,
+      "cells": 2928,
+      "unresolved_tables": 0,
+      "reference_exact_phase1": true,
+      "logical_text_coverage_equal": true,
+      "all_locators_present": true,
+      "block_ids_unique": true,
+      "warnings": [
+        {
+          "code": "NON_TEXT_OBJECTS_PRESENT",
+          "locator": "Contents/section0.xml",
+          "message": "그림·수식·OLE·차트의 내부 의미는 텍스트 파싱만으로 판독하지 않습니다.",
+          "counts": {
+            "pic": 4
+          }
+        }
+      ],
+      "raw_sha256_unchanged": true,
+      "reference_whitespace_equivalent_phase1": true
+    },
+    {
+      "doc_id": "1bfh2w8DvNWynoJubbnEdCrCvrn1EUe-q",
+      "index": 34,
+      "name": "한국지능정보사회진흥원_2025_인공지능 모델 성능 평가·검증 데이터 과제기획·발굴_제안요청서.hwpx",
+      "status": "parsed",
+      "blocks": 789,
+      "tables": 37,
+      "cells": 427,
+      "unresolved_tables": 0,
+      "reference_exact_phase1": true,
+      "logical_text_coverage_equal": true,
+      "all_locators_present": true,
+      "block_ids_unique": true,
+      "warnings": [
+        {
+          "code": "NON_TEXT_OBJECTS_PRESENT",
+          "locator": "Contents/section0.xml",
+          "message": "그림·수식·OLE·차트의 내부 의미는 텍스트 파싱만으로 판독하지 않습니다.",
+          "counts": {
+            "pic": 2
+          }
+        }
+      ],
+      "raw_sha256_unchanged": true,
+      "reference_whitespace_equivalent_phase1": true
+    },
+    {
+      "doc_id": "1inrLkiNWeI1JvXmoIBV7ZEzyxIMPGO6q",
+      "index": 41,
+      "name": "한국인터넷진흥원_차세대 ISMS-P 시스템 고도화 정보화전략계획 수립_제안요청서.hwpx",
+      "status": "parsed",
+      "blocks": 2303,
+      "tables": 92,
+      "cells": 2872,
+      "unresolved_tables": 0,
+      "reference_exact_phase1": true,
+      "logical_text_coverage_equal": true,
+      "all_locators_present": true,
+      "block_ids_unique": true,
+      "warnings": [
+        {
+          "code": "NON_TEXT_OBJECTS_PRESENT",
+          "locator": "Contents/section0.xml",
+          "message": "그림·수식·OLE·차트의 내부 의미는 텍스트 파싱만으로 판독하지 않습니다.",
+          "counts": {
+            "pic": 1
+          }
+        },
+        {
+          "code": "NON_TEXT_OBJECTS_PRESENT",
+          "locator": "Contents/section1.xml",
+          "message": "그림·수식·OLE·차트의 내부 의미는 텍스트 파싱만으로 판독하지 않습니다.",
+          "counts": {
+            "pic": 2
+          }
+        }
+      ],
+      "raw_sha256_unchanged": true,
+      "reference_whitespace_equivalent_phase1": true
+    },
+    {
+      "doc_id": "1cSCToR2w6pxA3QxgDxwNyQpULW-VuDKw",
+      "index": 42,
+      "name": "한국인터넷진흥원_2026_26년 차세대 보안리더 양성 통합 운영지원_제안요청서.hwpx",
+      "status": "parsed",
+      "blocks": 1265,
+      "tables": 60,
+      "cells": 895,
+      "unresolved_tables": 0,
+      "reference_exact_phase1": true,
+      "logical_text_coverage_equal": true,
+      "all_locators_present": true,
+      "block_ids_unique": true,
+      "warnings": [
+        {
+          "code": "NON_TEXT_OBJECTS_PRESENT",
+          "locator": "Contents/section0.xml",
+          "message": "그림·수식·OLE·차트의 내부 의미는 텍스트 파싱만으로 판독하지 않습니다.",
+          "counts": {
+            "pic": 5
+          }
+        }
+      ],
+      "raw_sha256_unchanged": true,
+      "reference_whitespace_equivalent_phase1": true
+    },
+    {
+      "doc_id": "17huu1bWjSkjL9dAs4fjS4rd1QH2MTloD",
+      "index": 54,
+      "name": "충청북도교육연구정보원_2026_충청북도교육청 5단계 스쿨넷서비스_제안요청서.hwpx",
+      "status": "parsed",
+      "blocks": 5745,
+      "tables": 117,
+      "cells": 6204,
+      "unresolved_tables": 0,
+      "reference_exact_phase1": false,
+      "logical_text_coverage_equal": true,
+      "all_locators_present": true,
+      "block_ids_unique": true,
+      "warnings": [
+        {
+          "code": "NON_TEXT_OBJECTS_PRESENT",
+          "locator": "Contents/section0.xml",
+          "message": "그림·수식·OLE·차트의 내부 의미는 텍스트 파싱만으로 판독하지 않습니다.",
+          "counts": {
+            "pic": 7
+          }
+        }
+      ],
+      "raw_sha256_unchanged": true,
+      "reference_whitespace_equivalent_phase1": false
+    },
+    {
+      "doc_id": "1UfY7peoPg9ZMX_Nd6yudcbLTYEcH0LuV",
+      "index": 84,
+      "name": "한국지능정보사회진흥원_2024_정보시스템 통합유지관리_제안요청서_최종_수정본.hwpx",
+      "status": "parsed",
+      "blocks": 2900,
+      "tables": 106,
+      "cells": 2186,
+      "unresolved_tables": 0,
+      "reference_exact_phase1": false,
+      "logical_text_coverage_equal": true,
+      "all_locators_present": true,
+      "block_ids_unique": true,
+      "warnings": [
+        {
+          "code": "NON_TEXT_OBJECTS_PRESENT",
+          "locator": "Contents/section0.xml",
+          "message": "그림·수식·OLE·차트의 내부 의미는 텍스트 파싱만으로 판독하지 않습니다.",
+          "counts": {
+            "pic": 4,
+            "equation": 3
+          }
+        }
+      ],
+      "raw_sha256_unchanged": true,
+      "reference_whitespace_equivalent_phase1": false
+    }
+  ],
+  "limitations": [
+    "원문 XML의 논리 순서이며 인쇄 페이지·시각적 읽기 순서는 재구성하지 않는다.",
+    "그림·수식·OLE·차트 내용은 별도 시각/OCR 점검 대상이다.",
+    "reference_blocks는 인용 검증 전용이며 일반 blocks와 이중 인덱싱하면 안 된다.",
+    "54·84번은 이전 스냅샷의 누락·줄바꿈 차이가 있어 완전 문자열/공백 정규화 일치가 아니다. 기존 비공백 텍스트는 신규 추출의 부분수열이며 원문 텍스트는 삭제하지 않았다."
+  ],
+  "reference_whitespace_equivalent_phase1_count": 21,
+  "tests_passed": 14,
+  "snapshot_differences": [
+    {
+      "index": 54,
+      "phase1_nonwhitespace_chars": 62201,
+      "new_nonwhitespace_chars": 62351,
+      "phase1_is_subsequence_of_new": true,
+      "cause": "이전 추출에서 누락된 탭 뒤 목차 쪽수 등 XML 인라인 텍스트를 신규 파서가 보존함. 빈 텍스트·문단 줄바꿈 처리도 다름."
+    },
+    {
+      "index": 84,
+      "phase1_nonwhitespace_chars": 50165,
+      "new_nonwhitespace_chars": 50806,
+      "phase1_is_subsequence_of_new": true,
+      "cause": "이전 추출에서 누락된 XML 인라인 텍스트(공정거래 준수 안내 표제 등)를 신규 파서가 보존함. 빈 <t> 줄바꿈 처리도 다름."
+    }
+  ],
+  "module_sha256": "14d9f95f61ae5013dd2ca9ac88b7c800ab8defa9aad03b654de62f37945efabd"
+}

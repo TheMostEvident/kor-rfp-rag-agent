@@ -1,0 +1,733 @@
+{
+  "total": 684,
+  "exact_matches": 680,
+  "normalized_matches": 4,
+  "unmatched": 0,
+  "hash_mismatch": 0,
+  "missing_document": 0,
+  "invalid_evidence": 0,
+  "alias_source_mismatch": 0,
+  "ambiguous_matches": 1,
+  "resolved_matches": 683,
+  "at_original_locator": 684,
+  "relocated_matches": 0,
+  "reference_view_matches": 100,
+  "coverage": {
+    "found_fraction": 1.0,
+    "exact_fraction": 0.9941520467836257,
+    "resolved_fraction": 0.9985380116959064
+  },
+  "all_links_found": true,
+  "all_locations_resolved": false,
+  "cases_without_evidence": [
+    "U007",
+    "U008",
+    "U009",
+    "U014"
+  ],
+  "case_results": [
+    {
+      "case_id": "C001",
+      "evidence_links": 6,
+      "matched_links": 6,
+      "resolved_links": 6,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "C002",
+      "evidence_links": 7,
+      "matched_links": 7,
+      "resolved_links": 7,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "C003",
+      "evidence_links": 6,
+      "matched_links": 6,
+      "resolved_links": 6,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "C004",
+      "evidence_links": 5,
+      "matched_links": 5,
+      "resolved_links": 5,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "C005",
+      "evidence_links": 4,
+      "matched_links": 4,
+      "resolved_links": 4,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "C006",
+      "evidence_links": 4,
+      "matched_links": 4,
+      "resolved_links": 4,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "C007",
+      "evidence_links": 6,
+      "matched_links": 6,
+      "resolved_links": 6,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "C008",
+      "evidence_links": 4,
+      "matched_links": 4,
+      "resolved_links": 4,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "C009",
+      "evidence_links": 9,
+      "matched_links": 9,
+      "resolved_links": 9,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "C010",
+      "evidence_links": 5,
+      "matched_links": 5,
+      "resolved_links": 5,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "C011",
+      "evidence_links": 7,
+      "matched_links": 7,
+      "resolved_links": 7,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "C012",
+      "evidence_links": 6,
+      "matched_links": 6,
+      "resolved_links": 6,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "D001",
+      "evidence_links": 3,
+      "matched_links": 3,
+      "resolved_links": 3,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "D002",
+      "evidence_links": 5,
+      "matched_links": 5,
+      "resolved_links": 5,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "D003",
+      "evidence_links": 4,
+      "matched_links": 4,
+      "resolved_links": 4,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "D004",
+      "evidence_links": 4,
+      "matched_links": 4,
+      "resolved_links": 4,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "D005",
+      "evidence_links": 5,
+      "matched_links": 5,
+      "resolved_links": 5,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "D006",
+      "evidence_links": 6,
+      "matched_links": 6,
+      "resolved_links": 6,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "D007",
+      "evidence_links": 3,
+      "matched_links": 3,
+      "resolved_links": 3,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "D008",
+      "evidence_links": 3,
+      "matched_links": 3,
+      "resolved_links": 3,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "D009",
+      "evidence_links": 4,
+      "matched_links": 4,
+      "resolved_links": 4,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "D010",
+      "evidence_links": 4,
+      "matched_links": 4,
+      "resolved_links": 4,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "D011",
+      "evidence_links": 5,
+      "matched_links": 5,
+      "resolved_links": 5,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "D012",
+      "evidence_links": 4,
+      "matched_links": 4,
+      "resolved_links": 4,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "F001",
+      "evidence_links": 1,
+      "matched_links": 1,
+      "resolved_links": 1,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "F002",
+      "evidence_links": 1,
+      "matched_links": 1,
+      "resolved_links": 1,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "F003",
+      "evidence_links": 1,
+      "matched_links": 1,
+      "resolved_links": 1,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "F004",
+      "evidence_links": 2,
+      "matched_links": 2,
+      "resolved_links": 2,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "F005",
+      "evidence_links": 1,
+      "matched_links": 1,
+      "resolved_links": 1,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "F006",
+      "evidence_links": 1,
+      "matched_links": 1,
+      "resolved_links": 1,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "F007",
+      "evidence_links": 1,
+      "matched_links": 1,
+      "resolved_links": 1,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "F008",
+      "evidence_links": 1,
+      "matched_links": 1,
+      "resolved_links": 1,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "F009",
+      "evidence_links": 2,
+      "matched_links": 2,
+      "resolved_links": 2,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "F010",
+      "evidence_links": 2,
+      "matched_links": 2,
+      "resolved_links": 2,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "F011",
+      "evidence_links": 1,
+      "matched_links": 1,
+      "resolved_links": 1,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "F012",
+      "evidence_links": 1,
+      "matched_links": 1,
+      "resolved_links": 1,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "F013",
+      "evidence_links": 1,
+      "matched_links": 1,
+      "resolved_links": 1,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "F014",
+      "evidence_links": 2,
+      "matched_links": 2,
+      "resolved_links": 2,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "F015",
+      "evidence_links": 2,
+      "matched_links": 2,
+      "resolved_links": 2,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "S001",
+      "evidence_links": 14,
+      "matched_links": 14,
+      "resolved_links": 14,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "S002",
+      "evidence_links": 17,
+      "matched_links": 17,
+      "resolved_links": 17,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "S003",
+      "evidence_links": 19,
+      "matched_links": 19,
+      "resolved_links": 19,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "S004",
+      "evidence_links": 31,
+      "matched_links": 31,
+      "resolved_links": 31,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "S005",
+      "evidence_links": 16,
+      "matched_links": 16,
+      "resolved_links": 16,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "S006",
+      "evidence_links": 24,
+      "matched_links": 24,
+      "resolved_links": 24,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "S007",
+      "evidence_links": 40,
+      "matched_links": 40,
+      "resolved_links": 40,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "S008",
+      "evidence_links": 28,
+      "matched_links": 28,
+      "resolved_links": 28,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "S009",
+      "evidence_links": 18,
+      "matched_links": 18,
+      "resolved_links": 18,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "S010",
+      "evidence_links": 23,
+      "matched_links": 23,
+      "resolved_links": 23,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "S011",
+      "evidence_links": 14,
+      "matched_links": 14,
+      "resolved_links": 14,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "S012",
+      "evidence_links": 32,
+      "matched_links": 32,
+      "resolved_links": 32,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "U001",
+      "evidence_links": 2,
+      "matched_links": 2,
+      "resolved_links": 1,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "U002",
+      "evidence_links": 2,
+      "matched_links": 2,
+      "resolved_links": 2,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "U003",
+      "evidence_links": 1,
+      "matched_links": 1,
+      "resolved_links": 1,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "U004",
+      "evidence_links": 1,
+      "matched_links": 1,
+      "resolved_links": 1,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "U005",
+      "evidence_links": 1,
+      "matched_links": 1,
+      "resolved_links": 1,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "U006",
+      "evidence_links": 1,
+      "matched_links": 1,
+      "resolved_links": 1,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "U007",
+      "evidence_links": 0,
+      "matched_links": 0,
+      "resolved_links": 0,
+      "has_source_evidence": false
+    },
+    {
+      "case_id": "U008",
+      "evidence_links": 0,
+      "matched_links": 0,
+      "resolved_links": 0,
+      "has_source_evidence": false
+    },
+    {
+      "case_id": "U009",
+      "evidence_links": 0,
+      "matched_links": 0,
+      "resolved_links": 0,
+      "has_source_evidence": false
+    },
+    {
+      "case_id": "C013",
+      "evidence_links": 6,
+      "matched_links": 6,
+      "resolved_links": 6,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "C014",
+      "evidence_links": 7,
+      "matched_links": 7,
+      "resolved_links": 7,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "C015",
+      "evidence_links": 6,
+      "matched_links": 6,
+      "resolved_links": 6,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "C016",
+      "evidence_links": 5,
+      "matched_links": 5,
+      "resolved_links": 5,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "C017",
+      "evidence_links": 6,
+      "matched_links": 6,
+      "resolved_links": 6,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "C018",
+      "evidence_links": 4,
+      "matched_links": 4,
+      "resolved_links": 4,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "C019",
+      "evidence_links": 4,
+      "matched_links": 4,
+      "resolved_links": 4,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "C020",
+      "evidence_links": 5,
+      "matched_links": 5,
+      "resolved_links": 5,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "D013",
+      "evidence_links": 4,
+      "matched_links": 4,
+      "resolved_links": 4,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "D014",
+      "evidence_links": 3,
+      "matched_links": 3,
+      "resolved_links": 3,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "D015",
+      "evidence_links": 3,
+      "matched_links": 3,
+      "resolved_links": 3,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "D016",
+      "evidence_links": 3,
+      "matched_links": 3,
+      "resolved_links": 3,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "D017",
+      "evidence_links": 4,
+      "matched_links": 4,
+      "resolved_links": 4,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "D018",
+      "evidence_links": 4,
+      "matched_links": 4,
+      "resolved_links": 4,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "D019",
+      "evidence_links": 6,
+      "matched_links": 6,
+      "resolved_links": 6,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "D020",
+      "evidence_links": 2,
+      "matched_links": 2,
+      "resolved_links": 2,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "F016",
+      "evidence_links": 2,
+      "matched_links": 2,
+      "resolved_links": 2,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "F017",
+      "evidence_links": 3,
+      "matched_links": 3,
+      "resolved_links": 3,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "F018",
+      "evidence_links": 1,
+      "matched_links": 1,
+      "resolved_links": 1,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "F019",
+      "evidence_links": 1,
+      "matched_links": 1,
+      "resolved_links": 1,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "F020",
+      "evidence_links": 3,
+      "matched_links": 3,
+      "resolved_links": 3,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "F021",
+      "evidence_links": 2,
+      "matched_links": 2,
+      "resolved_links": 2,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "F022",
+      "evidence_links": 2,
+      "matched_links": 2,
+      "resolved_links": 2,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "F023",
+      "evidence_links": 2,
+      "matched_links": 2,
+      "resolved_links": 2,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "F024",
+      "evidence_links": 1,
+      "matched_links": 1,
+      "resolved_links": 1,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "F025",
+      "evidence_links": 2,
+      "matched_links": 2,
+      "resolved_links": 2,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "S013",
+      "evidence_links": 19,
+      "matched_links": 19,
+      "resolved_links": 19,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "S014",
+      "evidence_links": 15,
+      "matched_links": 15,
+      "resolved_links": 15,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "S015",
+      "evidence_links": 24,
+      "matched_links": 24,
+      "resolved_links": 24,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "S016",
+      "evidence_links": 30,
+      "matched_links": 30,
+      "resolved_links": 30,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "S017",
+      "evidence_links": 18,
+      "matched_links": 18,
+      "resolved_links": 18,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "S018",
+      "evidence_links": 17,
+      "matched_links": 17,
+      "resolved_links": 17,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "S019",
+      "evidence_links": 18,
+      "matched_links": 18,
+      "resolved_links": 18,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "S020",
+      "evidence_links": 22,
+      "matched_links": 22,
+      "resolved_links": 22,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "U010",
+      "evidence_links": 2,
+      "matched_links": 2,
+      "resolved_links": 2,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "U011",
+      "evidence_links": 2,
+      "matched_links": 2,
+      "resolved_links": 2,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "U012",
+      "evidence_links": 1,
+      "matched_links": 1,
+      "resolved_links": 1,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "U013",
+      "evidence_links": 1,
+      "matched_links": 1,
+      "resolved_links": 1,
+      "has_source_evidence": true
+    },
+    {
+      "case_id": "U014",
+      "evidence_links": 0,
+      "matched_links": 0,
+      "resolved_links": 0,
+      "has_source_evidence": false
+    },
+    {
+      "case_id": "U015",
+      "evidence_links": 1,
+      "matched_links": 1,
+      "resolved_links": 1,
+      "has_source_evidence": true
+    }
+  ],
+  "verification_scope": "새 파싱 원문의 해시·인용 복구·원문 위치 검증. 의미 지원 여부와 실제 RAG 답변 성능 평가는 별도.",
+  "hash_basis": "로더가 새 원본 바이트에서 계산한 documents[].sha256과 gold 원본 해시를 비교함",
+  "offset_convention": "정규화 전 block.text의 0 기반 Python 문자 인덱스, char_end 미포함"
+}

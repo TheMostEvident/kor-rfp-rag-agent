@@ -1,0 +1,146 @@
+{
+  "version": "phase5-source-audit-v1",
+  "doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+  "source_sha256": "7a592ea538ed00d8dca697c8cab8fadd110ec2a15902f8235b80bb7d960027bc",
+  "input_result_fingerprint": "5987de6634acab6ac30d505cddcf072e05f1559a712621aff6ac2f959cb3700a",
+  "processed_chunk_count": 18,
+  "document_chunk_count": 18,
+  "all_input_chunks_processed": true,
+  "original_claim_count": 6,
+  "original_citation_count": 20,
+  "original_quotes_revalidated": true,
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "rule_id": "unit_price_settlement",
+      "field_id": "budget_vat",
+      "label": "예산·VAT",
+      "source_quote": "※ 본 사업은 단가계약으로, 대금은 실제 대상인원에 대하여 정산하여 지급",
+      "citations": [
+        {
+          "chunk_id": "rfp:7a592ea538ed00d8:b981068191e2b609a8f1be09",
+          "quote": "※ 본 사업은 단가계약으로, 대금은 실제 대상인원에 대하여 정산하여 지급",
+          "quote_start": 317,
+          "quote_end": 357,
+          "doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+          "sha256": "7a592ea538ed00d8dca697c8cab8fadd110ec2a15902f8235b80bb7d960027bc",
+          "file_name": "인천공항시설관리(주)_2026_2026년도 귀속 연말정산 위탁운영 용역_과업내용서.hwp",
+          "locator": "BodyText/Section0 / paragraph 56 … BodyText/Section0 / paragraph 85",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:75:record:12200",
+              "locator": "BodyText/Section0 / paragraph 75",
+              "char_start": 0,
+              "char_end": 40,
+              "chunk_start": 317,
+              "chunk_end": 357,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0"
+        }
+      ],
+      "explanation": "단가계약과 실제 대상·물량에 따른 정산 조건을 확인하세요.",
+      "requires_review": true,
+      "automatic_semantic_error": false,
+      "automatically_added_to_answer": false
+    },
+    {
+      "rule_id": "post_period_support",
+      "field_id": "duration",
+      "label": "수행기간",
+      "source_quote": "※ 당해 연도의 부당 공제자 통보 시, 후속절차 지원은 과업기간 이후에도 포함",
+      "citations": [
+        {
+          "chunk_id": "rfp:7a592ea538ed00d8:b981068191e2b609a8f1be09",
+          "quote": "※ 당해 연도의 부당 공제자 통보 시, 후속절차 지원은 과업기간 이후에도 포함",
+          "quote_start": 77,
+          "quote_end": 120,
+          "doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+          "sha256": "7a592ea538ed00d8dca697c8cab8fadd110ec2a15902f8235b80bb7d960027bc",
+          "file_name": "인천공항시설관리(주)_2026_2026년도 귀속 연말정산 위탁운영 용역_과업내용서.hwp",
+          "locator": "BodyText/Section0 / paragraph 56 … BodyText/Section0 / paragraph 85",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:62:record:10476",
+              "locator": "BodyText/Section0 / paragraph 62",
+              "char_start": 0,
+              "char_end": 43,
+              "chunk_start": 77,
+              "chunk_end": 120,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0"
+        }
+      ],
+      "explanation": "계약상 기간이 끝난 뒤에도 남는 지원 의무가 있는지 확인하세요.",
+      "requires_review": true,
+      "automatic_semantic_error": false,
+      "automatically_added_to_answer": false
+    },
+    {
+      "rule_id": "selection_method",
+      "field_id": "evaluation",
+      "label": "평가기준",
+      "source_quote": "2) 낙찰자 선정방식 : 적격심사(제한적최저가) 낙찰제",
+      "citations": [
+        {
+          "chunk_id": "rfp:7a592ea538ed00d8:b981068191e2b609a8f1be09",
+          "quote": "2) 낙찰자 선정방식 : 적격심사(제한적최저가) 낙찰제",
+          "quote_start": 286,
+          "quote_end": 316,
+          "doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+          "sha256": "7a592ea538ed00d8dca697c8cab8fadd110ec2a15902f8235b80bb7d960027bc",
+          "file_name": "인천공항시설관리(주)_2026_2026년도 귀속 연말정산 위탁운영 용역_과업내용서.hwp",
+          "locator": "BodyText/Section0 / paragraph 56 … BodyText/Section0 / paragraph 85",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:74:record:12050",
+              "locator": "BodyText/Section0 / paragraph 74",
+              "char_start": 0,
+              "char_end": 30,
+              "chunk_start": 286,
+              "chunk_end": 316,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0"
+        }
+      ],
+      "explanation": "선정방식과 세부 평가항목·배점을 구분하세요. 선정방식만으로 배점표를 추정하지 않습니다.",
+      "requires_review": true,
+      "automatic_semantic_error": false,
+      "automatically_added_to_answer": false
+    }
+  ],
+  "semantic_accuracy": null,
+  "semantic_completeness_verified": false,
+  "human_review_completed": false,
+  "api_calls": 0,
+  "scope": "이미 처리된 원문의 일부 표면 규칙을 대조한 추가 확인 후보. 모든 누락 탐지나 의미적 정답 판정은 아닙니다."
+}

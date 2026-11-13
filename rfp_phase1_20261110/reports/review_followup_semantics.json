@@ -1,0 +1,71 @@
+{
+  "reviewed_case_ids": [
+    "D001",
+    "D002",
+    "D003",
+    "D004",
+    "D005",
+    "D006",
+    "D007",
+    "D008",
+    "D009",
+    "D010",
+    "D011",
+    "D012",
+    "D013",
+    "D014",
+    "D015",
+    "D016",
+    "D017",
+    "D018",
+    "D019",
+    "D020"
+  ],
+  "findings": [
+    {
+      "case_id": "D020",
+      "severity": "medium",
+      "field": "turns[0].expected_doc_ids",
+      "issue": "모호한 최초 질문에 needs_clarification을 기대하면서 expected_doc_ids에는 두 후보를 넣었다. 같은 모호성 동작인 D011 최초 턴은 []여서 이 필드가 해결된 답변 문서인지 후보 문서인지 일관되지 않다.",
+      "recommendation": "expected_doc_ids를 답변을 위해 확정한 문서 범위로 정의한다면 D020 첫 턴은 []로 하고, 두 후보는 context.candidate_doc_ids 등으로 구분한다. 후보 보존 범위를 뜻한다면 D011도 같은 의미로 정렬하고 평가 기준에 명시한다.",
+      "support": {
+        "D020_first_turn_status": "needs_clarification",
+        "D020_initial_selected_doc_ids": [],
+        "D020_first_turn_expected_doc_ids": [
+          "1Zy_lR60ECF5ypfxIi2UOqK4p5Onar_Zr",
+          "1AAH1vfeUeW7x3m3yOuyIxFB1rwlPB7O0"
+        ],
+        "D011_first_turn_expected_doc_ids": []
+      }
+    },
+    {
+      "case_id": "D009",
+      "severity": "low",
+      "field": "required_facts[f3].expected_value",
+      "issue": "인용에는 추진일정이 추진과정에서 변경될 수 있다는 조건이 있으나 기대값과 필수동작에는 그 조건이 빠져 있다. 접수마감을 확정 일정처럼 요약한 답변도 통과할 수 있다.",
+      "recommendation": "2018-10-30 15:00 등은 해당 RFP에 제시된 일정이며 추진과정에서 변경될 수 있다는 조건을 기대값 또는 필수동작에 보존한다.",
+      "support": {
+        "doc_id": "1SzFkgkUgoF4vKjlSOpVO0i9tI4ZqV0rM",
+        "block_id": "b00003",
+        "locator": "PDF p.4",
+        "quote": "※ 상기 일정은 추진과정에서 변경될 수 있음"
+      }
+    }
+  ],
+  "limitations": "20개 사례의 질문·대화 전환·필수 사실·인용을 독립적으로 검토하고 모든 인용의 실제 추출 본문 포함 여부를 확인했다. 표·그림의 원본 시각 대조, 모델 실행 및 실제 대화상태 구현 검증은 수행하지 않았다. 따라서 파싱 완전성이나 RAG의 실측 성능을 검증한 결과는 아니다. D020의 범위 항목은 평가 스키마의 의미를 명확히 하면 해소할 수 있다.",
+  "checks": {
+    "case_count": 20,
+    "split_counts": {
+      "dev": 12,
+      "holdout": 8
+    },
+    "turn_count": 64,
+    "required_fact_count": 66,
+    "exact_quotes_validated": 78,
+    "turn_fact_references_valid": true,
+    "turn_fact_document_scope_valid": true,
+    "document_split_integrity": true,
+    "source_cases_modified": false,
+    "reviewed_input_sha256": "4feb4f27f297019df702a86514843e37ef813968f770de63ad8df46e8c32114a"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "version": "phase5-surface-audit-v1",
+  "claim_count": 0,
+  "flag_count": 1,
+  "flag_counts": {
+    "citation_provenance_not_confirmed": 1
+  },
+  "flags": [
+    {
+      "code": "citation_provenance_not_confirmed",
+      "claim_index": null,
+      "requires_human_review": true,
+      "explanation": "이 진단기는 원문 레지스트리를 다시 검증하지 않습니다. 출처 검사 결과를 확인하세요."
+    }
+  ],
+  "source_validation_reported": false,
+  "semantic_accuracy": null,
+  "semantic_entailment_verified": false,
+  "automatic_answer_correctness": null,
+  "api_calls": 0,
+  "scope": "주장별 인용의 숫자·단위·VAT·조건 표면 비교. 인용의 관련성·정답성·요약 완전성은 사람 검토가 필요합니다.",
+  "zero_flags_means_semantically_correct": false
+}

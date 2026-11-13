@@ -1,0 +1,515 @@
+{
+  "reference_inputs": [
+    {
+      "file_name": "RAG와_에이전트_고도화(1).ipynb",
+      "sha256": "ab8ea6f68eabe5c981f9a7c616998f8635bc644ce1a8e14e04b75c385314e340"
+    },
+    {
+      "file_name": "14_3팀_엄재웅(1).ipynb",
+      "sha256": "f8a572ba21d43a710a96736a5df1ce33ccee7b6d7756607da5e00b7692bee801"
+    },
+    {
+      "file_name": "[스프린트미션]14_RAG.ipynb",
+      "sha256": "4ab2d602b9d759b407bf4c0194004c03a0d8744f510516b2013f812a92d2c778"
+    },
+    {
+      "file_name": "LangChain_&_LangGraph(1).ipynb",
+      "sha256": "b025284ea6b7fa88fb8aa43948936deb664da3bfacd0df6c938d2d77052405c4"
+    },
+    {
+      "file_name": "[스프린트미션]13_감성분석_PEFT.ipynb",
+      "sha256": "439393796a779265aaf1c7818d1c97fb96db9908cdf794161cdefb1acc5960cd"
+    }
+  ],
+  "review_method": "첨부 노트북의 markdown과코드를읽고설계참고. 원본코드와저장출력은실행하지않음.",
+  "reviews": [
+    {
+      "review_scope": "Local markdown and code cells inspected; notebook code and outputs were not executed. Credentials and output payloads were not copied.",
+      "references": [
+        {
+          "name": "RAG와_에이전트_고도화(1).ipynb",
+          "path": "/workspace/scratch/950d214d0af0/upload/RAG와_에이전트_고도화(1).ipynb",
+          "cells": 41
+        },
+        {
+          "name": "LangChain_&_LangGraph(1).ipynb",
+          "path": "/workspace/scratch/950d214d0af0/upload/LangChain_&_LangGraph(1).ipynb",
+          "cells": 66
+        }
+      ],
+      "reusable_patterns": [
+        {
+          "reference": "RAG와_에이전트_고도화(1).ipynb",
+          "cells": [
+            8,
+            9,
+            11
+          ],
+          "idea": "Separate document content from metadata and apply configurable hierarchical splitting with explicit length/overlap units. The example uses len, so 200/20 are characters, not model tokens. RFP chunk boundaries should follow document/section/table provenance instead of blindly splitting concatenated text."
+        },
+        {
+          "reference": "RAG와_에이전트_고도화(1).ipynb",
+          "cells": [
+            15,
+            16,
+            19
+          ],
+          "idea": "Embedding provider and persistent vector store are replaceable components; embedding and query must share model and dimensions. Keep local persistence and deterministic IDs. This reference uses HuggingFace/CUDA + Chroma; it does not require adopting that provider stack."
+        },
+        {
+          "reference": "RAG와_에이전트_고도화(1).ipynb",
+          "cells": [
+            20,
+            21,
+            22,
+            23
+          ],
+          "idea": "Offer document-filtered similarity retrieval, score inspection, and optional MMR candidate diversification. Record score semantics rather than presenting distances as probabilities."
+        },
+        {
+          "reference": "RAG와_에이전트_고도화(1).ipynb",
+          "cells": [
+            26,
+            29
+          ],
+          "idea": "Expose retrieval through a small function/tool and make retrieval-before-answer a controlled route when needed. Preserve retrieved content as untrusted data. Return chunk IDs and original locations alongside text rather than plain concatenation."
+        },
+        {
+          "reference": "RAG와_에이전트_고도화(1).ipynb",
+          "cells": [
+            31,
+            32,
+            33
+          ],
+          "idea": "Query expansion, parallel candidate collection, and rank fusion are useful later improvements. A baseline should keep the original query, validate generated query count, deduplicate by stable chunk ID, and implement RRF explicitly if reporting RRF results."
+        },
+        {
+          "reference": "LangChain_&_LangGraph(1).ipynb",
+          "cells": [
+            18,
+            20,
+            24,
+            25,
+            30,
+            31,
+            33,
+            37
+          ],
+          "idea": "Use typed user/model/tool messages and typed tool interfaces. Retrieval can expose explicit arguments such as query, selected_doc_ids and top_k with a structured result containing source records."
+        },
+        {
+          "reference": "LangChain_&_LangGraph(1).ipynb",
+          "cells": [
+            45,
+            46,
+            47,
+            54,
+            55
+          ],
+          "idea": "Keep conversation state scoped by a session/thread and preserve active document IDs separately from message summaries. Conversation compression must not replace raw RFP citations or silently switch documents."
+        },
+        {
+          "reference": "LangChain_&_LangGraph(1).ipynb",
+          "cells": [
+            58,
+            59,
+            61,
+            62,
+            63
+          ],
+          "idea": "Explicit state/nodes/conditional routing can later enforce clarify -> scoped retrieval -> evidence check -> answer. Graph-style ownership is reusable without requiring LangGraph in the initial local retrieval implementation."
+        }
+      ],
+      "concrete_code_pitfalls": [
+        {
+          "reference": "RAG와_에이전트_고도화(1).ipynb",
+          "cells": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            15
+          ],
+          "finding": "Install shells, Ollama pulls, CUDA assumptions and a 512-token chat context are demo environment choices. Do not automatically execute downloads/installers or copy them into the default RFP pipeline. Exact model availability and library API compatibility were not verified by this review."
+        },
+        {
+          "reference": "RAG와_에이전트_고도화(1).ipynb",
+          "cells": [
+            26,
+            33,
+            38
+          ],
+          "finding": "The retrieval functions return only page_content, stripping document identity and original locations. RFP citations need doc_id + raw SHA256 + chunk/source spans and table/transcription quality flags."
+        },
+        {
+          "reference": "RAG와_에이전트_고도화(1).ipynb",
+          "cells": [
+            33
+          ],
+          "finding": "The three fixed query nodes assume queries[0:3] exist. Generated output is not validated; missing lines can raise IndexError. all_docs is deduplicated with set but context is built from state[documents], so the computed deduplication is not actually used. set also discards ranked order."
+        },
+        {
+          "reference": "RAG와_에이전트_고도화(1).ipynb",
+          "cells": [
+            31,
+            33
+          ],
+          "finding": "The prose introduces RRF, but the implementation concatenates retrieved document content and does not calculate reciprocal-rank scores. Do not label a concatenation baseline as RRF or a measured fusion improvement."
+        },
+        {
+          "reference": "RAG와_에이전트_고도화(1).ipynb",
+          "cells": [
+            29
+          ],
+          "finding": "Using the last message directly as retrieval input is insufficient for pronouns and scope switches. The non-human branch replaces the system instruction with a generic sentence, losing durable grounding requirements. A standalone query should combine the current user request with explicit active scope."
+        },
+        {
+          "reference": "RAG와_에이전트_고도화(1).ipynb",
+          "cells": [
+            37,
+            38,
+            39
+          ],
+          "finding": "The cross-encoder cutoff 0.9 is an uncalibrated model score in this code, not evidence of 90% certainty. Measure thresholds on development data. Web fallback is not appropriate as an automatic substitute for RFP evidence: it can mix external notices or different versions."
+        },
+        {
+          "reference": "LangChain_&_LangGraph(1).ipynb",
+          "cells": [
+            31,
+            37,
+            61,
+            62,
+            64
+          ],
+          "finding": "Weather tools are simulated examples. The force-date branch always substitutes tomorrow even when the test user supplied an explicit date; RFP routing must preserve literal dates, budgets and agency/document scope instead of overriding them."
+        },
+        {
+          "reference": "LangChain_&_LangGraph(1).ipynb",
+          "cells": [
+            46,
+            63
+          ],
+          "finding": "The notebook uses InMemorySaver and MemorySaver naming in different examples. Pin and test the chosen installed LangGraph API before executing an adapter; this review does not establish which aliases are current."
+        },
+        {
+          "reference": "LangChain_&_LangGraph(1).ipynb",
+          "cells": [
+            37,
+            62,
+            63
+          ],
+          "finding": "The example tool loop has no explicit unknown-tool/error route or loop/call budget. RFP handling should distinguish execution failure from insufficient document evidence and retain bounded retry behavior."
+        }
+      ],
+      "phase2_integration": {
+        "source_package": "output/rfp_phase2_local_20261111",
+        "input": "data/processed/indexable_blocks.jsonl plus structured tables.jsonl",
+        "retain": [
+          "doc_id",
+          "canonical_doc_id",
+          "sha256",
+          "alias_doc_ids",
+          "block_id",
+          "locator",
+          "section/page",
+          "table_id/row/col",
+          "source_kind",
+          "source_method/review_status"
+        ],
+        "important": "HWPX reference_blocks are evidence-compatibility views, not additional indexable content. Avoid indexing both table-contained paragraph text and an identical table rendering. Explicit native table structure and heuristic/unresolved PDF tables must remain distinguishable. Reviewed visual transcriptions and unreviewed OCR must not become indistinguishable from automatic text.",
+        "evaluation": "Compare chunk evidence coverage and retrieval recall separately. Do not claim generation accuracy, summary quality or conversational success from retrieval-only metrics. Holdout must not be used to choose chunk sizes or thresholds."
+      },
+      "phase3_recommendation": [
+        "First establish a reproducible local chunking + lexical retrieval baseline with source-preserving results.",
+        "Evaluate similarity/MMR/rank fusion only when the corresponding retrieval backend is actually available.",
+        "Leave LLM query rewriting, cross-encoder downloads, external web fallback and graph-agent behavior behind explicit later-stage configuration; do not execute them merely because the reference notebooks contain them."
+      ]
+    },
+    {
+      "index_convention": "0-based notebook cell index; source markdown/code read fully; notebook outputs and credentials were not executed or reproduced",
+      "sources": [
+        {
+          "name": "14_3팀_엄재웅(1).ipynb",
+          "cells": 35,
+          "read_scope": "all markdown and code cells"
+        },
+        {
+          "name": "[스프린트미션]14_RAG.ipynb",
+          "cells": 20,
+          "read_scope": "all markdown and code cells"
+        },
+        {
+          "name": "[스프린트미션]13_감성분석_PEFT.ipynb",
+          "cells": 18,
+          "read_scope": "all markdown and code cells"
+        }
+      ],
+      "adopt": [
+        {
+          "idea": "페이지/원문 위치를 청킹과 검색 결과까지 유지",
+          "refs": [
+            {
+              "notebook": "14_3팀_엄재웅(1).ipynb",
+              "cells": [
+                9,
+                10,
+                18
+              ]
+            },
+            {
+              "notebook": "[스프린트미션]14_RAG.ipynb",
+              "cells": [
+                5,
+                7
+              ]
+            }
+          ],
+          "phase3_action": "Phase2 doc_id·sha256·실제 locator를 청크별 source span으로 이어간다. PDF page+1 관례를 HWP/HWPX에 적용하지 않는다."
+        },
+        {
+          "idea": "chunk_size/overlap을 실험 설정으로 분리하고 조건-수치가 경계에서 갈라지는 사례를 점검",
+          "refs": [
+            {
+              "notebook": "14_3팀_엄재웅(1).ipynb",
+              "cells": [
+                9,
+                10
+              ]
+            },
+            {
+              "notebook": "[스프린트미션]14_RAG.ipynb",
+              "cells": [
+                7
+              ]
+            }
+          ],
+          "phase3_action": "500/100과1000/150은 문자 기준 참고값이다. RFP 표 행·VAT·자격 조건을 우선 묶고 근거 보존 및 검색 성능으로 선택한다. 문자 수를 토큰 수로 표시하지 않는다."
+        },
+        {
+          "idea": "후보 검색과 최종 컨텍스트 선택을 분리",
+          "refs": [
+            {
+              "notebook": "14_3팀_엄재웅(1).ipynb",
+              "cells": [
+                13,
+                14,
+                16
+              ]
+            }
+          ],
+          "phase3_action": "candidate_k와final_k를 분리하고 리랭킹은 교체 가능한 선택 단계로 둔다. 특정0.9 점수를 모델 공통의 신뢰 임계값으로 쓰지 않는다."
+        },
+        {
+          "idea": "동일 질문의 설정별 결과·시간·문서 위치를 저장해 비교",
+          "refs": [
+            {
+              "notebook": "14_3팀_엄재웅(1).ipynb",
+              "cells": [
+                16,
+                27,
+                29,
+                31,
+                32,
+                33,
+                34
+              ]
+            }
+          ],
+          "phase3_action": "Phase3는 생성 답변 채점 대신 정답 근거 검색 Recall@k/MRR와 문서 범위·위치 정확도를 보고한다. 재실행 캐시 키에는 corpus/chunk/search/config fingerprint를 포함한다."
+        }
+      ],
+      "adapt": [
+        {
+          "idea": "임베딩/벡터DB 생명주기",
+          "refs": [
+            {
+              "notebook": "14_3팀_엄재웅(1).ipynb",
+              "cells": [
+                11,
+                12
+              ]
+            },
+            {
+              "notebook": "[스프린트미션]14_RAG.ipynb",
+              "cells": [
+                9
+              ]
+            }
+          ],
+          "phase3_action": "수업의 메모리 Chroma/FAISS 생성은 작은 단일 PDF 데모다. 99개 고유 RFP에는 로컬 영속화·중복 제거·모델/차원/청크 버전 검사가 필요하다. 참고 모델명과 패키지 버전을 현재 권장 사양으로 간주하지 않는다."
+        },
+        {
+          "idea": "기본 RAG 체인에서 retrieval을 독립 컴포넌트로 유지",
+          "refs": [
+            {
+              "notebook": "[스프린트미션]14_RAG.ipynb",
+              "cells": [
+                14,
+                15
+              ]
+            },
+            {
+              "notebook": "14_3팀_엄재웅(1).ipynb",
+              "cells": [
+                18,
+                22,
+                24
+              ]
+            }
+          ],
+          "phase3_action": "검색 함수를 LLM/에이전트와 독립적으로 검증해 향후 도구 노드에 연결한다. 컨텍스트에는 텍스트만 합치지 말고 출처 식별자·locator·상태를 함께 제공한다."
+        },
+        {
+          "idea": "평가 분할·고정 시드·오분류 사례 출력",
+          "refs": [
+            {
+              "notebook": "[스프린트미션]13_감성분석_PEFT.ipynb",
+              "cells": [
+                4,
+                9,
+                10,
+                11,
+                16
+              ]
+            }
+          ],
+          "phase3_action": "지도학습 정확도 코드를 그대로 쓰지 않고 문서 내용 단위 dev/holdout 분리와 검색 실패 사례/원문 근거 비교에 적용한다."
+        }
+      ],
+      "skip_or_defer": [
+        {
+          "idea": "PEFT/LoRA 감성 분류 학습",
+          "refs": [
+            {
+              "notebook": "[스프린트미션]13_감성분석_PEFT.ipynb",
+              "cells": [
+                3,
+                5,
+                7,
+                13,
+                14
+              ]
+            }
+          ],
+          "reason": "GeneralPolarity 3분류·SEQ_CLS를 위한 지도학습이다. 문서 추가·청킹·인덱스 갱신은 모델 파인튜닝이 아니므로 Phase3에 필요하지 않다."
+        },
+        {
+          "idea": "Colab Drive mount·GPU·Ollama 자동 설치와 대용량 모델 다운로드",
+          "refs": [
+            {
+              "notebook": "14_3팀_엄재웅(1).ipynb",
+              "cells": [
+                2,
+                3,
+                4,
+                6,
+                8,
+                20
+              ]
+            },
+            {
+              "notebook": "[스프린트미션]14_RAG.ipynb",
+              "cells": [
+                1,
+                3,
+                11,
+                12
+              ]
+            }
+          ],
+          "reason": "사용자는 로컬 개발과 GitHub 미변경을 요청했다. 노트북 열기만으로 외부 설치·모델 다운로드·API 호출을 실행하지 않는다."
+        },
+        {
+          "idea": "LangGraph 에이전트 루프·계산기·LLM judge",
+          "refs": [
+            {
+              "notebook": "14_3팀_엄재웅(1).ipynb",
+              "cells": [
+                18,
+                20,
+                22,
+                24,
+                31
+              ]
+            }
+          ],
+          "reason": "검색 단계 평가와 분리할 이후 생성/에이전트 개발이다. 계산기 eval 또는 금액 substring 검사만으로 RFP 사실 정확도를 보증하지 않는다."
+        }
+      ],
+      "specific_pitfalls": [
+        {
+          "refs": [
+            {
+              "notebook": "14_3팀_엄재웅(1).ipynb",
+              "cells": [
+                22
+              ]
+            }
+          ],
+          "finding": "질문 연도와 문서 연도가 다르면 문서에 없는 것으로 본다는 세무 전용 규칙은 RFP에 적용하면 안 된다. 작성연도·사업연도·대상기간이 실제로 다르다."
+        },
+        {
+          "refs": [
+            {
+              "notebook": "14_3팀_엄재웅(1).ipynb",
+              "cells": [
+                22
+              ]
+            },
+            {
+              "notebook": "[스프린트미션]14_RAG.ipynb",
+              "cells": [
+                14
+              ]
+            }
+          ],
+          "finding": "검색에서 근거를 못 찾았다는 것과 문서에 사실이 없다는 것을 구별한다. 빈 검색 결과를 부재 확정으로 채점하지 않는다."
+        },
+        {
+          "refs": [
+            {
+              "notebook": "14_3팀_엄재웅(1).ipynb",
+              "cells": [
+                29
+              ]
+            }
+          ],
+          "finding": "모델+질문만으로 완료 여부를 건너뛰면 청크/검색 설정 변경 후 이전 답변이 재사용될 수 있다. 실험 fingerprint가 필요하다."
+        },
+        {
+          "refs": [
+            {
+              "notebook": "14_3팀_엄재웅(1).ipynb",
+              "cells": [
+                29,
+                31,
+                34
+              ]
+            }
+          ],
+          "finding": "9개 질문의 LLM 채점과 일부 금액 문자열 포함 검사로 전체 업무 성능을 일반화할 수 없다. 청크와 프롬프트를 동시에 바꾼 비교는 효과를 분리하지 못하므로 Phase3는 설정을 하나씩 바꾼다."
+        },
+        {
+          "refs": [
+            {
+              "notebook": "[스프린트미션]14_RAG.ipynb",
+              "cells": [
+                15
+              ]
+            }
+          ],
+          "finding": "page_content만 합치는 format_docs는 문서명/페이지/원본버전 연결을 잃는다. RFP 인용에는 출처 구조를 보존한다."
+        }
+      ],
+      "execution_or_remote_mutations": false
+    }
+  ],
+  "phase3_choices": [
+    "원문span을청크/검색결과까지유지",
+    "byte단위청킹+표/페이지/문서경계",
+    "BM25·문자TFIDF·가중RRF·MMR로컬비교",
+    "API임베딩/Chroma는명시적으로켜는별도옵션",
+    "감성분석PEFT학습과문서인덱싱을분리"
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "parser": "local_vector_numeric_ocr_v1",
+  "blocks": [
+    {
+      "block_id": "pdf-p0003-vocr0001",
+      "kind": "ocr_region",
+      "locator": "PDF p.3 / vector region 1",
+      "page": 3,
+      "bbox": [
+        225.91400146484375,
+        184.55499267578125,
+        234.53500366210938,
+        197.50399780273438
+      ],
+      "text": "(1",
+      "numeric_candidates": [
+        "1"
+      ],
+      "ocr_confidence": 95.938286,
+      "context_text": "□사업명 | ( | ) 차세대시스템 | 단계구축 사업",
+      "source_method": "local_tesseract_eng_numeric_ocr",
+      "review_status": "unreviewed"
+    },
+    {
+      "block_id": "pdf-p0003-vocr0003",
+      "kind": "ocr_region",
+      "locator": "PDF p.3 / vector region 3",
+      "page": 3,
+      "bbox": [
+        283.4100036621094,
+        223.4530029296875,
+        296.9729919433594,
+        234.17599487304688
+      ],
+      "text": "16",
+      "numeric_candidates": [
+        "16"
+      ],
+      "ocr_confidence": 96.777374,
+      "context_text": "□ | 사업기간 | ( | ) 계약체결일로부터 | 개월 이내",
+      "source_method": "local_tesseract_eng_numeric_ocr",
+      "review_status": "unreviewed"
+    },
+    {
+      "block_id": "pdf-p0003-vocr0005",
+      "kind": "ocr_region",
+      "locator": "PDF p.3 / vector region 5",
+      "page": 3,
+      "bbox": [
+        156.64500427246094,
+        305.4530029296875,
+        248.97300720214844,
+        318.1679992675781
+      ],
+      "text": "71,620,000,000",
+      "numeric_candidates": [
+        "71,620,000,000"
+      ],
+      "ocr_confidence": 90.930649,
+      "context_text": "□ | 사업예산 | ( | ) | 원 이내 | 부가세 포함 | ( | ) | ※",
+      "source_method": "local_tesseract_eng_numeric_ocr",
+      "review_status": "unreviewed"
+    }
+  ],
+  "regions": [
+    {
+      "bbox": [
+        225.91400146484375,
+        184.55499267578125,
+        234.53500366210938,
+        197.50399780273438
+      ],
+      "path_count": 2,
+      "page": 3,
+      "locator": "PDF p.3 / vector region 1",
+      "context_text": "□사업명 | ( | ) 차세대시스템 | 단계구축 사업",
+      "review_status": "unreviewed",
+      "detection_method": "small_filled_vector_paths",
+      "text": "(1",
+      "ocr_confidence": 95.938286,
+      "numeric_candidates": [
+        "1"
+      ],
+      "crop_bbox": [
+        225.16400146484375,
+        182.05499267578125,
+        235.28500366210938,
+        200.00399780273438
+      ]
+    },
+    {
+      "bbox": [
+        260.1520080566406,
+        184.55499267578125,
+        263.3009948730469,
+        197.50399780273438
+      ],
+      "path_count": 1,
+      "page": 3,
+      "locator": "PDF p.3 / vector region 2",
+      "context_text": "□사업명 | ( | ) 차세대시스템 | 단계구축 사업",
+      "review_status": "unreviewed",
+      "detection_method": "small_filled_vector_paths",
+      "text": ")",
+      "ocr_confidence": 93.251923,
+      "numeric_candidates": [],
+      "crop_bbox": [
+        259.4020080566406,
+        182.05499267578125,
+        264.0509948730469,
+        200.00399780273438
+      ]
+    },
+    {
+      "bbox": [
+        283.4100036621094,
+        223.4530029296875,
+        296.9729919433594,
+        234.17599487304688
+      ],
+      "path_count": 2,
+      "page": 3,
+      "locator": "PDF p.3 / vector region 3",
+      "context_text": "□ | 사업기간 | ( | ) 계약체결일로부터 | 개월 이내",
+      "review_status": "unreviewed",
+      "detection_method": "small_filled_vector_paths",
+      "text": "16",
+      "ocr_confidence": 96.777374,
+      "numeric_candidates": [
+        "16"
+      ],
+      "crop_bbox": [
+        282.6600036621094,
+        220.9530029296875,
+        297.7229919433594,
+        236.67599487304688
+      ]
+    },
+    {
+      "bbox": [
+        254.71099853515625,
+        263.31201171875,
+        266.875,
+        276.18798828125
+      ],
+      "path_count": 1,
+      "page": 3,
+      "locator": "PDF p.3 / vector region 4",
+      "context_text": "□ | 계약방법 | ( | ) 일반경쟁입찰 | 협상에 의한 계약",
+      "review_status": "unreviewed",
+      "detection_method": "small_filled_vector_paths",
+      "text": "",
+      "ocr_confidence": null,
+      "numeric_candidates": [],
+      "crop_bbox": [
+        253.96099853515625,
+        260.81201171875,
+        267.625,
+        278.68798828125
+      ]
+    },
+    {
+      "bbox": [
+        156.64500427246094,
+        305.4530029296875,
+        248.97300720214844,
+        318.1679992675781
+      ],
+      "path_count": 14,
+      "page": 3,
+      "locator": "PDF p.3 / vector region 5",
+      "context_text": "□ | 사업예산 | ( | ) | 원 이내 | 부가세 포함 | ( | ) | ※",
+      "review_status": "unreviewed",
+      "detection_method": "small_filled_vector_paths",
+      "text": "71,620,000,000",
+      "ocr_confidence": 90.930649,
+      "numeric_candidates": [
+        "71,620,000,000"
+      ],
+      "crop_bbox": [
+        155.89500427246094,
+        302.9530029296875,
+        249.72300720214844,
+        320.6679992675781
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "code": "VECTOR_OUTLINED_TEXT_SUSPECTED",
+      "message": "Small filled vector paths may encode text missing from native extraction; regions require visual review."
+    }
+  ],
+  "stats": {
+    "pages_scanned": 1,
+    "physical_pages": [
+      3
+    ],
+    "candidate_regions": 5,
+    "ocr_attempted": 5,
+    "numeric_blocks": 3,
+    "ocr_failures": 0,
+    "unreviewed_blocks": 3,
+    "local_only": true
+  },
+  "limitations": [
+    "Heuristic detection does not find all outlined or image text.",
+    "English digit OCR does not recover Korean labels or semantics.",
+    "OCR confidence is not factual verification; all output remains unreviewed.",
+    "Candidate strings never replace native text or visually checked transcriptions."
+  ]
+}

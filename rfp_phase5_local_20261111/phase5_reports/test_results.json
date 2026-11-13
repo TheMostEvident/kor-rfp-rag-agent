@@ -1,0 +1,10 @@
+{
+  "tests_run": 365,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "success": true,
+  "elapsed_seconds": 2.416,
+  "live_api_calls": 0,
+  "scope": "Offline regression and failure-path tests; not live model accuracy."
+}

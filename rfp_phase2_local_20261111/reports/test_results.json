@@ -1,0 +1,8 @@
+{
+  "tests_run": 82,
+  "passed": true,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "validation_type": "local unittest; no RAG/LLM performance measurement"
+}

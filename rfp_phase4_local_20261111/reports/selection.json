@@ -1,0 +1,36 @@
+{
+  "selected_at_utc": "2026-11-11T07:12:33.558885+00:00",
+  "selected_default_method": "bm25",
+  "criterion": "Dev context micro evidence-span recall@5, then @10, then fixed tie order.",
+  "dev_metrics": {
+    "5": {
+      "fully_recovered_links": 53,
+      "evidence_links": 89,
+      "micro_evidence_span_recall": 0.5955056179775281,
+      "macro_case_evidence_span_recall": 0.6036449147560259,
+      "mean_document_recall": 0.9074074074074074,
+      "mean_evidence_character_coverage": 0.6189842323530704,
+      "complete_cases": 12
+    },
+    "10": {
+      "fully_recovered_links": 64,
+      "evidence_links": 89,
+      "micro_evidence_span_recall": 0.7191011235955056,
+      "macro_case_evidence_span_recall": 0.7057613168724279,
+      "mean_document_recall": 0.9629629629629629,
+      "mean_evidence_character_coverage": 0.7211006344694726,
+      "complete_cases": 16
+    },
+    "20": {
+      "fully_recovered_links": 74,
+      "evidence_links": 89,
+      "micro_evidence_span_recall": 0.8314606741573034,
+      "macro_case_evidence_span_recall": 0.8724279835390947,
+      "mean_document_recall": 0.9629629629629629,
+      "mean_evidence_character_coverage": 0.8877673011361392,
+      "complete_cases": 21
+    }
+  },
+  "holdout_outcomes_used": false,
+  "other_hyperparameters_tuned": false
+}

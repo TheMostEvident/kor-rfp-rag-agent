@@ -1,0 +1,29 @@
+[
+  {
+    "check_id": "KSD_P3_NAME",
+    "doc_id": "1XuHMGElCN1wjEBBucRF55JWKMCePUmUM",
+    "sha256": "10574559caefec0344e890c3558d686f55aa80e3d971a607a7201a2834af8876",
+    "page": 3,
+    "expected_text": "(사업명) 차세대시스템(1단계) 구축 사업",
+    "source_method": "reviewed_visual_transcription",
+    "coverage_note": "기존 Phase1 사례가 사용하지 않은 문서의 별도 원본 검수 회귀검사"
+  },
+  {
+    "check_id": "KSD_P3_DURATION",
+    "doc_id": "1XuHMGElCN1wjEBBucRF55JWKMCePUmUM",
+    "sha256": "10574559caefec0344e890c3558d686f55aa80e3d971a607a7201a2834af8876",
+    "page": 3,
+    "expected_text": "(사업기간) 계약체결일로부터 16개월 이내",
+    "source_method": "reviewed_visual_transcription",
+    "coverage_note": "기존 Phase1 사례가 사용하지 않은 문서의 별도 원본 검수 회귀검사"
+  },
+  {
+    "check_id": "KSD_P3_BUDGET",
+    "doc_id": "1XuHMGElCN1wjEBBucRF55JWKMCePUmUM",
+    "sha256": "10574559caefec0344e890c3558d686f55aa80e3d971a607a7201a2834af8876",
+    "page": 3,
+    "expected_text": "(사업예산) 71,620,000,000원 이내 (부가세 포함)",
+    "source_method": "reviewed_visual_transcription",
+    "coverage_note": "기존 Phase1 사례가 사용하지 않은 문서의 별도 원본 검수 회귀검사"
+  }
+]

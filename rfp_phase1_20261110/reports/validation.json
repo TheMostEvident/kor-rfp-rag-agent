@@ -1,0 +1,21 @@
+{
+  "valid": true,
+  "errors": [],
+  "document_files": 100,
+  "unique_documents": 99,
+  "cases": 100,
+  "dev_cases": 60,
+  "holdout_cases": 40,
+  "facts": 396,
+  "evidence_links": 684,
+  "feature_counts": {
+    "comparison": 20,
+    "followup": 20,
+    "fact": 25,
+    "summary": 20,
+    "uncertainty": 15
+  },
+  "content_disjoint": true,
+  "rag_performance_measured": false,
+  "check_scope": "구조·참조·원문 인용 일치. 의미 지원 여부 검수와 RAG 성능 평가는 별도."
+}

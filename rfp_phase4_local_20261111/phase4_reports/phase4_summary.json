@@ -1,0 +1,51 @@
+{
+  "scope": "Phase4 implementation and offline validation; local user API execution remains required",
+  "source_files": 100,
+  "unique_documents": 99,
+  "chunks": 18266,
+  "implemented_features": [
+    "fact_qa",
+    "full_document_summary",
+    "document_comparison_table",
+    "user_only_followup",
+    "insufficient_evidence_handling"
+  ],
+  "retrieval_baseline": "bm25",
+  "generation_model": "gpt-5.4-mini",
+  "tests_passed": 291,
+  "notebook": {
+    "cells": 29,
+    "code_cells": 14,
+    "executed_code_cells": 14,
+    "error_outputs": 0,
+    "execution_mode": "Python cells executed sequentially in one namespace; no Jupyter kernel automation",
+    "live_openai_calls": 0
+  },
+  "phase3_inputs_and_index_preserved": true,
+  "full_document_summary_plan": {
+    "documents": 99,
+    "indexed_chunks_accounted": 18266,
+    "max_map_calls_for_one_doc": 44,
+    "docs_over_map_limit": 2
+  },
+  "live_api_calls_here": 0,
+  "mock_contract_routes_exercised": 5,
+  "actual_sdk_integration_measured": false,
+  "semantic_answer_accuracy": null,
+  "human_review_required": true,
+  "phase4_holdout_queries_evaluated": 0,
+  "fresh_independent_evaluation_set_required_for_final_quality": true,
+  "first_live_run_flags": {
+    "ENABLE_OPENAI": true,
+    "RUN_LIVE_QA": true,
+    "RUN_LIVE_SUMMARY": false,
+    "RUN_DEV_EVALUATION": false,
+    "RUN_SEMANTIC_COMPARISON": false
+  },
+  "limits": [
+    "Exact quote matching verifies provenance, not semantic entailment.",
+    "Input chunk coverage is not summary semantic completeness.",
+    "Token-cost estimates are not invoices.",
+    "Offline injected SDK responses are not real model answers."
+  ]
+}

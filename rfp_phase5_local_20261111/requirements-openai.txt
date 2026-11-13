@@ -1,0 +1,6 @@
+-r requirements-local.txt
+# Optional SDK families, checked against current primary documentation.
+# These ranges are not a live-tested lockfile; actual SDK/API/Chroma integration
+# must be verified locally before recording an embedding quality result.
+openai>=3,<4
+chromadb>=1,<2

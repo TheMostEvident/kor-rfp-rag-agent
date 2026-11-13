@@ -1,0 +1,149 @@
+{
+  "passed": false,
+  "status": "review_pending",
+  "errors": [],
+  "pending": [
+    {
+      "field_id": "project_name",
+      "judgement": "정확성"
+    },
+    {
+      "field_id": "project_name",
+      "judgement": "누락없음"
+    },
+    {
+      "field_id": "project_name",
+      "judgement": "조건보존"
+    },
+    {
+      "field_id": "issuing_agency",
+      "judgement": "정확성"
+    },
+    {
+      "field_id": "issuing_agency",
+      "judgement": "누락없음"
+    },
+    {
+      "field_id": "issuing_agency",
+      "judgement": "조건보존"
+    },
+    {
+      "field_id": "purpose",
+      "judgement": "정확성"
+    },
+    {
+      "field_id": "purpose",
+      "judgement": "누락없음"
+    },
+    {
+      "field_id": "purpose",
+      "judgement": "조건보존"
+    },
+    {
+      "field_id": "scope_requirements",
+      "judgement": "정확성"
+    },
+    {
+      "field_id": "scope_requirements",
+      "judgement": "누락없음"
+    },
+    {
+      "field_id": "scope_requirements",
+      "judgement": "조건보존"
+    },
+    {
+      "field_id": "budget_vat",
+      "judgement": "정확성"
+    },
+    {
+      "field_id": "budget_vat",
+      "judgement": "누락없음"
+    },
+    {
+      "field_id": "budget_vat",
+      "judgement": "조건보존"
+    },
+    {
+      "field_id": "duration",
+      "judgement": "정확성"
+    },
+    {
+      "field_id": "duration",
+      "judgement": "누락없음"
+    },
+    {
+      "field_id": "duration",
+      "judgement": "조건보존"
+    },
+    {
+      "field_id": "eligibility",
+      "judgement": "정확성"
+    },
+    {
+      "field_id": "eligibility",
+      "judgement": "누락없음"
+    },
+    {
+      "field_id": "eligibility",
+      "judgement": "조건보존"
+    },
+    {
+      "field_id": "submission_documents",
+      "judgement": "정확성"
+    },
+    {
+      "field_id": "submission_documents",
+      "judgement": "누락없음"
+    },
+    {
+      "field_id": "submission_documents",
+      "judgement": "조건보존"
+    },
+    {
+      "field_id": "submission_deadline",
+      "judgement": "정확성"
+    },
+    {
+      "field_id": "submission_deadline",
+      "judgement": "누락없음"
+    },
+    {
+      "field_id": "submission_deadline",
+      "judgement": "조건보존"
+    },
+    {
+      "field_id": "submission_method",
+      "judgement": "정확성"
+    },
+    {
+      "field_id": "submission_method",
+      "judgement": "누락없음"
+    },
+    {
+      "field_id": "submission_method",
+      "judgement": "조건보존"
+    },
+    {
+      "field_id": "evaluation",
+      "judgement": "정확성"
+    },
+    {
+      "field_id": "evaluation",
+      "judgement": "누락없음"
+    },
+    {
+      "field_id": "evaluation",
+      "judgement": "조건보존"
+    },
+    {
+      "field_id": null,
+      "judgement": "검토자 이름"
+    }
+  ],
+  "failed": [],
+  "reviewed": 0,
+  "positive": 0,
+  "total": 33,
+  "reviewer": "",
+  "checked_at_utc": "2026-11-13T02:16:52.093820+00:00"
+}

@@ -1,0 +1,12 @@
+{
+  "benchmark_version": "rfp-public-phase1-v1",
+  "sha256": {
+    "data/documents.json": "3d89042afc4cfe8f3c810d01815d41519341ae7262c5983ccef7fbd6f7ab4923",
+    "data/filename_changes.json": "acdf7b70745590c7a551be7f9f7e4204b458f6426252beffa9779d278297ba96",
+    "data/source_blocks.jsonl": "f74458fe649c4a630e396203c5db0d925f359b8ee0ddb0b0fce061e8cc9a4d36",
+    "eval/benchmark_metadata.json": "2b5dcb2a9c733e90e4ea3f5e899a5916ea546f63cf4d15dbd7b8b95e9265a007",
+    "eval/questions.dev.jsonl": "7c0c0c0f45f38d6d09eaccf40c546994dc5ece73321e0dc9be6f9e8aedbde6b6",
+    "eval/questions.holdout.jsonl": "3caf203d84ffab767ac0bb6d70a8b1d2223caf92b71c0c7503c9df21414ec02d",
+    "eval/questions.smoke.dev.jsonl": "a84bcca04331f183588584b0753d6fa2ca382ec94aa03a7923f3e8ccbbed558a"
+  }
+}

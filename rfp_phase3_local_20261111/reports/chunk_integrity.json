@@ -1,0 +1,17 @@
+{
+  "valid": true,
+  "errors": [],
+  "source_files": 100,
+  "unique_documents": 99,
+  "chunks": 18266,
+  "source_non_whitespace_characters": 4750597,
+  "uncovered_non_whitespace_characters": 0,
+  "source_character_coverage": 1.0,
+  "uncovered_blocks": [],
+  "indexable_bytes_with_overlap": 15245714,
+  "source_methods": {
+    "raw_parser": 18263,
+    "reviewed_visual_transcription": 3
+  },
+  "scope": "이미 파싱한 원문 문자·버전·위치·길이·분리 보존. PDF 그림/표의 시각적 의미 전체에 대한 검증은 아님."
+}

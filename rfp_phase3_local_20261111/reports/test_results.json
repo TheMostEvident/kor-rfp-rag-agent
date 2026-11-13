@@ -1,0 +1,10 @@
+{
+  "tests_run": 136,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "passed": true,
+  "network_calls": 0,
+  "openai_calls": 0,
+  "scope": "Offline unit and synthetic integration tests; not live SDK/LLM quality evaluation."
+}

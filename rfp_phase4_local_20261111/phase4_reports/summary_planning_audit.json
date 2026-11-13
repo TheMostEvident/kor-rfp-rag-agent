@@ -1,0 +1,925 @@
+{
+  "documents": 99,
+  "indexed_chunks_accounted": 18266,
+  "max_map_calls_for_one_doc": 44,
+  "docs_over_map_limit": 2,
+  "api_usage": {
+    "api_calls": 0,
+    "live_api_calls": 0,
+    "mock_calls": 0,
+    "cache_hits": 0,
+    "failed_attempts": 0,
+    "attempted_input_bytes": 0,
+    "reserved_max_output_tokens": 0,
+    "reported_input_tokens": 0,
+    "reported_output_tokens": 0,
+    "reported_cached_input_tokens": 0,
+    "reported_total_tokens": 0,
+    "usage_unknown_attempts": 0,
+    "request_latency_ms": 0.0,
+    "max_calls": 30,
+    "max_total_input_bytes": 600000,
+    "execution_mode": "live_openai",
+    "enabled": false,
+    "budget_unit": "UTF-8 serialized request bytes; not token count or currency"
+  },
+  "elapsed_seconds": 13.006173290999868,
+  "rows": [
+    {
+      "doc_id": "1axc1V_BlcdbC3GC_OoJ4b0KQCrYVXEpD",
+      "chunk_count": 558,
+      "map_calls": 32,
+      "total_request_bytes": 1085576,
+      "can_execute": false,
+      "block_reasons": [
+        "max_map_calls_exceeded"
+      ],
+      "max_output_tokens_upper_bound": 96000
+    },
+    {
+      "doc_id": "1AdcUT3ExwGgqjIbCcxQkyJQEDK8QHlqu",
+      "chunk_count": 76,
+      "map_calls": 6,
+      "total_request_bytes": 177144,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 18000
+    },
+    {
+      "doc_id": "1WurPq0NFZWcrH3Pv7-I0uUrh4vI32WXw",
+      "chunk_count": 129,
+      "map_calls": 5,
+      "total_request_bytes": 150113,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 15000
+    },
+    {
+      "doc_id": "1dlsH9e52YIgjlNguew5sdvl-OrxWFs1L",
+      "chunk_count": 105,
+      "map_calls": 5,
+      "total_request_bytes": 167363,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 15000
+    },
+    {
+      "doc_id": "1g2fwHsOi9HARatbRPbCUdbSM_iK1NF47",
+      "chunk_count": 267,
+      "map_calls": 16,
+      "total_request_bytes": 518939,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 48000
+    },
+    {
+      "doc_id": "10VgdhAr_mMFerirAiK1UX3aNihfNFj0K",
+      "chunk_count": 162,
+      "map_calls": 8,
+      "total_request_bytes": 263213,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 24000
+    },
+    {
+      "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+      "chunk_count": 154,
+      "map_calls": 5,
+      "total_request_bytes": 166016,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 15000
+    },
+    {
+      "doc_id": "1SzFkgkUgoF4vKjlSOpVO0i9tI4ZqV0rM",
+      "chunk_count": 71,
+      "map_calls": 5,
+      "total_request_bytes": 149489,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 15000
+    },
+    {
+      "doc_id": "1fmwaCwhTRFFf3sdOofxsM61Z0Dnf1PAT",
+      "chunk_count": 335,
+      "map_calls": 15,
+      "total_request_bytes": 486408,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 45000
+    },
+    {
+      "doc_id": "1v1DALkWlDsXw0A6UI3BPbseMizPidPp-",
+      "chunk_count": 172,
+      "map_calls": 7,
+      "total_request_bytes": 237367,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 21000
+    },
+    {
+      "doc_id": "1XuHMGElCN1wjEBBucRF55JWKMCePUmUM",
+      "chunk_count": 721,
+      "map_calls": 44,
+      "total_request_bytes": 1494044,
+      "can_execute": false,
+      "block_reasons": [
+        "max_map_calls_exceeded"
+      ],
+      "max_output_tokens_upper_bound": 132000
+    },
+    {
+      "doc_id": "16ZOh4tAjsvz7_CyhMxKX-TABv22AIkWx",
+      "chunk_count": 158,
+      "map_calls": 6,
+      "total_request_bytes": 206679,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 18000
+    },
+    {
+      "doc_id": "17yA51-wumavNjJ6QYgJetmQg1J7NNn3A",
+      "chunk_count": 191,
+      "map_calls": 7,
+      "total_request_bytes": 215761,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 21000
+    },
+    {
+      "doc_id": "12hznYfRCJ-ouZwHIt5yyaSNABtMaig3f",
+      "chunk_count": 171,
+      "map_calls": 8,
+      "total_request_bytes": 258136,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 24000
+    },
+    {
+      "doc_id": "1cvH283_zLsDsY0ckJtjvUyZTPkTrcvI3",
+      "chunk_count": 110,
+      "map_calls": 5,
+      "total_request_bytes": 149021,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 15000
+    },
+    {
+      "doc_id": "1kRgVctjXbNv9oynFGgl1ztPyPNLk8n-u",
+      "chunk_count": 123,
+      "map_calls": 8,
+      "total_request_bytes": 250691,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 24000
+    },
+    {
+      "doc_id": "1xz7SvO9D-Fxv8Kt7LJgmalbaweUw2EnQ",
+      "chunk_count": 150,
+      "map_calls": 7,
+      "total_request_bytes": 225467,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 21000
+    },
+    {
+      "doc_id": "1-N7PxSvhkkEfo_2EfVTsikBhjrdnF-4B",
+      "chunk_count": 96,
+      "map_calls": 7,
+      "total_request_bytes": 220741,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 21000
+    },
+    {
+      "doc_id": "1O6-CCTPsQ--7Nm9wFh1PeiFB8DRt9Ocr",
+      "chunk_count": 70,
+      "map_calls": 4,
+      "total_request_bytes": 130694,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 12000
+    },
+    {
+      "doc_id": "1Zy_lR60ECF5ypfxIi2UOqK4p5Onar_Zr",
+      "chunk_count": 95,
+      "map_calls": 6,
+      "total_request_bytes": 182122,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 18000
+    },
+    {
+      "doc_id": "1l00GwcV8rvLRVKt3P-RbFl-v-4jyRjIX",
+      "chunk_count": 133,
+      "map_calls": 6,
+      "total_request_bytes": 199391,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 18000
+    },
+    {
+      "doc_id": "1VlQZ-J4qX9NLGXx6KIuaJDAM34cHFWCT",
+      "chunk_count": 133,
+      "map_calls": 8,
+      "total_request_bytes": 269172,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 24000
+    },
+    {
+      "doc_id": "1pAst4NSqKtfAz79_mwrCdyMJ-TyHbuQ4",
+      "chunk_count": 282,
+      "map_calls": 11,
+      "total_request_bytes": 370494,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 33000
+    },
+    {
+      "doc_id": "10mxnQkrTtCqlg1KUf0GZ_Wm59BEldTn0",
+      "chunk_count": 180,
+      "map_calls": 8,
+      "total_request_bytes": 266396,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 24000
+    },
+    {
+      "doc_id": "1n-HK-TE9dzF1Gcu36vaU3Duib4ZJoP8t",
+      "chunk_count": 69,
+      "map_calls": 4,
+      "total_request_bytes": 131153,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 12000
+    },
+    {
+      "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+      "chunk_count": 55,
+      "map_calls": 4,
+      "total_request_bytes": 108623,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 12000
+    },
+    {
+      "doc_id": "1dowigrTCTftGNYZnQ4vcp3udlbbd5Jis",
+      "chunk_count": 36,
+      "map_calls": 2,
+      "total_request_bytes": 43737,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 6000
+    },
+    {
+      "doc_id": "1inrLkiNWeI1JvXmoIBV7ZEzyxIMPGO6q",
+      "chunk_count": 200,
+      "map_calls": 9,
+      "total_request_bytes": 303962,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 27000
+    },
+    {
+      "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+      "chunk_count": 51,
+      "map_calls": 3,
+      "total_request_bytes": 78365,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 9000
+    },
+    {
+      "doc_id": "1FB_yRt6qzEEM37X5rQhplMNgbaNE0334",
+      "chunk_count": 223,
+      "map_calls": 10,
+      "total_request_bytes": 312159,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 30000
+    },
+    {
+      "doc_id": "1uO0E9bylvXzl3-ZV4qpfogLXYDyNz-9J",
+      "chunk_count": 77,
+      "map_calls": 5,
+      "total_request_bytes": 144868,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 15000
+    },
+    {
+      "doc_id": "1m91j7dxXyL1mACr5_i8SuDDBtVJ3kUdt",
+      "chunk_count": 41,
+      "map_calls": 2,
+      "total_request_bytes": 52631,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 6000
+    },
+    {
+      "doc_id": "1kEi6KqkHNXULnxfkVu9GvEBTDrAa_0do",
+      "chunk_count": 71,
+      "map_calls": 4,
+      "total_request_bytes": 112660,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 12000
+    },
+    {
+      "doc_id": "1F2r3WEuclWA4qqGeHKd2Cve2Z-5aGCVS",
+      "chunk_count": 358,
+      "map_calls": 15,
+      "total_request_bytes": 502702,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 45000
+    },
+    {
+      "doc_id": "1sfm6lUnIJweumey2Xf_A9s1_Q3qqAVpG",
+      "chunk_count": 376,
+      "map_calls": 16,
+      "total_request_bytes": 546793,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 48000
+    },
+    {
+      "doc_id": "1RZRd0tIku73WuBhheTx0Ya8AwSMBp1zd",
+      "chunk_count": 634,
+      "map_calls": 25,
+      "total_request_bytes": 832425,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 75000
+    },
+    {
+      "doc_id": "1CoFw_qExHFvwtLbRwD4vkgqIon1WBzgp",
+      "chunk_count": 150,
+      "map_calls": 7,
+      "total_request_bytes": 234309,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 21000
+    },
+    {
+      "doc_id": "1NtUmrjOWSxPDGb9-rnzaj745RS1tm4GA",
+      "chunk_count": 389,
+      "map_calls": 20,
+      "total_request_bytes": 672828,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 60000
+    },
+    {
+      "doc_id": "1fs-0NkQhX02YQutTwkQsjSt5opxhJ8ds",
+      "chunk_count": 104,
+      "map_calls": 6,
+      "total_request_bytes": 176478,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 18000
+    },
+    {
+      "doc_id": "1elKkN728pmNusC2q39oeMUwNtQFERmUW",
+      "chunk_count": 186,
+      "map_calls": 11,
+      "total_request_bytes": 371541,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 33000
+    },
+    {
+      "doc_id": "1Z_uprLTKoO42-p82xQ5Z8d2bDwBItW7t",
+      "chunk_count": 40,
+      "map_calls": 3,
+      "total_request_bytes": 76911,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 9000
+    },
+    {
+      "doc_id": "17huu1bWjSkjL9dAs4fjS4rd1QH2MTloD",
+      "chunk_count": 259,
+      "map_calls": 12,
+      "total_request_bytes": 393405,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 36000
+    },
+    {
+      "doc_id": "1xaFt1nrVYKhFlTuHNSOJgyrF7FhR90iL",
+      "chunk_count": 142,
+      "map_calls": 7,
+      "total_request_bytes": 224560,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 21000
+    },
+    {
+      "doc_id": "1YMcfFvzqquBL5I6I6OFMFG1ioFrjow6y",
+      "chunk_count": 179,
+      "map_calls": 8,
+      "total_request_bytes": 269380,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 24000
+    },
+    {
+      "doc_id": "1AAH1vfeUeW7x3m3yOuyIxFB1rwlPB7O0",
+      "chunk_count": 119,
+      "map_calls": 7,
+      "total_request_bytes": 236016,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 21000
+    },
+    {
+      "doc_id": "1ZZD1GBN53RqC3tbT2w04mXfvXYs4uIht",
+      "chunk_count": 193,
+      "map_calls": 9,
+      "total_request_bytes": 290360,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 27000
+    },
+    {
+      "doc_id": "1bfh2w8DvNWynoJubbnEdCrCvrn1EUe-q",
+      "chunk_count": 80,
+      "map_calls": 4,
+      "total_request_bytes": 122066,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 12000
+    },
+    {
+      "doc_id": "1eAIp62NiQG58iXUvezpWpmH_aV-aoRQD",
+      "chunk_count": 150,
+      "map_calls": 9,
+      "total_request_bytes": 304550,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 27000
+    },
+    {
+      "doc_id": "144uKo5SrowxjhePog79gp3bAF8UEmFhp",
+      "chunk_count": 168,
+      "map_calls": 7,
+      "total_request_bytes": 239541,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 21000
+    },
+    {
+      "doc_id": "1C_gC6ejtZNk9evO0A5pBpCvqpdxz63Sa",
+      "chunk_count": 158,
+      "map_calls": 10,
+      "total_request_bytes": 321121,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 30000
+    },
+    {
+      "doc_id": "11CIxqRm5aQMOgXiuLp-I-JSfXfVbyGBN",
+      "chunk_count": 173,
+      "map_calls": 8,
+      "total_request_bytes": 264748,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 24000
+    },
+    {
+      "doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+      "chunk_count": 18,
+      "map_calls": 1,
+      "total_request_bytes": 28129,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 3000
+    },
+    {
+      "doc_id": "1wVR2B8RyCsod3YKjxacOb0i-wnUEFdlK",
+      "chunk_count": 22,
+      "map_calls": 1,
+      "total_request_bytes": 25929,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 3000
+    },
+    {
+      "doc_id": "1vS0gKvI2Twk7z4E0eYSPxC5C_Dp7ONRO",
+      "chunk_count": 376,
+      "map_calls": 17,
+      "total_request_bytes": 577878,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 51000
+    },
+    {
+      "doc_id": "1UbUehThgNJ13DAG_bkv25yMOfZfoSbgV",
+      "chunk_count": 148,
+      "map_calls": 7,
+      "total_request_bytes": 228304,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 21000
+    },
+    {
+      "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+      "chunk_count": 442,
+      "map_calls": 17,
+      "total_request_bytes": 576325,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 51000
+    },
+    {
+      "doc_id": "1n9ph3x8OuqfkMJOLTU9dh-SAVB3qr21y",
+      "chunk_count": 114,
+      "map_calls": 7,
+      "total_request_bytes": 227234,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 21000
+    },
+    {
+      "doc_id": "1ct-tccMEJOnyuHTNOIQ2AfezgGb2l9xL",
+      "chunk_count": 171,
+      "map_calls": 11,
+      "total_request_bytes": 359536,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 33000
+    },
+    {
+      "doc_id": "175HvAdrzxnxgTkznqw9dmHlwwvtNBUDR",
+      "chunk_count": 117,
+      "map_calls": 5,
+      "total_request_bytes": 171521,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 15000
+    },
+    {
+      "doc_id": "1jTD6IxSLJz5hrZxDyzCecph0iNZhXjjJ",
+      "chunk_count": 236,
+      "map_calls": 12,
+      "total_request_bytes": 384013,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 36000
+    },
+    {
+      "doc_id": "1Hp2qPBf8jq7oNd-lxpvqrfBke76nH5q7",
+      "chunk_count": 370,
+      "map_calls": 16,
+      "total_request_bytes": 546518,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 48000
+    },
+    {
+      "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+      "chunk_count": 245,
+      "map_calls": 11,
+      "total_request_bytes": 370641,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 33000
+    },
+    {
+      "doc_id": "1aYJqERWbnhaMkOlJTrT5BDxydDWTRmUs",
+      "chunk_count": 208,
+      "map_calls": 13,
+      "total_request_bytes": 413587,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 39000
+    },
+    {
+      "doc_id": "101NcRKlfaH8xySktzY6qHtxqoZweYm_U",
+      "chunk_count": 116,
+      "map_calls": 6,
+      "total_request_bytes": 185689,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 18000
+    },
+    {
+      "doc_id": "17_3i9XkdlXvC4c7l83MbQZs5Od2cM0IS",
+      "chunk_count": 117,
+      "map_calls": 7,
+      "total_request_bytes": 230690,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 21000
+    },
+    {
+      "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+      "chunk_count": 202,
+      "map_calls": 10,
+      "total_request_bytes": 319524,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 30000
+    },
+    {
+      "doc_id": "1CJLCgwBn_6hJlAr8zugGNfO6-s092K6-",
+      "chunk_count": 49,
+      "map_calls": 3,
+      "total_request_bytes": 99929,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 9000
+    },
+    {
+      "doc_id": "1gfUGse358dtZ76JEy6aE9zAlX_U06TBg",
+      "chunk_count": 42,
+      "map_calls": 2,
+      "total_request_bytes": 56946,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 6000
+    },
+    {
+      "doc_id": "1cHsWc9-ZkDSUqn7v1hwyIzUK9kZiWqW0",
+      "chunk_count": 242,
+      "map_calls": 12,
+      "total_request_bytes": 391483,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 36000
+    },
+    {
+      "doc_id": "1vFExTsYTuGJrEiHFRWfnlhHi_C9_DD0f",
+      "chunk_count": 100,
+      "map_calls": 5,
+      "total_request_bytes": 169646,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 15000
+    },
+    {
+      "doc_id": "1Ctu3fu4uwYM4YbcJHm5KofzjDkVWhK3g",
+      "chunk_count": 93,
+      "map_calls": 5,
+      "total_request_bytes": 142063,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 15000
+    },
+    {
+      "doc_id": "1zz_G1Ude3WZ0WXOJ8d83OcmqnvSZ9_6-",
+      "chunk_count": 92,
+      "map_calls": 4,
+      "total_request_bytes": 112965,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 12000
+    },
+    {
+      "doc_id": "1G0-K-lrJLJskrpwWxjU4mwp_X9SVk6p2",
+      "chunk_count": 124,
+      "map_calls": 9,
+      "total_request_bytes": 278447,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 27000
+    },
+    {
+      "doc_id": "15aZg4x0h7cM71rtiHOBpJmExpej-cuR5",
+      "chunk_count": 131,
+      "map_calls": 6,
+      "total_request_bytes": 206360,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 18000
+    },
+    {
+      "doc_id": "1jErDHXt97nu-WfR_ATA10e69RAI9w8uw",
+      "chunk_count": 263,
+      "map_calls": 13,
+      "total_request_bytes": 413221,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 39000
+    },
+    {
+      "doc_id": "1pzpo8ChZsm8EgtyKLzQ7GfQPBhi8qLZV",
+      "chunk_count": 110,
+      "map_calls": 5,
+      "total_request_bytes": 145466,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 15000
+    },
+    {
+      "doc_id": "1598Hw8H5ir8TMaeiDYxI2o3J0DHjbkmS",
+      "chunk_count": 40,
+      "map_calls": 2,
+      "total_request_bytes": 50336,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 6000
+    },
+    {
+      "doc_id": "1CmE6rt1cYm1kWsth5GW1LZ9p8mwi3ytJ",
+      "chunk_count": 131,
+      "map_calls": 6,
+      "total_request_bytes": 178885,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 18000
+    },
+    {
+      "doc_id": "1BhIqij9-uCAseVM4NeY_IBPG5zKQ3Uxm",
+      "chunk_count": 81,
+      "map_calls": 5,
+      "total_request_bytes": 156269,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 15000
+    },
+    {
+      "doc_id": "1UfY7peoPg9ZMX_Nd6yudcbLTYEcH0LuV",
+      "chunk_count": 216,
+      "map_calls": 10,
+      "total_request_bytes": 324584,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 30000
+    },
+    {
+      "doc_id": "1Z8-gw0xi7FV1SrotWiQdjQVUsNb3WOL9",
+      "chunk_count": 141,
+      "map_calls": 6,
+      "total_request_bytes": 193190,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 18000
+    },
+    {
+      "doc_id": "16ustuZ1tzqsZYXqAQbGqwmn9DDoPwUeW",
+      "chunk_count": 98,
+      "map_calls": 6,
+      "total_request_bytes": 194097,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 18000
+    },
+    {
+      "doc_id": "1Vs4zjMGMvvc2LlmZfJJYymoOAowguRwF",
+      "chunk_count": 265,
+      "map_calls": 11,
+      "total_request_bytes": 361498,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 33000
+    },
+    {
+      "doc_id": "14f70wfqAqipngV6_uC04QrdgoWNXLGlv",
+      "chunk_count": 170,
+      "map_calls": 7,
+      "total_request_bytes": 223387,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 21000
+    },
+    {
+      "doc_id": "10SowRByVfYiIaTqD5yKoAfmz3bpcgZRB",
+      "chunk_count": 265,
+      "map_calls": 12,
+      "total_request_bytes": 405466,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 36000
+    },
+    {
+      "doc_id": "1cSCToR2w6pxA3QxgDxwNyQpULW-VuDKw",
+      "chunk_count": 151,
+      "map_calls": 7,
+      "total_request_bytes": 228485,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 21000
+    },
+    {
+      "doc_id": "1EQrriyIFdXChV8ggaPQeSiTqIiV0Vwrx",
+      "chunk_count": 386,
+      "map_calls": 18,
+      "total_request_bytes": 586020,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 54000
+    },
+    {
+      "doc_id": "1r9U5jWIS2dH5sWME9V3sYAWsfGJK7f-Z",
+      "chunk_count": 406,
+      "map_calls": 18,
+      "total_request_bytes": 601358,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 54000
+    },
+    {
+      "doc_id": "1IDHcStbxWMMQunKKA_gmKuqIpQOCcMpJ",
+      "chunk_count": 186,
+      "map_calls": 8,
+      "total_request_bytes": 266538,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 24000
+    },
+    {
+      "doc_id": "1XcoTZV71tpb1LE5pK6qLiVgzI0RYYn0E",
+      "chunk_count": 61,
+      "map_calls": 4,
+      "total_request_bytes": 115568,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 12000
+    },
+    {
+      "doc_id": "1b9Uzdc4xbAQVGB8exJjNURR2rVYb6ptP",
+      "chunk_count": 232,
+      "map_calls": 14,
+      "total_request_bytes": 467291,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 42000
+    },
+    {
+      "doc_id": "1d83yOtnEEHyPI597cC_cvgW8721pOCCL",
+      "chunk_count": 182,
+      "map_calls": 8,
+      "total_request_bytes": 271218,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 24000
+    },
+    {
+      "doc_id": "1xWS-RBK-kmWd7zxJqx4P5YnKIE_pMs2P",
+      "chunk_count": 235,
+      "map_calls": 11,
+      "total_request_bytes": 366174,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 33000
+    },
+    {
+      "doc_id": "1EMKe6hKnikAMXKJFufR5rU-nUBDguhJJ",
+      "chunk_count": 141,
+      "map_calls": 9,
+      "total_request_bytes": 286929,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 27000
+    },
+    {
+      "doc_id": "1iy9KfQOw3bqa77H2Qo8wwiw0-E-X7OJa",
+      "chunk_count": 244,
+      "map_calls": 10,
+      "total_request_bytes": 319150,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 30000
+    },
+    {
+      "doc_id": "11b_E7njNxjC73j6Cuk_DIrJNuODkFsL_",
+      "chunk_count": 315,
+      "map_calls": 13,
+      "total_request_bytes": 426378,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 39000
+    },
+    {
+      "doc_id": "1BXohWiMwG6Y4cLlxKJM_IVXCmvTmKnsK",
+      "chunk_count": 384,
+      "map_calls": 17,
+      "total_request_bytes": 575709,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 51000
+    },
+    {
+      "doc_id": "14S5JZ_eGGmYNhadH9j4yTFiLCextru3T",
+      "chunk_count": 323,
+      "map_calls": 15,
+      "total_request_bytes": 486804,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 45000
+    },
+    {
+      "doc_id": "1a-V5Targ1Cm2lz9Qrvx_0sDnhb2vE2Bu",
+      "chunk_count": 142,
+      "map_calls": 7,
+      "total_request_bytes": 210333,
+      "can_execute": true,
+      "block_reasons": [],
+      "max_output_tokens_upper_bound": 21000
+    }
+  ],
+  "semantic_quality_measured": false
+}

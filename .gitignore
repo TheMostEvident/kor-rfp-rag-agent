@@ -1,0 +1,17 @@
+./venv/
+.venv/
+*.zip
+*.sqlite3
+*.npz
+*.jsonl
+Phase Zips/
+**/data/
+**/index/
+openai api.rtf
+*.rtf
+.env
+.env.*
+openai api.rtf
+*.rtf
+.env
+.env.*

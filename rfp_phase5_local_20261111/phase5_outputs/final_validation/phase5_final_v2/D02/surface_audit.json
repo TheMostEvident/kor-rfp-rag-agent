@@ -1,0 +1,33 @@
+{
+  "version": "phase5-surface-audit-v1",
+  "claim_count": 13,
+  "flag_count": 2,
+  "flag_counts": {
+    "possible_blank_form_or_weak_quote": 2
+  },
+  "flags": [
+    {
+      "code": "possible_blank_form_or_weak_quote",
+      "claim_index": 10,
+      "requires_human_review": true,
+      "citation_index": 3,
+      "chunk_id": "rfp:081719865dd99a38:09f60e5bebac836a50eb0415",
+      "explanation": "양식·산출 내역 표의 인용일 수 있습니다. 실제 사업 조건을 뒷받침하는지 검토하세요."
+    },
+    {
+      "code": "possible_blank_form_or_weak_quote",
+      "claim_index": 11,
+      "requires_human_review": true,
+      "citation_index": 1,
+      "chunk_id": "rfp:081719865dd99a38:8f29f8499264a55912a578de",
+      "explanation": "양식·산출 내역 표의 인용일 수 있습니다. 실제 사업 조건을 뒷받침하는지 검토하세요."
+    }
+  ],
+  "source_validation_reported": true,
+  "semantic_accuracy": null,
+  "semantic_entailment_verified": false,
+  "automatic_answer_correctness": null,
+  "api_calls": 0,
+  "scope": "주장별 인용의 숫자·단위·VAT·조건 표면 비교. 인용의 관련성·정답성·요약 완전성은 사람 검토가 필요합니다.",
+  "zero_flags_means_semantically_correct": false
+}

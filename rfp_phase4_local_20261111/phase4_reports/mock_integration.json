@@ -1,0 +1,55 @@
+{
+  "scope": "Real-source integration with injected extractive SDK double; no model quality measurement",
+  "source_documents": 99,
+  "source_chunks": 18266,
+  "features_exercised": [
+    "comparison",
+    "fact",
+    "followup",
+    "summary",
+    "uncertainty"
+  ],
+  "case_results": [
+    {
+      "case_id": "F001",
+      "feature": "fact",
+      "execution_status": "completed",
+      "execution_mode": "mock_or_cached_not_live",
+      "citation_validation_passed": true
+    },
+    {
+      "case_id": "C001",
+      "feature": "comparison",
+      "execution_status": "completed",
+      "execution_mode": "mock_or_cached_not_live",
+      "citation_validation_passed": true
+    },
+    {
+      "case_id": "D001",
+      "feature": "followup",
+      "execution_status": "completed",
+      "execution_mode": "mock_or_cached_followup_not_live",
+      "citation_validation_passed": true
+    },
+    {
+      "case_id": "U003",
+      "feature": "uncertainty",
+      "execution_status": "completed",
+      "execution_mode": "mock_or_cached_not_live",
+      "citation_validation_passed": true
+    },
+    {
+      "case_id": "S002",
+      "feature": "summary",
+      "execution_status": "completed",
+      "execution_mode": "mock_or_cached_not_live",
+      "citation_validation_passed": true
+    }
+  ],
+  "live_api_calls": 0,
+  "mock_calls": 7,
+  "automatic_answer_accuracy": null,
+  "semantic_quality_measured": false,
+  "holdout_queries_evaluated": 0,
+  "all_routes_completed_without_exception": true
+}

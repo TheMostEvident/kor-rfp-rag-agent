@@ -1,0 +1,226 @@
+{
+  "scope": "Actual original sources; notebook opt-in branches executed with an injected SDK double only.",
+  "live_api_calls": 0,
+  "mock_calls": 2,
+  "notebook_live_branches_saved": 2,
+  "summary_fields": 11,
+  "summary_chunks": 18,
+  "summary_validated_input_coverage": 1.0,
+  "semantic_quality_measured": false,
+  "human_approval_recorded": false,
+  "quality_checks": [
+    {
+      "execution_status": "completed",
+      "answer_status": "answered",
+      "source_validation": true,
+      "human_review": {
+        "status": "review_pending",
+        "live_readiness": false,
+        "errors": [],
+        "pending_judgements": [
+          {
+            "row_id": "claim-0001",
+            "judgement": "supported"
+          },
+          {
+            "row_id": "claim-0001",
+            "judgement": "complete"
+          },
+          {
+            "row_id": "claim-0001",
+            "judgement": "conditions_preserved"
+          }
+        ],
+        "failed_judgements": [],
+        "readiness_blockers": [
+          "live_model_origin_not_confirmed"
+        ],
+        "case_only": true,
+        "system_quality_verified": false,
+        "semantic_accuracy": null,
+        "scope": "이 실행 결과에 대한 사람 검토 기록입니다. 전체 RAG 성능이나 모든 문서의 정확성을 확정하지 않습니다."
+      },
+      "quality": {
+        "version": "phase5-surface-audit-v1",
+        "claim_count": 1,
+        "flag_count": 0,
+        "flag_counts": {},
+        "flags": [],
+        "source_validation_reported": true,
+        "semantic_accuracy": null,
+        "semantic_entailment_verified": false,
+        "automatic_answer_correctness": null,
+        "api_calls": 0,
+        "scope": "주장별 인용의 숫자·단위·VAT·조건 표면 비교. 인용의 관련성·정답성·요약 완전성은 사람 검토가 필요합니다.",
+        "zero_flags_means_semantically_correct": false
+      }
+    },
+    {
+      "execution_status": "completed",
+      "answer_status": "partial",
+      "source_validation": true,
+      "human_review": {
+        "status": "review_pending",
+        "live_readiness": false,
+        "errors": [],
+        "pending_judgements": [
+          {
+            "row_id": "project_name",
+            "judgement": "supported"
+          },
+          {
+            "row_id": "project_name",
+            "judgement": "complete"
+          },
+          {
+            "row_id": "project_name",
+            "judgement": "conditions_preserved"
+          },
+          {
+            "row_id": "issuing_agency",
+            "judgement": "supported"
+          },
+          {
+            "row_id": "issuing_agency",
+            "judgement": "complete"
+          },
+          {
+            "row_id": "issuing_agency",
+            "judgement": "conditions_preserved"
+          },
+          {
+            "row_id": "purpose",
+            "judgement": "supported"
+          },
+          {
+            "row_id": "purpose",
+            "judgement": "complete"
+          },
+          {
+            "row_id": "purpose",
+            "judgement": "conditions_preserved"
+          },
+          {
+            "row_id": "scope_requirements",
+            "judgement": "supported"
+          },
+          {
+            "row_id": "scope_requirements",
+            "judgement": "complete"
+          },
+          {
+            "row_id": "scope_requirements",
+            "judgement": "conditions_preserved"
+          },
+          {
+            "row_id": "budget_vat",
+            "judgement": "supported"
+          },
+          {
+            "row_id": "budget_vat",
+            "judgement": "complete"
+          },
+          {
+            "row_id": "budget_vat",
+            "judgement": "conditions_preserved"
+          },
+          {
+            "row_id": "duration",
+            "judgement": "supported"
+          },
+          {
+            "row_id": "duration",
+            "judgement": "complete"
+          },
+          {
+            "row_id": "duration",
+            "judgement": "conditions_preserved"
+          },
+          {
+            "row_id": "eligibility",
+            "judgement": "supported"
+          },
+          {
+            "row_id": "eligibility",
+            "judgement": "complete"
+          },
+          {
+            "row_id": "eligibility",
+            "judgement": "conditions_preserved"
+          },
+          {
+            "row_id": "submission_documents",
+            "judgement": "supported"
+          },
+          {
+            "row_id": "submission_documents",
+            "judgement": "complete"
+          },
+          {
+            "row_id": "submission_documents",
+            "judgement": "conditions_preserved"
+          },
+          {
+            "row_id": "submission_deadline",
+            "judgement": "supported"
+          },
+          {
+            "row_id": "submission_deadline",
+            "judgement": "complete"
+          },
+          {
+            "row_id": "submission_deadline",
+            "judgement": "conditions_preserved"
+          },
+          {
+            "row_id": "submission_method",
+            "judgement": "supported"
+          },
+          {
+            "row_id": "submission_method",
+            "judgement": "complete"
+          },
+          {
+            "row_id": "submission_method",
+            "judgement": "conditions_preserved"
+          },
+          {
+            "row_id": "evaluation",
+            "judgement": "supported"
+          },
+          {
+            "row_id": "evaluation",
+            "judgement": "complete"
+          },
+          {
+            "row_id": "evaluation",
+            "judgement": "conditions_preserved"
+          }
+        ],
+        "failed_judgements": [],
+        "readiness_blockers": [
+          "answer_not_fully_answered",
+          "live_model_origin_not_confirmed"
+        ],
+        "case_only": true,
+        "system_quality_verified": false,
+        "semantic_accuracy": null,
+        "scope": "이 실행 결과에 대한 사람 검토 기록입니다. 전체 RAG 성능이나 모든 문서의 정확성을 확정하지 않습니다."
+      },
+      "quality": {
+        "version": "phase5-surface-audit-v1",
+        "claim_count": 1,
+        "flag_count": 0,
+        "flag_counts": {},
+        "flags": [],
+        "source_validation_reported": true,
+        "semantic_accuracy": null,
+        "semantic_entailment_verified": false,
+        "automatic_answer_correctness": null,
+        "api_calls": 0,
+        "scope": "주장별 인용의 숫자·단위·VAT·조건 표면 비교. 인용의 관련성·정답성·요약 완전성은 사람 검토가 필요합니다.",
+        "zero_flags_means_semantically_correct": false
+      }
+    }
+  ]
+}

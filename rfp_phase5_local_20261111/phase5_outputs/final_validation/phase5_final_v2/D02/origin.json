@@ -1,0 +1,26 @@
+{
+  "origin": "current_suite_generation",
+  "suite_fingerprint": "09a4e199da42e00242508dd7bd421b96d47a839485a642e9b86f073e935fb97f",
+  "answer_fingerprint": "0f82b8495863a007cbab013a6b991383495a3ee334ef80d2f43cbd5e79e9908d",
+  "usage_in_this_suite": {
+    "api_calls": 1,
+    "live_api_calls": 1,
+    "mock_calls": 0,
+    "cache_hits": 1,
+    "failed_attempts": 0,
+    "attempted_input_bytes": 34473,
+    "reserved_max_output_tokens": 6000,
+    "reported_input_tokens": 10098,
+    "reported_output_tokens": 3125,
+    "reported_cached_input_tokens": 0,
+    "reported_total_tokens": 13223,
+    "usage_unknown_attempts": 0,
+    "request_latency_ms": 18577.700916008325,
+    "max_calls": 30,
+    "max_total_input_bytes": 600000,
+    "execution_mode": "live_openai",
+    "enabled": true,
+    "budget_unit": "UTF-8 serialized request bytes; not token count or currency"
+  },
+  "created_at_utc": "2026-11-13T02:16:51.322003+00:00"
+}

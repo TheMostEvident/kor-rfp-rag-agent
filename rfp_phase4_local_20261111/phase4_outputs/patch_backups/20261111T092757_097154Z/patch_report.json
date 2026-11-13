@@ -1,0 +1,17 @@
+{
+  "patch_id": "phase4-citation-fix-v1",
+  "modified_files": [
+    "rfp_phase4/citation_recovery.py",
+    "rfp_phase4/rag.py",
+    "rfp_phase4/summarization.py",
+    "tests/test_phase4_citation_recovery.py",
+    "notebooks/05_younggwan_phase4_grounded_answers.ipynb"
+  ],
+  "already_applied_files": [],
+  "backup_directory": "/Users/codeit/Desktop/workspace_mac/중급 프로젝트/rfp_phase4_local_20261111/phase4_outputs/patch_backups/20261111T092757_097154Z",
+  "notebook_diagnostics_added": true,
+  "data_or_index_modified": false,
+  "cache_modified": false,
+  "api_calls": 0,
+  "restart_phase4_notebook_kernel_before_reusing_old_sessions": true
+}

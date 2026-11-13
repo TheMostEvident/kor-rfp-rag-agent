@@ -1,0 +1,92 @@
+{
+  "reviewed_case_ids": [
+    "S013",
+    "S014",
+    "S015",
+    "S016"
+  ],
+  "findings": [
+    {
+      "case_id": "S016",
+      "fact_id": "f4",
+      "field": "scope_and_requirements",
+      "severity": "medium",
+      "issue": "익명성 요건을 제안서 전체에 무조건 적용하는 문구가 원문의 입찰용 제안서 예외를 생략한다. 원문은 제출기관 식별사항을 넣지 않도록 하되 입찰용 제안서 1부에만 제출기관명을 표기하도록 한다. 100페이지 제한도 표지·목차·간지·인쇄내용 없는 면을 제외하는 조건을 함께 보존해야 한다.",
+      "suggested_correction": "전자문서 통합증명플랫폼 구축, 세부과업 범위는 붙임 과업내용서 참조. 제안서는 표지·목차·간지·빈면을 제외한 A4 단면 100페이지 이내로 흑백 작성. 기관 식별사항은 표시하지 않되 입찰용 제안서 1부에만 제출기관명 표기.",
+      "evidence": [
+        {
+          "doc_id": "1CmE6rt1cYm1kWsth5GW1LZ9p8mwi3ytJ",
+          "sha256": "c08fead9e874498c78331bf571028aea321fdb245f9720e942d283fb71c9b7ba",
+          "block_id": "b00087",
+          "locator": "BodyText/Section1 / paragraph 106",
+          "quote": "ㅇ 제안서는 표지를 제외한 A4 용지 100페이지(단면) 이내로 작성"
+        },
+        {
+          "doc_id": "1CmE6rt1cYm1kWsth5GW1LZ9p8mwi3ytJ",
+          "sha256": "c08fead9e874498c78331bf571028aea321fdb245f9720e942d283fb71c9b7ba",
+          "block_id": "b00088",
+          "locator": "BodyText/Section1 / paragraph 108",
+          "quote": "- 표지, 목차, 간지 및 인쇄내용이 없는 면은 쪽수 미포함"
+        },
+        {
+          "doc_id": "1CmE6rt1cYm1kWsth5GW1LZ9p8mwi3ytJ",
+          "sha256": "c08fead9e874498c78331bf571028aea321fdb245f9720e942d283fb71c9b7ba",
+          "block_id": "b00098",
+          "locator": "BodyText/Section1 / paragraph 120",
+          "quote": "ㅇ 제안서 작성 시 회사명 및 로고 등 제출기관을 알 수 있는 사항 넣지 말 것"
+        },
+        {
+          "doc_id": "1CmE6rt1cYm1kWsth5GW1LZ9p8mwi3ytJ",
+          "sha256": "c08fead9e874498c78331bf571028aea321fdb245f9720e942d283fb71c9b7ba",
+          "block_id": "b00099",
+          "locator": "BodyText/Section1 / paragraph 122",
+          "quote": "- 단, 입찰용 제안서 1부에만 제출기관명 표기"
+        }
+      ]
+    },
+    {
+      "case_id": "S015",
+      "fact_id": "f11",
+      "field": "evaluation_criteria",
+      "severity": "medium",
+      "issue": "가격조건을 “입찰가격예산 이하”로만 요약하여 원문에 있는 예정가격 작성 시 적용기준을 생략한다. 원문은 사업예산 기준이되 예정가격을 작성한 경우 예정가격 이하를 사용한다.",
+      "suggested_correction": "기술90%+가격10%. 입찰가격이 사업예산(예정가격을 작성한 경우 예정가격) 이하이고 기술능력평가 점수가 배점한도의85% 이상인 자를 협상적격자로 선정.",
+      "evidence": [
+        {
+          "doc_id": "1bfh2w8DvNWynoJubbnEdCrCvrn1EUe-q",
+          "sha256": "702d88f1e2001b2539e617c273f90bbc6337e124e2e6fba490ffe9c3259c3740",
+          "block_id": "b00000",
+          "locator": "Contents/section0.xml",
+          "quote": "총   계\n100\n\n4. 협상적격자 및 협상순위의 선정\n o \n제안서 평가결과 입찰가격이 해당 사업예산(예정가격을 작성한 경우\n에는 예정가격) 이하인 자로서 기술능력평가 점수가 기술능력 평가분야 배점한도의 85% 이상인 자를 협상적격자로 선정\n o \n제출된 서류(제안서 포함)가 부정 또는 허위로 작성된 것으로 판명된\n 때에는 협상대상자 및 낙찰자 결정에서 제외함\n o \n협상순서는 협상적격자의 기술능력평가 점수와 입찰가격평가 점수를\n 합산하여 합산점수의 고득"
+        }
+      ]
+    },
+    {
+      "case_id": "S014",
+      "fact_id": "f4",
+      "field": "scope_and_requirements.evidence",
+      "severity": "minor",
+      "issue": "PACS·LIS/DIS·DBMS 제안요청 제외와 연계협조라는 정답 사실은 실제 PDF p.11 본문에서 지원된다. 다만 현재 f4의 b00010 quote는 “제안요청 제외 시스템” 설명 중간에서 잘려 제외 시스템 목록을 담지 않는다. 정답을 바꾸기보다 인용 범위를 목록과 연계협조 문장까지 넓히는 것이 좋다.",
+      "suggested_correction": "b00010의 기존 제외시스템 인용을 5) 제안요청 제외 시스템부터 PACS·LIS/DIS·DBMS 목록 끝까지의 정확한 원문 인용으로 교체하거나 해당 목록을 추가 인용한다.",
+      "evidence": [
+        {
+          "doc_id": "1CJLCgwBn_6hJlAr8zugGNfO6-s092K6-",
+          "sha256": "a7b014db5739e7bec053dcb0881324814b651a0255ec53b8a83fa57406becd47",
+          "block_id": "b00010",
+          "locator": "PDF p.11",
+          "quote": "강화 및 네트워크 인프라 보강 구축방안을 제시하\n여야 한다.\n 5) 제안요청 제외 시스템\n ❍ 다음에 기재된 시스템은 본 제안요청에서 제외한다. 단 제안사가 제안하는 통\n합의료정보시스템구축시 각 시스템과 상호 원활한 연계가 되도록 협조하여\n야 한다.\n ➥ PACS 시스템 : 동은정보 Solution 적용\n ➥ 진단의학검사(LIS) 시스템 및 장비인터페이스(DIS) : 동은정보 주관추진\n ➥ DBMS 일체 (DB보안, 초기 데이타 이관 포함) : 동은정보 주관추진\n4. 사업수행 부문\n 1) 통합의료정보시스템 (응용 Application) 부문\n (1) 일반사항\n ❍ 모든 개발 프로그램은 Web 방식의 시스템으로 구축한다.\n ❍ 시스템 구축을 위한 구성의 기본개념 및 개요를 기술한다.\n ❍ "
+        }
+      ]
+    }
+  ],
+  "limitations": "S013~S016의 11항목 매핑, 필수 정답 사실, 인용 및 주변 본문 맥락을 독립 검토했다. 숫자·VAT·기간 기준점, 제안서 제출서류와 수행 산출물의 구별, 공고문 위임, 참가/수행자격 요건과 예외를 확인했다. S014의 확인되지 않는 4항목은 “제공 원문으로 확정 불가”로 한정되어 실제 공고에 정보가 없다고 단정하지 않는다. 해당 부재항목에 대한 전문 완전검색을 새로 수행한 검수는 아니며, 외부 공고·정정공고·법령 검증 및 시각 원본 전페이지 재검수는 포함하지 않았다. source cases는 수정하지 않았다.",
+  "validation_summary": {
+    "cases": 4,
+    "facts": 40,
+    "quotes": 90,
+    "eleven_field_mapping": "passed",
+    "exact_substring_sha_block_locator": "passed",
+    "semantic_findings": 2,
+    "citation_coverage_findings": 1
+  }
+}

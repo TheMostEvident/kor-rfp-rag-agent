@@ -1,0 +1,18 @@
+{
+  "accepted": false,
+  "technical_passed": true,
+  "human_status": "review_pending",
+  "technical_failures": [],
+  "status": "review_pending",
+  "sample_id": "D01",
+  "split": "dev",
+  "model_status": "partial",
+  "execution_status": "completed",
+  "validated_chunk_coverage": 1.0,
+  "reviewed_judgements": 0,
+  "judgements": 33,
+  "source_audit_candidates": 3,
+  "citation_gap_review_count": 0,
+  "result_path": "/Users/codeit/Desktop/workspace_mac/중급 프로젝트/rfp_phase5_local_20261111/phase5_outputs/final_validation/phase5_final_v3/D01/result.json",
+  "review_path": "/Users/codeit/Desktop/workspace_mac/중급 프로젝트/rfp_phase5_local_20261111/phase5_outputs/final_validation/phase5_final_v3/D01/comparison.csv"
+}

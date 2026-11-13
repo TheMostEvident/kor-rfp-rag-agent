@@ -1,0 +1,38 @@
+{
+  "version": "rfp-phase5-v1",
+  "generation": {
+    "enabled": false,
+    "model": "gpt-5.4-mini",
+    "max_output_tokens": 6000,
+    "max_calls": 30,
+    "max_request_bytes": 60000,
+    "max_total_input_bytes": 600000,
+    "cache_enabled": true,
+    "reasoning_effort": "none"
+  },
+  "retrieval": {
+    "method": "bm25",
+    "top_k": 8,
+    "per_doc_top_k": 6,
+    "fetch_k": 40,
+    "mmr_lambda": 0.75,
+    "max_context_bytes": 42000,
+    "max_question_chars": 4000
+  },
+  "summary": {
+    "max_batch_bytes": 35000,
+    "max_map_calls": 30
+  },
+  "pricing": {
+    "model": "gpt-5.4-mini",
+    "input_per_million": 0.75,
+    "cached_input_per_million": 0.075,
+    "output_per_million": 4.5,
+    "as_of": "2026-11-11",
+    "source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+    "currency": "USD",
+    "is_invoice": false
+  },
+  "scope": "근거 기반 답변·11항목 전체 문서 요약 고도화",
+  "semantic_quality_measured": false
+}

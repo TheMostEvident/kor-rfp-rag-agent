@@ -1,0 +1,23 @@
+{
+  "version": "rfp-public-phase1-v1",
+  "case_count": 100,
+  "dev_case_count": 60,
+  "holdout_case_count": 40,
+  "feature_counts": {
+    "comparison": 20,
+    "followup": 20,
+    "fact": 25,
+    "summary": 20,
+    "uncertainty": 15
+  },
+  "split_method": "SHA256로 동일 내용을 묶고 고정 seed로 문서 단위 분할",
+  "split_seed": "phase1-rfp-v1",
+  "split_unique_documents": {
+    "dev": 60,
+    "holdout": 39
+  },
+  "used_unique_documents": 76,
+  "turn_count_followup": 64,
+  "holdout_status": "실행·성능 측정 전. 같은 제작자가 정답 검수에 관여했으며 제3자 비공개 벤치마크가 아니다.",
+  "baseline_or_model_scores": null
+}

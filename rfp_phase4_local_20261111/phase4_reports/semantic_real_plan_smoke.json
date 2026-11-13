@@ -1,0 +1,16 @@
+{
+  "canonical_doc_ids": [
+    "1axc1V_BlcdbC3GC_OoJ4b0KQCrYVXEpD"
+  ],
+  "chunk_count": 558,
+  "unique_embedding_inputs": 558,
+  "cold_cache_input_token_upper_bound": 746678,
+  "cold_cache_embedding_requests_upper_bound": 9,
+  "cold_cache_fits_total_budget": false,
+  "corpus_fingerprint": "909a36f530851fe814d8566ca363c8658594d95f6188e205048dab9006dd3422",
+  "budget_unit": "utf8_bytes_token_upper_bound",
+  "budget_note": "Cold-cache upper bound; cache reuse may reduce API calls. Not exact tokens or monetary cost.",
+  "api_calls": 0,
+  "planning_only": true,
+  "semantic_quality_measured": false
+}

@@ -1,0 +1,17 @@
+{
+  "notebook": "08_younggwan_phase5_grounded_summary.ipynb",
+  "executed_code_cells": 7,
+  "success": true,
+  "execution_seconds": 6.932,
+  "live_api_calls": 0,
+  "mock_calls": 0,
+  "generated_model_answers": 0,
+  "summary_doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+  "summary_plan": {
+    "chunk_count": 18,
+    "map_calls": 1,
+    "total_request_bytes": 31301,
+    "can_execute": true
+  },
+  "scope": "Offline Run All. This verifies loading and plans, not live model quality."
+}

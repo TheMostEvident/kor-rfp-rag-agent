@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "원문에 없는 인용 검출",
+      "passed": true
+    },
+    {
+      "check": "개발·최종 분할 변조 검출",
+      "passed": true
+    },
+    {
+      "check": "비교표 필수 칸 누락 검출",
+      "passed": true
+    },
+    {
+      "check": "런타임 입력에서 gold 정답·기대 범위 제외",
+      "passed": true
+    }
+  ],
+  "test_scope": "평가 데이터의 중요 무결성 검증 기능. RAG 성능 평가는 수행하지 않음."
+}

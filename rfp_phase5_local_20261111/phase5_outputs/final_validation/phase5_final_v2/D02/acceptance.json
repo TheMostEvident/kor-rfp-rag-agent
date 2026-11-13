@@ -1,0 +1,24 @@
+{
+  "accepted": false,
+  "technical_passed": false,
+  "human_status": "technical_failed_before_review",
+  "technical_failures": [
+    "all_chunks_validated_once",
+    "execution_completed",
+    "no_batch_errors",
+    "live_model_origin",
+    "exact_model_requests_match"
+  ],
+  "status": "technical_failed",
+  "sample_id": "D02",
+  "split": "dev",
+  "model_status": "partial",
+  "execution_status": "incomplete",
+  "validated_chunk_coverage": 0.17532467532467533,
+  "reviewed_judgements": 0,
+  "judgements": 33,
+  "source_audit_candidates": 0,
+  "citation_gap_review_count": 2,
+  "result_path": "/Users/codeit/Desktop/workspace_mac/중급 프로젝트/rfp_phase5_local_20261111/phase5_outputs/final_validation/phase5_final_v2/D02/result.json",
+  "review_path": "/Users/codeit/Desktop/workspace_mac/중급 프로젝트/rfp_phase5_local_20261111/phase5_outputs/final_validation/phase5_final_v2/D02/comparison.csv"
+}

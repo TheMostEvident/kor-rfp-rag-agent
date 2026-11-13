@@ -1,0 +1,8 @@
+{
+  "tests_run": 291,
+  "passed": true,
+  "failures": 0,
+  "errors": 0,
+  "scope": "Offline unit and synthetic integrations including preserved Phase3 tests; actual model quality not measured",
+  "live_openai_calls": 0
+}

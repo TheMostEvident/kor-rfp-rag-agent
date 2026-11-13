@@ -1,0 +1,5 @@
+# Verified offline baseline environment; Python 3.12 recommended.
+# sqlite3 / FTS5, json, unittest and other helpers use the Python standard library.
+numpy==2.3.5
+scipy==1.17.0
+scikit-learn==1.8.0

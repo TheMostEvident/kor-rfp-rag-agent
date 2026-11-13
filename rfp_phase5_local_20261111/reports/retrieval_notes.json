@@ -1,0 +1,110 @@
+{
+  "module": "output/rfp_phase3_local_20261111/local_rag/retrieval.py",
+  "status": "implemented and synthetic tests passed; full corpus and holdout evaluation remain parent-owned",
+  "api": {
+    "constructor": "LocalSearchIndex(index_dir): lazy read-only load for search; no files created until build",
+    "build": "build(chunks, config=None) -> schema/counts/features/config/fingerprints/cache_reused",
+    "search": "search(query, top_k=5, allowed_doc_ids=None, method=\"rrf\", fetch_k=30, mmr_lambda=0.75) -> flat complete chunk dictionaries plus score/rank/method/score_kind/score_is_confidence=False",
+    "scope": "None is global, [] returns no hits, aliases resolve once, unknown document IDs raise ValueError. Filtering occurs before BM25/TF-IDF candidate truncation and hence before RRF/MMR.",
+    "get_document_chunks": "get_document_chunks(doc_id) accepts an alias and returns all canonical chunks in original build sequence",
+    "get_catalog": "get_catalog() returns a deep copy of canonical metadata, aliases, source SHA256, file_name, agency, document_year, optional metadata_context.title",
+    "get_metadata": "get_metadata() returns a deep copy of persisted metadata",
+    "resolve_doc_ids": "resolve_doc_ids(alias_ids) accepts string/list and returns ordered deduplicated canonical IDs; None rejected",
+    "lifecycle": "close(); optional context manager"
+  },
+  "methods": {
+    "bm25": "SQLite FTS5 BM25 over separately tokenized body and metadata. Korean full words plus 2/3-character subwords, normalized numbers and declared domain-category tags. Larger score is better.",
+    "char_tfidf": "Local lexical char_wb TF-IDF cosine similarity using float32; not semantic embeddings.",
+    "rrf": "Actual weighted reciprocal-rank sum weight/(rrf_k+rank), not concatenation. Component ranks and scores returned.",
+    "mmr": "Diversity selection from top fetch_k fused candidates using normalized RRF relevance and maximum character-TFIDF cosine redundancy. Returned objective may be negative and is not confidence."
+  },
+  "preprocessing": {
+    "source_text": "Never modified; stored full original chunk JSON includes source_spans and warnings.",
+    "search_only": [
+      "NFKC/lowercase",
+      "restore 3+ spaced single-Hangul sequences",
+      "normalize digit comma separators",
+      "fixed config-declared business-term category expansion"
+    ],
+    "expansion_categories": [
+      "budget",
+      "duration",
+      "submissiondeadline",
+      "submissiondocuments",
+      "submissionmethod",
+      "qualification",
+      "vat"
+    ],
+    "no_gold_data": "Module imports/reads no evaluation files and never builds queries from expected facts."
+  },
+  "config_defaults": {
+    "ngram_range": [
+      2,
+      4
+    ],
+    "max_features": 100000,
+    "min_df": 2,
+    "rrf_k": 60,
+    "bm25_weight": 1.0,
+    "char_tfidf_weight": 1.0,
+    "fts_metadata_weight": 0.25,
+    "query_max_chars": 4000,
+    "term_expansions": "Full fixed vocabulary declared in module DEFAULT_TERM_EXPANSIONS and persisted into config."
+  },
+  "persistence": {
+    "files": [
+      "chunks.sqlite3",
+      "char_vectors.npz",
+      "char_idf.npy",
+      "char_vocabulary.json",
+      "index_meta.json"
+    ],
+    "security": "No pickle, model downloads, network clients, API keys or external services.",
+    "cache_guards": [
+      "full ordered chunk JSON content fingerprint (including text/source SHA/spans/metadata)",
+      "complete retrieval config fingerprint",
+      "schema and tokenizer versions",
+      "retrieval module SHA256",
+      "exact numpy/scipy/scikit-learn versions",
+      "SHA256 of every persisted artifact",
+      "matrix/IDF dimensions and finite values",
+      "SQLite contiguous row order"
+    ],
+    "cache_behavior": "Matching valid build reuses cache. Explicit build rebuilds stale/damaged cache; lazy search fails loudly and requests rebuild. Stage artifacts are prepared before replacement; metadata is replaced last."
+  },
+  "dependencies": {
+    "python": "3.10+",
+    "stdlib": "sqlite3 with FTS5",
+    "numpy": "2.3.5 tested",
+    "scipy": "1.17.0 tested",
+    "scikit-learn": "1.8.0 tested"
+  },
+  "validation": {
+    "command": "python3 -m unittest discover -s tests -p test_retrieval.py -v",
+    "tests_passed": 20,
+    "coverage": [
+      "Korean compounds and search-only spaced-Hangul restoration",
+      "numbers/VAT qualifiers and fixed term expansion",
+      "prefiltered scope for all four methods",
+      "duplicate aliases and unknown/empty scopes",
+      "whole-document sequence/catalog copy",
+      "true rank fusion and zero component weights",
+      "MMR diversity over duplicate evidence",
+      "deterministic reload and valid cache reuse",
+      "changed text under same chunk ID forces rebuild",
+      "artifact/config corruption rejected and explicit build recovers",
+      "empty/no-hit queries",
+      "full source metadata and score labels",
+      "network-disabled build/search"
+    ],
+    "integration": "Session agent reports its 20 session tests pass, including a real LocalSearchIndex smoke over all four methods.",
+    "test_small_corpus": "Two-document unique-character-ngram test explicitly uses min_df=1; production baseline min_df=2 remains unchanged."
+  },
+  "limitations": [
+    "No semantic embedding or neural reranking is represented by this local lexical baseline.",
+    "Scores are ranking metrics and are not calibrated answer confidence.",
+    "TF-IDF min_df=2 prunes terms occurring in only one chunk; documented config is inspectable.",
+    "Unmeasured on holdout and no OpenAI API live call performed by this module.",
+    "A changed retrieval module or dependency version intentionally requires index rebuild."
+  ]
+}

@@ -1,0 +1,380 @@
+{
+  "version": "phase5-final-validation-v2",
+  "samples": [
+    {
+      "sample_id": "D01",
+      "split": "dev",
+      "file_name": "인천공항시설관리(주)_2026_2026년도 귀속 연말정산 위탁운영 용역_과업내용서.hwp",
+      "doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+      "source_sha256": "7a592ea538ed00d8dca697c8cab8fadd110ec2a15902f8235b80bb7d960027bc",
+      "expected_chunks": 18,
+      "planned_calls": 1
+    },
+    {
+      "sample_id": "D02",
+      "split": "dev",
+      "file_name": "서울특별시_2026_2027년 글로벌 패션브랜드 육성 용역_제안요청서.hwpx",
+      "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+      "source_sha256": "081719865dd99a38ba822b39869efcf75b37add88f8d07741c8f8bf141060484",
+      "expected_chunks": 154,
+      "planned_calls": 6
+    },
+    {
+      "sample_id": "D03",
+      "split": "dev",
+      "file_name": "한국주택금융공사_2023_HF 인사이트 시스템 개발_제안요청서.hwp",
+      "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+      "source_sha256": "8c293ac2bb077438c0aaa974746d203a9196ec3eaa0d2c7971e5f6d3e4a28e28",
+      "expected_chunks": 442,
+      "planned_calls": 19
+    },
+    {
+      "sample_id": "D04",
+      "split": "dev",
+      "file_name": "한국주택금융공사_2021_부동산 등기정보 시스템 구축_제안요청서.hwp",
+      "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+      "source_sha256": "a3159eeb228799678e146447a070ba3c6f609e9723667c1fe768c75cf76b325c",
+      "expected_chunks": 202,
+      "planned_calls": 11
+    },
+    {
+      "sample_id": "D05",
+      "split": "dev",
+      "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+      "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+      "source_sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+      "expected_chunks": 245,
+      "planned_calls": 13
+    },
+    {
+      "sample_id": "R06",
+      "split": "final",
+      "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+      "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+      "source_sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+      "expected_chunks": 55,
+      "planned_calls": 4
+    },
+    {
+      "sample_id": "R07",
+      "split": "final",
+      "file_name": "한국정보통신진흥협회_2026_2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수_제안요청서.hwp",
+      "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+      "source_sha256": "3cd93bd8e0f92667d7f0d681d7c64070f810f6ff0035f2ea564a7b56f19072c1",
+      "expected_chunks": 51,
+      "planned_calls": 3
+    }
+  ],
+  "reference_fingerprint": "d6822533519528d3a049730915cfa4b445881bf7c2f6678e9126291639f07d78",
+  "code_sha256": {
+    "rfp_phase4/llm.py": "d6d4a4ac28ca9eb97547d4dbe6e6132534082c885a849d1e67feb50ce1a611ac",
+    "rfp_phase4/evidence.py": "c43fbd3dd15f53e3e86791f2a67e999ba0ba71e759e60ada147be3c22518ca4f",
+    "rfp_phase4/citation_recovery.py": "b6a2f3b859a227384dbe550f666cccd221cc7fba43df784b932dd171c4eea4e8",
+    "rfp_phase4/summarization.py": "23a7ea8170710eed40fde0b0cdf64dfe36f02fd61d52882e21b1442768ca58d0",
+    "rfp_phase5/fields.py": "9a8d56503a22413a154ac52f9fcdf0a0796d3933f0136a96d044b9649585c300",
+    "rfp_phase5/summary.py": "7aeaa4869c3ed95ada3874af2b3e20decdfe70f30ea2e1d9aa25e16a6323c8c1",
+    "rfp_phase5/source_audit.py": "78fa5faaa7e61028d7cd79996cb37caa0e4dd9e2a4c38a8e2db3103204cf285a",
+    "rfp_phase5/quality.py": "68619a7a9f2b011df243b5f8976261d55ecebdf5f0315ea593e9da4479315074",
+    "rfp_phase5/runtime.py": "e1d15b1441e71e023819474bb78fa85eaa8bbdf648b0eb1d792b41e5be75d05f",
+    "rfp_phase5/review.py": "557e9a90fafd377b8ff5380017f6a924f4d12504541580a79d40bc2668fd019e",
+    "rfp_phase4/runtime.py": "7618f6e66d4a7dccefc9bddc0d4141427410b0e2b0c5fab470ae4febf8c765d5",
+    "local_rag/io.py": "7543b3b07af4b34ddfabdd87214849f66c2f2545f5966d03708e4190d3432b15",
+    "local_rag/retrieval.py": "7ae3fcad4ca551125a91e447d4478a6806eada764ff8ce188c04ac06eaccb240",
+    "phase5_validation/cache_revalidation.py": "bbb4e292f91ae50a0f7a039f3a5c05045cc0f05687f46eec6f717b7f1ebd1219",
+    "tests/test_phase5_summary.py": "300fa0a8b5af6ccddb2ab41c1b5098df73ff2ab42ab8f22c5a6698f8bc9cf9a2",
+    "tests/test_phase5_llm_diagnostics.py": "2b7ff57ca9a6f7af806d157b1bbd3bbb9ee1c6fe20a5b019310e47a6ef2df7c1",
+    "tests/test_phase5_saved_diagnostics.py": "7b611acfabbc665dfa5fe9e6e93bfe44601619e8596987212b5d38b31fae8242",
+    "tests/test_phase5_source_audit.py": "9d94189770c5586e2b61d8a6140a129d561588e672fee51e7267aaaada4ae2a9",
+    "tests/test_phase4_citation_recovery.py": "5c10c5fa5e82410e3205b603a11f959b9ec515b3e3530f4f5090f04814810b73",
+    "tests/test_phase4_citation_split.py": "642c9ca0a426f35cae62c3b426d9a613f944e1457a373f2dfe142589a73a9584",
+    "phase5_validation/test_final_validation.py": "9a72db0d35e8c9bf4ed5693c676239cf3e86083012e1f1666f8be2d8dcf7aea1",
+    "phase5_validation/test_cache_revalidation.py": "d23bd84f14b7556f76fbad957c71097c96fe1da17790e182626d03bba6ea80f1"
+  },
+  "runner_sha256": "37bc5bf636f3eb098b621a45425598a21ee3e0d8000f2dccb343d54acc2cde57",
+  "index_fingerprint": "b784f5cd9f85f178f72c1faf99ebdfc89d97684e35c81b3dfc1563d0a1907fea",
+  "dependencies": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0"
+  },
+  "config_by_sample": {
+    "D01": {
+      "version": "rfp-phase5-v1",
+      "generation": {
+        "enabled": false,
+        "model": "gpt-5.4-mini",
+        "max_output_tokens": 6000,
+        "max_calls": 30,
+        "max_request_bytes": 60000,
+        "max_total_input_bytes": 600000,
+        "cache_enabled": true,
+        "reasoning_effort": "none"
+      },
+      "retrieval": {
+        "method": "bm25",
+        "top_k": 8,
+        "per_doc_top_k": 6,
+        "fetch_k": 40,
+        "mmr_lambda": 0.75,
+        "max_context_bytes": 42000,
+        "max_question_chars": 4000
+      },
+      "summary": {
+        "max_batch_bytes": 35000,
+        "max_map_calls": 30
+      },
+      "pricing": {
+        "model": "gpt-5.4-mini",
+        "input_per_million": 0.75,
+        "cached_input_per_million": 0.075,
+        "output_per_million": 4.5,
+        "as_of": "2026-11-11",
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+        "currency": "USD",
+        "is_invoice": false
+      },
+      "scope": "근거 기반 답변·11항목 전체 문서 요약 고도화",
+      "semantic_quality_measured": false
+    },
+    "D02": {
+      "version": "rfp-phase5-v1",
+      "generation": {
+        "enabled": false,
+        "model": "gpt-5.4-mini",
+        "max_output_tokens": 6000,
+        "max_calls": 30,
+        "max_request_bytes": 60000,
+        "max_total_input_bytes": 600000,
+        "cache_enabled": true,
+        "reasoning_effort": "none"
+      },
+      "retrieval": {
+        "method": "bm25",
+        "top_k": 8,
+        "per_doc_top_k": 6,
+        "fetch_k": 40,
+        "mmr_lambda": 0.75,
+        "max_context_bytes": 42000,
+        "max_question_chars": 4000
+      },
+      "summary": {
+        "max_batch_bytes": 35000,
+        "max_map_calls": 30
+      },
+      "pricing": {
+        "model": "gpt-5.4-mini",
+        "input_per_million": 0.75,
+        "cached_input_per_million": 0.075,
+        "output_per_million": 4.5,
+        "as_of": "2026-11-11",
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+        "currency": "USD",
+        "is_invoice": false
+      },
+      "scope": "근거 기반 답변·11항목 전체 문서 요약 고도화",
+      "semantic_quality_measured": false
+    },
+    "D03": {
+      "version": "rfp-phase5-v1",
+      "generation": {
+        "enabled": false,
+        "model": "gpt-5.4-mini",
+        "max_output_tokens": 6000,
+        "max_calls": 30,
+        "max_request_bytes": 60000,
+        "max_total_input_bytes": 650000,
+        "cache_enabled": true,
+        "reasoning_effort": "none"
+      },
+      "retrieval": {
+        "method": "bm25",
+        "top_k": 8,
+        "per_doc_top_k": 6,
+        "fetch_k": 40,
+        "mmr_lambda": 0.75,
+        "max_context_bytes": 42000,
+        "max_question_chars": 4000
+      },
+      "summary": {
+        "max_batch_bytes": 35000,
+        "max_map_calls": 30
+      },
+      "pricing": {
+        "model": "gpt-5.4-mini",
+        "input_per_million": 0.75,
+        "cached_input_per_million": 0.075,
+        "output_per_million": 4.5,
+        "as_of": "2026-11-11",
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+        "currency": "USD",
+        "is_invoice": false
+      },
+      "scope": "근거 기반 답변·11항목 전체 문서 요약 고도화",
+      "semantic_quality_measured": false
+    },
+    "D04": {
+      "version": "rfp-phase5-v1",
+      "generation": {
+        "enabled": false,
+        "model": "gpt-5.4-mini",
+        "max_output_tokens": 6000,
+        "max_calls": 30,
+        "max_request_bytes": 60000,
+        "max_total_input_bytes": 600000,
+        "cache_enabled": true,
+        "reasoning_effort": "none"
+      },
+      "retrieval": {
+        "method": "bm25",
+        "top_k": 8,
+        "per_doc_top_k": 6,
+        "fetch_k": 40,
+        "mmr_lambda": 0.75,
+        "max_context_bytes": 42000,
+        "max_question_chars": 4000
+      },
+      "summary": {
+        "max_batch_bytes": 35000,
+        "max_map_calls": 30
+      },
+      "pricing": {
+        "model": "gpt-5.4-mini",
+        "input_per_million": 0.75,
+        "cached_input_per_million": 0.075,
+        "output_per_million": 4.5,
+        "as_of": "2026-11-11",
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+        "currency": "USD",
+        "is_invoice": false
+      },
+      "scope": "근거 기반 답변·11항목 전체 문서 요약 고도화",
+      "semantic_quality_measured": false
+    },
+    "D05": {
+      "version": "rfp-phase5-v1",
+      "generation": {
+        "enabled": false,
+        "model": "gpt-5.4-mini",
+        "max_output_tokens": 6000,
+        "max_calls": 30,
+        "max_request_bytes": 60000,
+        "max_total_input_bytes": 600000,
+        "cache_enabled": true,
+        "reasoning_effort": "none"
+      },
+      "retrieval": {
+        "method": "bm25",
+        "top_k": 8,
+        "per_doc_top_k": 6,
+        "fetch_k": 40,
+        "mmr_lambda": 0.75,
+        "max_context_bytes": 42000,
+        "max_question_chars": 4000
+      },
+      "summary": {
+        "max_batch_bytes": 35000,
+        "max_map_calls": 30
+      },
+      "pricing": {
+        "model": "gpt-5.4-mini",
+        "input_per_million": 0.75,
+        "cached_input_per_million": 0.075,
+        "output_per_million": 4.5,
+        "as_of": "2026-11-11",
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+        "currency": "USD",
+        "is_invoice": false
+      },
+      "scope": "근거 기반 답변·11항목 전체 문서 요약 고도화",
+      "semantic_quality_measured": false
+    },
+    "R06": {
+      "version": "rfp-phase5-v1",
+      "generation": {
+        "enabled": false,
+        "model": "gpt-5.4-mini",
+        "max_output_tokens": 6000,
+        "max_calls": 30,
+        "max_request_bytes": 60000,
+        "max_total_input_bytes": 600000,
+        "cache_enabled": true,
+        "reasoning_effort": "none"
+      },
+      "retrieval": {
+        "method": "bm25",
+        "top_k": 8,
+        "per_doc_top_k": 6,
+        "fetch_k": 40,
+        "mmr_lambda": 0.75,
+        "max_context_bytes": 42000,
+        "max_question_chars": 4000
+      },
+      "summary": {
+        "max_batch_bytes": 35000,
+        "max_map_calls": 30
+      },
+      "pricing": {
+        "model": "gpt-5.4-mini",
+        "input_per_million": 0.75,
+        "cached_input_per_million": 0.075,
+        "output_per_million": 4.5,
+        "as_of": "2026-11-11",
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+        "currency": "USD",
+        "is_invoice": false
+      },
+      "scope": "근거 기반 답변·11항목 전체 문서 요약 고도화",
+      "semantic_quality_measured": false
+    },
+    "R07": {
+      "version": "rfp-phase5-v1",
+      "generation": {
+        "enabled": false,
+        "model": "gpt-5.4-mini",
+        "max_output_tokens": 6000,
+        "max_calls": 30,
+        "max_request_bytes": 60000,
+        "max_total_input_bytes": 600000,
+        "cache_enabled": true,
+        "reasoning_effort": "none"
+      },
+      "retrieval": {
+        "method": "bm25",
+        "top_k": 8,
+        "per_doc_top_k": 6,
+        "fetch_k": 40,
+        "mmr_lambda": 0.75,
+        "max_context_bytes": 42000,
+        "max_question_chars": 4000
+      },
+      "summary": {
+        "max_batch_bytes": 35000,
+        "max_map_calls": 30
+      },
+      "pricing": {
+        "model": "gpt-5.4-mini",
+        "input_per_million": 0.75,
+        "cached_input_per_million": 0.075,
+        "output_per_million": 4.5,
+        "as_of": "2026-11-11",
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+        "currency": "USD",
+        "is_invoice": false
+      },
+      "scope": "근거 기반 답변·11항목 전체 문서 요약 고도화",
+      "semantic_quality_measured": false
+    }
+  },
+  "plan_fingerprints": {
+    "D01": "626f5bf661f3781d715b87a8834009a2fdccf53ea3c106754c4d86b5023be5a9",
+    "D02": "ab8a6359e010970f6b8c24a13a37e23981e516e6bc1379439c1cb74e9bdc4a58",
+    "D03": "2a3f3b977e949be10fd914d02303d41ec34ee57d1d59c665ecb4ef499341735f",
+    "D04": "3a84ac6604829a6aa8ddb128b5e4a5ed0aa224f3f414a0d02b8e293e383bb6ad",
+    "D05": "aea4fd1ed7fe8b71ee2ed5349b9adb4f834c3f7f9308ee28187660f3fdb5c844",
+    "R06": "02b17cbfb5fcb591cbecc1849fd5c1d4358cc516e51e3d9cb73a0e280fba85ce",
+    "R07": "4875e20aea1109cdaeae2b4fb785cdc69af07d1cd6dc59f9c823513f470492ab"
+  },
+  "suite_calls_cap": 75,
+  "suite_input_bytes_cap": 2400000,
+  "per_doc_input_ceiling": 900000
+}

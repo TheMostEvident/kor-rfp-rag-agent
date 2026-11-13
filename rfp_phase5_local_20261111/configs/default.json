@@ -1,0 +1,52 @@
+{
+  "version": "rfp-phase3-v1",
+  "chunking": {
+    "chunk_size_bytes": 1800,
+    "overlap_bytes": 240
+  },
+  "retrieval": {
+    "ngram_range": [
+      2,
+      4
+    ],
+    "max_features": 100000,
+    "min_df": 2,
+    "rrf_k": 60,
+    "bm25_weight": 1.0,
+    "char_tfidf_weight": 1.0,
+    "fts_metadata_weight": 0.25
+  },
+  "search": {
+    "method": "bm25",
+    "top_k": 5,
+    "fetch_k": 40,
+    "mmr_lambda": 0.75
+  },
+  "evaluation": {
+    "top_ks": [
+      5,
+      10,
+      20
+    ],
+    "features": [
+      "fact",
+      "comparison"
+    ],
+    "scope_modes": [
+      "context",
+      "global"
+    ],
+    "methods": [
+      "bm25",
+      "char_tfidf",
+      "rrf",
+      "mmr"
+    ]
+  },
+  "openai": {
+    "enabled": false,
+    "model": "text-embedding-3-small",
+    "dimensions": 1536,
+    "allowed_doc_ids": []
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "performance_measured": false,
+  "initial_targets": {
+    "evidence_recall": 0.9,
+    "required_fact_accuracy": 0.95,
+    "citation_precision": 0.95,
+    "citation_completeness": 0.95,
+    "summary_fact_recall": 0.95,
+    "followup_case_success": 0.9,
+    "uncertainty_case_success": 0.9
+  },
+  "denominators": {
+    "evidence_recall": "정답 근거가 있는 검색형 사례의 필요한 근거 전체. 찾은 유효 근거 수를 분자로 한다.",
+    "required_fact_accuracy": "요청한 필수 사실 전체. 누락·잘못된 미확인·단위/VAT/기준기간 오류는 오답.",
+    "citation_precision": "제시한 인용 전체. 해당 주장을 실제 지지하는 인용만 분자.",
+    "citation_completeness": "검증 가능한 주장 전체. 유효한 근거와 연결된 주장만 분자.",
+    "summary_fact_recall": "해당 요약 사례의 적용 가능한 정답 핵심 사실 전체. 11개 형식 항목 출력 여부는 따로 체크.",
+    "comparison_accuracy": "요청 문서 수 × 비교 항목 수의 모든 칸. 미확인으로 누락한 정답도 오답.",
+    "followup_case_success": "모든 평가 턴에서 범위·필수 사실·기대 상태를 만족한 대화 수 / 대화 전체.",
+    "uncertainty_case_success": "사례별 기대 상태·확인 질문/부분답변/부족/충돌 동작을 충족한 사례 수 / 해당 사례 전체."
+  },
+  "rules": [
+    "분모 0은 N/A이며 100%로 바꾸지 않는다.",
+    "인용이 전혀 없으면 인용 정확도는 N/A이며 인용 충실도를 별도로 채점한다.",
+    "근거 없는 정답 추측은 근거 요구 항목에서 성공으로 세지 않는다.",
+    "한 required_fact가 여러 조건을 묶으면 모두 충족해야 그 사실 1개를 정답으로 센다.",
+    "구조 검증·인용 문자열 일치는 의미 정확도를 자동 보장하지 않는다.",
+    "최종 평가용 문항·정답·문서를 보고 개선하면 해당 분할은 개발용으로 전환하고 새 최종 평가셋을 만든다."
+  ],
+  "critical_error_categories": [
+    "예산/단위/VAT",
+    "제출기한/제출방법",
+    "필수 참가자격",
+    "다른 사업의 조건 혼입"
+  ],
+  "pilot_gate": "금액·마감일·필수 자격의 알려진 중대 오류를 해결하고 재검증한 뒤 파일럿 판단. 현재는 미측정.",
+  "latency_and_cost": "단일 Q&A/후속 질문/전체 요약별 호출 수, 입출력 토큰, 비용, p50·p95를 이후 실제 실행에서 기록. 단일 Q&A p95 15초는 초기 목표."
+}
