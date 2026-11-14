@@ -10,7 +10,7 @@ from unittest.mock import patch
 from local_rag.retrieval import LocalSearchIndex
 from rfp_phase6.test_session import fixture
 from rfp_phase7.evidence import load_dev_cases,latency,score_retrieval,user_steps
-from rfp_phase7.evaluate import run_evaluation,save_report
+from rfp_phase7.evaluate import run_evaluation,save_report,summarize
 from rfp_phase7.review import assess_review,review_template,JUDGEMENTS
 
 
@@ -29,6 +29,46 @@ class Client:
 
 
 class EvaluationTests(unittest.TestCase):
+    def test_validation_failure_is_reported_even_when_no_citations_are_rendered(self):
+        class BadQuote(Client):
+            def create(inner,**body):
+                result=super().create(**body)
+                c=json.loads(body['input'][1]['content'])['evidence'][0]
+                payload={'status':'answered','claims':[{'doc_id':c['doc_id'],
+                    'category':'budget','text':'예산 정보',
+                    'citations':[{'chunk_id':c['chunk_id'],'quote':'INVENTED_SOURCE'}]}],
+                    'missing_information':[]}
+                result['output_text']=json.dumps(payload);return result
+        r=self.live(BadQuote())
+        self.assertEqual(r['metrics']['phase6_rrf']['validation_failed_turns'],1)
+        self.assertIsNone(r['metrics']['phase6_rrf']['citation_source_validity'])
+        self.assertEqual(r['rows'][0]['result']['claims'],[])
+
+    def test_comparison_checks_all_request_reservations_before_first_call(self):
+        self.case.update(feature='comparison',question='선택한 두 사업 예산 비교',target_doc_ids=['A','B'])
+        self.case['context']['selected_doc_ids']=['A','B'];client=Client()
+        r=run_evaluation(self.env,[self.case],profiles=['phase6_rrf'],enabled=True,
+            case_ids=['DEV1'],approved_doc_ids=['A','B'],max_calls=1,client=client)
+        self.assertEqual(client.bodies,[])
+        self.assertEqual(r['metrics']['phase6_rrf']['generation_error_turns'],1)
+        self.assertEqual(r['usage']['mock_calls'],0)
+
+    def test_requested_award_results_do_not_spend_on_unrelated_rfp_answers(self):
+        self.case['question']='최종 낙찰업체와 실제 계약금액을 확정해서 알려줘.'
+        self.case['expected_status']='insufficient_evidence';client=Client()
+        r=self.live(client)
+        self.assertEqual(client.bodies,[])
+        self.assertEqual(r['rows'][0]['result']['status'],'insufficient_evidence')
+        self.assertEqual(r['usage']['mock_calls'],0)
+
+    def test_mixed_cache_and_live_comparison_is_not_counted_as_pure_cache_latency(self):
+        r=self.run_sample()
+        r['rows'][0]['usage_delta'].update(live_api_calls=1,cache_hits=1)
+        r=summarize(r);m=r['metrics']['phase6_rrf']
+        self.assertEqual(m['mixed_live_cache_latency']['count'],1)
+        self.assertEqual(m['fresh_live_latency']['count'],0)
+        self.assertEqual(m['local_cache_latency']['count'],0)
+
     def setUp(self):
         self.tmp=tempfile.TemporaryDirectory();self.addCleanup(self.tmp.cleanup)
         self.root=Path(self.tmp.name);self.docs,self.chunks,self.registry=fixture()

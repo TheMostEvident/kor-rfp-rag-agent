@@ -104,13 +104,13 @@ class GroundedBackend:
         result=self(route['standalone_query'],doc_ids=route['effective_doc_ids'],
             feature=route['feature'],search_queries=route['retrieval_plan']['queries'],
             search_topics=route['retrieval_plan']['topics'],
-            content_question=route['retrieval_plan']['content_question'])
+            content_question=route['retrieval_plan']['content_question'],request_question=route['query'])
         result.setdefault('retrieval',{})['content_query_plan']=copy.deepcopy(route['retrieval_plan'])
         result['retrieval']['candidate_selection']='content_priority_then_query_round_robin'
         result['retrieval']['ranking_is_semantic_verdict']=False
         return result
 
-    def __call__(self,query,*,doc_ids,feature,search_queries=None,search_topics=(),content_question=''):
+    def __call__(self,query,*,doc_ids,feature,search_queries=None,search_topics=(),content_question='',request_question=None):
         if self.approved is not None and not set(doc_ids).issubset(self.approved):
             return {'status':'not_generated','execution_status':'not_approved',
                 'answer_generated':False,'claims':[],'active_doc_ids':list(doc_ids),
@@ -128,7 +128,8 @@ class GroundedBackend:
         # Intent was resolved from the current user turn, excluding titles.
         # Generation keeps the original question and business context. The
         # scoped index uses separate content queries for lexical ranking.
-        result=answer.ask('비교 요청' if feature=='comparison' else '문서 질문',feature=feature)
+        result=answer.ask('비교 요청' if feature=='comparison' else '문서 질문',feature=feature,
+            request_question=request_question or content_question or query)
         if result.get('execution_status')=='disabled':
             result['status']='retrieved' if result.get('source_chunks') else 'insufficient_evidence'
             result['markdown']='선택한 문서에서 원문 근거 후보를 찾았습니다. 실제 답변 생성은 꺼져 있습니다.'

@@ -52,12 +52,13 @@ class LLM:
         self.requests.append((task, question, copy.deepcopy(evidence)))
         if self.mode == 'error':
             raise RuntimeError('PRIVATE_UPSTREAM_BODY_AND_KEY')
-        chosen = evidence[:1] if self.mode == 'only_first' else evidence
+        chosen = [c for c in evidence if c['doc_id']=='A'] if self.mode == 'only_first' else evidence
         claims = [{'doc_id': c['doc_id'], 'category': 'budget', 'text': c['text'],
                    'citations': [{'chunk_id': c['chunk_id'],
                                   'quote': 'FABRICATED_QUOTE' if self.mode == 'bad_quote' else c['text']}]}
                   for c in chosen]
-        return {'payload': {'status': 'answered', 'claims': claims, 'missing_information': []},
+        return {'payload': {'status': 'answered' if claims else 'insufficient_evidence',
+                'claims': claims, 'missing_information': [] if claims else ['현재 문서의 예산']},
                 'usage': {'input_tokens': 10, 'output_tokens': 10},
                 'live_api': False, 'execution_mode': 'mock', 'cache_hit': False}
 

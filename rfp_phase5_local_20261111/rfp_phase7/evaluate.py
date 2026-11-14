@@ -38,7 +38,8 @@ def _citation_audit(env,result):
     claims=result.get('claims') or []
     if not claims:
         return {'declared_citations':0,'validated_citations':0,'valid':None,
-                'semantic_correctness':None}
+                'semantic_correctness':None,
+                'withheld_after_validation_failure':result.get('execution_status')=='validation_failed'}
     scope=result.get('effective_doc_ids') or result.get('active_doc_ids') or [result.get('doc_id')]
     try:
         core=[{'doc_id':c['doc_id'],'category':c['category'],'text':c['text'],
@@ -124,8 +125,12 @@ def summarize(report):
         valid=sum(c['validated_citations'] for c in citations)
         scopes=[r['scope_match'] for r in rows if r.get('scope_match') is not None]
         statuses=[r['status_match'] for r in rows if r.get('status_match') is not None]
-        live=[r['latency_ms'] for r in rows if r['usage_delta'].get('live_api_calls',0)>0]
-        cache=[r['latency_ms'] for r in rows if r['usage_delta'].get('cache_hits',0)>0]
+        live=[r['latency_ms'] for r in rows if r['usage_delta'].get('live_api_calls',0)>0
+              and not r['usage_delta'].get('cache_hits',0)]
+        cache=[r['latency_ms'] for r in rows if r['usage_delta'].get('cache_hits',0)>0
+               and not r['usage_delta'].get('live_api_calls',0)]
+        mixed=[r['latency_ms'] for r in rows if r['usage_delta'].get('live_api_calls',0)>0
+               and r['usage_delta'].get('cache_hits',0)>0]
         out[profile]={'turn_count':len(rows),'source_recovery':micro_recall(rows),
             'recall_at_k':{str(k):micro_recall(rows,k) for k in (3,5,8)},
             'source_overlap_mrr':sum(r['retrieval_score']['reciprocal_rank_first_source_overlap'] for r in rows
@@ -136,8 +141,12 @@ def summarize(report):
             'status_matches':sum(statuses),'status_evaluable_turns':len(statuses),
             'citation_source_validity':valid/needed if needed else None,
             'declared_citations':needed,'invalid_citation_rows':sum(c['valid'] is False for c in citations),
+            'validation_failed_turns':sum(r['result'].get('execution_status')=='validation_failed' for r in rows),
+            'generation_error_turns':sum(r['result'].get('execution_status')=='error' for r in rows),
+            'citation_validity_scope':'Accepted citations only; withheld validation failures counted separately.',
             'end_to_end_latency':latency([r['latency_ms'] for r in rows]),
             'fresh_live_latency':latency(live),'local_cache_latency':latency(cache),
+            'mixed_live_cache_latency':latency(mixed),
             'by_feature':{feature:micro_recall([r for r in rows if r['feature']==feature])
                           for feature in sorted({r['feature'] for r in rows})},
             'by_format':{fmt:micro_recall([r for r in rows if '+'.join(r['document_formats'])==fmt])

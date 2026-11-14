@@ -4,9 +4,11 @@ from __future__ import annotations
 import json
 import re
 import time
+import copy
 
 from local_rag.session import SearchSession
 from .citation_recovery import validate_with_quote_recovery
+from .request_policy import award_evidence_gate, generation_question
 
 
 DEFAULT_RETRIEVAL = {'method': 'bm25', 'top_k': 8, 'per_doc_top_k': 6,
@@ -108,6 +110,25 @@ def _comparison_markdown(validation, selected_doc_ids, catalog):
     return '\n'.join(lines)
 
 
+def _generation_report(parts):
+    """Keep child request metadata and usage; never retain model payloads."""
+    if not parts:return None
+    if len(parts)==1:return copy.deepcopy(parts[0])
+    modes={p.get('execution_mode') for p in parts}
+    usages=[p.get('usage',{}) for p in parts];usage={}
+    for k in {k for u in usages for k in u}:
+        values=[u.get(k) for u in usages]
+        if k=='usage_reported':usage[k]=all(v is True for v in values)
+        elif all(type(v) in (int,float) for v in values):usage[k]=sum(values)
+        else:usage[k]=None
+    return {'execution_mode':next(iter(modes)) if len(modes)==1 else 'mixed',
+        'live_api':any(p.get('live_api') for p in parts),
+        'cache_hit':all(p.get('cache_hit') for p in parts),'usage':usage,
+        'request_fingerprints':[p.get('request_fingerprint') for p in parts],
+        'document_requests':copy.deepcopy(parts),'request_count':len(parts),
+        'request_latency_ms':sum(p.get('request_latency_ms',0) for p in parts)}
+
+
 class AnswerSession:
     """Uses only user history, never previous assistant answers or eval labels."""
 
@@ -134,7 +155,7 @@ class AnswerSession:
                 'retrieval': retrieval or {}, 'source_chunks': [], 'generation': None,
                 'validation': None, 'semantic_entailment_verified': False}
 
-    def ask(self, query, *, feature='qa', candidate_doc_ids=None):
+    def ask(self, query, *, feature='qa', candidate_doc_ids=None, request_question=None):
         if not isinstance(query, str):
             raise TypeError('질문은 문자열이어야 합니다.')
         if feature not in {'qa', 'fact', 'comparison', 'followup', 'uncertainty'}:
@@ -183,15 +204,42 @@ class AnswerSession:
         if not context:
             return self._empty('insufficient_evidence', 'not_requested',
                 '현재 검색·입력 예산 안에서 인용할 원문을 확보하지 못했습니다.', retrieval)
+        gate=award_evidence_gate(request_question or search['standalone_query'],context)
+        if gate:
+            result=self._empty('insufficient_evidence','not_requested',
+                '현재 제공·검색된 원문 근거로는 '+', '.join(gate['requested_fields'])+
+                '을 확정할 수 없습니다. RFP의 과업예산은 실제 계약금액의 근거가 아닙니다. '
+                '낙찰 결과 공고 또는 체결 계약서를 추가로 확인해야 합니다.',retrieval)
+            result.update(source_chunks=context,missing_information=gate['requested_fields'],
+                          request_policy=gate)
+            return result
         enabled = getattr(getattr(self.llm, 'config', None), 'enabled', False)
         if not enabled:
             result = self._empty('not_generated', 'disabled',
                 'OpenAI 실행이 꺼져 있습니다. 원문 근거 후보를 확인한 뒤 ENABLE_OPENAI와 해당 실행 옵션을 켜세요.', retrieval)
             result['source_chunks'] = context
             return result
+        requests=([{'task':'qa','question':generation_question(search['standalone_query'],doc_id=did),
+                    'evidence':[c for c in context if c['doc_id']==did]} for did in scope
+                   if any(c['doc_id']==did for c in context)] if comparison else
+                  [{'task':'qa','question':generation_question(search['standalone_query']),'evidence':context}])
+        retrieval['generation_strategy']='per_document_then_validated_table' if comparison else 'scoped_qa'
+        retrieval['planned_generation_requests']=len(requests)
+        generated_parts=[];validations=[];document_validation=[]
         try:
-            generated = self.llm.generate('comparison' if comparison else 'qa',
-                                          search['standalone_query'], context)
+            preflight=getattr(self.llm,'preflight_requests',None)
+            if callable(preflight):preflight(requests)
+            for request in requests:
+                generated=self.llm.generate(**request)
+                generated_parts.append({k:v for k,v in generated.items() if k!='payload'})
+                ids=list(dict.fromkeys(c['doc_id'] for c in request['evidence']))
+                checked=validate_with_quote_recovery(self.registry,generated.get('payload'),
+                    request['evidence'],allowed_doc_ids=ids)
+                document_validation.append({'doc_ids':ids,'valid':checked['valid'],
+                    'errors':checked.get('errors',[]),
+                    'citation_recovery':checked.get('citation_recovery',{})})
+                validations.append(checked)
+                if not checked['valid']:break
         except Exception as error:
             # No upstream API body, key, or source snippet is exposed.
             from .llm import LLMError
@@ -200,15 +248,28 @@ class AnswerSession:
                 '답변 생성에 실패했습니다. API 설정·사용량 상한·모델 접근 권한을 확인하세요.', retrieval)
             result.update({'source_chunks': context, 'error_type': type(error).__name__,
                            'error_detail': safe_detail,
+                           'document_validation':document_validation,
+                           'generation':_generation_report(generated_parts),
                            'latency_ms': (time.perf_counter() - started) * 1000})
             return result
-        validation = validate_with_quote_recovery(self.registry, generated.get('payload'), context,
-                                                   allowed_doc_ids=scope or None)
-        generation_report = {key: value for key, value in generated.items() if key != 'payload'}
+        validation=next((v for v in validations if not v['valid']),None)
+        generation_report=_generation_report(generated_parts)
+        if validation is None:
+            if comparison:
+                claims=[{'doc_id':c['doc_id'],'category':c['category'],'text':c['text'],
+                         'citations':[{'chunk_id':q['chunk_id'],'quote':q['quote']} for q in c['citations']]}
+                        for v in validations for c in v['claims']]
+                missing=[f"문서 {d['doc_ids'][0]}: {m}" for v,d in zip(validations,document_validation)
+                         for m in v['missing_information']]
+                status='partial' if claims and missing else 'answered' if claims else 'insufficient_evidence'
+                validation=self.registry.validate_answer({'status':status,'claims':claims,
+                    'missing_information':missing},context,allowed_doc_ids=scope)
+            else:validation=validations[0]
         if not validation['valid']:
             result = self._empty('not_generated', 'validation_failed',
                 '생성 결과의 출처·형식 검사에 실패해 답변을 표시하지 않습니다.', retrieval)
             result.update({'validation': validation, 'generation': generation_report,
+                           'document_validation':document_validation,
                            'source_chunks': context, 'latency_ms': (time.perf_counter() - started) * 1000})
             return result
         # Preserve missing evidence on either selected document; never imply a complete comparison.
@@ -226,6 +287,7 @@ class AnswerSession:
                 'markdown': (_comparison_markdown(validation, scope, self.index.get_catalog())
                              if comparison else self.registry.render(validation)), 'active_doc_ids': scope,
                 'source_chunks': context, 'retrieval': retrieval, 'generation': generation_report,
-                'validation': validation, 'usage': generated.get('usage', {}),
+                'validation': validation, 'usage': generation_report.get('usage', {}),
+                'document_validation':document_validation,
                 'latency_ms': (time.perf_counter() - started) * 1000,
                 'semantic_entailment_verified': False}
