@@ -4,8 +4,10 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
+import os,unicodedata
 
-from rfp_phase5_corpus.raw_audit import audit_raw_corpus,detect_format
+from rfp_phase5_corpus.raw_audit import audit_raw_corpus,detect_format,_path_spelling,_registered_path
 
 
 class RawAuditTests(unittest.TestCase):
@@ -126,6 +128,54 @@ class RawAuditTests(unittest.TestCase):
             progress=lambda n,total,row:progress.append((n,total,row['doc_id'])))
         self.assertTrue(result['all_registered_sources_read']);self.assertEqual(result['unregistered_source_count'],1)
         self.assertEqual(progress,[(1,1,'doc-1')]);self.assertEqual(result['raw_directory'],str(new.resolve()))
+
+    def test_macos_unicode_alias_requires_same_physical_file(self):
+        expected=Path('/raw/제안요청서.pdf')
+        actual=Path(unicodedata.normalize('NFD',str(expected)))
+        self.assertNotEqual(expected,actual)
+        candidates={_path_spelling(expected):[expected]}
+        with patch.object(Path,'samefile',return_value=True) as identity:
+            self.assertEqual(_registered_path(actual,{expected},candidates),'normalized_spelling_same_file')
+            identity.assert_called_once_with(expected)
+        with patch.object(Path,'samefile',return_value=False):
+            self.assertIsNone(_registered_path(actual,{expected},candidates))
+
+    def test_unicode_equivalent_but_distinct_linux_files_are_not_merged(self):
+        expected=self.root/'data/raw/제안.pdf'
+        actual=self.root/'data/raw'/unicodedata.normalize('NFD','제안.pdf')
+        expected.write_bytes(b'%PDF-one');actual.write_bytes(b'%PDF-two')
+        if actual.samefile(expected):self.skipTest('Filesystem merges Unicode spellings')
+        self.assertIsNone(_registered_path(actual,{expected},{_path_spelling(expected):[expected]}))
+
+    def test_appledouble_sidecars_are_metadata_not_unregistered_rfps(self):
+        doc=self.document()
+        (self.root/'data/raw/._one.pdf').write_bytes(b'\x00\x05\x16\x07'+b'metadata')
+        report=audit_raw_corpus([doc],self.root)
+        self.assertEqual(report['read_success_count'],1)
+        self.assertEqual(report['unregistered_source_count'],0)
+        self.assertEqual(report['ignored_metadata_count'],1)
+        self.assertEqual(report['ignored_metadata_sources'][0]['reason'],'appledouble_sidecar')
+
+    def test_real_pdf_with_appledouble_style_name_is_not_silently_ignored(self):
+        doc=self.document();(self.root/'data/raw/._real.pdf').write_bytes(b'%PDF-1.7 real')
+        report=audit_raw_corpus([doc],self.root)
+        self.assertEqual(report['unregistered_source_count'],1)
+        self.assertEqual(report['ignored_metadata_count'],0)
+
+    def test_copied_or_hardlinked_new_name_remains_unregistered_even_if_sha_matches(self):
+        doc=self.document();source=self.root/'data/raw/one.pdf'
+        (source.parent/'new-name.pdf').write_bytes(source.read_bytes())
+        os.link(source,source.parent/'hardlink-name.pdf')
+        report=audit_raw_corpus([doc],self.root)
+        self.assertEqual(report['unregistered_source_count'],2)
+        self.assertEqual(report['unregistered_known_content_count'],2)
+        self.assertEqual(report['registered_inventory_files'],1)
+
+    def test_normal_source_inventory_is_not_reported_as_unregistered(self):
+        doc=self.document();report=audit_raw_corpus([doc],self.root)
+        self.assertEqual(report['inventory_source_files'],1)
+        self.assertEqual(report['registered_inventory_files'],1)
+        self.assertEqual(report['unregistered_source_count'],0)
 
 
 if __name__=='__main__':unittest.main()

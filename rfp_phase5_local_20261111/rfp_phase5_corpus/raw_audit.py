@@ -12,9 +12,12 @@ import hashlib
 import importlib.util
 import io
 import json
+import os
 from pathlib import Path
+import unicodedata
 import zipfile
 
+REGISTRATION_VERSION='physical-path-registration-v2'
 
 def _sha(path):
     value=hashlib.sha256()
@@ -26,6 +29,32 @@ def _sha(path):
 def _digest(value):
     encoded=json.dumps(value,ensure_ascii=False,sort_keys=True,separators=(',',':'),allow_nan=False)
     return hashlib.sha256(encoded.encode('utf-8')).hexdigest()
+
+
+def _path_spelling(path):
+    """Candidate key only; Unicode spelling never proves file identity."""
+    return unicodedata.normalize('NFC',os.path.normcase(str(path)))
+
+
+def _registered_path(path,expected_paths,by_spelling):
+    if path in expected_paths:return 'exact_path'
+    for expected in by_spelling.get(_path_spelling(path),[]):
+        try:
+            if path.samefile(expected):return 'normalized_spelling_same_file'
+        except OSError:continue
+    return None
+
+
+def _metadata_reason(path,raw_dir):
+    relative=path.relative_to(raw_dir)
+    if '__MACOSX' in relative.parts:return 'macos_metadata_directory'
+    if path.name in {'.DS_Store','.gitkeep'}:return 'directory_metadata'
+    if path.name.startswith('._'):
+        try:
+            with path.open('rb') as handle:magic=handle.read(4)
+            if magic==b'\x00\x05\x16\x07':return 'appledouble_sidecar'
+        except OSError:pass
+    return None
 
 
 def detect_format(path):
@@ -181,19 +210,34 @@ def audit_raw_corpus(documents,phase2_root,reparse=False,raw_directory=None,prog
             row['snapshot_compatible']=False
         row['needs_review']=bool(row['review_codes'])
         if progress is not None:progress(position,len(documents),row)
-    unknown=[]
+    unknown=[];ignored=[];aliases=[];registered_inventory_files=0;inventory_files=0
+    by_spelling={}
+    for path in expected_paths:by_spelling.setdefault(_path_spelling(path),[]).append(path)
+    known_hashes={d.get('sha256') for d in documents if d.get('sha256')}
     if raw_dir.is_dir():
         for path in sorted(raw_dir.rglob('*')):
-            if not path.is_file() or path.name in {'.DS_Store','.gitkeep'} or '__MACOSX' in path.parts:continue
+            if not path.is_file():continue
+            reason=_metadata_reason(path,raw_dir)
+            if reason:
+                ignored.append({'relative_path':path.relative_to(raw_dir).as_posix(),'reason':reason});continue
+            inventory_files+=1
             resolved=path.resolve()
-            if resolved not in expected_paths:
+            registration=_registered_path(resolved,expected_paths,by_spelling)
+            if registration:
+                registered_inventory_files+=1
+                if registration!='exact_path':
+                    aliases.append({'relative_path':path.relative_to(raw_dir).as_posix(),'match':registration})
+            else:
                 entry={'relative_path':path.relative_to(raw_dir if raw_directory is not None else root).as_posix(),'registered_in_snapshot':False}
                 try:
                     if not resolved.is_relative_to(raw_dir if raw_directory is not None else root):raise ValueError('unsafe_source_path')
-                    entry.update(sha256=_sha(path),detected_format=detect_format(path))
+                    digest=_sha(path)
+                    entry.update(sha256=digest,detected_format=detect_format(path),
+                                 same_content_as_registered_source=digest in known_hashes)
                 except Exception:entry['failure_code']='unsupported_or_unreadable_unregistered_source'
                 unknown.append(entry)
-    return {'version':'phase5-raw-corpus-audit-v1','phase2_root':str(root),'raw_directory':str(raw_dir),
+    return {'version':'phase5-raw-corpus-audit-v1','registration_version':REGISTRATION_VERSION,
+        'phase2_root':str(root),'raw_directory':str(raw_dir),
         'document_count':len(documents),'unique_contents':len({d.get('sha256') for d in documents if d.get('sha256')}),
         'read_success_count':sum(r['read_success'] for r in rows),'read_failure_count':sum(not r['read_success'] for r in rows),
         'needs_review_count':sum(r['needs_review'] for r in rows),
@@ -204,6 +248,11 @@ def audit_raw_corpus(documents,phase2_root,reparse=False,raw_directory=None,prog
         'detected_format_counts':dict(Counter(r['detected_format'] for r in rows if r.get('detected_format'))),
         'duplicate_document_ids':[key for key,count in ids.items() if count>1],
         'unregistered_source_count':len(unknown),'unregistered_sources':unknown,
+        'inventory_source_files':inventory_files,'registered_inventory_files':registered_inventory_files,
+        'registered_path_alias_count':len(aliases),'registered_path_aliases':aliases,
+        'ignored_metadata_count':len(ignored),'ignored_metadata_sources':ignored,
+        'unregistered_known_content_count':sum(r.get('same_content_as_registered_source',False) for r in unknown),
+        'registration_policy':'exact_path_or_unicode_equivalent_same_physical_file; hash_only_never_registers',
         'reparse_requested':reparse,'unique_contents_reparsed':reparse_count,
         'fresh_parsing_verified':bool(reparse and rows and all(r['read_success'] for r in rows)),
         'parser_cache_used':False,'rows':rows,'api_calls':0,'evaluation_answers_read':False,

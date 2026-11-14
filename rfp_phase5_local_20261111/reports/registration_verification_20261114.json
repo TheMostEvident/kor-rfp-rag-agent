@@ -1,0 +1,22 @@
+{
+  "version": "physical-path-registration-v2",
+  "raw_tests_passed": 19,
+  "corpus_tests_passed": 71,
+  "actual_original_source_files": 100,
+  "source_hashes_match": true,
+  "scenario_100_sources_plus_100_appledouble": {
+    "read_success": 100,
+    "registered_files": 100,
+    "ignored_metadata": 100,
+    "unregistered": 0
+  },
+  "scenario_new_same_content_copy": {
+    "unregistered": 1,
+    "same_content_but_not_auto_registered": true
+  },
+  "macos_unicode_alias_policy_tested_with_samefile_simulation": true,
+  "distinct_unicode_paths_never_merged_without_samefile": true,
+  "actual_api_calls": 0,
+  "original_index_or_cache_changed": false,
+  "user_macos_inventory_root_cause_confirmed": false
+}
