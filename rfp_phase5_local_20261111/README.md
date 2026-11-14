@@ -1,5 +1,8 @@
 # 입찰메이트 RFP RAG — Phase 5
 
+후속 질문·대화 맥락을 구현한 다음 단계는 [Phase 6 실행 안내](README_PHASE6.md)와
+`notebooks/13_younggwan_phase6_conversation.ipynb`입니다. 기본 Run All은 API 호출 없이 실행합니다.
+
 현재 실행 노트북은 `notebooks/12_younggwan_phase5_final_env_fixed.ipynb`입니다. 기본 대상은 표본 7건이 아니라 전체 원본입니다.
 기존에 성공한 Phase 3 `.venv/bin/python` 커널과 로컬 원문·인덱스를 사용하세요.
 원문·인덱스·API 응답 캐시는 Git에 포함되지 않으므로, 새 clone만으로 실제 실행 데이터를 재현할 수는 없습니다.

@@ -1,0 +1,17 @@
+{
+  "conversation": {
+    "max_history_turns": 8,
+    "max_question_chars": 2000,
+    "max_rewrite_chars": 3500,
+    "previous_question_chars": 800
+  },
+  "retrieval": {
+    "method": "rrf",
+    "top_k": 8,
+    "per_doc_top_k": 6,
+    "fetch_k": 40,
+    "mmr_lambda": 0.75,
+    "max_context_bytes": 42000,
+    "max_question_chars": 4000
+  }
+}
