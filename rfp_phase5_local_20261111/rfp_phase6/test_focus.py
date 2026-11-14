@@ -63,6 +63,12 @@ class GroundedClient:
         source = next((c for c in evidence if '3. 사업 범위' in c['text']), source)
         did = 'ANOTHER_DOCUMENT' if self.mode == 'wrong_doc' else source['doc_id']
         quote = '원문에 존재하지 않는 구절' if self.mode == 'wrong_quote' else source['text']
+        schema = body.get('text', {}).get('format', {}).get('schema', {})
+        choices = (schema.get('properties', {}).get('claims', {}).get('items', {}).get('properties', {})
+                   .get('citations', {}).get('items', {}).get('anyOf', []))
+        if choices and self.mode != 'wrong_quote':
+            branch = next(b for b in choices if b['properties']['chunk_id']['enum'] == [source['chunk_id']])
+            quote = branch['properties']['quote']['enum'][0]
         payload = {'status': 'answered', 'claims': [{'doc_id': did, 'category': 'requirements',
             'text': source['text'], 'citations': [{'chunk_id': source['chunk_id'], 'quote': quote}]}],
             'missing_information': []}
@@ -202,7 +208,8 @@ class FocusTests(unittest.TestCase):
                 chat = self.chat(GroundedClient(mode))
                 chat.select_documents(['A'])
                 result = chat.ask('구체적인 사업 내용은?')
-                self.assertEqual(result['execution_status'], 'validation_failed')
+                self.assertEqual(result['execution_status'], 'error')
+                self.assertEqual(result['error_diagnostic']['code'], 'invalid_answer_structure')
                 self.assertEqual(result['claims'], [])
                 self.assertFalse(result['answer_generated'])
 

@@ -10,6 +10,7 @@ from rfp_phase4.rag import AnswerSession
 from .session import ConversationSession, ConversationConfig
 from .query import prioritize_content_candidates, query_topics
 from .focus import focused_question, response_focus_audit
+from .literal_quotes import LiteralQuoteClient, VERSION as LITERAL_VERSION
 
 
 class ScopedIndex:
@@ -125,7 +126,15 @@ class GroundedBackend:
             raise ValueError('본문 검색질문이 설정 상한을 넘었습니다.')
         index=ScopedIndex(self.env['index'],self.env['registry'],doc_ids,search_queries=search_queries,
             search_topics=search_topics,content_question=content_question,context_cache=self._context_cache)
-        answer=AnswerSession(index,self.llm,self.env['registry'],config=self.retrieval,
+        retrieval=dict(self.retrieval)
+        literal='work_scope' in search_topics
+        llm=LiteralQuoteClient(self.llm) if literal else self.llm
+        if literal:
+            # Source text appears in both evidence and the allowed-quote schema.
+            # Bound it before normal document quotas/packing, not after dispatch.
+            request_cap=getattr(self.llm.config,'max_request_bytes',60000)
+            retrieval['max_context_bytes']=min(retrieval.get('max_context_bytes',42000),max(1,request_cap//3))
+        answer=AnswerSession(index,llm,self.env['registry'],config=retrieval,
             active_doc_ids=index.ids)
         answer.retrieval_session=_FixedSelection(index.ids,query)
         # Intent was resolved from the current user turn, excluding titles.
@@ -133,6 +142,10 @@ class GroundedBackend:
         # scoped index uses separate content queries for lexical ranking.
         result=answer.ask('비교 요청' if feature=='comparison' else '문서 질문',feature=feature,
             request_question=request_question or content_question or query)
+        if literal:
+            result.setdefault('retrieval',{})['literal_citation_contract']={
+                'version':LITERAL_VERSION,'context_byte_limit':retrieval['max_context_bytes'],
+                'request_schema_and_evidence_share_existing_cap':True}
         if result.get('execution_status')=='disabled':
             result['status']='retrieved' if result.get('source_chunks') else 'insufficient_evidence'
             result['markdown']='선택한 문서에서 원문 근거 후보를 찾았습니다. 실제 답변 생성은 꺼져 있습니다.'
