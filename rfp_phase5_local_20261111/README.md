@@ -1,8 +1,51 @@
 # 입찰메이트 RFP RAG — Phase 5
 
-현재 실행 노트북은 `notebooks/12_younggwan_phase5_final_env_fixed.ipynb`입니다.
+현재 실행 노트북은 `notebooks/12_younggwan_phase5_final_env_fixed.ipynb`입니다. 기본 대상은 표본 7건이 아니라 전체 원본입니다.
 기존에 성공한 Phase 3 `.venv/bin/python` 커널과 로컬 원문·인덱스를 사용하세요.
 원문·인덱스·API 응답 캐시는 Git에 포함되지 않으므로, 새 clone만으로 실제 실행 데이터를 재현할 수는 없습니다.
+
+## 모든 HWP·HWPX·PDF 인식과 처리
+
+12번 노트북은 `rfp_phase5_corpus/`의 코드로 다음을 한 번에 연결합니다.
+
+1. 모든 원본 파일의 SHA·magic 형식과 파서 버전을 저장된 추출 원문에 연결합니다. 확장자만 믿지 않습니다.
+2. 모든 대표 문서의 본문·표·원문 위치·청크 보존과 인덱스 정합성을 확인하고 실제 본문 구간으로 검색합니다.
+3. 새 폴더를 지정하면 실제 파싱·청킹·색인을 별도 workspace에 구축합니다. 원래 100건과 기존 API 기록을 덮어쓰지 않습니다.
+4. 전체 문서 요약을 선택한 채 이번 실행 상한만큼 처리하고 이어서 실행합니다. 전체 잔량이 예산을 넘는다고 호출 전체를 끄지 않습니다.
+
+```bash
+# 프로젝트 최상위에서 실행: 기본은 전체 원본·검색·생성 상태 검사만, API 0회.
+python rfp_phase5_local_20261111/scripts/corpus_phase5.py
+
+# 캐시 없이 모든 고유 원본을 실제 재파싱 (수 분 이상 소요).
+python rfp_phase5_local_20261111/scripts/corpus_phase5.py --reparse-raw
+
+# 새로운 입력 폴더를 실제 파싱·색인; 원래 인덱스는 보존.
+python rfp_phase5_local_20261111/scripts/corpus_phase5.py --input-directory /경로/RFP폴더
+
+# 전체 문서 중 최대20회 신규 생성. 반복하면 완료 작업을 건너뛰고 이어갑니다.
+python rfp_phase5_local_20261111/scripts/corpus_phase5.py --enable-openai --max-new-calls 20 --max-total-calls 1000 --max-total-input-bytes 40000000
+```
+
+입력·파서 위치가 다르면 `--raw-directory`, `--parser-root`를 지정합니다. 새 workspace 경로는 출력에 표시됩니다.
+노트북에서는 `INPUT_DIRECTORY`로 같은 작업을 수행합니다. API 옵션은 생성 셀의 `RUN_LIVE_SUMMARIES` 하나입니다.
+이전 12번의 세 파일명은 같은 전체 문서 노트북 내용으로 동기화했습니다.
+
+실제 확인한 데이터는 원본100건(HWP47/HWPX23/PDF30), 중복 제외99건입니다.
+고유99개를 캐시 없이 다시 파싱한 결과 실패0건, 기존 primary blocks·tables와99/99 일치했습니다.
+본문 구간 검색에서 BM25만으로 놓치는 문서가 있어 새 검색은 RRF와 긴 연속 원문 정확 일치를 결합합니다.
+비교용 BM25 누락도 보고서에 그대로 남깁니다. 일반 자연어 질문에 대한 의미적 정답률은 별도 평가입니다.
+
+`phase5_outputs/corpus_audit/documents.csv`는 실패한 새 입력까지 모든 원본 행을 보여줍니다.
+`raw_sources.json`, `source_index_retrieval.json`, `corpus_audit.json`에 단계별 근거를 저장합니다.
+`corpus_execution.json`은 전체 문서별 완료·미처리·실패·제외 주장 수를 보여줍니다.
+현재 905개 전체 배치 중 완료47·실패1·미처리857입니다. 전체가 생성 완료됐다고 표시하지 않습니다.
+
+PDF 이미지·벡터 숫자·표 해석은 자동 추출 성공과 구분합니다. 현재95개 원본에는 구조·시각 검토 경고가 있습니다.
+경고는 파싱 실패95건이라는 뜻이 아닙니다. 숫자·VAT·기간·표의 의미적 완전성은 사람이 확인해야 합니다.
+OCR 또는 일부 페이지 추출 실패 문서는 기본 자동 생성 대상에서 제외하고, 검토 후에만
+`--allow-unreviewed-sources` / 노트북 `ALLOW_UNREVIEWED_SOURCES=True`로 명시적으로 포함합니다.
+그 경우에도 검토 필요 표시와 전체 상태는 지우지 않습니다.
 
 ## 기존 실행의 실패 배치 복구
 

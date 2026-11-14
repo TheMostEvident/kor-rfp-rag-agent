@@ -35,3 +35,6 @@ __pycache__/
 # Private rejected model responses; safe audit metadata stays in the run folder.
 **/recovery_diagnostics/
 
+# Isolated corpora contain local raw documents, parsed snapshots and indexes.
+**/corpus_workspaces/
+
