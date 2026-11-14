@@ -9,6 +9,7 @@ from rfp_phase4.llm import LLMConfig, OpenAIGroundedLLM
 from rfp_phase4.rag import AnswerSession
 from .session import ConversationSession, ConversationConfig
 from .query import prioritize_content_candidates, query_topics
+from .focus import focused_question, response_focus_audit
 
 
 class ScopedIndex:
@@ -101,13 +102,15 @@ class GroundedBackend:
         self._context_cache={}
 
     def answer_plan(self,route):
-        result=self(route['standalone_query'],doc_ids=route['effective_doc_ids'],
+        question=focused_question(route['standalone_query'],route['retrieval_plan']['topics'])
+        result=self(question,doc_ids=route['effective_doc_ids'],
             feature=route['feature'],search_queries=route['retrieval_plan']['queries'],
             search_topics=route['retrieval_plan']['topics'],
             content_question=route['retrieval_plan']['content_question'],request_question=route['query'])
         result.setdefault('retrieval',{})['content_query_plan']=copy.deepcopy(route['retrieval_plan'])
         result['retrieval']['candidate_selection']='content_priority_then_query_round_robin'
         result['retrieval']['ranking_is_semantic_verdict']=False
+        result['answer_focus_audit']=response_focus_audit(result,route['retrieval_plan']['topics'])
         return result
 
     def __call__(self,query,*,doc_ids,feature,search_queries=None,search_topics=(),content_question='',request_question=None):

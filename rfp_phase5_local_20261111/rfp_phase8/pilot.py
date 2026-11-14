@@ -222,13 +222,17 @@ class PilotSession:
             raise ValueError('질문을 입력하세요.')
         if len(question) > self.chat.config.max_question_chars:
             raise ValueError('질문 길이가 설정 상한을 넘었습니다.')
+        submission_context = {'active_doc_ids': self.chat.active_doc_ids, 'filters': self.chat.filters,
+            'approved_doc_ids': list(self.approved_doc_ids), 'model': self.chat.llm.config.model,
+            'source_fingerprint': self.source_fingerprint, 'index_fingerprint': self.index_fingerprint}
         if request_id is not None:
             if not isinstance(request_id, str) or not request_id or len(request_id) > 200:
                 raise ValueError('제출 식별자를 확인하세요.')
             if request_id in self._requests:
                 previous = self._requests[request_id]
-                if previous['question'] != question or previous['live_enabled'] != self.chat.llm.config.enabled:
-                    raise ValueError('같은 제출 식별자에 다른 질문·실행 모드를 사용할 수 없습니다.')
+                if (previous['question'] != question or previous['live_enabled'] != self.chat.llm.config.enabled
+                        or previous.get('submission_context') != submission_context):
+                    raise ValueError('문서·필터·API 허용 범위 또는 질문이 바뀌었습니다. 새 제출 식별자를 사용하세요.')
                 return copy.deepcopy(previous)
         if self.halted:
             raise ValueError('실패 원인을 확인한 뒤 계속 버튼을 눌러 주세요. 자동 재시도하지 않습니다.')
@@ -239,7 +243,8 @@ class PilotSession:
         # Fail before any API call if local storage cannot record the request.
         write_new(folder / 'request.json', {'question': question, 'request_id': request_id,
             'active_doc_ids': self.chat.active_doc_ids, 'filters': self.chat.filters,
-            'live_enabled': self.chat.llm.config.enabled, 'approved_doc_ids': self.approved_doc_ids})
+            'live_enabled': self.chat.llm.config.enabled, 'approved_doc_ids': self.approved_doc_ids,
+            'submission_context': submission_context})
         started = time.perf_counter()
         try:
             result = self.chat.ask(question)
@@ -248,7 +253,8 @@ class PilotSession:
                 'answer_generated': False, 'claims': [], 'source_chunks': [],
                 'markdown': '요청을 완료하지 못했습니다. 실행 진단을 확인하세요.',
                 'error_diagnostic': safe_llm_diagnostic(error)}
-        return self._record(folder, question, result, before, started, request_id=request_id)
+        return self._record(folder, question, result, before, started, request_id=request_id,
+                            submission_context=submission_context)
 
     def saved_summary(self, doc_id, *, run_folder=None):
         did = self.env['registry'].resolve_doc_ids([doc_id])[0]
@@ -259,7 +265,7 @@ class PilotSession:
         return {'status': 'saved_summary', 'result': result, 'doc_id': did, 'api_calls': 0,
             'semantic_quality_verified': False}
 
-    def _record(self, folder, question, result, before, started, *, request_id):
+    def _record(self, folder, question, result, before, started, *, request_id, submission_context):
         after = self.chat.llm.usage_report()
         delta = {key: after[key] - before[key] for key in COUNTERS}
         origin = ('mock' if delta['mock_calls'] else 'mixed_live_cache' if delta['live_api_calls'] and delta['cache_hits']
@@ -270,6 +276,7 @@ class PilotSession:
             'source_fingerprint': self.source_fingerprint, 'index_fingerprint': self.index_fingerprint,
             'model': self.chat.llm.config.model,
             'request_id': request_id, 'result': copy.deepcopy(result), 'usage_delta': delta,
+            'submission_context': copy.deepcopy(submission_context),
             'usage_cumulative': after, 'latency_ms': round((time.perf_counter() - started) * 1000, 3),
             'latency_origin': origin, 'live_enabled': self.chat.llm.config.enabled,
             'execution_origin': after['execution_mode'],

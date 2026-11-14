@@ -11,9 +11,10 @@ import unicodedata
 
 from local_rag.retrieval import normalize_retrieval_text
 from .resolution import title_variants
+from .focus import WORK_SCOPE_PATTERN, ACCEPTANCE_PATTERN, focus_priority
 
 
-QUERY_VERSION = 'phase6-content-query-v3'
+QUERY_VERSION = 'phase6-content-query-v4'
 _TOPICS = (
     ('duration', r'기간|개월|며칠|몇\s*(?:달|일|주)|안정화|언제까지',
      '사업기간 과업기간 수행기간 용역기간 계약기간 개월'),
@@ -25,6 +26,10 @@ _TOPICS = (
      '제출기한 제출마감 제출서류 제출방법 제출방식 접수'),
     ('evaluation', r'평가|배점|낙찰|협상|점수',
      '평가기준 평가항목 배점 낙찰자 선정방식'),
+    ('work_scope', WORK_SCOPE_PATTERN,
+     '사업범위 과업내용 구축대상 대상업무 업무영역 기능 요구사항 목록'),
+    ('acceptance', ACCEPTANCE_PATTERN,
+     '완료조건 검수 인수테스트 산출물 완료보고 운영전환 기술이전'),
     ('requirements', r'요구사항|필수|과업(?!기간)|지원|기능|GPU',
      '주요 과업 필수 요구사항 수행범위'),
 )
@@ -60,10 +65,16 @@ def plan_content_queries(question, titles, *, previous_question=None, agencies=(
     content = ' '.join(x for x in (current, previous) if x)
     topics = [(name, terms) for name, pattern, terms in _TOPICS
               if re.search(pattern, content, flags=re.I)]
+    if any(name == 'work_scope' for name, _ in topics):
+        # A generic requirements expansion can crowd out the scope/function
+        # inventory. Specific user terms remain in the literal content query.
+        topics = [(name, terms) for name, terms in topics if name != 'requirements']
     if re.search(r'안정화|모니터링|시범운영', current):
         topics = [(name, terms + ' 안정화 시스템모니터링 시범운영'
                    if name == 'duration' else terms) for name, terms in topics]
-    if len(topics) == 1:
+    if any(name == 'work_scope' for name, _ in topics):
+        queries = [terms for _, terms in topics] + ['기능 요구사항 목록표 대상 업무', content]
+    elif len(topics) == 1:
         # Keep literal user wording as well: expansion alone can overemphasize
         # the many generic "contract period" forms in a long RFP.
         queries = [content, topics[0][1] + ' ' + content]
@@ -74,8 +85,14 @@ def plan_content_queries(question, titles, *, previous_question=None, agencies=(
     else:
         queries = [content] if content else []
     queries = list(dict.fromkeys(q.strip() for q in queries if q.strip()))
+    # The scoped adapter permits seven bounded searches. Preserve the literal
+    # content query when an unusually broad request has many topic expansions.
+    limited = len(queries) > 7
+    if limited:
+        queries = queries[:6] + ([content] if content not in queries[:6] else queries[6:7])
     return {'version': QUERY_VERSION, 'content_question': content,
             'queries': queries, 'topics': [name for name, _ in topics],
+            'topic_query_limit_applied': limited,
             'project_title_used_as_scope_only': True,
             'issuer_names_used_as_scope_only':bool(agencies),
             'facts_added_by_rewrite': False}
@@ -98,7 +115,7 @@ def prioritize_content_candidates(hits, *, topics, content_question,source_conte
     an answer or a semantic validity verdict. Lower-priority candidates are
     retained until the normal top_k and context-byte limits are applied.
     """
-    if not {'duration', 'budget'}.intersection(topics):
+    if not {'duration', 'budget', 'work_scope', 'acceptance'}.intersection(topics):
         return hits
     stability_requested = bool(_STABILITY.search(content_question))
     form_requested=bool(re.search(r'서식|양식|가격\s*제안서|하도급|실적',content_question))
@@ -123,6 +140,7 @@ def prioritize_content_candidates(hits, *, topics, content_question,source_conte
                 'source_form','example','agreement_clause','other_project_candidate'} for role in roles)
             if form_value:concrete_budget=False
         relevant_condition = 'duration' in topics and stability_requested and bool(_STABILITY.search(text))
-        return relevant_condition, int(concrete_period) + int(concrete_budget),-int(form_value)
+        value_priority = relevant_condition, int(concrete_period) + int(concrete_budget), -int(form_value)
+        return value_priority + focus_priority(chunk, topics, content_question)
 
     return sorted(hits, key=priority, reverse=True)

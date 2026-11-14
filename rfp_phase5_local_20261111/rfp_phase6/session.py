@@ -17,6 +17,7 @@ from local_rag.session import _project_title
 from . import VERSION
 from .query import plan_content_queries
 from .resolution import MetadataResolver
+from .focus import WORK_SCOPE_PATTERN, ACCEPTANCE_PATTERN
 
 
 _UNSET=object()
@@ -33,9 +34,12 @@ _FACETS=(('duration',r'기간|개월|며칠|몇\s*(?:달|일|주)|안정화|언�
     ('eligibility',r'자격|공동수급|공동도급|하도급|참가조건'),
     ('submission',r'제출|마감|접수|서류|방문|우편'),
     ('evaluation',r'평가|배점|낙찰|협상|점수'),
+    ('work_scope',WORK_SCOPE_PATTERN),
+    ('acceptance',ACCEPTANCE_PATTERN),
     ('requirements',r'요구사항|필수|과업(?!기간)|지원|기능|GPU'))
 _FACET_LABELS={'duration':'사업기간', 'budget':'사업예산', 'eligibility':'참가자격',
-               'submission':'제출 조건', 'evaluation':'평가기준', 'requirements':'요구사항'}
+               'submission':'제출 조건', 'evaluation':'평가기준', 'requirements':'요구사항',
+               'work_scope':'구체적인 사업·과업 범위', 'acceptance':'검수·완료 조건'}
 
 
 def _norm(text):
