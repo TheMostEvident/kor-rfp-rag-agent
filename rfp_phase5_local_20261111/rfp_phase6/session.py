@@ -224,6 +224,11 @@ class ConversationSession:
         switching=bool(_SWITCH.search(intent))
         preferred=explicit if explicit is not None else () if switching else self._active
         named,basis=self._named(query,preferred=preferred)
+        if (self._pending and explicit is None and not named and not switching
+            and _SWITCH.search(self._intent_text(self._pending['query']))):
+            return self._reply('needs_clarification',self._pending['query'],
+                '전환할 문서를 먼저 확인해 주세요. 문서 ID 또는 사업명을 지정하세요.',
+                candidates=self._pending['candidate_doc_ids'],reason='switch_target_still_pending')
         named_focus=None
         if explicit and named and (not set(explicit)&set(named)
             or basis=='title' and not set(named).issubset(explicit)):
@@ -362,6 +367,7 @@ class ConversationSession:
         if value.get('version') not in {VERSION,'rfp-conversation-v1'} or value.get('catalog_fingerprint')!=self.catalog_fingerprint:
             raise ValueError('대화 상태의 원문·문서 버전이 현재 자료와 다릅니다.')
         allowed={'version','catalog_fingerprint','active_doc_ids','focus_doc_ids','filters','history','epoch','turn','pending'}
+        if not legacy and 'recent_doc_ids' not in value:raise ValueError('최근 문서 이력이 누락됐습니다.')
         if set(value) not in (allowed,allowed|{'recent_doc_ids'}):raise ValueError('지원하지 않는 대화 상태 형식입니다.')
         filters=self._validate_filters(value['filters'])
         active=self._resolve(value['active_doc_ids']) if value['active_doc_ids'] else []

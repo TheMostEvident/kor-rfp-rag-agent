@@ -31,7 +31,7 @@ _TOPICS = (
 
 
 def _without_titles(text, titles, agencies=()):
-    """Remove selected project names only, including their spaced variants."""
+    """Remove selected project and issuer names, including spaced variants."""
     text = unicodedata.normalize('NFC', text)
     names = {v for title in titles for v in title_variants(title)}
     names.update(''.join(c for c in str(a).casefold() if c.isalnum())
@@ -77,6 +77,7 @@ def plan_content_queries(question, titles, *, previous_question=None, agencies=(
     return {'version': QUERY_VERSION, 'content_question': content,
             'queries': queries, 'topics': [name for name, _ in topics],
             'project_title_used_as_scope_only': True,
+            'issuer_names_used_as_scope_only':bool(agencies),
             'facts_added_by_rewrite': False}
 
 
@@ -90,7 +91,7 @@ _MONEY_VALUE = re.compile(r'\d[\d,.]*\s*(?:조|억|천만|백만|만|천)?\s*원
                           r'\d[\d,.]*\s*(?:조|억|백만|천만)')
 
 
-def prioritize_content_candidates(hits, *, topics, content_question):
+def prioritize_content_candidates(hits, *, topics, content_question,source_context=None):
     """Prefer populated budget/period clauses over headings and empty forms.
 
     This is a ranking hint on retrieved source text, never a claim extraction,
@@ -100,6 +101,7 @@ def prioritize_content_candidates(hits, *, topics, content_question):
     if not {'duration', 'budget'}.intersection(topics):
         return hits
     stability_requested = bool(_STABILITY.search(content_question))
+    form_requested=bool(re.search(r'서식|양식|가격\s*제안서|하도급|실적',content_question))
 
     def priority(chunk):
         text = normalize_retrieval_text(chunk['text'])
@@ -107,7 +109,20 @@ def prioritize_content_candidates(hits, *, topics, content_question):
             _TIME_VALUE.search(text[m.end():m.end() + 160]) for m in _PERIOD_LABEL.finditer(text))
         concrete_budget = 'budget' in topics and any(
             _MONEY_VALUE.search(text[m.end():m.end() + 140]) for m in _BUDGET_LABEL.finditer(text))
+        form_value=False
+        if concrete_budget and source_context is not None and not form_requested:
+            # Classify the actual label/value range in the original text. A
+            # PDF page header before a new business section can still inherit
+            # the previous form's context; it must not demote the page's budget.
+            ranges=[]
+            for label in _BUDGET_LABEL.finditer(chunk['text']):
+                value=_MONEY_VALUE.search(chunk['text'],label.end(),label.end()+140)
+                if value:ranges.append((label.start(),value.end()))
+            roles=[source_context(chunk,start,end).get('evidence_role') for start,end in ranges]
+            form_value=bool(roles) and all(role in {
+                'source_form','example','agreement_clause','other_project_candidate'} for role in roles)
+            if form_value:concrete_budget=False
         relevant_condition = 'duration' in topics and stability_requested and bool(_STABILITY.search(text))
-        return relevant_condition, int(concrete_period) + int(concrete_budget)
+        return relevant_condition, int(concrete_period) + int(concrete_budget),-int(form_value)
 
     return sorted(hits, key=priority, reverse=True)

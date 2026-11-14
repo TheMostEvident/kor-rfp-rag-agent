@@ -13,7 +13,7 @@ from .query import prioritize_content_candidates, query_topics
 
 class ScopedIndex:
     """Enforce a single turn's canonical scope even if a lower layer changes it."""
-    def __init__(self,index,registry,doc_ids,*,search_queries=None,search_topics=(),content_question=''):
+    def __init__(self,index,registry,doc_ids,*,search_queries=None,search_topics=(),content_question='',context_cache=None):
         self.index=index;self.registry=registry
         self.ids=registry.resolve_doc_ids(doc_ids)
         if not self.ids:raise ValueError('범위 없는 검색은 허용하지 않습니다.')
@@ -22,6 +22,24 @@ class ScopedIndex:
             raise ValueError('본문 검색질문 목록이 올바르지 않습니다.')
         self.search_queries=copy.deepcopy(search_queries)
         self.search_topics=tuple(search_topics);self.content_question=content_question
+        self.context_cache=context_cache if context_cache is not None else {}
+
+    def _source_context(self,chunk,start,end):
+        from rfp_phase5_content.context import DocumentContext
+        did=chunk['doc_id'];key=('chunk_range',chunk['chunk_id'],start,end)
+        if key not in self.context_cache:
+            if did not in self.context_cache:
+                self.context_cache[did]=DocumentContext(self.registry.documents_by_id[did])
+            ranges=[]
+            for span in chunk['source_spans']:
+                left,right=max(start,span['chunk_start']),min(end,span['chunk_end'])
+                if left<right:
+                    ranges.append({**span,
+                        'char_start':span['char_start']+left-span['chunk_start'],
+                        'char_end':span['char_start']+right-span['chunk_start']})
+            value=self.context_cache[did].classify_ranges(ranges,quote=chunk['text'][start:end])
+            self.context_cache[key]={'evidence_role':value['evidence_role'],'event_scope':value['event_scope']}
+        return self.context_cache[key]
 
     def resolve_doc_ids(self,ids):
         chosen=self.registry.resolve_doc_ids(ids)
@@ -49,7 +67,7 @@ class ScopedIndex:
             # budget search in the same turn.
             topics=[t for t in query_topics(content_query) if t in self.search_topics]
             hits=prioritize_content_candidates(hits,topics=topics,
-                content_question=self.content_question)
+                content_question=self.content_question,source_context=self._source_context)
             groups.append(hits)
         merged=[];seen=set();limit=kwargs.get('top_k',5)
         for offset in range(max((len(h) for h in groups),default=0)):
@@ -80,6 +98,7 @@ class GroundedBackend:
         self.env=env;self.llm=llm
         self.retrieval=dict(retrieval or {});self.retrieval.setdefault('method','rrf')
         self.approved=None if approved_doc_ids is None else set(approved_doc_ids)
+        self._context_cache={}
 
     def answer_plan(self,route):
         result=self(route['standalone_query'],doc_ids=route['effective_doc_ids'],
@@ -102,7 +121,7 @@ class GroundedBackend:
         if search_queries is not None and any(len(q)>self.retrieval.get('max_question_chars',4000) for q in search_queries):
             raise ValueError('본문 검색질문이 설정 상한을 넘었습니다.')
         index=ScopedIndex(self.env['index'],self.env['registry'],doc_ids,search_queries=search_queries,
-            search_topics=search_topics,content_question=content_question)
+            search_topics=search_topics,content_question=content_question,context_cache=self._context_cache)
         answer=AnswerSession(index,self.llm,self.env['registry'],config=self.retrieval,
             active_doc_ids=index.ids)
         answer.retrieval_session=_FixedSelection(index.ids,query)

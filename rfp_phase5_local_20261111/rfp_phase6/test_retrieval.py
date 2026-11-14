@@ -176,6 +176,49 @@ class LexicalConversationTests(unittest.TestCase):
         self.assertEqual(r['conversation']['facet'], 'duration')
         self.assertNotIn('사업예산', ' '.join(r['retrieval']['content_query_plan']['queries']))
 
+    def test_populated_price_example_does_not_outrank_the_project_budget(self):
+        from rfp_phase5_content.test_integration import source_fixture
+        doc,chunks,registry=source_fixture(['Ⅰ. 사업개요','사업명 : 해양 자료 통합플랫폼 운영',
+            '사업예산 : 319,000,000원(부가세 제외)','Ⅱ. 입찰 서식',
+            '<서식 제1호> 가격제안서','사업예산 : 811,000,000원(부가세 포함)'])
+        with tempfile.TemporaryDirectory() as tmp:
+            with LocalSearchIndex(Path(tmp)/'index') as index:
+                index.build(chunks,{'min_df':1})
+                env={'index':index,'registry':registry,'documents':[doc]}
+                s=ConversationSession([doc],backend=GroundedBackend(env,MockLLM(enabled=False),retrieval={'top_k':1}))
+                r=s.ask('사업예산과 부가세 포함 여부는?',doc_ids=[doc['doc_id']])
+                self.assertIn('319,000,000원',r['source_chunks'][0]['text'])
+                self.assertNotIn('811,000,000원',r['source_chunks'][0]['text'])
+
+    def test_explicit_price_form_question_can_still_retrieve_the_form(self):
+        from rfp_phase5_content.test_integration import source_fixture
+        doc,chunks,registry=source_fixture(['Ⅰ. 사업개요','사업예산 : 319,000,000원(부가세 제외)',
+            'Ⅱ. 입찰 서식','<서식 제1호> 가격제안서','사업예산 : 811,000,000원(부가세 포함)'])
+        with tempfile.TemporaryDirectory() as tmp:
+            with LocalSearchIndex(Path(tmp)/'index') as index:
+                index.build(chunks,{'min_df':1})
+                env={'index':index,'registry':registry,'documents':[doc]}
+                s=ConversationSession([doc],backend=GroundedBackend(env,MockLLM(enabled=False),retrieval={'top_k':5}))
+                r=s.ask('가격제안서 서식의 사업예산란은?',doc_ids=[doc['doc_id']])
+                self.assertTrue(any('811,000,000원' in c['text'] for c in r['source_chunks']))
+
+    def test_pdf_header_inherits_old_form_but_budget_belongs_to_new_section(self):
+        from rfp_phase5_content.test_integration import source_fixture
+        doc,chunks,registry=source_fixture([
+            '<별지 제3호 서식> 가격제안서',
+            '- 3 -\nⅠ 사업개요\n가. 사업명 : 해양 자료 통합플랫폼 운영\n'
+            '나. 사업예산 : 319,000천원(부가세 제외)',
+            'Ⅱ. 입찰 서식\n<서식 제1호> 가격제안서\n사업예산 : 811,000,000원(부가세 포함)'])
+        doc['detected_format']='pdf'
+        with tempfile.TemporaryDirectory() as tmp:
+            with LocalSearchIndex(Path(tmp)/'index') as index:
+                index.build(chunks,{'min_df':1})
+                env={'index':index,'registry':registry,'documents':[doc]}
+                s=ConversationSession([doc],backend=GroundedBackend(env,MockLLM(enabled=False),retrieval={'top_k':1}))
+                r=s.ask('사업예산과 부가세 포함 여부는?',doc_ids=[doc['doc_id']])
+                self.assertIn('319,000천원',r['source_chunks'][0]['text'])
+                self.assertNotIn('811,000,000원',r['source_chunks'][0]['text'])
+
     def test_budget_body_beats_repeated_price_templates_for_all_lexical_methods(self):
         for method in ['bm25','char_tfidf','rrf','mmr']:
             for i in range(3):

@@ -188,6 +188,33 @@ class ConversationTests(unittest.TestCase):
         self.assertEqual(result['status'],'needs_clarification')
         self.assertEqual(self.s.active_doc_ids,['A'])
 
+    def test_focused_named_document_keeps_the_explicit_pair_available(self):
+        self.s.select_documents(['A','B'])
+        one=self.s.plan('항만 데이터 분석시스템 구축의 예산은?')
+        self.assertEqual(one['effective_doc_ids'],['A'])
+        self.assertEqual(self.s.active_doc_ids,['A','B'])
+        self.assertEqual(self.s.plan('두 문서 기간을 비교해줘')['effective_doc_ids'],['A','B'])
+
+    def test_more_than_two_recent_documents_require_an_explicit_pair(self):
+        for did in ['A','B','C']:self.s.plan('기간은?',doc_ids=[did])
+        self.assertEqual(self.s.plan('두 사업 기간을 비교해줘')['reason'],'recent_pair_ambiguous')
+        self.assertEqual(self.s.plan('최근 두 사업 기간을 비교해줘')['effective_doc_ids'],['B','C'])
+
+    def test_period_change_question_is_not_a_document_switch(self):
+        self.s.select_documents('A')
+        self.assertEqual(self.s.plan('과업기간을 바꿀 수 있어?')['effective_doc_ids'],['A'])
+
+    def test_switch_to_a_shared_title_does_not_silently_choose_old_selection(self):
+        d=copy.deepcopy(self.docs[0]);d.update(doc_id='D',canonical_doc_id='D',sha256='f'*64)
+        s=ConversationSession(self.docs+[d]);s.select_documents('A')
+        self.assertEqual(s.plan('항만 데이터 분석시스템 구축으로 바꿀게. 예산은?')['reason'],'ambiguous_named_document')
+
+    def test_v2_state_rejects_missing_recent_field(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            p=Path(tmp)/'state.json';self.s.save(p)
+            raw=json.loads(p.read_text());raw.pop('recent_doc_ids');p.write_text(json.dumps(raw))
+            with self.assertRaises(ValueError):self.s.restore(p)
+
     def test_no_selection_and_pronoun_requires_clarification(self):
         self.assertEqual(self.s.plan('그건 몇 개월이야?')['reason'],'document_not_selected')
         self.assertEqual(self.s.active_doc_ids,[])
@@ -406,6 +433,17 @@ class BackendTests(unittest.TestCase):
         r=s.ask('그건 몇 개월이야?')
         self.assertEqual(r['status'],'needs_clarification')
         self.assertEqual(self.index.calls,[]);self.assertEqual(llm.requests,[])
+
+    def test_unresolved_switch_and_its_followup_never_use_the_old_document(self):
+        llm=MockLLM();s=self.session(llm)
+        s.ask('예산은?',doc_ids=['A']);calls=len(self.index.calls)
+        r=s.ask('새로운 미등록 플랫폼으로 바꿀게. 그건?')
+        self.assertEqual(r['status'],'needs_clarification')
+        r=s.ask('그 예산은 얼마야?')
+        self.assertEqual(r['reason'],'switch_target_still_pending')
+        self.assertEqual(r['effective_doc_ids'],[])
+        self.assertEqual(len(self.index.calls),calls)
+        self.assertEqual(len(llm.requests),1)
 
     def test_out_of_scope_index_hit_fails_before_generation(self):
         llm=MockLLM();s=self.session(llm);self.index.inject_outside=True
