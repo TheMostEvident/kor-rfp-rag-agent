@@ -9,6 +9,8 @@ import copy
 from local_rag.session import SearchSession
 from .citation_recovery import validate_with_quote_recovery
 from .request_policy import award_evidence_gate, generation_question
+from .comparison import document_question,local_missing_information,DurationSources
+from .duration_values import missing_duration_values
 
 
 DEFAULT_RETRIEVAL = {'method': 'bm25', 'top_k': 8, 'per_doc_top_k': 6,
@@ -89,15 +91,23 @@ def _comparison_markdown(validation, selected_doc_ids, catalog):
                 numbered[key] = len(references) + 1
                 references.append(citation)
             marks.append(f'[{numbered[key]}]')
-        rows.append((claim['doc_id'], claim['category'], _safe(claim['text']) + ' ' + ''.join(marks)))
+        role=claim.get('duration_source_role')
+        category=('duration_estimate' if role=='duration_estimate' else
+                  'duration_mixed' if role=='duration_mixed' else claim['category'])
+        rows.append((claim['doc_id'], category, _safe(claim['text']) + ' ' + ''.join(marks)))
     lines = ['| 항목 | ' + ' | '.join(_safe(by_doc.get(doc, {}).get('file_name', doc)) for doc in docs) + ' |',
              '| --- | ' + ' | '.join('---' for _ in docs) + ' |']
-    for category in CATEGORIES:
+    labels={**CATEGORY_LABELS,'duration_estimate':'기간 산정자료(별첨)',
+            'duration_mixed':'기간 근거 혼합 — 추가 확인'}
+    categories=list(CATEGORIES)
+    at=categories.index('duration')+1
+    categories[at:at]=['duration_estimate','duration_mixed']
+    for category in categories:
         if not any(row[1] == category for row in rows):
             continue
         cells = ['; '.join(row[2] for row in rows if row[0] == doc and row[1] == category)
                  or '현재 근거에서 미확인' for doc in docs]
-        lines.append('| ' + CATEGORY_LABELS[category] + ' | ' + ' | '.join(cells) + ' |')
+        lines.append('| ' + labels[category] + ' | ' + ' | '.join(cells) + ' |')
     if validation['missing_information']:
         lines.extend(['', '추가 확인이 필요한 항목:', ''])
         lines.extend('- ' + _safe(item) for item in validation['missing_information'])
@@ -219,7 +229,9 @@ class AnswerSession:
                 'OpenAI 실행이 꺼져 있습니다. 원문 근거 후보를 확인한 뒤 ENABLE_OPENAI와 해당 실행 옵션을 켜세요.', retrieval)
             result['source_chunks'] = context
             return result
-        requests=([{'task':'qa','question':generation_question(search['standalone_query'],doc_id=did),
+        catalog=[r for r in self.index.get_catalog() if r['doc_id'] in scope]
+        requests=([{'task':'qa','question':generation_question(
+                    document_question(search['standalone_query'],did,catalog),doc_id=did),
                     'evidence':[c for c in context if c['doc_id']==did]} for did in scope
                    if any(c['doc_id']==did for c in context)] if comparison else
                   [{'task':'qa','question':generation_question(search['standalone_query']),'evidence':context}])
@@ -235,8 +247,15 @@ class AnswerSession:
                 ids=list(dict.fromkeys(c['doc_id'] for c in request['evidence']))
                 checked=validate_with_quote_recovery(self.registry,generated.get('payload'),
                     request['evidence'],allowed_doc_ids=ids)
+                missing_audit=None
+                if comparison and checked['valid']:
+                    missing,missing_audit=local_missing_information(checked['missing_information'],ids[0],catalog)
+                    checked['missing_information']=missing
+                    checked['status']=('partial' if checked['claims'] and missing else 'answered'
+                        if checked['claims'] else 'insufficient_evidence')
                 document_validation.append({'doc_ids':ids,'valid':checked['valid'],
                     'errors':checked.get('errors',[]),
+                    'missing_scope_audit':missing_audit,
                     'citation_recovery':checked.get('citation_recovery',{})})
                 validations.append(checked)
                 if not checked['valid']:break
@@ -272,6 +291,39 @@ class AnswerSession:
                            'document_validation':document_validation,
                            'source_chunks': context, 'latency_ms': (time.perf_counter() - started) * 1000})
             return result
+        comparison_audit=[]
+        if comparison:
+            current_question=request_question or query
+            estimate_requested=bool(re.search(r'산정|추정|적정\s*기간',current_question))
+            classifiers={did:DurationSources(self.registry.documents_by_id[did]) for did in scope}
+            retained=[]
+            for i,claim in enumerate(validation['claims']):
+                if claim['category']!='duration':retained.append(claim);continue
+                audit=classifiers[claim['doc_id']].claim_role(claim)
+                missing_values=missing_duration_values(claim)
+                if missing_values:
+                    comparison_audit.append({'claim_index':i,'doc_id':claim['doc_id'],**audit,
+                        'withheld':True,'reason':'duration_value_not_in_literal_citations',
+                        'unquoted_values':missing_values})
+                    if audit['role']!='duration_estimate' or estimate_requested:
+                        validation['missing_information'].append('기간 수치의 직접 인용 보완 필요')
+                    continue
+                claim['duration_source_role']=audit['role']
+                comparison_audit.append({'claim_index':i,'doc_id':claim['doc_id'],**audit})
+                retained.append(claim)
+                if audit['role']=='duration_mixed':
+                    validation['missing_information'].append('기간 본문과 산정자료가 한 주장에 혼합되어 근거 구분 확인 필요')
+                    validation['status']='partial'
+            validation['claims']=retained
+            if (re.search(r'(?:사업|과업|계약|수행)\s*기간|몇\s*개월',current_question)
+                and not re.search(r'(?:산정자료|추정기간|산정서|적정기간)\s*만',current_question)):
+                for did in scope:
+                    roles={c.get('duration_source_role') for c in retained
+                           if c['doc_id']==did and c['category']=='duration'}
+                    if roles=={'duration_estimate'}:
+                        validation['missing_information'].append(f'문서 {did}: 본문의 계약·과업기간 근거 미확보 (별첨 산정자료와 구분)')
+            validation['status']=('partial' if retained and validation['missing_information']
+                else 'answered' if retained else 'insufficient_evidence')
         # Preserve missing evidence on either selected document; never imply a complete comparison.
         cited_docs = {claim['doc_id'] for claim in validation['claims']}
         missing_comparison = [doc for doc in scope if doc not in cited_docs] if comparison else []
@@ -289,5 +341,6 @@ class AnswerSession:
                 'source_chunks': context, 'retrieval': retrieval, 'generation': generation_report,
                 'validation': validation, 'usage': generation_report.get('usage', {}),
                 'document_validation':document_validation,
+                'comparison_audit':comparison_audit,
                 'latency_ms': (time.perf_counter() - started) * 1000,
                 'semantic_entailment_verified': False}
