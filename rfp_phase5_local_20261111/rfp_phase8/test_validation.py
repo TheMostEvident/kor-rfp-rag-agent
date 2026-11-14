@@ -1,6 +1,8 @@
 """Reject semantic auto-pass, stale submissions and misbound pilot evidence."""
 import json
 import os
+import subprocess
+import sys
 from pathlib import Path
 import tempfile
 import unittest
@@ -61,6 +63,41 @@ class ValidationTests(unittest.TestCase):
         self.assertEqual(report['executed_cases'], 1)
         self.assertFalse(report['mechanical_checks_passed'])
         self.assertEqual(len(report['session']['failed_turns']), 1)
+
+    def test_saved_diagnostics_expose_rejection_reason_without_showing_rejected_model_quotes(self):
+        folder, report = run_validation(self.env, ['A'], enabled=True,
+            approved_doc_ids=['A'], client=GroundedClient('wrong_quote'))
+        diagnostic = report['diagnostics']
+        self.assertFalse(diagnostic['mechanical_checks_passed'])
+        self.assertEqual(diagnostic['diagnostic_api_calls'], 0)
+        self.assertTrue(diagnostic['read_only'])
+        failed = diagnostic['turns'][0]
+        self.assertEqual(failed['execution_status'], 'validation_failed')
+        self.assertTrue(failed['validation_errors'])
+        self.assertTrue(failed['citation_checks'])
+        self.assertNotIn('model_quote', json.dumps(diagnostic))
+        self.assertNotIn('원문에 존재하지 않는 구절', json.dumps(diagnostic, ensure_ascii=False))
+
+    def test_diagnostic_read_does_not_generate_change_files_or_require_human_review(self):
+        folder, report = run_validation(self.env, ['A'])
+        files = {p: p.read_bytes() for p in folder.rglob('*') if p.is_file()}
+        with patch('rfp_phase4.llm.OpenAIGroundedLLM.generate', side_effect=AssertionError('no generation')), \
+                patch('rfp_phase8.validation.session_report', side_effect=AssertionError('review not needed')):
+            diagnostic = validation_status(folder, include_reviews=False)['diagnostics']
+        self.assertEqual(diagnostic['executed_cases'], 6)
+        self.assertEqual(files, {p: p.read_bytes() for p in folder.rglob('*') if p.is_file()})
+
+    def test_cli_diagnostics_only_reads_existing_session_with_api_disabled(self):
+        folder, report = run_validation(self.env, ['A'], enabled=True,
+            approved_doc_ids=['A'], client=GroundedClient('wrong_quote'))
+        script = Path(__file__).resolve().parents[1] / 'scripts/phase8_validate.py'
+        result = subprocess.run([sys.executable, str(script), '--report-session', str(folder),
+            '--diagnostics-only'], capture_output=True, text=True, check=True,
+            env={**os.environ, 'OPENAI_API_KEY': ''})
+        diagnostic = json.loads(result.stdout)
+        self.assertEqual(diagnostic['diagnostic_api_calls'], 0)
+        self.assertEqual(diagnostic['executed_cases'], 1)
+        self.assertEqual(diagnostic['turns'][0]['execution_status'], 'validation_failed')
 
     def test_review_of_one_exact_turn_does_not_approve_other_answers(self):
         folder, report = run_validation(self.env, ['A'], enabled=True,

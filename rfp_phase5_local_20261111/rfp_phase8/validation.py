@@ -106,7 +106,7 @@ def run_validation(env, doc_ids, *, enabled=False, approved_doc_ids=None, client
     return pilot.folder, validation_status(pilot.folder)
 
 
-def validation_status(folder):
+def validation_status(folder, *, include_reviews=True):
     """Refresh explicit human reviews while checking the immutable result links."""
     folder = Path(folder)
     report = load_json(folder / 'validation_report.json')
@@ -117,11 +117,38 @@ def validation_status(folder):
     if (plan.get('plan_fingerprint') != digest(payload)
             or report.get('plan_fingerprint') != plan['plan_fingerprint']):
         raise ValueError('다른 검증 계획 또는 변경된 계획입니다.')
+    diagnostics = []
     for row in report['rows']:
         record = read_record(folder / 'turns' / row['turn_id'])
         if record['fingerprint'] != row['result_fingerprint'] or record['session_id'] != report['session_id']:
             raise ValueError('검증 결과와 실제 답변의 연결이 다릅니다.')
+        answer = record['result']
+        validation = answer.get('validation') or {}
+        # Quotations in citation_diagnostics are rejected model data. Expose
+        # indices/outcomes only; never present those quotations as an answer.
+        citation_checks = [{k: copy.deepcopy(item[k]) for k in (
+            'claim_index', 'citation_index', 'outcome', 'reason', 'chunk_id',
+            'claim_doc_id', 'fragment_count', 'reference_rebuilt') if k in item}
+            for item in validation.get('citation_diagnostics', [])]
+        diagnostics.append({'case_id': row['case_id'], 'turn_id': row['turn_id'],
+            'status': answer.get('status'), 'execution_status': answer.get('execution_status'),
+            'validation_valid': validation.get('valid'),
+            'validation_errors': copy.deepcopy(validation.get('errors', [])),
+            'citation_recovery': copy.deepcopy(validation.get('citation_recovery', {})),
+            'citation_checks': citation_checks,
+            'document_validation': [{k: copy.deepcopy(item[k]) for k in
+                ('doc_ids', 'valid', 'errors', 'citation_recovery') if k in item}
+                for item in answer.get('document_validation', [])],
+            'error_diagnostic': copy.deepcopy(answer.get('error_diagnostic')),
+            'model_request_fingerprint': (answer.get('generation') or {}).get('request_fingerprint'),
+            'rejected_model_text_displayed': False})
     result = copy.deepcopy(report)
-    result['session'] = session_report(folder)
-    result['human_review_status'] = result['session']['human_review_status']
+    if include_reviews:
+        result['session'] = session_report(folder)
+        result['human_review_status'] = result['session']['human_review_status']
+    result['diagnostics'] = {'version': 'phase8-saved-diagnostics-v1',
+        'session_id': report['session_id'], 'diagnostic_api_calls': 0, 'read_only': True,
+        'planned_cases': report['planned_cases'], 'executed_cases': report['executed_cases'],
+        'mechanical_checks_passed': report['mechanical_checks_passed'], 'turns': diagnostics,
+        'semantic_correctness_verified': False}
     return result

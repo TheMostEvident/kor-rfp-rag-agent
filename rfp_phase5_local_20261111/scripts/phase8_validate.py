@@ -18,10 +18,15 @@ def main(argv=None):
     parser.add_argument('--approve-doc-id', action='append', default=[])
     parser.add_argument('--env-file', type=Path)
     parser.add_argument('--report-session', type=Path)
+    parser.add_argument('--diagnostics-only', action='store_true', help='저장된 검증의 진단만 조회; API 0회')
     args = parser.parse_args(argv)
     from rfp_phase8.validation import run_validation, validation_status
+    if args.diagnostics_only and not args.report_session:
+        parser.error('--diagnostics-only에는 --report-session이 필요합니다.')
     if args.report_session:
-        print(json.dumps(validation_status(args.report_session), ensure_ascii=False, indent=2))
+        report = validation_status(args.report_session, include_reviews=not args.diagnostics_only)
+        print(json.dumps(report['diagnostics'] if args.diagnostics_only else report,
+                         ensure_ascii=False, indent=2))
         return 0
     from rfp_phase5.runtime import bootstrap_phase5
     from rfp_phase6.session import ConversationSession
@@ -56,6 +61,9 @@ def main(argv=None):
                 print('\n질문:', record['question'])
                 print(record['result'].get('markdown', ''))
                 print('상태:', record['result']['status'], '/', record['result'].get('execution_status'))
+                errors = (record['result'].get('validation') or {}).get('errors', [])
+                if errors:
+                    print('출처·형식 검사 사유:', json.dumps(errors, ensure_ascii=False))
                 print('검토 기준:', row['review_hint'])
                 print('검토 파일:', folder / 'turns' / row['turn_id'] / 'human_review.json')
         print(json.dumps(report, ensure_ascii=False, indent=2))
