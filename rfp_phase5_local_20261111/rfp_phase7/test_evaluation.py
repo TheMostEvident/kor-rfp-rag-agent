@@ -29,6 +29,31 @@ class Client:
 
 
 class EvaluationTests(unittest.TestCase):
+    def test_scoped_answered_with_missing_is_partial_and_later_case_still_executes(self):
+        comparison=copy.deepcopy(self.case)
+        comparison.update(feature='comparison',question='선택한 두 사업의 예산과 안정화 조건 비교',target_doc_ids=['A','B'])
+        comparison['context']['selected_doc_ids']=['A','B']
+        uncertainty=copy.deepcopy(self.case)
+        uncertainty.update(case_id='INDEPENDENT_AWARD',question='최종 낙찰업체와 실제 계약금액은?',
+            expected_status='insufficient_evidence',required_facts=[])
+        class Inconsistent(Client):
+            def create(inner,**body):
+                result=super().create(**body)
+                c=json.loads(body['input'][1]['content'])['evidence'][0]
+                result['output_text']=json.dumps({'status':'answered','claims':[{
+                    'doc_id':c['doc_id'],'category':'budget','text':c['text'],
+                    'citations':[{'chunk_id':c['chunk_id'],'quote':c['text']}]}],
+                    'missing_information':['현재 문서의 추가 조건'] if c['doc_id']=='B' else []})
+                return result
+        client=Inconsistent()
+        r=run_evaluation(self.env,[comparison,uncertainty],profiles=['phase6_rrf'],enabled=True,
+            case_ids=['DEV1','INDEPENDENT_AWARD'],approved_doc_ids=['A','B'],client=client)
+        self.assertNotIn('halted_at_row',r)
+        self.assertEqual(len(client.bodies),2)
+        self.assertEqual(r['rows'][0]['result']['status'],'partial')
+        self.assertEqual(r['rows'][1]['result']['status'],'insufficient_evidence')
+        self.assertEqual(r['usage']['failed_attempts'],0)
+
     def test_validation_failure_is_reported_even_when_no_citations_are_rendered(self):
         class BadQuote(Client):
             def create(inner,**body):

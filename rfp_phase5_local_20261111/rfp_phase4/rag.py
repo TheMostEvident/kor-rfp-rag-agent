@@ -11,6 +11,7 @@ from .citation_recovery import validate_with_quote_recovery
 from .request_policy import award_evidence_gate, generation_question
 from .comparison import document_question,local_missing_information,DurationSources
 from .duration_values import missing_duration_values
+from .llm import COMPARISON_DOCUMENT_TASK,safe_llm_diagnostic
 
 
 DEFAULT_RETRIEVAL = {'method': 'bm25', 'top_k': 8, 'per_doc_top_k': 6,
@@ -230,18 +231,19 @@ class AnswerSession:
             result['source_chunks'] = context
             return result
         catalog=[r for r in self.index.get_catalog() if r['doc_id'] in scope]
-        requests=([{'task':'qa','question':generation_question(
+        requests=([{'task':COMPARISON_DOCUMENT_TASK,'question':generation_question(
                     document_question(search['standalone_query'],did,catalog),doc_id=did),
                     'evidence':[c for c in context if c['doc_id']==did]} for did in scope
                    if any(c['doc_id']==did for c in context)] if comparison else
                   [{'task':'qa','question':generation_question(search['standalone_query']),'evidence':context}])
         retrieval['generation_strategy']='per_document_then_validated_table' if comparison else 'scoped_qa'
         retrieval['planned_generation_requests']=len(requests)
-        generated_parts=[];validations=[];document_validation=[]
+        generated_parts=[];validations=[];document_validation=[];current_doc_ids=[]
         try:
             preflight=getattr(self.llm,'preflight_requests',None)
             if callable(preflight):preflight(requests)
             for request in requests:
+                current_doc_ids=list(dict.fromkeys(c['doc_id'] for c in request['evidence']))
                 generated=self.llm.generate(**request)
                 generated_parts.append({k:v for k,v in generated.items() if k!='payload'})
                 ids=list(dict.fromkeys(c['doc_id'] for c in request['evidence']))
@@ -256,17 +258,18 @@ class AnswerSession:
                 document_validation.append({'doc_ids':ids,'valid':checked['valid'],
                     'errors':checked.get('errors',[]),
                     'missing_scope_audit':missing_audit,
+                    'response_status_adjustment':generated.get('response_status_adjustment'),
                     'citation_recovery':checked.get('citation_recovery',{})})
                 validations.append(checked)
                 if not checked['valid']:break
         except Exception as error:
             # No upstream API body, key, or source snippet is exposed.
-            from .llm import LLMError
-            safe_detail = str(error) if isinstance(error, LLMError) else ''
+            diagnostic=safe_llm_diagnostic(error)
             result = self._empty('not_generated', 'error',
-                '답변 생성에 실패했습니다. API 설정·사용량 상한·모델 접근 권한을 확인하세요.', retrieval)
+                '답변 생성에 실패했습니다. '+diagnostic['message'], retrieval)
             result.update({'source_chunks': context, 'error_type': type(error).__name__,
-                           'error_detail': safe_detail,
+                           'error_detail':diagnostic['message'],'error_diagnostic':diagnostic,
+                           'failed_request_doc_ids':current_doc_ids,
                            'document_validation':document_validation,
                            'generation':_generation_report(generated_parts),
                            'latency_ms': (time.perf_counter() - started) * 1000})

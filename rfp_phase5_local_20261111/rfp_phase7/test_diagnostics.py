@@ -30,6 +30,15 @@ def sample(*,enabled=True,fingerprint='test-live'):
 
 
 class DiagnosticsTests(unittest.TestCase):
+    def test_status_adjustment_audit_does_not_become_an_automatic_correctness_pass(self):
+        r=sample();adjustment={'original_status':'answered','effective_status':'partial',
+            'claims_changed':False,'missing_information_changed':False,'additional_api_calls':0}
+        r['rows'][0]['result']['generation']['document_requests']=[{}, {'response_status_adjustment':adjustment}]
+        before=copy.deepcopy(r);check=comparison_checklist(r)[0]
+        self.assertEqual(check['conservative_status_adjustments'],[adjustment])
+        self.assertFalse(check['automatic_semantic_pass'])
+        self.assertEqual(r,before)
+
     def write_run(self,folder,report):
         folder.mkdir();(folder/'report.json').write_text(json.dumps(report))
         (folder/'human_review.json').write_text(json.dumps(review_template(report)))

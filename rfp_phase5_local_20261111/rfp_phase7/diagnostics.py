@@ -32,6 +32,10 @@ def comparison_checklist(report):
     for row in report.get('rows',[]):
         if row.get('feature')!='comparison' or row.get('skipped_reason'):continue
         result=row.get('result') or {}
+        generation=result.get('generation') or {}
+        parts=generation.get('document_requests') or [generation]
+        adjustments=[copy.deepcopy(p['response_status_adjustment']) for p in parts
+                     if p.get('response_status_adjustment')]
         duration=[]
         for claim in result.get('claims',[]):
             if claim.get('category')!='duration':continue
@@ -44,6 +48,7 @@ def comparison_checklist(report):
             'missing_information':copy.deepcopy(result.get('missing_information',[])),
             'duration_claims':duration,
             'comparison_audit':copy.deepcopy(result.get('comparison_audit')),
+            'conservative_status_adjustments':adjustments,
             'document_missing_scope_audits':[{'doc_ids':copy.deepcopy(d.get('doc_ids',[])),
                 'missing_scope_audit':copy.deepcopy(d.get('missing_scope_audit'))}
                 for d in result.get('document_validation',[]) if d.get('missing_scope_audit')],
