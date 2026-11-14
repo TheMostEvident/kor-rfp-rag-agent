@@ -1,0 +1,10 @@
+{
+  "version": "rfp-phase7-v1",
+  "development_questions": "eval/questions.dev.jsonl",
+  "offline_profiles": ["literal_bm25", "phase6_rrf"],
+  "live_case_ids": ["F001", "D001", "C001", "U003"],
+  "live_max_calls": 8,
+  "live_max_total_input_bytes": 600000,
+  "pricing": null,
+  "notes": "Rates are optional user-configured inputs. No live API or holdout run is implicit."
+}
