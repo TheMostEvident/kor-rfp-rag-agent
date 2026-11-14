@@ -8,14 +8,20 @@ from pathlib import Path
 from rfp_phase4.llm import LLMConfig, OpenAIGroundedLLM
 from rfp_phase4.rag import AnswerSession
 from .session import ConversationSession, ConversationConfig
+from .query import prioritize_content_candidates
 
 
 class ScopedIndex:
     """Enforce a single turn's canonical scope even if a lower layer changes it."""
-    def __init__(self,index,registry,doc_ids):
+    def __init__(self,index,registry,doc_ids,*,search_queries=None,search_topics=(),content_question=''):
         self.index=index;self.registry=registry
         self.ids=registry.resolve_doc_ids(doc_ids)
         if not self.ids:raise ValueError('범위 없는 검색은 허용하지 않습니다.')
+        if search_queries is not None and (not isinstance(search_queries,list)
+            or len(search_queries)>7 or any(not isinstance(q,str) or not q.strip() for q in search_queries)):
+            raise ValueError('본문 검색질문 목록이 올바르지 않습니다.')
+        self.search_queries=copy.deepcopy(search_queries)
+        self.search_topics=tuple(search_topics);self.content_question=content_question
 
     def resolve_doc_ids(self,ids):
         chosen=self.registry.resolve_doc_ids(ids)
@@ -27,9 +33,28 @@ class ScopedIndex:
     def search(self,query,**kwargs):
         requested=kwargs.pop('allowed_doc_ids',None)
         selected=self.ids if requested is None else self.resolve_doc_ids(requested)
-        hits=self.index.search(query,allowed_doc_ids=selected,**kwargs)
-        self.registry.validate_chunks(hits,allowed_doc_ids=selected)
-        return hits
+        queries=[query] if self.search_queries is None else self.search_queries
+        groups=[]
+        for content_query in queries:
+            options=dict(kwargs)
+            if self.search_queries is not None:
+                # Rank a bounded candidate pool before the final top_k. This
+                # does not enlarge the source text sent to the model.
+                options['top_k']=max(options.get('top_k',5),options.get('fetch_k',40))
+            hits=self.index.search(content_query,allowed_doc_ids=selected,**options)
+            # Check every returned candidate before merging or truncation.
+            self.registry.validate_chunks(hits,allowed_doc_ids=selected)
+            hits=prioritize_content_candidates(hits,topics=self.search_topics,
+                content_question=self.content_question)
+            groups.append(hits)
+        merged=[];seen=set();limit=kwargs.get('top_k',5)
+        for offset in range(max((len(h) for h in groups),default=0)):
+            for hits in groups:
+                if offset>=len(hits):continue
+                chunk=hits[offset]
+                if chunk['chunk_id'] not in seen:
+                    seen.add(chunk['chunk_id']);merged.append(chunk)
+        return merged[:limit]
 
 
 class _FixedSelection:
@@ -47,20 +72,39 @@ class _FixedSelection:
 
 
 class GroundedBackend:
-    def __init__(self,env,llm,retrieval=None):
+    def __init__(self,env,llm,retrieval=None,*,approved_doc_ids=None):
         self.env=env;self.llm=llm
         self.retrieval=dict(retrieval or {});self.retrieval.setdefault('method','rrf')
+        self.approved=None if approved_doc_ids is None else set(approved_doc_ids)
 
-    def __call__(self,query,*,doc_ids,feature):
+    def answer_plan(self,route):
+        result=self(route['standalone_query'],doc_ids=route['effective_doc_ids'],
+            feature=route['feature'],search_queries=route['retrieval_plan']['queries'],
+            search_topics=route['retrieval_plan']['topics'],
+            content_question=route['retrieval_plan']['content_question'])
+        result.setdefault('retrieval',{})['content_query_plan']=copy.deepcopy(route['retrieval_plan'])
+        result['retrieval']['candidate_selection']='content_priority_then_query_round_robin'
+        result['retrieval']['ranking_is_semantic_verdict']=False
+        return result
+
+    def __call__(self,query,*,doc_ids,feature,search_queries=None,search_topics=(),content_question=''):
+        if self.approved is not None and not set(doc_ids).issubset(self.approved):
+            return {'status':'not_generated','execution_status':'not_approved',
+                'answer_generated':False,'claims':[],'active_doc_ids':list(doc_ids),
+                'markdown':'선택한 문서를 API 허용 목록에 추가한 뒤 실행해 주세요.',
+                'source_chunks':[]}
         if len(query)>self.retrieval.get('max_question_chars',4000):
             raise ValueError('검색질문이 설정 상한을 넘었습니다.')
-        index=ScopedIndex(self.env['index'],self.env['registry'],doc_ids)
+        if search_queries is not None and any(len(q)>self.retrieval.get('max_question_chars',4000) for q in search_queries):
+            raise ValueError('본문 검색질문이 설정 상한을 넘었습니다.')
+        index=ScopedIndex(self.env['index'],self.env['registry'],doc_ids,search_queries=search_queries,
+            search_topics=search_topics,content_question=content_question)
         answer=AnswerSession(index,self.llm,self.env['registry'],config=self.retrieval,
             active_doc_ids=index.ids)
         answer.retrieval_session=_FixedSelection(index.ids,query)
         # Intent was resolved from the current user turn, excluding titles.
-        # The fixed retrieval session still supplies the full original query
-        # for search and generation. Do not re-infer comparison from a title.
+        # Generation keeps the original question and business context. The
+        # scoped index uses separate content queries for lexical ranking.
         result=answer.ask('비교 요청' if feature=='comparison' else '문서 질문',feature=feature)
         if result.get('execution_status')=='disabled':
             result['status']='retrieved' if result.get('source_chunks') else 'insufficient_evidence'
@@ -85,17 +129,8 @@ def make_conversation(env,*,enabled=False,approved_doc_ids=None,client=None,
     allowed={did:registry.source_hashes[did] for did in approved}
     llm=OpenAIGroundedLLM(Path(env['root'])/'phase6_outputs/generation_cache',
         config=llm_config,allowed_sources=allowed,client=client)
-    backend=GroundedBackend(env,llm,retrieval=retrieval)
-
-    def dispatch(query,*,doc_ids,feature):
-        if enabled and not set(doc_ids).issubset(approved):
-            return {'status':'not_generated','execution_status':'not_approved',
-                'answer_generated':False,'claims':[],'active_doc_ids':list(doc_ids),
-                'markdown':'선택한 문서를 API 허용 목록에 추가한 뒤 실행해 주세요.',
-                'source_chunks':[]}
-        return backend(query,doc_ids=doc_ids,feature=feature)
-
-    conversation=ConversationSession(env['documents'],backend=dispatch,
+    backend=GroundedBackend(env,llm,retrieval=retrieval,approved_doc_ids=approved if enabled else None)
+    conversation=ConversationSession(env['documents'],backend=backend,
         config=ConversationConfig(**config) if isinstance(config,dict) else config)
     conversation.llm=llm  # Usage inspection only; never used for query rewriting.
     return conversation

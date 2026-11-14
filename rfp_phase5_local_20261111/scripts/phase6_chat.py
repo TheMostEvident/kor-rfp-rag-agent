@@ -47,6 +47,8 @@ def main(argv=None):
             print('\n사용자:',q)
             print('선택 범위:',route.get('effective_doc_ids',[]))
             if route.get('standalone_query'):print('독립 검색질문:',route['standalone_query'])
+            content_plan=result.get('retrieval',{}).get('content_query_plan',{})
+            if content_plan:print('본문 검색어:',json.dumps(content_plan['queries'],ensure_ascii=False))
             print(result.get('markdown',''))
             if result.get('candidate_documents'):
                 print(json.dumps([{'번호':i,'doc_id':d['doc_id'],'사업명':d['project_title']}

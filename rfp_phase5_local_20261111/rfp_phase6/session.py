@@ -15,18 +15,19 @@ import unicodedata
 
 from local_rag.session import _project_title, _title_variants
 from . import VERSION
+from .query import plan_content_queries
 
 
 _UNSET=object()
 _SINGULAR=re.compile(r'그건|그것|그럼|그\s*(?:사업|안|기간|금액)|해당\s*(?:사업|문서)|이거|이것|이\s*(?:사업|문서)|거기|여기')
 _PLURAL=re.compile(r'둘\s*다|두\s*(?:사업|문서)|각각|비교|차이|모두|전체')
 _SWITCH=re.compile(r'바꿔|전환|다른\s*(?:문서|사업)|변경해')
-_FACETS=(('duration',r'기간|개월|며칠|몇\s*달|안정화|언제까지'),
+_FACETS=(('duration',r'기간|개월|며칠|몇\s*(?:달|일|주)|안정화|언제까지'),
     ('budget',r'예산|금액|용역비|사업비|부가세|부가가치세|VAT|세금|얼마'),
     ('eligibility',r'자격|공동수급|공동도급|하도급|참가조건'),
     ('submission',r'제출|마감|접수|서류|방문|우편'),
     ('evaluation',r'평가|배점|낙찰|협상|점수'),
-    ('requirements',r'요구사항|필수|과업|지원|기능|GPU'))
+    ('requirements',r'요구사항|필수|과업(?!기간)|지원|기능|GPU'))
 
 
 def _norm(text):
@@ -262,8 +263,10 @@ class ConversationSession:
         parts.append('대상 사업: '+title_text)
         # Topic context is a bounded ORIGINAL user question, never a rewritten
         # query or an answer. A budget question cannot contaminate a period turn.
+        previous_question=None
         if previous and (facet is None or facet==previous.get('facet')) and (_SINGULAR.search(query) or len(query)<35):
-            parts.append('같은 문서의 직전 사용자 질문: '+previous['user'][:self.config.previous_question_chars])
+            previous_question=previous['user'][:self.config.previous_question_chars]
+            parts.append('같은 문서의 직전 사용자 질문: '+previous_question)
         standalone='\n'.join(parts)
         if len(standalone)>self.config.max_rewrite_chars:
             return self._reply('needs_clarification',query,'질문을 조금 줄여 주세요.',candidates=scope,reason='rewrite_limit')
@@ -271,6 +274,7 @@ class ConversationSession:
         self._history.append({'user':query,'doc_ids':scope,'facet':facet,'epoch':self._epoch})
         self._history=self._history[-self.config.max_history_turns:]
         return {'status':'ready','query':query,'standalone_query':standalone,
+            'retrieval_plan':plan_content_queries(query,titles,previous_question=previous_question),
             'active_doc_ids':self.active_doc_ids,'effective_doc_ids':scope,'filters':self.filters,
             'feature':'comparison' if len(scope)>1 else 'followup' if previous else 'qa',
             'facet':facet,'turn':self._turn,'epoch':self._epoch,'routing_api_calls':0,
@@ -283,7 +287,11 @@ class ConversationSession:
             return {**route,'status':'planned','execution_status':'not_requested',
                 'answer_generated':False,'claims':[],'markdown':'문서 범위와 검색 질문을 준비했습니다.'}
         try:
-            result=self.backend(route['standalone_query'],doc_ids=route['effective_doc_ids'],feature=route['feature'])
+            answer_plan=getattr(self.backend,'answer_plan',None)
+            # Structured planners can separate model context from lexical
+            # queries. Existing simple injected backends keep their interface.
+            if callable(answer_plan):result=answer_plan(copy.deepcopy(route))
+            else:result=self.backend(route['standalone_query'],doc_ids=route['effective_doc_ids'],feature=route['feature'])
             if not isinstance(result,dict):raise ValueError('backend_result_invalid')
             allowed=set(route['effective_doc_ids'])
             if set(result.get('active_doc_ids',[]))!=allowed:raise ValueError('backend_document_scope_changed')
