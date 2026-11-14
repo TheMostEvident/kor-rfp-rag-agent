@@ -33,6 +33,9 @@ def _documents():
                   for j in range(12)]
         texts += ['2. 사업기간', '소프트웨어 개발사업 적정 사업기간 산정 기준을 참조한다.',
                   '계약수행기간\n년 월 일 ~ 년 월 일\n수행사업명'] * 4
+        texts += [f'가상기관 가격제안서 양식 {j}\n예산이 얼마인지 세금 포함 여부를 기재\n'
+                  '사업예산 :      원\n입찰금액 :      원\n부가세 포함 여부 : 예/아니오'
+                  for j in range(18)]
         texts += ['사업예산 : 243,000,000원(부가가치세 포함)', period]
         blocks = []
         for j, text in enumerate(texts):
@@ -74,6 +77,15 @@ class QueryPlanningTests(unittest.TestCase):
     def test_specific_nonstandard_question_is_not_replaced_with_generic_terms(self):
         p = plan_content_queries('L40S GPU 메모리는 몇 GB인가요?', [])
         self.assertIn('L40S GPU 메모리는 몇 GB인가요?', ' '.join(p['queries']))
+
+    def test_selected_agency_and_project_are_scope_not_budget_search_terms(self):
+        p=plan_content_queries('가상기관의 해안 자료 플랫폼 구축 예산은 얼마야? 세금 포함 여부도.',
+            ['해안 자료 플랫폼 구축'],agencies=['가상기관'])
+        text=' '.join(p['queries'])
+        self.assertNotIn('가상기관',text)
+        self.assertNotIn('해안 자료 플랫폼',text)
+        self.assertIn('사업예산',text)
+        self.assertFalse(any(c.isdigit() for c in text))
 
 
 class LexicalConversationTests(unittest.TestCase):
@@ -163,6 +175,25 @@ class LexicalConversationTests(unittest.TestCase):
         r = s.ask('그건 몇 일이야?')
         self.assertEqual(r['conversation']['facet'], 'duration')
         self.assertNotIn('사업예산', ' '.join(r['retrieval']['content_query_plan']['queries']))
+
+    def test_budget_body_beats_repeated_price_templates_for_all_lexical_methods(self):
+        for method in ['bm25','char_tfidf','rrf','mmr']:
+            for i in range(3):
+                with self.subTest(method=method,format=self.docs[i]['detected_format']):
+                    s,_=self.session(method=method)
+                    r=s.ask(f"가상기관의 {self.docs[i]['title']} 예산이 얼마야? 세금 포함 여부도 알려줘.",
+                            doc_ids=[f'TEST_{i}'])
+                    self.assertIn('사업예산 : 243,000,000원(부가가치세 포함)',r['source_chunks'][0]['text'])
+                    self.assertTrue(all(c['doc_id']==f'TEST_{i}' for c in r['source_chunks']))
+
+    def test_model_input_includes_populated_budget_without_rewriting_the_amount(self):
+        s,llm=self.session(enabled=True)
+        r=s.ask(f"가상기관의 {self.docs[0]['title']} 예산이 얼마야? 세금 포함 여부도 알려줘.",doc_ids=['TEST_0'])
+        _,question,evidence=llm.requests[-1]
+        self.assertTrue(r['validation']['valid'])
+        self.assertIn('243,000,000원(부가가치세 포함)','\n'.join(c['text'] for c in evidence))
+        self.assertNotIn('243,000,000',question)
+        self.assertNotIn('243,000,000',' '.join(r['retrieval']['content_query_plan']['queries']))
 
 
 if __name__ == '__main__':

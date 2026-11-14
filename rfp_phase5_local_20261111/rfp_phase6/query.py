@@ -9,11 +9,11 @@ from __future__ import annotations
 import re
 import unicodedata
 
-from local_rag.session import _title_variants
 from local_rag.retrieval import normalize_retrieval_text
+from .resolution import title_variants
 
 
-QUERY_VERSION = 'phase6-content-query-v2'
+QUERY_VERSION = 'phase6-content-query-v3'
 _TOPICS = (
     ('duration', r'기간|개월|며칠|몇\s*(?:달|일|주)|안정화|언제까지',
      '사업기간 과업기간 수행기간 용역기간 계약기간 개월'),
@@ -30,17 +30,24 @@ _TOPICS = (
 )
 
 
-def _without_titles(text, titles):
+def _without_titles(text, titles, agencies=()):
     """Remove selected project names only, including their spaced variants."""
     text = unicodedata.normalize('NFC', text)
-    names = {v for title in titles for v in _title_variants(title)}
+    names = {v for title in titles for v in title_variants(title)}
+    names.update(''.join(c for c in str(a).casefold() if c.isalnum())
+                 for a in agencies if a and len(''.join(c for c in str(a) if c.isalnum()))>=3)
+    names.discard('')
     for name in sorted(names, key=len, reverse=True):
         pattern = r'[\W_]*'.join(re.escape(c) for c in name)
         text = re.sub(pattern, ' ', text, flags=re.I)
     return re.sub(r'\s+', ' ', text).strip()
 
 
-def plan_content_queries(question, titles, *, previous_question=None):
+def query_topics(text):
+    return [name for name,pattern,_ in _TOPICS if re.search(pattern,text,re.I)]
+
+
+def plan_content_queries(question, titles, *, previous_question=None, agencies=()):
     """Return bounded search variants made only from user text and synonyms.
 
     Previous text is supplied only after the conversation planner has checked
@@ -48,8 +55,8 @@ def plan_content_queries(question, titles, *, previous_question=None):
     assistant answer or a recursively rewritten question. No duration, amount,
     answer label or source-derived fact is inserted by these expansions.
     """
-    current = _without_titles(question, titles)
-    previous = _without_titles(previous_question, titles) if previous_question else ''
+    current = _without_titles(question, titles, agencies)
+    previous = _without_titles(previous_question, titles, agencies) if previous_question else ''
     content = ' '.join(x for x in (current, previous) if x)
     topics = [(name, terms) for name, pattern, terms in _TOPICS
               if re.search(pattern, content, flags=re.I)]
@@ -77,24 +84,30 @@ _PERIOD_LABEL = re.compile(r'(?:사업|과업|용역|계약|수행)(?:수행)?\s
 _TIME_VALUE = re.compile(r'\d+(?:\.\d+)?\s*(?:개\s*월|달|일|년|주)|'
                          r'(?:19|20)?\d{2}\s*[./-]\s*\d{1,2}')
 _STABILITY = re.compile(r'안정화|모니터링|시범운영')
+_BUDGET_LABEL = re.compile(r'(?:사업|과업|용역|개발|구입|구매)\s*(?:예산|금액|비)|'
+                           r'소요\s*예산|총\s*예산|추정\s*가격')
+_MONEY_VALUE = re.compile(r'\d[\d,.]*\s*(?:조|억|천만|백만|만|천)?\s*원|'
+                          r'\d[\d,.]*\s*(?:조|억|백만|천만)')
 
 
 def prioritize_content_candidates(hits, *, topics, content_question):
-    """Prefer populated period clauses over headings/empty forms, within scope.
+    """Prefer populated budget/period clauses over headings and empty forms.
 
     This is a ranking hint on retrieved source text, never a claim extraction,
     an answer or a semantic validity verdict. Lower-priority candidates are
     retained until the normal top_k and context-byte limits are applied.
     """
-    if 'duration' not in topics:
+    if not {'duration', 'budget'}.intersection(topics):
         return hits
     stability_requested = bool(_STABILITY.search(content_question))
 
     def priority(chunk):
         text = normalize_retrieval_text(chunk['text'])
-        concrete_period = any(_TIME_VALUE.search(text[m.end():m.end() + 160])
-                              for m in _PERIOD_LABEL.finditer(text))
-        relevant_condition = stability_requested and bool(_STABILITY.search(text))
-        return relevant_condition, concrete_period
+        concrete_period = 'duration' in topics and any(
+            _TIME_VALUE.search(text[m.end():m.end() + 160]) for m in _PERIOD_LABEL.finditer(text))
+        concrete_budget = 'budget' in topics and any(
+            _MONEY_VALUE.search(text[m.end():m.end() + 140]) for m in _BUDGET_LABEL.finditer(text))
+        relevant_condition = 'duration' in topics and stability_requested and bool(_STABILITY.search(text))
+        return relevant_condition, int(concrete_period) + int(concrete_budget)
 
     return sorted(hits, key=priority, reverse=True)

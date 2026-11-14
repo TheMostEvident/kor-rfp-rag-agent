@@ -13,21 +13,29 @@ from pathlib import Path
 import re
 import unicodedata
 
-from local_rag.session import _project_title, _title_variants
+from local_rag.session import _project_title
 from . import VERSION
 from .query import plan_content_queries
+from .resolution import MetadataResolver
 
 
 _UNSET=object()
 _SINGULAR=re.compile(r'그건|그것|그럼|그\s*(?:사업|안|기간|금액)|해당\s*(?:사업|문서)|이거|이것|이\s*(?:사업|문서)|거기|여기')
-_PLURAL=re.compile(r'둘\s*다|두\s*(?:사업|문서)|각각|비교|차이|모두|전체')
-_SWITCH=re.compile(r'바꿔|전환|다른\s*(?:문서|사업)|변경해')
+_PLURAL=re.compile(r'둘\s*다|두\s*(?:사업|문서|건|RFP|ISP)|각각|비교|차이|모두|전체', re.I)
+_SWITCH=re.compile(r'바꿔\s*(?:줘|주|줄|보자)|바꿀게|바꾸(?:자|겠|고\s*싶)|'
+    r'(?:으로|로)\s*(?:전환|변경)|(?:문서|대상|사업)\s*(?:을|를)?\s*(?:바꿔|변경|전환)|다른\s*(?:문서|사업)')
+_FIRST=re.compile(r'앞(?:의|쪽)?\s*(?:사업|문서)|첫\s*번째|'
+                  r'(?<![가-힣a-z0-9])전자(?:는|의|가|를|도|만|부터|와|과)?(?=$|[\s,.?!:])', re.I)
+_SECOND=re.compile(r'뒤(?:의|쪽)?\s*(?:사업|문서)|두\s*번째|'
+                   r'(?<![가-힣a-z0-9])후자(?:는|의|가|를|도|만|부터|와|과)?(?=$|[\s,.?!:])', re.I)
 _FACETS=(('duration',r'기간|개월|며칠|몇\s*(?:달|일|주)|안정화|언제까지'),
     ('budget',r'예산|금액|용역비|사업비|부가세|부가가치세|VAT|세금|얼마'),
     ('eligibility',r'자격|공동수급|공동도급|하도급|참가조건'),
     ('submission',r'제출|마감|접수|서류|방문|우편'),
     ('evaluation',r'평가|배점|낙찰|협상|점수'),
     ('requirements',r'요구사항|필수|과업(?!기간)|지원|기능|GPU'))
+_FACET_LABELS={'duration':'사업기간', 'budget':'사업예산', 'eligibility':'참가자격',
+               'submission':'제출 조건', 'evaluation':'평가기준', 'requirements':'요구사항'}
 
 
 def _norm(text):
@@ -75,7 +83,8 @@ class ConversationSession:
                     ('doc_id','sha256','file_name','agency','document_year','detected_format')}
                 self._catalog[did]['project_title']=_project_title(d)
         self.catalog_fingerprint=_digest({'catalog':self._catalog,'aliases':self._aliases})
-        self._active=[];self._focus=[];self._filters={};self._history=[]
+        self._resolver=MetadataResolver(self._catalog)
+        self._active=[];self._focus=[];self._filters={};self._history=[];self._recent=[]
         self._epoch=0;self._pending=None;self._turn=0
 
     @property
@@ -88,7 +97,8 @@ class ConversationSession:
     def state(self):
         return copy.deepcopy({'version':VERSION,'catalog_fingerprint':self.catalog_fingerprint,
             'active_doc_ids':self._active,'focus_doc_ids':self._focus,'filters':self._filters,
-            'history':self._history,'epoch':self._epoch,'turn':self._turn,'pending':self._pending})
+            'history':self._history,'recent_doc_ids':self._recent,
+            'epoch':self._epoch,'turn':self._turn,'pending':self._pending})
 
     def list_documents(self,keyword='',*,filtered=False,include_aliases=False):
         if not isinstance(keyword,str):raise TypeError('검색어는 문자열이어야 합니다.')
@@ -137,42 +147,34 @@ class ConversationSession:
         if any(not self._matches_filter(d) for d in chosen):raise ValueError('선택한 문서와 유지 중인 필터가 일치하지 않습니다.')
         if chosen!=self._active:self._boundary();self._active=chosen
         self._focus=list(chosen)
+        self._remember(chosen)
         return self.active_doc_ids
+
+    def _remember(self,ids):
+        # Only identities survive a scope boundary. No old question or answer
+        # is appended to a new business's retrieval input.
+        self._recent=[d for d in self._recent if d not in ids]+list(ids)
+        self._recent=self._recent[-max(2,self.config.max_history_turns):]
 
     def set_filters(self,filters):
         values=self._validate_filters(filters)
         if values!=self._filters:
             self._boundary();self._filters=values
+            self._recent=[]
             # A filter conflict is visible; it never silently becomes all docs.
             if any(not self._matches_filter(d) for d in self._active):self._active=[]
+            self._remember(self._active)
         return self.filters
 
     def reset(self):
-        self._boundary();self._active=[];self._filters={};self._turn=0
+        self._boundary();self._active=[];self._filters={};self._turn=0;self._recent=[]
 
     def _intent_text(self,query):
         # A project called "비교분석 시스템" does not itself request a comparison.
-        text=_norm(query)
-        names={v for row in self._catalog.values() for v in _title_variants(row['project_title'])}
-        for name in sorted(names,key=len,reverse=True):text=text.replace(name,'')
-        return text
+        return self._resolver.mask_titles(query)
 
-    def _named(self,query):
-        normalized=_norm(query);exact=[];short=[];agency=[]
-        for did,row in self._catalog.items():
-            variants=_title_variants(row['project_title'])
-            if variants and variants[0] in normalized:exact.append((did,variants[0]))
-            elif any(v in normalized for v in variants[1:]):short.append((did,max((v for v in variants[1:] if v in normalized),key=len)))
-            if len(_norm(row['agency'] or ''))>=3 and _norm(row['agency']) in normalized:agency.append(did)
-        matches=exact or short
-        if exact and _PLURAL.search(self._intent_text(query)):
-            remaining=normalized
-            for _,variant in exact:remaining=remaining.replace(variant,'')
-            matches=exact+[(did,v) for did,v in short if v in remaining]
-        if matches:
-            ambiguous=any(a!=b and (x in y or y in x) for a,x in matches for b,y in matches)
-            return list(dict.fromkeys(d for d,_ in matches)), 'ambiguous_titles' if ambiguous else 'title'
-        return list(dict.fromkeys(agency)), 'agency' if agency else None
+    def _named(self,query,preferred=None):
+        return self._resolver.mentions(query,preferred=self._active if preferred is None else preferred)
 
     def _reply(self,status,query,message,*,candidates=(),reason=None):
         candidate_ids=list(dict.fromkeys(candidates))
@@ -198,6 +200,15 @@ class ConversationSession:
                 raise ValueError('문서 선택과 필터가 서로 다릅니다.')
         except (ValueError,TypeError):
             return self._reply('needs_clarification',query,'문서 ID와 필터를 확인해 주세요. 현재 범위는 유지했습니다.',reason='invalid_scope')
+        prior_facet=self._history[-1].get('facet') if self._history else None
+        # A named candidate is also a clarification reply. Resume the pending
+        # subject instead of searching for "I meant <title>" as a new question.
+        if self._pending and explicit is None and not _SWITCH.search(self._intent_text(query)):
+            reply_ids,reply_basis=self._named(query)
+            if (len(reply_ids)==1 and reply_basis=='title'
+                and reply_ids[0] in self._pending['candidate_doc_ids']
+                and not any(re.search(pattern,self._intent_text(query),re.I) for _,pattern in _FACETS)):
+                explicit=reply_ids;query=self._pending['query']
         numeric=re.fullmatch(r'(\d+)\s*번?',query)
         if numeric and self._pending:
             candidates=self._pending['candidate_doc_ids'];number=int(numeric.group(1))-1
@@ -209,9 +220,13 @@ class ConversationSession:
             query=self._pending['query']
         if explicit and any(not self._matches_filter(d,newfilters) for d in explicit):
             return self._reply('needs_clarification',query,'선택 후보와 현재 필터가 다릅니다.',reason='candidate_outside_filters')
-        named,basis=self._named(query)
         intent=self._intent_text(query)
-        if explicit and named and not set(explicit)&set(named):
+        switching=bool(_SWITCH.search(intent))
+        preferred=explicit if explicit is not None else () if switching else self._active
+        named,basis=self._named(query,preferred=preferred)
+        named_focus=None
+        if explicit and named and (not set(explicit)&set(named)
+            or basis=='title' and not set(named).issubset(explicit)):
             return self._reply('needs_clarification',query,'선택한 문서와 질문의 사업명이 다릅니다.',candidates=named,reason='explicit_selection_conflicts_with_question')
         years=set(re.findall(r'(?<!\d)((?:19|20)\d{2})\s*년',query))
         if named and years:
@@ -232,35 +247,60 @@ class ConversationSession:
                 and re.search(r'(?:이|현재|해당)\s*문서.{0,80}(?:언급|기재|적혀|나오|쓰여)|문서\s*안',query)):
                 return self._reply('needs_clarification',query,'현재 문서 안의 언급을 묻는지, 다른 사업으로 전환할지 확인해 주세요.',
                     candidates=list(dict.fromkeys(self._active+in_scope)),reason='mentioned_project_or_switch')
-            if basis=='ambiguous_titles' or len(in_scope)>1 and not _PLURAL.search(intent) and not (basis=='agency' and self._active and set(self._active).issubset(in_scope)):
+            preserve_comparison=(bool(_PLURAL.search(intent)) and len(self._active)>=2
+                and set(in_scope).issubset(self._active) and not switching)
+            if not preserve_comparison and (basis=='ambiguous_titles'
+                or len(in_scope)>1 and not _PLURAL.search(intent) and not (basis=='agency' and self._active and set(self._active).issubset(in_scope))):
                 return self._reply('needs_clarification',query,'대상 사업이 여러 개입니다. 문서 ID 또는 후보 번호를 선택해 주세요.',candidates=in_scope,reason='ambiguous_named_document')
-            if basis=='title' or not self._active or not set(self._active).issubset(in_scope):self.select_documents(in_scope)
-        elif explicit is None and _SWITCH.search(query):
+            if not preserve_comparison:
+                if basis=='title' and len(in_scope)==1 and len(self._active)>1 and in_scope[0] in self._active and not switching:
+                    named_focus=in_scope
+                elif basis=='title' or not self._active or not set(self._active).issubset(in_scope):self.select_documents(in_scope)
+        elif explicit is None and switching:
             return self._reply('needs_clarification',query,'전환할 사업명 또는 문서 ID를 지정해 주세요.',candidates=eligible,reason='switch_target_missing')
         if not self._active:
             return self._reply('needs_clarification',query,'먼저 질문할 사업명이나 문서를 선택해 주세요.',candidates=eligible,reason='document_not_selected')
-        if _SWITCH.search(query) and not re.search(r'예산|기간|조건|자격|평가|제출|금액|세금|부가세|얼마|몇|알려|요약|설명|[?？]',query):
+        if switching and not re.search(r'예산|기간|조건|자격|평가|제출|금액|세금|부가세|얼마|몇|알려|요약|설명|[?？]',intent):
             self._pending=None
             return {'status':'selected','execution_status':'not_requested','answer_generated':False,
                 'query':query,'standalone_query':None,'active_doc_ids':self.active_doc_ids,
                 'effective_doc_ids':self.active_doc_ids,'filters':self.filters,'claims':[],
                 'markdown':'선택 문서를 변경했습니다. 이어서 질문해 주세요.',
                 'routing_api_calls':0,'query_rewrite_uses_assistant_answers':False}
-        if re.search(r'비교|차이|두\s*(?:사업|문서)',intent) and len(self._active)<2:
-            return self._reply('needs_clarification',query,'비교할 문서를 두 개 이상 선택해 주세요.',candidates=eligible,reason='comparison_needs_multiple_documents')
-        scope=list(self._active);plural=bool(_PLURAL.search(intent))
-        if len(scope)>1 and re.search(r'앞(?:의|쪽)?\s*(?:사업|문서)|첫\s*번째|전자',query):scope=[scope[0]]
-        elif len(scope)>1 and re.search(r'뒤(?:의|쪽)?\s*(?:사업|문서)|두\s*번째|후자',query):scope=[scope[1]]
-        elif len(scope)>1 and _SINGULAR.search(query) and not plural:
+        comparison=bool(re.search(r'비교|차이|두\s*(?:사업|문서|건)',intent))
+        if comparison and len(self._active)<2:
+            recent=[d for d in self._recent if d in eligible]
+            if len(recent)>=2 and explicit is None and not named:
+                if len(recent)>2 and not re.search(r'최근|방금',intent):
+                    return self._reply('needs_clarification',query,'최근 문서 중 비교할 두 문서를 선택해 주세요.',
+                        candidates=recent,reason='recent_pair_ambiguous')
+                self.select_documents(recent[-2:])
+            else:
+                return self._reply('needs_clarification',query,'비교할 문서를 두 개 이상 선택해 주세요.',candidates=eligible,reason='comparison_needs_multiple_documents')
+        scope=list(named_focus or self._active);plural=bool(_PLURAL.search(intent))
+        first=bool(_FIRST.search(intent));second=bool(_SECOND.search(intent))
+        if len(scope)>1 and first and not second:scope=[scope[0]]
+        elif len(scope)>1 and second and not first:scope=[scope[1]]
+        elif len(scope)>1 and _SINGULAR.search(intent) and (not plural or re.search(r'중.{0,15}그\s*사업',intent)):
             if len(self._focus)==1:scope=list(self._focus)
             else:return self._reply('needs_clarification',query,'어느 문서를 가리키는지 선택해 주세요.',candidates=scope,reason='ambiguous_singular_reference')
         facet=next((name for name,pattern in _FACETS if re.search(pattern,intent,re.I)),None)
+        inherited_facet=None
+        if facet is None and switching and _SINGULAR.search(intent) and prior_facet:
+            facet=inherited_facet=prior_facet
         previous=next((h for h in reversed(self._history) if h['epoch']==self._epoch and h['doc_ids']==scope),None)
         parts=['질문: '+query]
         titles=[self._catalog[d]['project_title'] for d in scope]
         title_text='; '.join(titles)
         if len(title_text)>650:title_text=f'선택한 {len(scope)}개 문서 (문서 ID 범위는 검색 필터로 고정)'
         parts.append('대상 사업: '+title_text)
+        content_question=query
+        if inherited_facet:
+            # Preserve only the user's requested field across an explicit
+            # switch, never the former business name or its evidence.
+            label=_FACET_LABELS[inherited_facet]
+            parts.append('이어 묻는 항목: '+label)
+            content_question+=' '+label
         # Topic context is a bounded ORIGINAL user question, never a rewritten
         # query or an answer. A budget question cannot contaminate a period turn.
         previous_question=None
@@ -274,7 +314,9 @@ class ConversationSession:
         self._history.append({'user':query,'doc_ids':scope,'facet':facet,'epoch':self._epoch})
         self._history=self._history[-self.config.max_history_turns:]
         return {'status':'ready','query':query,'standalone_query':standalone,
-            'retrieval_plan':plan_content_queries(query,titles,previous_question=previous_question),
+            'retrieval_plan':plan_content_queries(content_question,titles,previous_question=previous_question,
+                agencies=[self._catalog[d]['agency'] for d in scope]),
+            'inherited_facet':inherited_facet,
             'active_doc_ids':self.active_doc_ids,'effective_doc_ids':scope,'filters':self.filters,
             'feature':'comparison' if len(scope)>1 else 'followup' if previous else 'qa',
             'facet':facet,'turn':self._turn,'epoch':self._epoch,'routing_api_calls':0,
@@ -316,13 +358,21 @@ class ConversationSession:
 
     def restore(self,path):
         value=json.loads(Path(path).read_text(encoding='utf-8'))
-        if value.get('version')!=VERSION or value.get('catalog_fingerprint')!=self.catalog_fingerprint:
+        legacy=value.get('version')=='rfp-conversation-v1'
+        if value.get('version') not in {VERSION,'rfp-conversation-v1'} or value.get('catalog_fingerprint')!=self.catalog_fingerprint:
             raise ValueError('대화 상태의 원문·문서 버전이 현재 자료와 다릅니다.')
         allowed={'version','catalog_fingerprint','active_doc_ids','focus_doc_ids','filters','history','epoch','turn','pending'}
-        if set(value)!=allowed:raise ValueError('지원하지 않는 대화 상태 형식입니다.')
+        if set(value) not in (allowed,allowed|{'recent_doc_ids'}):raise ValueError('지원하지 않는 대화 상태 형식입니다.')
         filters=self._validate_filters(value['filters'])
         active=self._resolve(value['active_doc_ids']) if value['active_doc_ids'] else []
         focus=self._resolve(value['focus_doc_ids']) if value['focus_doc_ids'] else []
+        recent=value.get('recent_doc_ids',active[-max(2,self.config.max_history_turns):])
+        if (not isinstance(recent,list) or len(recent)>max(2,self.config.max_history_turns)
+            or len(set(recent))!=len(recent)):
+            raise ValueError('최근 문서 이력 형식이 잘못됐습니다.')
+        recent=self._resolve(recent) if recent else []
+        if not legacy and recent!=value.get('recent_doc_ids',[]):raise ValueError('최근 문서는 대표 ID여야 합니다.')
+        if any(not self._matches_filter(d,filters) for d in recent):raise ValueError('최근 문서가 현재 필터 밖에 있습니다.')
         if not set(focus).issubset(active) or any(not self._matches_filter(d,filters) for d in active):raise ValueError('대화 상태의 문서 범위가 다릅니다.')
         if type(value['epoch'])is not int or value['epoch']<0 or type(value['turn'])is not int or value['turn']<0:raise ValueError('대화 상태의 순서가 잘못됐습니다.')
         history=value['history']
@@ -337,6 +387,6 @@ class ConversationSession:
             if not isinstance(pending,dict) or set(pending)!={'query','candidate_doc_ids','epoch'} or not isinstance(pending['query'],str) or len(pending['query'])>self.config.max_question_chars or not isinstance(pending['candidate_doc_ids'],list):raise ValueError('확인 질문 형식이 잘못됐습니다.')
             if pending['candidate_doc_ids']:self._resolve(pending['candidate_doc_ids'])
             if pending['epoch']!=value['epoch']:raise ValueError('확인 질문 버전이 다릅니다.')
-        self._active=active;self._focus=focus;self._filters=filters
+        self._active=active;self._focus=focus;self._filters=filters;self._recent=recent
         self._history=copy.deepcopy(history);self._epoch=value['epoch'];self._turn=value['turn'];self._pending=copy.deepcopy(pending)
         return self.state

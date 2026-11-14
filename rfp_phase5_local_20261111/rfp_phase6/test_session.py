@@ -32,6 +32,118 @@ def fixture():
     return docs,chunks,EvidenceRegistry(docs,chunks)
 
 
+class RoutingRegressionTests(unittest.TestCase):
+    """Independent examples of the eight observed scope failure patterns."""
+    def setUp(self):
+        original=fixture()[0][0]
+        names=[('A','전자계약시스템 구축','시범은행'),
+            ('B','보안 대응 정보보호 컨설팅 용역','가상은행'),
+            ('C','통합정보시스템 고도화','시범기술연구원'),
+            ('D','통합정보시스템 고도화','가상정보재단'),
+            ('E','정보화전략계획(ISP) 수립','해양개발기관'),
+            ('F','중장기 정보화전략계획(ISP) 수립 용역','시범공제회'),
+            ('G','디지털 연구재단 2040 정보화전략계획을 위한 ISP','연구재단'),
+            ('H','조합 정보시스템 개선 사업(전면개편)','시범공제조합'),
+            ('I','지역 정보시스템마스터플랜(ISMP) 수립','해양개발기관')]
+        self.docs=[]
+        for did,title,agency in names:
+            d=copy.deepcopy(original);d.update(doc_id=did,canonical_doc_id=did,title=title,
+                agency=agency,sha256=hashlib.sha256(did.encode()).hexdigest())
+            self.docs.append(d)
+        self.s=ConversationSession(self.docs)
+
+    def test_electronic_project_name_does_not_select_first_comparison_column(self):
+        self.s.select_documents(['A','B'])
+        r=self.s.plan('전자계약시스템 구축과 보안 대응 정보보호 컨설팅 용역의 예산과 기간 비교')
+        self.assertEqual(r['effective_doc_ids'],['A','B'])
+        self.assertEqual(r['feature'],'comparison')
+
+    def test_first_second_pronouns_are_words_and_keep_the_comparison_order(self):
+        self.s.select_documents(['A','B'])
+        for query,expected in [('전자세금계산서 제출 조건은?',['A','B']),
+            ('전자와 후자의 예산 비교',['A','B']),('전자는 예산이 얼마야?',['A']),
+            ('후자는 몇 개월인가?',['B'])]:
+            self.assertEqual(self.s.plan(query)['effective_doc_ids'],expected)
+
+    def test_short_title_inside_longer_named_project_is_not_an_extra_document(self):
+        self.s.select_documents(['F','G'])
+        r=self.s.plan('「시범공제회: 중장기 정보화전략계획(ISP) 수립 용역」 / '
+                      '「연구재단: 디지털 연구재단 2040 정보화전략계획을 위한 ISP」 예산 비교')
+        self.assertEqual(r['effective_doc_ids'],['F','G'])
+
+    def test_full_and_abbreviated_titles_in_same_comparison_both_survive(self):
+        self.s.select_documents(['E','I'])
+        r=self.s.plan('「해양개발기관: 정보화전략계획(ISP) 수립」 / '
+                      '「해양개발기관: 지역 정보시스템마스터플랜(ISMP) 수립」 비교')
+        self.assertEqual(r['effective_doc_ids'],['E','I'])
+
+    def test_duplicate_title_is_disambiguated_by_agency_and_selected_document(self):
+        self.s.select_documents(['C'])
+        self.assertEqual(self.s.plan('시범기술연구원 통합정보시스템 고도화 예산은?')['effective_doc_ids'],['C'])
+        self.assertEqual(self.s.plan('통합정보시스템 고도화 기간은?')['effective_doc_ids'],['C'])
+        self.s.reset()
+        self.assertEqual(self.s.plan('통합정보시스템 고도화 예산은?')['reason'],'ambiguous_named_document')
+
+    def test_named_clarification_without_parenthesized_acronym_resumes_budget(self):
+        self.s.select_documents(['E','G'])
+        self.assertEqual(self.s.plan('그 사업 예산은?')['reason'],'ambiguous_singular_reference')
+        r=self.s.plan('먼저 정보화전략계획 수립을 말한 거야.')
+        self.assertEqual(r['effective_doc_ids'],['E'])
+        self.assertIn('예산',r['retrieval_plan']['content_question'])
+        self.assertIn('예산',r['standalone_query'])
+
+    def test_abbreviated_switch_uses_title_tokens_and_clears_old_question(self):
+        self.s.plan('개발비 예산은?',doc_ids=['F'])
+        r=self.s.plan('디지털 연구재단 2040 ISP로 바꿀게. 그 기간은?')
+        self.assertEqual(r['effective_doc_ids'],['G'])
+        self.assertNotIn('개발비',r['standalone_query'])
+        self.assertEqual(r['retrieval_plan']['topics'],['duration'])
+
+    def test_business_word_omission_and_bakkul_switch_keep_only_requested_field(self):
+        self.s.plan('보안 대응 정보보호 컨설팅 용역 사업기간은?')
+        r=self.s.plan('조합 정보시스템 개선 전면개편으로 바꿀게. 그건?')
+        self.assertEqual(r['effective_doc_ids'],['H'])
+        self.assertEqual(r['inherited_facet'],'duration')
+        self.assertIn('사업기간',r['retrieval_plan']['content_question'])
+        self.assertNotIn('보안 대응',r['standalone_query'])
+
+    def test_two_businesses_after_switch_restore_recent_id_pair(self):
+        self.s.plan('사업기간은?',doc_ids=['B'])
+        self.s.plan('조합 정보시스템 개선 전면개편으로 바꿀게. 그건?')
+        r=self.s.plan('두 사업의 입찰 방식도 비교해줘.')
+        self.assertEqual(r['effective_doc_ids'],['B','H'])
+        self.assertEqual(r['feature'],'comparison')
+
+    def test_recent_pair_roundtrip_and_legacy_state_are_both_supported(self):
+        self.s.plan('기간은?',doc_ids=['B'])
+        self.s.plan('기간은?',doc_ids=['H'])
+        with tempfile.TemporaryDirectory() as tmp:
+            p=Path(tmp)/'state.json';self.s.save(p)
+            restored=ConversationSession(self.docs);restored.restore(p)
+            self.assertEqual(restored.plan('이 두 건의 기간 비교')['effective_doc_ids'],['B','H'])
+            raw=self.s.state;raw.pop('recent_doc_ids');raw['version']='rfp-conversation-v1';p.write_text(json.dumps(raw))
+            restored.restore(p);self.assertEqual(restored.active_doc_ids,['H'])
+
+    def test_filter_change_and_reset_clear_recent_pair(self):
+        self.s.plan('기간은?',doc_ids=['B']);self.s.plan('기간은?',doc_ids=['H'])
+        self.s.set_filters({'agency':'시범공제조합'})
+        self.assertEqual(self.s.plan('두 사업 기간 비교')['status'],'needs_clarification')
+        self.s.reset();self.assertEqual(self.s.state['recent_doc_ids'],[])
+        self.assertEqual(self.s.plan('ISP로 바꿀게')['status'],'needs_clarification')
+
+    def test_indistinguishable_abbreviated_names_still_need_clarification(self):
+        d=copy.deepcopy(self.docs[6]);d.update(doc_id='J',canonical_doc_id='J',
+            title='디지털 연구재단 2040 정보화 전략 계획(ISP)')
+        s=ConversationSession(self.docs+[d])
+        self.assertEqual(s.plan('디지털 연구재단 2040 ISP로 바꿀게. 예산은?')['status'],'needs_clarification')
+
+    def test_parenthesized_english_name_keeps_the_following_project_description(self):
+        d=copy.deepcopy(self.docs[6]);d.update(doc_id='J',canonical_doc_id='J',agency='가상거래소',
+            title='차세대플랫폼(Ocean PORTAL+) 구축 등을 위한 정보화전략계획 수립 용역')
+        s=ConversationSession(self.docs+[d]);s.select_documents(['J'])
+        self.assertEqual(s.plan('가상거래소 Ocean PORTAL+ 구축 등을 위한 정보화전략계획 수립 용역 예산은?')['effective_doc_ids'],['J'])
+
+
 class Index:
     def __init__(self,docs,chunks):self.docs=docs;self.chunks=chunks;self.calls=[];self.inject_outside=False;self.empty=False
     def get_catalog(self):return [d for d in self.docs if d['canonical_doc_id']==d['doc_id']]

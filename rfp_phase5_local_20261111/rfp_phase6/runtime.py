@@ -8,7 +8,7 @@ from pathlib import Path
 from rfp_phase4.llm import LLMConfig, OpenAIGroundedLLM
 from rfp_phase4.rag import AnswerSession
 from .session import ConversationSession, ConversationConfig
-from .query import prioritize_content_candidates
+from .query import prioritize_content_candidates, query_topics
 
 
 class ScopedIndex:
@@ -44,7 +44,11 @@ class ScopedIndex:
             hits=self.index.search(content_query,allowed_doc_ids=selected,**options)
             # Check every returned candidate before merging or truncation.
             self.registry.validate_chunks(hits,allowed_doc_ids=selected)
-            hits=prioritize_content_candidates(hits,topics=self.search_topics,
+            # Each topic query keeps its own priority before round-robin.
+            # A period request must not push budget clauses out of a dedicated
+            # budget search in the same turn.
+            topics=[t for t in query_topics(content_query) if t in self.search_topics]
+            hits=prioritize_content_candidates(hits,topics=topics,
                 content_question=self.content_question)
             groups.append(hits)
         merged=[];seen=set();limit=kwargs.get('top_k',5)
