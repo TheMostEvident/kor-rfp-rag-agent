@@ -149,7 +149,12 @@ def _primary_section(lines, i):
         text=line.text.strip();dense=_compact(text)
         if re.search(r'\t\s*\d+\s*$|[·.…]{3,}\s*\d+\s*$',text):
             continue
-        if re.search(r'과업목적|추진목적|추진배경및목적|추진배경및필요성|기대효과',dense):
+        # A sentence mentioning an expected effect (especially an evaluation
+        # rubric) is not a purpose heading. Only explicit section labels open it.
+        heading = re.sub(r'^(?:[□■○ㅇo\d.()ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩ]+|[가-하]\.)*', '', dense)
+        inline_purpose = bool(re.match(r'^[□■○ㅇo\d.]*\((?:추진목적|기대효과)\)',dense))
+        if (heading in {'사업목적','과업목적','추진목적','추진배경및목적','추진배경및필요성','기대효과'}
+            or inline_purpose):
             if not re.search(r'목차|서식|제안서작성|작성요령|하도급',dense):
                 return 'purpose'
         if len(dense)<45 and re.search(r'(?:주요사업내용|주요사업범위|과업범위|과업내용|사업내용및범위)$',dense):
@@ -159,7 +164,8 @@ def _primary_section(lines, i):
             re.match(r'^(?:[ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩ]+\.?|\d{1,2}\.)(?:사업|과업|입찰|제안|수행|참가|평가|선정|일반|개요|보안|위반|비밀|기타|용역|추진)',dense)
             or re.match(r'^[가-하]\.\s*',text)
             or re.match(r'^\d{1,2}\s+(?:사업개요|개요|조직체계|추진일정|사업내용)',text)
-            or re.match(r'^[□■](?:용역명|사업명|계약방법|과업예산|추진일정|참가자격)',dense)):
+            or re.match(r'^[□■](?:용역명|사업명|계약방법|과업예산|추진일정|참가자격)',dense)
+            or re.match(r'^(?:요구사항(?:명칭|고유번호|분류)|평가항목|평가요소|제안서목차|목차)$',dense)):
             return None
     return None
 
@@ -246,6 +252,9 @@ def _matches(lines, i):
 
     if re.search(r'업종코드|직접생산(?:확인)?증명|중소기업.{0,20}확인서|대기업.{0,30}참여.{0,10}제한|상호출자제한기업집단',dense) and not is_form:
         add('eligibility','business_eligibility')
+    if (re.search(r'대기업|중견기업',dense) and re.search(r'참여할수없|참여불가|참여제한',dense)
+        and not is_form):
+        add('eligibility','business_participation_prohibition')
     if re.search(r'공동(?:수급|도급).{0,40}(?:\d+개|허용|불허)|공동이행방식만|최소지분율',dense) and not is_form:
         add('eligibility','joint_venture_conditions')
     if re.search(r'소프트웨어사업자|컴퓨터관련서비스사업|보안인증\(CSAP|CSAP\)',dense) and re.search(r'자격|신고|등록|소지|획득|대상|필요',dense) and not is_form:
@@ -254,6 +263,9 @@ def _matches(lines, i):
         add('eligibility','performance_staff_requirement')
     if i+1<len(lines) and lines[i+1].block_id==line.block_id and not is_form:
         continuation_dense=dense+_compact(lines[i+1].text)
+        if (re.search(r'소프트웨어사업자|컴퓨터관련|직접생산|대기업|중견기업',dense)
+            and re.search(r'신고|등록|소지|참여할수없|참여제한',continuation_dense)):
+            paragraph('eligibility','wrapped_business_qualification')
         if (re.search(r'참여인력|근무인력|총괄책임자|사업관리자\(PM\)',dense)
             and re.search(r'(?:참여인력|근무인력|총괄책임자|사업관리자\(PM\)).{0,120}(?:유경험자|계속근로|상주|정규직)',continuation_dense)):
             paragraph('eligibility','wrapped_staff_requirement')
@@ -265,7 +277,10 @@ def _matches(lines, i):
             add('submission_documents','external_notice_documents','notice_reference')
         if re.search(r'방법|장소|제출|입찰서류',dense):
             add('submission_method','external_notice_method','notice_reference')
-    if re.search(r'국가종합전자조달|나라장터|G2B',text,re.I) and re.search(r'가격|입찰|등록|투찰',nearby) and not _EXEC.search(text):
+    if (re.search(r'국가종합전자조달|나라장터|G2B',text,re.I)
+        and (re.search(r'가격|입찰|등록|투찰|접수|제출',text)
+             or re.search(r'장\s*소\s*[:：]',text) and re.search(r'가격|입찰|등록|투찰',previous))
+        and not _EXEC.search(text)):
         add('submission_method','electronic_tender_price')
     if re.search(r'우편|이메일|전자우편|직접방문|방문제출|방문접수',dense) and _BID.search(nearby) and not _BRIEF.search(event_context) and not _EXEC.search(text):
         add('submission_method','tender_delivery_method',include_next=1 if ('사전협의' in ''.join(v.text for v in lines[i+1:i+2])) else 0)
@@ -273,6 +288,11 @@ def _matches(lines, i):
         add('submission_method','tender_delivery_validity')
     if re.search(r'평가용.{0,45}(?:기재하지|빈칸|사용불가)|밀봉.{0,20}날인|USB.{0,30}(?:인쇄본|PPT|PDF)|인쇄본.{0,20}불필요',dense) and not _EXEC.search(nearby) and not is_form:
         add('submission_documents','tender_copy_anonymity_sealing')
+    if re.search(r'발표자료.{0,30}사전제출',dense) and not is_form:
+        paragraph('submission_documents','presentation_materials_before_evaluation')
+    if ('신용평가등급확인서' in dense and '제출' in _compact(nearby)
+        and not _EXEC.search(text) and not is_form):
+        paragraph('submission_documents','tender_credit_rating_certificate')
 
     # Evaluation percentages always carry the threshold's referent, avoiding
     # approval (e.g. subcontract approval) or penalties mistaken for bid scores.
@@ -287,6 +307,8 @@ def _matches(lines, i):
         add('evaluation','quantitative_and_qualitative_weights')
     if re.search(r'합산점수가동일|기술능력평가점수도동일|배점이동일한평가항목|최고점수.{0,30}최저점수',dense) and not is_form:
         add('evaluation','evaluation_tie_or_trim')
+    if re.search(r'차순위협상적격자.{0,25}협상',dense) and not is_form:
+        add('evaluation','next_ranked_negotiation')
     if re.search(r'기술성평가시.{0,40}하도급계획적정성',dense):
         add('evaluation','tender_subcontract_plan_evaluation')
     if re.search(r'평가항목에포함.{0,100}확인서.{0,20}제출',dense) and '하도급계획적정성' in dense:
@@ -313,6 +335,14 @@ def _matches(lines, i):
         add('scope_requirements','resource_model_ratio')
     if re.search(r'정확도산출.{0,40}방법론|알고리즘.{0,25}교체|수집이?지속가능|국내보유|주\d+회이상.{0,40}방문',dense):
         add('scope_requirements','critical_execution_condition')
+    if re.search(r'예정인원.{0,35}(?:변동|추정|증감)|실제대상인원.{0,25}증감',dense):
+        add('scope_requirements','estimated_quantity_variation')
+    if re.search(r'(?:사용량|사용률|이용량|이용률).{0,50}(?:모니터링|통계)|모니터링.{0,50}(?:사용량|사용률)',dense):
+        paragraph('scope_requirements','resource_usage_monitoring')
+    following=_compact(''.join(v.text for v in lines[i:i+2]))
+    if (re.search(r'현재.{0,20}\d+개.{0,100}시스템',following)
+        and re.search(r'시스템.{0,10}운영',following)):
+        paragraph('scope_requirements','named_current_system_scope')
     if re.search(r'협의에따라.{0,20}(?:세부사항|장소).{0,20}(?:변동|결정)|협의에따라세부사항변동',dense) and not is_form:
         add('scope_requirements','scope_by_agreement')
     if re.search(r'사업종료이후에도.{0,50}자료보완',dense):
@@ -321,8 +351,9 @@ def _matches(lines, i):
         add('scope_requirements','data_return_or_destruction')
 
     section=_primary_section(lines,i)
-    if section=='purpose' and (len(dense)>18 or (len(dense)>8 and re.search(r'추진목적|기대효과',dense))) and not is_form and not _ABSENT.search(text):
-        if not re.search(r'(?:목차|서약|약정|비밀유지|개인정보.{0,8}계약)',text):
+    if section=='purpose' and len(dense)>8 and not is_form and not _ABSENT.search(text):
+        if (not re.search(r'(?:목차|서약|약정|비밀유지|개인정보.{0,8}계약)',text)
+            and re.search(r'효율|확보|개선|개편|안정|지원|제고|최소|운영|설계|마련|분석|제공|조성|재정의|활용|도모|필요|구축|전환|인지도|대응|촉진|확대',text)):
             paragraph('purpose','purpose_under_explicit_heading')
     if section=='scope_requirements' and len(dense)>22 and not is_form:
         if re.search(r'운영|수행|구축|제공|분석|지원|통합|데이터|인프라|사업',text):

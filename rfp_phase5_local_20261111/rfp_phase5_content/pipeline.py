@@ -29,7 +29,7 @@ def _normal(value):
 
 
 _ABSENCE = re.compile(
-    r'(?:제공된\s*(?:근거|원문|범위)|이\s*(?:제공\s*)?(?:묶음|범위)|본\s*묶음|'
+    r'(?:제공된\s*(?:근거|원문|범위)|이\s*(?:제공\s*)?(?:묶음|범위|근거)|본\s*묶음|'
     r'구체(?:적)?\s*(?:사업명|기한|금액|목록)|사업명\s*자체|사업명\s*값).{0,160}'
     r'(?:확인되지|확인할\s*수\s*없|명시되어\s*있지|제시되지|없(?:고|음|다)|보이지)', re.S)
 _LABEL_ONLY = {_normal(f['label']) for f in FIELDS} | {
@@ -105,6 +105,8 @@ def _context_reason(claim, context):
         if re.search(r'하도급계약명|서식|목차|신청서|파일명',text):return 'project_name_from_form_or_filename'
         if text.count('_')>=2 and '제안요청서' in text:return 'filename_is_not_project_name'
     if fid=='issuing_agency':
+        if _normal(text) in {'발주기관계약상대자','발주기관원도급자','운영기관계약상대자'}:
+            return 'unfilled_party_labels_are_not_agency'
         if re.search(r'일시\s*및\s*장소|발표\s*관련|공고문',text):return 'event_schedule_is_not_agency'
         if re.fullmatch(r'[\w\s·()]+(?:그룹|팀|과|실)',text) and not re.search(r'공사|공단|협회|조합|재단|청|특별시|광역시|주식회사|\(주\)',text):
             return 'department_is_not_issuing_organization'
@@ -113,6 +115,15 @@ def _context_reason(claim, context):
             return 'contract_or_form_purpose_is_not_project_purpose'
         if re.search(r'비밀유지계약|청렴계약|위탁자|수탁자|현장실사.*신청|사업목적.*항목|영향평가를.*실시',text):
             return 'contract_or_form_purpose_is_not_project_purpose'
+        if re.search(r'제안요청서(?:이다|입니다)|교육계획.*제시|제안\s*특징.*기대효과',text):
+            return 'document_description_or_proposal_instruction_is_not_purpose'
+        if len(re.findall(r'(?:과업개요|과업목적|과업범위|과업내용)',text))>=3:
+            return 'contents_list_is_not_project_purpose'
+    if fid=='scope_requirements':
+        if (re.search(r'파기(?:되었|하였)음을\s*확인|파기되었음을확인|상기와\s*같이.*확인하였',text,re.S)
+            or re.search(r'^은\s{5,}.*을\s*수행',text,re.S)
+            or re.fullmatch(r'[가-힣·\s]{3,45}(?:확인서|서약서|약정서)',text)):
+            return 'blank_form_attestation_is_not_execution_fact'
     if fid=='budget_vat':
         if role=='source_form' or event in {'template','subcontract'}:
             return 'form_or_subcontract_value_is_not_project_budget'
@@ -122,6 +133,8 @@ def _context_reason(claim, context):
         if role in {'source_form','agreement_clause'} or event in {'template','subcontract','briefing'}:
             return 'other_contract_or_form_period'
         if re.search(r'처리기간|서식상|비밀유지의무|본 계약의 기간|하도급기간|위탁업무|개인정보',text):return 'other_contract_or_approval_period'
+        if re.search(r'협상기간|협상대상자.{0,100}협상.{0,8}조정|소요비용.*가격견적서',text,re.S):
+            return 'negotiation_or_cost_period_is_not_execution_duration'
     if fid in {'submission_documents','submission_deadline','submission_method'}:
         if event in {'briefing','execution','subcontract','template'}:
             return 'submission_event_is_not_tender'
@@ -130,6 +143,9 @@ def _context_reason(claim, context):
             return 'post_contract_or_certificate_application'
         if fid=='submission_method' and re.search(r'입찰방식|계약문서에\s*포함|계약서와\s*동일|각\s*1통씩\s*보관',text):
             return 'procurement_type_or_contract_effect_is_not_delivery_route'
+        if fid=='submission_method' and re.search(r'나라장터|G2B|전자조달',quote,re.I):
+            if not re.search(r'입찰|가격|투찰|접수|제출|등록|장\s*소\s*[:：]',quote):
+                return 'system_function_is_not_tender_delivery_route'
         if fid in {'submission_deadline','submission_method'} and event=='unknown' and not _NOTICE.search(quote):
             if not re.search(r'입찰|제안서|가격투찰|접수|전자조달|나라장터|G2B',quote,re.I):
                 return 'tender_submission_context_not_established'
@@ -137,6 +153,8 @@ def _context_reason(claim, context):
         if re.search(r'운영기관은\s*단일|사용자는\s*일반|경력기준.{0,100}점수|서류열람.*신청',text):
             return 'user_description_or_scoring_is_not_qualification'
     if fid=='evaluation':
+        if re.search(r'(?:경우는|중에서|자를|자는|인자로|점수의)\s*$',text):
+            return 'incomplete_evaluation_clause'
         actual_eval=re.search(r'기술성\s*평가\s*시.{0,70}하도급계획\s*적정성',quote,re.S)
         if (event in {'execution','subcontract','template'} or role in {'source_form','agreement_clause'}) and not actual_eval:
             return 'approval_or_execution_check_is_not_award_evaluation'
