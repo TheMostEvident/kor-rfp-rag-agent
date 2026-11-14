@@ -17,7 +17,7 @@ from rfp_phase6.test_focus import GroundedClient, synthetic_environment
 
 
 def citations(schema):
-    return schema['properties']['claims']['items']['properties']['citations']['items']['anyOf']
+    return schema['properties']['claims']['items']['properties']['citations']['items']['properties']
 
 
 class LiteralQuoteTests(unittest.TestCase):
@@ -57,27 +57,99 @@ class LiteralQuoteTests(unittest.TestCase):
         cid = chunks[0]['chunk_id']
         payload = {'claims': [{'doc_id': 'A', 'citations': [{'chunk_id': cid,
             'quote': '사업 범위 ... 반출 신청 ... 승인 처리 ... 반환 이력'}]}]}
-        self.assertFalse(accepts_citations(payload, schema))
+        self.assertFalse(accepts_citations(payload, schema, chunks))
 
     def test_source_ellipsis_is_allowed_only_when_it_is_actually_in_the_source(self):
         chunks = copy.deepcopy(self.env['index'].get_document_chunks('A')[-1:])
         chunks[0]['text'] = '원문 자체의 표기 ... 를 그대로 보존한다.'
         schema = literal_schema(chunks)
-        self.assertEqual(citations(schema)[0]['properties']['quote']['enum'], [chunks[0]['text']])
+        self.assertEqual(citations(schema)['quote']['enum'], [chunks[0]['text']])
 
-    def test_schema_pairs_each_quote_with_its_actual_chunk(self):
+    def test_flat_schema_and_local_binding_preserve_actual_chunk_ownership(self):
         chunks = self.env['index'].get_document_chunks('A')[-4:]
         schema = literal_schema(chunks)
-        for branch, chunk in zip(citations(schema), chunks):
-            self.assertEqual(branch['properties']['chunk_id']['enum'], [chunk['chunk_id']])
-            self.assertFalse(branch['additionalProperties'])
-            for quote in branch['properties']['quote']['enum']:
-                result = self.env['registry'].validate_answer({'status': 'answered', 'claims': [{
+        self.assertEqual(citations(schema)['chunk_id']['enum'], [c['chunk_id'] for c in chunks])
+        self.assertFalse(schema['properties']['claims']['items']['properties']['citations']['items']['additionalProperties'])
+        for chunk in chunks:
+            for quote in literal_options(chunk['text']):
+                self.assertIn(quote, citations(schema)['quote']['enum'])
+                payload = {'status': 'answered', 'claims': [{
                     'doc_id': 'A', 'category': 'requirements', 'text': quote,
                     'citations': [{'chunk_id': chunk['chunk_id'], 'quote': quote}]}],
-                    'missing_information': []}, chunks, allowed_doc_ids=['A'])
+                    'missing_information': []}
+                self.assertTrue(accepts_citations(payload, schema, chunks))
+                result = self.env['registry'].validate_answer(payload, chunks, allowed_doc_ids=['A'])
                 self.assertTrue(result['valid'], result['errors'])
         self.assertEqual(ANSWER_BASELINE, self._schema_hash())
+
+    def test_flat_field_enums_never_approve_a_cross_paired_quote(self):
+        chunks = self.env['index'].get_document_chunks('A')[-4:]
+        schema = literal_schema(chunks)
+        first, second = chunks[0], chunks[-1]
+        quote = next(q for q in literal_options(first['text']) if q not in second['text'])
+        self.assertIn(quote, citations(schema)['quote']['enum'])
+        self.assertIn(second['chunk_id'], citations(schema)['chunk_id']['enum'])
+        payload = {'claims': [{'doc_id': 'A', 'citations': [
+            {'chunk_id': second['chunk_id'], 'quote': quote}]}]}
+        self.assertFalse(accepts_citations(payload, schema, chunks))
+
+    def test_flat_field_enums_never_approve_a_cross_document_quote(self):
+        chunks = self.env['index'].get_document_chunks('A')[-1:] + self.env['index'].get_document_chunks('B')[-1:]
+        schema = literal_schema(chunks)
+        quote = literal_options(chunks[0]['text'])[0]
+        payload = {'claims': [{'doc_id': 'B', 'citations': [
+            {'chunk_id': chunks[0]['chunk_id'], 'quote': quote}]}]}
+        self.assertFalse(accepts_citations(payload, schema, chunks))
+
+    def test_wire_schema_contains_only_existing_primitives_and_flat_enums(self):
+        schema = literal_schema(self.env['index'].get_document_chunks('A')[-4:])
+        def walk(node):
+            self.assertFalse({'anyOf', 'oneOf', 'allOf', '$ref', 'if', 'then'} & set(node))
+            if node['type'] == 'object':
+                self.assertFalse(node['additionalProperties'])
+                self.assertEqual(set(node['required']), set(node['properties']))
+                for child in node['properties'].values():
+                    walk(child)
+            elif node['type'] == 'array':
+                walk(node['items'])
+            else:
+                self.assertEqual(node['type'], 'string')
+                if 'enum' in node:
+                    self.assertEqual(len(node['enum']), len(set(node['enum'])))
+        walk(schema)
+
+    def test_schema_rejection_is_reported_and_flat_requests_keep_single_attempts(self):
+        class SchemaError(RuntimeError):
+            status_code = 400
+            code = 'invalid_json_schema'
+        class FlatOnlyClient(GroundedClient):
+            attempts = 0
+            def create(inner, **body):
+                inner.attempts += 1
+                schema = body['text']['format']['schema']
+                def union(node):
+                    if isinstance(node, dict):
+                        return 'anyOf' in node or any(union(v) for v in node.values())
+                    return isinstance(node, list) and any(union(v) for v in node)
+                if union(schema):
+                    raise SchemaError('PRIVATE_PROVIDER_BODY')
+                return super().create(**body)
+        client = FlatOnlyClient()
+        wrapper, delegate, _ = self.llm(client=client)
+        chunks = self.env['index'].get_document_chunks('A')[-4:]
+        old_schema = literal_schema(chunks)
+        item = old_schema['properties']['claims']['items']['properties']['citations']
+        branch = copy.deepcopy(item['items'])
+        item['items'] = {'anyOf': [branch, copy.deepcopy(branch)]}
+        with self.assertRaises(LLMError) as caught:
+            delegate.generate('qa', '사업 범위는?', chunks, schema=old_schema)
+        self.assertEqual(caught.exception.diagnostic['http_status'], 400)
+        self.assertEqual(caught.exception.diagnostic['api_error_code'], 'invalid_json_schema')
+        self.assertEqual(client.attempts, 1)
+        result = wrapper.generate('qa', '사업 범위는?', chunks)
+        self.assertTrue(result['literal_citation_contract']['selection_valid'])
+        self.assertEqual(client.attempts, 2)
+        self.assertEqual(delegate.usage_report()['failed_attempts'], 1)
 
     @staticmethod
     def _schema_hash():

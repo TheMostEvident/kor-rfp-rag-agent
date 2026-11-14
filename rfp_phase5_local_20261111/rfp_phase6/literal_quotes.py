@@ -12,12 +12,13 @@ from rfp_phase4.evidence import ANSWER_SCHEMA
 from rfp_phase4.llm import COMPARISON_DOCUMENT_TASK, LLMError
 
 
-VERSION = 'work-scope-literal-quotes-v1'
-QA_TASK = 'qa_work_scope_literal_v1'
+VERSION = 'work-scope-literal-quotes-v2'
+QA_TASK = 'qa_work_scope_literal_v2'
 MAX_QUOTE_BYTES = 420
 MAX_OPTIONS = 256
-GUIDE = ('인용 선택 규칙(literal-quotes-v1): citations의 chunk_id와 quote는 응답 스키마에 '
-    '주어진 같은 원문 청크의 선택지에서 그대로 선택하세요. 여러 표 제목을 ... 또는 /로 '
+GUIDE = ('인용 선택 규칙(literal-quotes-v2): quote는 응답 스키마의 원문 선택지에서 그대로 고르고, '
+    '그 인용문이 실제로 들어 있는 입력 청크의 chunk_id를 함께 지정하세요. 서버에서 두 값의 '
+    '실제 연결을 다시 검사합니다. 여러 표 제목을 ... 또는 /로 '
     '이어 쓴 요약문을 인용문으로 만들지 마세요. 필요한 근거가 떨어져 있으면 별도 citations로 '
     '선택하세요. 구체적인 대상 업무·기능을 중심으로 핵심 내용을 정리하고 일반 성능·보안·평가 '
     '목록을 사업의 구체적인 대상 업무 대신 나열하지 마세요. 각 주장의 숫자·조건도 선택한 '
@@ -57,42 +58,61 @@ def literal_options(text):
     return list(dict.fromkeys(options))
 
 
-def literal_schema(evidence):
-    """Bind each permitted exact excerpt to its actual chunk ID in anyOf."""
+def literal_catalog(evidence):
+    """Keep the authoritative chunk/document/quotation binding locally."""
     if not evidence:
         raise ValueError('인용 선택지에는 현재 입력 근거가 필요합니다.')
-    branches = []
-    seen = set()
+    catalog = {}
     count = 0
     for chunk in evidence:
         cid = chunk['chunk_id']
-        if cid in seen:
+        if cid in catalog:
             raise ValueError('중복 청크의 인용 선택지를 만들 수 없습니다.')
-        seen.add(cid)
         quotes = literal_options(chunk['text'])
         count += len(quotes)
         if count > MAX_OPTIONS:
             raise ValueError('원문 인용 선택지 수가 상한을 넘었습니다.')
-        branches.append({'type': 'object', 'additionalProperties': False,
-            'properties': {'chunk_id': {'type': 'string', 'enum': [cid]},
-                           'quote': {'type': 'string', 'enum': quotes}},
-            'required': ['chunk_id', 'quote']})
+        catalog[cid] = {'doc_id': chunk['doc_id'], 'quotes': quotes, 'text': chunk['text']}
+    return catalog
+
+
+def literal_schema(evidence):
+    """Use ordinary enum fields; correlated pairs are enforced locally.
+
+    Avoid repeated anyOf object branches. General JSON Schema validity does
+    not by itself establish that the provider accepts a particular schema.
+    """
+    catalog = literal_catalog(evidence)
     schema = copy.deepcopy(ANSWER_SCHEMA)
     claim = schema['properties']['claims']['items']['properties']
     claim['doc_id'] = {'type': 'string', 'enum': list(dict.fromkeys(c['doc_id'] for c in evidence))}
-    claim['citations']['items'] = {'anyOf': branches}
+    citation = claim['citations']['items']['properties']
+    citation['chunk_id'] = {'type': 'string', 'enum': list(catalog)}
+    quotes = list(dict.fromkeys(q for entry in catalog.values() for q in entry['quotes']))
+    if len(quotes) > 250 and sum(len(q) for q in quotes) > 15000:
+        raise ValueError('단일 인용 선택지 필드의 API 문자 수 상한을 넘었습니다.')
+    citation['quote'] = {'type': 'string', 'enum': quotes}
     return schema
 
 
-def accepts_citations(payload, schema):
-    """Check the extra selection contract, including cached/test responses."""
+def accepts_citations(payload, schema, evidence):
+    """Enforce exact selections AND their actual chunk and document owners.
+
+    The wire's two flat enums cannot express their correlation. Never infer
+    a replacement chunk or repair a cross-paired choice; reject it instead.
+    """
     properties = schema['properties']['claims']['items']['properties']
     docs = set(properties['doc_id']['enum'])
-    allowed = {branch['properties']['chunk_id']['enum'][0]: set(branch['properties']['quote']['enum'])
-               for branch in properties['citations']['items']['anyOf']}
+    choices = properties['citations']['items']['properties']
+    allowed_ids = set(choices['chunk_id']['enum'])
+    allowed_quotes = set(choices['quote']['enum'])
+    catalog = literal_catalog(evidence)
     try:
         return all(claim['doc_id'] in docs and all(
-            cite['chunk_id'] in allowed and cite['quote'] in allowed[cite['chunk_id']]
+            cite['chunk_id'] in allowed_ids and cite['chunk_id'] in catalog
+            and catalog[cite['chunk_id']]['doc_id'] == claim['doc_id']
+            and cite['quote'] in allowed_quotes
+            and cite['quote'] in catalog[cite['chunk_id']]['text']
             for cite in claim['citations']) for claim in payload['claims'])
     except (KeyError, TypeError):
         return False
@@ -126,13 +146,14 @@ class LiteralQuoteClient:
     def generate(self, task, question, evidence, *, schema=None):
         request = self._request(task, question, evidence, schema)
         result = self.delegate.generate(**request)
-        if not accepts_citations(result.get('payload'), request['schema']):
+        if not accepts_citations(result.get('payload'), request['schema'], evidence):
             raise LLMError('Model citation is outside the literal selection contract', diagnostic={
                 'code': 'invalid_answer_structure', 'request_fingerprint': result.get('request_fingerprint')})
         result = copy.deepcopy(result)
         result['literal_citation_contract'] = {'version': VERSION,
-            'quote_options': sum(len(b['properties']['quote']['enum']) for b in
-                request['schema']['properties']['claims']['items']['properties']['citations']['items']['anyOf']),
+            'quote_options': len(request['schema']['properties']['claims']['items']['properties']
+                                 ['citations']['items']['properties']['quote']['enum']),
+            'chunk_quote_binding_checked_locally': True,
             'selection_valid': True, 'source_correctness_still_requires_registry': True,
             'semantic_correctness_verified': False}
         return result

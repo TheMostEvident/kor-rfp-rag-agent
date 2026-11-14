@@ -1,5 +1,8 @@
 """Pilot invariants, budgets and feedback using synthetic RFPs only."""
 import copy
+import contextlib
+import importlib.util
+import io
 import json
 import multiprocessing
 import os
@@ -14,7 +17,7 @@ from local_rag.retrieval import LocalSearchIndex
 from rfp_phase6.test_session import fixture
 from rfp_phase7.test_evaluation import Client
 from .pilot import (PilotSession, digest, latest_review, read_record, readiness,
-                    review_template, save_review, session_report, write_new)
+                    review_template, save_review, session_report, session_diagnostics, write_new)
 from .web import create_server
 
 
@@ -162,6 +165,56 @@ class PilotTests(unittest.TestCase):
         self.assertNotIn('synthetic-not-a-real-key', saved)
         self.pilot.resume_after_error()
         self.assertEqual(self.pilot.chat.llm.usage_report()['failed_attempts'], 1)
+
+    def test_http_schema_error_is_visible_in_cli_and_saved_session_report(self):
+        class SchemaRejected:
+            def __init__(inner):
+                inner.responses = inner
+            def create(inner, **body):
+                error = RuntimeError('PRIVATE_PROVIDER_BODY')
+                error.status_code = 400
+                error.code = 'invalid_json_schema'
+                raise error
+        pilot = PilotSession(self.env, client=SchemaRejected())
+        path = Path(__file__).resolve().parents[1] / 'scripts/phase8_pilot.py'
+        spec = importlib.util.spec_from_file_location('phase8_pilot_schema_cli', path)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        output = io.StringIO()
+        with patch('rfp_phase5.runtime.bootstrap_phase5', return_value=self.env), \
+                patch('rfp_phase8.pilot.PilotSession', return_value=pilot), \
+                patch('rfp_phase5_recovery.runner.load_api_key', return_value=None), \
+                contextlib.redirect_stdout(output):
+            code = module.main(['--root', str(self.env['root']), '--live', '--doc-id', 'A', '--question', '사업예산은?'])
+        self.assertEqual(code, 1)
+        self.assertIn('invalid_json_schema', output.getvalue())
+        self.assertIn('400', output.getvalue())
+        self.assertNotIn('PRIVATE_PROVIDER_BODY', output.getvalue())
+        details = session_report(pilot.folder)['failed_turn_diagnostics'][0]['error_diagnostic']
+        self.assertEqual(details['http_status'], 400)
+        self.assertEqual(details['api_error_code'], 'invalid_json_schema')
+
+    def test_diagnostics_cli_reads_saved_records_without_bootstrap_key_or_model(self):
+        self.ask()
+        folder = self.pilot.folder
+        review = next((folder / 'turns').glob('*/human_review.json'))
+        review.write_text('unfinished review edit', encoding='utf-8')
+        before = {p: p.read_bytes() for p in folder.rglob('*') if p.is_file()}
+        path = Path(__file__).resolve().parents[1] / 'scripts/phase8_pilot.py'
+        spec = importlib.util.spec_from_file_location('phase8_pilot_saved_cli', path)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        output = io.StringIO()
+        with patch('rfp_phase5.runtime.bootstrap_phase5', side_effect=AssertionError('no bootstrap')), \
+                patch('rfp_phase5_recovery.runner.load_api_key', side_effect=AssertionError('no key')), \
+                patch('rfp_phase4.llm.OpenAIGroundedLLM.generate', side_effect=AssertionError('no generation')), \
+                contextlib.redirect_stdout(output):
+            self.assertEqual(module.main(['--report-session', str(folder), '--diagnostics-only']), 0)
+        report = json.loads(output.getvalue())
+        self.assertEqual(report['diagnostic_api_calls'], 0)
+        self.assertTrue(report['read_only'])
+        self.assertEqual(report['recorded_turns'], 1)
+        self.assertEqual(before, {p: p.read_bytes() for p in folder.rglob('*') if p.is_file()})
 
     def test_feedback_requires_exact_result_and_record_integrity(self):
         self.enable()

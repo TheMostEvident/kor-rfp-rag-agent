@@ -65,10 +65,9 @@ class GroundedClient:
         quote = '원문에 존재하지 않는 구절' if self.mode == 'wrong_quote' else source['text']
         schema = body.get('text', {}).get('format', {}).get('schema', {})
         choices = (schema.get('properties', {}).get('claims', {}).get('items', {}).get('properties', {})
-                   .get('citations', {}).get('items', {}).get('anyOf', []))
+                   .get('citations', {}).get('items', {}).get('properties', {}).get('quote', {}).get('enum'))
         if choices and self.mode != 'wrong_quote':
-            branch = next(b for b in choices if b['properties']['chunk_id']['enum'] == [source['chunk_id']])
-            quote = branch['properties']['quote']['enum'][0]
+            quote = next(q for q in choices if q in source['text'])
         payload = {'status': 'answered', 'claims': [{'doc_id': did, 'category': 'requirements',
             'text': source['text'], 'citations': [{'chunk_id': source['chunk_id'], 'quote': quote}]}],
             'missing_information': []}

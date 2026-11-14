@@ -333,9 +333,39 @@ def session_report(folder):
     failures = [r['turn_id'] for r in records if r['result'].get('execution_status') in FAILED]
     return {'version': VERSION, 'session_id': session['session_id'], 'recorded_turns': len(records),
         'execution_status': 'needs_attention' if failures or incomplete else 'records_complete',
-        'failed_turns': failures, 'incomplete_turns': incomplete, 'usage': usage, 'latency': latencies,
+        'failed_turns': failures, 'failed_turn_diagnostics': [_failure_diagnostic(r) for r in records
+            if r['result'].get('execution_status') in FAILED],
+        'incomplete_turns': incomplete, 'usage': usage, 'latency': latencies,
         'human_review_status': 'review_complete' if reviews and len(completed) == len(reviews) else 'review_pending',
         'reviewable_turns': len(reviews), 'reviewed_turns': len(completed), 'fully_correct_reviewed_turns': correct,
         'accuracy_on_reviewed_live_turns': real_correct / len(real_completed) if real_completed else None,
         'reviewed_live_turns': len(real_completed), 'independent_quality_verified': False,
         'scope': 'Explicitly reviewed local pilot turns only. Question/document novelty is unverified; no unseen-test or corpus-wide accuracy.'}
+
+
+def _failure_diagnostic(record):
+    answer = record['result']
+    return {'turn_id': record['turn_id'], 'status': answer.get('status'),
+        'execution_status': answer.get('execution_status'),
+        'error_diagnostic': copy.deepcopy(answer.get('error_diagnostic')),
+        'validation_errors': copy.deepcopy((answer.get('validation') or {}).get('errors', []))}
+
+
+def session_diagnostics(folder):
+    """Inspect one saved pilot session without bootstrap, key, model or reviews."""
+    folder = Path(folder)
+    session = load_json(folder / 'session.json')
+    records = []
+    incomplete = []
+    for turn in sorted((folder / 'turns').iterdir()):
+        if not (turn / 'record.json').is_file():
+            incomplete.append(turn.name)
+            continue
+        record = read_record(turn)
+        if record['session_id'] != session['session_id']:
+            raise ValueError('다른 세션의 실행 기록입니다.')
+        records.append(record)
+    return {'version': 'phase8-saved-pilot-diagnostics-v1', 'session_id': session['session_id'],
+        'diagnostic_api_calls': 0, 'read_only': True, 'recorded_turns': len(records),
+        'incomplete_turns': incomplete, 'turns': [_failure_diagnostic(r) for r in records],
+        'semantic_correctness_verified': False}

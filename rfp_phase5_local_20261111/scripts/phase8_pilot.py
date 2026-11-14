@@ -22,10 +22,14 @@ def main(argv=None):
     parser.add_argument('--approve-doc-id', action='append', default=[])
     parser.add_argument('--env-file', type=Path)
     parser.add_argument('--report-session', type=Path, help='이 세션의 최신 사람 검토를 다시 집계; API 0회')
+    parser.add_argument('--diagnostics-only', action='store_true', help='저장된 오류 상세만 조회; API 0회')
     args = parser.parse_args(argv)
-    from rfp_phase8.pilot import PilotSession, readiness, session_report
+    from rfp_phase8.pilot import PilotSession, readiness, session_report, session_diagnostics
+    if args.diagnostics_only and not args.report_session:
+        parser.error('--diagnostics-only에는 --report-session이 필요합니다.')
     if args.report_session:
-        print(json.dumps(session_report(args.report_session), ensure_ascii=False, indent=2))
+        report = session_diagnostics(args.report_session) if args.diagnostics_only else session_report(args.report_session)
+        print(json.dumps(report, ensure_ascii=False, indent=2))
         return 0
     from rfp_phase5.runtime import bootstrap_phase5
     env = bootstrap_phase5(args.root)
@@ -51,6 +55,11 @@ def main(argv=None):
             record = pilot.submit(question)
             print(record['result'].get('markdown', ''))
             print('상태:', record['result']['status'], '/', record['result'].get('execution_status'))
+            if record['result'].get('error_diagnostic'):
+                print('오류 상세:', json.dumps(record['result']['error_diagnostic'], ensure_ascii=False))
+            errors = (record['result'].get('validation') or {}).get('errors', [])
+            if errors:
+                print('출처·형식 검사 사유:', json.dumps(errors, ensure_ascii=False))
             print('실행 ID:', record['turn_id'])
             if pilot.halted:
                 break
