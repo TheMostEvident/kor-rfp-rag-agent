@@ -1,0 +1,10 @@
+{
+  "version": "rfp-phase8-pilot-v1",
+  "generation": {
+    "max_calls": 8,
+    "max_total_input_bytes": 600000
+  },
+  "pricing": null,
+  "summary_run": "phase5_outputs/final_source_units/phase5_final_source_units",
+  "scope": "Local single-user pilot; human feedback is sample-specific, not unseen-test accuracy."
+}

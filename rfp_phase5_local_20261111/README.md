@@ -6,6 +6,9 @@
 검색·답변·속도·사용량 평가는 [Phase 7 실행 안내](README_PHASE7.md)와
 `notebooks/14_younggwan_phase7_evaluation.ipynb`에서 진행합니다. 기본값은 API 0회 개발 검색 평가입니다.
 
+로컬 파일럿 화면·실행 기록·사람 검토는 [Phase 8 실행 안내](README_PHASE8.md)와
+`notebooks/15_younggwan_phase8_pilot.ipynb`에서 진행합니다. 별도 UI 패키지 설치 없이 기존 Python을 사용합니다.
+
 현재 실행 노트북은 `notebooks/12_younggwan_phase5_final_env_fixed.ipynb`입니다. 기본 대상은 표본 7건이 아니라 전체 원본입니다.
 기존에 성공한 Phase 3 `.venv/bin/python` 커널과 로컬 원문·인덱스를 사용하세요.
 원문·인덱스·API 응답 캐시는 Git에 포함되지 않으므로, 새 clone만으로 실제 실행 데이터를 재현할 수는 없습니다.
