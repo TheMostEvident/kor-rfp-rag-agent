@@ -1,0 +1,38 @@
+{
+  "version": "rfp-phase5-final-source-units-v1",
+  "transport_version": "rfp-source-units-v1",
+  "model_settings": {
+    "model": "gpt-5.4-mini",
+    "max_output_tokens": 6000,
+    "reasoning_effort": "none",
+    "max_request_bytes": 60000,
+    "batch_max_bytes": 35000,
+    "max_batches_per_document": 200,
+    "reuse_verified_legacy": false
+  },
+  "catalog_fingerprint": "b0eefded63bb994a9f1ba9d52df58708ff0d36435b1e74ca447868c5c6b06a43",
+  "index_fingerprint": "b784f5cd9f85f178f72c1faf99ebdfc89d97684e35c81b3dfc1563d0a1907fea",
+  "code_sha256": {
+    "__init__.py": "b255bbb3949f5a0c430cac977c91a2373e0a980c92c8b82aeff45a28bbdaadfa",
+    "catalog_audit.py": "788c7365ab6f30228ac5a412fa88a0c4cb85e767e43e9b7503f9a6c5788f59f6",
+    "engine.py": "e57eecfcdd5d16fb85e0d9eb792613e5fda7fc033db20e004c4ed01326f74db4",
+    "legacy.py": "9e42e70012919333d6eeb966a935f73e69d8a3454d668244393100bc156ed383",
+    "review.py": "e2a4bb7a3fee1757da8baaf69accf5069290b9bc637af6ce0f9ae2043fd2d1db",
+    "test_catalog_audit.py": "44ef85dd40e672e2a1e93c168833e3e3125ed1ee5680c4eb908fa54229d7add0",
+    "test_engine.py": "e6281bfd67c421ca163b50fdc50ae9116fc467862f51e926333ce10877147eca",
+    "test_legacy.py": "46bb89bb3aa5a6eac0110cc17dfad22bdc50ed030776b638e98386b4373c79be",
+    "test_review.py": "f18c273fd6aad05a45a3afc420d2dac66a19d85450b4427ff90c68ad7aad70e0",
+    "test_transport.py": "b21cd5372f376935720401e91735972264c5eab1e59e7535302802493c8b429f",
+    "transport.py": "e70ba50f1e250c221d995a9650b2c85ad5042aab1fff28fc39e7fdb3912498c3"
+  },
+  "baseline_code_sha256": {
+    "rfp_phase4/llm.py": "d6d4a4ac28ca9eb97547d4dbe6e6132534082c885a849d1e67feb50ce1a611ac",
+    "rfp_phase4/evidence.py": "c43fbd3dd15f53e3e86791f2a67e999ba0ba71e759e60ada147be3c22518ca4f",
+    "rfp_phase5/fields.py": "9a8d56503a22413a154ac52f9fcdf0a0796d3933f0136a96d044b9649585c300"
+  },
+  "question_fingerprint": "b16a475a6b363b916509e2cce0c7f5373e9be1dec2094efbcee8ff23df690e9e",
+  "references_fingerprint": "d6822533519528d3a049730915cfa4b445881bf7c2f6678e9126291639f07d78",
+  "execution_mode": "live_openai",
+  "legacy_scan_fingerprint": null,
+  "legacy_candidate_fingerprints": []
+}

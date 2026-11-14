@@ -1,0 +1,625 @@
+{
+  "batch_id": "B0002",
+  "job_key": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc:B0002:65b7fea2d442",
+  "source_chunk_ids": [
+    "rfp:3cd93bd8e0f92667:37d798ae8ca23fd2067b61a2",
+    "rfp:3cd93bd8e0f92667:497159a732200e4b51fe80e4",
+    "rfp:3cd93bd8e0f92667:a7f5bab9a22e08d0b4c96531",
+    "rfp:3cd93bd8e0f92667:4dbc7d7c249ffbd8a5e0eee3",
+    "rfp:3cd93bd8e0f92667:52faa37078cffd636f2df535",
+    "rfp:3cd93bd8e0f92667:73e545298647169fdec7031d",
+    "rfp:3cd93bd8e0f92667:f90fc7ae55bd5e6369bac7ab",
+    "rfp:3cd93bd8e0f92667:41f9eed690d379d88fc16e0e",
+    "rfp:3cd93bd8e0f92667:36fb2d4074ea5e420a348dd3",
+    "rfp:3cd93bd8e0f92667:24ee342e9a44e6d21b67dd45",
+    "rfp:3cd93bd8e0f92667:b2b6308021f4a17d0fd03b4d",
+    "rfp:3cd93bd8e0f92667:fc1e259dbc1635bfa6d9b8a5",
+    "rfp:3cd93bd8e0f92667:e717e389c8fb366917ee3d6c",
+    "rfp:3cd93bd8e0f92667:59b4b382d0b59056cf5fbe04",
+    "rfp:3cd93bd8e0f92667:e71319abc81104dce51759a7",
+    "rfp:3cd93bd8e0f92667:b4683037e6afa61272430c64",
+    "rfp:3cd93bd8e0f92667:53e30050e8d3cb6c5a1e5a73",
+    "rfp:3cd93bd8e0f92667:a210be09f2647937e766ba3f",
+    "rfp:3cd93bd8e0f92667:cb1600aa5274f6b68981d127",
+    "rfp:3cd93bd8e0f92667:889c64afd837efbd50d8f870",
+    "rfp:3cd93bd8e0f92667:a151796771c2b21aab677461",
+    "rfp:3cd93bd8e0f92667:bec3a9dd5d261ff6c6fd75e1",
+    "rfp:3cd93bd8e0f92667:4ecb2c06f33dbee909549a03",
+    "rfp:3cd93bd8e0f92667:2ec39a19d45e9f68c4fcec59",
+    "rfp:3cd93bd8e0f92667:0b4845f4b45df7d1ef7b2eed",
+    "rfp:3cd93bd8e0f92667:fc5513b7eb52b6c0a3562ce1",
+    "rfp:3cd93bd8e0f92667:7a4601564c3dd21de1af17b5",
+    "rfp:3cd93bd8e0f92667:7ebc4b8ea1f7884d0914cdd7",
+    "rfp:3cd93bd8e0f92667:0903bccad00a0ceef2ee9160"
+  ],
+  "request_fingerprint": "65b7fea2d442d3f421c90c354776d7abedfa3a9e7228fe8410e1807776d49cad",
+  "kind": "source_units",
+  "status": "completed_with_rejections",
+  "claims": [
+    {
+      "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+      "category": "overview",
+      "text": "[project_name|fact] 2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수",
+      "citations": [
+        {
+          "chunk_id": "rfp:3cd93bd8e0f92667:4dbc7d7c249ffbd8a5e0eee3",
+          "quote": "□ 신청 자격\no AI 가속화기(H100 등 GPU 최소 960장 이상 보유 및 할당 가능) 자원의 동적할당 운영 및 관리 역량을 보유하고, AI 개발에 최적화된 클라우드 기반의 연구용 컴퓨팅 자원제공이 가능한 기업 또는 컨소시엄",
+          "quote_start": 0,
+          "quote_end": 128,
+          "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+          "sha256": "3cd93bd8e0f92667d7f0d681d7c64070f810f6ff0035f2ea564a7b56f19072c1",
+          "file_name": "한국정보통신진흥협회_2026_2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 345 / BodyText/Section0 / paragraph 347",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:345:record:57525",
+              "locator": "BodyText/Section0 / paragraph 345",
+              "char_start": 0,
+              "char_end": 7,
+              "chunk_start": 0,
+              "chunk_end": 7,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:347:record:57707",
+              "locator": "BodyText/Section0 / paragraph 347",
+              "char_start": 0,
+              "char_end": 120,
+              "chunk_start": 8,
+              "chunk_end": 128,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E013",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "19f1cac4b7e6ab013a96aacad89cb0ba4a4f9e932322c3a0eea540fd7be708b0",
+          "source_request_fingerprint": "65b7fea2d442d3f421c90c354776d7abedfa3a9e7228fe8410e1807776d49cad",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+      "category": "overview",
+      "text": "[purpose|fact] AI 개발에 최적화된 클라우드 기반의 연구용 컴퓨팅 자원제공이 가능한 기업 또는 컨소시엄을 대상으로 GPU 자원 공급 및 유지보수 과업을 추진하는 제안요청서이다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:3cd93bd8e0f92667:4dbc7d7c249ffbd8a5e0eee3",
+          "quote": "□ 신청 자격\no AI 가속화기(H100 등 GPU 최소 960장 이상 보유 및 할당 가능) 자원의 동적할당 운영 및 관리 역량을 보유하고, AI 개발에 최적화된 클라우드 기반의 연구용 컴퓨팅 자원제공이 가능한 기업 또는 컨소시엄",
+          "quote_start": 0,
+          "quote_end": 128,
+          "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+          "sha256": "3cd93bd8e0f92667d7f0d681d7c64070f810f6ff0035f2ea564a7b56f19072c1",
+          "file_name": "한국정보통신진흥협회_2026_2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 345 / BodyText/Section0 / paragraph 347",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:345:record:57525",
+              "locator": "BodyText/Section0 / paragraph 345",
+              "char_start": 0,
+              "char_end": 7,
+              "chunk_start": 0,
+              "chunk_end": 7,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:347:record:57707",
+              "locator": "BodyText/Section0 / paragraph 347",
+              "char_start": 0,
+              "char_end": 120,
+              "chunk_start": 8,
+              "chunk_end": 128,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E013",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "19f1cac4b7e6ab013a96aacad89cb0ba4a4f9e932322c3a0eea540fd7be708b0",
+          "source_request_fingerprint": "65b7fea2d442d3f421c90c354776d7abedfa3a9e7228fe8410e1807776d49cad",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:3cd93bd8e0f92667:52faa37078cffd636f2df535",
+          "quote": "<공급자 요건>\nㅇ 공급자(클라우드사)는 클라우드 컴퓨팅 발전 및 이용자 보호에 관한 법률 제23조의2에 따른 클라우드 컴퓨팅 서비스 보안인증(CSAP)을 획득한 클라우드 사업자를 대상으로 함\n※ 컨소시엄 형태로 사업에 참여할 경우 주관 및 참여 공급사 모두 보안인증(CSAP 등) 획득해야 함",
+          "quote_start": 0,
+          "quote_end": 164,
+          "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+          "sha256": "3cd93bd8e0f92667d7f0d681d7c64070f810f6ff0035f2ea564a7b56f19072c1",
+          "file_name": "한국정보통신진흥협회_2026_2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 350 / BodyText/Section0 / paragraph 351 / BodyText/Section0 / paragraph 352",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:350:record:58466",
+              "locator": "BodyText/Section0 / paragraph 350",
+              "char_start": 0,
+              "char_end": 8,
+              "chunk_start": 0,
+              "chunk_end": 8,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0010",
+              "row": 0,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:351:record:58570",
+              "locator": "BodyText/Section0 / paragraph 351",
+              "char_start": 0,
+              "char_end": 98,
+              "chunk_start": 9,
+              "chunk_end": 107,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0010",
+              "row": 0,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:352:record:58922",
+              "locator": "BodyText/Section0 / paragraph 352",
+              "char_start": 0,
+              "char_end": 56,
+              "chunk_start": 108,
+              "chunk_end": 164,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0010",
+              "row": 0,
+              "col": 0
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E014",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "19f1cac4b7e6ab013a96aacad89cb0ba4a4f9e932322c3a0eea540fd7be708b0",
+          "source_request_fingerprint": "65b7fea2d442d3f421c90c354776d7abedfa3a9e7228fe8410e1807776d49cad",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] AI 가속화기(H100 등 GPU 최소 960장 이상 보유 및 할당 가능) 자원의 동적할당 운영 및 관리 역량을 요구한다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:3cd93bd8e0f92667:4dbc7d7c249ffbd8a5e0eee3",
+          "quote": "□ 신청 자격\no AI 가속화기(H100 등 GPU 최소 960장 이상 보유 및 할당 가능) 자원의 동적할당 운영 및 관리 역량을 보유하고, AI 개발에 최적화된 클라우드 기반의 연구용 컴퓨팅 자원제공이 가능한 기업 또는 컨소시엄",
+          "quote_start": 0,
+          "quote_end": 128,
+          "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+          "sha256": "3cd93bd8e0f92667d7f0d681d7c64070f810f6ff0035f2ea564a7b56f19072c1",
+          "file_name": "한국정보통신진흥협회_2026_2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 345 / BodyText/Section0 / paragraph 347",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:345:record:57525",
+              "locator": "BodyText/Section0 / paragraph 345",
+              "char_start": 0,
+              "char_end": 7,
+              "chunk_start": 0,
+              "chunk_end": 7,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:347:record:57707",
+              "locator": "BodyText/Section0 / paragraph 347",
+              "char_start": 0,
+              "char_end": 120,
+              "chunk_start": 8,
+              "chunk_end": 128,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E013",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "19f1cac4b7e6ab013a96aacad89cb0ba4a4f9e932322c3a0eea540fd7be708b0",
+          "source_request_fingerprint": "65b7fea2d442d3f421c90c354776d7abedfa3a9e7228fe8410e1807776d49cad",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+      "category": "eligibility",
+      "text": "[eligibility|fact] 클라우드 컴퓨팅 서비스 보안인증(CSAP)을 획득한 클라우드 사업자를 대상으로 하며, 컨소시엄 참여 시 주관 및 참여 공급사 모두 보안인증(CSAP 등) 획득이 필요하다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:3cd93bd8e0f92667:52faa37078cffd636f2df535",
+          "quote": "<공급자 요건>\nㅇ 공급자(클라우드사)는 클라우드 컴퓨팅 발전 및 이용자 보호에 관한 법률 제23조의2에 따른 클라우드 컴퓨팅 서비스 보안인증(CSAP)을 획득한 클라우드 사업자를 대상으로 함\n※ 컨소시엄 형태로 사업에 참여할 경우 주관 및 참여 공급사 모두 보안인증(CSAP 등) 획득해야 함",
+          "quote_start": 0,
+          "quote_end": 164,
+          "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+          "sha256": "3cd93bd8e0f92667d7f0d681d7c64070f810f6ff0035f2ea564a7b56f19072c1",
+          "file_name": "한국정보통신진흥협회_2026_2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 350 / BodyText/Section0 / paragraph 351 / BodyText/Section0 / paragraph 352",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:350:record:58466",
+              "locator": "BodyText/Section0 / paragraph 350",
+              "char_start": 0,
+              "char_end": 8,
+              "chunk_start": 0,
+              "chunk_end": 8,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0010",
+              "row": 0,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:351:record:58570",
+              "locator": "BodyText/Section0 / paragraph 351",
+              "char_start": 0,
+              "char_end": 98,
+              "chunk_start": 9,
+              "chunk_end": 107,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0010",
+              "row": 0,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:352:record:58922",
+              "locator": "BodyText/Section0 / paragraph 352",
+              "char_start": 0,
+              "char_end": 56,
+              "chunk_start": 108,
+              "chunk_end": 164,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0010",
+              "row": 0,
+              "col": 0
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E014",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "19f1cac4b7e6ab013a96aacad89cb0ba4a4f9e932322c3a0eea540fd7be708b0",
+          "source_request_fingerprint": "65b7fea2d442d3f421c90c354776d7abedfa3a9e7228fe8410e1807776d49cad",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+      "category": "eligibility",
+      "text": "[eligibility|fact] 국가를 당사자로 하는 계약에 관한 법률 시행령 제12조 및 동법 시행규칙 제14조 규정에 의한 경쟁입찰 참가자격을 갖춘 자여야 하며, 국가를 당사자로 하는 계약에 관한 법률 제27조 및 동법 시행령 제76조에 의한 부정당업자에 해당하지 않아야 한다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:3cd93bd8e0f92667:73e545298647169fdec7031d",
+          "quote": "o 국가를 당사자로 하는 계약에 관한 법률 시행령 제12조 및 동법 시행규칙 제14조 규정에 의한 경쟁입찰 참가자격을 갖춘 자로서,\n- 국가를 당사자로 하는 계약에 관한 법률 제27조 및 동법 시행령 제76조에 의한 부정당업자에 해당하지 않는 자\n□ 입찰 및 낙찰 방식\no 입찰 및 낙찰방식 : 일반경쟁입찰 / 협상에 의한 계약\n",
+          "quote_start": 0,
+          "quote_end": 184,
+          "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+          "sha256": "3cd93bd8e0f92667d7f0d681d7c64070f810f6ff0035f2ea564a7b56f19072c1",
+          "file_name": "한국정보통신진흥협회_2026_2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 354 / BodyText/Section0 / paragraph 356 / BodyText/Section0 / paragraph 358 / BodyText/Section0 / paragraph 360",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:354:record:59226",
+              "locator": "BodyText/Section0 / paragraph 354",
+              "char_start": 0,
+              "char_end": 73,
+              "chunk_start": 0,
+              "chunk_end": 73,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:356:record:59576",
+              "locator": "BodyText/Section0 / paragraph 356",
+              "char_start": 0,
+              "char_end": 63,
+              "chunk_start": 74,
+              "chunk_end": 137,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:358:record:59916",
+              "locator": "BodyText/Section0 / paragraph 358",
+              "char_start": 0,
+              "char_end": 12,
+              "chunk_start": 138,
+              "chunk_end": 150,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:360:record:60106",
+              "locator": "BodyText/Section0 / paragraph 360",
+              "char_start": 0,
+              "char_end": 32,
+              "chunk_start": 151,
+              "chunk_end": 183,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E015",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "19f1cac4b7e6ab013a96aacad89cb0ba4a4f9e932322c3a0eea540fd7be708b0",
+          "source_request_fingerprint": "65b7fea2d442d3f421c90c354776d7abedfa3a9e7228fe8410e1807776d49cad",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+      "category": "evaluation",
+      "text": "[evaluation|fact] 세부평가 방법은 기술평가 100%이고, 기술평가점수가 동일한 경우 배점이 높은 평가항목에서 점수가 높은 업체를 선정하며 A, B, C, D, E 순으로 처리한다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:3cd93bd8e0f92667:73e545298647169fdec7031d",
+          "quote": "□ 평가 방법\no 세부평가 방법 : 기술평가 100%\no 동점 시 처리방침\n- 기술평가점수가 동일한 경우 배점이 높은 평가항목에서 점수가 높은 업체를 선정 (A, B, C, D, E 순)\n",
+          "quote_start": 184,
+          "quote_end": 289,
+          "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+          "sha256": "3cd93bd8e0f92667d7f0d681d7c64070f810f6ff0035f2ea564a7b56f19072c1",
+          "file_name": "한국정보통신진흥협회_2026_2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 362 / BodyText/Section0 / paragraph 364 / BodyText/Section0 / paragraph 366 / BodyText/Section0 / paragraph 368",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:362:record:60338",
+              "locator": "BodyText/Section0 / paragraph 362",
+              "char_start": 0,
+              "char_end": 7,
+              "chunk_start": 184,
+              "chunk_end": 191,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:364:record:60518",
+              "locator": "BodyText/Section0 / paragraph 364",
+              "char_start": 0,
+              "char_end": 21,
+              "chunk_start": 192,
+              "chunk_end": 213,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:366:record:60744",
+              "locator": "BodyText/Section0 / paragraph 366",
+              "char_start": 0,
+              "char_end": 11,
+              "chunk_start": 214,
+              "chunk_end": 225,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:368:record:60934",
+              "locator": "BodyText/Section0 / paragraph 368",
+              "char_start": 0,
+              "char_end": 62,
+              "chunk_start": 226,
+              "chunk_end": 288,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E016",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "19f1cac4b7e6ab013a96aacad89cb0ba4a4f9e932322c3a0eea540fd7be708b0",
+          "source_request_fingerprint": "65b7fea2d442d3f421c90c354776d7abedfa3a9e7228fe8410e1807776d49cad",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+      "category": "evaluation",
+      "text": "[evaluation|fact] 기술평가 점수는 평가위원이 평가한 점수 중 최고점수 1개와 최저점수 1개를 제외하고 나머지 점수를 평균하여 획득점수를 산출한다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:3cd93bd8e0f92667:73e545298647169fdec7031d",
+          "quote": "o 기술평가방법\n- 운영기관이 평가위원회를 구성하여 제안서의 기술평가 수행\n- 기술평가 점수는 평가위원이 평가한 점수 중 최고점수 1개와 최저점수 1개를 제외하고, 나머지 점수를 평균하여 획득점수를 산출\no 평가 항목",
+          "quote_start": 289,
+          "quote_end": 410,
+          "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+          "sha256": "3cd93bd8e0f92667d7f0d681d7c64070f810f6ff0035f2ea564a7b56f19072c1",
+          "file_name": "한국정보통신진흥협회_2026_2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 370 / BodyText/Section0 / paragraph 372 / BodyText/Section0 / paragraph 374 / BodyText/Section0 / paragraph 375",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:370:record:61272",
+              "locator": "BodyText/Section0 / paragraph 370",
+              "char_start": 0,
+              "char_end": 8,
+              "chunk_start": 289,
+              "chunk_end": 297,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:372:record:61456",
+              "locator": "BodyText/Section0 / paragraph 372",
+              "char_start": 0,
+              "char_end": 32,
+              "chunk_start": 298,
+              "chunk_end": 330,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:374:record:61698",
+              "locator": "BodyText/Section0 / paragraph 374",
+              "char_start": 0,
+              "char_end": 71,
+              "chunk_start": 331,
+              "chunk_end": 402,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:375:record:61974",
+              "locator": "BodyText/Section0 / paragraph 375",
+              "char_start": 0,
+              "char_end": 7,
+              "chunk_start": 403,
+              "chunk_end": 410,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E017",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "19f1cac4b7e6ab013a96aacad89cb0ba4a4f9e932322c3a0eea540fd7be708b0",
+          "source_request_fingerprint": "65b7fea2d442d3f421c90c354776d7abedfa3a9e7228fe8410e1807776d49cad",
+          "source_origin": "source_units"
+        }
+      ]
+    }
+  ],
+  "rejected_claims": [
+    {
+      "claim_index": 8,
+      "field_id": "submission_method",
+      "reason": "field_or_source_validation_failed",
+      "raw_claim": {
+        "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+        "category": "other",
+        "text": "[submission_method|fact] 결과보고서 및 사업수행 과정에서 발생된 모든 산출물은 이메일로 제출하고, 필요시 출력본 또는 USB 저장장치에 저장 후 제출한다.",
+        "citations": [
+          {
+            "chunk_id": "rfp:3cd93bd8e0f92667:497159a732200e4b51fe80e4",
+            "quote": "※ 정기 보고서 양식, 보고체계 등을 제시하고 결과보고서 및 사업수행 과정에서 발생된 모든 산출물 등은 이메일로 제출하고, 필요시 출력본 또는 USB 저장장치에 저장 후 제출\n□ 유의사항\no 본 사업수행 결과물에 대한 지적재산권은 운영기관과 계약상대자가 공동으로 소유함. 다만, 계약목적물의 특수성(보안, 영업비밀 등)을 고려하여 계약당사자 간의 협의를 통해 지적재산권 귀속주체 등에 대해 공동소유와 달리 정할 수 있음\n"
+          }
+        ]
+      },
+      "raw_claim_is_unvalidated_diagnostic": true,
+      "batch_id": "B0002",
+      "rejection_id": "65b7fea2d442d3f4-8"
+    },
+    {
+      "claim_index": 9,
+      "field_id": "submission_documents",
+      "reason": "field_or_source_validation_failed",
+      "raw_claim": {
+        "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+        "category": "other",
+        "text": "[submission_documents|fact] 착수계, 사업수행계획서, 주간보고서, 월간보고서, 회의결과보고서, 완료보고서, 정산보고서, 보안성준수보고서를 제시하고 있다.",
+        "citations": [
+          {
+            "chunk_id": "rfp:3cd93bd8e0f92667:37d798ae8ca23fd2067b61a2",
+            "quote": "- 수행계획 보고 및 수행방안 협의\n- 투입인력 이력사항, 자격증빙 및 서약서 첨부\n착수계\n사업수행계획서\n"
+          },
+          {
+            "chunk_id": "rfp:3cd93bd8e0f92667:37d798ae8ca23fd2067b61a2",
+            "quote": "주간보고서\n월간보고서\n회의개최\n필요시\n"
+          },
+          {
+            "chunk_id": "rfp:3cd93bd8e0f92667:37d798ae8ca23fd2067b61a2",
+            "quote": "- 주요현안, 의사결정 필요 사항\n- 운영기관이 공급자에게 요청한 사항에 대한 진행상황 점검\n회의결과보고서\n완료보고\n"
+          },
+          {
+            "chunk_id": "rfp:3cd93bd8e0f92667:37d798ae8ca23fd2067b61a2",
+            "quote": "12월\n- 사업 수행종료에 따른 과업 내용 및 결과 확인\n- 보안성 검토 결과 반영 및 준수 등 확인(필요시)\n완료보고서\n"
+          },
+          {
+            "chunk_id": "rfp:3cd93bd8e0f92667:37d798ae8ca23fd2067b61a2",
+            "quote": "정산보고서\n보안성준수보고서"
+          }
+        ]
+      },
+      "raw_claim_is_unvalidated_diagnostic": true,
+      "batch_id": "B0002",
+      "rejection_id": "65b7fea2d442d3f4-9"
+    }
+  ],
+  "missing_information": [
+    "[issuing_agency]",
+    "[duration]",
+    "[budget_vat]",
+    "[submission_deadline]"
+  ],
+  "response_received": true,
+  "claims_checked": true,
+  "cache_hit": false,
+  "execution_mode": "live_openai",
+  "live_api": true,
+  "mapping_fingerprint": "19f1cac4b7e6ab013a96aacad89cb0ba4a4f9e932322c3a0eea540fd7be708b0",
+  "original_usage": {
+    "input_tokens": 8549,
+    "output_tokens": 831,
+    "total_tokens": 9380,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "usage_reported": true,
+    "latency_ms": 4932.440666001639
+  },
+  "semantic_quality_verified": false
+}

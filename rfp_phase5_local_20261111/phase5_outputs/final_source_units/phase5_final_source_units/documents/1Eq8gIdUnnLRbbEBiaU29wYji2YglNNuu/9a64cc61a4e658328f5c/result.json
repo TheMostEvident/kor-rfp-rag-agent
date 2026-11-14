@@ -1,0 +1,174 @@
+{
+  "version": "rfp-phase5-final-source-units-v1",
+  "run_fingerprint": "2d4266bf29bdbcad8ad199454c0d83ed0cac8a7ff4df207a8fe7ae6b4740bd00",
+  "doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+  "source_sha256": "7a592ea538ed00d8dca697c8cab8fadd110ec2a15902f8235b80bb7d960027bc",
+  "status": "not_generated",
+  "execution_status": "awaiting_api",
+  "answer_generated": false,
+  "claims": [],
+  "fields": [
+    {
+      "field_id": "project_name",
+      "label": "사업명",
+      "state": "not_processed",
+      "claims": [],
+      "rejected_claim_count": 0,
+      "notes": []
+    },
+    {
+      "field_id": "issuing_agency",
+      "label": "발주기관",
+      "state": "not_processed",
+      "claims": [],
+      "rejected_claim_count": 0,
+      "notes": []
+    },
+    {
+      "field_id": "purpose",
+      "label": "목적",
+      "state": "not_processed",
+      "claims": [],
+      "rejected_claim_count": 0,
+      "notes": []
+    },
+    {
+      "field_id": "scope_requirements",
+      "label": "주요 범위·필수요건",
+      "state": "not_processed",
+      "claims": [],
+      "rejected_claim_count": 0,
+      "notes": []
+    },
+    {
+      "field_id": "budget_vat",
+      "label": "예산·VAT",
+      "state": "not_processed",
+      "claims": [],
+      "rejected_claim_count": 0,
+      "notes": []
+    },
+    {
+      "field_id": "duration",
+      "label": "수행기간",
+      "state": "not_processed",
+      "claims": [],
+      "rejected_claim_count": 0,
+      "notes": []
+    },
+    {
+      "field_id": "eligibility",
+      "label": "참가·수행자격",
+      "state": "not_processed",
+      "claims": [],
+      "rejected_claim_count": 0,
+      "notes": []
+    },
+    {
+      "field_id": "submission_documents",
+      "label": "입찰 제출서류",
+      "state": "not_processed",
+      "claims": [],
+      "rejected_claim_count": 0,
+      "notes": []
+    },
+    {
+      "field_id": "submission_deadline",
+      "label": "제출기한",
+      "state": "not_processed",
+      "claims": [],
+      "rejected_claim_count": 0,
+      "notes": []
+    },
+    {
+      "field_id": "submission_method",
+      "label": "제출방식",
+      "state": "not_processed",
+      "claims": [],
+      "rejected_claim_count": 0,
+      "notes": []
+    },
+    {
+      "field_id": "evaluation",
+      "label": "평가기준",
+      "state": "not_processed",
+      "claims": [],
+      "rejected_claim_count": 0,
+      "notes": []
+    }
+  ],
+  "rejected_claims": [],
+  "batch_outcomes": [
+    {
+      "batch_id": "B0001",
+      "job_key": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu:B0001:e45124697ea1",
+      "source_chunk_ids": [
+        "rfp:7a592ea538ed00d8:a092b9e6d7a3dbe7c8631089",
+        "rfp:7a592ea538ed00d8:7dc335b16b1558e6b8b01413",
+        "rfp:7a592ea538ed00d8:f4c22283c4653cd578793f54",
+        "rfp:7a592ea538ed00d8:cd42d4371b5329490bb1b02b",
+        "rfp:7a592ea538ed00d8:5fc159b3fdef431d0a26e660",
+        "rfp:7a592ea538ed00d8:b981068191e2b609a8f1be09",
+        "rfp:7a592ea538ed00d8:dbbceeb83154d2cd023671b6",
+        "rfp:7a592ea538ed00d8:7e42d073e1d33a172f38a340",
+        "rfp:7a592ea538ed00d8:f016bf104189babcc5826c26",
+        "rfp:7a592ea538ed00d8:dc07bcf68b4cb7e31e385904",
+        "rfp:7a592ea538ed00d8:3a71051e783614acb43784d9",
+        "rfp:7a592ea538ed00d8:4f3cd1e3e6881325bb917f62",
+        "rfp:7a592ea538ed00d8:31db9888d4ddcb8f10d98bcd",
+        "rfp:7a592ea538ed00d8:30a9382a4b30aa80c01a3581",
+        "rfp:7a592ea538ed00d8:709b184c588861489923b48b",
+        "rfp:7a592ea538ed00d8:0c13290021000b5b33ef7669",
+        "rfp:7a592ea538ed00d8:e08ff186c0b3ccf19323ad2a",
+        "rfp:7a592ea538ed00d8:5045f236ada3294483a9ff0e"
+      ],
+      "request_fingerprint": "e45124697ea138fdac028fe4b42148792fbf042bba86190e7543a1addf740748",
+      "kind": "source_units",
+      "status": "awaiting_api",
+      "claims": [],
+      "rejected_claims": [],
+      "missing_information": [],
+      "response_received": false,
+      "claims_checked": false,
+      "live_api": false,
+      "error_diagnostic": {
+        "code": "interrupted_no_usable_response"
+      },
+      "automatic_retry": false
+    }
+  ],
+  "source_chunk_ids": [
+    "rfp:7a592ea538ed00d8:a092b9e6d7a3dbe7c8631089",
+    "rfp:7a592ea538ed00d8:7dc335b16b1558e6b8b01413",
+    "rfp:7a592ea538ed00d8:f4c22283c4653cd578793f54",
+    "rfp:7a592ea538ed00d8:cd42d4371b5329490bb1b02b",
+    "rfp:7a592ea538ed00d8:5fc159b3fdef431d0a26e660",
+    "rfp:7a592ea538ed00d8:b981068191e2b609a8f1be09",
+    "rfp:7a592ea538ed00d8:dbbceeb83154d2cd023671b6",
+    "rfp:7a592ea538ed00d8:7e42d073e1d33a172f38a340",
+    "rfp:7a592ea538ed00d8:f016bf104189babcc5826c26",
+    "rfp:7a592ea538ed00d8:dc07bcf68b4cb7e31e385904",
+    "rfp:7a592ea538ed00d8:3a71051e783614acb43784d9",
+    "rfp:7a592ea538ed00d8:4f3cd1e3e6881325bb917f62",
+    "rfp:7a592ea538ed00d8:31db9888d4ddcb8f10d98bcd",
+    "rfp:7a592ea538ed00d8:30a9382a4b30aa80c01a3581",
+    "rfp:7a592ea538ed00d8:709b184c588861489923b48b",
+    "rfp:7a592ea538ed00d8:0c13290021000b5b33ef7669",
+    "rfp:7a592ea538ed00d8:e08ff186c0b3ccf19323ad2a",
+    "rfp:7a592ea538ed00d8:5045f236ada3294483a9ff0e"
+  ],
+  "input_received_chunk_ids": [],
+  "checked_chunk_ids": [],
+  "input_chunk_coverage": 0.0,
+  "checked_chunk_coverage": 0.0,
+  "raw_accepted_claim_count": 0,
+  "raw_claim_acceptance_rate": null,
+  "raw_claim_acceptance_is_semantic_accuracy": false,
+  "model_origin": {
+    "all_live_or_live_cache": false
+  },
+  "missing_information": [],
+  "plan_block_reasons": [],
+  "semantic_quality_verified": false,
+  "all_documents_quality_verified": false
+}

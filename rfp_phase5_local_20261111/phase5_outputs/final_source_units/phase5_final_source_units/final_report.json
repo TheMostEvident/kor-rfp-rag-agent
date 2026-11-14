@@ -1,0 +1,1248 @@
+{
+  "version": "rfp-phase5-final-source-units-v1",
+  "run_fingerprint": "2d4266bf29bdbcad8ad199454c0d83ed0cac8a7ff4df207a8fe7ae6b4740bd00",
+  "phase5_sample_validation_passed": false,
+  "all_document_id_transport_passed": true,
+  "sample_review_passed": false,
+  "cases": [
+    {
+      "doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+      "execution_status": "completed",
+      "status": "partial",
+      "input_chunk_coverage": 1.0,
+      "checked_chunk_coverage": 1.0,
+      "rejected_claim_count": 0,
+      "review": {
+        "version": "phase5-source-review-final-v1",
+        "status": "review_pending",
+        "case_accepted": false,
+        "case_status": "review_pending",
+        "reviewer": "",
+        "technical_ready": true,
+        "technical_blockers": [],
+        "diagnostics": [],
+        "pending_judgements": [
+          {
+            "field_id": "project_name",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "project_name",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "project_name",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "issuing_agency",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "issuing_agency",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "issuing_agency",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "purpose",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "purpose",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "purpose",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "scope_requirements",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "scope_requirements",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "scope_requirements",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "budget_vat",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "budget_vat",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "budget_vat",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "duration",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "duration",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "duration",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "eligibility",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "eligibility",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "eligibility",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "submission_documents",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "submission_documents",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "submission_documents",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "submission_deadline",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "submission_deadline",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "submission_deadline",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "submission_method",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "submission_method",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "submission_method",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "evaluation",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "evaluation",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "evaluation",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": null,
+            "judgement": "검토자 이름"
+          }
+        ],
+        "failed_judgements": [],
+        "positive_judgements": 0,
+        "human_review_completed": false,
+        "semantic_quality_automatically_verified": false,
+        "system_quality_verified": false,
+        "scope": "이 답변과 원문에 연결된 사람 검토입니다. 전체 문서·시스템 성능 판정이 아닙니다."
+      },
+      "result_path": "/Users/codeit/Desktop/workspace_mac/중급 프로젝트/rfp_phase5_local_20261111/phase5_outputs/final_source_units/phase5_final_source_units/documents/1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu/4d33bc4356175fff0818/result.json",
+      "review_path": "/Users/codeit/Desktop/workspace_mac/중급 프로젝트/rfp_phase5_local_20261111/phase5_outputs/final_source_units/phase5_final_source_units/documents/1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu/4d33bc4356175fff0818/comparison.csv"
+    },
+    {
+      "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+      "execution_status": "completed",
+      "status": "partial",
+      "input_chunk_coverage": 1.0,
+      "checked_chunk_coverage": 1.0,
+      "rejected_claim_count": 0,
+      "review": {
+        "version": "phase5-source-review-final-v1",
+        "status": "review_pending",
+        "case_accepted": false,
+        "case_status": "review_pending",
+        "reviewer": "",
+        "technical_ready": true,
+        "technical_blockers": [],
+        "diagnostics": [],
+        "pending_judgements": [
+          {
+            "field_id": "project_name",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "project_name",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "project_name",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "issuing_agency",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "issuing_agency",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "issuing_agency",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "purpose",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "purpose",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "purpose",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "scope_requirements",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "scope_requirements",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "scope_requirements",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "budget_vat",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "budget_vat",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "budget_vat",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "duration",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "duration",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "duration",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "eligibility",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "eligibility",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "eligibility",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "submission_documents",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "submission_documents",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "submission_documents",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "submission_deadline",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "submission_deadline",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "submission_deadline",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "submission_method",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "submission_method",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "submission_method",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "evaluation",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "evaluation",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "evaluation",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": null,
+            "judgement": "검토자 이름"
+          }
+        ],
+        "failed_judgements": [],
+        "positive_judgements": 0,
+        "human_review_completed": false,
+        "semantic_quality_automatically_verified": false,
+        "system_quality_verified": false,
+        "scope": "이 답변과 원문에 연결된 사람 검토입니다. 전체 문서·시스템 성능 판정이 아닙니다."
+      },
+      "result_path": "/Users/codeit/Desktop/workspace_mac/중급 프로젝트/rfp_phase5_local_20261111/phase5_outputs/final_source_units/phase5_final_source_units/documents/1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt/0188732b0dee551905b2/result.json",
+      "review_path": "/Users/codeit/Desktop/workspace_mac/중급 프로젝트/rfp_phase5_local_20261111/phase5_outputs/final_source_units/phase5_final_source_units/documents/1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt/0188732b0dee551905b2/comparison.csv"
+    },
+    {
+      "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+      "execution_status": "incomplete",
+      "status": "partial",
+      "input_chunk_coverage": 1.0,
+      "checked_chunk_coverage": 0.9457013574660633,
+      "rejected_claim_count": 3,
+      "review": {
+        "version": "phase5-source-review-final-v1",
+        "status": "review_pending",
+        "case_accepted": false,
+        "case_status": "technical_failed",
+        "reviewer": "",
+        "technical_ready": false,
+        "technical_blockers": [
+          "execution_not_completed",
+          "checked_chunk_ids_incomplete",
+          "checked_chunk_coverage_not_complete",
+          "live_model_origin_not_confirmed",
+          "unprocessed_fields",
+          "batch_execution_failure"
+        ],
+        "diagnostics": [],
+        "pending_judgements": [
+          {
+            "field_id": "project_name",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "project_name",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "project_name",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "issuing_agency",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "issuing_agency",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "issuing_agency",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "purpose",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "purpose",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "purpose",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "scope_requirements",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "scope_requirements",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "scope_requirements",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "budget_vat",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "budget_vat",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "budget_vat",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "duration",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "duration",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "duration",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "eligibility",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "eligibility",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "eligibility",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "submission_documents",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "submission_documents",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "submission_documents",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "submission_deadline",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "submission_deadline",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "submission_deadline",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "submission_method",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "submission_method",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "submission_method",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "evaluation",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "evaluation",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "evaluation",
+            "judgement": "조건보존"
+          },
+          {
+            "rejection_id": "5b2a90bd181b5de4-8",
+            "judgement": "거절 주장 처리"
+          },
+          {
+            "rejection_id": "0b5ac7ba31e76a5e-6",
+            "judgement": "거절 주장 처리"
+          },
+          {
+            "rejection_id": "0b5ac7ba31e76a5e-7",
+            "judgement": "거절 주장 처리"
+          },
+          {
+            "field_id": null,
+            "judgement": "검토자 이름"
+          }
+        ],
+        "failed_judgements": [],
+        "positive_judgements": 0,
+        "human_review_completed": false,
+        "semantic_quality_automatically_verified": false,
+        "system_quality_verified": false,
+        "scope": "이 답변과 원문에 연결된 사람 검토입니다. 전체 문서·시스템 성능 판정이 아닙니다."
+      },
+      "result_path": "/Users/codeit/Desktop/workspace_mac/중급 프로젝트/rfp_phase5_local_20261111/phase5_outputs/final_source_units/phase5_final_source_units/documents/1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B/dee5b0b94cc5333e2792/result.json",
+      "review_path": "/Users/codeit/Desktop/workspace_mac/중급 프로젝트/rfp_phase5_local_20261111/phase5_outputs/final_source_units/phase5_final_source_units/documents/1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B/dee5b0b94cc5333e2792/comparison.csv"
+    },
+    {
+      "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+      "execution_status": "completed_with_rejections",
+      "status": "partial",
+      "input_chunk_coverage": 1.0,
+      "checked_chunk_coverage": 1.0,
+      "rejected_claim_count": 5,
+      "review": {
+        "version": "phase5-source-review-final-v1",
+        "status": "review_pending",
+        "case_accepted": false,
+        "case_status": "review_pending",
+        "reviewer": "",
+        "technical_ready": true,
+        "technical_blockers": [],
+        "diagnostics": [],
+        "pending_judgements": [
+          {
+            "field_id": "project_name",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "project_name",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "project_name",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "issuing_agency",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "issuing_agency",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "issuing_agency",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "purpose",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "purpose",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "purpose",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "scope_requirements",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "scope_requirements",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "scope_requirements",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "budget_vat",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "budget_vat",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "budget_vat",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "duration",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "duration",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "duration",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "eligibility",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "eligibility",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "eligibility",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "submission_documents",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "submission_documents",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "submission_documents",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "submission_deadline",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "submission_deadline",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "submission_deadline",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "submission_method",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "submission_method",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "submission_method",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "evaluation",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "evaluation",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "evaluation",
+            "judgement": "조건보존"
+          },
+          {
+            "rejection_id": "2d6681574b78614e-5",
+            "judgement": "거절 주장 처리"
+          },
+          {
+            "rejection_id": "c7e023acf2086a87-7",
+            "judgement": "거절 주장 처리"
+          },
+          {
+            "rejection_id": "c7e023acf2086a87-8",
+            "judgement": "거절 주장 처리"
+          },
+          {
+            "rejection_id": "ffd075d512f9c1af-1",
+            "judgement": "거절 주장 처리"
+          },
+          {
+            "rejection_id": "5ac8e54dc4c2e564-10",
+            "judgement": "거절 주장 처리"
+          },
+          {
+            "field_id": null,
+            "judgement": "검토자 이름"
+          }
+        ],
+        "failed_judgements": [],
+        "positive_judgements": 0,
+        "human_review_completed": false,
+        "semantic_quality_automatically_verified": false,
+        "system_quality_verified": false,
+        "scope": "이 답변과 원문에 연결된 사람 검토입니다. 전체 문서·시스템 성능 판정이 아닙니다."
+      },
+      "result_path": "/Users/codeit/Desktop/workspace_mac/중급 프로젝트/rfp_phase5_local_20261111/phase5_outputs/final_source_units/phase5_final_source_units/documents/1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ/fbc06cba45c55df13b2b/result.json",
+      "review_path": "/Users/codeit/Desktop/workspace_mac/중급 프로젝트/rfp_phase5_local_20261111/phase5_outputs/final_source_units/phase5_final_source_units/documents/1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ/fbc06cba45c55df13b2b/comparison.csv"
+    },
+    {
+      "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+      "execution_status": "completed_with_rejections",
+      "status": "partial",
+      "input_chunk_coverage": 1.0,
+      "checked_chunk_coverage": 1.0,
+      "rejected_claim_count": 7,
+      "review": {
+        "version": "phase5-source-review-final-v1",
+        "status": "review_pending",
+        "case_accepted": false,
+        "case_status": "review_pending",
+        "reviewer": "",
+        "technical_ready": true,
+        "technical_blockers": [],
+        "diagnostics": [],
+        "pending_judgements": [
+          {
+            "field_id": "project_name",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "project_name",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "project_name",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "issuing_agency",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "issuing_agency",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "issuing_agency",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "purpose",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "purpose",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "purpose",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "scope_requirements",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "scope_requirements",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "scope_requirements",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "budget_vat",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "budget_vat",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "budget_vat",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "duration",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "duration",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "duration",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "eligibility",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "eligibility",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "eligibility",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "submission_documents",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "submission_documents",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "submission_documents",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "submission_deadline",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "submission_deadline",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "submission_deadline",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "submission_method",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "submission_method",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "submission_method",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "evaluation",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "evaluation",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "evaluation",
+            "judgement": "조건보존"
+          },
+          {
+            "rejection_id": "389ec00473fa516b-9",
+            "judgement": "거절 주장 처리"
+          },
+          {
+            "rejection_id": "389ec00473fa516b-10",
+            "judgement": "거절 주장 처리"
+          },
+          {
+            "rejection_id": "389ec00473fa516b-11",
+            "judgement": "거절 주장 처리"
+          },
+          {
+            "rejection_id": "389ec00473fa516b-12",
+            "judgement": "거절 주장 처리"
+          },
+          {
+            "rejection_id": "26f2bfd99418913b-11",
+            "judgement": "거절 주장 처리"
+          },
+          {
+            "rejection_id": "769ec6ab060b7cf0-9",
+            "judgement": "거절 주장 처리"
+          },
+          {
+            "rejection_id": "914f8b201fc30d5d-7",
+            "judgement": "거절 주장 처리"
+          },
+          {
+            "field_id": null,
+            "judgement": "검토자 이름"
+          }
+        ],
+        "failed_judgements": [],
+        "positive_judgements": 0,
+        "human_review_completed": false,
+        "semantic_quality_automatically_verified": false,
+        "system_quality_verified": false,
+        "scope": "이 답변과 원문에 연결된 사람 검토입니다. 전체 문서·시스템 성능 판정이 아닙니다."
+      },
+      "result_path": "/Users/codeit/Desktop/workspace_mac/중급 프로젝트/rfp_phase5_local_20261111/phase5_outputs/final_source_units/phase5_final_source_units/documents/161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38/a6fca92acf20d161c94c/result.json",
+      "review_path": "/Users/codeit/Desktop/workspace_mac/중급 프로젝트/rfp_phase5_local_20261111/phase5_outputs/final_source_units/phase5_final_source_units/documents/161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38/a6fca92acf20d161c94c/comparison.csv"
+    },
+    {
+      "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+      "execution_status": "completed_with_rejections",
+      "status": "partial",
+      "input_chunk_coverage": 1.0,
+      "checked_chunk_coverage": 1.0,
+      "rejected_claim_count": 1,
+      "review": {
+        "version": "phase5-source-review-final-v1",
+        "status": "review_pending",
+        "case_accepted": false,
+        "case_status": "review_pending",
+        "reviewer": "",
+        "technical_ready": true,
+        "technical_blockers": [],
+        "diagnostics": [],
+        "pending_judgements": [
+          {
+            "field_id": "project_name",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "project_name",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "project_name",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "issuing_agency",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "issuing_agency",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "issuing_agency",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "purpose",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "purpose",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "purpose",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "scope_requirements",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "scope_requirements",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "scope_requirements",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "budget_vat",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "budget_vat",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "budget_vat",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "duration",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "duration",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "duration",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "eligibility",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "eligibility",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "eligibility",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "submission_documents",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "submission_documents",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "submission_documents",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "submission_deadline",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "submission_deadline",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "submission_deadline",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "submission_method",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "submission_method",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "submission_method",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "evaluation",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "evaluation",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "evaluation",
+            "judgement": "조건보존"
+          },
+          {
+            "rejection_id": "3b6fe99e895d9f69-1",
+            "judgement": "거절 주장 처리"
+          },
+          {
+            "field_id": null,
+            "judgement": "검토자 이름"
+          }
+        ],
+        "failed_judgements": [],
+        "positive_judgements": 0,
+        "human_review_completed": false,
+        "semantic_quality_automatically_verified": false,
+        "system_quality_verified": false,
+        "scope": "이 답변과 원문에 연결된 사람 검토입니다. 전체 문서·시스템 성능 판정이 아닙니다."
+      },
+      "result_path": "/Users/codeit/Desktop/workspace_mac/중급 프로젝트/rfp_phase5_local_20261111/phase5_outputs/final_source_units/phase5_final_source_units/documents/19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0/a9f8622d6aa3549275fe/result.json",
+      "review_path": "/Users/codeit/Desktop/workspace_mac/중급 프로젝트/rfp_phase5_local_20261111/phase5_outputs/final_source_units/phase5_final_source_units/documents/19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0/a9f8622d6aa3549275fe/comparison.csv"
+    },
+    {
+      "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+      "execution_status": "completed_with_rejections",
+      "status": "partial",
+      "input_chunk_coverage": 1.0,
+      "checked_chunk_coverage": 1.0,
+      "rejected_claim_count": 2,
+      "review": {
+        "version": "phase5-source-review-final-v1",
+        "status": "review_pending",
+        "case_accepted": false,
+        "case_status": "review_pending",
+        "reviewer": "",
+        "technical_ready": true,
+        "technical_blockers": [],
+        "diagnostics": [],
+        "pending_judgements": [
+          {
+            "field_id": "project_name",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "project_name",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "project_name",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "issuing_agency",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "issuing_agency",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "issuing_agency",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "purpose",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "purpose",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "purpose",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "scope_requirements",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "scope_requirements",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "scope_requirements",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "budget_vat",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "budget_vat",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "budget_vat",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "duration",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "duration",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "duration",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "eligibility",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "eligibility",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "eligibility",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "submission_documents",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "submission_documents",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "submission_documents",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "submission_deadline",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "submission_deadline",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "submission_deadline",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "submission_method",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "submission_method",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "submission_method",
+            "judgement": "조건보존"
+          },
+          {
+            "field_id": "evaluation",
+            "judgement": "정확성"
+          },
+          {
+            "field_id": "evaluation",
+            "judgement": "누락없음"
+          },
+          {
+            "field_id": "evaluation",
+            "judgement": "조건보존"
+          },
+          {
+            "rejection_id": "65b7fea2d442d3f4-8",
+            "judgement": "거절 주장 처리"
+          },
+          {
+            "rejection_id": "65b7fea2d442d3f4-9",
+            "judgement": "거절 주장 처리"
+          },
+          {
+            "field_id": null,
+            "judgement": "검토자 이름"
+          }
+        ],
+        "failed_judgements": [],
+        "positive_judgements": 0,
+        "human_review_completed": false,
+        "semantic_quality_automatically_verified": false,
+        "system_quality_verified": false,
+        "scope": "이 답변과 원문에 연결된 사람 검토입니다. 전체 문서·시스템 성능 판정이 아닙니다."
+      },
+      "result_path": "/Users/codeit/Desktop/workspace_mac/중급 프로젝트/rfp_phase5_local_20261111/phase5_outputs/final_source_units/phase5_final_source_units/documents/1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc/8a11c77229bfe01ca102/result.json",
+      "review_path": "/Users/codeit/Desktop/workspace_mac/중급 프로젝트/rfp_phase5_local_20261111/phase5_outputs/final_source_units/phase5_final_source_units/documents/1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc/8a11c77229bfe01ca102/comparison.csv"
+    }
+  ],
+  "budget": {
+    "calls_used_or_reserved": 48,
+    "input_bytes_used_or_reserved": 1565292,
+    "live_api_calls": 48,
+    "mock_calls": 0,
+    "unknown_or_interrupted_calls": 0,
+    "max_total_calls": 100,
+    "max_total_input_bytes": 6000000
+  },
+  "all_documents_semantic_quality_verified": false,
+  "automatic_retry": false,
+  "scope": "전 문서 ID·전송 검사와 고정 7건 요약 내용 평가를 구분합니다."
+}

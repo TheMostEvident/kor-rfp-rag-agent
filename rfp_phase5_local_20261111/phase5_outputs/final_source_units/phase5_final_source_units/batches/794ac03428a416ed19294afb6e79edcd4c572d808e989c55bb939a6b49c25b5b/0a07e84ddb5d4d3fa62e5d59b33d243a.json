@@ -1,0 +1,538 @@
+{
+  "batch_id": "B0014",
+  "job_key": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B:B0014:794ac03428a4",
+  "source_chunk_ids": [
+    "rfp:8c293ac2bb077438:4104ac8ce7295e027a0e7a68",
+    "rfp:8c293ac2bb077438:28a91b57d2ff6cfa4db6f9fb",
+    "rfp:8c293ac2bb077438:d79a319aa6642246a465b77f",
+    "rfp:8c293ac2bb077438:aa1bacb016bf158ef1071782",
+    "rfp:8c293ac2bb077438:b14a5e3ed59b8257f173aa80",
+    "rfp:8c293ac2bb077438:b358a870b4223318b7bca64d",
+    "rfp:8c293ac2bb077438:63d7d858a6d5ce5939ab5935",
+    "rfp:8c293ac2bb077438:004488c5f147dc8f408d843e",
+    "rfp:8c293ac2bb077438:e00c14780db0c266312e6074",
+    "rfp:8c293ac2bb077438:eb71f9685475423e48b3cae3",
+    "rfp:8c293ac2bb077438:e9c75d6350e44a18a65b647d",
+    "rfp:8c293ac2bb077438:b17fb6034f138fd7ed179eac",
+    "rfp:8c293ac2bb077438:30754baa9ecbc0e2467e241e",
+    "rfp:8c293ac2bb077438:28e2a39239e0973a2bfe5d57",
+    "rfp:8c293ac2bb077438:6733c9f0a81dc9d588187a16",
+    "rfp:8c293ac2bb077438:4db262d0bf60c478e6eee87c",
+    "rfp:8c293ac2bb077438:15c1b04f835883bd4c51e477",
+    "rfp:8c293ac2bb077438:0231b01c93d37ddbc857b126",
+    "rfp:8c293ac2bb077438:e4990c596906de0c28e8f4a0"
+  ],
+  "request_fingerprint": "794ac03428a416ed19294afb6e79edcd4c572d808e989c55bb939a6b49c25b5b",
+  "kind": "source_units",
+  "status": "completed",
+  "claims": [
+    {
+      "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+      "category": "overview",
+      "text": "[project_name|fact] HF 인사이트 시스템 개발",
+      "citations": [
+        {
+          "chunk_id": "rfp:8c293ac2bb077438:aa1bacb016bf158ef1071782",
+          "quote": "[별지 4]",
+          "quote_start": 0,
+          "quote_end": 6,
+          "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+          "sha256": "8c293ac2bb077438c0aaa974746d203a9196ec3eaa0d2c7971e5f6d3e4a28e28",
+          "file_name": "한국주택금융공사_2023_HF 인사이트 시스템 개발_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 8129",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8129:record:1228957",
+              "locator": "BodyText/Section0 / paragraph 8129",
+              "char_start": 0,
+              "char_end": 6,
+              "chunk_start": 0,
+              "chunk_end": 6,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E075",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "21306a48c7f49eb666b75d9185ac8e17a7e49d4448b0f48c1a743b12c6294b4c",
+          "source_request_fingerprint": "794ac03428a416ed19294afb6e79edcd4c572d808e989c55bb939a6b49c25b5b",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+      "category": "overview",
+      "text": "[issuing_agency|fact] 한국주택금융공사",
+      "citations": [
+        {
+          "chunk_id": "rfp:8c293ac2bb077438:15c1b04f835883bd4c51e477",
+          "quote": "발주기관\n계약상대자\n한 국 주 택 금 융 공 사\n사  장\n",
+          "quote_start": 0,
+          "quote_end": 32,
+          "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+          "sha256": "8c293ac2bb077438c0aaa974746d203a9196ec3eaa0d2c7971e5f6d3e4a28e28",
+          "file_name": "한국주택금융공사_2023_HF 인사이트 시스템 개발_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 8323 / BodyText/Section0 / paragraph 8325 / BodyText/Section0 / paragraph 8326 / BodyText/Section0 / paragraph 8327",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8323:record:1263017",
+              "locator": "BodyText/Section0 / paragraph 8323",
+              "char_start": 0,
+              "char_end": 4,
+              "chunk_start": 0,
+              "chunk_end": 4,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0231",
+              "row": 0,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8325:record:1263293",
+              "locator": "BodyText/Section0 / paragraph 8325",
+              "char_start": 0,
+              "char_end": 5,
+              "chunk_start": 5,
+              "chunk_end": 10,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0231",
+              "row": 0,
+              "col": 2
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8326:record:1263440",
+              "locator": "BodyText/Section0 / paragraph 8326",
+              "char_start": 0,
+              "char_end": 15,
+              "chunk_start": 11,
+              "chunk_end": 26,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0231",
+              "row": 1,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8327:record:1263556",
+              "locator": "BodyText/Section0 / paragraph 8327",
+              "char_start": 0,
+              "char_end": 4,
+              "chunk_start": 27,
+              "chunk_end": 31,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0231",
+              "row": 1,
+              "col": 0
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E129",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "21306a48c7f49eb666b75d9185ac8e17a7e49d4448b0f48c1a743b12c6294b4c",
+          "source_request_fingerprint": "794ac03428a416ed19294afb6e79edcd4c572d808e989c55bb939a6b49c25b5b",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:8c293ac2bb077438:e9c75d6350e44a18a65b647d",
+          "quote": "한국주택금융공사(이하 \"발주기관\"이라 한다)와 _______________________(이하 \"계약상대자\"라 한다)는 발주기관의『_______________________』용역 사업을 계약상대자가 수행함에 있어 다음과 같이 비밀유지계약을 체결한다.\n제1조 (목적) 본 계약은 발주기관의 󰡔_______________________』용역 사업을 계약상대자가 수행함에 있어 취득한 비밀정보를 보호하기 위함을 목적으로 한다.\n",
+          "quote_start": 0,
+          "quote_end": 236,
+          "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+          "sha256": "8c293ac2bb077438c0aaa974746d203a9196ec3eaa0d2c7971e5f6d3e4a28e28",
+          "file_name": "한국주택금융공사_2023_HF 인사이트 시스템 개발_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 8279 / BodyText/Section0 / paragraph 8281",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8279:record:1251689",
+              "locator": "BodyText/Section0 / paragraph 8279",
+              "char_start": 0,
+              "char_end": 139,
+              "chunk_start": 0,
+              "chunk_end": 139,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8281:record:1252207",
+              "locator": "BodyText/Section0 / paragraph 8281",
+              "char_start": 0,
+              "char_end": 95,
+              "chunk_start": 140,
+              "chunk_end": 235,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E112",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "21306a48c7f49eb666b75d9185ac8e17a7e49d4448b0f48c1a743b12c6294b4c",
+          "source_request_fingerprint": "794ac03428a416ed19294afb6e79edcd4c572d808e989c55bb939a6b49c25b5b",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+      "category": "eligibility",
+      "text": "[eligibility|fact] 용역사업 참여인원은 계약상대자가 임의로 교체하여서는 아니 되며, 반드시 발주기관에게 서면으로 통보하여 승인을 득한 후 교체하여야 한다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:8c293ac2bb077438:30754baa9ecbc0e2467e241e",
+          "quote": "한다. 또한 비밀정보를 취급하는 자사의 관계직원들에 대하여 비밀정보 취급자 현황과 \"보안서약서(업체용)\" 및 \"보안서약서(개인용)\"을 발주기관에게 제출하고 승인을 받아야 한다.\n② 본 용역사업 참여인원은 계약상대자가 임의로 교체하여서는 아니 되며, 반드시 발주기관에게 서면으로 통보하여 승인을 득한 후 교체하여야 한다. 이 경우  \"보안서약서(개인용)\"을 제출하여야 한다.",
+          "quote_start": 0,
+          "quote_end": 208,
+          "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+          "sha256": "8c293ac2bb077438c0aaa974746d203a9196ec3eaa0d2c7971e5f6d3e4a28e28",
+          "file_name": "한국주택금융공사_2023_HF 인사이트 시스템 개발_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 8299 / BodyText/Section0 / paragraph 8300",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8299:record:1256193",
+              "locator": "BodyText/Section0 / paragraph 8299",
+              "char_start": 131,
+              "char_end": 229,
+              "chunk_start": 0,
+              "chunk_end": 98,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8300:record:1256981",
+              "locator": "BodyText/Section0 / paragraph 8300",
+              "char_start": 0,
+              "char_end": 109,
+              "chunk_start": 99,
+              "chunk_end": 208,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E120",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "21306a48c7f49eb666b75d9185ac8e17a7e49d4448b0f48c1a743b12c6294b4c",
+          "source_request_fingerprint": "794ac03428a416ed19294afb6e79edcd4c572d808e989c55bb939a6b49c25b5b",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+      "category": "eligibility",
+      "text": "[eligibility|fact] 용역사업 참여인원(변경 인력 등)은 모두 개인 자필 서명이 들어간 보안서약서(개인용)를 제출하여야 한다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:8c293ac2bb077438:28e2a39239e0973a2bfe5d57",
+          "quote": "※ ｢행정기관 및 공공기관 정보시스템 구축·운영 지침｣(행정안전부고시 제2022-31호) 제42조(인력관리 금지)에 따라 인력관리가 불가능한 성격의 사업은 해당되지 않으며, 용역사업 참여인원(변경 인력 등)은 사업의 성격과 상관없이 모두 개인 자필 서명이 들어간 보안서약서(개인용)를 제출하여야 한다.",
+          "quote_start": 0,
+          "quote_end": 168,
+          "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+          "sha256": "8c293ac2bb077438c0aaa974746d203a9196ec3eaa0d2c7971e5f6d3e4a28e28",
+          "file_name": "한국주택금융공사_2023_HF 인사이트 시스템 개발_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 8302",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8302:record:1257648",
+              "locator": "BodyText/Section0 / paragraph 8302",
+              "char_start": 0,
+              "char_end": 168,
+              "chunk_start": 0,
+              "chunk_end": 168,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0230",
+              "row": 0,
+              "col": 0
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E121",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "21306a48c7f49eb666b75d9185ac8e17a7e49d4448b0f48c1a743b12c6294b4c",
+          "source_request_fingerprint": "794ac03428a416ed19294afb6e79edcd4c572d808e989c55bb939a6b49c25b5b",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 사업 수행에 사용되는 문서, 인원, 장비 등에 대하여 물리적, 관리적, 기술적 보안대책 및 비밀의 내용에 대한 보안관리 계획을 사업수행계획서에 포함 제출하여야 한다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:8c293ac2bb077438:4db262d0bf60c478e6eee87c",
+          "quote": "등) ① 계약상대자는 발주기관의 보안정책을 위반하였을 경우 \"사업자 보안위규 처리기준ˮ 및 \"사업자 보안위규 위약금 부과기준ˮ에 따라 위규자 및 관리자를 행정조치 할 수 있다.\n② 계약상대자는 사업 수행에 사용되는 문서, 인원, 장비 등에 대하여 물리적, 관리적, 기술적 보안대책 및 ｢제2조의 비밀의 내용｣에 대한 보안관리 계획을 사업수행계획서에 포함 제출하여야 한다.\n",
+          "quote_start": 0,
+          "quote_end": 208,
+          "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+          "sha256": "8c293ac2bb077438c0aaa974746d203a9196ec3eaa0d2c7971e5f6d3e4a28e28",
+          "file_name": "한국주택금융공사_2023_HF 인사이트 시스템 개발_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 8313 / BodyText/Section0 / paragraph 8314",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8313:record:1260572",
+              "locator": "BodyText/Section0 / paragraph 8313",
+              "char_start": 11,
+              "char_end": 109,
+              "chunk_start": 0,
+              "chunk_end": 98,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8314:record:1260964",
+              "locator": "BodyText/Section0 / paragraph 8314",
+              "char_start": 0,
+              "char_end": 108,
+              "chunk_start": 99,
+              "chunk_end": 207,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E126",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "21306a48c7f49eb666b75d9185ac8e17a7e49d4448b0f48c1a743b12c6294b4c",
+          "source_request_fingerprint": "794ac03428a416ed19294afb6e79edcd4c572d808e989c55bb939a6b49c25b5b",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 계약상대자는 발주기관의 비밀정보를 열람·제공자료 관리대장에 관리하여야 하며, 자사 조직 내 목적상 부합하는 최소한의 직원들에 한하여 이용하도록 조치하여야 한다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:8c293ac2bb077438:b17fb6034f138fd7ed179eac",
+          "quote": "제5조 (정보취급자) ① 계약상대자는 발주기관으로부터 제공받은 비밀정보를 \"열람·제공자료 관리대장\"에 관리하여야 하며, 자사 조직 내 목적상 부합하는 최소한의 직원들에 한하여 이용하도록 조치하고 직원 각자에게 비밀유지의무를 주지시켜야 한다. 또한 비밀정보를 취급하는 자사의 관계직원들에 대하여 비밀정보 취급자 현황과 \"보안서약서(업체용)\" 및 \"보안서약서(개인용)\"을 발주기관에게 제출하고 승인을 받아야 한다.",
+          "quote_start": 411,
+          "quote_end": 640,
+          "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+          "sha256": "8c293ac2bb077438c0aaa974746d203a9196ec3eaa0d2c7971e5f6d3e4a28e28",
+          "file_name": "한국주택금융공사_2023_HF 인사이트 시스템 개발_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 8299",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8299:record:1256193",
+              "locator": "BodyText/Section0 / paragraph 8299",
+              "char_start": 0,
+              "char_end": 229,
+              "chunk_start": 411,
+              "chunk_end": 640,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E119",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "21306a48c7f49eb666b75d9185ac8e17a7e49d4448b0f48c1a743b12c6294b4c",
+          "source_request_fingerprint": "794ac03428a416ed19294afb6e79edcd4c572d808e989c55bb939a6b49c25b5b",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+      "category": "submission",
+      "text": "[submission_documents|fact] 비밀유지계약서와 개인(신용)정보처리 업무위탁 약정서가 포함되어 있다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:8c293ac2bb077438:eb71f9685475423e48b3cae3",
+          "quote": "비밀 유지 계약서",
+          "quote_start": 0,
+          "quote_end": 9,
+          "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+          "sha256": "8c293ac2bb077438c0aaa974746d203a9196ec3eaa0d2c7971e5f6d3e4a28e28",
+          "file_name": "한국주택금융공사_2023_HF 인사이트 시스템 개발_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 8277",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8277:record:1251505",
+              "locator": "BodyText/Section0 / paragraph 8277",
+              "char_start": 0,
+              "char_end": 9,
+              "chunk_start": 0,
+              "chunk_end": 9,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0229",
+              "row": 0,
+              "col": 0
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E111",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "21306a48c7f49eb666b75d9185ac8e17a7e49d4448b0f48c1a743b12c6294b4c",
+          "source_request_fingerprint": "794ac03428a416ed19294afb6e79edcd4c572d808e989c55bb939a6b49c25b5b",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:8c293ac2bb077438:0231b01c93d37ddbc857b126",
+          "quote": "[별지 6]",
+          "quote_start": 0,
+          "quote_end": 6,
+          "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+          "sha256": "8c293ac2bb077438c0aaa974746d203a9196ec3eaa0d2c7971e5f6d3e4a28e28",
+          "file_name": "한국주택금융공사_2023_HF 인사이트 시스템 개발_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 8332",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8332:record:1264230",
+              "locator": "BodyText/Section0 / paragraph 8332",
+              "char_start": 0,
+              "char_end": 6,
+              "chunk_start": 0,
+              "chunk_end": 6,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E131",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "21306a48c7f49eb666b75d9185ac8e17a7e49d4448b0f48c1a743b12c6294b4c",
+          "source_request_fingerprint": "794ac03428a416ed19294afb6e79edcd4c572d808e989c55bb939a6b49c25b5b",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:8c293ac2bb077438:e4990c596906de0c28e8f4a0",
+          "quote": "개인(신용)정보처리 업무위탁 약정서",
+          "quote_start": 0,
+          "quote_end": 19,
+          "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+          "sha256": "8c293ac2bb077438c0aaa974746d203a9196ec3eaa0d2c7971e5f6d3e4a28e28",
+          "file_name": "한국주택금융공사_2023_HF 인사이트 시스템 개발_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 8335",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8335:record:1264639",
+              "locator": "BodyText/Section0 / paragraph 8335",
+              "char_start": 0,
+              "char_end": 19,
+              "chunk_start": 0,
+              "chunk_end": 19,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0232",
+              "row": 0,
+              "col": 0
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E132",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "21306a48c7f49eb666b75d9185ac8e17a7e49d4448b0f48c1a743b12c6294b4c",
+          "source_request_fingerprint": "794ac03428a416ed19294afb6e79edcd4c572d808e989c55bb939a6b49c25b5b",
+          "source_origin": "source_units"
+        }
+      ]
+    }
+  ],
+  "rejected_claims": [],
+  "missing_information": [
+    "[purpose]",
+    "[budget_vat]",
+    "[duration]",
+    "[submission_deadline]",
+    "[submission_method]",
+    "[evaluation]"
+  ],
+  "response_received": true,
+  "claims_checked": true,
+  "cache_hit": false,
+  "execution_mode": "live_openai",
+  "live_api": true,
+  "mapping_fingerprint": "21306a48c7f49eb666b75d9185ac8e17a7e49d4448b0f48c1a743b12c6294b4c",
+  "original_usage": {
+    "input_tokens": 8967,
+    "output_tokens": 555,
+    "total_tokens": 9522,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "usage_reported": true,
+    "latency_ms": 2968.007082992699
+  },
+  "semantic_quality_verified": false
+}

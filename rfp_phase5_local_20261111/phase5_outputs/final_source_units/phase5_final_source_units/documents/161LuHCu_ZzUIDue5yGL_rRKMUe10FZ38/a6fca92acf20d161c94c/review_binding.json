@@ -1,0 +1,90 @@
+{
+  "version": "phase5-source-review-final-v1",
+  "answer_fingerprint": "a6fca92acf20d161c94cbbd90883295bc732b9716b0d0e8d886c4b79f3b1e9fc",
+  "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+  "source_sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+  "run_fingerprint": "2d4266bf29bdbcad8ad199454c0d83ed0cac8a7ff4df207a8fe7ae6b4740bd00",
+  "reference_snapshot": [
+    {
+      "field_id": "project_name",
+      "label": "사업명",
+      "expected": "AI 기반 관광 B2C 플랫폼 통합 ISP 수립",
+      "conditions": "ISP 수립을 실제 플랫폼 구축·운영 계약으로 바꾸지 않는다.",
+      "source_reference": "문단 19 외 2곳\nD05-01-01~03"
+    },
+    {
+      "field_id": "issuing_agency",
+      "label": "발주기관",
+      "expected": "한국관광공사. 담당부서는 관광AX기획팀으로 표시되어 있다.",
+      "conditions": "설명회 장소와 제출 우편주소·담당부서의 역할을 구별한다.",
+      "source_reference": "문단 29 외 4곳\nD05-02-01~05"
+    },
+    {
+      "field_id": "purpose",
+      "label": "목적",
+      "expected": "B2C 채널 기능·VOC 창구를 통합해 AX 기반과 운영 효율을 높이고, AI 여행비서 역할·1330 연계를 설계하며, 데이터 환류·개방 기반의 공공 AI 인프라를 조성한다.",
+      "conditions": "플랫폼 통합·AI 여행비서·데이터 활용의 세 가지 목적을 구별한다.",
+      "source_reference": "문단 52 외 8곳\nD05-03-01~09"
+    },
+    {
+      "field_id": "scope_requirements",
+      "label": "주요 범위·필수요건",
+      "expected": "11개 B2C 채널 현황·통합전략, 통합회원·개인정보 정책, 플랫폼/데이터 활용 구조, 단계별 로드맵, 목업과 구축 RFP를 마련한다.",
+      "conditions": "현황 분석·목표모델·이행계획과 후속 구축용RFP를 구분한다. 사업 종료 이후 예산대응 자료보완 의무도 확인한다.",
+      "source_reference": "문단 61 외 8곳\nD05-04-01~09"
+    },
+    {
+      "field_id": "budget_vat",
+      "label": "예산·VAT",
+      "expected": "과업예산248,775,000원, VAT 포함. 제안가격에는 사업 관련 모든 세금 등을 포함한다.",
+      "conditions": "본 용역 예산과 향후 플랫폼 구축 예상예산을 섞지 않는다.",
+      "source_reference": "문단 81 외 2곳\nD05-05-01~03"
+    },
+    {
+      "field_id": "duration",
+      "label": "수행기간",
+      "expected": "계약체결일부터2026.10.30까지이며, 과업 종료 후 정산 및 결과보고서 제출 시까지라는 조건이 붙는다.",
+      "conditions": "달력상 종료일만 적지 않는다. 사업 종료 이후 예산대응 자료보완 조건도 확인한다.",
+      "source_reference": "문단 77 외 1곳\nD05-06-01~02"
+    },
+    {
+      "field_id": "eligibility",
+      "label": "참가·수행자격",
+      "expected": "G2B SW사업자(컴퓨터 관련 서비스업1468) 등록, 관련 법상 자격과 중소기업 요건 등을 모두 충족해야 한다.",
+      "conditions": "대기업·중견기업·상호출자제한기업집단 참여 제한. 공동이행5개 이하·최소지분10%, 하도급 허용. 유효 확인서·실적 등 제출서류를 원문에서 대조한다.",
+      "source_reference": "문단 1748 외 19곳\nD05-07-01~20"
+    },
+    {
+      "field_id": "submission_documents",
+      "label": "입찰 제출서류",
+      "expected": "가격제안서/세부산출1부, 제안서/요약본 각1부, 입찰참가 등록서류 및 부속자료를 제출한다.",
+      "conditions": "우편은USB(PPT/PDF)만 제출·인쇄본 불필요. 입찰참가/신용평가/인력/PM재직/중소기업/공동수급 등 조건별 서류를 빠뜨리지 않는다.",
+      "source_reference": "문단 2078 외 23곳\nD05-08-01~24"
+    },
+    {
+      "field_id": "submission_deadline",
+      "label": "제출기한",
+      "expected": "[공고문 참조]\n입찰 제출기한은 입찰공고에 명기된 기한에 따른다.",
+      "conditions": "사전설명회 신청4월29일15시·설명회4월30일14시를 입찰 마감으로 사용하지 않는다. 우편은 마감 전 도착분만 접수한다.",
+      "source_reference": "문단 84 외 5곳\nD05-09-01~06"
+    },
+    {
+      "field_id": "submission_method",
+      "label": "제출방식",
+      "expected": "가격은 나라장터 전자입찰. 제안서/부속서류는 전자우편 또는 우편, 사전협의 시 방문 제출 가능하다.",
+      "conditions": "방문 제출 가능 조건·우편 도착 기준·USB 제출 조건을 구별한다. 설명회 신청용 이메일과 제안서 제출 경로를 섞지 않는다.",
+      "source_reference": "문단 2079 외 8곳\nD05-10-01~09"
+    },
+    {
+      "field_id": "evaluation",
+      "label": "평가기준·선정방식",
+      "expected": "기술90점(계량10+비계량80)+가격10점. 기술76.5점(85%) 미만은 협상적격자에서 제외한다.",
+      "conditions": "PM 직접발표, 최고·최저 각1개 제외 평균, 동점은 기술·큰 배점 항목 순. 최종 낙찰업체·실제계약금액은 이 RFP만으로 확정하지 않는다.",
+      "source_reference": "문단 1781 외 9곳\nD05-11-01~10"
+    }
+  ],
+  "reference_fingerprint": "592298300402dced8ec3302151a4a646bfbfd2fb0504d255f08cf5f3008ac631",
+  "comparison_base_fingerprint": "11884dbce3f816bfe3fcbc0913ea8dbcef20bf5fd8752a12627ef0eae7f4e859",
+  "rejection_base_fingerprint": "1835c3cfcff813bba68e0262163cb06b6d149216f12122f4eb025ef6caa1dc2d",
+  "semantic_quality_automatically_verified": false
+}

@@ -1,0 +1,26 @@
+{
+  "run_live_summaries": true,
+  "allow_api": true,
+  "block_reason": null,
+  "uncached_calls_before_execution": 0,
+  "selected_doc_ids": [
+    "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+    "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+    "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+    "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+    "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+    "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+    "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc"
+  ],
+  "budget": {
+    "calls_used_or_reserved": 48,
+    "input_bytes_used_or_reserved": 1565292,
+    "live_api_calls": 48,
+    "mock_calls": 0,
+    "unknown_or_interrupted_calls": 0,
+    "max_total_calls": 100,
+    "max_total_input_bytes": 6000000
+  },
+  "api_key_value_recorded": false,
+  "key_test_api_calls": 0
+}

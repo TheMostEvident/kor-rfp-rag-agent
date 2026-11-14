@@ -1,0 +1,568 @@
+{
+  "batch_id": "B0005",
+  "job_key": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38:B0005:d750063cddb2",
+  "source_chunk_ids": [
+    "rfp:a0429ca4da021105:07322ec4a0515ffb58c87f7e",
+    "rfp:a0429ca4da021105:2be9952783c952f4154b1f60",
+    "rfp:a0429ca4da021105:1744782adcebf83808aa8b5d",
+    "rfp:a0429ca4da021105:312323e4da3986b22e6b9bad",
+    "rfp:a0429ca4da021105:e9a312488f6bd0027de0a638",
+    "rfp:a0429ca4da021105:026cc40b2ffa16ed70e2348c",
+    "rfp:a0429ca4da021105:ed83874dfada8b8dfeaa7e38",
+    "rfp:a0429ca4da021105:c296196802558eeb1fa632e5",
+    "rfp:a0429ca4da021105:e4af4edb728893d0ae33a1ea",
+    "rfp:a0429ca4da021105:79559db1f4c2009838da0f50",
+    "rfp:a0429ca4da021105:3b85ae5f55987368c8474a73",
+    "rfp:a0429ca4da021105:c7bc0fe1cd74624f42deaf13",
+    "rfp:a0429ca4da021105:012645a652ba4f73663a2b67",
+    "rfp:a0429ca4da021105:6cce552edd047a3b91588ca1",
+    "rfp:a0429ca4da021105:8764c4ed1d0779c94db957ee",
+    "rfp:a0429ca4da021105:9a6befee6d96b93c33e802e3",
+    "rfp:a0429ca4da021105:67855c9dd755218c86fe42ad",
+    "rfp:a0429ca4da021105:e0c2aa780e4e223a9a6e9943",
+    "rfp:a0429ca4da021105:e017bf0e7e4405eb94bdf0dd",
+    "rfp:a0429ca4da021105:3b7c9ad523eb84c27a682a0c",
+    "rfp:a0429ca4da021105:2d10f43fcda7ebb987b131ad",
+    "rfp:a0429ca4da021105:0f2d777afe0762514aa82f34"
+  ],
+  "request_fingerprint": "d750063cddb25eecb8f4cae91c42d1f16394f913596c20be867eeba49db590e1",
+  "kind": "source_units",
+  "status": "completed",
+  "claims": [
+    {
+      "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+      "category": "overview",
+      "text": "[purpose|fact] 본 사업은 소프트웨어사업 영향평가를 미리 실시한 사업임",
+      "citations": [
+        {
+          "chunk_id": "rfp:a0429ca4da021105:312323e4da3986b22e6b9bad",
+          "quote": " DB구축, 디지털 콘텐츠 개발 서비스 등), 상용SW 구매유지관리, 응용SW유지관리, 시스템운영환경 구축 사업으로 투입인력 요구 및 관리 금지 대상 사업에서 제외됨\n□ SW사업 영향평가\nㅇ 본 사업은 「소프트웨어 진흥법」 제43조, 같은 법 시행령 제35조 내지 제37조, 「소프트웨어사업 계약 및 관리감독에 관한 지침」 제5조, 제6조에 따라 소프트웨어사업 영향평가를 미리 실시한 사업임\n",
+          "quote_start": 0,
+          "quote_end": 219,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 1700 / BodyText/Section0 / paragraph 1702 / BodyText/Section0 / paragraph 1703",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:1700:record:283532",
+              "locator": "BodyText/Section0 / paragraph 1700",
+              "char_start": 30,
+              "char_end": 122,
+              "chunk_start": 0,
+              "chunk_end": 92,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:1702:record:284052",
+              "locator": "BodyText/Section0 / paragraph 1702",
+              "char_start": 0,
+              "char_end": 11,
+              "chunk_start": 93,
+              "chunk_end": 104,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:1703:record:284168",
+              "locator": "BodyText/Section0 / paragraph 1703",
+              "char_start": 0,
+              "char_end": 113,
+              "chunk_start": 105,
+              "chunk_end": 218,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E013",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "87e1c0199e6494979b89c2104681b68eb5548aec9fef42c55bde35e38a52fefa",
+          "source_request_fingerprint": "d750063cddb25eecb8f4cae91c42d1f16394f913596c20be867eeba49db590e1",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+      "category": "eligibility",
+      "text": "[eligibility|fact] 선정방법은 제한경쟁(총액), 협상에 의한 계약임",
+      "citations": [
+        {
+          "chunk_id": "rfp:a0429ca4da021105:ed83874dfada8b8dfeaa7e38",
+          "quote": "□ 선정방법 : 제한경쟁(총액), 협상에 의한 계약\nㅇ「소프트웨어 진흥법」 제49조 제1항, 같은 법 시행령 제44조 제1항에 따라 협상에 의한 계약체결 방식 적용\nㅇ「국가를 당사자로 하는 계약에 관한 법률 시행령」 제43조에 따라 협상에 의한 계약체결 방식 적용\n□ 기본방침 : 객관적이고 공정한 기준과 절차를 적용하되, 공사 업무 이해도가 높은 우수 사업자를 경쟁에 의하여 선정한다.\n",
+          "quote_start": 0,
+          "quote_end": 217,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 1742 / BodyText/Section0 / paragraph 1743 / BodyText/Section0 / paragraph 1744 / BodyText/Section0 / paragraph 1746",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:1742:record:288378",
+              "locator": "BodyText/Section0 / paragraph 1742",
+              "char_start": 0,
+              "char_end": 28,
+              "chunk_start": 0,
+              "chunk_end": 28,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:1743:record:288520",
+              "locator": "BodyText/Section0 / paragraph 1743",
+              "char_start": 0,
+              "char_end": 62,
+              "chunk_start": 29,
+              "chunk_end": 91,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:1744:record:288768",
+              "locator": "BodyText/Section0 / paragraph 1744",
+              "char_start": 0,
+              "char_end": 55,
+              "chunk_start": 92,
+              "chunk_end": 147,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:1746:record:289082",
+              "locator": "BodyText/Section0 / paragraph 1746",
+              "char_start": 0,
+              "char_end": 68,
+              "chunk_start": 148,
+              "chunk_end": 216,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E017",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "87e1c0199e6494979b89c2104681b68eb5548aec9fef42c55bde35e38a52fefa",
+          "source_request_fingerprint": "d750063cddb25eecb8f4cae91c42d1f16394f913596c20be867eeba49db590e1",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+      "category": "eligibility",
+      "text": "[eligibility|fact] 입찰참가자격은 국가종합전자조달시스템 입찰참가자격등록규정에 의하여 반드시 G2B(나라장터) 시스템에 입찰일 전일까지 「소프트웨어 진흥법」에 의한 소프트웨어사업자(컴퓨터 관련 서비스업, 업종코드: 1468) 등록한 업체임",
+      "citations": [
+        {
+          "chunk_id": "rfp:a0429ca4da021105:ed83874dfada8b8dfeaa7e38",
+          "quote": "□ 입찰참가자격(각호 모두 해당되는 업체)\nㅇ 국가종합전자조달시스템 입찰참가자격등록규정에 의하여 반드시 G2B (나라장터) 시스템에 입찰일 전일까지 「소프트웨어 진흥법」에 의한 소프트웨어사업자(컴퓨터 관련 서비스업, 업종코드 : 1468) 등록한 업체\n* 제안업체는 「소프트웨어 진흥법」 제58조(소프트웨어사업자 실적 등 관리)에 따라최근년도 결산신고된 소프트웨어사업자 일반 현황 관리서를 제출서류에 포함하여야 함\n",
+          "quote_start": 217,
+          "quote_end": 449,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 1748 / BodyText/Section0 / paragraph 1749 / BodyText/Section0 / paragraph 1750",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:1748:record:289464",
+              "locator": "BodyText/Section0 / paragraph 1748",
+              "char_start": 0,
+              "char_end": 23,
+              "chunk_start": 217,
+              "chunk_end": 240,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:1749:record:289596",
+              "locator": "BodyText/Section0 / paragraph 1749",
+              "char_start": 0,
+              "char_end": 116,
+              "chunk_start": 241,
+              "chunk_end": 357,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:1750:record:290014",
+              "locator": "BodyText/Section0 / paragraph 1750",
+              "char_start": 0,
+              "char_end": 90,
+              "chunk_start": 358,
+              "chunk_end": 448,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E018",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "87e1c0199e6494979b89c2104681b68eb5548aec9fef42c55bde35e38a52fefa",
+          "source_request_fingerprint": "d750063cddb25eecb8f4cae91c42d1f16394f913596c20be867eeba49db590e1",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+      "category": "eligibility",
+      "text": "[eligibility|fact] 본 사업은 20억원 미만 사업으로 대기업 및 중견기업인 소프트웨어 사업자의 입찰 참여가 제한되고, 총 사업금액 20억원 미만인 사업으로 중소 소프트웨어사업자만 입찰참가 가능함",
+      "citations": [
+        {
+          "chunk_id": "rfp:a0429ca4da021105:e4af4edb728893d0ae33a1ea",
+          "quote": "ㅇ 본 사업은 20억원 미만 사업으로 「소프트웨어 진흥법」 제48조(중소 소프트웨어사업자의 사업참여 지원) 및 중소 소프트웨어사업자의 사업 참여 지원에 관한 지침 제2조, 제3조에 따라 대기업 및 중견기업인 소프트웨어 사업자의 입찰 참여 제한(소프트웨어사업자 일반 현황 관리확인서 상의 ‘공공 소프트웨어사업 입찰참여 제한금액: 없음’으로 확인)\n",
+          "quote_start": 111,
+          "quote_end": 304,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 1763",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:1763:record:293496",
+              "locator": "BodyText/Section0 / paragraph 1763",
+              "char_start": 0,
+              "char_end": 192,
+              "chunk_start": 111,
+              "chunk_end": 303,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E025",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "87e1c0199e6494979b89c2104681b68eb5548aec9fef42c55bde35e38a52fefa",
+          "source_request_fingerprint": "d750063cddb25eecb8f4cae91c42d1f16394f913596c20be867eeba49db590e1",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:a0429ca4da021105:e4af4edb728893d0ae33a1ea",
+          "quote": "- 총 사업금액 20억원 미만인 사업으로 중소 소프트웨어사업자(소프트웨어사업자 일반 현황 관리확인서 상의 ‘공공 소프트웨어사업 입찰참여 제한금액: 없음’으로 확인)만 입찰참가 가능\nㅇ 위 조건을 모두 충족하는 업체에 한해서만 입찰참가 가능\n※ 상기 자격을 갖추지 못한 자의 입찰은 무효임\n□ 입찰보증금 및 귀속\n",
+          "quote_start": 304,
+          "quote_end": 478,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 1764 / BodyText/Section0 / paragraph 1765 / BodyText/Section0 / paragraph 1766 / BodyText/Section0 / paragraph 1768",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:1764:record:294136",
+              "locator": "BodyText/Section0 / paragraph 1764",
+              "char_start": 0,
+              "char_end": 100,
+              "chunk_start": 304,
+              "chunk_end": 404,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:1765:record:294508",
+              "locator": "BodyText/Section0 / paragraph 1765",
+              "char_start": 0,
+              "char_end": 32,
+              "chunk_start": 405,
+              "chunk_end": 437,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:1766:record:294662",
+              "locator": "BodyText/Section0 / paragraph 1766",
+              "char_start": 0,
+              "char_end": 26,
+              "chunk_start": 438,
+              "chunk_end": 464,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:1768:record:294892",
+              "locator": "BodyText/Section0 / paragraph 1768",
+              "char_start": 0,
+              "char_end": 12,
+              "chunk_start": 465,
+              "chunk_end": 477,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E026",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "87e1c0199e6494979b89c2104681b68eb5548aec9fef42c55bde35e38a52fefa",
+          "source_request_fingerprint": "d750063cddb25eecb8f4cae91c42d1f16394f913596c20be867eeba49db590e1",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+      "category": "evaluation",
+      "text": "[evaluation|fact] 평가방식은 제안서 및 프리젠테이션에 의한 평가이며, 기술능력 90점과 입찰가격평가 10점으로 총 100점 만점임",
+      "citations": [
+        {
+          "chunk_id": "rfp:a0429ca4da021105:c7bc0fe1cd74624f42deaf13",
+          "quote": "□ 평가방식 : 제안서 및 프리젠테이션에 의한 평가\nㅇ 실무를 총괄할 PM이 직접 프리젠테이션 실시\n□ 낙찰방식 : ｢국가를 당사자로 하는 계약에 관한 법률｣ 시행령 제43조에 의거 협상에 의한 계약 체결\n□ 심사방법\n",
+          "quote_start": 0,
+          "quote_end": 122,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 1781 / BodyText/Section0 / paragraph 1782 / BodyText/Section0 / paragraph 1784 / BodyText/Section0 / paragraph 1786",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:1781:record:297253",
+              "locator": "BodyText/Section0 / paragraph 1781",
+              "char_start": 0,
+              "char_end": 28,
+              "chunk_start": 0,
+              "chunk_end": 28,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:1782:record:297395",
+              "locator": "BodyText/Section0 / paragraph 1782",
+              "char_start": 0,
+              "char_end": 26,
+              "chunk_start": 29,
+              "chunk_end": 55,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:1784:record:297615",
+              "locator": "BodyText/Section0 / paragraph 1784",
+              "char_start": 0,
+              "char_end": 58,
+              "chunk_start": 56,
+              "chunk_end": 114,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:1786:record:297949",
+              "locator": "BodyText/Section0 / paragraph 1786",
+              "char_start": 0,
+              "char_end": 6,
+              "chunk_start": 115,
+              "chunk_end": 121,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E031",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "87e1c0199e6494979b89c2104681b68eb5548aec9fef42c55bde35e38a52fefa",
+          "source_request_fingerprint": "d750063cddb25eecb8f4cae91c42d1f16394f913596c20be867eeba49db590e1",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:a0429ca4da021105:c7bc0fe1cd74624f42deaf13",
+          "quote": "ㅇ 기술능력 90점 중 “비계량 부분” 80점은 제안서를 제출한 업체를 대상으로 각 평가위원이 평가하며, “계량 부분” 10점은 업체에서 제출한 서류를 근거로 공사에서 평가한다.\nㅇ 입찰가격 평가 10점은 아래 ‘입찰가격 평점 계산식’에 따라 평가한다. \n(나라장터 개찰)\nㅇ 기술능력 부문 평가결과 76.5점(85%) 이상을 득점하지 못하는 경우는 \n",
+          "quote_start": 384,
+          "quote_end": 581,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 1789 / BodyText/Section0 / paragraph 1790 / BodyText/Section0 / paragraph 1791",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:1789:record:298983",
+              "locator": "BodyText/Section0 / paragraph 1789",
+              "char_start": 0,
+              "char_end": 99,
+              "chunk_start": 384,
+              "chunk_end": 483,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:1790:record:299397",
+              "locator": "BodyText/Section0 / paragraph 1790",
+              "char_start": 0,
+              "char_end": 52,
+              "chunk_start": 484,
+              "chunk_end": 536,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:1791:record:299649",
+              "locator": "BodyText/Section0 / paragraph 1791",
+              "char_start": 0,
+              "char_end": 44,
+              "chunk_start": 537,
+              "chunk_end": 581,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E034",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "87e1c0199e6494979b89c2104681b68eb5548aec9fef42c55bde35e38a52fefa",
+          "source_request_fingerprint": "d750063cddb25eecb8f4cae91c42d1f16394f913596c20be867eeba49db590e1",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:a0429ca4da021105:9a6befee6d96b93c33e802e3",
+          "quote": "Ⅱ. 입찰가격평가 (계량) : 총 제안비용\n10\n합   계\n100",
+          "quote_start": 485,
+          "quote_end": 521,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 1867 / BodyText/Section0 / paragraph 1868 / BodyText/Section0 / paragraph 1869 / BodyText/Section0 / paragraph 1870",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:1867:record:313347",
+              "locator": "BodyText/Section0 / paragraph 1867",
+              "char_start": 0,
+              "char_end": 23,
+              "chunk_start": 485,
+              "chunk_end": 508,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0070",
+              "row": 13,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:1868:record:313530",
+              "locator": "BodyText/Section0 / paragraph 1868",
+              "char_start": 0,
+              "char_end": 2,
+              "chunk_start": 509,
+              "chunk_end": 511,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0070",
+              "row": 13,
+              "col": 2
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:1869:record:313671",
+              "locator": "BodyText/Section0 / paragraph 1869",
+              "char_start": 0,
+              "char_end": 5,
+              "chunk_start": 512,
+              "chunk_end": 517,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0070",
+              "row": 14,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:1870:record:313818",
+              "locator": "BodyText/Section0 / paragraph 1870",
+              "char_start": 0,
+              "char_end": 3,
+              "chunk_start": 518,
+              "chunk_end": 521,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0070",
+              "row": 14,
+              "col": 2
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E056",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "87e1c0199e6494979b89c2104681b68eb5548aec9fef42c55bde35e38a52fefa",
+          "source_request_fingerprint": "d750063cddb25eecb8f4cae91c42d1f16394f913596c20be867eeba49db590e1",
+          "source_origin": "source_units"
+        }
+      ]
+    }
+  ],
+  "rejected_claims": [],
+  "missing_information": [
+    "project_name",
+    "issuing_agency",
+    "scope_requirements",
+    "budget_vat",
+    "duration",
+    "submission_documents",
+    "submission_deadline",
+    "submission_method"
+  ],
+  "response_received": true,
+  "claims_checked": true,
+  "cache_hit": false,
+  "execution_mode": "live_openai",
+  "live_api": true,
+  "mapping_fingerprint": "87e1c0199e6494979b89c2104681b68eb5548aec9fef42c55bde35e38a52fefa",
+  "original_usage": {
+    "input_tokens": 8937,
+    "output_tokens": 467,
+    "total_tokens": 9404,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "usage_reported": true,
+    "latency_ms": 2539.209334005136
+  },
+  "semantic_quality_verified": false
+}

@@ -1,0 +1,1035 @@
+{
+  "batch_id": "B0016",
+  "job_key": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B:B0016:d84b837eb6ff",
+  "source_chunk_ids": [
+    "rfp:8c293ac2bb077438:338f47cdb8d6a22bce04149d",
+    "rfp:8c293ac2bb077438:75fef9a957581ee9be947de7",
+    "rfp:8c293ac2bb077438:1bd64f5edf97ea7c88ff42c4",
+    "rfp:8c293ac2bb077438:fa0ec85786f5280dc4053cef",
+    "rfp:8c293ac2bb077438:e548c7873e01a97d77017f35",
+    "rfp:8c293ac2bb077438:1eb72f80c5297b6bab108cf2"
+  ],
+  "request_fingerprint": "d84b837eb6ff8a0a444dccabe8ae28adc5bb27f663b69312634ff82dc29c03fe",
+  "kind": "source_units",
+  "status": "completed",
+  "claims": [
+    {
+      "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+      "category": "overview",
+      "text": "[project_name|fact] HF 인사이트 시스템 개발",
+      "citations": [
+        {
+          "chunk_id": "rfp:8c293ac2bb077438:fa0ec85786f5280dc4053cef",
+          "quote": "[별지 3]",
+          "quote_start": 0,
+          "quote_end": 6,
+          "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+          "sha256": "8c293ac2bb077438c0aaa974746d203a9196ec3eaa0d2c7971e5f6d3e4a28e28",
+          "file_name": "한국주택금융공사_2023_HF 인사이트 시스템 개발_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 8628",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8628:record:1320109",
+              "locator": "BodyText/Section0 / paragraph 8628",
+              "char_start": 0,
+              "char_end": 6,
+              "chunk_start": 0,
+              "chunk_end": 6,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E011",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "81d942b664c103dccfaed0bf3a47413de0debbb67907607d5ccacd2c58b29bf5",
+          "source_request_fingerprint": "d84b837eb6ff8a0a444dccabe8ae28adc5bb27f663b69312634ff82dc29c03fe",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 용역업체 직원의 계정은 하나의 그룹으로 등록하고 계정별로 정보시스템 접근권한을 부여하되 기관 내부문서 접근 금지",
+      "citations": [
+        {
+          "chunk_id": "rfp:8c293ac2bb077438:338f47cdb8d6a22bce04149d",
+          "quote": "용역업체 직원의 계정은 하나의 그룹으로 등록하고 계정별로 정보시스템 접근권한을 부여하되 기관 내부문서 접근 금지\n용역업체 직원의 root 계정 등 시스템에 중대한 영향을 끼칠 수 있는 계정에 대한 단독적인 접근 불허\n계정별로 부여된 권한은 불필요시 곧바로 해지하거나 계정 폐기\n용역업체 직원의 작업내용 확인을 위해 작업이력 로깅기능 구축\n",
+          "quote_start": 0,
+          "quote_end": 189,
+          "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+          "sha256": "8c293ac2bb077438c0aaa974746d203a9196ec3eaa0d2c7971e5f6d3e4a28e28",
+          "file_name": "한국주택금융공사_2023_HF 인사이트 시스템 개발_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 8562 / BodyText/Section0 / paragraph 8564 / BodyText/Section0 / paragraph 8566 / BodyText/Section0 / paragraph 8568",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8562:record:1308741",
+              "locator": "BodyText/Section0 / paragraph 8562",
+              "char_start": 0,
+              "char_end": 62,
+              "chunk_start": 0,
+              "chunk_end": 62,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0242",
+              "row": 0,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8564:record:1309169",
+              "locator": "BodyText/Section0 / paragraph 8564",
+              "char_start": 0,
+              "char_end": 57,
+              "chunk_start": 63,
+              "chunk_end": 120,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0242",
+              "row": 1,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8566:record:1309595",
+              "locator": "BodyText/Section0 / paragraph 8566",
+              "char_start": 0,
+              "char_end": 33,
+              "chunk_start": 121,
+              "chunk_end": 154,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0242",
+              "row": 2,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8568:record:1309929",
+              "locator": "BodyText/Section0 / paragraph 8568",
+              "char_start": 0,
+              "char_end": 33,
+              "chunk_start": 155,
+              "chunk_end": 188,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0242",
+              "row": 3,
+              "col": 1
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E001",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "81d942b664c103dccfaed0bf3a47413de0debbb67907607d5ccacd2c58b29bf5",
+          "source_request_fingerprint": "d84b837eb6ff8a0a444dccabe8ae28adc5bb27f663b69312634ff82dc29c03fe",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:8c293ac2bb077438:75fef9a957581ee9be947de7",
+          "quote": "용역업체 직원의 계정은 하나의 그룹으로 등록하고 계정별로 정보시스템 접근권한을 부여하되 기관 내부문서 접근 금지\n전산장비\n및\n휴대용\n",
+          "quote_start": 0,
+          "quote_end": 74,
+          "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+          "sha256": "8c293ac2bb077438c0aaa974746d203a9196ec3eaa0d2c7971e5f6d3e4a28e28",
+          "file_name": "한국주택금융공사_2023_HF 인사이트 시스템 개발_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 8562 / BodyText/Section0 / paragraph 8589 / BodyText/Section0 / paragraph 8590 / BodyText/Section0 / paragraph 8591",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8562:record:1308741",
+              "locator": "BodyText/Section0 / paragraph 8562",
+              "char_start": 0,
+              "char_end": 62,
+              "chunk_start": 0,
+              "chunk_end": 62,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0242",
+              "row": 0,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8589:record:1314178",
+              "locator": "BodyText/Section0 / paragraph 8589",
+              "char_start": 0,
+              "char_end": 4,
+              "chunk_start": 63,
+              "chunk_end": 67,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0242",
+              "row": 12,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8590:record:1314272",
+              "locator": "BodyText/Section0 / paragraph 8590",
+              "char_start": 0,
+              "char_end": 1,
+              "chunk_start": 68,
+              "chunk_end": 69,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0242",
+              "row": 12,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8591:record:1314360",
+              "locator": "BodyText/Section0 / paragraph 8591",
+              "char_start": 0,
+              "char_end": 3,
+              "chunk_start": 70,
+              "chunk_end": 73,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0242",
+              "row": 12,
+              "col": 0
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E005",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "81d942b664c103dccfaed0bf3a47413de0debbb67907607d5ccacd2c58b29bf5",
+          "source_request_fingerprint": "d84b837eb6ff8a0a444dccabe8ae28adc5bb27f663b69312634ff82dc29c03fe",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 자료 인계인수대장을 작성하고 인계자·인수자가 자필로 서명한 후 제공하며, 용역사업 관련 자료는 웹하드·P2P·웹오피스·데스크탑 가상화 서비스 등 인터넷 자료공유사이트 및 개인 메일함에 저장 금지",
+      "citations": [
+        {
+          "chunk_id": "rfp:8c293ac2bb077438:338f47cdb8d6a22bce04149d",
+          "quote": "계약서 등에 명시한 누출금지 대상정보를 용역업체에 제공할 경우, 자료 인계인수대장을 작성하고, 인계자·인수자가 자필로 서명한 후 제공\n비밀유지 계약서 상에 비밀정보의 범위, 보안 준수사항, 위반시 손해배상 책임, 지적재산권 문제, 자료의 반환 등 중요항목 명시\n용역사업 관련 자료는 웹하드, P2P, 웹오피스, 데스크탑 가상화 서비스 등 인터넷 자료공유사이트 및 개인 메일함에 저장 금지\n",
+          "quote_start": 270,
+          "quote_end": 487,
+          "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+          "sha256": "8c293ac2bb077438c0aaa974746d203a9196ec3eaa0d2c7971e5f6d3e4a28e28",
+          "file_name": "한국주택금융공사_2023_HF 인사이트 시스템 개발_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 8575 / BodyText/Section0 / paragraph 8577 / BodyText/Section0 / paragraph 8579",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8575:record:1311046",
+              "locator": "BodyText/Section0 / paragraph 8575",
+              "char_start": 0,
+              "char_end": 74,
+              "chunk_start": 270,
+              "chunk_end": 344,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0242",
+              "row": 5,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8577:record:1311550",
+              "locator": "BodyText/Section0 / paragraph 8577",
+              "char_start": 0,
+              "char_end": 70,
+              "chunk_start": 345,
+              "chunk_end": 415,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0242",
+              "row": 6,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8579:record:1312010",
+              "locator": "BodyText/Section0 / paragraph 8579",
+              "char_start": 0,
+              "char_end": 70,
+              "chunk_start": 416,
+              "chunk_end": 486,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0242",
+              "row": 7,
+              "col": 1
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E003",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "81d942b664c103dccfaed0bf3a47413de0debbb67907607d5ccacd2c58b29bf5",
+          "source_request_fingerprint": "d84b837eb6ff8a0a444dccabe8ae28adc5bb27f663b69312634ff82dc29c03fe",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 기관의 파일서버에 용역사업 관련자료 및 모든 산출물을 저장하거나 용역사업 책임자가 지정한 PC(인터넷 연결차단)에 저장 및 관리",
+      "citations": [
+        {
+          "chunk_id": "rfp:8c293ac2bb077438:338f47cdb8d6a22bce04149d",
+          "quote": "기관의 파일서버에 용역사업 관련자료 및 모든 산출물을 저장하거나 용역사업 책임자가 지정한 PC(인터넷 연결차단)에 저장 및 관리\n발주기관이 제공한 사무실에서 용역사업을 수행할 경우, 기관이 제공한 비공개 자료는 매일 퇴근시 반납\n용역사업 수행으로 생산되는 산출물 및 기록은 비인가자에게 제공, 대여, 열람 금지\n비밀번호는 정보보안담당관이 별도로 기록·관리하고 수시로 해당 계정에 접속하여 저장된 자료와 작업이력 확인",
+          "quote_start": 487,
+          "quote_end": 719,
+          "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+          "sha256": "8c293ac2bb077438c0aaa974746d203a9196ec3eaa0d2c7971e5f6d3e4a28e28",
+          "file_name": "한국주택금융공사_2023_HF 인사이트 시스템 개발_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 8581 / BodyText/Section0 / paragraph 8583 / BodyText/Section0 / paragraph 8585 / BodyText/Section0 / paragraph 8587",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8581:record:1312480",
+              "locator": "BodyText/Section0 / paragraph 8581",
+              "char_start": 0,
+              "char_end": 71,
+              "chunk_start": 487,
+              "chunk_end": 558,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0242",
+              "row": 8,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8583:record:1312942",
+              "locator": "BodyText/Section0 / paragraph 8583",
+              "char_start": 0,
+              "char_end": 55,
+              "chunk_start": 559,
+              "chunk_end": 614,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0242",
+              "row": 9,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8585:record:1313364",
+              "locator": "BodyText/Section0 / paragraph 8585",
+              "char_start": 0,
+              "char_end": 45,
+              "chunk_start": 615,
+              "chunk_end": 660,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0242",
+              "row": 10,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8587:record:1313758",
+              "locator": "BodyText/Section0 / paragraph 8587",
+              "char_start": 0,
+              "char_end": 58,
+              "chunk_start": 661,
+              "chunk_end": 719,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0242",
+              "row": 11,
+              "col": 1
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E004",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "81d942b664c103dccfaed0bf3a47413de0debbb67907607d5ccacd2c58b29bf5",
+          "source_request_fingerprint": "d84b837eb6ff8a0a444dccabe8ae28adc5bb27f663b69312634ff82dc29c03fe",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 용역업체 전산장비는 정보보안담당관 인가 후 반입·반출하며 반출시 정보보안담당관 통제 하에 저장자료 완전 삭제",
+      "citations": [
+        {
+          "chunk_id": "rfp:8c293ac2bb077438:75fef9a957581ee9be947de7",
+          "quote": "저장매체\n보안관리\n용역업체 전산장비는 정보보안담당관 인가 후 반입·반출\n* 반출시 정보보안담당관 통제 하에 저장자료 완전 삭제\n",
+          "quote_start": 74,
+          "quote_end": 145,
+          "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+          "sha256": "8c293ac2bb077438c0aaa974746d203a9196ec3eaa0d2c7971e5f6d3e4a28e28",
+          "file_name": "한국주택금융공사_2023_HF 인사이트 시스템 개발_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 8592 / BodyText/Section0 / paragraph 8593 / BodyText/Section0 / paragraph 8594 / BodyText/Section0 / paragraph 8595",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8592:record:1314452",
+              "locator": "BodyText/Section0 / paragraph 8592",
+              "char_start": 0,
+              "char_end": 4,
+              "chunk_start": 74,
+              "chunk_end": 78,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0242",
+              "row": 12,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8593:record:1314546",
+              "locator": "BodyText/Section0 / paragraph 8593",
+              "char_start": 0,
+              "char_end": 4,
+              "chunk_start": 79,
+              "chunk_end": 83,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0242",
+              "row": 12,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8594:record:1314691",
+              "locator": "BodyText/Section0 / paragraph 8594",
+              "char_start": 0,
+              "char_end": 29,
+              "chunk_start": 84,
+              "chunk_end": 113,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0242",
+              "row": 12,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8595:record:1314835",
+              "locator": "BodyText/Section0 / paragraph 8595",
+              "char_start": 0,
+              "char_end": 30,
+              "chunk_start": 114,
+              "chunk_end": 144,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0242",
+              "row": 12,
+              "col": 1
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E006",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "81d942b664c103dccfaed0bf3a47413de0debbb67907607d5ccacd2c58b29bf5",
+          "source_request_fingerprint": "d84b837eb6ff8a0a444dccabe8ae28adc5bb27f663b69312634ff82dc29c03fe",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 전산장비 반입·반출시마다 악성코드 감염여부 점검 및 자료 무단 반출입 여부 확인",
+      "citations": [
+        {
+          "chunk_id": "rfp:8c293ac2bb077438:75fef9a957581ee9be947de7",
+          "quote": "전산장비 반입·반출시마다 악성코드 감염여부 점검 및 자료 무단 반출입 여부 확인\n업무망 접속용 전산장비와 인터넷망 접속용 전산장비를 구분하여 활용 및 망간 혼용 금지",
+          "quote_start": 145,
+          "quote_end": 237,
+          "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+          "sha256": "8c293ac2bb077438c0aaa974746d203a9196ec3eaa0d2c7971e5f6d3e4a28e28",
+          "file_name": "한국주택금융공사_2023_HF 인사이트 시스템 개발_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 8597 / BodyText/Section0 / paragraph 8599",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8597:record:1315163",
+              "locator": "BodyText/Section0 / paragraph 8597",
+              "char_start": 0,
+              "char_end": 44,
+              "chunk_start": 145,
+              "chunk_end": 189,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0242",
+              "row": 13,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8599:record:1315555",
+              "locator": "BodyText/Section0 / paragraph 8599",
+              "char_start": 0,
+              "char_end": 47,
+              "chunk_start": 190,
+              "chunk_end": 237,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0242",
+              "row": 14,
+              "col": 1
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E007",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "81d942b664c103dccfaed0bf3a47413de0debbb67907607d5ccacd2c58b29bf5",
+          "source_request_fingerprint": "d84b837eb6ff8a0a444dccabe8ae28adc5bb27f663b69312634ff82dc29c03fe",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 업무에 필요한 사이트에만 접속토록 방화벽 등을 통해 통제하고 P2P, 웹하드, 메신저 등 인터넷 자료공유사이트 활용 원천차단",
+      "citations": [
+        {
+          "chunk_id": "rfp:8c293ac2bb077438:1bd64f5edf97ea7c88ff42c4",
+          "quote": "업무에 필요한 사이트에만 접속토록 방화벽 등을 통해 통제\n* P2P, 웹하드, 메신저 등 인터넷 자료공유사이트 활용 원천차단\n인터넷 접속허용 전산장비에 업무 수행 및 업무자료 저장 금지\n최신 백신 프로그램 설치 및 주기적인 전체 파일 검사 여부\n",
+          "quote_start": 127,
+          "quote_end": 264,
+          "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+          "sha256": "8c293ac2bb077438c0aaa974746d203a9196ec3eaa0d2c7971e5f6d3e4a28e28",
+          "file_name": "한국주택금융공사_2023_HF 인사이트 시스템 개발_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 8611 / BodyText/Section0 / paragraph 8612 / BodyText/Section0 / paragraph 8614 / BodyText/Section0 / paragraph 8616",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8611:record:1317618",
+              "locator": "BodyText/Section0 / paragraph 8611",
+              "char_start": 0,
+              "char_end": 31,
+              "chunk_start": 127,
+              "chunk_end": 158,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0243",
+              "row": 4,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8612:record:1317766",
+              "locator": "BodyText/Section0 / paragraph 8612",
+              "char_start": 0,
+              "char_end": 37,
+              "chunk_start": 159,
+              "chunk_end": 196,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0243",
+              "row": 4,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8614:record:1318108",
+              "locator": "BodyText/Section0 / paragraph 8614",
+              "char_start": 0,
+              "char_end": 33,
+              "chunk_start": 197,
+              "chunk_end": 230,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0243",
+              "row": 5,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8616:record:1318442",
+              "locator": "BodyText/Section0 / paragraph 8616",
+              "char_start": 0,
+              "char_end": 32,
+              "chunk_start": 231,
+              "chunk_end": 263,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0243",
+              "row": 6,
+              "col": 1
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E009",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "81d942b664c103dccfaed0bf3a47413de0debbb67907607d5ccacd2c58b29bf5",
+          "source_request_fingerprint": "d84b837eb6ff8a0a444dccabe8ae28adc5bb27f663b69312634ff82dc29c03fe",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 비밀번호·화면보호기 설정, 비인가 저장매체·통신기기 접속 통제",
+      "citations": [
+        {
+          "chunk_id": "rfp:8c293ac2bb077438:1bd64f5edf97ea7c88ff42c4",
+          "quote": "비밀번호·화면보호기 설정\n비인가 저장매체·통신기기 접속 통제\n* 매체제어 미설치 전산장비는 외부기기 연결단자 보안스티커 부착\n사업 완료시 용역업체 전산장비는 정보보안담당관 통제 하에 저장자료를 완전 삭제",
+          "quote_start": 264,
+          "quote_end": 377,
+          "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+          "sha256": "8c293ac2bb077438c0aaa974746d203a9196ec3eaa0d2c7971e5f6d3e4a28e28",
+          "file_name": "한국주택금융공사_2023_HF 인사이트 시스템 개발_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 8618 / BodyText/Section0 / paragraph 8620 / BodyText/Section0 / paragraph 8621 / BodyText/Section0 / paragraph 8623",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8618:record:1318774",
+              "locator": "BodyText/Section0 / paragraph 8618",
+              "char_start": 0,
+              "char_end": 13,
+              "chunk_start": 264,
+              "chunk_end": 277,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0243",
+              "row": 7,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8620:record:1319068",
+              "locator": "BodyText/Section0 / paragraph 8620",
+              "char_start": 0,
+              "char_end": 19,
+              "chunk_start": 278,
+              "chunk_end": 297,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0243",
+              "row": 8,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8621:record:1319192",
+              "locator": "BodyText/Section0 / paragraph 8621",
+              "char_start": 0,
+              "char_end": 35,
+              "chunk_start": 298,
+              "chunk_end": 333,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0243",
+              "row": 8,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8623:record:1319530",
+              "locator": "BodyText/Section0 / paragraph 8623",
+              "char_start": 0,
+              "char_end": 43,
+              "chunk_start": 334,
+              "chunk_end": 377,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0243",
+              "row": 9,
+              "col": 1
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E010",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "81d942b664c103dccfaed0bf3a47413de0debbb67907607d5ccacd2c58b29bf5",
+          "source_request_fingerprint": "d84b837eb6ff8a0a444dccabe8ae28adc5bb27f663b69312634ff82dc29c03fe",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 사업 완료 시 용역업체 전산장비는 정보보안담당관 통제 하에 저장자료를 완전 삭제",
+      "citations": [
+        {
+          "chunk_id": "rfp:8c293ac2bb077438:1bd64f5edf97ea7c88ff42c4",
+          "quote": "비밀번호·화면보호기 설정\n비인가 저장매체·통신기기 접속 통제\n* 매체제어 미설치 전산장비는 외부기기 연결단자 보안스티커 부착\n사업 완료시 용역업체 전산장비는 정보보안담당관 통제 하에 저장자료를 완전 삭제",
+          "quote_start": 264,
+          "quote_end": 377,
+          "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+          "sha256": "8c293ac2bb077438c0aaa974746d203a9196ec3eaa0d2c7971e5f6d3e4a28e28",
+          "file_name": "한국주택금융공사_2023_HF 인사이트 시스템 개발_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 8618 / BodyText/Section0 / paragraph 8620 / BodyText/Section0 / paragraph 8621 / BodyText/Section0 / paragraph 8623",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8618:record:1318774",
+              "locator": "BodyText/Section0 / paragraph 8618",
+              "char_start": 0,
+              "char_end": 13,
+              "chunk_start": 264,
+              "chunk_end": 277,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0243",
+              "row": 7,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8620:record:1319068",
+              "locator": "BodyText/Section0 / paragraph 8620",
+              "char_start": 0,
+              "char_end": 19,
+              "chunk_start": 278,
+              "chunk_end": 297,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0243",
+              "row": 8,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8621:record:1319192",
+              "locator": "BodyText/Section0 / paragraph 8621",
+              "char_start": 0,
+              "char_end": 35,
+              "chunk_start": 298,
+              "chunk_end": 333,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0243",
+              "row": 8,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8623:record:1319530",
+              "locator": "BodyText/Section0 / paragraph 8623",
+              "char_start": 0,
+              "char_end": 43,
+              "chunk_start": 334,
+              "chunk_end": 377,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0243",
+              "row": 9,
+              "col": 1
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E010",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "81d942b664c103dccfaed0bf3a47413de0debbb67907607d5ccacd2c58b29bf5",
+          "source_request_fingerprint": "d84b837eb6ff8a0a444dccabe8ae28adc5bb27f663b69312634ff82dc29c03fe",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 사업 완료 후 생산되는 최종 산출물 중 대외보안이 요구되는 자료에 대해 대외비 이상으로 작성·관리하고 불필요한 자료는 삭제 및 폐기",
+      "citations": [
+        {
+          "chunk_id": "rfp:8c293ac2bb077438:1eb72f80c5297b6bab108cf2",
+          "quote": "완료 시\n사업 완료 후 생산되는 최종 산출물 중 대외보안이 요구되는 자료에 대해 대외비 이상으로 작성·관리하고 불필요한 자료는 삭제 및 폐기\n용역업체에게 제공한 용역사업과 관련된 제반자료는 전량 회수하여 자료 인계·인수대장을 작성하고, 용역업체가 별도의 복사본 보관 금지\n용역업체에 복사본 등 용역사업과 관련된 자료를 일체 보유하고 있지 않다는 용역업체 대표 명의의 보안확약서를 징구\n",
+          "quote_start": 18,
+          "quote_end": 233,
+          "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+          "sha256": "8c293ac2bb077438c0aaa974746d203a9196ec3eaa0d2c7971e5f6d3e4a28e28",
+          "file_name": "한국주택금융공사_2023_HF 인사이트 시스템 개발_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 8638 / BodyText/Section0 / paragraph 8639 / BodyText/Section0 / paragraph 8641 / BodyText/Section0 / paragraph 8643",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8638:record:1321486",
+              "locator": "BodyText/Section0 / paragraph 8638",
+              "char_start": 0,
+              "char_end": 4,
+              "chunk_start": 18,
+              "chunk_end": 22,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0245",
+              "row": 1,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8639:record:1321631",
+              "locator": "BodyText/Section0 / paragraph 8639",
+              "char_start": 0,
+              "char_end": 73,
+              "chunk_start": 23,
+              "chunk_end": 96,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0245",
+              "row": 1,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8641:record:1322133",
+              "locator": "BodyText/Section0 / paragraph 8641",
+              "char_start": 0,
+              "char_end": 72,
+              "chunk_start": 97,
+              "chunk_end": 169,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0245",
+              "row": 2,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8643:record:1322625",
+              "locator": "BodyText/Section0 / paragraph 8643",
+              "char_start": 0,
+              "char_end": 62,
+              "chunk_start": 170,
+              "chunk_end": 232,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0245",
+              "row": 3,
+              "col": 1
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E014",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "81d942b664c103dccfaed0bf3a47413de0debbb67907607d5ccacd2c58b29bf5",
+          "source_request_fingerprint": "d84b837eb6ff8a0a444dccabe8ae28adc5bb27f663b69312634ff82dc29c03fe",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 용역업체에 복사본 등 용역사업과 관련된 자료를 일체 보유하고 있지 않다는 용역업체 대표 명의의 보안확약서를 징구",
+      "citations": [
+        {
+          "chunk_id": "rfp:8c293ac2bb077438:1eb72f80c5297b6bab108cf2",
+          "quote": "완료 시\n사업 완료 후 생산되는 최종 산출물 중 대외보안이 요구되는 자료에 대해 대외비 이상으로 작성·관리하고 불필요한 자료는 삭제 및 폐기\n용역업체에게 제공한 용역사업과 관련된 제반자료는 전량 회수하여 자료 인계·인수대장을 작성하고, 용역업체가 별도의 복사본 보관 금지\n용역업체에 복사본 등 용역사업과 관련된 자료를 일체 보유하고 있지 않다는 용역업체 대표 명의의 보안확약서를 징구\n",
+          "quote_start": 18,
+          "quote_end": 233,
+          "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+          "sha256": "8c293ac2bb077438c0aaa974746d203a9196ec3eaa0d2c7971e5f6d3e4a28e28",
+          "file_name": "한국주택금융공사_2023_HF 인사이트 시스템 개발_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 8638 / BodyText/Section0 / paragraph 8639 / BodyText/Section0 / paragraph 8641 / BodyText/Section0 / paragraph 8643",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8638:record:1321486",
+              "locator": "BodyText/Section0 / paragraph 8638",
+              "char_start": 0,
+              "char_end": 4,
+              "chunk_start": 18,
+              "chunk_end": 22,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0245",
+              "row": 1,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8639:record:1321631",
+              "locator": "BodyText/Section0 / paragraph 8639",
+              "char_start": 0,
+              "char_end": 73,
+              "chunk_start": 23,
+              "chunk_end": 96,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0245",
+              "row": 1,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8641:record:1322133",
+              "locator": "BodyText/Section0 / paragraph 8641",
+              "char_start": 0,
+              "char_end": 72,
+              "chunk_start": 97,
+              "chunk_end": 169,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0245",
+              "row": 2,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8643:record:1322625",
+              "locator": "BodyText/Section0 / paragraph 8643",
+              "char_start": 0,
+              "char_end": 62,
+              "chunk_start": 170,
+              "chunk_end": 232,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0245",
+              "row": 3,
+              "col": 1
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E014",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "81d942b664c103dccfaed0bf3a47413de0debbb67907607d5ccacd2c58b29bf5",
+          "source_request_fingerprint": "d84b837eb6ff8a0a444dccabe8ae28adc5bb27f663b69312634ff82dc29c03fe",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 용역업체 소유의 전자기록저장매체는 검증필 삭제S/W로 완전 삭제, 정보보안담당자로부터 승인 후 반출",
+      "citations": [
+        {
+          "chunk_id": "rfp:8c293ac2bb077438:1eb72f80c5297b6bab108cf2",
+          "quote": "용역업체 소유의 전자기록저장매체는 검증필 삭제S/W로 완전 삭제, 정보보안담당자로부터 승인 후 반출\n용역업체에서 설정한 정보시스템의 계정과 비밀번호 변경조치",
+          "quote_start": 233,
+          "quote_end": 320,
+          "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+          "sha256": "8c293ac2bb077438c0aaa974746d203a9196ec3eaa0d2c7971e5f6d3e4a28e28",
+          "file_name": "한국주택금융공사_2023_HF 인사이트 시스템 개발_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 8645 / BodyText/Section0 / paragraph 8647",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8645:record:1323061",
+              "locator": "BodyText/Section0 / paragraph 8645",
+              "char_start": 0,
+              "char_end": 55,
+              "chunk_start": 233,
+              "chunk_end": 288,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0245",
+              "row": 4,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:8647:record:1323475",
+              "locator": "BodyText/Section0 / paragraph 8647",
+              "char_start": 0,
+              "char_end": 31,
+              "chunk_start": 289,
+              "chunk_end": 320,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0245",
+              "row": 5,
+              "col": 1
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E015",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "81d942b664c103dccfaed0bf3a47413de0debbb67907607d5ccacd2c58b29bf5",
+          "source_request_fingerprint": "d84b837eb6ff8a0a444dccabe8ae28adc5bb27f663b69312634ff82dc29c03fe",
+          "source_origin": "source_units"
+        }
+      ]
+    }
+  ],
+  "rejected_claims": [],
+  "missing_information": [
+    "[issuing_agency] 발주기관 미확인",
+    "[purpose] 목적 미확인",
+    "[budget_vat] 예산·VAT 미확인",
+    "[duration] 수행기간 미확인",
+    "[eligibility] 참가·수행자격 미확인",
+    "[submission_documents] 입찰 제출서류 미확인",
+    "[submission_deadline] 제출기한 미확인",
+    "[submission_method] 제출방식 미확인",
+    "[evaluation] 평가기준 미확인"
+  ],
+  "response_received": true,
+  "claims_checked": true,
+  "cache_hit": false,
+  "execution_mode": "live_openai",
+  "live_api": true,
+  "mapping_fingerprint": "81d942b664c103dccfaed0bf3a47413de0debbb67907607d5ccacd2c58b29bf5",
+  "original_usage": {
+    "input_tokens": 3170,
+    "output_tokens": 997,
+    "total_tokens": 4167,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "usage_reported": true,
+    "latency_ms": 9584.21325001109
+  },
+  "semantic_quality_verified": false
+}

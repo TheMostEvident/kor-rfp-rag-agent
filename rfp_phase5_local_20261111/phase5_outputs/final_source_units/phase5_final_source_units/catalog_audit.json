@@ -1,0 +1,1023 @@
+{
+  "version": "phase5-all-document-id-audit-v1",
+  "passed": true,
+  "original_document_count": 100,
+  "canonical_document_count": 99,
+  "duplicate_alias_count": 1,
+  "chunk_count": 18266,
+  "original_ids_resolved": 100,
+  "canonical_documents_verified": 99,
+  "index_fingerprint": "b784f5cd9f85f178f72c1faf99ebdfc89d97684e35c81b3dfc1563d0a1907fea",
+  "checks": {
+    "all_original_ids_have_one_canonical_target": true,
+    "canonical_sources_indexed_once": true,
+    "global_chunk_ids_unique": true,
+    "chunk_count_matches_metadata": true,
+    "registered_chunk_ids_match_saved_order": true,
+    "chunk_document_scope_matches_catalog": true,
+    "saved_chunks_fingerprint_matches_index": true,
+    "every_original_id_resolves": true,
+    "every_canonical_document_chunks_verified": true,
+    "every_saved_chunk_seen_once": true,
+    "unknown_ids_raise_instead_of_widening_scope": true
+  },
+  "errors": [],
+  "documents": [
+    {
+      "doc_id": "1axc1V_BlcdbC3GC_OoJ4b0KQCrYVXEpD",
+      "file_name": "한국산업은행_차세대 정보시스템 구축 개발사업_제안요청서_안.pdf",
+      "sha256": "00eca4813c9907c4c9bfbc1b3ab1d7fb368b97e376b2b034221b744d7617dc12",
+      "chunk_count": 558,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "02dabb17de60263bdfadc881747d91c22793bc7c4f23bd36bd1f1d3f5820322c",
+      "first_chunk_id": "rfp:00eca4813c9907c4:a99c86b737d68bfac3921d28",
+      "last_chunk_id": "rfp:00eca4813c9907c4:f3e69c6896652c212813aa02"
+    },
+    {
+      "doc_id": "1AdcUT3ExwGgqjIbCcxQkyJQEDK8QHlqu",
+      "file_name": "경기도체육회_2026_전국체육대회 모바일 플랫폼 구축 용역_제안요청서.pdf",
+      "sha256": "029f11371de44491d83d1c4491e18252190f7ad2247dbce1d746b22d8e2a0c0c",
+      "chunk_count": 76,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "2836c0206e2b75c4ab07e0ec0263b907f31c9db62cd1304ffe7512d5b411b480",
+      "first_chunk_id": "rfp:029f11371de44491:6fff80bedd27a9d8eb09baee",
+      "last_chunk_id": "rfp:029f11371de44491:a2d2cb266256bb892b04696a"
+    },
+    {
+      "doc_id": "1WurPq0NFZWcrH3Pv7-I0uUrh4vI32WXw",
+      "file_name": "서울특별시_2026_2027 서울패션위크 트레이드쇼 운영 용역_제안요청서.hwpx",
+      "sha256": "03a15712e8e9bd5ed535502c9d3f9745269e47d4cd06e7e65907e34808db9a7b",
+      "chunk_count": 129,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "4e6b046e993a1080d3fef053f925328333018d47fa1c2bda1437219c6eb6d8fd",
+      "first_chunk_id": "rfp:03a15712e8e9bd5e:5d730549379236f80b6d6398",
+      "last_chunk_id": "rfp:03a15712e8e9bd5e:c48d0196b7260565bd23d325"
+    },
+    {
+      "doc_id": "1dlsH9e52YIgjlNguew5sdvl-OrxWFs1L",
+      "file_name": "한국교통연구원_2026_민자도로 미납통행료 통합관리시스템 개인정보 영향평가 기능개선_제안요청서.hwp",
+      "sha256": "05a1789596c00fe649df0bf5ed39d0f0dd5f4ef89be95af8d546cd0de26c54cc",
+      "chunk_count": 105,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "bf4211e7043a2c05be4c9ee2f6fa9745b265073896cab261ce6d44df8dd21da4",
+      "first_chunk_id": "rfp:05a1789596c00fe6:c8a494b07ab8a1052166ee1d",
+      "last_chunk_id": "rfp:05a1789596c00fe6:b1e3c3115dd0b639bb20c34c"
+    },
+    {
+      "doc_id": "1g2fwHsOi9HARatbRPbCUdbSM_iK1NF47",
+      "file_name": "안동과학대학교_2026_차세대통합정보시스템 구축 사업_제안요청서.pdf",
+      "sha256": "06f91a37c3170278727855b083df069a5e7212a66802dc5d0491723601304095",
+      "chunk_count": 267,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "5c010348ede8a36c7195f6d9d307f8f8e494761f340f70cd6e91746afe97ed7e",
+      "first_chunk_id": "rfp:06f91a37c3170278:140610a0ef17e84c25d776b5",
+      "last_chunk_id": "rfp:06f91a37c3170278:8baf6029694a0b4e392b9f32"
+    },
+    {
+      "doc_id": "10VgdhAr_mMFerirAiK1UX3aNihfNFj0K",
+      "file_name": "고용노동부_2023_공정채용전산시스템 구축을 위한 정보전략계획(ISP) 수립_제안요청서.hwp",
+      "sha256": "07d460aa7e620b9168b4732aaee0d708370a99ba288911d6cbe0ab565cfced05",
+      "chunk_count": 162,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "9528b59937b433636de5d4e162beef1cdd932830fc60f64e2cbeb9af587a7e36",
+      "first_chunk_id": "rfp:07d460aa7e620b91:5c99c644ffdd8592c9e55e37",
+      "last_chunk_id": "rfp:07d460aa7e620b91:bde846de86a3562a62a4e093"
+    },
+    {
+      "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+      "file_name": "서울특별시_2026_2027년 글로벌 패션브랜드 육성 용역_제안요청서.hwpx",
+      "sha256": "081719865dd99a38ba822b39869efcf75b37add88f8d07741c8f8bf141060484",
+      "chunk_count": 154,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "acc81475ebb621fe02288069e9ca79fe292efaa28b398859d4c2455cca389239",
+      "first_chunk_id": "rfp:081719865dd99a38:b7a4cc1b61e6651341c4a748",
+      "last_chunk_id": "rfp:081719865dd99a38:b409ddb9ae62d5682fd1b360"
+    },
+    {
+      "doc_id": "1SzFkgkUgoF4vKjlSOpVO0i9tI4ZqV0rM",
+      "file_name": "한국거래소_2018_차세대시스템(Next EXTURE+) 구축 등을 위한 정보화전략계획 수립 용역_제안요청서.pdf",
+      "sha256": "08b0b1cb131fa278418b60a2724be8e488daec8ba578fbdcde96edfba98d267d",
+      "chunk_count": 71,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "fbb5494c4c5bf14147daeb3c7af1641388b486cca1b22559d0dfcdd58290fad5",
+      "first_chunk_id": "rfp:08b0b1cb131fa278:df11afda4c4d5e333a47a6f6",
+      "last_chunk_id": "rfp:08b0b1cb131fa278:fbe5bc254d5932a94667c9c0"
+    },
+    {
+      "doc_id": "1fmwaCwhTRFFf3sdOofxsM61Z0Dnf1PAT",
+      "file_name": "서울특별시_2026_2027년 서울형 빅데이터 표준분석모델 개발 및 운영_제안요청서.hwpx",
+      "sha256": "0da1dccd8107f2c259a8eeb9d5ae462a3262804657d557f6222898f51451de6e",
+      "chunk_count": 335,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "fcad0f3eaee16a67f97c40c713c703eb927a07abee20cce67a0f4b122c7abb9b",
+      "first_chunk_id": "rfp:0da1dccd8107f2c2:559d02b599fe6b5a0f407b99",
+      "last_chunk_id": "rfp:0da1dccd8107f2c2:72115d502cf354f325eaa45c"
+    },
+    {
+      "doc_id": "1v1DALkWlDsXw0A6UI3BPbseMizPidPp-",
+      "file_name": "대한소방공제회_2022_중장기 정보화전략계획(ISP) 수립 용역_제안요청서_안.hwp",
+      "sha256": "0ec25322d2e1528dc3b23a2eab7a89444b09fdf18ac076f9ae68754c41812a27",
+      "chunk_count": 172,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "f8176397c3771e0348eae46b3a83a5675df3fa2173f2a3319b291742b0e72022",
+      "first_chunk_id": "rfp:0ec25322d2e1528d:8da2083ef5f4215621d6e970",
+      "last_chunk_id": "rfp:0ec25322d2e1528d:3d4295cc9f216b66eb385fc9"
+    },
+    {
+      "doc_id": "1XuHMGElCN1wjEBBucRF55JWKMCePUmUM",
+      "file_name": "한국예탁결제원_2024_차세대시스템(1단계) 구축 사업_제안요청서.pdf",
+      "sha256": "10574559caefec0344e890c3558d686f55aa80e3d971a607a7201a2834af8876",
+      "chunk_count": 721,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "21e3ef7413231fe89998ef3dcf0b4a1eaf3fcf3dde6655a341564c0c3e681c90",
+      "first_chunk_id": "rfp:10574559caefec03:19c0d600e27ba6730f5b2b84",
+      "last_chunk_id": "rfp:10574559caefec03:6e66a408728e2ed2b7d0429f"
+    },
+    {
+      "doc_id": "16ZOh4tAjsvz7_CyhMxKX-TABv22AIkWx",
+      "file_name": "독립기념관_2017_정보전략계획(ISP) 수립_제안요청서.hwp",
+      "sha256": "10706e9a89c9b8bd7a02ada3194bd9ddb53c5c0bb3a4f5996abe835e79939bc3",
+      "chunk_count": 158,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "ad8260244517a953696a46f5359bad28d59440558dcd6b4767ec035c861b910b",
+      "first_chunk_id": "rfp:10706e9a89c9b8bd:e953fca7a8d8c3f8f377c08f",
+      "last_chunk_id": "rfp:10706e9a89c9b8bd:2599afb523466fa732a5647b"
+    },
+    {
+      "doc_id": "17yA51-wumavNjJ6QYgJetmQg1J7NNn3A",
+      "file_name": "서울특별시_2026_서울특별시환경교육센터 관리 및 운영_제안요청서.hwpx",
+      "sha256": "13c2ca23d814f63b5f27dbe983e7e552a6120e724c8e714bfa8c0766474ee53d",
+      "chunk_count": 191,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "531cdab9b71e26654ad223bbd5a68efee467f6a16e6235f8b33293907ab00f08",
+      "first_chunk_id": "rfp:13c2ca23d814f63b:3fbd44b1ead6e7b6fc02281d",
+      "last_chunk_id": "rfp:13c2ca23d814f63b:c32e814874b564a155e9ecb1"
+    },
+    {
+      "doc_id": "12hznYfRCJ-ouZwHIt5yyaSNABtMaig3f",
+      "file_name": "법제처_2024_정부입법 통합 플랫폼 구축 정보화전략계획 수립_제안요청서.hwpx",
+      "sha256": "147596daecc7283a58a9d3f0bf720b9b1d45614f52acc1f0f0a43ebff3b9d015",
+      "chunk_count": 171,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "88568f96a95c5bd8d0bba7532b41b92027cf90ac5dcda5a3a4c1dc8574cb4732",
+      "first_chunk_id": "rfp:147596daecc7283a:72e5bc1173d42aacd35e6276",
+      "last_chunk_id": "rfp:147596daecc7283a:b07646b18794cdf7c3fb802a"
+    },
+    {
+      "doc_id": "1cvH283_zLsDsY0ckJtjvUyZTPkTrcvI3",
+      "file_name": "은행권청년창업재단_2025_디캠프 통합시스템 구축_제안요청서.hwp",
+      "sha256": "15af97aab3c614536dd67afcc19ac32a5869dbc508a5027ca9c40f8ae89a4223",
+      "chunk_count": 110,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "c95ec250964c380d3c3ecf9220bac65bdd488108fb3528ecf1083f31617bb423",
+      "first_chunk_id": "rfp:15af97aab3c61453:8c0ba9a3bd77edc582b8236e",
+      "last_chunk_id": "rfp:15af97aab3c61453:6714fe451ac3dac73d14957a"
+    },
+    {
+      "doc_id": "1kRgVctjXbNv9oynFGgl1ztPyPNLk8n-u",
+      "file_name": "한국방송광고진흥공사_2019_2019년 KOBACO 그룹웨어시스템 고도화 사업_제안요청서.pdf",
+      "sha256": "167a35a6ade100c986076f081adbe3b189f298d147ed13c3d707c921186cb8ae",
+      "chunk_count": 123,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "1e6cb8c8e5867c2fcb7d9942c326a431ee803c73005b44e61734b6696a27f486",
+      "first_chunk_id": "rfp:167a35a6ade100c9:936225f88dbca6cae8a70f8e",
+      "last_chunk_id": "rfp:167a35a6ade100c9:87dd16be3e6f4763b7d300c5"
+    },
+    {
+      "doc_id": "1xz7SvO9D-Fxv8Kt7LJgmalbaweUw2EnQ",
+      "file_name": "동의대학교_2025_차세대 그룹웨어 재구축_제안요청서.hwp",
+      "sha256": "18af672b88584bfc651d65044fca3f648ba6ddac697baaf9cc613b6559b5b482",
+      "chunk_count": 150,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "180d2c6420a14eb335b14ac3037e2cfcb7aeed8ad1ba60da8c5331f565fe5f2c",
+      "first_chunk_id": "rfp:18af672b88584bfc:26c5db10d7bb3d4245a7adb7",
+      "last_chunk_id": "rfp:18af672b88584bfc:13b0fdd86a97c4ce60c10390"
+    },
+    {
+      "doc_id": "1-N7PxSvhkkEfo_2EfVTsikBhjrdnF-4B",
+      "file_name": "한국수출입은행_2025_보안 패러다임 변화 대응 정보보호 컨설팅 용역_제안요청서_안.pdf",
+      "sha256": "18c61cd37d141d7830e28690a9ad60806e2435f01ae0cb48cf896cd3c8eb5116",
+      "chunk_count": 96,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "ad5c7654fd2de3715f0072c5560b3185caf93a10826a9825b3efc843dd0d915b",
+      "first_chunk_id": "rfp:18c61cd37d141d78:94f8b37c457bed4746471881",
+      "last_chunk_id": "rfp:18c61cd37d141d78:c1f2c780c6fd4acc490170e9"
+    },
+    {
+      "doc_id": "1O6-CCTPsQ--7Nm9wFh1PeiFB8DRt9Ocr",
+      "file_name": "한국자동차연구원_2021_차세대정보시스템 그룹웨어 재구축_제안요청서.pdf",
+      "sha256": "1d0fb15cf9a5df0fb013a678c3c0c15d0bec1210a9e2f2a205bccf204523a43c",
+      "chunk_count": 70,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "9d54f373db64b33133bc00820a1391c745b58ce2576ceb445e1d283f720fd4f6",
+      "first_chunk_id": "rfp:1d0fb15cf9a5df0f:e48b4c9b7bb70cb618da2c6b",
+      "last_chunk_id": "rfp:1d0fb15cf9a5df0f:ec42e7a61c8a0b4711ff0dab"
+    },
+    {
+      "doc_id": "1Zy_lR60ECF5ypfxIi2UOqK4p5Onar_Zr",
+      "file_name": "한국투자공사_2025_내부 인공지능 플랫폼 및 인프라 구축_제안요청서.pdf",
+      "sha256": "21959546e21b7ff73c034f80cb78fa46da0b1a42e24589c9884e35e30d1a2c62",
+      "chunk_count": 95,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "15bfcb94c6717290cfae229b8139567cbcf637368452dd5dc93bd981fc81defa",
+      "first_chunk_id": "rfp:21959546e21b7ff7:cb65781b6cb1f48e9e0c5a57",
+      "last_chunk_id": "rfp:21959546e21b7ff7:f44a9b6fc96dbd08a6eecc28"
+    },
+    {
+      "doc_id": "1l00GwcV8rvLRVKt3P-RbFl-v-4jyRjIX",
+      "file_name": "전남대학교병원_2021_차세대 병원정보시스템 구축 감리 및 개인정보영향평가_제안요청서.hwp",
+      "sha256": "2485380f7f94f203e48ac32b7dd2e0c9c85668d5497edbaf94e2fabd889378a9",
+      "chunk_count": 133,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "d66a80f2698af6110593a5d9e4d9aa3ebda64dd08bb2f70da82308ca94c00218",
+      "first_chunk_id": "rfp:2485380f7f94f203:c82eb08979e080e12b3948c8",
+      "last_chunk_id": "rfp:2485380f7f94f203:100c0f9b1ed96a9976fda7bb"
+    },
+    {
+      "doc_id": "1VlQZ-J4qX9NLGXx6KIuaJDAM34cHFWCT",
+      "file_name": "한국산업은행_정보시스템 운영업무 외주용역_제안요청서.pdf",
+      "sha256": "2917785c6e865e6a09f1c145f53cc621d99a59051bf16827335af9f8d2a8b3a0",
+      "chunk_count": 133,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "4cd2e3bb1e64fdc90dbb74258e363415339190f669891ac0091d57039c2d6965",
+      "first_chunk_id": "rfp:2917785c6e865e6a:b100feed8719a904bdbb888c",
+      "last_chunk_id": "rfp:2917785c6e865e6a:a76f4a4bb94c59626c204b68"
+    },
+    {
+      "doc_id": "1pAst4NSqKtfAz79_mwrCdyMJ-TyHbuQ4",
+      "file_name": "한국저작권위원회_2016_차세대 업무지원 시스템 구축 사업_제안요청서.hwp",
+      "sha256": "29b950c2b5e86daefd60a6035e36a4ee7b5b61ba01f5c18937f310687961bc13",
+      "chunk_count": 282,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "51a3bb6709c6b56dc7e17ba4419125f180da5807969bfea2a280364e7b1530ba",
+      "first_chunk_id": "rfp:29b950c2b5e86dae:29c0cb0e31c23b7046794bc9",
+      "last_chunk_id": "rfp:29b950c2b5e86dae:d1cacaba484f73133ff34323"
+    },
+    {
+      "doc_id": "10mxnQkrTtCqlg1KUf0GZ_Wm59BEldTn0",
+      "file_name": "독립기념관_2019_2019년 소장자료 DB 구축 및 시스템 보완_제안요청서.hwp",
+      "sha256": "2b87efb2788ebcb392148d894440343eeaed296f72807df66496b1f361f1c414",
+      "chunk_count": 180,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "9677f4f0db44a1298c215f54e58b566de9774cd5b5910b4c07051f227091d0ab",
+      "first_chunk_id": "rfp:2b87efb2788ebcb3:d04506a96369245b9dda3547",
+      "last_chunk_id": "rfp:2b87efb2788ebcb3:e4b44b2038a18f7138b5f9e1"
+    },
+    {
+      "doc_id": "1n-HK-TE9dzF1Gcu36vaU3Duib4ZJoP8t",
+      "file_name": "한국열린사이버대학교_2025_AI기반 학습지원 플랫폼 구축_제안요청서_사본01.pdf",
+      "sha256": "2ebe4f67d0d96038ce7cf19fcb2ee2508b8ae326769186a57dd77224ae4a3e0e",
+      "chunk_count": 69,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "2315df96968d758101203e6c2234cc67bc3e66d249b0643d63748456c5783d9d",
+      "first_chunk_id": "rfp:2ebe4f67d0d96038:34f8c0a92460e3e1ac413e62",
+      "last_chunk_id": "rfp:2ebe4f67d0d96038:efc2bcba513a66f87daa078f"
+    },
+    {
+      "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+      "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+      "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+      "chunk_count": 55,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "2f5ede47473b285a3247a01233833636a09ce7eb1797cfa83c0c3cf90cfcc1e0",
+      "first_chunk_id": "rfp:339f63a565c0a45e:7fb57bfc834b77617aba8183",
+      "last_chunk_id": "rfp:339f63a565c0a45e:707627fb9d3006250e48c69e"
+    },
+    {
+      "doc_id": "1dowigrTCTftGNYZnQ4vcp3udlbbd5Jis",
+      "file_name": "인천공항시설관리(주)_2026_인천공항 중수도시설 탈수슬러지 내부 수집·운반 및 외부 위탁 처리 용역_과업내용서.hwp",
+      "sha256": "35a7dc9adc51d10a8bb3ec9f47ed10e1eae56b1c47df2829ed7c39965e8b1feb",
+      "chunk_count": 36,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "20829739557de7cebe5bdc3a37c4728dcc95ed93df59e3788a89d36f1b893602",
+      "first_chunk_id": "rfp:35a7dc9adc51d10a:2e16e9f59a8c236e9a52ca79",
+      "last_chunk_id": "rfp:35a7dc9adc51d10a:6116c89d7b77d5fdabe17a07"
+    },
+    {
+      "doc_id": "1inrLkiNWeI1JvXmoIBV7ZEzyxIMPGO6q",
+      "file_name": "한국인터넷진흥원_차세대 ISMS-P 시스템 고도화 정보화전략계획 수립_제안요청서.hwpx",
+      "sha256": "3bca59a19b8d3dff64b90e6fcaf913ef43ead22e76e0eca9d91d6b8bafafe9cd",
+      "chunk_count": 200,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "d7b69ff0d84b90cbd9d323f0e84e3a78532db1347254efbc78d990beb3d73e1f",
+      "first_chunk_id": "rfp:3bca59a19b8d3dff:648ddb07deb4d9c5e21fcd1b",
+      "last_chunk_id": "rfp:3bca59a19b8d3dff:6532bb1dfa3e7bfcad855399"
+    },
+    {
+      "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+      "file_name": "한국정보통신진흥협회_2026_2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수_제안요청서.hwp",
+      "sha256": "3cd93bd8e0f92667d7f0d681d7c64070f810f6ff0035f2ea564a7b56f19072c1",
+      "chunk_count": 51,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "1edcfedaa368e2dd6ad3cce93f3bb7a2147b74258599d3df07a0cec6e150176a",
+      "first_chunk_id": "rfp:3cd93bd8e0f92667:26737e41764fe60085a3d0ba",
+      "last_chunk_id": "rfp:3cd93bd8e0f92667:0903bccad00a0ceef2ee9160"
+    },
+    {
+      "doc_id": "1FB_yRt6qzEEM37X5rQhplMNgbaNE0334",
+      "file_name": "연구개발특구진흥재단_2026_2026년 정보시스템(HW) 통합유지보수 용역_제안요청서.hwp",
+      "sha256": "408253db30d1d0f3bf5d0536d2b1003a5f1c0fe24bc791be0be114e2e479a02f",
+      "chunk_count": 223,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "9bc1d1430c4c5c3bd742196393094817e2129022109a14c727ebe6c560e4960c",
+      "first_chunk_id": "rfp:408253db30d1d0f3:bcdbb23afec40cbe30f7af2c",
+      "last_chunk_id": "rfp:408253db30d1d0f3:4c42f7437cf0c4e9f099e17e"
+    },
+    {
+      "doc_id": "1uO0E9bylvXzl3-ZV4qpfogLXYDyNz-9J",
+      "file_name": "한국자동차연구원_2022_차세대정보시스템 ERP 재구축 사업 감리용역_제안요청서.pdf",
+      "sha256": "43741ce23a1d4562035a835238989363d372ec72f606d253877f65961748046b",
+      "chunk_count": 77,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "b92585f70c34d0d9c23eed18b0ce3d59fe168e46e8f2911d9829bc3d490fcbce",
+      "first_chunk_id": "rfp:43741ce23a1d4562:94cf9d8db1152229fff65102",
+      "last_chunk_id": "rfp:43741ce23a1d4562:26259b4f9840387637c4ddfb"
+    },
+    {
+      "doc_id": "1m91j7dxXyL1mACr5_i8SuDDBtVJ3kUdt",
+      "file_name": "교육부_2023_교육분야 행정감사 혁신방안 연구_제안요청서.hwpx",
+      "sha256": "490d9eb89c55a1ea9a5bf3366dc825803765861eb58f3a96dcfee10811820c4a",
+      "chunk_count": 41,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "b53980ea1959cf67292da960fb93dc6a0afe1a7d138e090971906f2a06e2de8c",
+      "first_chunk_id": "rfp:490d9eb89c55a1ea:37a76b883a0ef66c9decd18f",
+      "last_chunk_id": "rfp:490d9eb89c55a1ea:d212c430798e772d4f8d680e"
+    },
+    {
+      "doc_id": "1kEi6KqkHNXULnxfkVu9GvEBTDrAa_0do",
+      "file_name": "한국해외인프라도시개발지원공사_2026_2025-26 경제혁신 파트너십 프로그램(EIPP) 필리핀 정부 데이터센터 구축 사업모델 설계 및 예비타당성조사_제안요청서_재공고.hwp",
+      "sha256": "496acb88d7aadc87c179205a0c24a0d6643e1254346385e2cc7ba5e1989efce0",
+      "chunk_count": 71,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "e3c7108ab20f12e11286b75e6392546b3ee54bd91db3011c7e5c0f98eaca19d2",
+      "first_chunk_id": "rfp:496acb88d7aadc87:c0a68f62e9615ba648950ae7",
+      "last_chunk_id": "rfp:496acb88d7aadc87:00684ffb0b22bec256752c69"
+    },
+    {
+      "doc_id": "1F2r3WEuclWA4qqGeHKd2Cve2Z-5aGCVS",
+      "file_name": "서울특별시_2026_2027년 침수예측 정보시스템 유지관리_제안요청서_안.hwpx",
+      "sha256": "5178489a1346e4a093f619bb57a7cb9bf2b41bfe03ff32fdcd69d5a479dddb9d",
+      "chunk_count": 358,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "c47f31a757809e2dc96f69af8b2fdd490e3aba3079af922baa4508c6f43f6827",
+      "first_chunk_id": "rfp:5178489a1346e4a0:13b990ea5c75697f02d3f48e",
+      "last_chunk_id": "rfp:5178489a1346e4a0:b47c160149f3bc017373d3f6"
+    },
+    {
+      "doc_id": "1sfm6lUnIJweumey2Xf_A9s1_Q3qqAVpG",
+      "file_name": "서울특별시_2026_2027년 서울1인가구 포털 운영 및 유지관리 용역_제안요청서.hwpx",
+      "sha256": "51f41e16fc40092699cc6b221c7ee82a07b370252c8ded0ab7a7c5fbf277c8a5",
+      "chunk_count": 376,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "f3033e9151858fd739b45aee73054f1932661cd46d957ba3cb232bcc54e6e01c",
+      "first_chunk_id": "rfp:51f41e16fc400926:9923cc2df42a20073717c712",
+      "last_chunk_id": "rfp:51f41e16fc400926:5a7d27e1d7a05525c43d70a2"
+    },
+    {
+      "doc_id": "1RZRd0tIku73WuBhheTx0Ya8AwSMBp1zd",
+      "file_name": "서울특별시_2026_2027년 응답소·민원분석시스템 운영 및 유지관리 용역_제안요청서.hwpx",
+      "sha256": "5273557e79c57b92fafd72f9c0cc18894cf6b7127e8ffc555a8d4f711316a926",
+      "chunk_count": 634,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "aa3d7dbb071560d0060d197916d0675e30dbb1f197a16d3d46a273650ae24cd3",
+      "first_chunk_id": "rfp:5273557e79c57b92:0695e6c13f888ba91a9ead48",
+      "last_chunk_id": "rfp:5273557e79c57b92:5b1ab8bcb8b66709bee45623"
+    },
+    {
+      "doc_id": "1CoFw_qExHFvwtLbRwD4vkgqIon1WBzgp",
+      "file_name": "한국데이터산업진흥원_2026_2026년 AI·데이터 문제해결은행 맞춤지원 용역_제안요청서.hwp",
+      "sha256": "5475daca321407c2cb268d559cabafa49b40c5c640fa0f24d1a0bb6a7930ae9b",
+      "chunk_count": 150,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "6daf7c1b570cc88a9cf0755f14468a86388af7276835a12f2dfa221a59b55190",
+      "first_chunk_id": "rfp:5475daca321407c2:7ec0b6e29f80a236900a55fe",
+      "last_chunk_id": "rfp:5475daca321407c2:6cd5f9642533c3102d22da53"
+    },
+    {
+      "doc_id": "1NtUmrjOWSxPDGb9-rnzaj745RS1tm4GA",
+      "file_name": "중소기업중앙회_2026_중소기업·소상공인 데이터 플랫폼 구축_제안요청서_2.1.hwp",
+      "sha256": "5bf4f85e0f9ffa44ca6be488ae21bd4469efd5c9c974d8a5ff9b3913ae14af95",
+      "chunk_count": 389,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "43f2ec65afda05430fd1c908c54c77549d0faf3ac11d47be33f7797143202e22",
+      "first_chunk_id": "rfp:5bf4f85e0f9ffa44:b90c14ca75a737be53b95ecc",
+      "last_chunk_id": "rfp:5bf4f85e0f9ffa44:c0dd70d46780dd7bf9895ed2"
+    },
+    {
+      "doc_id": "1fs-0NkQhX02YQutTwkQsjSt5opxhJ8ds",
+      "file_name": "한국보건산업진흥원_2011_고객가치 창출 위한 중장기 정보화전략계획(ISP) 수립 용역_제안요청서.hwp",
+      "sha256": "5cca0f9b6ad8a49518147e1fe1d74bd79034aa65c9ba25c475976997b1c548b3",
+      "chunk_count": 104,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "5d4eb1089a969d665145387616e0cd08f150c027ecf4f11b3621c3f3a1b8075f",
+      "first_chunk_id": "rfp:5cca0f9b6ad8a495:a12cab68124552bf188be57a",
+      "last_chunk_id": "rfp:5cca0f9b6ad8a495:6dd65b4a0a5d2cd799159124"
+    },
+    {
+      "doc_id": "1elKkN728pmNusC2q39oeMUwNtQFERmUW",
+      "file_name": "국립아시아문화전당재단_2026_2026년 전산시스템 통합 운영 및 유지보수 용역_제안요청서_재공고.pdf",
+      "sha256": "5cf8a632c8d97b7ed0151438b2d617fab0b32fad57bd1eac1907c359ff01ea3e",
+      "chunk_count": 186,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "a873dbefe37b34b66eff9d0f1a4c3dc403ffec796323330b876247ecaa9ac4ed",
+      "first_chunk_id": "rfp:5cf8a632c8d97b7e:b77ce25ef3dda9e5b5db46c4",
+      "last_chunk_id": "rfp:5cf8a632c8d97b7e:3a8101d26c6cd5af38da61f5"
+    },
+    {
+      "doc_id": "1Z_uprLTKoO42-p82xQ5Z8d2bDwBItW7t",
+      "file_name": "금융결제원_2025_전원적 AI 통합 인프라 구축 관련 전산기기 도입 추진_제안요청서.pdf",
+      "sha256": "5d58458292a4ec0582747b5c75776d3113329aea315b2b096a4838c6088b208d",
+      "chunk_count": 40,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "b7b2dc7086863b20129fb65d6fc632682a993b5ff36fd7da4368199c23d8eede",
+      "first_chunk_id": "rfp:5d58458292a4ec05:c30c5191aefced26c07b7290",
+      "last_chunk_id": "rfp:5d58458292a4ec05:f16e651f6cc0f5b7c56e3249"
+    },
+    {
+      "doc_id": "17huu1bWjSkjL9dAs4fjS4rd1QH2MTloD",
+      "file_name": "충청북도교육연구정보원_2026_충청북도교육청 5단계 스쿨넷서비스_제안요청서.hwpx",
+      "sha256": "61dc4cdfd4684c1d01094f8f99082e2d5c96d13c974f27cce4865c752df8aa03",
+      "chunk_count": 259,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "1b6486d7202c1b9e3c5085b9475047ad4b90e46404d2ebcfb695cfa243f571eb",
+      "first_chunk_id": "rfp:61dc4cdfd4684c1d:ecc106caf9c723116727f7a3",
+      "last_chunk_id": "rfp:61dc4cdfd4684c1d:beaaf9cda7bb53acfc54f3b8"
+    },
+    {
+      "doc_id": "1xaFt1nrVYKhFlTuHNSOJgyrF7FhR90iL",
+      "file_name": "중소기업중앙회_2023_전사 데이터 통합을 위한 전략 수립·설계 ISMP_제안요청서_제출서류 하도급 관련 내용 추가.hwp",
+      "sha256": "62fb91b1aba48269e19f686186039724644aae62e07d79db6487667d7d75883d",
+      "chunk_count": 142,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "d1e951f898f2c3b9ad223da31c9d6f18166dfabf6a2d031bb62277b3525a80e9",
+      "first_chunk_id": "rfp:62fb91b1aba48269:0cb8781fe4b1924dee13e715",
+      "last_chunk_id": "rfp:62fb91b1aba48269:a7adeea7a28e92c1b0925814"
+    },
+    {
+      "doc_id": "1YMcfFvzqquBL5I6I6OFMFG1ioFrjow6y",
+      "file_name": "한국콘텐츠진흥원_2021_정보화전략계획(ISP) 수립_제안요청서.hwp",
+      "sha256": "66d5b93e86ef17dca08b3acef1d20c74c6595ea55c356cdd7ae509464ebaddc3",
+      "chunk_count": 179,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "6317394d2d3f526ad2540764504ec9bf7c2a8b4a9db707e83fda134b65805604",
+      "first_chunk_id": "rfp:66d5b93e86ef17dc:415b4c99e188ed7c5cddf3ac",
+      "last_chunk_id": "rfp:66d5b93e86ef17dc:030b3d582538ea210b0e1bbb"
+    },
+    {
+      "doc_id": "1AAH1vfeUeW7x3m3yOuyIxFB1rwlPB7O0",
+      "file_name": "한국투자공사_2019_차세대 투자시스템 구축_제안요청서.pdf",
+      "sha256": "6721f42330a9dfeaf52bfb5b5a1b22877ecae84b48c90d12db683bf0edeafed7",
+      "chunk_count": 119,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "83c4b8c875aede83c701c113b446cb706b61dd0238e4fc4a009215e6de9aaf55",
+      "first_chunk_id": "rfp:6721f42330a9dfea:136047beb155d52573034d8f",
+      "last_chunk_id": "rfp:6721f42330a9dfea:a7db5cd31b909a32b7413120"
+    },
+    {
+      "doc_id": "1ZZD1GBN53RqC3tbT2w04mXfvXYs4uIht",
+      "file_name": "한국법제연구원_2022_통합정보시스템 고도화_제안요청서_최종.hwp",
+      "sha256": "6e47ff7c818cb42079c3b8f50df59429415a4a3dc0f1a58fa6cced878aabee7e",
+      "chunk_count": 193,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "161d4604338a3900e3e5e47c8b9bbcbc27dacfb18a9f71a7fc363c8bf63d3e7f",
+      "first_chunk_id": "rfp:6e47ff7c818cb420:d5c9eacf35cf39c1fbaf130f",
+      "last_chunk_id": "rfp:6e47ff7c818cb420:e9c773ec87604591810c38dc"
+    },
+    {
+      "doc_id": "1bfh2w8DvNWynoJubbnEdCrCvrn1EUe-q",
+      "file_name": "한국지능정보사회진흥원_2025_인공지능 모델 성능 평가·검증 데이터 과제기획·발굴_제안요청서.hwpx",
+      "sha256": "702d88f1e2001b2539e617c273f90bbc6337e124e2e6fba490ffe9c3259c3740",
+      "chunk_count": 80,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "57a1f33aeb2babc9a92e56d78f7c09dba38d693bbc4079cecbb0c4e784f9012e",
+      "first_chunk_id": "rfp:702d88f1e2001b25:ea6699f243334d84bb38e31f",
+      "last_chunk_id": "rfp:702d88f1e2001b25:e82f47ef57e41d6aba4b8403"
+    },
+    {
+      "doc_id": "1eAIp62NiQG58iXUvezpWpmH_aV-aoRQD",
+      "file_name": "한국기계연구원_2026_통합정보시스템 고도화_제안요청서_최종_v2_수정.pdf",
+      "sha256": "747fc68eded9eebc424bb09ee396a74ff8902082814befc58c4eb76fa7886f58",
+      "chunk_count": 150,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "7edf68aecf660d526161e1b5a16b210c6e583bb48a9a6b9365c9a41bc11b0b64",
+      "first_chunk_id": "rfp:747fc68eded9eebc:63d6d051a018541847a864d7",
+      "last_chunk_id": "rfp:747fc68eded9eebc:91b1e9be55289225a9263dc1"
+    },
+    {
+      "doc_id": "144uKo5SrowxjhePog79gp3bAF8UEmFhp",
+      "file_name": "한국교육개발원_2026_2026년 디지털교육시스템 재구축 및 유지관리 사업 감리_제안요청서_수정.hwp",
+      "sha256": "75228cccf30fc8c008c49ee416c5a1152b083b75bbe07a4226644453514ee6ca",
+      "chunk_count": 168,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "84989a9dd5a706a2bcc7e5bcae70b178e04a438b84471d88b943b1cc448211eb",
+      "first_chunk_id": "rfp:75228cccf30fc8c0:530a9defaf41bcb8ae0ee04c",
+      "last_chunk_id": "rfp:75228cccf30fc8c0:0c77dd995e1fde42820e2876"
+    },
+    {
+      "doc_id": "1C_gC6ejtZNk9evO0A5pBpCvqpdxz63Sa",
+      "file_name": "우체국시설관리단_2026_2026년 정보시스템(인프라·응용) 통합 유지보수 용역 사업_제안요청서.pdf",
+      "sha256": "7566a59ff8df1a99bd6aba8dd2eaa2b9234634a0e530426a9b8fcbf03cef3e6e",
+      "chunk_count": 158,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "9b0bf2f0f4b3d26c81c38a1ff7f9cac882ade8c29cbdc23d71ee01792320d2b4",
+      "first_chunk_id": "rfp:7566a59ff8df1a99:3e1c249bf3c593ecb5219d22",
+      "last_chunk_id": "rfp:7566a59ff8df1a99:df49b2bc5d05ab0b63f1d4ca"
+    },
+    {
+      "doc_id": "11CIxqRm5aQMOgXiuLp-I-JSfXfVbyGBN",
+      "file_name": "국토연구원_2022_2023~2025년 전산자원 통합유지보수 사업_제안요청서.hwp",
+      "sha256": "79b922b7b9bb8a6042e859f10b9911ccafde38da1792241c7709bd1288f7228a",
+      "chunk_count": 173,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "f7908c0d826f36c9d471dcf3298130cbe38200c911c2fbce4590bf5b25054312",
+      "first_chunk_id": "rfp:79b922b7b9bb8a60:504b57b7efd9a445535b88d2",
+      "last_chunk_id": "rfp:79b922b7b9bb8a60:04903f7b4a08d152cea9a1b6"
+    },
+    {
+      "doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+      "file_name": "인천공항시설관리(주)_2026_2026년도 귀속 연말정산 위탁운영 용역_과업내용서.hwp",
+      "sha256": "7a592ea538ed00d8dca697c8cab8fadd110ec2a15902f8235b80bb7d960027bc",
+      "chunk_count": 18,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "1bab7e24f950e44a7c81dee860563b3df185e5ab10828dae985d22fe27c681d4",
+      "first_chunk_id": "rfp:7a592ea538ed00d8:a092b9e6d7a3dbe7c8631089",
+      "last_chunk_id": "rfp:7a592ea538ed00d8:5045f236ada3294483a9ff0e"
+    },
+    {
+      "doc_id": "1wVR2B8RyCsod3YKjxacOb0i-wnUEFdlK",
+      "file_name": "인천공항시설관리(주)_2026_스마트패스 전용 출국장 운영 위탁 용역_과업내용서.hwp",
+      "sha256": "7cb2b80e3b3329d3b6e124c1519bde57145a120e8d6766d58aa165b7d6faf529",
+      "chunk_count": 22,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "173bac121d30ef300d029ecd936ae3dcc63dc1fc12a16db5dd816b2ebe24aa30",
+      "first_chunk_id": "rfp:7cb2b80e3b3329d3:81496887dcc056fb37441294",
+      "last_chunk_id": "rfp:7cb2b80e3b3329d3:d12e8fb765d90d66ed5deef8"
+    },
+    {
+      "doc_id": "1vS0gKvI2Twk7z4E0eYSPxC5C_Dp7ONRO",
+      "file_name": "서울특별시_2026_2027년 재난정보관리시스템 유지관리 용역_제안요청서.hwpx",
+      "sha256": "88774cb3da44d82bbce5b03634019dfcbb7ce463dc2bbc81db3a72d1de1621eb",
+      "chunk_count": 376,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "9d43e18b7a7f85b83468d1d2b27ac4f4d3fd5798107823078e9acef97961a99f",
+      "first_chunk_id": "rfp:88774cb3da44d82b:eac062038abd11d263756b8d",
+      "last_chunk_id": "rfp:88774cb3da44d82b:4b17922be1a474c9672b2289"
+    },
+    {
+      "doc_id": "1UbUehThgNJ13DAG_bkv25yMOfZfoSbgV",
+      "file_name": "국토연구원_2025_디지털 국토연구원 2030 정보화전략계획을 위한 ISP_제안요청서.hwp",
+      "sha256": "8aa8a33d7f7dbc8112c79b65d8980864296858772b861cb218fa96d81ddd4d7e",
+      "chunk_count": 148,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "e46d398a4778aec2628e01c83fca97e9dcc024a418212b84c9895d232bb995c9",
+      "first_chunk_id": "rfp:8aa8a33d7f7dbc81:cffbd81e7d7607f06cf8194b",
+      "last_chunk_id": "rfp:8aa8a33d7f7dbc81:758875a055a33471b1781325"
+    },
+    {
+      "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+      "file_name": "한국주택금융공사_2023_HF 인사이트 시스템 개발_제안요청서.hwp",
+      "sha256": "8c293ac2bb077438c0aaa974746d203a9196ec3eaa0d2c7971e5f6d3e4a28e28",
+      "chunk_count": 442,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "3cb4c45c356d81cded6904cbf159a3ad490072418251fb6f15c50bcfc2296f28",
+      "first_chunk_id": "rfp:8c293ac2bb077438:6f8b18472a87a583a34d2390",
+      "last_chunk_id": "rfp:8c293ac2bb077438:1eb72f80c5297b6bab108cf2"
+    },
+    {
+      "doc_id": "1n9ph3x8OuqfkMJOLTU9dh-SAVB3qr21y",
+      "file_name": "한국디자인진흥원_2025_2026년 정보시스템 통합유지보수 위탁운영 용역_제안요청서.pdf",
+      "sha256": "8d1db9b5b7bc1f02e9852d165bf8a9d82082b6c5b34350ec652a398ee86ef912",
+      "chunk_count": 114,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "c17b67a2daec52ac91a43b771d7fe276f873f0c419bf1d02a3ccfdf926f41b29",
+      "first_chunk_id": "rfp:8d1db9b5b7bc1f02:149aa710cedde43cad552b5d",
+      "last_chunk_id": "rfp:8d1db9b5b7bc1f02:a252e911b0ea84937143d09d"
+    },
+    {
+      "doc_id": "1ct-tccMEJOnyuHTNOIQ2AfezgGb2l9xL",
+      "file_name": "고양국제박람회재단_2025_통합 업무시스템 구축 사업_제안요청서_v2.0.pdf",
+      "sha256": "91ae299e5f1a0569ae4f96fa19fbe782c02d63ab06c16935fd8bf0e555008ef5",
+      "chunk_count": 171,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "90634794d730232fcee5dabc91fa8c350fd1be9cf2290cdca61a81aab7507163",
+      "first_chunk_id": "rfp:91ae299e5f1a0569:82adcc69b0b22b84352c9cf6",
+      "last_chunk_id": "rfp:91ae299e5f1a0569:d07d27b795a9b6c1fd6b9993"
+    },
+    {
+      "doc_id": "175HvAdrzxnxgTkznqw9dmHlwwvtNBUDR",
+      "file_name": "한국해외인프라도시개발지원공사_2020_KIND 정보화전략계획(ISP) 수립_제안요청서_최종.hwp",
+      "sha256": "92963284133a4bfe4cd8645f6c28d2f83ab525b881159b9c9c9c6ff359dabcc6",
+      "chunk_count": 117,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "f27a72c2c30b3d1602278286f8f383c0a74198a1f904ed0c4950857b30c980ea",
+      "first_chunk_id": "rfp:92963284133a4bfe:e7b1450cf32082ef4a7fe57e",
+      "last_chunk_id": "rfp:92963284133a4bfe:05a9bfe546f3528905898d35"
+    },
+    {
+      "doc_id": "1jTD6IxSLJz5hrZxDyzCecph0iNZhXjjJ",
+      "file_name": "산업연구원_2025_2026년도 통합정보시스템 운영 및 유지관리 사업_제안요청서_수정.hwp",
+      "sha256": "949d953fcd7ea0d8f429894be150eb93cea03cf08ed5a87b850fee3288d32340",
+      "chunk_count": 236,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "5871981ce7f448dc0ed0fc04af5aab1a46b5bcbaef42b3fc09b37e83797f8adf",
+      "first_chunk_id": "rfp:949d953fcd7ea0d8:e2929abcc5e657a58cacbec3",
+      "last_chunk_id": "rfp:949d953fcd7ea0d8:0f045c72f6ea9fa2965918a2"
+    },
+    {
+      "doc_id": "1Hp2qPBf8jq7oNd-lxpvqrfBke76nH5q7",
+      "file_name": "서울특별시_2026_2027년 서울 영테크 재무정보시스템 운영 및 유지관리 용역_제안요청서_사전규격.hwpx",
+      "sha256": "99fa7876f3fdf354d8c198b013e520438579608e9a1453c5503d7e7d68576859",
+      "chunk_count": 370,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "59b1be81cb608a49a6f19feb233e8cb39dbfc785f2f1d2373d0a1cbd2528bab3",
+      "first_chunk_id": "rfp:99fa7876f3fdf354:10e3ac7a01064eb833caf3e3",
+      "last_chunk_id": "rfp:99fa7876f3fdf354:d9566926354cd7c4c037df70"
+    },
+    {
+      "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+      "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+      "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+      "chunk_count": 245,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "d05ce779417e71f8a3808037af1458a19b8d2c0e5714c095240c3feca0710fc8",
+      "first_chunk_id": "rfp:a0429ca4da021105:6af1d42b5628ad27d0649968",
+      "last_chunk_id": "rfp:a0429ca4da021105:0f23e23d9f117c60150939fa"
+    },
+    {
+      "doc_id": "1aYJqERWbnhaMkOlJTrT5BDxydDWTRmUs",
+      "file_name": "상명대학교_2018_통합정보시스템 구축 2단계 사업_제안요청서.pdf",
+      "sha256": "a15760b9e815e4781d0b938614cf7dfce72d1832bd71ef7d393c8f5d1d78a30a",
+      "chunk_count": 208,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "a24af46cd9f44f010d8a32073ae9f7b28d7f4dc3fe896c612977863044e6b4cf",
+      "first_chunk_id": "rfp:a15760b9e815e478:ca5aba6b290b2a8490694909",
+      "last_chunk_id": "rfp:a15760b9e815e478:76f1f0592a070b0a4ce287eb"
+    },
+    {
+      "doc_id": "101NcRKlfaH8xySktzY6qHtxqoZweYm_U",
+      "file_name": "한국지질자원연구원_2021_차세대 통합정보시스템 구축 감리용역_제안요청서.hwp",
+      "sha256": "a215df907c156a4134629bc8f160b142db9c84e49dec93816acaba21ee7b7962",
+      "chunk_count": 116,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "109d574049fa3283ebc3e0e3105ea50a48dfe66366d7224c3c2deed2f3647e32",
+      "first_chunk_id": "rfp:a215df907c156a41:b282e31b74abb276ff765294",
+      "last_chunk_id": "rfp:a215df907c156a41:9c821c81ef8122a707ceb61e"
+    },
+    {
+      "doc_id": "17_3i9XkdlXvC4c7l83MbQZs5Od2cM0IS",
+      "file_name": "한국여성정책연구원_2021_2021년 성인지통계 시스템 개선 및 관리_제안요청서.pdf",
+      "sha256": "a2f1057036349dd7fa60209a7d224792855d0d36b0e774fc9abe49b4a755548c",
+      "chunk_count": 117,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "ed85af5e6199c4da1af794378b792a2684cc5e89de10c1a9ed5bda5954e3b051",
+      "first_chunk_id": "rfp:a2f1057036349dd7:91282ae53d0788bcc989e828",
+      "last_chunk_id": "rfp:a2f1057036349dd7:36802b9a36d6f0aacb09e6d7"
+    },
+    {
+      "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+      "file_name": "한국주택금융공사_2021_부동산 등기정보 시스템 구축_제안요청서.hwp",
+      "sha256": "a3159eeb228799678e146447a070ba3c6f609e9723667c1fe768c75cf76b325c",
+      "chunk_count": 202,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "75ae18eddd556a6eae4de7b1842f8f3fda63ad509aa7c41d7f4433b9d2583a60",
+      "first_chunk_id": "rfp:a3159eeb22879967:9ee85d0af49d44d00788c7b8",
+      "last_chunk_id": "rfp:a3159eeb22879967:f2d04ecf9bbe2ca2e3f31a42"
+    },
+    {
+      "doc_id": "1CJLCgwBn_6hJlAr8zugGNfO6-s092K6-",
+      "file_name": "순천향대학교 중앙의료원_2010_산하의료기관 차세대 통합의료정보시스템 구축_제안요청서.pdf",
+      "sha256": "a7b014db5739e7bec053dcb0881324814b651a0255ec53b8a83fa57406becd47",
+      "chunk_count": 49,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "49a96f0374f0334f1b58bc6f1b40d0f8610b245456aac779d80a0b6c311703c7",
+      "first_chunk_id": "rfp:a7b014db5739e7be:afb1d0b4fc8d0369ee9097ed",
+      "last_chunk_id": "rfp:a7b014db5739e7be:8c6a377f8e36aa9dd75c502b"
+    },
+    {
+      "doc_id": "1gfUGse358dtZ76JEy6aE9zAlX_U06TBg",
+      "file_name": "교육부_2025_고등교육기관 기록물 보존 및 활용을 위한 기록관리 체계 개선 연구_제안요청서.hwpx",
+      "sha256": "aaa0e695ca1ddab0c7f0289b01164697e868856db79cfe37dda07ecb33189aa1",
+      "chunk_count": 42,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "d493ad78f214eef1f2ceda6536f922931c1d6515f2530f2f7ea9b1a1e20a6045",
+      "first_chunk_id": "rfp:aaa0e695ca1ddab0:4df7dee442489aec268e2d89",
+      "last_chunk_id": "rfp:aaa0e695ca1ddab0:4ccc00849cc0cc4a01a373f0"
+    },
+    {
+      "doc_id": "1cHsWc9-ZkDSUqn7v1hwyIzUK9kZiWqW0",
+      "file_name": "동의대학교_2026_차세대정보시스템 구축을 위한 BPR 기반의 ISP 수립_제안요청서.hwp",
+      "sha256": "af5140b2f7f1917503da728bdc1ac9b51a917c1dc79b53ddd7d926c71a3f4c69",
+      "chunk_count": 242,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "a80a19cd9fdc6c29ce9212c06b8b8ee076bec259b85c5fc509655e92ad1adeb7",
+      "first_chunk_id": "rfp:af5140b2f7f19175:7ad0b6dac58e13a55a66a1fd",
+      "last_chunk_id": "rfp:af5140b2f7f19175:888cf41829f6c56826199647"
+    },
+    {
+      "doc_id": "1vFExTsYTuGJrEiHFRWfnlhHi_C9_DD0f",
+      "file_name": "한국산업기술진흥원_2024_KIAT 차세대 경영관리시스템 구축을 위한 마스터플랜(ISMP) 수립_제안요청서.hwp",
+      "sha256": "b0dc40434fefb63a869db725a0bfe2827a1797c13e48520cb2ccec423f5aebc7",
+      "chunk_count": 100,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "729cf9688289e59154ec01b2e30d67bd9bf4b53ee996e958c40e33ae946e0284",
+      "first_chunk_id": "rfp:b0dc40434fefb63a:1c518019d021067ffe0abec8",
+      "last_chunk_id": "rfp:b0dc40434fefb63a:d0a4b3030ad3b05a4fdc9e44"
+    },
+    {
+      "doc_id": "1Ctu3fu4uwYM4YbcJHm5KofzjDkVWhK3g",
+      "file_name": "한국토지주택공사_2018_건설기술정보시스템 고도화를 위한 ISMP 수립용역_제안요청서.hwp",
+      "sha256": "b229645e88bf79d20bfda0904dcd51bbc9b0f3b9531bc473430609a9dd355876",
+      "chunk_count": 93,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "8be8bba3477d3c4da66441e3620749043b94bb3ef097f4a403022a88652381b4",
+      "first_chunk_id": "rfp:b229645e88bf79d2:efcf8a075620fab27683a0af",
+      "last_chunk_id": "rfp:b229645e88bf79d2:18e7e9bc9a642e5eb0531069"
+    },
+    {
+      "doc_id": "1zz_G1Ude3WZ0WXOJ8d83OcmqnvSZ9_6-",
+      "file_name": "새도약기금(주)_2026_결산지원 및 세무대리 용역_제안요청서_과업지시서 포함.hwp",
+      "sha256": "b48171477a84a837023f5df7906e1a8591d114ec1ae35a933c32ab8f1bb7cda3",
+      "chunk_count": 92,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "456e128519f1bcb1e0467d644577b70ab238bf5b7ecfcf33ea0cd8b2a20c8290",
+      "first_chunk_id": "rfp:b48171477a84a837:5dd4f7a2c1266af1cb95045e",
+      "last_chunk_id": "rfp:b48171477a84a837:015e9b3deb4e88dd91bfaa33"
+    },
+    {
+      "doc_id": "1G0-K-lrJLJskrpwWxjU4mwp_X9SVk6p2",
+      "file_name": "한국산업안전보건공단 산업안전보건연구원_2026_AI기반 MSDS DB 구축을 위한 정보화전략계획(ISP) 수립 용역_제안요청서.pdf",
+      "sha256": "ba7db97070e61ff966e3c490db90908853c828b727c13621e927208afc04c4d1",
+      "chunk_count": 124,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "40756b9ef1b8495e89f27eab76046f706c7ab0529e3447d699a0939ba6d4962f",
+      "first_chunk_id": "rfp:ba7db97070e61ff9:b70f8be67024e8a3fa7a04c7",
+      "last_chunk_id": "rfp:ba7db97070e61ff9:6fd107e7b6f7787a56688ee1"
+    },
+    {
+      "doc_id": "15aZg4x0h7cM71rtiHOBpJmExpej-cuR5",
+      "file_name": "한국언론진흥재단_2024_AI 메타데이터 구축 및 미디어 공공 AI 플랫폼 구축을 위한 ISP 수립_제안요청서_조달청 의견반영.hwp",
+      "sha256": "baee935e9a7fcc622fd540e9d79e396e7de58e5b9b4b22218b1526b84013aa69",
+      "chunk_count": 131,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "8547f840bad95cde4b689ed7f19850793de766d950f3ba78daf5bdf789a1ef4a",
+      "first_chunk_id": "rfp:baee935e9a7fcc62:98ee6d267b15e12c40ec4085",
+      "last_chunk_id": "rfp:baee935e9a7fcc62:8cbb02051499ac32fda21e06"
+    },
+    {
+      "doc_id": "1jErDHXt97nu-WfR_ATA10e69RAI9w8uw",
+      "file_name": "중소기업기술정보진흥원_2025_2025년 대민정보시스템 통합운영체계 소규모 고도화_제안요청서_수정.hwp",
+      "sha256": "bde05df345b346dceb95b07d4d8dbd8b5cc894cc9b004356e5d079d411ea73de",
+      "chunk_count": 263,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "98a554d123c89b1f0a07de05a029186f75ef7404ea4230bc59ca436051151e9b",
+      "first_chunk_id": "rfp:bde05df345b346dc:61e0e69c13351dc3e448db47",
+      "last_chunk_id": "rfp:bde05df345b346dc:6b8593d399024ce4dc4287a0"
+    },
+    {
+      "doc_id": "1pzpo8ChZsm8EgtyKLzQ7GfQPBhi8qLZV",
+      "file_name": "한국지질자원연구원_2018_차세대 통합정보 포털시스템 마스터플랜(ISMP) 수립_제안요청서.hwp",
+      "sha256": "bf2d1f7e94d0bbaa82f39e491ac1aa5fd68130a3141be7e2af0b945ccf5e6874",
+      "chunk_count": 110,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "2062119ffa9e2b89c00ba682fb8fa20cbb81d5181203b2e42c90933b5d2f9154",
+      "first_chunk_id": "rfp:bf2d1f7e94d0bbaa:929a17ffbf76dfa60eb5677e",
+      "last_chunk_id": "rfp:bf2d1f7e94d0bbaa:9d205eff9bc8142c37f1b7de"
+    },
+    {
+      "doc_id": "1598Hw8H5ir8TMaeiDYxI2o3J0DHjbkmS",
+      "file_name": "한국교통연구원_2026_인천공항 민간투자사업 관리이행계획 용역 중 사업추진방식 검토를 위한 재무분석_제안요청서_v1.0.hwp",
+      "sha256": "bfa6ea7f4c78a03cb8c6f22119e23df0a57b662331fa5461de0785ea656b71a4",
+      "chunk_count": 40,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "d33b326ca017a0e1610e6beaaad7d5e3690a39ff18683a1df29d74849aec90a4",
+      "first_chunk_id": "rfp:bfa6ea7f4c78a03c:1cd717fc4691fa5df1d35063",
+      "last_chunk_id": "rfp:bfa6ea7f4c78a03c:37ce6d731de376b83893edac"
+    },
+    {
+      "doc_id": "1CmE6rt1cYm1kWsth5GW1LZ9p8mwi3ytJ",
+      "file_name": "한국토지주택공사_2023_종이문서 내용증명 효력 대체를 위한 전자문서 유통 및 원본 증명플랫폼 구축_제안요청서.hwp",
+      "sha256": "c08fead9e874498c78331bf571028aea321fdb245f9720e942d283fb71c9b7ba",
+      "chunk_count": 131,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "44ee5027957d72384b83a7d83ddad886bae3ecaefa86583bbf7ed953883a1b62",
+      "first_chunk_id": "rfp:c08fead9e874498c:a0d452aea2c4d1a24c573e88",
+      "last_chunk_id": "rfp:c08fead9e874498c:8d791b22ee1632e4abe9c8b5"
+    },
+    {
+      "doc_id": "1BhIqij9-uCAseVM4NeY_IBPG5zKQ3Uxm",
+      "file_name": "한국법제연구원_2025_2025년도 정보보호시스템 등 통합 유지보수_제안요청서_안_수정.pdf",
+      "sha256": "c1c6cd19c3ffc47ef0905c5455af9c78bfb7045c26da38d0da2a037a7370f365",
+      "chunk_count": 81,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "65a589523052ee835e47f3d05f57a4b587f690285a09bafa303796aeaa3603e5",
+      "first_chunk_id": "rfp:c1c6cd19c3ffc47e:4759c9476d7e99ed9b069ee5",
+      "last_chunk_id": "rfp:c1c6cd19c3ffc47e:fa19cb5c83923f6efd75ad7c"
+    },
+    {
+      "doc_id": "1UfY7peoPg9ZMX_Nd6yudcbLTYEcH0LuV",
+      "file_name": "한국지능정보사회진흥원_2024_정보시스템 통합유지관리_제안요청서_최종_수정본.hwpx",
+      "sha256": "c609a648412a12d6abd210bb3c17dc78928c96bc312e3aa8700c3fea1827bf3e",
+      "chunk_count": 216,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "89933d428d37d111380a8e5ea1ed159802c86f3d0868bfdb41b00e8ee34c574a",
+      "first_chunk_id": "rfp:c609a648412a12d6:0fc6282368043398094c0593",
+      "last_chunk_id": "rfp:c609a648412a12d6:d16cef955cd351de5e86f810"
+    },
+    {
+      "doc_id": "1Z8-gw0xi7FV1SrotWiQdjQVUsNb3WOL9",
+      "file_name": "연구개발특구진흥재단_2015_정보화전략계획수립(ISP) 사업_제안요청서.hwp",
+      "sha256": "c813fbbb5f2b27d29912b660f23747996d134926296b9a64a885697eae9fcddd",
+      "chunk_count": 141,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "71bf1170c7690d81ef83f220dde9e9de5a2688956455de2eabb7001112b70d4f",
+      "first_chunk_id": "rfp:c813fbbb5f2b27d2:5074883a33758dc9ac15621b",
+      "last_chunk_id": "rfp:c813fbbb5f2b27d2:7d3285d11b6e98c9cde1ba6e"
+    },
+    {
+      "doc_id": "16ustuZ1tzqsZYXqAQbGqwmn9DDoPwUeW",
+      "file_name": "한국해양과학기술원_2025_KIOST 연구선 빅데이터 통합관리시스템 구축_제안요청서 및 과업지시서_수정.pdf",
+      "sha256": "cd6392bd9e9e7d6c1a75e7a6c572caf22fa51d19fa9890a69514ac8d8cc9ad95",
+      "chunk_count": 98,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "996664b71e3ddb028bcfd64a8946f44f7cc3856c387d0b8a4bd27256c550af30",
+      "first_chunk_id": "rfp:cd6392bd9e9e7d6c:9478f357d1975ec51d9b821a",
+      "last_chunk_id": "rfp:cd6392bd9e9e7d6c:cc0f9bd0e5597486ed3f90d7"
+    },
+    {
+      "doc_id": "1Vs4zjMGMvvc2LlmZfJJYymoOAowguRwF",
+      "file_name": "한국은행_2024_전자계약시스템 구축_제안요청서.hwp",
+      "sha256": "cdf096310f445644f5b9bd4df0208498a393148f63615813d7365c71bf18aaa9",
+      "chunk_count": 265,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "539b36b7e45724d5adcfeb129b5f20ca9cc2395d0aea02d12d033ad2efce8ffc",
+      "first_chunk_id": "rfp:cdf096310f445644:c36b8542cdc87a8ddde29271",
+      "last_chunk_id": "rfp:cdf096310f445644:91eeab6c0582850c1d497b12"
+    },
+    {
+      "doc_id": "14f70wfqAqipngV6_uC04QrdgoWNXLGlv",
+      "file_name": "한국학호남진흥원_2025_2025년 소장 국학자료 원문이미지 DB 구축 용역_제안요청서.hwp",
+      "sha256": "d0fb40af411a620d7a790c8728a5873b4affcb5356c2b9130a1716eb9f59b466",
+      "chunk_count": 170,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "85039a6e024aef369f427ccec793c4d4f3c7ee6289e068ee1ae5d19a53ff260d",
+      "first_chunk_id": "rfp:d0fb40af411a620d:9940554a1a0b2cf6d9e1ad08",
+      "last_chunk_id": "rfp:d0fb40af411a620d:dfd4e4f463121d38de2c421f"
+    },
+    {
+      "doc_id": "10SowRByVfYiIaTqD5yKoAfmz3bpcgZRB",
+      "file_name": "경기도_2024_2025년~2026년 정보시스템 통합유지관리 용역_제안요청서_안.hwpx",
+      "sha256": "d287b91184903daed1dfa41b11aac910594d5eaf00db022aadcf44c5acff4936",
+      "chunk_count": 265,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "dce25663b289f88bdc4e219bd270a6172f46a1a9a905578df3ad8be3eb41deb8",
+      "first_chunk_id": "rfp:d287b91184903dae:cfbd91e9606bb12ef9fd67b1",
+      "last_chunk_id": "rfp:d287b91184903dae:1f1fa967a2d2973ad04d2606"
+    },
+    {
+      "doc_id": "1cSCToR2w6pxA3QxgDxwNyQpULW-VuDKw",
+      "file_name": "한국인터넷진흥원_2026_26년 차세대 보안리더 양성 통합 운영지원_제안요청서.hwpx",
+      "sha256": "d47d4c6d0f642bad09aa96b10e77a8810fa67e79f72e845f8f5825bf3a101996",
+      "chunk_count": 151,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "7a0a143a39a42a1a8f6c409870d586069adc94788009105eff42e196de75fd29",
+      "first_chunk_id": "rfp:d47d4c6d0f642bad:dce431fb3c4c7cb0af0a64df",
+      "last_chunk_id": "rfp:d47d4c6d0f642bad:bcecc78d936a8b005854b9ee"
+    },
+    {
+      "doc_id": "1EQrriyIFdXChV8ggaPQeSiTqIiV0Vwrx",
+      "file_name": "서울특별시 소방재난본부_2026_드론 및 통합관제시스템 구매 설치_제안요청서.hwpx",
+      "sha256": "d7703ce26e0b20e41943c7cf28af2e407104645a92575fdc468f7fc9b75cbb5e",
+      "chunk_count": 386,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "aff088897da5013dd4aefe451eab65e0970fecff623b25c798dbbcb2f49f54c1",
+      "first_chunk_id": "rfp:d7703ce26e0b20e4:a607f2e2a7d02828db807705",
+      "last_chunk_id": "rfp:d7703ce26e0b20e4:d8e6234db70a0605296c5055"
+    },
+    {
+      "doc_id": "1r9U5jWIS2dH5sWME9V3sYAWsfGJK7f-Z",
+      "file_name": "서울특별시_2026_2027년~2028년 운수사업관리시스템 운영 및 유지관리 용역_제안요청서_안_수정.hwpx",
+      "sha256": "dbb1022fbd88f2f57babeaedc226d3f174a5dd77b45593fcddc37e8e03ec9e12",
+      "chunk_count": 406,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "2db2b6be56ee4024173bb1747c23f3fe47604840f1d1fb29e1b06a65c3b0a10b",
+      "first_chunk_id": "rfp:dbb1022fbd88f2f5:f324aedbc965c40acef69149",
+      "last_chunk_id": "rfp:dbb1022fbd88f2f5:e4531b215fffcf1463328deb"
+    },
+    {
+      "doc_id": "1IDHcStbxWMMQunKKA_gmKuqIpQOCcMpJ",
+      "file_name": "한국콘텐츠진흥원_2023_스토리움 정보시스템마스터플랜(ISMP) 수립_제안요청서_복사본.hwpx",
+      "sha256": "dcb9e8ba4f01262fffd535ff1f2d31bd157321a6f168ece6ab8c7969a74cdd8e",
+      "chunk_count": 186,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "fa9411cc511c6b6aa2cb0cd0ddac5ad4aad6120a4ceb98b2de34ed4128840cc1",
+      "first_chunk_id": "rfp:dcb9e8ba4f01262f:d76a743f1930c18b8d0693cd",
+      "last_chunk_id": "rfp:dcb9e8ba4f01262f:f98c89517d7d53c109fd02ba"
+    },
+    {
+      "doc_id": "1XcoTZV71tpb1LE5pK6qLiVgzI0RYYn0E",
+      "file_name": "한국투자공사_2026_인사시스템 운영 용역_제안요청서_재공고.pdf",
+      "sha256": "e0a1da635c60750932c09c2007c7a124434e7958d56e52d3dfe0823fbe9364a8",
+      "chunk_count": 61,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "f619ce49659b9c7f4826eaf48383fb637ca388f33f6de91a7f483e20852178a2",
+      "first_chunk_id": "rfp:e0a1da635c607509:15ee09362e129225aa95d19c",
+      "last_chunk_id": "rfp:e0a1da635c607509:58e483b53ea0803067e7326f"
+    },
+    {
+      "doc_id": "1b9Uzdc4xbAQVGB8exJjNURR2rVYb6ptP",
+      "file_name": "한국자동차연구원_2022_차세대정보시스템 ERP 재구축_제안요청서.pdf",
+      "sha256": "e231483a5ad64481769a071000361b7a35c9a5267e4d0f525cf95042861aed05",
+      "chunk_count": 232,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "381261347499fe039846543e2101df806e6b0512d9cd797abfa68b3f40ac161a",
+      "first_chunk_id": "rfp:e231483a5ad64481:959bfa6d435686621d8b8615",
+      "last_chunk_id": "rfp:e231483a5ad64481:813c2469097f75aeae65fbe1"
+    },
+    {
+      "doc_id": "1d83yOtnEEHyPI597cC_cvgW8721pOCCL",
+      "file_name": "한국방송광고진흥공사_2023_홈페이지 통합 유지보수_제안요청서.hwp",
+      "sha256": "e9ab7b160fca12a1a8785ff06473966d6d0cd9965044b6527079036de4a60da4",
+      "chunk_count": 182,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "64329d5137d07df0fcb2b5da18377a25c9dd9305d690ce9af27cbedb6b5cadcb",
+      "first_chunk_id": "rfp:e9ab7b160fca12a1:e486fe5dd13a586d86f33f68",
+      "last_chunk_id": "rfp:e9ab7b160fca12a1:7643b7aaec7c978c75dd9140"
+    },
+    {
+      "doc_id": "1xWS-RBK-kmWd7zxJqx4P5YnKIE_pMs2P",
+      "file_name": "한국주택금융공사_2021_RPA기반 자산관리 자동화시스템 고도화_제안요청서.hwp",
+      "sha256": "e9f074a7b6e6c55fe03686b5cd88ba5217940df97f41dbfe0055bea288f9f497",
+      "chunk_count": 235,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "32120b8e5db0afc2832fa3d0ca17989d685ee231adf69268de1d15197b295426",
+      "first_chunk_id": "rfp:e9f074a7b6e6c55f:85e95eaefbcddcf4d56d2140",
+      "last_chunk_id": "rfp:e9f074a7b6e6c55f:692c18ca6bb9a9383d0e36d5"
+    },
+    {
+      "doc_id": "1EMKe6hKnikAMXKJFufR5rU-nUBDguhJJ",
+      "file_name": "한국보훈복지의료공단_2026_2026년 통합요양정보시스템 유지관리 용역_제안요청서.pdf",
+      "sha256": "ec6ea84b6046d8e8da427233e85b7a0f83628dc2f16bf1e1dfd8818a1ebd639c",
+      "chunk_count": 141,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "9f829656fef5eb2f62e24e9fc591c46c82ee7259d3aae211b0f8898b895ea27c",
+      "first_chunk_id": "rfp:ec6ea84b6046d8e8:f604b11ea4918df31b5a7f7e",
+      "last_chunk_id": "rfp:ec6ea84b6046d8e8:81e1e2698750ef9a95a78054"
+    },
+    {
+      "doc_id": "1iy9KfQOw3bqa77H2Qo8wwiw0-E-X7OJa",
+      "file_name": "대한체육회_2021_스포츠클럽 종합정보시스템 마스터플랜(ISMP) 수립_제안요청서.hwp",
+      "sha256": "f0d5ed7502458399c56748ef47f1e8ca978de590fda9cd4ff9f34364538b389f",
+      "chunk_count": 244,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "7cd57baa0de696770fa8d32e645abafbbf485a8e9365cdeb6becaee2f96d1e9b",
+      "first_chunk_id": "rfp:f0d5ed7502458399:9498640b6e5f51999463f9d5",
+      "last_chunk_id": "rfp:f0d5ed7502458399:7a5d88ff5fb7707769417e74"
+    },
+    {
+      "doc_id": "11b_E7njNxjC73j6Cuk_DIrJNuODkFsL_",
+      "file_name": "서울특별시_2026_2027년 본관청사 영상·음향설비 유지관리 용역_제안요청서.hwpx",
+      "sha256": "fa089aca1f8469229b37a4b4f0d587af6d17db6b1a6204ed4af7cd627de90b94",
+      "chunk_count": 315,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "56c42d63a8acec71c962becac9589f505d5d5c1ae4125a7322472dc743e25c02",
+      "first_chunk_id": "rfp:fa089aca1f846922:c3749cb82c988e3a0357a047",
+      "last_chunk_id": "rfp:fa089aca1f846922:3fd880824cf5e9fd920b42bb"
+    },
+    {
+      "doc_id": "1BXohWiMwG6Y4cLlxKJM_IVXCmvTmKnsK",
+      "file_name": "서울특별시_2026_2027년 에코마일리지(누리집, 건물, 승용차, 녹색실천) 시스템 운영 및 유지관리_제안요청서.hwpx",
+      "sha256": "faea5675c680572c56829db24126a3402800575d59326687575ad70eff66401f",
+      "chunk_count": 384,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "adc07defbb28258424f6f45e3850990272a2b16cc90314b5465ed13280eb3de4",
+      "first_chunk_id": "rfp:faea5675c680572c:8e5e6ec6d950c7e702b0322f",
+      "last_chunk_id": "rfp:faea5675c680572c:ef4ad5d73194929e19eefc14"
+    },
+    {
+      "doc_id": "14S5JZ_eGGmYNhadH9j4yTFiLCextru3T",
+      "file_name": "서울특별시_2026_2027년 서울 부동산동향분석시스템 운영 및 통합유지관리 용역_제안요청서.hwpx",
+      "sha256": "fb9674c406ea395dcc3885082b52601ff0c38c65bf0fd6390bdbd9fe48a5a32e",
+      "chunk_count": 323,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "f7e3c95e41ec44153643d7a4f1cdac6b92c9cdcd9390a4d231f9c4e66ca001e7",
+      "first_chunk_id": "rfp:fb9674c406ea395d:ea8aa7f7190b1dd8c1706b18",
+      "last_chunk_id": "rfp:fb9674c406ea395d:ac7d89354e039b40521d8e93"
+    },
+    {
+      "doc_id": "1a-V5Targ1Cm2lz9Qrvx_0sDnhb2vE2Bu",
+      "file_name": "건강보험심사평가원_2020_차세대 보건의료빅데이터개방시스템 구축을 위한 정보전략계획(ISP) 수립_제안요청서.hwp",
+      "sha256": "fd575b33d5798c0bd3d5b1e9bdfd56e90a27bd9f9d04887904c4f636a0f4f1bc",
+      "chunk_count": 142,
+      "passed": true,
+      "ordered_chunk_ids_fingerprint": "02f6256d3ff7b0e6341f1ca0f7d048cbac4810fed46fd89a9bd0ef04579d7e02",
+      "first_chunk_id": "rfp:fd575b33d5798c0b:efea110f6235d2de3e40eac3",
+      "last_chunk_id": "rfp:fd575b33d5798c0b:7d84d2f884cf2a31d777c29e"
+    }
+  ],
+  "api_calls": 0,
+  "semantic_quality_verified": false,
+  "generated_answer_quality_verified": false,
+  "elapsed_seconds": 3.111,
+  "scope": "전체 원본 ID·대표 ID·중복 연결·원문 SHA·청크 내용과 순서의 오프라인 검사. 실제 생성 답변의 정확성 평가는 별도입니다.",
+  "run_fingerprint": "2d4266bf29bdbcad8ad199454c0d83ed0cac8a7ff4df207a8fe7ae6b4740bd00"
+}

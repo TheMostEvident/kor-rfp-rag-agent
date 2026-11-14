@@ -1,0 +1,1435 @@
+{
+  "batch_id": "B0002",
+  "job_key": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0:B0002:867947f4829a",
+  "source_chunk_ids": [
+    "rfp:339f63a565c0a45e:57c5aab87a902385a121a978",
+    "rfp:339f63a565c0a45e:0497005d84e8137a9f84786c",
+    "rfp:339f63a565c0a45e:25b61b719c8c81b19873b702",
+    "rfp:339f63a565c0a45e:779581248e79b52beaec1150",
+    "rfp:339f63a565c0a45e:f1ef4af8a6f8fa558e41e3d7",
+    "rfp:339f63a565c0a45e:ead2b5355c851c30e67cc65f",
+    "rfp:339f63a565c0a45e:e1ba4bc862f11c6b8ece72e9",
+    "rfp:339f63a565c0a45e:29c879c6376f0043d3479e01",
+    "rfp:339f63a565c0a45e:fb981e4144bd51b1e993e7ca",
+    "rfp:339f63a565c0a45e:ccf3c26a0ef82b8943bc9287",
+    "rfp:339f63a565c0a45e:aa9b9cf9f192922ca39c1629",
+    "rfp:339f63a565c0a45e:19ef77af13268cf3675df491",
+    "rfp:339f63a565c0a45e:4afbc5e0eb3db60525f38752",
+    "rfp:339f63a565c0a45e:b4cceaabab8f39963df70b7b",
+    "rfp:339f63a565c0a45e:ca8fe03099f9a76d5af245fb"
+  ],
+  "request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+  "kind": "source_units",
+  "status": "completed",
+  "claims": [
+    {
+      "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+      "category": "overview",
+      "text": "[project_name|fact] 건설엔지니어링공제조합의 전산시스템 고도화 사업(전면개편) 제안요청서이다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:57c5aab87a902385a121a978",
+          "quote": " - 건설엔지니어링공제조합 통합전산시스템은 사용자 중심으로\n개편하여 UX(UsereXperience) 편의성 향상\n요구사항 고유번호 SFR-005\n요구사항 분류 기능요구사항\n",
+          "quote_start": 273,
+          "quote_end": 370,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.13",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00013",
+              "locator": "PDF p.13",
+              "char_start": 273,
+              "char_end": 370,
+              "chunk_start": 273,
+              "chunk_end": 370,
+              "page": 13
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 13,
+          "source_unit_alias": "E005",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 전자정부 프레임워크 및 Java 최신버전을 활용해 시스템을 구축하고, web/was/db 서버와 호환되도록 하며, 사용자 중심으로 UX 편의성을 향상하고 클라우드서비스 구성에서 운영서버·웹서버·DB서버(2ea/이중화)·스토리지·백업서버·개발서버를 포함한다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:57c5aab87a902385a121a978",
+          "quote": "내역\n○ Java및전자정부프레임워크최신버전활용구축\n - 전자정부 프레임워크 및 Java 최신버전을 활용하여 시스템을\n구축하고 web/was/db 서버와호환이가능하도록시스템구성\n",
+          "quote_start": 80,
+          "quote_end": 178,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.13",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00013",
+              "locator": "PDF p.13",
+              "char_start": 80,
+              "char_end": 178,
+              "chunk_start": 80,
+              "chunk_end": 178,
+              "page": 13
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 13,
+          "source_unit_alias": "E003",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:57c5aab87a902385a121a978",
+          "quote": " - 건설엔지니어링공제조합 통합전산시스템은 사용자 중심으로\n개편하여 UX(UsereXperience) 편의성 향상\n요구사항 고유번호 SFR-005\n요구사항 분류 기능요구사항\n",
+          "quote_start": 273,
+          "quote_end": 370,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.13",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00013",
+              "locator": "PDF p.13",
+              "char_start": 273,
+              "char_end": 370,
+              "chunk_start": 273,
+              "chunk_end": 370,
+              "page": 13
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 13,
+          "source_unit_alias": "E005",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:57c5aab87a902385a121a978",
+          "quote": "세부\n내역\n○클라우드서비스에구성되는서버는 아래와 같음\n -운영서버\n",
+          "quote_start": 411,
+          "quote_end": 448,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.13",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00013",
+              "locator": "PDF p.13",
+              "char_start": 411,
+              "char_end": 448,
+              "chunk_start": 411,
+              "chunk_end": 448,
+              "page": 13
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 13,
+          "source_unit_alias": "E007",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:57c5aab87a902385a121a978",
+          "quote": " -웹서버\n - 데이터베이스서버(2ea/이중화구성)\n -스토리지\n -백업서버\n",
+          "quote_start": 448,
+          "quote_end": 491,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.13",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00013",
+              "locator": "PDF p.13",
+              "char_start": 448,
+              "char_end": 491,
+              "chunk_start": 448,
+              "chunk_end": 491,
+              "page": 13
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 13,
+          "source_unit_alias": "E008",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:57c5aab87a902385a121a978",
+          "quote": " -개발서버\n○ 각서버별클라우드서비스의구성은입찰자가 MSP와 협의하여\n구성\n○ 본서버구성에발생되는소프트웨어의구매(OS라이센스포함),\n",
+          "quote_start": 491,
+          "quote_end": 565,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.13",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00013",
+              "locator": "PDF p.13",
+              "char_start": 491,
+              "char_end": 565,
+              "chunk_start": 491,
+              "chunk_end": 565,
+              "page": 13
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 13,
+          "source_unit_alias": "E009",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:57c5aab87a902385a121a978",
+          "quote": "업그레이드및이전설치비용은가격 견적서에기재하여야 함",
+          "quote_start": 565,
+          "quote_end": 592,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.13",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00013",
+              "locator": "PDF p.13",
+              "char_start": 565,
+              "char_end": 592,
+              "chunk_start": 565,
+              "chunk_end": 592,
+              "page": 13
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 13,
+          "source_unit_alias": "E010",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 운영서버는 Linux, WebLogic(Oracle Weblogic Server for OCI), OzReport8.0, TrustCertificate V2.5, 대용량 파일 업로드 프로그램, 조달청 차세대나라장터 연계, 기타 운영에 필요한 필수 소프트웨어로 구성된다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:0497005d84e8137a9f84786c",
+          "quote": "내역\n○운영서버는 아래와 같이구성됨\n -운영체제\n · Linux\n",
+          "quote_start": 81,
+          "quote_end": 117,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.14",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00014",
+              "locator": "PDF p.14",
+              "char_start": 81,
+              "char_end": 117,
+              "chunk_start": 81,
+              "chunk_end": 117,
+              "page": 14
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 14,
+          "source_unit_alias": "E013",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:0497005d84e8137a9f84786c",
+          "quote": " -WAS/웹서버\n ·WebLogic(Oracle WeblogicServerforOCI)\n -리포팅프로그램\n ·OzReport8.0\n",
+          "quote_start": 117,
+          "quote_end": 191,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.14",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00014",
+              "locator": "PDF p.14",
+              "char_start": 117,
+              "char_end": 191,
+              "chunk_start": 117,
+              "chunk_end": 191,
+              "page": 14
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 14,
+          "source_unit_alias": "E014",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:0497005d84e8137a9f84786c",
+          "quote": " ·클라우드서비스구성에따라라이센스추가구매\n - 문서위변조방지 솔루션\n ·TrustCertificate V2.5\n ·클라우스서비스구성에따라라이센스추가구매\n",
+          "quote_start": 191,
+          "quote_end": 276,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.14",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00014",
+              "locator": "PDF p.14",
+              "char_start": 191,
+              "char_end": 276,
+              "chunk_start": 191,
+              "chunk_end": 276,
+              "page": 14
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 14,
+          "source_unit_alias": "E015",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:0497005d84e8137a9f84786c",
+          "quote": " -대용량파일업로드프로그램\n -조달청 차세대나라장터연계\n -기타운영에필요한필수소프트웨어\n요구사항 고유번호 SFR-007\n",
+          "quote_start": 276,
+          "quote_end": 343,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.14",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00014",
+              "locator": "PDF p.14",
+              "char_start": 276,
+              "char_end": 343,
+              "chunk_start": 276,
+              "chunk_end": 343,
+              "page": 14
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 14,
+          "source_unit_alias": "E016",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 웹서버는 Linux, Apache, 공인인증서 로그인 모듈 및 SSL 인증, WEBFILTER(지란지교데이터) 클라우드버전(신규), 기타 운영에 필요한 필수 소프트웨어로 구성된다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:0497005d84e8137a9f84786c",
+          "quote": "정의 웹서버의구성\n세부\n내역\n○홈페이지서버는 아래와 같이구성됨\n",
+          "quote_start": 385,
+          "quote_end": 420,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.14",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00014",
+              "locator": "PDF p.14",
+              "char_start": 385,
+              "char_end": 420,
+              "chunk_start": 385,
+              "chunk_end": 420,
+              "page": 14
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 14,
+          "source_unit_alias": "E018",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:0497005d84e8137a9f84786c",
+          "quote": " -운영체제\n · Linux\n -웹서버 Apache\n -공인인증서로그인모듈 및SSL인증\n",
+          "quote_start": 420,
+          "quote_end": 469,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.14",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00014",
+              "locator": "PDF p.14",
+              "char_start": 420,
+              "char_end": 469,
+              "chunk_start": 420,
+              "chunk_end": 469,
+              "page": 14
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 14,
+          "source_unit_alias": "E019",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:0497005d84e8137a9f84786c",
+          "quote": " -WEBFILTER(지란지교데이터)클라우드버전(신규)\n -기타운영에필요한필수소프트웨어",
+          "quote_start": 469,
+          "quote_end": 517,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.14",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00014",
+              "locator": "PDF p.14",
+              "char_start": 469,
+              "char_end": 517,
+              "chunk_start": 469,
+              "chunk_end": 517,
+              "page": 14
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 14,
+          "source_unit_alias": "E020",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 데이터베이스 서버는 Linux, OCI for Oracle Cloud, 데이터베이스 이중화 솔루션(OCI for Oracle), 데이터베이스 암호화 솔루션 라이센스 업그레이드, 펜타시큐리티 D’Amo v2.3 사용중이며 테스트서버 및 운영 모두 지원한다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:25b61b719c8c81b19873b702",
+          "quote": "내역\n○ 데이터베이스서버는 아래와 같이구성됨\n -운영체제\n · Linux\n",
+          "quote_start": 90,
+          "quote_end": 131,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.15",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00015",
+              "locator": "PDF p.15",
+              "char_start": 90,
+              "char_end": 131,
+              "chunk_start": 90,
+              "chunk_end": 131,
+              "page": 15
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 15,
+          "source_unit_alias": "E023",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:25b61b719c8c81b19873b702",
+          "quote": " -DataBase\n ·OCIforOracle Cloud\n - 데이터베이스이중화 솔루션(OCIforOracle)\n - 데이터베이스 암호화 솔루션라이센스 업그레이드\n",
+          "quote_start": 131,
+          "quote_end": 222,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.15",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00015",
+              "locator": "PDF p.15",
+              "char_start": 131,
+              "char_end": 222,
+              "chunk_start": 131,
+              "chunk_end": 222,
+              "page": 15
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 15,
+          "source_unit_alias": "E024",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:25b61b719c8c81b19873b702",
+          "quote": " · 펜타시큐리티D’Amo v2.3사용중\n○테스트서버및운영모두지원\n요구사항 고유번호 SFR-009\n요구사항 분류 기능요구사항\n",
+          "quote_start": 222,
+          "quote_end": 292,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.15",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00015",
+              "locator": "PDF p.15",
+              "char_start": 222,
+              "char_end": 292,
+              "chunk_start": 222,
+              "chunk_end": 292,
+              "page": 15
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 15,
+          "source_unit_alias": "E025",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 백업서버는 Linux 기반이며 데이터베이스, 운영 및 홈페이지 서버 데이터의 백업과 조합 내부 스토리지 및 협회(2개소)에 주기적인 백업을 수행한다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:25b61b719c8c81b19873b702",
+          "quote": "요구\n사항\n정의 백업서버의구성\n세부\n",
+          "quote_start": 423,
+          "quote_end": 443,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.15",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00015",
+              "locator": "PDF p.15",
+              "char_start": 423,
+              "char_end": 443,
+              "chunk_start": 423,
+              "chunk_end": 443,
+              "page": 15
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 15,
+          "source_unit_alias": "E029",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:25b61b719c8c81b19873b702",
+          "quote": "내역\n○스토리지는 아래와 같이구성됨\n -운영체제\n · Linux\n",
+          "quote_start": 443,
+          "quote_end": 479,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.15",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00015",
+              "locator": "PDF p.15",
+              "char_start": 443,
+              "char_end": 479,
+              "chunk_start": 443,
+              "chunk_end": 479,
+              "page": 15
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 15,
+          "source_unit_alias": "E030",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:25b61b719c8c81b19873b702",
+          "quote": " -백업 툴\n○ 데이터베이스, 운영및홈페이지서버 데이터의백업\n○조합내부스토리지및협회(2개소)에주기적인백업",
+          "quote_start": 479,
+          "quote_end": 537,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.15",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00015",
+              "locator": "PDF p.15",
+              "char_start": 479,
+              "char_end": 537,
+              "chunk_start": 479,
+              "chunk_end": 537,
+              "page": 15
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 15,
+          "source_unit_alias": "E031",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 개발서버는 Linux 기반이고 운영·홈페이지와 동일한 환경으로 구축하며, 소스버전 관리 툴을 지원하고, 개발 서버에 필요한 라이센스는 테스트 라이센스를 사용하며, Web Logic 개발용 10User는 별도 라이센스로 견적에 포함한다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:779581248e79b52beaec1150",
+          "quote": "내역\n○개발서버는 아래와 같이 구성됨\n -운영체제\n · Linux\n",
+          "quote_start": 81,
+          "quote_end": 118,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.16",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00016",
+              "locator": "PDF p.16",
+              "char_start": 81,
+              "char_end": 118,
+              "chunk_start": 81,
+              "chunk_end": 118,
+              "page": 16
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 16,
+          "source_unit_alias": "E034",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:779581248e79b52beaec1150",
+          "quote": " -기타소프트웨어는운영, 홈페이지동일\n○프로젝트의소스버전관리를위한 툴을지원\n○개발및 테스트를위한서버로운영및홈페이지서버와\n 동일한환경으로구축\n",
+          "quote_start": 118,
+          "quote_end": 196,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.16",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00016",
+              "locator": "PDF p.16",
+              "char_start": 118,
+              "char_end": 196,
+              "chunk_start": 118,
+              "chunk_end": 196,
+              "page": 16
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 16,
+          "source_unit_alias": "E035",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:779581248e79b52beaec1150",
+          "quote": "○ 개발 서버에 필요한 라이센스는 테스트 라이센스를 부여받아\n사용\n○Web Logic개발용10User는 별도라이센스로견적에포함\n요구사항 고유번호 SFR-012\n",
+          "quote_start": 196,
+          "quote_end": 285,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.16",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00016",
+              "locator": "PDF p.16",
+              "char_start": 196,
+              "char_end": 285,
+              "chunk_start": 196,
+              "chunk_end": 285,
+              "page": 16
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 16,
+          "source_unit_alias": "E036",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 보안시스템에는 서버접근제어시스템(Secuve TOS3.0 사용중, 업그레이드 및 서버 추가), 웹방화벽(WAPPLES-100ECHO 사용중, Cloud 버전 업그레이드 또는 신규 도입), PCFilter/Web Filter(업그레이드 또는 신규 도입, PCFilter는 조합 내 서버형 도입, WebFilter는 웹서버 내 설치 및 클라우드버전 도입)가 포함되며 해당 소프트웨어 견적에 포함한다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:779581248e79b52beaec1150",
+          "quote": "정의 보안시스템의구성\n세부\n내역\n○서버접근제어시스템\n",
+          "quote_start": 327,
+          "quote_end": 356,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.16",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00016",
+              "locator": "PDF p.16",
+              "char_start": 327,
+              "char_end": 356,
+              "chunk_start": 327,
+              "chunk_end": 356,
+              "page": 16
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 16,
+          "source_unit_alias": "E038",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:779581248e79b52beaec1150",
+          "quote": " -Secuve TOS3.0사용중(업그레이드및서버추가)\n -운영,웹,DB(2),Test서버\n○웹방화벽\n -WAPPLES-100ECHO 사용중\n",
+          "quote_start": 356,
+          "quote_end": 435,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.16",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00016",
+              "locator": "PDF p.16",
+              "char_start": 356,
+              "char_end": 435,
+              "chunk_start": 356,
+              "chunk_end": 435,
+              "page": 16
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 16,
+          "source_unit_alias": "E039",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:779581248e79b52beaec1150",
+          "quote": " -Cloud버전업그레이드 또는 신규 도입\n○PCFilter/Web Filter\n -업그레이드 또는신규도입\n ·PCFilter :조합내서버형도입\n",
+          "quote_start": 435,
+          "quote_end": 516,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.16",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00016",
+              "locator": "PDF p.16",
+              "char_start": 435,
+              "char_end": 516,
+              "chunk_start": 435,
+              "chunk_end": 516,
+              "page": 16
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 16,
+          "source_unit_alias": "E040",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:779581248e79b52beaec1150",
+          "quote": " ·WebFilter : 웹서버내설치(클라우드버전도입)\n○ 해당소프트웨어견적에포함",
+          "quote_start": 516,
+          "quote_end": 561,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.16",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00016",
+              "locator": "PDF p.16",
+              "char_start": 516,
+              "char_end": 561,
+              "chunk_start": 516,
+              "chunk_end": 561,
+              "page": 16
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 16,
+          "source_unit_alias": "E041",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 프로젝트 완료 후 기존시스템의 운영종료와 조합 서버, 네트워크, 스토리지 및 UPS 자원 재배치 작업 지원, 기타 조합 요구 작업 지원이 포함된다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:f1ef4af8a6f8fa558e41e3d7",
+          "quote": "요구\n사항\n정의 기존시스템운영종료\n세부\n",
+          "quote_start": 61,
+          "quote_end": 83,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.17",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00017",
+              "locator": "PDF p.17",
+              "char_start": 61,
+              "char_end": 83,
+              "chunk_start": 61,
+              "chunk_end": 83,
+              "page": 17
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 17,
+          "source_unit_alias": "E043",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:f1ef4af8a6f8fa558e41e3d7",
+          "quote": "내역\n○프로젝트의 완료 후기존시스템의운영종료에 아래와 같이\n 지원\n -기존시스템의운영종료\n",
+          "quote_start": 83,
+          "quote_end": 133,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.17",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00017",
+              "locator": "PDF p.17",
+              "char_start": 83,
+              "char_end": 133,
+              "chunk_start": 83,
+              "chunk_end": 133,
+              "page": 17
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 17,
+          "source_unit_alias": "E044",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:f1ef4af8a6f8fa558e41e3d7",
+          "quote": " -조합서버, 네트워크,스토리지및 UPS자원재배치 작업\n 지원\n -기타조합에서요구하는 작업지원",
+          "quote_start": 133,
+          "quote_end": 185,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.17",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00017",
+              "locator": "PDF p.17",
+              "char_start": 133,
+              "char_end": 185,
+              "chunk_start": 133,
+              "chunk_end": 185,
+              "page": 17
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 17,
+          "source_unit_alias": "E045",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+      "category": "duration",
+      "text": "[duration|fact] 계약일로부터 사업완료일까지 착수일 기준 매주·매월 진도보고서를 제출하고, 사업 수행 중 일정지연이 발생하면 통합차원의 영향도 분석 후 발주자와 협의하여 일정 조정한다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:19ef77af13268cf3675df491",
+          "quote": "정의 참여인원,일정관리및과업변경\n세부\n내역\n○ 계약일로부터 사업완료일까지 착수일 기준 매주·매월 착수\n",
+          "quote_start": 401,
+          "quote_end": 458,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.24",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00024",
+              "locator": "PDF p.24",
+              "char_start": 401,
+              "char_end": 458,
+              "chunk_start": 401,
+              "chunk_end": 458,
+              "page": 24
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 24,
+          "source_unit_alias": "E097",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:19ef77af13268cf3675df491",
+          "quote": "계획서에제시된 사업수행절차에 따른 현재의 구체적인 공정\n및 진행사항, 업무 추진 상 문제점 및 대안방안 등에 대한\n진도보고서(WBS포함)를 작성·제출하여야 함\n○ 일정지연 발생 시 통합차원의 영향도 분석을 실시하고, 이를\n",
+          "quote_start": 458,
+          "quote_end": 582,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.24",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00024",
+              "locator": "PDF p.24",
+              "char_start": 458,
+              "char_end": 582,
+              "chunk_start": 458,
+              "chunk_end": 582,
+              "page": 24
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 24,
+          "source_unit_alias": "E098",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:19ef77af13268cf3675df491",
+          "quote": "토대로발주자와협의하여일정조정",
+          "quote_start": 582,
+          "quote_end": 597,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.24",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00024",
+              "locator": "PDF p.24",
+              "char_start": 582,
+              "char_end": 597,
+              "chunk_start": 582,
+              "chunk_end": 597,
+              "page": 24
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 24,
+          "source_unit_alias": "E099",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+      "category": "submission",
+      "text": "[submission_documents|fact] 입찰 제출서류는 이 제공 범위에서 확인되지 않는다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:57c5aab87a902385a121a978",
+          "quote": "- 11 -\n요구사항 고유번호 SFR-004\n요구사항 분류 기능요구사항\n요구사항 명칭 시스템구축공통사항\n",
+          "quote_start": 0,
+          "quote_end": 58,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.13",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00013",
+              "locator": "PDF p.13",
+              "char_start": 0,
+              "char_end": 58,
+              "chunk_start": 0,
+              "chunk_end": 58,
+              "page": 13
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 13,
+          "source_unit_alias": "E001",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+      "category": "submission",
+      "text": "[submission_deadline|fact] 제출기한은 이 제공 범위에서 확인되지 않는다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:57c5aab87a902385a121a978",
+          "quote": "- 11 -\n요구사항 고유번호 SFR-004\n요구사항 분류 기능요구사항\n요구사항 명칭 시스템구축공통사항\n",
+          "quote_start": 0,
+          "quote_end": 58,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.13",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00013",
+              "locator": "PDF p.13",
+              "char_start": 0,
+              "char_end": 58,
+              "chunk_start": 0,
+              "chunk_end": 58,
+              "page": 13
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 13,
+          "source_unit_alias": "E001",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+      "category": "submission",
+      "text": "[submission_method|fact] 제출방식은 이 제공 범위에서 확인되지 않는다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:57c5aab87a902385a121a978",
+          "quote": "- 11 -\n요구사항 고유번호 SFR-004\n요구사항 분류 기능요구사항\n요구사항 명칭 시스템구축공통사항\n",
+          "quote_start": 0,
+          "quote_end": 58,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.13",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00013",
+              "locator": "PDF p.13",
+              "char_start": 0,
+              "char_end": 58,
+              "chunk_start": 0,
+              "chunk_end": 58,
+              "page": 13
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 13,
+          "source_unit_alias": "E001",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+          "source_request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "source_origin": "source_units"
+        }
+      ]
+    }
+  ],
+  "rejected_claims": [],
+  "missing_information": [
+    "[budget_vat] 예산 금액과 부가세 포함/별도 조건 미확인",
+    "[eligibility] 참가·수행자격 미확인",
+    "[evaluation] 평가기준·배점·낙찰자 선정방식 미확인"
+  ],
+  "response_received": true,
+  "claims_checked": true,
+  "cache_hit": false,
+  "execution_mode": "live_openai",
+  "live_api": true,
+  "mapping_fingerprint": "7dbeefcd100a02f5542b506971e74a80779c3f633fd332dd9d7078f4ed94d947",
+  "original_usage": {
+    "input_tokens": 9196,
+    "output_tokens": 1418,
+    "total_tokens": 10614,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "usage_reported": true,
+    "latency_ms": 4957.132708004792
+  },
+  "semantic_quality_verified": false
+}

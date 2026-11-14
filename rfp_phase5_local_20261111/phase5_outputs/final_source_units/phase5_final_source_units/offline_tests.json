@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "tests_run": 76,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "actual_live_api_calls": 0,
+  "run_fingerprint": "2d4266bf29bdbcad8ad199454c0d83ed0cac8a7ff4df207a8fe7ae6b4740bd00"
+}

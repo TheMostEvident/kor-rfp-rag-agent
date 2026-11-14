@@ -1,0 +1,32 @@
+{
+  "batch_id": "B0011",
+  "job_key": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38:B0011:f5cccc0e486b",
+  "source_chunk_ids": [
+    "rfp:a0429ca4da021105:1c5d6a617241275916a89d80",
+    "rfp:a0429ca4da021105:0f23e23d9f117c60150939fa"
+  ],
+  "request_fingerprint": "f5cccc0e486be229c15c0fe891201a10f9fb59101998ac5b952b560a952ff5bc",
+  "kind": "source_units",
+  "status": "completed",
+  "claims": [],
+  "rejected_claims": [],
+  "missing_information": [
+    "제공된 근거에는 사업명, 발주기관, 목적, 예산·VAT, 수행기간, 참가·수행자격, 입찰 제출서류, 제출기한, 제출방식, 평가기준에 대한 사실이 없습니다."
+  ],
+  "response_received": true,
+  "claims_checked": true,
+  "cache_hit": false,
+  "execution_mode": "live_openai",
+  "live_api": true,
+  "mapping_fingerprint": "403ca71a1eabcf28426fe1152b2ce11927c33a521b3f27c8ceb8f0f3e9274186",
+  "original_usage": {
+    "input_tokens": 2889,
+    "output_tokens": 80,
+    "total_tokens": 2969,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "usage_reported": true,
+    "latency_ms": 1503.5653749946505
+  },
+  "semantic_quality_verified": false
+}

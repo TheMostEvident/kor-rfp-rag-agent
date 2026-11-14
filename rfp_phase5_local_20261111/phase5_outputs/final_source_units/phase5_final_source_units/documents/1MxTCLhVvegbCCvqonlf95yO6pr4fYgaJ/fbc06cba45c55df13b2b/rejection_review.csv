@@ -1,0 +1,6 @@
+﻿거절ID,배치ID,항목,거절사유,검증실패모델주장_진단용,판정,메모
+2d6681574b78614e-5,B0005,수행기간,field_or_source_validation_failed,"[duration|fact] 사업명은 부동산 등기정보 데이터 구축이며, 추정 사업기간 산정에는 업체 선정 및 계약, 기간계 연동 및 개발, 테스트 및 안정화 기간 등을 감안한 3개월과 안정화 이후 서비스의 계속 제공 9개월이 반영되어 있다.",,
+c7e023acf2086a87-7,B0006,평가기준,field_or_source_validation_failed,"[evaluation|fact] 사업 최종 산출물에 대해 정보보안전문가 또는 전문보안점검도구를 활용하여 보안 취약점을 점검하고, 도출된 취약점에 대한 개선을 완료한 뒤 그 결과를 정보보호책임자에게 제출해야 한다.",,
+c7e023acf2086a87-8,B0006,평가기준,field_or_source_validation_failed,"[evaluation|fact] 보안성검토 및 보안적합성검증 심의결과를 사업기간내에 반영하고, 그 결과를 별도 검수항목 ‘보안성검토 등 요구사항 이행결과‘로 분류하여 증빙자료와 함께 제출하여야 한다.",,
+ffd075d512f9c1af-1,B0007,주요 범위·필수요건,field_or_source_validation_failed,"[scope_requirements|fact] 사업 수행 중 및 완료 후에도 한국주택금융공사 내부자료 및 정보를 누설하지 않아야 하고, 당사 제공 자료와 본 용역과 관련하여 생성된 자료는 과업 완료 후 삭제하고 모두 반납해야 한다.",,
+5ac8e54dc4c2e564-10,B0010,참가·수행자격,field_or_source_validation_failed,"[eligibility|fact] 운영기관은 단일 기관이며, 사용자는 일반 국민 또는 기업이다.",,

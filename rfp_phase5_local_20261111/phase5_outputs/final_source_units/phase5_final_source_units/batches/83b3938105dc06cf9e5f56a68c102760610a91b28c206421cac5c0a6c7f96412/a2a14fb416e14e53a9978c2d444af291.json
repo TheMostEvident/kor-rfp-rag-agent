@@ -1,0 +1,1516 @@
+{
+  "batch_id": "B0002",
+  "job_key": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt:B0002:83b3938105dc",
+  "source_chunk_ids": [
+    "rfp:081719865dd99a38:b7e99adfd18c3d9a2345e4cd",
+    "rfp:081719865dd99a38:53884ab412efa223ab9aa856",
+    "rfp:081719865dd99a38:30994dcbb5e3bb6a5394dd94",
+    "rfp:081719865dd99a38:02714c7d57bdcf8ec65a5749",
+    "rfp:081719865dd99a38:8f9d5970a34ab091821c5069",
+    "rfp:081719865dd99a38:4146ee648165357c48ef4352",
+    "rfp:081719865dd99a38:ce9ed05ae3dffbb2f0823e9f",
+    "rfp:081719865dd99a38:2d5019e25c3bb63de746dca3",
+    "rfp:081719865dd99a38:aee988dc48585cc4510ef1a7",
+    "rfp:081719865dd99a38:239840b3abc6ef7f6d9abde8",
+    "rfp:081719865dd99a38:1799d75b99e5c7df49f05282",
+    "rfp:081719865dd99a38:b282153caef9355920a129f6",
+    "rfp:081719865dd99a38:bf361076b71f334616d771d9",
+    "rfp:081719865dd99a38:4bcc8f2b3ea4f9fc3defb3d5",
+    "rfp:081719865dd99a38:b0111d398a6eff5197bfe747",
+    "rfp:081719865dd99a38:fd8350f075d07ecd7aca923e",
+    "rfp:081719865dd99a38:5c7a08a8e9ab9c0812f36f94",
+    "rfp:081719865dd99a38:c2b6e2895a7454ef11a87800",
+    "rfp:081719865dd99a38:339eabee70e75d2cad50667a",
+    "rfp:081719865dd99a38:c94ab73bc24bd12642ca5d03",
+    "rfp:081719865dd99a38:4b24916e45454ab12fc194c3",
+    "rfp:081719865dd99a38:0cc657121d109858b84820ff",
+    "rfp:081719865dd99a38:918c2b986d9ea1e715263331",
+    "rfp:081719865dd99a38:99f942069ec39d66c3d5fba6",
+    "rfp:081719865dd99a38:26e695c05cd1e6361cf89511",
+    "rfp:081719865dd99a38:9a6c8703e959a8b2feab7534",
+    "rfp:081719865dd99a38:b37cb5ae7566fdad9bc69945",
+    "rfp:081719865dd99a38:c58499bb264d5c93a8a39ed6",
+    "rfp:081719865dd99a38:c5c7a717a0918b6c5c84eafe",
+    "rfp:081719865dd99a38:2f5d150cdd17743efdcb11fa",
+    "rfp:081719865dd99a38:0c270dfbf1a7e755c91f7702",
+    "rfp:081719865dd99a38:9e530d520420a607101268e8"
+  ],
+  "request_fingerprint": "83b3938105dc06cf9e5f56a68c102760610a91b28c206421cac5c0a6c7f96412",
+  "kind": "source_units",
+  "status": "completed",
+  "claims": [
+    {
+      "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+      "category": "overview",
+      "text": "[project_name|fact] 2027년 글로벌 패션브랜드 육성 용역",
+      "citations": [
+        {
+          "chunk_id": "rfp:081719865dd99a38:c5c7a717a0918b6c5c84eafe",
+          "quote": "2. 용   역   명 : 2027년 글로벌 패션브랜드 육성 용역\n3. 회   사   명 :\n4. 제   출   자 :\n위 건 용역 입찰 제안서 및 관련서류를 접수하였음을 확인합니다.\n",
+          "quote_start": 96,
+          "quote_end": 199,
+          "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+          "sha256": "081719865dd99a38ba822b39869efcf75b37add88f8d07741c8f8bf141060484",
+          "file_name": "서울특별시_2026_2027년 글로벌 패션브랜드 육성 용역_제안요청서.hwpx",
+          "locator": "Contents/section0.xml / paragraph 802 / segment 1 / Contents/section0.xml / paragraph 803 / segment 1 / Contents/section0.xml / paragraph 804 / segment 1 / Contents/section0.xml / paragraph 806 / segment 1",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000802:seg01",
+              "locator": "Contents/section0.xml / paragraph 802 / segment 1",
+              "char_start": 0,
+              "char_end": 36,
+              "chunk_start": 96,
+              "chunk_end": 132,
+              "section": "Contents/section0.xml"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000803:seg01",
+              "locator": "Contents/section0.xml / paragraph 803 / segment 1",
+              "char_start": 0,
+              "char_end": 14,
+              "chunk_start": 133,
+              "chunk_end": 147,
+              "section": "Contents/section0.xml"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000804:seg01",
+              "locator": "Contents/section0.xml / paragraph 804 / segment 1",
+              "char_start": 0,
+              "char_end": 14,
+              "chunk_start": 148,
+              "chunk_end": 162,
+              "section": "Contents/section0.xml"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000806:seg01",
+              "locator": "Contents/section0.xml / paragraph 806 / segment 1",
+              "char_start": 0,
+              "char_end": 35,
+              "chunk_start": 163,
+              "chunk_end": 198,
+              "section": "Contents/section0.xml"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "Contents/section0.xml",
+          "source_unit_alias": "E096",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "8055a406d8a6d34472bf588fab328844a210ece13207e36ad120a0797a57f075",
+          "source_request_fingerprint": "83b3938105dc06cf9e5f56a68c102760610a91b28c206421cac5c0a6c7f96412",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:081719865dd99a38:2f5d150cdd17743efdcb11fa",
+          "quote": "입  찰  건  명\n2027년 글로벌 패션브랜드 육성 용역\n입\n찰\n",
+          "quote_start": 168,
+          "quote_end": 205,
+          "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+          "sha256": "081719865dd99a38ba822b39869efcf75b37add88f8d07741c8f8bf141060484",
+          "file_name": "서울특별시_2026_2027년 글로벌 패션브랜드 육성 용역_제안요청서.hwpx",
+          "locator": "Contents/section0.xml / paragraph 839 / segment 1 / Contents/section0.xml / paragraph 840 / segment 1 / Contents/section0.xml / paragraph 841 / segment 1 / Contents/section0.xml / paragraph 842 / segment 1",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000839:seg01",
+              "locator": "Contents/section0.xml / paragraph 839 / segment 1",
+              "char_start": 0,
+              "char_end": 10,
+              "chunk_start": 168,
+              "chunk_end": 178,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00034",
+              "row": 6,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000840:seg01",
+              "locator": "Contents/section0.xml / paragraph 840 / segment 1",
+              "char_start": 0,
+              "char_end": 21,
+              "chunk_start": 179,
+              "chunk_end": 200,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00034",
+              "row": 6,
+              "col": 2
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000841:seg01",
+              "locator": "Contents/section0.xml / paragraph 841 / segment 1",
+              "char_start": 0,
+              "char_end": 1,
+              "chunk_start": 201,
+              "chunk_end": 202,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00034",
+              "row": 7,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000842:seg01",
+              "locator": "Contents/section0.xml / paragraph 842 / segment 1",
+              "char_start": 0,
+              "char_end": 1,
+              "chunk_start": 203,
+              "chunk_end": 204,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00034",
+              "row": 7,
+              "col": 0
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "Contents/section0.xml",
+          "source_unit_alias": "E103",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "8055a406d8a6d34472bf588fab328844a210ece13207e36ad120a0797a57f075",
+          "source_request_fingerprint": "83b3938105dc06cf9e5f56a68c102760610a91b28c206421cac5c0a6c7f96412",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+      "category": "overview",
+      "text": "[purpose|fact] 아시아 및 밀라노 패션시장 및 브랜드 특성을 고려하여 프로그램에 참여할 브랜드 제시(10개 브랜드 내외)",
+      "citations": [
+        {
+          "chunk_id": "rfp:081719865dd99a38:1799d75b99e5c7df49f05282",
+          "quote": "- 관련 프로젝트 수행 실적과 성과\n- 추가 제안사항, 개선방안 등 제시\n※ 아시아 및 밀라노 패션시장 및 브랜드 특성을 고려하여 프로그램에 참여할 브랜드 제시(10개 브랜드 내외)\n20\n",
+          "quote_start": 354,
+          "quote_end": 459,
+          "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+          "sha256": "081719865dd99a38ba822b39869efcf75b37add88f8d07741c8f8bf141060484",
+          "file_name": "서울특별시_2026_2027년 글로벌 패션브랜드 육성 용역_제안요청서.hwpx",
+          "locator": "Contents/section0.xml / paragraph 629 / segment 1 / Contents/section0.xml / paragraph 630 / segment 1 / Contents/section0.xml / paragraph 631 / segment 1 / Contents/section0.xml / paragraph 632 / segment 1",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000629:seg01",
+              "locator": "Contents/section0.xml / paragraph 629 / segment 1",
+              "char_start": 0,
+              "char_end": 19,
+              "chunk_start": 354,
+              "chunk_end": 373,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00023",
+              "row": 3,
+              "col": 2
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000630:seg01",
+              "locator": "Contents/section0.xml / paragraph 630 / segment 1",
+              "char_start": 0,
+              "char_end": 20,
+              "chunk_start": 374,
+              "chunk_end": 394,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00023",
+              "row": 3,
+              "col": 2
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000631:seg01",
+              "locator": "Contents/section0.xml / paragraph 631 / segment 1",
+              "char_start": 0,
+              "char_end": 60,
+              "chunk_start": 395,
+              "chunk_end": 455,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00023",
+              "row": 3,
+              "col": 2
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000632:seg01",
+              "locator": "Contents/section0.xml / paragraph 632 / segment 1",
+              "char_start": 0,
+              "char_end": 2,
+              "chunk_start": 456,
+              "chunk_end": 458,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00023",
+              "row": 3,
+              "col": 3
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "Contents/section0.xml",
+          "source_unit_alias": "E047",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "8055a406d8a6d34472bf588fab328844a210ece13207e36ad120a0797a57f075",
+          "source_request_fingerprint": "83b3938105dc06cf9e5f56a68c102760610a91b28c206421cac5c0a6c7f96412",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 제안사는 본 사업과 관련하여 취득한 업무 내용에 대하여 제3자에게 누설하여서는 안 되며, 발주부서가 요구하는 보안사항을 철저히 준수하여야 함",
+      "citations": [
+        {
+          "chunk_id": "rfp:081719865dd99a38:4b24916e45454ab12fc194c3",
+          "quote": "1) 제안사는 본 사업과 관련하여 취득한 업무 내용에 대하여 제3자에게 누설하여서는 안 되며, 발주부서가 요구하는 보안사항을 철저히 준수하여야 함\n2) 제안요청서 및 관련 자료는 제안서 작성이외의 목적으로 사용해서는 안됨\n3) 제안사가 제출한 모든 자료 및 문서는 제안사의 권익 보호를 위하여 외부에 공개되지 않음을 원칙으로 함\n4) 제안내용에 대한 확인을 위하여 추가자료 요청 또는 현지실사를 할 수 있으며, 입찰참가자는 이에 응하여야 함\n",
+          "quote_start": 217,
+          "quote_end": 464,
+          "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+          "sha256": "081719865dd99a38ba822b39869efcf75b37add88f8d07741c8f8bf141060484",
+          "file_name": "서울특별시_2026_2027년 글로벌 패션브랜드 육성 용역_제안요청서.hwpx",
+          "locator": "Contents/section0.xml / paragraph 698 / segment 1 / Contents/section0.xml / paragraph 699 / segment 1 / Contents/section0.xml / paragraph 700 / segment 1 / Contents/section0.xml / paragraph 701 / segment 1",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000698:seg01",
+              "locator": "Contents/section0.xml / paragraph 698 / segment 1",
+              "char_start": 0,
+              "char_end": 81,
+              "chunk_start": 217,
+              "chunk_end": 298,
+              "section": "Contents/section0.xml"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000699:seg01",
+              "locator": "Contents/section0.xml / paragraph 699 / segment 1",
+              "char_start": 0,
+              "char_end": 41,
+              "chunk_start": 299,
+              "chunk_end": 340,
+              "section": "Contents/section0.xml"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000700:seg01",
+              "locator": "Contents/section0.xml / paragraph 700 / segment 1",
+              "char_start": 0,
+              "char_end": 59,
+              "chunk_start": 341,
+              "chunk_end": 400,
+              "section": "Contents/section0.xml"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000701:seg01",
+              "locator": "Contents/section0.xml / paragraph 701 / segment 1",
+              "char_start": 0,
+              "char_end": 62,
+              "chunk_start": 401,
+              "chunk_end": 463,
+              "section": "Contents/section0.xml"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "Contents/section0.xml",
+          "source_unit_alias": "E071",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "8055a406d8a6d34472bf588fab328844a210ece13207e36ad120a0797a57f075",
+          "source_request_fingerprint": "83b3938105dc06cf9e5f56a68c102760610a91b28c206421cac5c0a6c7f96412",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+      "category": "submission",
+      "text": "[submission_documents|fact] 제안서(11부) 및 관련서류. (USB 1매 별도)",
+      "citations": [
+        {
+          "chunk_id": "rfp:081719865dd99a38:b37cb5ae7566fdad9bc69945",
+          "quote": "붙  임: 제안서(11부) 및 관련서류. (USB 1매 별도)  끝.\n2026.   .    .",
+          "quote_start": 238,
+          "quote_end": 291,
+          "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+          "sha256": "081719865dd99a38ba822b39869efcf75b37add88f8d07741c8f8bf141060484",
+          "file_name": "서울특별시_2026_2027년 글로벌 패션브랜드 육성 용역_제안요청서.hwpx",
+          "locator": "Contents/section0.xml / paragraph 770 / segment 1 / Contents/section0.xml / paragraph 772 / segment 1",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000770:seg01",
+              "locator": "Contents/section0.xml / paragraph 770 / segment 1",
+              "char_start": 0,
+              "char_end": 38,
+              "chunk_start": 238,
+              "chunk_end": 276,
+              "section": "Contents/section0.xml"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000772:seg01",
+              "locator": "Contents/section0.xml / paragraph 772 / segment 1",
+              "char_start": 0,
+              "char_end": 14,
+              "chunk_start": 277,
+              "chunk_end": 291,
+              "section": "Contents/section0.xml"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "Contents/section0.xml",
+          "source_unit_alias": "E091",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "8055a406d8a6d34472bf588fab328844a210ece13207e36ad120a0797a57f075",
+          "source_request_fingerprint": "83b3938105dc06cf9e5f56a68c102760610a91b28c206421cac5c0a6c7f96412",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+      "category": "submission",
+      "text": "[submission_documents|fact] 입찰참가 신청 접수증, 입찰참가 신청서, 위임장 / 재직증명서, 청렴계약 이행서약서, 근로자 권리보호 이행서약서, 제안서 제출 공문(양식), 사업수행능력평가서 표지, 제안기관 일반현황, 사업수행 조직 및 역할분담 체계, 참여인력 현황(총괄표), 참여인력 이력사항(개인별), 용역 수행실적, 용역 수행실적증명서, 제안기관 경영상태, 서약서, 정량적 평가지표 자가진단표, 사업내용제안서 표지, 사업비 편성내역 요약서, 가격제안서, 공동수급협정서, 안전보건관리 준수 서약서",
+      "citations": [
+        {
+          "chunk_id": "rfp:081719865dd99a38:918c2b986d9ea1e715263331",
+          "quote": "붙임\n제안서 제출 시 구비서류 목록",
+          "quote_start": 0,
+          "quote_end": 19,
+          "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+          "sha256": "081719865dd99a38ba822b39869efcf75b37add88f8d07741c8f8bf141060484",
+          "file_name": "서울특별시_2026_2027년 글로벌 패션브랜드 육성 용역_제안요청서.hwpx",
+          "locator": "Contents/section0.xml / paragraph 712 / segment 1 / Contents/section0.xml / paragraph 714 / segment 1",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000712:seg01",
+              "locator": "Contents/section0.xml / paragraph 712 / segment 1",
+              "char_start": 0,
+              "char_end": 2,
+              "chunk_start": 0,
+              "chunk_end": 2,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00028",
+              "row": 0,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000714:seg01",
+              "locator": "Contents/section0.xml / paragraph 714 / segment 1",
+              "char_start": 0,
+              "char_end": 16,
+              "chunk_start": 3,
+              "chunk_end": 19,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00028",
+              "row": 0,
+              "col": 2
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "Contents/section0.xml",
+          "source_unit_alias": "E076",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "8055a406d8a6d34472bf588fab328844a210ece13207e36ad120a0797a57f075",
+          "source_request_fingerprint": "83b3938105dc06cf9e5f56a68c102760610a91b28c206421cac5c0a6c7f96412",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:081719865dd99a38:99f942069ec39d66c3d5fba6",
+          "quote": "1) 입찰참가 신청 접수증\n<서식 제1호>\n2) 입찰참가 신청서\n<서식 제2호>\n",
+          "quote_start": 0,
+          "quote_end": 45,
+          "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+          "sha256": "081719865dd99a38ba822b39869efcf75b37add88f8d07741c8f8bf141060484",
+          "file_name": "서울특별시_2026_2027년 글로벌 패션브랜드 육성 용역_제안요청서.hwpx",
+          "locator": "Contents/section0.xml / paragraph 717 / segment 1 / Contents/section0.xml / paragraph 718 / segment 1 / Contents/section0.xml / paragraph 719 / segment 1 / Contents/section0.xml / paragraph 720 / segment 1",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000717:seg01",
+              "locator": "Contents/section0.xml / paragraph 717 / segment 1",
+              "char_start": 0,
+              "char_end": 14,
+              "chunk_start": 0,
+              "chunk_end": 14,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 0,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000718:seg01",
+              "locator": "Contents/section0.xml / paragraph 718 / segment 1",
+              "char_start": 0,
+              "char_end": 8,
+              "chunk_start": 15,
+              "chunk_end": 23,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 0,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000719:seg01",
+              "locator": "Contents/section0.xml / paragraph 719 / segment 1",
+              "char_start": 0,
+              "char_end": 11,
+              "chunk_start": 24,
+              "chunk_end": 35,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 1,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000720:seg01",
+              "locator": "Contents/section0.xml / paragraph 720 / segment 1",
+              "char_start": 0,
+              "char_end": 8,
+              "chunk_start": 36,
+              "chunk_end": 44,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 1,
+              "col": 1
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "Contents/section0.xml",
+          "source_unit_alias": "E077",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "8055a406d8a6d34472bf588fab328844a210ece13207e36ad120a0797a57f075",
+          "source_request_fingerprint": "83b3938105dc06cf9e5f56a68c102760610a91b28c206421cac5c0a6c7f96412",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:081719865dd99a38:99f942069ec39d66c3d5fba6",
+          "quote": "3) 위임장 / 재직증명서\n<서식 제3호>\n4) 청렴계약 이행서약서\n<서식 제4호>\n",
+          "quote_start": 45,
+          "quote_end": 92,
+          "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+          "sha256": "081719865dd99a38ba822b39869efcf75b37add88f8d07741c8f8bf141060484",
+          "file_name": "서울특별시_2026_2027년 글로벌 패션브랜드 육성 용역_제안요청서.hwpx",
+          "locator": "Contents/section0.xml / paragraph 721 / segment 1 / Contents/section0.xml / paragraph 722 / segment 1 / Contents/section0.xml / paragraph 723 / segment 1 / Contents/section0.xml / paragraph 724 / segment 1",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000721:seg01",
+              "locator": "Contents/section0.xml / paragraph 721 / segment 1",
+              "char_start": 0,
+              "char_end": 14,
+              "chunk_start": 45,
+              "chunk_end": 59,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 2,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000722:seg01",
+              "locator": "Contents/section0.xml / paragraph 722 / segment 1",
+              "char_start": 0,
+              "char_end": 8,
+              "chunk_start": 60,
+              "chunk_end": 68,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 2,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000723:seg01",
+              "locator": "Contents/section0.xml / paragraph 723 / segment 1",
+              "char_start": 0,
+              "char_end": 13,
+              "chunk_start": 69,
+              "chunk_end": 82,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 3,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000724:seg01",
+              "locator": "Contents/section0.xml / paragraph 724 / segment 1",
+              "char_start": 0,
+              "char_end": 8,
+              "chunk_start": 83,
+              "chunk_end": 91,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 3,
+              "col": 1
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "Contents/section0.xml",
+          "source_unit_alias": "E078",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "8055a406d8a6d34472bf588fab328844a210ece13207e36ad120a0797a57f075",
+          "source_request_fingerprint": "83b3938105dc06cf9e5f56a68c102760610a91b28c206421cac5c0a6c7f96412",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:081719865dd99a38:99f942069ec39d66c3d5fba6",
+          "quote": "5) 근로자 권리보호 이행서약서\n<서식 제5호>\n6) 제안서 제출 공문(양식)\n<서식 제6호>\n",
+          "quote_start": 92,
+          "quote_end": 145,
+          "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+          "sha256": "081719865dd99a38ba822b39869efcf75b37add88f8d07741c8f8bf141060484",
+          "file_name": "서울특별시_2026_2027년 글로벌 패션브랜드 육성 용역_제안요청서.hwpx",
+          "locator": "Contents/section0.xml / paragraph 725 / segment 1 / Contents/section0.xml / paragraph 726 / segment 1 / Contents/section0.xml / paragraph 727 / segment 1 / Contents/section0.xml / paragraph 728 / segment 1",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000725:seg01",
+              "locator": "Contents/section0.xml / paragraph 725 / segment 1",
+              "char_start": 0,
+              "char_end": 17,
+              "chunk_start": 92,
+              "chunk_end": 109,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 4,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000726:seg01",
+              "locator": "Contents/section0.xml / paragraph 726 / segment 1",
+              "char_start": 0,
+              "char_end": 8,
+              "chunk_start": 110,
+              "chunk_end": 118,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 4,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000727:seg01",
+              "locator": "Contents/section0.xml / paragraph 727 / segment 1",
+              "char_start": 0,
+              "char_end": 16,
+              "chunk_start": 119,
+              "chunk_end": 135,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 5,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000728:seg01",
+              "locator": "Contents/section0.xml / paragraph 728 / segment 1",
+              "char_start": 0,
+              "char_end": 8,
+              "chunk_start": 136,
+              "chunk_end": 144,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 5,
+              "col": 1
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "Contents/section0.xml",
+          "source_unit_alias": "E079",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "8055a406d8a6d34472bf588fab328844a210ece13207e36ad120a0797a57f075",
+          "source_request_fingerprint": "83b3938105dc06cf9e5f56a68c102760610a91b28c206421cac5c0a6c7f96412",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:081719865dd99a38:99f942069ec39d66c3d5fba6",
+          "quote": "7) 사업수행능력평가서 표지\n<서식 제7호>\n8) 제안기관 일반현황\n<서식 제8호>\n",
+          "quote_start": 145,
+          "quote_end": 192,
+          "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+          "sha256": "081719865dd99a38ba822b39869efcf75b37add88f8d07741c8f8bf141060484",
+          "file_name": "서울특별시_2026_2027년 글로벌 패션브랜드 육성 용역_제안요청서.hwpx",
+          "locator": "Contents/section0.xml / paragraph 729 / segment 1 / Contents/section0.xml / paragraph 730 / segment 1 / Contents/section0.xml / paragraph 731 / segment 1 / Contents/section0.xml / paragraph 732 / segment 1",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000729:seg01",
+              "locator": "Contents/section0.xml / paragraph 729 / segment 1",
+              "char_start": 0,
+              "char_end": 15,
+              "chunk_start": 145,
+              "chunk_end": 160,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 6,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000730:seg01",
+              "locator": "Contents/section0.xml / paragraph 730 / segment 1",
+              "char_start": 0,
+              "char_end": 8,
+              "chunk_start": 161,
+              "chunk_end": 169,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 6,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000731:seg01",
+              "locator": "Contents/section0.xml / paragraph 731 / segment 1",
+              "char_start": 0,
+              "char_end": 12,
+              "chunk_start": 170,
+              "chunk_end": 182,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 7,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000732:seg01",
+              "locator": "Contents/section0.xml / paragraph 732 / segment 1",
+              "char_start": 0,
+              "char_end": 8,
+              "chunk_start": 183,
+              "chunk_end": 191,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 7,
+              "col": 1
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "Contents/section0.xml",
+          "source_unit_alias": "E080",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "8055a406d8a6d34472bf588fab328844a210ece13207e36ad120a0797a57f075",
+          "source_request_fingerprint": "83b3938105dc06cf9e5f56a68c102760610a91b28c206421cac5c0a6c7f96412",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:081719865dd99a38:99f942069ec39d66c3d5fba6",
+          "quote": "9) 사업수행 조직 및 역할분담 체계\n<서식 제9호>\n10) 참여인력 현황(총괄표)\n<서식 제10호>\n",
+          "quote_start": 192,
+          "quote_end": 249,
+          "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+          "sha256": "081719865dd99a38ba822b39869efcf75b37add88f8d07741c8f8bf141060484",
+          "file_name": "서울특별시_2026_2027년 글로벌 패션브랜드 육성 용역_제안요청서.hwpx",
+          "locator": "Contents/section0.xml / paragraph 733 / segment 1 / Contents/section0.xml / paragraph 734 / segment 1 / Contents/section0.xml / paragraph 735 / segment 1 / Contents/section0.xml / paragraph 736 / segment 1",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000733:seg01",
+              "locator": "Contents/section0.xml / paragraph 733 / segment 1",
+              "char_start": 0,
+              "char_end": 20,
+              "chunk_start": 192,
+              "chunk_end": 212,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 8,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000734:seg01",
+              "locator": "Contents/section0.xml / paragraph 734 / segment 1",
+              "char_start": 0,
+              "char_end": 8,
+              "chunk_start": 213,
+              "chunk_end": 221,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 8,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000735:seg01",
+              "locator": "Contents/section0.xml / paragraph 735 / segment 1",
+              "char_start": 0,
+              "char_end": 16,
+              "chunk_start": 222,
+              "chunk_end": 238,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 9,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000736:seg01",
+              "locator": "Contents/section0.xml / paragraph 736 / segment 1",
+              "char_start": 0,
+              "char_end": 9,
+              "chunk_start": 239,
+              "chunk_end": 248,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 9,
+              "col": 1
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "Contents/section0.xml",
+          "source_unit_alias": "E081",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "8055a406d8a6d34472bf588fab328844a210ece13207e36ad120a0797a57f075",
+          "source_request_fingerprint": "83b3938105dc06cf9e5f56a68c102760610a91b28c206421cac5c0a6c7f96412",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:081719865dd99a38:99f942069ec39d66c3d5fba6",
+          "quote": "11) 참여인력 이력사항(개인별)\n<서식 제11호>\n12) 용역 수행실적\n<서식 제12호>\n",
+          "quote_start": 249,
+          "quote_end": 300,
+          "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+          "sha256": "081719865dd99a38ba822b39869efcf75b37add88f8d07741c8f8bf141060484",
+          "file_name": "서울특별시_2026_2027년 글로벌 패션브랜드 육성 용역_제안요청서.hwpx",
+          "locator": "Contents/section0.xml / paragraph 737 / segment 1 / Contents/section0.xml / paragraph 738 / segment 1 / Contents/section0.xml / paragraph 739 / segment 1 / Contents/section0.xml / paragraph 740 / segment 1",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000737:seg01",
+              "locator": "Contents/section0.xml / paragraph 737 / segment 1",
+              "char_start": 0,
+              "char_end": 18,
+              "chunk_start": 249,
+              "chunk_end": 267,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 10,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000738:seg01",
+              "locator": "Contents/section0.xml / paragraph 738 / segment 1",
+              "char_start": 0,
+              "char_end": 9,
+              "chunk_start": 268,
+              "chunk_end": 277,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 10,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000739:seg01",
+              "locator": "Contents/section0.xml / paragraph 739 / segment 1",
+              "char_start": 0,
+              "char_end": 11,
+              "chunk_start": 278,
+              "chunk_end": 289,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 11,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000740:seg01",
+              "locator": "Contents/section0.xml / paragraph 740 / segment 1",
+              "char_start": 0,
+              "char_end": 9,
+              "chunk_start": 290,
+              "chunk_end": 299,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 11,
+              "col": 1
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "Contents/section0.xml",
+          "source_unit_alias": "E082",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "8055a406d8a6d34472bf588fab328844a210ece13207e36ad120a0797a57f075",
+          "source_request_fingerprint": "83b3938105dc06cf9e5f56a68c102760610a91b28c206421cac5c0a6c7f96412",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:081719865dd99a38:99f942069ec39d66c3d5fba6",
+          "quote": "13) 용역 수행실적증명서\n<서식 제13호>\n14) 제안기관 경영상태\n<서식 제14호>\n",
+          "quote_start": 300,
+          "quote_end": 349,
+          "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+          "sha256": "081719865dd99a38ba822b39869efcf75b37add88f8d07741c8f8bf141060484",
+          "file_name": "서울특별시_2026_2027년 글로벌 패션브랜드 육성 용역_제안요청서.hwpx",
+          "locator": "Contents/section0.xml / paragraph 741 / segment 1 / Contents/section0.xml / paragraph 742 / segment 1 / Contents/section0.xml / paragraph 743 / segment 1 / Contents/section0.xml / paragraph 744 / segment 1",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000741:seg01",
+              "locator": "Contents/section0.xml / paragraph 741 / segment 1",
+              "char_start": 0,
+              "char_end": 14,
+              "chunk_start": 300,
+              "chunk_end": 314,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 12,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000742:seg01",
+              "locator": "Contents/section0.xml / paragraph 742 / segment 1",
+              "char_start": 0,
+              "char_end": 9,
+              "chunk_start": 315,
+              "chunk_end": 324,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 12,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000743:seg01",
+              "locator": "Contents/section0.xml / paragraph 743 / segment 1",
+              "char_start": 0,
+              "char_end": 13,
+              "chunk_start": 325,
+              "chunk_end": 338,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 13,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000744:seg01",
+              "locator": "Contents/section0.xml / paragraph 744 / segment 1",
+              "char_start": 0,
+              "char_end": 9,
+              "chunk_start": 339,
+              "chunk_end": 348,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 13,
+              "col": 1
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "Contents/section0.xml",
+          "source_unit_alias": "E083",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "8055a406d8a6d34472bf588fab328844a210ece13207e36ad120a0797a57f075",
+          "source_request_fingerprint": "83b3938105dc06cf9e5f56a68c102760610a91b28c206421cac5c0a6c7f96412",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:081719865dd99a38:99f942069ec39d66c3d5fba6",
+          "quote": "15) 서약서\n<서식 제15호>\n16) 정량적 평가지표 자가진단표\n<서식 제16호>\n",
+          "quote_start": 349,
+          "quote_end": 396,
+          "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+          "sha256": "081719865dd99a38ba822b39869efcf75b37add88f8d07741c8f8bf141060484",
+          "file_name": "서울특별시_2026_2027년 글로벌 패션브랜드 육성 용역_제안요청서.hwpx",
+          "locator": "Contents/section0.xml / paragraph 745 / segment 1 / Contents/section0.xml / paragraph 746 / segment 1 / Contents/section0.xml / paragraph 747 / segment 1 / Contents/section0.xml / paragraph 748 / segment 1",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000745:seg01",
+              "locator": "Contents/section0.xml / paragraph 745 / segment 1",
+              "char_start": 0,
+              "char_end": 7,
+              "chunk_start": 349,
+              "chunk_end": 356,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 14,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000746:seg01",
+              "locator": "Contents/section0.xml / paragraph 746 / segment 1",
+              "char_start": 0,
+              "char_end": 9,
+              "chunk_start": 357,
+              "chunk_end": 366,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 14,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000747:seg01",
+              "locator": "Contents/section0.xml / paragraph 747 / segment 1",
+              "char_start": 0,
+              "char_end": 18,
+              "chunk_start": 367,
+              "chunk_end": 385,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 15,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000748:seg01",
+              "locator": "Contents/section0.xml / paragraph 748 / segment 1",
+              "char_start": 0,
+              "char_end": 9,
+              "chunk_start": 386,
+              "chunk_end": 395,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 15,
+              "col": 1
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "Contents/section0.xml",
+          "source_unit_alias": "E084",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "8055a406d8a6d34472bf588fab328844a210ece13207e36ad120a0797a57f075",
+          "source_request_fingerprint": "83b3938105dc06cf9e5f56a68c102760610a91b28c206421cac5c0a6c7f96412",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:081719865dd99a38:99f942069ec39d66c3d5fba6",
+          "quote": "17) 사업내용제안서 표지\n<서식 제17호>\n18) 사업비 편성내역 요약서\n<서식 제18호>\n",
+          "quote_start": 396,
+          "quote_end": 448,
+          "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+          "sha256": "081719865dd99a38ba822b39869efcf75b37add88f8d07741c8f8bf141060484",
+          "file_name": "서울특별시_2026_2027년 글로벌 패션브랜드 육성 용역_제안요청서.hwpx",
+          "locator": "Contents/section0.xml / paragraph 749 / segment 1 / Contents/section0.xml / paragraph 750 / segment 1 / Contents/section0.xml / paragraph 751 / segment 1 / Contents/section0.xml / paragraph 752 / segment 1",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000749:seg01",
+              "locator": "Contents/section0.xml / paragraph 749 / segment 1",
+              "char_start": 0,
+              "char_end": 14,
+              "chunk_start": 396,
+              "chunk_end": 410,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 16,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000750:seg01",
+              "locator": "Contents/section0.xml / paragraph 750 / segment 1",
+              "char_start": 0,
+              "char_end": 9,
+              "chunk_start": 411,
+              "chunk_end": 420,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 16,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000751:seg01",
+              "locator": "Contents/section0.xml / paragraph 751 / segment 1",
+              "char_start": 0,
+              "char_end": 16,
+              "chunk_start": 421,
+              "chunk_end": 437,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 17,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000752:seg01",
+              "locator": "Contents/section0.xml / paragraph 752 / segment 1",
+              "char_start": 0,
+              "char_end": 9,
+              "chunk_start": 438,
+              "chunk_end": 447,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 17,
+              "col": 1
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "Contents/section0.xml",
+          "source_unit_alias": "E085",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "8055a406d8a6d34472bf588fab328844a210ece13207e36ad120a0797a57f075",
+          "source_request_fingerprint": "83b3938105dc06cf9e5f56a68c102760610a91b28c206421cac5c0a6c7f96412",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:081719865dd99a38:99f942069ec39d66c3d5fba6",
+          "quote": "19) 가격제안서\n<서식 제19호>\n20) 공동수급협정서\n<서식 제20호>\n",
+          "quote_start": 448,
+          "quote_end": 490,
+          "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+          "sha256": "081719865dd99a38ba822b39869efcf75b37add88f8d07741c8f8bf141060484",
+          "file_name": "서울특별시_2026_2027년 글로벌 패션브랜드 육성 용역_제안요청서.hwpx",
+          "locator": "Contents/section0.xml / paragraph 753 / segment 1 / Contents/section0.xml / paragraph 754 / segment 1 / Contents/section0.xml / paragraph 755 / segment 1 / Contents/section0.xml / paragraph 756 / segment 1",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000753:seg01",
+              "locator": "Contents/section0.xml / paragraph 753 / segment 1",
+              "char_start": 0,
+              "char_end": 9,
+              "chunk_start": 448,
+              "chunk_end": 457,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 18,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000754:seg01",
+              "locator": "Contents/section0.xml / paragraph 754 / segment 1",
+              "char_start": 0,
+              "char_end": 9,
+              "chunk_start": 458,
+              "chunk_end": 467,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 18,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000755:seg01",
+              "locator": "Contents/section0.xml / paragraph 755 / segment 1",
+              "char_start": 0,
+              "char_end": 11,
+              "chunk_start": 468,
+              "chunk_end": 479,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 19,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000756:seg01",
+              "locator": "Contents/section0.xml / paragraph 756 / segment 1",
+              "char_start": 0,
+              "char_end": 9,
+              "chunk_start": 480,
+              "chunk_end": 489,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 19,
+              "col": 1
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "Contents/section0.xml",
+          "source_unit_alias": "E086",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "8055a406d8a6d34472bf588fab328844a210ece13207e36ad120a0797a57f075",
+          "source_request_fingerprint": "83b3938105dc06cf9e5f56a68c102760610a91b28c206421cac5c0a6c7f96412",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:081719865dd99a38:99f942069ec39d66c3d5fba6",
+          "quote": "21) 안전보건관리 준수 서약서\n<서식 제21호>",
+          "quote_start": 490,
+          "quote_end": 517,
+          "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+          "sha256": "081719865dd99a38ba822b39869efcf75b37add88f8d07741c8f8bf141060484",
+          "file_name": "서울특별시_2026_2027년 글로벌 패션브랜드 육성 용역_제안요청서.hwpx",
+          "locator": "Contents/section0.xml / paragraph 757 / segment 1 / Contents/section0.xml / paragraph 758 / segment 1",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000757:seg01",
+              "locator": "Contents/section0.xml / paragraph 757 / segment 1",
+              "char_start": 0,
+              "char_end": 17,
+              "chunk_start": 490,
+              "chunk_end": 507,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 20,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000758:seg01",
+              "locator": "Contents/section0.xml / paragraph 758 / segment 1",
+              "char_start": 0,
+              "char_end": 9,
+              "chunk_start": 508,
+              "chunk_end": 517,
+              "section": "Contents/section0.xml",
+              "table_id": "hwpx:s0:t00030",
+              "row": 20,
+              "col": 1
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "Contents/section0.xml",
+          "source_unit_alias": "E087",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "8055a406d8a6d34472bf588fab328844a210ece13207e36ad120a0797a57f075",
+          "source_request_fingerprint": "83b3938105dc06cf9e5f56a68c102760610a91b28c206421cac5c0a6c7f96412",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+      "category": "eligibility",
+      "text": "[eligibility|fact] 참여인력은 자사인력으로 구성하여야 함(채용예정인력인 경우에는 별도로 이를 명기하고, 계약체결 전까지 채용을 완료하여야 함)",
+      "citations": [
+        {
+          "chunk_id": "rfp:081719865dd99a38:4b24916e45454ab12fc194c3",
+          "quote": "5) 참여인력은 자사인력으로 구성하여야 함(채용예정인력인 경우에는 별도로 이를 명기하고, 계약체결 전까지 채용을 완료하여야 함)\n6) 참여인력의 상세한 이력 및 자격·학력 증빙서류를 첨부하여야 하며, 미제출시에는 평가에 반영하지 않음\n7) 계약상의 사업을 수행함에 있어 부실, 조잡 또는 부당하게 하거나, 부정한 행위를 한 사업자는 향후 신규 사업의 참여에 제한을 받을 수 있음\n",
+          "quote_start": 464,
+          "quote_end": 676,
+          "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+          "sha256": "081719865dd99a38ba822b39869efcf75b37add88f8d07741c8f8bf141060484",
+          "file_name": "서울특별시_2026_2027년 글로벌 패션브랜드 육성 용역_제안요청서.hwpx",
+          "locator": "Contents/section0.xml / paragraph 702 / segment 1 / Contents/section0.xml / paragraph 703 / segment 1 / Contents/section0.xml / paragraph 704 / segment 1",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000702:seg01",
+              "locator": "Contents/section0.xml / paragraph 702 / segment 1",
+              "char_start": 0,
+              "char_end": 71,
+              "chunk_start": 464,
+              "chunk_end": 535,
+              "section": "Contents/section0.xml"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000703:seg01",
+              "locator": "Contents/section0.xml / paragraph 703 / segment 1",
+              "char_start": 0,
+              "char_end": 58,
+              "chunk_start": 536,
+              "chunk_end": 594,
+              "section": "Contents/section0.xml"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000704:seg01",
+              "locator": "Contents/section0.xml / paragraph 704 / segment 1",
+              "char_start": 0,
+              "char_end": 80,
+              "chunk_start": 595,
+              "chunk_end": 675,
+              "section": "Contents/section0.xml"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "Contents/section0.xml",
+          "source_unit_alias": "E072",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "8055a406d8a6d34472bf588fab328844a210ece13207e36ad120a0797a57f075",
+          "source_request_fingerprint": "83b3938105dc06cf9e5f56a68c102760610a91b28c206421cac5c0a6c7f96412",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+      "category": "eligibility",
+      "text": "[eligibility|fact] 참여인력의 상세한 이력 및 자격·학력 증빙서류를 첨부하여야 하며, 미제출시에는 평가에 반영하지 않음",
+      "citations": [
+        {
+          "chunk_id": "rfp:081719865dd99a38:4b24916e45454ab12fc194c3",
+          "quote": "5) 참여인력은 자사인력으로 구성하여야 함(채용예정인력인 경우에는 별도로 이를 명기하고, 계약체결 전까지 채용을 완료하여야 함)\n6) 참여인력의 상세한 이력 및 자격·학력 증빙서류를 첨부하여야 하며, 미제출시에는 평가에 반영하지 않음\n7) 계약상의 사업을 수행함에 있어 부실, 조잡 또는 부당하게 하거나, 부정한 행위를 한 사업자는 향후 신규 사업의 참여에 제한을 받을 수 있음\n",
+          "quote_start": 464,
+          "quote_end": 676,
+          "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+          "sha256": "081719865dd99a38ba822b39869efcf75b37add88f8d07741c8f8bf141060484",
+          "file_name": "서울특별시_2026_2027년 글로벌 패션브랜드 육성 용역_제안요청서.hwpx",
+          "locator": "Contents/section0.xml / paragraph 702 / segment 1 / Contents/section0.xml / paragraph 703 / segment 1 / Contents/section0.xml / paragraph 704 / segment 1",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000702:seg01",
+              "locator": "Contents/section0.xml / paragraph 702 / segment 1",
+              "char_start": 0,
+              "char_end": 71,
+              "chunk_start": 464,
+              "chunk_end": 535,
+              "section": "Contents/section0.xml"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000703:seg01",
+              "locator": "Contents/section0.xml / paragraph 703 / segment 1",
+              "char_start": 0,
+              "char_end": 58,
+              "chunk_start": 536,
+              "chunk_end": 594,
+              "section": "Contents/section0.xml"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000704:seg01",
+              "locator": "Contents/section0.xml / paragraph 704 / segment 1",
+              "char_start": 0,
+              "char_end": 80,
+              "chunk_start": 595,
+              "chunk_end": 675,
+              "section": "Contents/section0.xml"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "Contents/section0.xml",
+          "source_unit_alias": "E072",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "8055a406d8a6d34472bf588fab328844a210ece13207e36ad120a0797a57f075",
+          "source_request_fingerprint": "83b3938105dc06cf9e5f56a68c102760610a91b28c206421cac5c0a6c7f96412",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+      "category": "evaluation",
+      "text": "[evaluation|fact] 종합평가점수(기술평가와 가격평가 합산)가 70점 이상인 제안사를 협상적격자로 선정하며, 협상적격자가 없는 경우 재공고 입찰에 부칠 수 있음",
+      "citations": [
+        {
+          "chunk_id": "rfp:081719865dd99a38:339eabee70e75d2cad50667a",
+          "quote": "가. 협상적격자 선정 및 협상\n1) 종합평가점수(기술평가와 가격평가 합산)가 70점 이상인 제안사를 협상적격자로 선정하며, 협상적격자가 없는 경우 재공고 입찰에 부칠 수 있음\n2) 협상순서는 종합평가점수의 고득점 순에 의하여 결정하며, 1순위 협상적격자와의 협상이 성립된 때에는 다른 협상적격자와의 협상은 실시하지 않음. 또한 모든 협상적격자와 협상 결렬 시에는 재공고입찰 또는 신규입찰에 부칠 수 있음\n",
+          "quote_start": 0,
+          "quote_end": 226,
+          "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+          "sha256": "081719865dd99a38ba822b39869efcf75b37add88f8d07741c8f8bf141060484",
+          "file_name": "서울특별시_2026_2027년 글로벌 패션브랜드 육성 용역_제안요청서.hwpx",
+          "locator": "Contents/section0.xml / paragraph 677 / segment 1 / Contents/section0.xml / paragraph 678 / segment 1 / Contents/section0.xml / paragraph 679 / segment 1",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000677:seg01",
+              "locator": "Contents/section0.xml / paragraph 677 / segment 1",
+              "char_start": 0,
+              "char_end": 16,
+              "chunk_start": 0,
+              "chunk_end": 16,
+              "section": "Contents/section0.xml"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000678:seg01",
+              "locator": "Contents/section0.xml / paragraph 678 / segment 1",
+              "char_start": 0,
+              "char_end": 80,
+              "chunk_start": 17,
+              "chunk_end": 97,
+              "section": "Contents/section0.xml"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000679:seg01",
+              "locator": "Contents/section0.xml / paragraph 679 / segment 1",
+              "char_start": 0,
+              "char_end": 127,
+              "chunk_start": 98,
+              "chunk_end": 225,
+              "section": "Contents/section0.xml"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "Contents/section0.xml",
+          "source_unit_alias": "E062",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "8055a406d8a6d34472bf588fab328844a210ece13207e36ad120a0797a57f075",
+          "source_request_fingerprint": "83b3938105dc06cf9e5f56a68c102760610a91b28c206421cac5c0a6c7f96412",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+      "category": "evaluation",
+      "text": "[evaluation|fact] 기술평가는 위원별 정성적 평가분야 합계점수 중에서 최고점수와 최저점수를 제외하고, 나머지 위원의 평가점수를 합산하여 산술평균한 점수로 한다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:081719865dd99a38:b282153caef9355920a129f6",
+          "quote": "※ 기술평가는 위원별 정성적 평가분야 합계점수 중에서 최고점수와 최저점수를 제외하고, 나머지 위원의 평가점수를 합산하여 산술평균한 점수로 한다. 다만, 최고·최저 점수가 둘 이상인 경우 하나만 제외한다. 평균점수 산정결과 소수점 이하의 숫자가 있는 경우에는 소수점 다섯자리에서 반올림한다.\n※ 평가위원은 평가항목별 최저점인 ’가‘ 배점 이상으로 점수를 부여해야 한다.\n2-3) 입찰가격평가(10점)",
+          "quote_start": 0,
+          "quote_end": 222,
+          "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+          "sha256": "081719865dd99a38ba822b39869efcf75b37add88f8d07741c8f8bf141060484",
+          "file_name": "서울특별시_2026_2027년 글로벌 패션브랜드 육성 용역_제안요청서.hwpx",
+          "locator": "Contents/section0.xml / paragraph 658 / segment 1 / Contents/section0.xml / paragraph 659 / segment 1 / Contents/section0.xml / paragraph 661 / segment 1",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000658:seg01",
+              "locator": "Contents/section0.xml / paragraph 658 / segment 1",
+              "char_start": 0,
+              "char_end": 161,
+              "chunk_start": 0,
+              "chunk_end": 161,
+              "section": "Contents/section0.xml"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000659:seg01",
+              "locator": "Contents/section0.xml / paragraph 659 / segment 1",
+              "char_start": 0,
+              "char_end": 43,
+              "chunk_start": 162,
+              "chunk_end": 205,
+              "section": "Contents/section0.xml"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "hwpx:s0:p000661:seg01",
+              "locator": "Contents/section0.xml / paragraph 661 / segment 1",
+              "char_start": 0,
+              "char_end": 16,
+              "chunk_start": 206,
+              "chunk_end": 222,
+              "section": "Contents/section0.xml"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "Contents/section0.xml",
+          "source_unit_alias": "E055",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "8055a406d8a6d34472bf588fab328844a210ece13207e36ad120a0797a57f075",
+          "source_request_fingerprint": "83b3938105dc06cf9e5f56a68c102760610a91b28c206421cac5c0a6c7f96412",
+          "source_origin": "source_units"
+        }
+      ]
+    }
+  ],
+  "rejected_claims": [],
+  "missing_information": [
+    "[issuing_agency] 발주기관 미확인",
+    "[budget_vat] 예산·VAT 미확인",
+    "[duration] 수행기간 미확인",
+    "[submission_deadline] 제출기한 미확인",
+    "[submission_method] 제출방식 미확인"
+  ],
+  "response_received": true,
+  "claims_checked": true,
+  "cache_hit": false,
+  "execution_mode": "live_openai",
+  "live_api": true,
+  "mapping_fingerprint": "8055a406d8a6d34472bf588fab328844a210ece13207e36ad120a0797a57f075",
+  "original_usage": {
+    "input_tokens": 9395,
+    "output_tokens": 994,
+    "total_tokens": 10389,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "usage_reported": true,
+    "latency_ms": 7068.428250000579
+  },
+  "semantic_quality_verified": false
+}

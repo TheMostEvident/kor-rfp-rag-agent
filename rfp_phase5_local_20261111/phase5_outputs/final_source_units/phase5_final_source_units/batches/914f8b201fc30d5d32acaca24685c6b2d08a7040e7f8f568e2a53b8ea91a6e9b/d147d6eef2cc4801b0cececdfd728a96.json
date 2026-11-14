@@ -1,0 +1,639 @@
+{
+  "batch_id": "B0009",
+  "job_key": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38:B0009:914f8b201fc3",
+  "source_chunk_ids": [
+    "rfp:a0429ca4da021105:c78fef1d7ab792b0b07c5c0d",
+    "rfp:a0429ca4da021105:0ec4f58ee0d3f32a85a95219",
+    "rfp:a0429ca4da021105:54d4c14367e7f0f6234fbc12",
+    "rfp:a0429ca4da021105:e5204607cc19b4f460ce376e",
+    "rfp:a0429ca4da021105:5f1c82f27c5fe243dd368b0a",
+    "rfp:a0429ca4da021105:ac0e670e838dd35a34b93ee4",
+    "rfp:a0429ca4da021105:3c6a4de5f798abf890a57b26",
+    "rfp:a0429ca4da021105:9ccdea40a6b86a5f9614c2ea",
+    "rfp:a0429ca4da021105:5e1f28b84316aa1abe9f3c66",
+    "rfp:a0429ca4da021105:6de37876b935fe8bf6634cb4",
+    "rfp:a0429ca4da021105:c3f0d5f809cf520534e562ad",
+    "rfp:a0429ca4da021105:89af607b248ff868c3de3327",
+    "rfp:a0429ca4da021105:61fb582be28e95530e2917ba",
+    "rfp:a0429ca4da021105:40e231dfef2633e7d61d2484",
+    "rfp:a0429ca4da021105:07c38f67bb50f634faac8b7f",
+    "rfp:a0429ca4da021105:ad85295b1d6ee202a4650584",
+    "rfp:a0429ca4da021105:95324b8e398f780143edd8c2"
+  ],
+  "request_fingerprint": "914f8b201fc30d5d32acaca24685c6b2d08a7040e7f8f568e2a53b8ea91a6e9b",
+  "kind": "source_units",
+  "status": "completed_with_rejections",
+  "claims": [
+    {
+      "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+      "category": "overview",
+      "text": "[issuing_agency|fact] 한국관광공사",
+      "citations": [
+        {
+          "chunk_id": "rfp:a0429ca4da021105:54d4c14367e7f0f6234fbc12",
+          "quote": "[붙 임]\n1. 외주 용역사업 보안특약 조항\n2. 용역사업 관리감독 책임 조항\n(발주자) 한국관광공사\n",
+          "quote_start": 241,
+          "quote_end": 298,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 3303 / BodyText/Section0 / paragraph 3304 / BodyText/Section0 / paragraph 3305 / BodyText/Section0 / paragraph 3308",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3303:record:534104",
+              "locator": "BodyText/Section0 / paragraph 3303",
+              "char_start": 0,
+              "char_end": 5,
+              "chunk_start": 241,
+              "chunk_end": 246,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3304:record:534200",
+              "locator": "BodyText/Section0 / paragraph 3304",
+              "char_start": 0,
+              "char_end": 18,
+              "chunk_start": 247,
+              "chunk_end": 265,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3305:record:534322",
+              "locator": "BodyText/Section0 / paragraph 3305",
+              "char_start": 0,
+              "char_end": 18,
+              "chunk_start": 266,
+              "chunk_end": 284,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3308:record:534604",
+              "locator": "BodyText/Section0 / paragraph 3308",
+              "char_start": 0,
+              "char_end": 12,
+              "chunk_start": 285,
+              "chunk_end": 297,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E010",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "4b1dd93941dd597495ae7c7b48076b65671015e1a7f95ca42af559a490900ea2",
+          "source_request_fingerprint": "914f8b201fc30d5d32acaca24685c6b2d08a7040e7f8f568e2a53b8ea91a6e9b",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:a0429ca4da021105:95324b8e398f780143edd8c2",
+          "quote": "한국관광공사\n주소\n강원특별자치도 원주시 세계로 10\n대표자\n",
+          "quote_start": 23,
+          "quote_end": 56,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 3541 / BodyText/Section0 / paragraph 3543 / BodyText/Section0 / paragraph 3544 / BodyText/Section0 / paragraph 3546",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3541:record:575155",
+              "locator": "BodyText/Section0 / paragraph 3541",
+              "char_start": 0,
+              "char_end": 6,
+              "chunk_start": 23,
+              "chunk_end": 29,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0113",
+              "row": 1,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3543:record:575435",
+              "locator": "BodyText/Section0 / paragraph 3543",
+              "char_start": 0,
+              "char_end": 2,
+              "chunk_start": 30,
+              "chunk_end": 32,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0113",
+              "row": 2,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3544:record:575576",
+              "locator": "BodyText/Section0 / paragraph 3544",
+              "char_start": 0,
+              "char_end": 18,
+              "chunk_start": 33,
+              "chunk_end": 51,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0113",
+              "row": 2,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3546:record:575880",
+              "locator": "BodyText/Section0 / paragraph 3546",
+              "char_start": 0,
+              "char_end": 3,
+              "chunk_start": 52,
+              "chunk_end": 55,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0113",
+              "row": 3,
+              "col": 0
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E076",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "4b1dd93941dd597495ae7c7b48076b65671015e1a7f95ca42af559a490900ea2",
+          "source_request_fingerprint": "914f8b201fc30d5d32acaca24685c6b2d08a7040e7f8f568e2a53b8ea91a6e9b",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 사업자는 보안정책을 위반하였을 경우 [별표1]의 위규처리 기준에 따라 위규자 및 관리자를 행정조치하고 [별표2]의 보안 위약금을 납부한다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:a0429ca4da021105:54d4c14367e7f0f6234fbc12",
+          "quote": "대 표:\n[붙임1] 외주 용역사업 보안특약 조항\n① 사업자는 보안정책을 위반하였을 경우 [별표1]의 위규처리 기준에 따라 위규자 및 관리자를 행정조치하고 [별표2]의 보안 위약금을 납부한다.\n",
+          "quote_start": 363,
+          "quote_end": 470,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 3314 / BodyText/Section0 / paragraph 3315 / BodyText/Section0 / paragraph 3317",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3314:record:535280",
+              "locator": "BodyText/Section0 / paragraph 3314",
+              "char_start": 0,
+              "char_end": 4,
+              "chunk_start": 363,
+              "chunk_end": 367,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3315:record:535376",
+              "locator": "BodyText/Section0 / paragraph 3315",
+              "char_start": 0,
+              "char_end": 21,
+              "chunk_start": 368,
+              "chunk_end": 389,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3317:record:535705",
+              "locator": "BodyText/Section0 / paragraph 3317",
+              "char_start": 0,
+              "char_end": 79,
+              "chunk_start": 390,
+              "chunk_end": 469,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E012",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "4b1dd93941dd597495ae7c7b48076b65671015e1a7f95ca42af559a490900ea2",
+          "source_request_fingerprint": "914f8b201fc30d5d32acaca24685c6b2d08a7040e7f8f568e2a53b8ea91a6e9b",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 사업자는 사업 수행에 사용되는 문서, 인원, 장비 등에 대하여 물리적, 관리적, 기술적 보안대책 및 [별표3]의 ‘누출금지 대상정보’에 대한 보안관리 계획을 사업제안서에 기재하여야 하며, 해당 정보 누출 시 국가계약법 시행령 제76조에 따라 사업자를 부정당업체로 등록한다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:a0429ca4da021105:54d4c14367e7f0f6234fbc12",
+          "quote": "② 사업자는 사업 수행에 사용되는 문서, 인원, 장비 등에 대하여 물리적, 관리적, 기술적 보안대책 및 [별표3]의 ‘누출금지 대상정보’에 대한 보안관리 계획을 사업제안서에 기재하여야 하며, 해당 정보 누출 시 국가계약법 시행령 제76조에 따라 사업자를 부정당업체로 등록한다.\n",
+          "quote_start": 470,
+          "quote_end": 625,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 3318",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3318:record:536009",
+              "locator": "BodyText/Section0 / paragraph 3318",
+              "char_start": 0,
+              "char_end": 154,
+              "chunk_start": 470,
+              "chunk_end": 624,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E013",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "4b1dd93941dd597495ae7c7b48076b65671015e1a7f95ca42af559a490900ea2",
+          "source_request_fingerprint": "914f8b201fc30d5d32acaca24685c6b2d08a7040e7f8f568e2a53b8ea91a6e9b",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 사업 수행과정에서 취득한 자료와 정보에 관하여 사업수행 중은 물론 사업 완료 후에도 이를 외부에 유출해서는 안 되며, 사업종료 시 정보보안담당자의 입회하에 완전 폐기 또는 반납해야 한다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:a0429ca4da021105:54d4c14367e7f0f6234fbc12",
+          "quote": "③ 사업 수행과정에서 취득한 자료와 정보에 관하여 사업수행 중은 물론 사업 완료 후에도 이를 외부에 유출해서는 안 되며, 사업종료 시 정보보안담당자의 입회하에 완전 폐기 또는 반납해야 한다.",
+          "quote_start": 625,
+          "quote_end": 731,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 3319",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3319:record:536551",
+              "locator": "BodyText/Section0 / paragraph 3319",
+              "char_start": 0,
+              "char_end": 106,
+              "chunk_start": 625,
+              "chunk_end": 731,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E014",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "4b1dd93941dd597495ae7c7b48076b65671015e1a7f95ca42af559a490900ea2",
+          "source_request_fingerprint": "914f8b201fc30d5d32acaca24685c6b2d08a7040e7f8f568e2a53b8ea91a6e9b",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 사업 최종 산출물에 대해 정보보안전문가 또는 전문보안 점검도구를 활용하여 보안 취약점을 점검하고, 도출된 취약점에 대한 개선을 완료한 뒤 그 결과를 제출해야 한다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:a0429ca4da021105:e5204607cc19b4f460ce376e",
+          "quote": "에서 취득한 자료와 정보에 관하여 사업수행 중은 물론 사업 완료 후에도 이를 외부에 유출해서는 안 되며, 사업종료 시 정보보안담당자의 입회하에 완전 폐기 또는 반납해야 한다.\n④ 사업자는 사업 최종 산출물에 대해 정보보안전문가 또는 전문보안 점검도구를 활용하여 보안 취약점을 점검, 도출된 취약점에 대한 개선을 완료하고 그 결과를 제출해야 한다.\n",
+          "quote_start": 0,
+          "quote_end": 194,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 3319 / BodyText/Section0 / paragraph 3320",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3319:record:536551",
+              "locator": "BodyText/Section0 / paragraph 3319",
+              "char_start": 9,
+              "char_end": 106,
+              "chunk_start": 0,
+              "chunk_end": 97,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3320:record:536969",
+              "locator": "BodyText/Section0 / paragraph 3320",
+              "char_start": 0,
+              "char_end": 95,
+              "chunk_start": 98,
+              "chunk_end": 193,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E015",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "4b1dd93941dd597495ae7c7b48076b65671015e1a7f95ca42af559a490900ea2",
+          "source_request_fingerprint": "914f8b201fc30d5d32acaca24685c6b2d08a7040e7f8f568e2a53b8ea91a6e9b",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 용역사업 참여인원은 용역업체 임의로 교체할 수 없으며, 신상변동(해외여행 포함) 발생시 용역사업 발주기관에 즉시 보고해야 한다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:a0429ca4da021105:e5204607cc19b4f460ce376e",
+          "quote": "⑤ 사업자는 용역사업 참여인원에 대해 용역업체 임의로 교체할 수 없으며, 신상변동(해외여행 포함) 발생시 용역사업 발주기관에 즉시 보고해야 한다.\n[별표1] 사업자 보안위규 처리기준\n[별표2] 보안 위약금 부과 기준\n[별표3] 누출금지 대상 정보\n",
+          "quote_start": 194,
+          "quote_end": 332,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 3321 / BodyText/Section0 / paragraph 3322 / BodyText/Section0 / paragraph 3323 / BodyText/Section0 / paragraph 3324",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3321:record:537349",
+              "locator": "BodyText/Section0 / paragraph 3321",
+              "char_start": 0,
+              "char_end": 81,
+              "chunk_start": 194,
+              "chunk_end": 275,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3322:record:537641",
+              "locator": "BodyText/Section0 / paragraph 3322",
+              "char_start": 0,
+              "char_end": 19,
+              "chunk_start": 276,
+              "chunk_end": 295,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3323:record:537765",
+              "locator": "BodyText/Section0 / paragraph 3323",
+              "char_start": 0,
+              "char_end": 18,
+              "chunk_start": 296,
+              "chunk_end": 314,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3324:record:537887",
+              "locator": "BodyText/Section0 / paragraph 3324",
+              "char_start": 0,
+              "char_end": 16,
+              "chunk_start": 315,
+              "chunk_end": 331,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E016",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "4b1dd93941dd597495ae7c7b48076b65671015e1a7f95ca42af559a490900ea2",
+          "source_request_fingerprint": "914f8b201fc30d5d32acaca24685c6b2d08a7040e7f8f568e2a53b8ea91a6e9b",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+      "category": "duration",
+      "text": "[duration|fact] 본 계약의 기간은 본 용역(사업)의 계약기간과 동일하며, 양 당사자의 합의에 따라 단축 또는 연장될 수 있다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:a0429ca4da021105:0ec4f58ee0d3f32a85a95219",
+          "quote": "① 본 계약의 기간은 본 용역(사업)의 계약기간과 동일하며, 양 당사자의  합의에 따라 단축 또는 연장될 수 있다.\n② 전항의 계약기간에도 불구하고 비밀유지의무는 제6조에 따른다.\n제11조(양도 등의 금지)\n계약상대자는 본 계약의 권리 및 의무의 일부 또는 전부를 제3자에게 양도, 하도급, 담보제공 등 일체의 처분행위를 할 수 없다.\n",
+          "quote_start": 243,
+          "quote_end": 431,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 3285 / BodyText/Section0 / paragraph 3286 / BodyText/Section0 / paragraph 3289 / BodyText/Section0 / paragraph 3290",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3285:record:531268",
+              "locator": "BodyText/Section0 / paragraph 3285",
+              "char_start": 0,
+              "char_end": 64,
+              "chunk_start": 243,
+              "chunk_end": 307,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3286:record:531520",
+              "locator": "BodyText/Section0 / paragraph 3286",
+              "char_start": 0,
+              "char_end": 35,
+              "chunk_start": 308,
+              "chunk_end": 343,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3289:record:531836",
+              "locator": "BodyText/Section0 / paragraph 3289",
+              "char_start": 0,
+              "char_end": 14,
+              "chunk_start": 344,
+              "chunk_end": 358,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3290:record:531950",
+              "locator": "BodyText/Section0 / paragraph 3290",
+              "char_start": 0,
+              "char_end": 71,
+              "chunk_start": 359,
+              "chunk_end": 430,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E006",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "4b1dd93941dd597495ae7c7b48076b65671015e1a7f95ca42af559a490900ea2",
+          "source_request_fingerprint": "914f8b201fc30d5d32acaca24685c6b2d08a7040e7f8f568e2a53b8ea91a6e9b",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+      "category": "duration",
+      "text": "[duration|fact] 전항의 계약기간에도 불구하고 비밀유지의무는 제6조에 따른다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:a0429ca4da021105:0ec4f58ee0d3f32a85a95219",
+          "quote": "① 본 계약의 기간은 본 용역(사업)의 계약기간과 동일하며, 양 당사자의  합의에 따라 단축 또는 연장될 수 있다.\n② 전항의 계약기간에도 불구하고 비밀유지의무는 제6조에 따른다.\n제11조(양도 등의 금지)\n계약상대자는 본 계약의 권리 및 의무의 일부 또는 전부를 제3자에게 양도, 하도급, 담보제공 등 일체의 처분행위를 할 수 없다.\n",
+          "quote_start": 243,
+          "quote_end": 431,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 3285 / BodyText/Section0 / paragraph 3286 / BodyText/Section0 / paragraph 3289 / BodyText/Section0 / paragraph 3290",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3285:record:531268",
+              "locator": "BodyText/Section0 / paragraph 3285",
+              "char_start": 0,
+              "char_end": 64,
+              "chunk_start": 243,
+              "chunk_end": 307,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3286:record:531520",
+              "locator": "BodyText/Section0 / paragraph 3286",
+              "char_start": 0,
+              "char_end": 35,
+              "chunk_start": 308,
+              "chunk_end": 343,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3289:record:531836",
+              "locator": "BodyText/Section0 / paragraph 3289",
+              "char_start": 0,
+              "char_end": 14,
+              "chunk_start": 344,
+              "chunk_end": 358,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3290:record:531950",
+              "locator": "BodyText/Section0 / paragraph 3290",
+              "char_start": 0,
+              "char_end": 71,
+              "chunk_start": 359,
+              "chunk_end": 430,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E006",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "4b1dd93941dd597495ae7c7b48076b65671015e1a7f95ca42af559a490900ea2",
+          "source_request_fingerprint": "914f8b201fc30d5d32acaca24685c6b2d08a7040e7f8f568e2a53b8ea91a6e9b",
+          "source_origin": "source_units"
+        }
+      ]
+    }
+  ],
+  "rejected_claims": [
+    {
+      "claim_index": 7,
+      "field_id": "scope_requirements",
+      "reason": "field_or_source_validation_failed",
+      "raw_claim": {
+        "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+        "category": "other",
+        "text": "[scope_requirements|fact] 정보화사업 추진중 용역업체에 의한 보안사고 발생시 용역업체는 ⌜사업자 보안위규 처리기준⌟에 따라 조치하고, 사업담당자는 관리감독의 책임을 물어 ⌜공무원 징계령⌟에 따라 조치한다.",
+        "citations": [
+          {
+            "chunk_id": "rfp:a0429ca4da021105:6de37876b935fe8bf6634cb4",
+            "quote": "[붙임2] 용역사업 관리감독 책임 조항\n정보화사업 추진중 용역업체에 의한 보안사고 발생시 용역업체는 ⌜사업자 보안위규 처리기준⌟에 따라 조치하고, 사업담당자는 관리감독의 책임을 물어 ⌜공무원 징계령⌟에 따라 조치한다."
+          }
+        ]
+      },
+      "raw_claim_is_unvalidated_diagnostic": true,
+      "batch_id": "B0009",
+      "rejection_id": "914f8b201fc30d5d-7"
+    }
+  ],
+  "missing_information": [
+    "[project_name]",
+    "[purpose]",
+    "[budget_vat]",
+    "[eligibility]",
+    "[submission_documents]",
+    "[submission_deadline]",
+    "[submission_method]",
+    "[evaluation]"
+  ],
+  "response_received": true,
+  "claims_checked": true,
+  "cache_hit": false,
+  "execution_mode": "live_openai",
+  "live_api": true,
+  "mapping_fingerprint": "4b1dd93941dd597495ae7c7b48076b65671015e1a7f95ca42af559a490900ea2",
+  "original_usage": {
+    "input_tokens": 8921,
+    "output_tokens": 827,
+    "total_tokens": 9748,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "usage_reported": true,
+    "latency_ms": 5524.402458002442
+  },
+  "semantic_quality_verified": false
+}

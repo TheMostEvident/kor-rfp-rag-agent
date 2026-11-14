@@ -1,0 +1,90 @@
+{
+  "version": "phase5-source-review-final-v1",
+  "answer_fingerprint": "dee5b0b94cc5333e2792a06c41fa3f7bf9926bdbf4242498e1b59d0b9cbd2d2a",
+  "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+  "source_sha256": "8c293ac2bb077438c0aaa974746d203a9196ec3eaa0d2c7971e5f6d3e4a28e28",
+  "run_fingerprint": "2d4266bf29bdbcad8ad199454c0d83ed0cac8a7ff4df207a8fe7ae6b4740bd00",
+  "reference_snapshot": [
+    {
+      "field_id": "project_name",
+      "label": "사업명",
+      "expected": "HF 인사이트 시스템 개발",
+      "conditions": "사업명과 일반적인 AI 시스템 명칭을 혼동하지 않는다.",
+      "source_reference": "문단 11 외 1곳\nD03-01-01~02"
+    },
+    {
+      "field_id": "issuing_agency",
+      "label": "발주기관",
+      "expected": "한국주택금융공사",
+      "conditions": "표지의 발주기관 표기와 기관명을 함께 확인한다.",
+      "source_reference": "문단 12 외 1곳\nD03-02-01~02"
+    },
+    {
+      "field_id": "purpose",
+      "label": "목적",
+      "expected": "인터넷 데이터를 룰베이스·머신러닝/딥러닝으로 분석해 공사에 대한 국민 요구와 긍·부정 인식을 파악하는 시스템을 구축한다.",
+      "conditions": "경제·금융 이슈 파악과 공사 관련 인식·요구 분석을 포함한다.",
+      "source_reference": "문단 105 외 4곳\nD03-03-01~05"
+    },
+    {
+      "field_id": "scope_requirements",
+      "label": "주요 범위·필수요건",
+      "expected": "인터넷 기사·댓글·카페·블로그·커뮤니티·유튜브 등의 수집, 이슈·연관어·감성 분석, 시각화 보고와 내부 업무시스템 구현을 포함한다.",
+      "conditions": "최소10분 단위 수집, 용역 개시 후 데이터 적재(과거자료 제외), 긍·부정 정확도 최소90% 및 산출·유지 방법론, 지속 수급·알고리즘 교체 가능성을 확인한다.",
+      "source_reference": "문단 131 외 15곳\nD03-04-01~16"
+    },
+    {
+      "field_id": "budget_vat",
+      "label": "예산·VAT",
+      "expected": "사업예산 688백만원, 부가세 포함. 개발498백만원+HW구입190백만원으로 구성된다.",
+      "conditions": "총액·개발·HW의 구분을 유지한다. 발주기관 사정에 따른 예산·기간·일정 조정 가능성도 확인한다.",
+      "source_reference": "문단 99 외 2곳\nD03-05-01~03"
+    },
+    {
+      "field_id": "duration",
+      "label": "수행기간",
+      "expected": "계약일로부터 5개월이며 안정화·시스템모니터링 1개월이 그 안에 포함된다.",
+      "conditions": "5+1=6개월로 바꾸지 않는다. 발주기관 내부 사정에 따른 조정 가능성을 남긴다.",
+      "source_reference": "문단 97 외 1곳\nD03-06-01~02"
+    },
+    {
+      "field_id": "eligibility",
+      "label": "참가·수행자격",
+      "expected": "입찰등록·법령상 자격, 부정당 제재 해당 없음, SW사업자(1468), 직접생산확인증명서(정보시스템개발서비스 8111159901), 유효한 중소기업·소상공인 확인서 등을 모두 갖춰야 한다.",
+      "conditions": "20억원 미만으로 대기업·중견 SW사업자 참여 제한. 공동이행만 허용, 대표 포함5개사 이내·최소지분10%, 기타는 공고문 참조.",
+      "source_reference": "문단 2616 외 12곳\nD03-07-01~13"
+    },
+    {
+      "field_id": "submission_documents",
+      "label": "입찰 제출서류",
+      "expected": "[부분확인]\n전체 제출서류 목록은 공고문에 따르며 본문에 정성·정량 제출서류 표가 별도로 있다.",
+      "conditions": "사업자등록·등기·인감·위임/재직·완납증명·SW신고·청렴·하도급·개인정보·공동수급·직접생산 서류, 신용평가·실적·중소기업 확인 등을 해당 조건에 따라 구별한다.",
+      "source_reference": "문단 2774 외 21곳\nD03-08-01~22"
+    },
+    {
+      "field_id": "submission_deadline",
+      "label": "제출기한",
+      "expected": "[공고문 참조]\n제출 기한은 입찰공고문에 따른다.",
+      "conditions": "사업기간·제안발표 일정을 입찰 마감으로 바꾸지 않는다.",
+      "source_reference": "문단 2774\nD03-09-01"
+    },
+    {
+      "field_id": "submission_method",
+      "label": "제출방식",
+      "expected": "[부분확인]\n제출 장소·전체 제출사항은 공고문에 따른다. 가격입찰은 국가종합전자조달시스템을 이용한다.",
+      "conditions": "계약 체결 후 제안서를 PDF로 공사에 제출한다는 조건을 입찰 접수 경로와 구별한다. 원본/사본 확인·날인 조건을 확인한다.",
+      "source_reference": "문단 2650 외 3곳\nD03-10-01~04"
+    },
+    {
+      "field_id": "evaluation",
+      "label": "평가기준·선정방식",
+      "expected": "종합100점=기술90점+가격10점. 가격이 예정가격 이하이며 기술 배점의85% 이상인 업체가 협상적격자다. 기술평가는 순위 간3점 차등점수제를 적용한다.",
+      "conditions": "85%는 전체100점 기준이 아니다. 협상은 합산 고득점 순이며 차순위 협상·재공고 조건을 확인한다.",
+      "source_reference": "문단 2644 외 9곳\nD03-11-01~10"
+    }
+  ],
+  "reference_fingerprint": "830a7f142dd5f68a3604ca388084244ea8571956eb9c9d6e502ecdd3782d7d0f",
+  "comparison_base_fingerprint": "b76abb1b6a213e8a32818a9d6f02e66c6065930077a59765d0a55b5493cb31c8",
+  "rejection_base_fingerprint": "ef6e0f002d96153a8e8fdb678c6f0b81d15be0413787b2d8e855380cc1f45d8e",
+  "semantic_quality_automatically_verified": false
+}

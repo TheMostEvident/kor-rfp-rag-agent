@@ -1,0 +1,1080 @@
+{
+  "batch_id": "B0003",
+  "job_key": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0:B0003:3b6fe99e895d",
+  "source_chunk_ids": [
+    "rfp:339f63a565c0a45e:345c7b19c5c958d5702f9670",
+    "rfp:339f63a565c0a45e:c1808f456cf12b829dac4d62",
+    "rfp:339f63a565c0a45e:f6b8471b1db7880dd057a58a",
+    "rfp:339f63a565c0a45e:83fcf447b4661befbb49f270",
+    "rfp:339f63a565c0a45e:06f4534a04723f72ff147299",
+    "rfp:339f63a565c0a45e:2657d617b8361c402e46c3e3",
+    "rfp:339f63a565c0a45e:5e3a6ce2fc2c4713d2998a98",
+    "rfp:339f63a565c0a45e:0cb17d8c54c7e1aa8e45824e",
+    "rfp:339f63a565c0a45e:f47bd8770bea324b173600cf",
+    "rfp:339f63a565c0a45e:7e35d7fdaeed0dc9fad15482",
+    "rfp:339f63a565c0a45e:be9614d82387d5c5064fbcb1",
+    "rfp:339f63a565c0a45e:cac93281ce3abc90c9e033df",
+    "rfp:339f63a565c0a45e:52bfb66d0a9ce9b8a7981977",
+    "rfp:339f63a565c0a45e:83ff8bf2791d3a16de3fed5b"
+  ],
+  "request_fingerprint": "3b6fe99e895d9f69dd34b2418d64558fa4adc01a6ac5d134003dd674beee8bd3",
+  "kind": "source_units",
+  "status": "completed_with_rejections",
+  "claims": [
+    {
+      "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 프로젝트 지원 요구사항으로 사용자 매뉴얼 제작 및 제출, 사용자 교육, 기술지원, 하자보수 요건이 제시되어 있다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:345c7b19c5c958d5702f9670",
+          "quote": "- 25 -\n￭ 프로젝트 지원 요구사항(Project Support Requirement)\n요구사항 고유번호 PSR-001\n요구사항 분류 프로젝트지원요구사항\n",
+          "quote_start": 0,
+          "quote_end": 88,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.27",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00027",
+              "locator": "PDF p.27",
+              "char_start": 0,
+              "char_end": 88,
+              "chunk_start": 0,
+              "chunk_end": 88,
+              "page": 27
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 27,
+          "source_unit_alias": "E001",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "79f5d7092a2092e7904ae0beca2561eaab17906c7b91f4d4fd0a3d5ac9740c5f",
+          "source_request_fingerprint": "3b6fe99e895d9f69dd34b2418d64558fa4adc01a6ac5d134003dd674beee8bd3",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:345c7b19c5c958d5702f9670",
+          "quote": "요구사항 명칭 사용자 매뉴얼제작 및제출\n요구\n사항\n정의 사용자 매뉴얼제작 및제출\n",
+          "quote_start": 88,
+          "quote_end": 133,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.27",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00027",
+              "locator": "PDF p.27",
+              "char_start": 88,
+              "char_end": 133,
+              "chunk_start": 88,
+              "chunk_end": 133,
+              "page": 27
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 27,
+          "source_unit_alias": "E002",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "79f5d7092a2092e7904ae0beca2561eaab17906c7b91f4d4fd0a3d5ac9740c5f",
+          "source_request_fingerprint": "3b6fe99e895d9f69dd34b2418d64558fa4adc01a6ac5d134003dd674beee8bd3",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:345c7b19c5c958d5702f9670",
+          "quote": "야 함\n요구사항 고유번호 PSR-002\n요구사항 분류 프로젝트지원요구사항\n요구사항 명칭 사용자 교육\n",
+          "quote_start": 207,
+          "quote_end": 263,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.27",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00027",
+              "locator": "PDF p.27",
+              "char_start": 207,
+              "char_end": 263,
+              "chunk_start": 207,
+              "chunk_end": 263,
+              "page": 27
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 27,
+          "source_unit_alias": "E004",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "79f5d7092a2092e7904ae0beca2561eaab17906c7b91f4d4fd0a3d5ac9740c5f",
+          "source_request_fingerprint": "3b6fe99e895d9f69dd34b2418d64558fa4adc01a6ac5d134003dd674beee8bd3",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:c1808f456cf12b829dac4d62",
+          "quote": "- 26 -\n요구사항 고유번호 PSR-003\n요구사항 분류 프로젝트지원요구사항\n요구사항 명칭 기술지원\n",
+          "quote_start": 0,
+          "quote_end": 57,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.28",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00028",
+              "locator": "PDF p.28",
+              "char_start": 0,
+              "char_end": 57,
+              "chunk_start": 0,
+              "chunk_end": 57,
+              "page": 28
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 28,
+          "source_unit_alias": "E009",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "79f5d7092a2092e7904ae0beca2561eaab17906c7b91f4d4fd0a3d5ac9740c5f",
+          "source_request_fingerprint": "3b6fe99e895d9f69dd34b2418d64558fa4adc01a6ac5d134003dd674beee8bd3",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:c1808f456cf12b829dac4d62",
+          "quote": "요구사항 고유번호 PSR-004\n요구사항 분류 프로젝트지원요구사항\n요구사항 명칭 하자보수\n요구\n",
+          "quote_start": 375,
+          "quote_end": 428,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.28",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00028",
+              "locator": "PDF p.28",
+              "char_start": 375,
+              "char_end": 428,
+              "chunk_start": 375,
+              "chunk_end": 428,
+              "page": 28
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 28,
+          "source_unit_alias": "E014",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "79f5d7092a2092e7904ae0beca2561eaab17906c7b91f4d4fd0a3d5ac9740c5f",
+          "source_request_fingerprint": "3b6fe99e895d9f69dd34b2418d64558fa4adc01a6ac5d134003dd674beee8bd3",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 공통 시스템 요구사항에는 기초관리, 사용자별 시스템접근권한, 결재라인, 게시판, 출자업무, 보증업무, 융자업무, 약정업무, 공통코드 등의 항목이 포함된다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:83fcf447b4661befbb49f270",
+          "quote": "- 27 -\n￭ 공통 시스템 요구사항(Common System Requirement)\n요구사항 고유번호 CSR-001\n요구사항 분류 공통시스템요구사항\n",
+          "quote_start": 0,
+          "quote_end": 84,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.29",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00029",
+              "locator": "PDF p.29",
+              "char_start": 0,
+              "char_end": 84,
+              "chunk_start": 0,
+              "chunk_end": 84,
+              "page": 29
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 29,
+          "source_unit_alias": "E021",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "79f5d7092a2092e7904ae0beca2561eaab17906c7b91f4d4fd0a3d5ac9740c5f",
+          "source_request_fingerprint": "3b6fe99e895d9f69dd34b2418d64558fa4adc01a6ac5d134003dd674beee8bd3",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:83fcf447b4661befbb49f270",
+          "quote": "세부\n내역\n※ 각프로그램의항목은등록/조회/수정/삭제가가능해야 함\n○ 조합은 현재 3개의(홈페이지/공제업무관리시스템/경영관리통합\n",
+          "quote_start": 114,
+          "quote_end": 185,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.29",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00029",
+              "locator": "PDF p.29",
+              "char_start": 114,
+              "char_end": 185,
+              "chunk_start": 114,
+              "chunk_end": 185,
+              "page": 29
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 29,
+          "source_unit_alias": "E023",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "79f5d7092a2092e7904ae0beca2561eaab17906c7b91f4d4fd0a3d5ac9740c5f",
+          "source_request_fingerprint": "3b6fe99e895d9f69dd34b2418d64558fa4adc01a6ac5d134003dd674beee8bd3",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:83fcf447b4661befbb49f270",
+          "quote": "○사용자\n -사용자별 시스템접근권한\n -결재라인(전결권한등)\n○ 게시판기능\n",
+          "quote_start": 253,
+          "quote_end": 295,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.29",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00029",
+              "locator": "PDF p.29",
+              "char_start": 253,
+              "char_end": 295,
+              "chunk_start": 253,
+              "chunk_end": 295,
+              "page": 29
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 29,
+          "source_unit_alias": "E025",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "79f5d7092a2092e7904ae0beca2561eaab17906c7b91f4d4fd0a3d5ac9740c5f",
+          "source_request_fingerprint": "3b6fe99e895d9f69dd34b2418d64558fa4adc01a6ac5d134003dd674beee8bd3",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:83fcf447b4661befbb49f270",
+          "quote": " -전체및 부서별 게시판\n○출자업무 : 좌당지분액/등록 등\n○보증업무\n -보증서종류,수수료현황, 요율,공종등의공통코드\n",
+          "quote_start": 295,
+          "quote_end": 361,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.29",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00029",
+              "locator": "PDF p.29",
+              "char_start": 295,
+              "char_end": 361,
+              "chunk_start": 295,
+              "chunk_end": 361,
+              "page": 29
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 29,
+          "source_unit_alias": "E026",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "79f5d7092a2092e7904ae0beca2561eaab17906c7b91f4d4fd0a3d5ac9740c5f",
+          "source_request_fingerprint": "3b6fe99e895d9f69dd34b2418d64558fa4adc01a6ac5d134003dd674beee8bd3",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:83fcf447b4661befbb49f270",
+          "quote": "○융자업무 :이자율현황/등록 등\n○약정업무 :약정배수현황/등록등\n○공통코드, 사용자등록,권한등록, 거래은행등록등공통코드",
+          "quote_start": 361,
+          "quote_end": 427,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.29",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00029",
+              "locator": "PDF p.29",
+              "char_start": 361,
+              "char_end": 427,
+              "chunk_start": 361,
+              "chunk_end": 427,
+              "page": 29
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 29,
+          "source_unit_alias": "E027",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "79f5d7092a2092e7904ae0beca2561eaab17906c7b91f4d4fd0a3d5ac9740c5f",
+          "source_request_fingerprint": "3b6fe99e895d9f69dd34b2418d64558fa4adc01a6ac5d134003dd674beee8bd3",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 기획관리 시스템 요구사항에는 전자결재, 인사정보관리, 결산관리, 조합원관리, 회의관리, 규정관리, 임원·위원관리 항목이 제시되어 있다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:06f4534a04723f72ff147299",
+          "quote": "- 28 -\n￭ 기획관리 시스템 요구사항(Planning System Requirement)\n요구사항 고유번호 PSR-001\n요구사항 분류 기획관리시스템요구사항\n",
+          "quote_start": 0,
+          "quote_end": 90,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.30",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00030",
+              "locator": "PDF p.30",
+              "char_start": 0,
+              "char_end": 90,
+              "chunk_start": 0,
+              "chunk_end": 90,
+              "page": 30
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 30,
+          "source_unit_alias": "E028",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "79f5d7092a2092e7904ae0beca2561eaab17906c7b91f4d4fd0a3d5ac9740c5f",
+          "source_request_fingerprint": "3b6fe99e895d9f69dd34b2418d64558fa4adc01a6ac5d134003dd674beee8bd3",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:06f4534a04723f72ff147299",
+          "quote": "요구사항 명칭 전자결재\n요구\n사항\n정의 전자결재시스템\n",
+          "quote_start": 90,
+          "quote_end": 120,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.30",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00030",
+              "locator": "PDF p.30",
+              "char_start": 90,
+              "char_end": 120,
+              "chunk_start": 90,
+              "chunk_end": 120,
+              "page": 30
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 30,
+          "source_unit_alias": "E029",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "79f5d7092a2092e7904ae0beca2561eaab17906c7b91f4d4fd0a3d5ac9740c5f",
+          "source_request_fingerprint": "3b6fe99e895d9f69dd34b2418d64558fa4adc01a6ac5d134003dd674beee8bd3",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:06f4534a04723f72ff147299",
+          "quote": "요구사항 고유번호 PSR-002\n요구사항 분류 기획관리시스템요구사항\n요구사항 명칭 인사정보관리\n요구\n",
+          "quote_start": 361,
+          "quote_end": 417,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.30",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00030",
+              "locator": "PDF p.30",
+              "char_start": 361,
+              "char_end": 417,
+              "chunk_start": 361,
+              "chunk_end": 417,
+              "page": 30
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 30,
+          "source_unit_alias": "E034",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "79f5d7092a2092e7904ae0beca2561eaab17906c7b91f4d4fd0a3d5ac9740c5f",
+          "source_request_fingerprint": "3b6fe99e895d9f69dd34b2418d64558fa4adc01a6ac5d134003dd674beee8bd3",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:2657d617b8361c402e46c3e3",
+          "quote": "- 29 -\n요구사항 고유번호 PSR-003\n요구사항 분류 기획관리시스템요구사항\n요구사항 명칭 결산관리\n",
+          "quote_start": 0,
+          "quote_end": 58,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.31",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00031",
+              "locator": "PDF p.31",
+              "char_start": 0,
+              "char_end": 58,
+              "chunk_start": 0,
+              "chunk_end": 58,
+              "page": 31
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 31,
+          "source_unit_alias": "E039",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "79f5d7092a2092e7904ae0beca2561eaab17906c7b91f4d4fd0a3d5ac9740c5f",
+          "source_request_fingerprint": "3b6fe99e895d9f69dd34b2418d64558fa4adc01a6ac5d134003dd674beee8bd3",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:2657d617b8361c402e46c3e3",
+          "quote": "출력이가능해야 함\n요구사항 고유번호 PSR-004\n요구사항 분류 기획관리시스템요구사항\n요구사항 명칭 조합원관리\n",
+          "quote_start": 249,
+          "quote_end": 311,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.31",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00031",
+              "locator": "PDF p.31",
+              "char_start": 249,
+              "char_end": 311,
+              "chunk_start": 249,
+              "chunk_end": 311,
+              "page": 31
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 31,
+          "source_unit_alias": "E044",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "79f5d7092a2092e7904ae0beca2561eaab17906c7b91f4d4fd0a3d5ac9740c5f",
+          "source_request_fingerprint": "3b6fe99e895d9f69dd34b2418d64558fa4adc01a6ac5d134003dd674beee8bd3",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:5e3a6ce2fc2c4713d2998a98",
+          "quote": "- 30 -\n요구사항 고유번호 PSR-005\n요구사항 분류 기획관리시스템요구사항\n요구사항 명칭 회의관리\n",
+          "quote_start": 0,
+          "quote_end": 58,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.32",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00032",
+              "locator": "PDF p.32",
+              "char_start": 0,
+              "char_end": 58,
+              "chunk_start": 0,
+              "chunk_end": 58,
+              "page": 32
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 32,
+          "source_unit_alias": "E048",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "79f5d7092a2092e7904ae0beca2561eaab17906c7b91f4d4fd0a3d5ac9740c5f",
+          "source_request_fingerprint": "3b6fe99e895d9f69dd34b2418d64558fa4adc01a6ac5d134003dd674beee8bd3",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:5e3a6ce2fc2c4713d2998a98",
+          "quote": "요구사항 분류 기획관리시스템요구사항\n요구사항 명칭 규정관리\n요구\n사항\n",
+          "quote_start": 288,
+          "quote_end": 327,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.32",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00032",
+              "locator": "PDF p.32",
+              "char_start": 288,
+              "char_end": 327,
+              "chunk_start": 288,
+              "chunk_end": 327,
+              "page": 32
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 32,
+          "source_unit_alias": "E053",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "79f5d7092a2092e7904ae0beca2561eaab17906c7b91f4d4fd0a3d5ac9740c5f",
+          "source_request_fingerprint": "3b6fe99e895d9f69dd34b2418d64558fa4adc01a6ac5d134003dd674beee8bd3",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:0cb17d8c54c7e1aa8e45824e",
+          "quote": "- 31 -\n요구사항 고유번호 PSR-007\n요구사항 분류 기획관리시스템요구사항\n요구사항 명칭 임원·위원관리\n",
+          "quote_start": 0,
+          "quote_end": 61,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.33",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00033",
+              "locator": "PDF p.33",
+              "char_start": 0,
+              "char_end": 61,
+              "chunk_start": 0,
+              "chunk_end": 61,
+              "page": 33
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 33,
+          "source_unit_alias": "E056",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "79f5d7092a2092e7904ae0beca2561eaab17906c7b91f4d4fd0a3d5ac9740c5f",
+          "source_request_fingerprint": "3b6fe99e895d9f69dd34b2418d64558fa4adc01a6ac5d134003dd674beee8bd3",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 사업지원 시스템 요구사항에는 사고관리, 채권관리, 포인트관리, 영업관리 항목이 제시되어 있다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:f47bd8770bea324b173600cf",
+          "quote": "- 32 -\n￭ 사업지원 시스템 요구사항(Support System Requirement)\n요구사항 고유번호 SSR-001\n요구사항 분류 사업지원시스템요구사항\n",
+          "quote_start": 0,
+          "quote_end": 89,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.34",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00034",
+              "locator": "PDF p.34",
+              "char_start": 0,
+              "char_end": 89,
+              "chunk_start": 0,
+              "chunk_end": 89,
+              "page": 34
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 34,
+          "source_unit_alias": "E060",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "79f5d7092a2092e7904ae0beca2561eaab17906c7b91f4d4fd0a3d5ac9740c5f",
+          "source_request_fingerprint": "3b6fe99e895d9f69dd34b2418d64558fa4adc01a6ac5d134003dd674beee8bd3",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:f47bd8770bea324b173600cf",
+          "quote": "요구사항 명칭 사고관리\n요구\n사항\n정의 사고관리\n",
+          "quote_start": 89,
+          "quote_end": 116,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.34",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00034",
+              "locator": "PDF p.34",
+              "char_start": 89,
+              "char_end": 116,
+              "chunk_start": 89,
+              "chunk_end": 116,
+              "page": 34
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 34,
+          "source_unit_alias": "E061",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "79f5d7092a2092e7904ae0beca2561eaab17906c7b91f4d4fd0a3d5ac9740c5f",
+          "source_request_fingerprint": "3b6fe99e895d9f69dd34b2418d64558fa4adc01a6ac5d134003dd674beee8bd3",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:f47bd8770bea324b173600cf",
+          "quote": "요구사항 고유번호 SSR-002\n요구사항 분류 사업지원시스템요구사항\n요구사항 명칭 채권관리\n요구\n",
+          "quote_start": 228,
+          "quote_end": 282,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.34",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00034",
+              "locator": "PDF p.34",
+              "char_start": 228,
+              "char_end": 282,
+              "chunk_start": 228,
+              "chunk_end": 282,
+              "page": 34
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 34,
+          "source_unit_alias": "E064",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "79f5d7092a2092e7904ae0beca2561eaab17906c7b91f4d4fd0a3d5ac9740c5f",
+          "source_request_fingerprint": "3b6fe99e895d9f69dd34b2418d64558fa4adc01a6ac5d134003dd674beee8bd3",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:7e35d7fdaeed0dc9fad15482",
+          "quote": "- 33 -\n요구사항 고유번호 SSR-003\n요구사항 분류 사업지원시스템요구사항\n요구사항 명칭 포인트관리\n",
+          "quote_start": 0,
+          "quote_end": 59,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.35",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00035",
+              "locator": "PDF p.35",
+              "char_start": 0,
+              "char_end": 59,
+              "chunk_start": 0,
+              "chunk_end": 59,
+              "page": 35
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 35,
+          "source_unit_alias": "E068",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "79f5d7092a2092e7904ae0beca2561eaab17906c7b91f4d4fd0a3d5ac9740c5f",
+          "source_request_fingerprint": "3b6fe99e895d9f69dd34b2418d64558fa4adc01a6ac5d134003dd674beee8bd3",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:7e35d7fdaeed0dc9fad15482",
+          "quote": "요구사항 명칭 영업관리\n요구\n사항\n정의 영업관리\n",
+          "quote_start": 288,
+          "quote_end": 315,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.35",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00035",
+              "locator": "PDF p.35",
+              "char_start": 288,
+              "char_end": 315,
+              "chunk_start": 288,
+              "chunk_end": 315,
+              "page": 35
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 35,
+          "source_unit_alias": "E073",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "79f5d7092a2092e7904ae0beca2561eaab17906c7b91f4d4fd0a3d5ac9740c5f",
+          "source_request_fingerprint": "3b6fe99e895d9f69dd34b2418d64558fa4adc01a6ac5d134003dd674beee8bd3",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 공제사업 시스템 요구사항에는 업무총괄, 조합원업무, 약정업무 항목이 제시되어 있다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:be9614d82387d5c5064fbcb1",
+          "quote": "- 34 -\n￭ 공제사업 시스템 요구사항(Financial System Requirement)\n요구사항 고유번호 FSR-001\n요구사항 분류 공제사업시스템요구사항\n",
+          "quote_start": 0,
+          "quote_end": 91,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.36",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00036",
+              "locator": "PDF p.36",
+              "char_start": 0,
+              "char_end": 91,
+              "chunk_start": 0,
+              "chunk_end": 91,
+              "page": 36
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 36,
+          "source_unit_alias": "E079",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "79f5d7092a2092e7904ae0beca2561eaab17906c7b91f4d4fd0a3d5ac9740c5f",
+          "source_request_fingerprint": "3b6fe99e895d9f69dd34b2418d64558fa4adc01a6ac5d134003dd674beee8bd3",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:be9614d82387d5c5064fbcb1",
+          "quote": "요구사항 명칭 업무총괄\n요구\n사항\n정의 업무총괄\n",
+          "quote_start": 91,
+          "quote_end": 118,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.36",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00036",
+              "locator": "PDF p.36",
+              "char_start": 91,
+              "char_end": 118,
+              "chunk_start": 91,
+              "chunk_end": 118,
+              "page": 36
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 36,
+          "source_unit_alias": "E080",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "79f5d7092a2092e7904ae0beca2561eaab17906c7b91f4d4fd0a3d5ac9740c5f",
+          "source_request_fingerprint": "3b6fe99e895d9f69dd34b2418d64558fa4adc01a6ac5d134003dd674beee8bd3",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:52bfb66d0a9ce9b8a7981977",
+          "quote": "- 36 -\n요구사항 고유번호 FSR-002\n요구사항 분류 공제사업시스템요구사항\n요구사항 명칭 조합원업무\n",
+          "quote_start": 0,
+          "quote_end": 59,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.38",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00038",
+              "locator": "PDF p.38",
+              "char_start": 0,
+              "char_end": 59,
+              "chunk_start": 0,
+              "chunk_end": 59,
+              "page": 38
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 38,
+          "source_unit_alias": "E096",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "79f5d7092a2092e7904ae0beca2561eaab17906c7b91f4d4fd0a3d5ac9740c5f",
+          "source_request_fingerprint": "3b6fe99e895d9f69dd34b2418d64558fa4adc01a6ac5d134003dd674beee8bd3",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:339f63a565c0a45e:83ff8bf2791d3a16de3fed5b",
+          "quote": "- 37 -\n요구사항 고유번호 FSR-003\n요구사항 분류 공제사업시스템요구사항\n요구사항 명칭 약정업무\n",
+          "quote_start": 0,
+          "quote_end": 58,
+          "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+          "sha256": "339f63a565c0a45e88f9f7efb59707ed743510e74575cbb4ae21358410cf5ead",
+          "file_name": "건설엔지니어링공제조합_2025_조합 전산시스템 고도화 사업(전면개편)_제안요청서.pdf",
+          "locator": "PDF p.39",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "pdf_p00039",
+              "locator": "PDF p.39",
+              "char_start": 0,
+              "char_end": 58,
+              "chunk_start": 0,
+              "chunk_end": 58,
+              "page": 39
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "PDF_TABLE_CANDIDATES_NOT_VISUALLY_VERIFIED",
+            "PDF_VECTOR_GLYPH_REVIEW",
+            "document:PDF_TABLES_HEURISTIC"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "page": 39,
+          "source_unit_alias": "E104",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "79f5d7092a2092e7904ae0beca2561eaab17906c7b91f4d4fd0a3d5ac9740c5f",
+          "source_request_fingerprint": "3b6fe99e895d9f69dd34b2418d64558fa4adc01a6ac5d134003dd674beee8bd3",
+          "source_origin": "source_units"
+        }
+      ]
+    }
+  ],
+  "rejected_claims": [
+    {
+      "claim_index": 1,
+      "field_id": "project_name",
+      "reason": "field_or_source_validation_failed",
+      "raw_claim": {
+        "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+        "category": "other",
+        "text": "[project_name|fact] 제공된 근거에는 사업명 또는 과업명에 해당하는 명시적 제목이 아니라 ‘조합 전산시스템 고도화 사업(전면개편)’이라는 파일명이 보인다.",
+        "citations": [
+          {
+            "chunk_id": "rfp:339f63a565c0a45e:345c7b19c5c958d5702f9670",
+            "quote": "- 25 -\n￭ 프로젝트 지원 요구사항(Project Support Requirement)\n요구사항 고유번호 PSR-001\n요구사항 분류 프로젝트지원요구사항\n"
+          }
+        ]
+      },
+      "raw_claim_is_unvalidated_diagnostic": true,
+      "batch_id": "B0003",
+      "rejection_id": "3b6fe99e895d9f69-1"
+    }
+  ],
+  "missing_information": [
+    "[issuing_agency]",
+    "[purpose]",
+    "[budget_vat]",
+    "[duration]",
+    "[eligibility]",
+    "[submission_documents]",
+    "[submission_deadline]",
+    "[submission_method]",
+    "[evaluation]"
+  ],
+  "response_received": true,
+  "claims_checked": true,
+  "cache_hit": false,
+  "execution_mode": "live_openai",
+  "live_api": true,
+  "mapping_fingerprint": "79f5d7092a2092e7904ae0beca2561eaab17906c7b91f4d4fd0a3d5ac9740c5f",
+  "original_usage": {
+    "input_tokens": 8924,
+    "output_tokens": 734,
+    "total_tokens": 9658,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "usage_reported": true,
+    "latency_ms": 5412.894416003837
+  },
+  "semantic_quality_verified": false
+}

@@ -1,0 +1,90 @@
+{
+  "version": "phase5-source-review-final-v1",
+  "answer_fingerprint": "2ddf3befd71ebb356439b93bbcc1f6cee7e24bab1d910beeff88d2a5171a7465",
+  "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+  "source_sha256": "3cd93bd8e0f92667d7f0d681d7c64070f810f6ff0035f2ea564a7b56f19072c1",
+  "run_fingerprint": "2d4266bf29bdbcad8ad199454c0d83ed0cac8a7ff4df207a8fe7ae6b4740bd00",
+  "reference_snapshot": [
+    {
+      "field_id": "project_name",
+      "label": "사업명",
+      "expected": "2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수",
+      "conditions": "GPU 구매사업으로 단정하지 않고 자원 공급·유지보수라는 사업명을 보존한다.",
+      "source_reference": "문단 10 외 2곳\nR07-01-01~03"
+    },
+    {
+      "field_id": "issuing_agency",
+      "label": "발주기관",
+      "expected": "(사)한국정보통신진흥협회가 운영기관으로 명시되어 있다.",
+      "conditions": "원문 역할명은 운영기관이며 이를 명시해 기관과 역할을 함께 기록한다.",
+      "source_reference": "문단 12 외 1곳\nR07-02-01~02"
+    },
+    {
+      "field_id": "purpose",
+      "label": "목적",
+      "expected": "초거대 AI 연구에 필요한 GPU와 안정적인 연구환경을 제공해 국내 연구진 지원·AI R&D 및 산업 경쟁력을 높인다.",
+      "conditions": "인프라 공급과 연구 촉진 목적을 구별한다.",
+      "source_reference": "문단 61 외 3곳\nR07-03-01~04"
+    },
+    {
+      "field_id": "scope_requirements",
+      "label": "주요 범위·필수요건",
+      "expected": "클라우드 GPU 최소960장 이상을 동적할당으로 제공하고 운영·장애대응·연구환경·사용량 모니터링·연구자 지원을 수행한다.",
+      "conditions": "국내 보유자원, A100 포함 시 H100 이상70%(672장)이상. 미할당/준비시간·최소960장 미충족 참여불가·자원 미소진 시 추가제공/크레딧 조건을 확인한다.",
+      "source_reference": "문단 71 외 18곳\nR07-04-01~19"
+    },
+    {
+      "field_id": "budget_vat",
+      "label": "예산·VAT",
+      "expected": "사업비15,300,000,000원(153억원), 부가가치세 포함. 모델별 협상 시간당 단가×사용시간으로 월별 또는 지정기간 정산한다.",
+      "conditions": "사용시간은1시간 단위. 누적 사용료가 예산한도에 도달하면 자원 제공기간이 축소될 수 있다.",
+      "source_reference": "문단 57 외 3곳\nR07-05-01~04"
+    },
+    {
+      "field_id": "duration",
+      "label": "수행기간",
+      "expected": "계약체결일~2026.12.31. 자원 제공은 최대8개월 또는 예산 소진 시까지이며 추진현황·예산 소진에 따라 종료일 연장 가능하다.",
+      "conditions": "준비시간은 자원 제공시간에서 제외. 미소진 자원은 계약기간 후 추가제공 또는 크레딧 형태로 제공하는 조건을 보존한다.",
+      "source_reference": "문단 55 외 8곳\nR07-06-01~09"
+    },
+    {
+      "field_id": "eligibility",
+      "label": "참가·수행자격",
+      "expected": "GPU960장 이상 보유·할당과 동적할당 운영 역량을 가진 기업/컨소시엄. 공급 클라우드 사업자는 CSAP를 획득해야 한다.",
+      "conditions": "컨소시엄은 주관·참여 공급사 모두 CSAP 등 보안인증 필요. 경쟁입찰 자격과 부정당업자 제외 조건을 함께 확인한다.",
+      "source_reference": "문단 347 외 4곳\nR07-07-01~05"
+    },
+    {
+      "field_id": "submission_documents",
+      "label": "입찰 제출서류",
+      "expected": "[별도 문서 참조]\n입찰서류 및 제안서 제출은 입찰유의서 참조로 명시되어 있다.",
+      "conditions": "본문 제안서 작성지침·객관적 증빙 요구만으로 전체 입찰 서류 목록을 만들어내지 않는다.",
+      "source_reference": "문단 511 외 1곳\nR07-08-01~02"
+    },
+    {
+      "field_id": "submission_deadline",
+      "label": "제출기한",
+      "expected": "[별도 문서 참조]\n제출 기한은 입찰유의서 등을 추가 확인해야 하며, 이 RFP만으로 구체 마감일·시각을 확정하지 않는다.",
+      "conditions": "2026.12.31은 사업 종료일이다. 발표회 세부 일정 별도통보와 입찰 마감을 구별한다.",
+      "source_reference": "문단 55 외 2곳\nR07-09-01~03"
+    },
+    {
+      "field_id": "submission_method",
+      "label": "제출방식",
+      "expected": "[별도 문서 참조]\n입찰서류 및 제안서 제출 방법은 입찰유의서 참조 범위로 남긴다.",
+      "conditions": "사업수행 산출물의 이메일/USB 제출 조건을 입찰 제안서 제출 경로로 바꾸지 않는다.",
+      "source_reference": "문단 327 외 1곳\nR07-10-01~02"
+    },
+    {
+      "field_id": "evaluation",
+      "label": "평가기준·선정방식",
+      "expected": "일반경쟁·협상계약이며 기술평가100%. 기술배점85% 이상이 협상적격 기준이다.",
+      "conditions": "사업수행능력5·전략방법론25·사업관리등50·연구자지원20. 최고·최저각1개 제외 평균, 동점처리와 사업관리 우선 조건도 확인한다.",
+      "source_reference": "문단 360 외 26곳\nR07-11-01~27"
+    }
+  ],
+  "reference_fingerprint": "73be20461a58f1cfff717bb340e38d2deccc1a713e3081402eb06c060394e149",
+  "comparison_base_fingerprint": "af275735112b903f74f294844b3c43dccd8b936f1495fe535c8e4465223803ae",
+  "rejection_base_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "semantic_quality_automatically_verified": false
+}

@@ -1,0 +1,483 @@
+{
+  "batch_id": "B0006",
+  "job_key": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ:B0006:c7e023acf208",
+  "source_chunk_ids": [
+    "rfp:a3159eeb22879967:cebf008439eada38fbf3963b",
+    "rfp:a3159eeb22879967:851bfd1ad4e02118d223d7f6",
+    "rfp:a3159eeb22879967:e499419b502d757a1dfc1be2",
+    "rfp:a3159eeb22879967:d3f23fc827461f61dabab6fc",
+    "rfp:a3159eeb22879967:637dafc1255005801d5fd84d",
+    "rfp:a3159eeb22879967:bc6759b642b346f8ee97b31e",
+    "rfp:a3159eeb22879967:c906a4f54bfa009296a1307c",
+    "rfp:a3159eeb22879967:c904b368e9772cd8d320f5bb",
+    "rfp:a3159eeb22879967:0e8f950c57733ff01fa48a0f",
+    "rfp:a3159eeb22879967:8f4576bc6e79d9473f9b9d20",
+    "rfp:a3159eeb22879967:e50bb4e0e5fad0df2587194c",
+    "rfp:a3159eeb22879967:b5b960c53da8e08a4ef5567f",
+    "rfp:a3159eeb22879967:aafc063d0c43f2acf500732e",
+    "rfp:a3159eeb22879967:8a1f28910887a5794bf827f2",
+    "rfp:a3159eeb22879967:0afd1ffc14053fc64be27286",
+    "rfp:a3159eeb22879967:9b0187fe36fbe1fafff000b7",
+    "rfp:a3159eeb22879967:1700d43d377c0957fa196934",
+    "rfp:a3159eeb22879967:3e6550079aa6d4d6b1671834",
+    "rfp:a3159eeb22879967:8e59dc0a3fcef14279d34f62"
+  ],
+  "request_fingerprint": "c7e023acf2086a87b6b65a5a78853c62d9165387c8674c10ecfb049171cb0bc3",
+  "kind": "source_units",
+  "status": "completed_with_rejections",
+  "claims": [
+    {
+      "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+      "category": "overview",
+      "text": "[project_name|fact] 부동산 등기정보 시스템 구축",
+      "citations": [
+        {
+          "chunk_id": "rfp:a3159eeb22879967:d3f23fc827461f61dabab6fc",
+          "quote": "※ 최신 기준은 ‘국가정보원 홈페이지(www.nis.go.kr/AF/1_7_2_1.do)’ 참조\n<별첨6>\n소프트웨어 기술자 등급 및 범위\n<2009년 8월 1일 이후>",
+          "quote_start": 0,
+          "quote_end": 94,
+          "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+          "sha256": "a3159eeb228799678e146447a070ba3c6f609e9723667c1fe768c75cf76b325c",
+          "file_name": "한국주택금융공사_2021_부동산 등기정보 시스템 구축_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 2869 / BodyText/Section0 / paragraph 2871 / BodyText/Section0 / paragraph 2872 / BodyText/Section0 / paragraph 2873",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:2869:record:440213",
+              "locator": "BodyText/Section0 / paragraph 2869",
+              "char_start": 0,
+              "char_end": 53,
+              "chunk_start": 0,
+              "chunk_end": 53,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:2871:record:440485",
+              "locator": "BodyText/Section0 / paragraph 2871",
+              "char_start": 0,
+              "char_end": 5,
+              "chunk_start": 54,
+              "chunk_end": 59,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:2872:record:440581",
+              "locator": "BodyText/Section0 / paragraph 2872",
+              "char_start": 0,
+              "char_end": 17,
+              "chunk_start": 60,
+              "chunk_end": 77,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:2873:record:440701",
+              "locator": "BodyText/Section0 / paragraph 2873",
+              "char_start": 0,
+              "char_end": 16,
+              "chunk_start": 78,
+              "chunk_end": 94,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E040",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "2b657c053b528678b8603740b2df755a5c4dd60e01e6d26fed992aeb9766a646",
+          "source_request_fingerprint": "c7e023acf2086a87b6b65a5a78853c62d9165387c8674c10ecfb049171cb0bc3",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+      "category": "overview",
+      "text": "[issuing_agency|fact] 한 국 주 택 금 융 공 사",
+      "citations": [
+        {
+          "chunk_id": "rfp:a3159eeb22879967:9b0187fe36fbe1fafff000b7",
+          "quote": "발주기관\n계약상대자\n한 국 주 택 금 융 공 사\n사  장\n",
+          "quote_start": 0,
+          "quote_end": 32,
+          "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+          "sha256": "a3159eeb228799678e146447a070ba3c6f609e9723667c1fe768c75cf76b325c",
+          "file_name": "한국주택금융공사_2021_부동산 등기정보 시스템 구축_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 3020 / BodyText/Section0 / paragraph 3022 / BodyText/Section0 / paragraph 3023 / BodyText/Section0 / paragraph 3024",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3020:record:469402",
+              "locator": "BodyText/Section0 / paragraph 3020",
+              "char_start": 0,
+              "char_end": 4,
+              "chunk_start": 0,
+              "chunk_end": 4,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0057",
+              "row": 0,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3022:record:469678",
+              "locator": "BodyText/Section0 / paragraph 3022",
+              "char_start": 0,
+              "char_end": 5,
+              "chunk_start": 5,
+              "chunk_end": 10,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0057",
+              "row": 0,
+              "col": 2
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3023:record:469825",
+              "locator": "BodyText/Section0 / paragraph 3023",
+              "char_start": 0,
+              "char_end": 15,
+              "chunk_start": 11,
+              "chunk_end": 26,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0057",
+              "row": 1,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3024:record:469941",
+              "locator": "BodyText/Section0 / paragraph 3024",
+              "char_start": 0,
+              "char_end": 4,
+              "chunk_start": 27,
+              "chunk_end": 31,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0057",
+              "row": 1,
+              "col": 0
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E080",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "2b657c053b528678b8603740b2df755a5c4dd60e01e6d26fed992aeb9766a646",
+          "source_request_fingerprint": "c7e023acf2086a87b6b65a5a78853c62d9165387c8674c10ecfb049171cb0bc3",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 제18조에서 소프트웨어 개발 용역의 의무사항으로 웹(web) 및 앱(App) 프로그램의 HTTPS 통신규약 적용, 최신 행안부 시큐어코딩 가이드 적용, SQL-Injection 공격 관련 서버 및 DB 등에 조회언어(SQL)를 검증할 수 있는 독립된 모듈 선행 적용, PC↔전산서버ㆍDB서버 상호 정보전달 과정에서 민감정보가 평문상태로 노출되지 않도록 암복호화 모듈 적용을 요구한다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:a3159eeb22879967:8a1f28910887a5794bf827f2",
+          "quote": "제18조 소프트웨어 개발 용역은 다음 각 호의 의무사항을 철저히 이행하여야 하며, 사업시작시 이행 방법론과 월 1회 이행상태 점검결과를 정보보호책임자에게 제출하여야 한다.\n① 웹(web) 및 앱(App) 프로그램은 HTTPS 통신규약을 적용\n② 모든 소프트웨어 개발에는 최신 행안부의 시큐어코딩 가이드를 적용\n③ SQL-Injection 공격 관련 서버 및 DB 등에 조회언어(SQL)를 검증할 수 있는 독립된 모듈을 선행적으로 적용\n",
+          "quote_start": 428,
+          "quote_end": 671,
+          "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+          "sha256": "a3159eeb228799678e146447a070ba3c6f609e9723667c1fe768c75cf76b325c",
+          "file_name": "한국주택금융공사_2021_부동산 등기정보 시스템 구축_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 3009 / BodyText/Section0 / paragraph 3010 / BodyText/Section0 / paragraph 3011 / BodyText/Section0 / paragraph 3012",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3009:record:467189",
+              "locator": "BodyText/Section0 / paragraph 3009",
+              "char_start": 0,
+              "char_end": 95,
+              "chunk_start": 428,
+              "chunk_end": 523,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3010:record:467577",
+              "locator": "BodyText/Section0 / paragraph 3010",
+              "char_start": 0,
+              "char_end": 38,
+              "chunk_start": 524,
+              "chunk_end": 562,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3011:record:467753",
+              "locator": "BodyText/Section0 / paragraph 3011",
+              "char_start": 0,
+              "char_end": 37,
+              "chunk_start": 563,
+              "chunk_end": 600,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3012:record:467935",
+              "locator": "BodyText/Section0 / paragraph 3012",
+              "char_start": 0,
+              "char_end": 69,
+              "chunk_start": 601,
+              "chunk_end": 670,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E077",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "2b657c053b528678b8603740b2df755a5c4dd60e01e6d26fed992aeb9766a646",
+          "source_request_fingerprint": "c7e023acf2086a87b6b65a5a78853c62d9165387c8674c10ecfb049171cb0bc3",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:a3159eeb22879967:8a1f28910887a5794bf827f2",
+          "quote": "④ PC↔전산서버ㆍDB서버 상호 정보전달 과정에서 개인정보 및 금융거래정보 등 민감정보가 평문상태로 노출되지 않도록 암복호화 모듈을 적용",
+          "quote_start": 671,
+          "quote_end": 747,
+          "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+          "sha256": "a3159eeb228799678e146447a070ba3c6f609e9723667c1fe768c75cf76b325c",
+          "file_name": "한국주택금융공사_2021_부동산 등기정보 시스템 구축_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 3013",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3013:record:468225",
+              "locator": "BodyText/Section0 / paragraph 3013",
+              "char_start": 0,
+              "char_end": 76,
+              "chunk_start": 671,
+              "chunk_end": 747,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E078",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "2b657c053b528678b8603740b2df755a5c4dd60e01e6d26fed992aeb9766a646",
+          "source_request_fingerprint": "c7e023acf2086a87b6b65a5a78853c62d9165387c8674c10ecfb049171cb0bc3",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+      "category": "eligibility",
+      "text": "[eligibility|fact] 용역사업 참여인원은 공사(금융회사)의 사전 동의 없이 용역업체가 임의로 교체할 수 없고, 변경 인력을 포함한 참여인원은 모두 개인 자필 서명이 들어간 보안서약서(개인)를 제출하여야 한다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:a3159eeb22879967:e50bb4e0e5fad0df2587194c",
+          "quote": "제 8조 용역사업 참여인원은 공사(금융회사)의 사전 동의 없이 용역업체가 임의로 교체할 수 없다. 단, ｢행정기관 및 공공기관 정보시스템 구축·운영 지침｣(행정안전부고시 제2019-69호) 제42조(인력관리)에 따라 인력관리가 불가능한 성격의 사업은 해당되지 않으며, 용역사업 참여인원(변경 인력 등)은 사업의 성격과 상관없이 모두 개인 자필 서명이 들어간 보안서약서(개인)를 제출하여야 한다.",
+          "quote_start": 99,
+          "quote_end": 319,
+          "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+          "sha256": "a3159eeb228799678e146447a070ba3c6f609e9723667c1fe768c75cf76b325c",
+          "file_name": "한국주택금융공사_2021_부동산 등기정보 시스템 구축_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 2983",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:2983:record:461052",
+              "locator": "BodyText/Section0 / paragraph 2983",
+              "char_start": 0,
+              "char_end": 220,
+              "chunk_start": 99,
+              "chunk_end": 319,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E069",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "2b657c053b528678b8603740b2df755a5c4dd60e01e6d26fed992aeb9766a646",
+          "source_request_fingerprint": "c7e023acf2086a87b6b65a5a78853c62d9165387c8674c10ecfb049171cb0bc3",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+      "category": "submission",
+      "text": "[submission_documents|fact] 계약완료시, 사업착수시, 사업완료시점에 <별표10> 체크리스트를 작성하여 정보보호책임자에게 제출하여야 한다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:a3159eeb22879967:0e8f950c57733ff01fa48a0f",
+          "quote": "제 3조 사업자는 계약완료시, 사업착수시, 사업완료시점에 <별표10> 체크리스트를 작성하여 정보보호책임자에게 제출하여야 한다.",
+          "quote_start": 648,
+          "quote_end": 718,
+          "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+          "sha256": "a3159eeb228799678e146447a070ba3c6f609e9723667c1fe768c75cf76b325c",
+          "file_name": "한국주택금융공사_2021_부동산 등기정보 시스템 구축_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 2973",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:2973:record:458566",
+              "locator": "BodyText/Section0 / paragraph 2973",
+              "char_start": 0,
+              "char_end": 70,
+              "chunk_start": 648,
+              "chunk_end": 718,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E063",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "2b657c053b528678b8603740b2df755a5c4dd60e01e6d26fed992aeb9766a646",
+          "source_request_fingerprint": "c7e023acf2086a87b6b65a5a78853c62d9165387c8674c10ecfb049171cb0bc3",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+      "category": "submission",
+      "text": "[submission_documents|fact] 사업제안서에 물리적, 관리적, 기술적 보안대책 및 [별표3] ‘누출금지 대상정보’에 대한 보안관리계획을 기재해야 한다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:a3159eeb22879967:0e8f950c57733ff01fa48a0f",
+          "quote": "제 2조 사업자는 사업 수행에 사용되는 문서, 인원, 장비 등에 대하여 물리적, 관리적, 기술적 보안대책 및 [별표3] ‘누출금지 대상정보’에 대한 보안관리계획을 사업제안서에 기재해야 하며, 해당 정보 누출 시 한국주택금융공사는 ｢국가를 당사자로 하는 계약에 관한 법률 시행령｣제76조에 따라 사업자를 부정당업체로 등록될 수 있으며, 관련법에 의거한 제재조치를 수용해야 한다.\n",
+          "quote_start": 437,
+          "quote_end": 648,
+          "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+          "sha256": "a3159eeb228799678e146447a070ba3c6f609e9723667c1fe768c75cf76b325c",
+          "file_name": "한국주택금융공사_2021_부동산 등기정보 시스템 구축_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 2971",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:2971:record:457752",
+              "locator": "BodyText/Section0 / paragraph 2971",
+              "char_start": 0,
+              "char_end": 210,
+              "chunk_start": 437,
+              "chunk_end": 647,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E062",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "2b657c053b528678b8603740b2df755a5c4dd60e01e6d26fed992aeb9766a646",
+          "source_request_fingerprint": "c7e023acf2086a87b6b65a5a78853c62d9165387c8674c10ecfb049171cb0bc3",
+          "source_origin": "source_units"
+        }
+      ]
+    }
+  ],
+  "rejected_claims": [
+    {
+      "claim_index": 7,
+      "field_id": "evaluation",
+      "reason": "field_or_source_validation_failed",
+      "raw_claim": {
+        "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+        "category": "other",
+        "text": "[evaluation|fact] 사업 최종 산출물에 대해 정보보안전문가 또는 전문보안점검도구를 활용하여 보안 취약점을 점검하고, 도출된 취약점에 대한 개선을 완료한 뒤 그 결과를 정보보호책임자에게 제출해야 한다.",
+        "citations": [
+          {
+            "chunk_id": "rfp:a3159eeb22879967:8f4576bc6e79d9473f9b9d20",
+            "quote": "제 5조 사업 수행과정에서 취득한 자료와 정보는 ‘전산자료 인계인수 대장‘에 기록하고, 사업수행 중 내지 완료 후에도 이를 제3자에게 누설을 금지하며, 사업완료 시점에 정보보호책임자의 입회하에 완전 폐기 또는 반납해야 한다.\n제 6조 사업자는 사업 최종 산출물에 대해 정보보안전문가 또는 전문보안점검도구를 활용하여 보안 취약점을 점검, 도출된 취약점에 대한 개선을 완료하고 그 결과를 정보보호책임자에게 제출해야 한다.\n"
+          }
+        ]
+      },
+      "raw_claim_is_unvalidated_diagnostic": true,
+      "batch_id": "B0006",
+      "rejection_id": "c7e023acf2086a87-7"
+    },
+    {
+      "claim_index": 8,
+      "field_id": "evaluation",
+      "reason": "field_or_source_validation_failed",
+      "raw_claim": {
+        "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+        "category": "other",
+        "text": "[evaluation|fact] 보안성검토 및 보안적합성검증 심의결과를 사업기간내에 반영하고, 그 결과를 별도 검수항목 ‘보안성검토 등 요구사항 이행결과‘로 분류하여 증빙자료와 함께 제출하여야 한다.",
+        "citations": [
+          {
+            "chunk_id": "rfp:a3159eeb22879967:8f4576bc6e79d9473f9b9d20",
+            "quote": "제 4조 사업자는 공사의 보안성검토 및 보안적합성검증 관련 요구사항에 대하여 적극 지원하여야 하며, 보안성검토 및 보안적합성검증 심의결과를 신속히 사업기간내에 반영하여야 하며, 그 결과를 별도 검수항목 ‘보안성검토 등 요구사항 이행결과‘로 분류하고 와 증빙자료와 함께 제출하여야 한다.\n"
+          }
+        ]
+      },
+      "raw_claim_is_unvalidated_diagnostic": true,
+      "batch_id": "B0006",
+      "rejection_id": "c7e023acf2086a87-8"
+    }
+  ],
+  "missing_information": [
+    "[purpose]",
+    "[budget_vat]",
+    "[duration]",
+    "[submission_deadline]",
+    "[submission_method]"
+  ],
+  "response_received": true,
+  "claims_checked": true,
+  "cache_hit": false,
+  "execution_mode": "live_openai",
+  "live_api": true,
+  "mapping_fingerprint": "2b657c053b528678b8603740b2df755a5c4dd60e01e6d26fed992aeb9766a646",
+  "original_usage": {
+    "input_tokens": 8965,
+    "output_tokens": 742,
+    "total_tokens": 9707,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "usage_reported": true,
+    "latency_ms": 4395.280208002077
+  },
+  "semantic_quality_verified": false
+}

@@ -1,0 +1,90 @@
+{
+  "version": "phase5-source-review-final-v1",
+  "answer_fingerprint": "1ba6b2d7c7de267e2877680a5604cdce00d59aa462a64af959c845d3cfd82329",
+  "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+  "source_sha256": "a3159eeb228799678e146447a070ba3c6f609e9723667c1fe768c75cf76b325c",
+  "run_fingerprint": "2d4266bf29bdbcad8ad199454c0d83ed0cac8a7ff4df207a8fe7ae6b4740bd00",
+  "reference_snapshot": [
+    {
+      "field_id": "project_name",
+      "label": "사업명",
+      "expected": "부동산 등기정보 시스템 구축",
+      "conditions": "등기부 발급 서비스와 시스템 구축 사업명을 구별한다.",
+      "source_reference": "문단 6 외 1곳\nD04-01-01~02"
+    },
+    {
+      "field_id": "issuing_agency",
+      "label": "발주기관",
+      "expected": "한국주택금융공사. 본문 청렴계약 이행서약서의 발주자 문구와 원본·공고를 함께 대조한다.",
+      "conditions": "다른 사업명이 남은 현장실사 서식은 이 사업의 사업명 근거로 사용하지 않는다.",
+      "source_reference": "문단 1900 외 3곳\nD04-02-01~04"
+    },
+    {
+      "field_id": "purpose",
+      "label": "목적",
+      "expected": "수기 발급·육안 확인하던 등기사항전부증명서와 토지·건축물대장 정보를 데이터로 받아 업무를 전산화·자동화한다.",
+      "conditions": "부동산뿐 아니라 법인 등기와 대장 정보도 포함한다.",
+      "source_reference": "문단 114 외 2곳\nD04-03-01~03"
+    },
+    {
+      "field_id": "scope_requirements",
+      "label": "주요 범위·필수요건",
+      "expected": "부동산·법인 등기사항전부증명서와 토지·건축물대장 데이터를 실시간으로 제공한다.",
+      "conditions": "연간 등기발급 예상318,000건은 가격 제안의 참고량이며 대금은 제공량에 따라 달라진다. 세부 기능요건은 원문 요구사항 절도 확인한다.",
+      "source_reference": "문단 118 외 2곳\nD04-04-01~03"
+    },
+    {
+      "field_id": "budget_vat",
+      "label": "예산·VAT",
+      "expected": "사업예산은 280백만원 이내이며 부가세 포함. 대금은 예산 이내에서 데이터 제공량에 따라 증감한다.",
+      "conditions": "상한인 ‘이내’를 보존한다. 예상318,000건과 확정 납품·정산량을 혼동하지 않는다.",
+      "source_reference": "문단 122 외 2곳\nD04-05-01~03"
+    },
+    {
+      "field_id": "duration",
+      "label": "수행기간",
+      "expected": "계약체결일로부터365일. 외부 정보연계 협의 지연 시 단계적 오픈 및 과업 조정이 가능하다.",
+      "conditions": "365일을 임의로12개월로 치환하지 않고 조정 조건을 함께 기록한다.",
+      "source_reference": "문단 124 외 1곳\nD04-06-01~02"
+    },
+    {
+      "field_id": "eligibility",
+      "label": "참가·수행자격",
+      "expected": "입찰등록·관련 자격, 컴퓨터 관련 서비스사업 SW사업자 신고와 직접생산증명서가 필요하며 대기업·중견기업 참여가 제한된다.",
+      "conditions": "공동이행만 허용, 대표 포함5개사 이내·최소지분10%. 기타는 공고문 참조.",
+      "source_reference": "문단 577 외 12곳\nD04-07-01~13"
+    },
+    {
+      "field_id": "submission_documents",
+      "label": "입찰 제출서류",
+      "expected": "[부분확인]\n전체 제출서류·일시·장소는 공고문 참고. 본문 정성 제안서 합본 서류와 원본 제출 조건을 확인한다.",
+      "conditions": "사업자등록·등기·인감·위임/재직·완납·SW신고·청렴·일반현황·하도급·개인정보 등 해당 서류를 구별한다.",
+      "source_reference": "문단 628 외 19곳\nD04-08-01~20"
+    },
+    {
+      "field_id": "submission_deadline",
+      "label": "제출기한",
+      "expected": "[공고문 참조]\n제출 일시는 공고문 참고이다.",
+      "conditions": "입찰 마감 날짜·시간을 사업기간에서 추정하지 않는다.",
+      "source_reference": "문단 628\nD04-09-01"
+    },
+    {
+      "field_id": "submission_method",
+      "label": "제출방식",
+      "expected": "[부분확인]\n접수 일시·장소 등은 공고문에 따른다. 가격입찰은 국가종합전자조달시스템을 이용한다.",
+      "conditions": "원본 제출·사본 확인날인 조건과 계약 후 제안서 CD3장 제출을 입찰 제출 방식과 구별한다.",
+      "source_reference": "문단 604 외 4곳\nD04-10-01~05"
+    },
+    {
+      "field_id": "evaluation",
+      "label": "평가기준·선정방식",
+      "expected": "제한경쟁·협상계약. 기술90점+가격10점, 기술 배점의85% 이상을 협상적격자로 선정한다.",
+      "conditions": "합산 동점은 기술점수, 그마저 같으면 큰 배점 세부항목 점수 순이다. 기술85%를 전체85점으로 바꾸지 않는다.",
+      "source_reference": "문단 132 외 7곳\nD04-11-01~08"
+    }
+  ],
+  "reference_fingerprint": "713ff7b260c6b4c4d6a10e99fcb297921a4b5174a75cf047c8128a2d2ba0d26c",
+  "comparison_base_fingerprint": "4710a63a424f1b78d67d7b3bd2a5a3d37226f65e3955b88180ce707a4c4e1d82",
+  "rejection_base_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "semantic_quality_automatically_verified": false
+}

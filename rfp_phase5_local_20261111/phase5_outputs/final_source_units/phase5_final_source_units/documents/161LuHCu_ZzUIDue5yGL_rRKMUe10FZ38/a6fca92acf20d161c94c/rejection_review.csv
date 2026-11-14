@@ -1,0 +1,8 @@
+﻿거절ID,배치ID,항목,거절사유,검증실패모델주장_진단용,판정,메모
+389ec00473fa516b-9,B0004,입찰 제출서류,field_or_source_validation_failed,"[submission_documents|fact] 성과품 제출 시 결과보고서(인쇄자료 50부 및 전자파일), 구축사업 제안요청서(RFP), 보안서류 및 대표자 확약서 등 공사 요청 서류 일체를 제출해야 한다.",,
+389ec00473fa516b-10,B0004,평가기준,field_or_source_validation_failed,[evaluation|fact] 본 사업은 「소프트웨어 진흥법」 제50조에 따른 과업내용 확정을 위하여 과업심의위원회를 개최한 사업이다.,,
+389ec00473fa516b-11,B0004,평가기준,field_or_source_validation_failed,"[evaluation|fact] 과업내용 변경 및 그에 따른 계약금액·계약기간 조정이 필요한 경우 계약상대자는 소프트웨어사업 과업변경요청서를 제출해야 하며, 과업심의위원회 개최 요청은 특별한 사정이 없으면 수용해야 한다.",,
+389ec00473fa516b-12,B0004,평가기준,field_or_source_validation_failed,"[evaluation|fact] 기술성 평가 시 ‘하도급계획적정성’을 평가항목에 포함하며, 소프트웨어사업 하도급 계획 적정성 확인서를 제출해야 한다.",,
+26f2bfd99418913b-11,B0006,목적,field_or_source_validation_failed,"[purpose|fact] 사업수행 부문 예시에는 공사 B2C 채널 운영 조직 및 업무 프로세스 현황 분석 및 재설계, 공사 관광정보 채널 운영 현황 분석 및 통합·연계 방향 도출, 통합 회원 운영 방안 및 개인정보 수집정책 정의, 통합 플랫폼 구조 및 데이터 활용 체계 설계, 단계별 채널 통합 실행 로드맵 수립이 제시된다.",,
+769ec6ab060b7cf0-9,B0007,목적,field_or_source_validation_failed,"[purpose|fact] 청렴계약ㆍ인권경영 이행각서는 부패 없는 투명한 기업경영과 공정한 행정, 청렴계약 취지, 한국관광공사의 인권경영 확산에 동참하겠다는 취지로 제시되어 있다",,
+914f8b201fc30d5d-7,B0009,주요 범위·필수요건,field_or_source_validation_failed,"[scope_requirements|fact] 정보화사업 추진중 용역업체에 의한 보안사고 발생시 용역업체는 ⌜사업자 보안위규 처리기준⌟에 따라 조치하고, 사업담당자는 관리감독의 책임을 물어 ⌜공무원 징계령⌟에 따라 조치한다.",,

@@ -1,0 +1,90 @@
+{
+  "version": "phase5-source-review-final-v1",
+  "answer_fingerprint": "4d33bc4356175fff0818e11ba80b610b2b112542e04081a7c4a0214c2e6c1e9f",
+  "doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+  "source_sha256": "7a592ea538ed00d8dca697c8cab8fadd110ec2a15902f8235b80bb7d960027bc",
+  "run_fingerprint": "2d4266bf29bdbcad8ad199454c0d83ed0cac8a7ff4df207a8fe7ae6b4740bd00",
+  "reference_snapshot": [
+    {
+      "field_id": "project_name",
+      "label": "사업명",
+      "expected": "2026년도 귀속 연말정산 위탁운영 용역",
+      "conditions": "사업연도 2026을 문서 작성일·실제 수행 종료연도와 구별한다.",
+      "source_reference": "문단 10 외 1곳\nD01-01-01~02"
+    },
+    {
+      "field_id": "issuing_agency",
+      "label": "발주기관",
+      "expected": "[부분확인]\n본문에 인천공항시설관리(주)가 등장한다. 발주기관 역할의 최종 확인은 원본 표지·공고 대조가 필요하다.",
+      "conditions": "파일명만으로 발주기관을 확정하지 않는다. 상주 장소와 발주기관 역할을 구별한다.",
+      "source_reference": "문단 25 외 3곳\nD01-02-01~04"
+    },
+    {
+      "field_id": "purpose",
+      "label": "목적",
+      "expected": "세무 전문업체의 교육·신고자료 검토로 업무를 효율화하고, 세법 정보·상담으로 연말정산 오류를 최소화한다.",
+      "conditions": "효율적 업무처리와 신고오류 최소화 목적을 모두 포함한다.",
+      "source_reference": "문단 80 외 1곳\nD01-03-01~02"
+    },
+    {
+      "field_id": "scope_requirements",
+      "label": "주요 범위·필수요건",
+      "expected": "안내문·IU 매뉴얼, 오류 검증, 상담·자료 접수와 입력 보조, 지급명세서·결과보고서, 증빙 편철·제출, 부당공제 후속 처리와 개인정보 보호·자료 반납/파기를 수행한다.",
+      "conditions": "예정인원 4,200명 이내는 추정치이며 변동 가능. 상세 과업표·인력 상주·주 2회 이상 총괄책임자 방문 조건도 확인한다.",
+      "source_reference": "문단 64 외 15곳\nD01-04-01~16"
+    },
+    {
+      "field_id": "budget_vat",
+      "label": "예산·VAT",
+      "expected": "사업예산 57,246,000원, 부가가치세 제외. 단가계약으로 실제 대상인원에 대하여 정산·지급한다.",
+      "conditions": "부가세 제외를 포함으로 바꾸지 않는다. 예정 총액과 실제 정산금액을 구별한다.",
+      "source_reference": "문단 72 외 1곳\nD01-05-01~02"
+    },
+    {
+      "field_id": "duration",
+      "label": "수행기간",
+      "expected": "계약체결일~2027.3.17. 당해 연도 부당 공제자 통보 시 후속절차 지원은 과업기간 이후에도 포함된다.",
+      "conditions": "종료일만 적고 기간 이후 지원 의무를 누락하지 않는다.",
+      "source_reference": "문단 61 외 2곳\nD01-06-01~03"
+    },
+    {
+      "field_id": "eligibility",
+      "label": "참가·수행자격",
+      "expected": "[부분확인]\n총괄책임자는 세무사 자격과 연말정산 3년 이상 경력. 상주인력은 연말정산 2년 이상 경력자 3명 이상이다.",
+      "conditions": "이는 수행인력 요건이다. 별도의 입찰 참가업체 자격이 모두 확인됐다고 쓰지 않는다.",
+      "source_reference": "문단 165 외 2곳\nD01-07-01~03"
+    },
+    {
+      "field_id": "submission_documents",
+      "label": "입찰 제출서류",
+      "expected": "[미확인]\n입찰 제출서류 목록은 현재 추출 본문에서 확인하지 못했다. 착수·준공 제출문서는 별도로 존재한다.",
+      "conditions": "착수계·공정예정표·준공계·결과보고서를 입찰 제출서류로 바꾸지 않는다.",
+      "source_reference": "문단 254 외 7곳\nD01-08-01~08"
+    },
+    {
+      "field_id": "submission_deadline",
+      "label": "제출기한",
+      "expected": "[미확인]\n입찰 마감 연월일·시각은 현재 추출 본문에서 확인하지 못했다.",
+      "conditions": "계약 시작 후 7일 이내 착수계 제출, 준공 완료기한을 입찰 마감으로 사용하지 않는다.",
+      "source_reference": "문단 122 외 3곳\nD01-09-01~04"
+    },
+    {
+      "field_id": "submission_method",
+      "label": "제출방식",
+      "expected": "[미확인]\n입찰 접수 경로는 현재 추출 본문에서 확인하지 못했다.",
+      "conditions": "착수·준공 문서 제출이나 홈페이지의 서식 게시 위치를 입찰 접수 방법으로 사용하지 않는다.",
+      "source_reference": "문단 256 외 1곳\nD01-10-01~02"
+    },
+    {
+      "field_id": "evaluation",
+      "label": "평가기준·선정방식",
+      "expected": "[부분확인]\n낙찰자 선정방식은 적격심사(제한적최저가) 낙찰제. 세부 평가항목·배점은 현재 추출 본문에서 확인하지 못했다.",
+      "conditions": "선정방식을 남기되 세부 배점표를 추정하지 않는다.",
+      "source_reference": "문단 74\nD01-11-01"
+    }
+  ],
+  "reference_fingerprint": "e6471d4c6a55fd3597b127d33151584c4e5a54802505dc28bffe34ccc64771b7",
+  "comparison_base_fingerprint": "a3f663114e4897b26b5ba76bfe2aa7898a638932d60f700e6cfd7abb02c9c716",
+  "rejection_base_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "semantic_quality_automatically_verified": false
+}

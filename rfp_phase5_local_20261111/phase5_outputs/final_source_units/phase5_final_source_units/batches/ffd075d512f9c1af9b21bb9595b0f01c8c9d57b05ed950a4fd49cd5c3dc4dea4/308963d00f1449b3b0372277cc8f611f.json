@@ -1,0 +1,1463 @@
+{
+  "batch_id": "B0007",
+  "job_key": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ:B0007:ffd075d512f9",
+  "source_chunk_ids": [
+    "rfp:a3159eeb22879967:8e3ef2f69a781f8ea7c10c8a",
+    "rfp:a3159eeb22879967:01608522a0feeeb0809dee11",
+    "rfp:a3159eeb22879967:51c9ba686312bd92e8d0e864",
+    "rfp:a3159eeb22879967:6009679ddbdc88ec5899220e",
+    "rfp:a3159eeb22879967:fbe5f37f82798403b12131ad",
+    "rfp:a3159eeb22879967:66c1153e745d1eef3152f5b7",
+    "rfp:a3159eeb22879967:0d3f4897098d2da0e52d5eb3",
+    "rfp:a3159eeb22879967:f071c3256d224e1519a8381a",
+    "rfp:a3159eeb22879967:9cc80a2182e2221aabb613bf",
+    "rfp:a3159eeb22879967:0fe40eec8b6946844e37ca1c",
+    "rfp:a3159eeb22879967:2396027e4e48c79eece53a91",
+    "rfp:a3159eeb22879967:f03ff8b2bc4b99cc5595fd56",
+    "rfp:a3159eeb22879967:d70cce76f71a5803022e34d3",
+    "rfp:a3159eeb22879967:0f415376a4db86fec1b6807a",
+    "rfp:a3159eeb22879967:89cd929d9fae5a210ab5d100",
+    "rfp:a3159eeb22879967:9b203b34158eccede9ccc05a",
+    "rfp:a3159eeb22879967:39eb8e41f475539d59aae6d1",
+    "rfp:a3159eeb22879967:4529644bb7b303aa4af95e62",
+    "rfp:a3159eeb22879967:2e9abf8741cbc4d03efd0ebc",
+    "rfp:a3159eeb22879967:89fb387feb9a59c80ba8ccc9",
+    "rfp:a3159eeb22879967:3274662623bc577ab6e7c214",
+    "rfp:a3159eeb22879967:b0e979b9a2cb09400ca92b75"
+  ],
+  "request_fingerprint": "ffd075d512f9c1af9b21bb9595b0f01c8c9d57b05ed950a4fd49cd5c3dc4dea4",
+  "kind": "source_units",
+  "status": "completed_with_rejections",
+  "claims": [
+    {
+      "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+      "category": "submission",
+      "text": "[submission_documents|fact] 보안 서약서(개인용)와 보안 서약서(업체용) 양식이 제시되어 있다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:a3159eeb22879967:66c1153e745d1eef3152f5b7",
+          "quote": "보안 서약서(개인용)\n본인은     년   월   일부로                관련 용역사업(업무)을 수행함에 있어 다음사항을 준수할 것을 엄숙히 서약합니다.\n1. 본인은          관련 업무 중 알게 될 일체의 내용이 직무상 기밀 사항임을 인정한다.\n2. 본인은 업무수행 중 지득한 제반 기밀사항을 일체 누설하거나 공개하지 아니한다.\n",
+          "quote_start": 0,
+          "quote_end": 194,
+          "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+          "sha256": "a3159eeb228799678e146447a070ba3c6f609e9723667c1fe768c75cf76b325c",
+          "file_name": "한국주택금융공사_2021_부동산 등기정보 시스템 구축_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 3185 / BodyText/Section0 / paragraph 3187 / BodyText/Section0 / paragraph 3188 / BodyText/Section0 / paragraph 3189",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3185:record:491481",
+              "locator": "BodyText/Section0 / paragraph 3185",
+              "char_start": 0,
+              "char_end": 11,
+              "chunk_start": 0,
+              "chunk_end": 11,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0060",
+              "row": 0,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3187:record:491669",
+              "locator": "BodyText/Section0 / paragraph 3187",
+              "char_start": 0,
+              "char_end": 79,
+              "chunk_start": 12,
+              "chunk_end": 91,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0060",
+              "row": 0,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3188:record:491949",
+              "locator": "BodyText/Section0 / paragraph 3188",
+              "char_start": 0,
+              "char_end": 54,
+              "chunk_start": 92,
+              "chunk_end": 146,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0060",
+              "row": 0,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3189:record:492187",
+              "locator": "BodyText/Section0 / paragraph 3189",
+              "char_start": 0,
+              "char_end": 46,
+              "chunk_start": 147,
+              "chunk_end": 193,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0060",
+              "row": 0,
+              "col": 0
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E020",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "5f19f0177151e2c2cded08dc0f9b509f4106888dfc0f84dbe856a74a7dce8556",
+          "source_request_fingerprint": "ffd075d512f9c1af9b21bb9595b0f01c8c9d57b05ed950a4fd49cd5c3dc4dea4",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:a3159eeb22879967:f071c3256d224e1519a8381a",
+          "quote": "보안  서약서(업체용)\n한국주택금융공사 귀중\n은                                  을 수행하면서 취득한 한국주택금융공사 내부자료 및 정보에 대하여 용역과업 수행 중 또는 과업 완료 후 그리고 본 용역참여자의 재직 중은 물론 퇴사 후에도 이를 누설하지 않을 것을 약속하며, 귀사에서 당사에 제공한 자료 및 본 용역과 관련하여 생성된 자료(문서, 디스켓 등)는 용역과업 완료 후 삭제하고, 귀사에 모두 반납하겠습니다.\n",
+          "quote_start": 0,
+          "quote_end": 246,
+          "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+          "sha256": "a3159eeb228799678e146447a070ba3c6f609e9723667c1fe768c75cf76b325c",
+          "file_name": "한국주택금융공사_2021_부동산 등기정보 시스템 구축_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 3210 / BodyText/Section0 / paragraph 3213 / BodyText/Section0 / paragraph 3215",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3210:record:495480",
+              "locator": "BodyText/Section0 / paragraph 3210",
+              "char_start": 0,
+              "char_end": 12,
+              "chunk_start": 0,
+              "chunk_end": 12,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0061",
+              "row": 0,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3213:record:495776",
+              "locator": "BodyText/Section0 / paragraph 3213",
+              "char_start": 0,
+              "char_end": 11,
+              "chunk_start": 13,
+              "chunk_end": 24,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0061",
+              "row": 0,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3215:record:495964",
+              "locator": "BodyText/Section0 / paragraph 3215",
+              "char_start": 0,
+              "char_end": 220,
+              "chunk_start": 25,
+              "chunk_end": 245,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0061",
+              "row": 0,
+              "col": 0
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E025",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "5f19f0177151e2c2cded08dc0f9b509f4106888dfc0f84dbe856a74a7dce8556",
+          "source_request_fingerprint": "ffd075d512f9c1af9b21bb9595b0f01c8c9d57b05ed950a4fd49cd5c3dc4dea4",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 장비도입 보안 점검 체크리스트가 Unix, 데이터베이스, 네트워크로 구분되어 제시되어 있다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:a3159eeb22879967:9cc80a2182e2221aabb613bf",
+          "quote": "[별표6]\n장비도입 보안 점검 체크리스트 - Unix",
+          "quote_start": 0,
+          "quote_end": 29,
+          "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+          "sha256": "a3159eeb228799678e146447a070ba3c6f609e9723667c1fe768c75cf76b325c",
+          "file_name": "한국주택금융공사_2021_부동산 등기정보 시스템 구축_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 3224 / BodyText/Section0 / paragraph 3226",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3224:record:497964",
+              "locator": "BodyText/Section0 / paragraph 3224",
+              "char_start": 0,
+              "char_end": 5,
+              "chunk_start": 0,
+              "chunk_end": 5,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3226:record:498505",
+              "locator": "BodyText/Section0 / paragraph 3226",
+              "char_start": 0,
+              "char_end": 23,
+              "chunk_start": 6,
+              "chunk_end": 29,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E027",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "5f19f0177151e2c2cded08dc0f9b509f4106888dfc0f84dbe856a74a7dce8556",
+          "source_request_fingerprint": "ffd075d512f9c1af9b21bb9595b0f01c8c9d57b05ed950a4fd49cd5c3dc4dea4",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:a3159eeb22879967:89cd929d9fae5a210ab5d100",
+          "quote": "장비도입 보안 점검 체크리스트 - 데이터베이스",
+          "quote_start": 0,
+          "quote_end": 25,
+          "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+          "sha256": "a3159eeb228799678e146447a070ba3c6f609e9723667c1fe768c75cf76b325c",
+          "file_name": "한국주택금융공사_2021_부동산 등기정보 시스템 구축_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 3622",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3622:record:555914",
+              "locator": "BodyText/Section0 / paragraph 3622",
+              "char_start": 0,
+              "char_end": 25,
+              "chunk_start": 0,
+              "chunk_end": 25,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E099",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "5f19f0177151e2c2cded08dc0f9b509f4106888dfc0f84dbe856a74a7dce8556",
+          "source_request_fingerprint": "ffd075d512f9c1af9b21bb9595b0f01c8c9d57b05ed950a4fd49cd5c3dc4dea4",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:a3159eeb22879967:89fb387feb9a59c80ba8ccc9",
+          "quote": "장비도입 보안 점검 체크리스트 - 네트워크",
+          "quote_start": 0,
+          "quote_end": 23,
+          "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+          "sha256": "a3159eeb228799678e146447a070ba3c6f609e9723667c1fe768c75cf76b325c",
+          "file_name": "한국주택금융공사_2021_부동산 등기정보 시스템 구축_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 3769",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3769:record:579330",
+              "locator": "BodyText/Section0 / paragraph 3769",
+              "char_start": 0,
+              "char_end": 23,
+              "chunk_start": 0,
+              "chunk_end": 23,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E127",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "5f19f0177151e2c2cded08dc0f9b509f4106888dfc0f84dbe856a74a7dce8556",
+          "source_request_fingerprint": "ffd075d512f9c1af9b21bb9595b0f01c8c9d57b05ed950a4fd49cd5c3dc4dea4",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] Unix 체크리스트에는 계정관리, 파일 및 디렉토리 관리, 서비스 관리, 패치관리, 로그관리 등의 보안 점검 항목이 포함되어 있다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:a3159eeb22879967:f03ff8b2bc4b99cc5595fd56",
+          "quote": "분류\n번호\n취약점 점검 항목\n등급\n",
+          "quote_start": 0,
+          "quote_end": 19,
+          "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+          "sha256": "a3159eeb228799678e146447a070ba3c6f609e9723667c1fe768c75cf76b325c",
+          "file_name": "한국주택금융공사_2021_부동산 등기정보 시스템 구축_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 3241 / BodyText/Section0 / paragraph 3242 / BodyText/Section0 / paragraph 3243 / BodyText/Section0 / paragraph 3244",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3241:record:500946",
+              "locator": "BodyText/Section0 / paragraph 3241",
+              "char_start": 0,
+              "char_end": 2,
+              "chunk_start": 0,
+              "chunk_end": 2,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0064",
+              "row": 0,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3242:record:501087",
+              "locator": "BodyText/Section0 / paragraph 3242",
+              "char_start": 0,
+              "char_end": 2,
+              "chunk_start": 3,
+              "chunk_end": 5,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0064",
+              "row": 0,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3243:record:501228",
+              "locator": "BodyText/Section0 / paragraph 3243",
+              "char_start": 0,
+              "char_end": 9,
+              "chunk_start": 6,
+              "chunk_end": 15,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0064",
+              "row": 0,
+              "col": 2
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3244:record:501383",
+              "locator": "BodyText/Section0 / paragraph 3244",
+              "char_start": 0,
+              "char_end": 2,
+              "chunk_start": 16,
+              "chunk_end": 18,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0064",
+              "row": 0,
+              "col": 3
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E031",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "5f19f0177151e2c2cded08dc0f9b509f4106888dfc0f84dbe856a74a7dce8556",
+          "source_request_fingerprint": "ffd075d512f9c1af9b21bb9595b0f01c8c9d57b05ed950a4fd49cd5c3dc4dea4",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:a3159eeb22879967:f03ff8b2bc4b99cc5595fd56",
+          "quote": "파일 및\n디렉토리\n관리\nU-16\n",
+          "quote_start": 362,
+          "quote_end": 380,
+          "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+          "sha256": "a3159eeb228799678e146447a070ba3c6f609e9723667c1fe768c75cf76b325c",
+          "file_name": "한국주택금융공사_2021_부동산 등기정보 시스템 구축_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 3323 / BodyText/Section0 / paragraph 3324 / BodyText/Section0 / paragraph 3325 / BodyText/Section0 / paragraph 3326",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3323:record:512656",
+              "locator": "BodyText/Section0 / paragraph 3323",
+              "char_start": 0,
+              "char_end": 4,
+              "chunk_start": 362,
+              "chunk_end": 366,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0064",
+              "row": 16,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3324:record:512752",
+              "locator": "BodyText/Section0 / paragraph 3324",
+              "char_start": 0,
+              "char_end": 4,
+              "chunk_start": 367,
+              "chunk_end": 371,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0064",
+              "row": 16,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3325:record:512848",
+              "locator": "BodyText/Section0 / paragraph 3325",
+              "char_start": 0,
+              "char_end": 2,
+              "chunk_start": 372,
+              "chunk_end": 374,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0064",
+              "row": 16,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3326:record:512989",
+              "locator": "BodyText/Section0 / paragraph 3326",
+              "char_start": 0,
+              "char_end": 4,
+              "chunk_start": 375,
+              "chunk_end": 379,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0064",
+              "row": 16,
+              "col": 1
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E044",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "5f19f0177151e2c2cded08dc0f9b509f4106888dfc0f84dbe856a74a7dce8556",
+          "source_request_fingerprint": "ffd075d512f9c1af9b21bb9595b0f01c8c9d57b05ed950a4fd49cd5c3dc4dea4",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:a3159eeb22879967:d70cce76f71a5803022e34d3",
+          "quote": "분류\n번호\n취약점 점검 항목\n등급\n",
+          "quote_start": 0,
+          "quote_end": 19,
+          "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+          "sha256": "a3159eeb228799678e146447a070ba3c6f609e9723667c1fe768c75cf76b325c",
+          "file_name": "한국주택금융공사_2021_부동산 등기정보 시스템 구축_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 3241 / BodyText/Section0 / paragraph 3242 / BodyText/Section0 / paragraph 3243 / BodyText/Section0 / paragraph 3244",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3241:record:500946",
+              "locator": "BodyText/Section0 / paragraph 3241",
+              "char_start": 0,
+              "char_end": 2,
+              "chunk_start": 0,
+              "chunk_end": 2,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0064",
+              "row": 0,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3242:record:501087",
+              "locator": "BodyText/Section0 / paragraph 3242",
+              "char_start": 0,
+              "char_end": 2,
+              "chunk_start": 3,
+              "chunk_end": 5,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0064",
+              "row": 0,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3243:record:501228",
+              "locator": "BodyText/Section0 / paragraph 3243",
+              "char_start": 0,
+              "char_end": 9,
+              "chunk_start": 6,
+              "chunk_end": 15,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0064",
+              "row": 0,
+              "col": 2
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3244:record:501383",
+              "locator": "BodyText/Section0 / paragraph 3244",
+              "char_start": 0,
+              "char_end": 2,
+              "chunk_start": 16,
+              "chunk_end": 18,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0064",
+              "row": 0,
+              "col": 3
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E059",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "5f19f0177151e2c2cded08dc0f9b509f4106888dfc0f84dbe856a74a7dce8556",
+          "source_request_fingerprint": "ffd075d512f9c1af9b21bb9595b0f01c8c9d57b05ed950a4fd49cd5c3dc4dea4",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:a3159eeb22879967:0f415376a4db86fec1b6807a",
+          "quote": "분류\n번호\n취약점 점검 항목\n등급\n",
+          "quote_start": 0,
+          "quote_end": 19,
+          "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+          "sha256": "a3159eeb228799678e146447a070ba3c6f609e9723667c1fe768c75cf76b325c",
+          "file_name": "한국주택금융공사_2021_부동산 등기정보 시스템 구축_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 3241 / BodyText/Section0 / paragraph 3242 / BodyText/Section0 / paragraph 3243 / BodyText/Section0 / paragraph 3244",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3241:record:500946",
+              "locator": "BodyText/Section0 / paragraph 3241",
+              "char_start": 0,
+              "char_end": 2,
+              "chunk_start": 0,
+              "chunk_end": 2,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0064",
+              "row": 0,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3242:record:501087",
+              "locator": "BodyText/Section0 / paragraph 3242",
+              "char_start": 0,
+              "char_end": 2,
+              "chunk_start": 3,
+              "chunk_end": 5,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0064",
+              "row": 0,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3243:record:501228",
+              "locator": "BodyText/Section0 / paragraph 3243",
+              "char_start": 0,
+              "char_end": 9,
+              "chunk_start": 6,
+              "chunk_end": 15,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0064",
+              "row": 0,
+              "col": 2
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3244:record:501383",
+              "locator": "BodyText/Section0 / paragraph 3244",
+              "char_start": 0,
+              "char_end": 2,
+              "chunk_start": 16,
+              "chunk_end": 18,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0064",
+              "row": 0,
+              "col": 3
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E091",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "5f19f0177151e2c2cded08dc0f9b509f4106888dfc0f84dbe856a74a7dce8556",
+          "source_request_fingerprint": "ffd075d512f9c1af9b21bb9595b0f01c8c9d57b05ed950a4fd49cd5c3dc4dea4",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:a3159eeb22879967:0f415376a4db86fec1b6807a",
+          "quote": "Apache  웹서비스 정보 숨김\n중\n패치관리\nU-71\n",
+          "quote_start": 104,
+          "quote_end": 135,
+          "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+          "sha256": "a3159eeb228799678e146447a070ba3c6f609e9723667c1fe768c75cf76b325c",
+          "file_name": "한국주택금융공사_2021_부동산 등기정보 시스템 구축_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 3599 / BodyText/Section0 / paragraph 3600 / BodyText/Section0 / paragraph 3603 / BodyText/Section0 / paragraph 3604",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3599:record:552425",
+              "locator": "BodyText/Section0 / paragraph 3599",
+              "char_start": 0,
+              "char_end": 18,
+              "chunk_start": 104,
+              "chunk_end": 122,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0064",
+              "row": 70,
+              "col": 2
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3600:record:552598",
+              "locator": "BodyText/Section0 / paragraph 3600",
+              "char_start": 0,
+              "char_end": 1,
+              "chunk_start": 123,
+              "chunk_end": 124,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0064",
+              "row": 70,
+              "col": 3
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3603:record:552999",
+              "locator": "BodyText/Section0 / paragraph 3603",
+              "char_start": 0,
+              "char_end": 4,
+              "chunk_start": 125,
+              "chunk_end": 129,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0064",
+              "row": 71,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3604:record:553144",
+              "locator": "BodyText/Section0 / paragraph 3604",
+              "char_start": 0,
+              "char_end": 4,
+              "chunk_start": 130,
+              "chunk_end": 134,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0064",
+              "row": 71,
+              "col": 1
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E095",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "5f19f0177151e2c2cded08dc0f9b509f4106888dfc0f84dbe856a74a7dce8556",
+          "source_request_fingerprint": "ffd075d512f9c1af9b21bb9595b0f01c8c9d57b05ed950a4fd49cd5c3dc4dea4",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:a3159eeb22879967:0f415376a4db86fec1b6807a",
+          "quote": "최신 보안패치 및 벤더 권고사항 적용\n상\n로그관리\nU-72\n",
+          "quote_start": 135,
+          "quote_end": 168,
+          "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+          "sha256": "a3159eeb228799678e146447a070ba3c6f609e9723667c1fe768c75cf76b325c",
+          "file_name": "한국주택금융공사_2021_부동산 등기정보 시스템 구축_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 3605 / BodyText/Section0 / paragraph 3606 / BodyText/Section0 / paragraph 3609 / BodyText/Section0 / paragraph 3610",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3605:record:553289",
+              "locator": "BodyText/Section0 / paragraph 3605",
+              "char_start": 0,
+              "char_end": 20,
+              "chunk_start": 135,
+              "chunk_end": 155,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0064",
+              "row": 71,
+              "col": 2
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3606:record:553466",
+              "locator": "BodyText/Section0 / paragraph 3606",
+              "char_start": 0,
+              "char_end": 1,
+              "chunk_start": 156,
+              "chunk_end": 157,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0064",
+              "row": 71,
+              "col": 3
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3609:record:553867",
+              "locator": "BodyText/Section0 / paragraph 3609",
+              "char_start": 0,
+              "char_end": 4,
+              "chunk_start": 158,
+              "chunk_end": 162,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0064",
+              "row": 72,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3610:record:554012",
+              "locator": "BodyText/Section0 / paragraph 3610",
+              "char_start": 0,
+              "char_end": 4,
+              "chunk_start": 163,
+              "chunk_end": 167,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0064",
+              "row": 72,
+              "col": 1
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E096",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "5f19f0177151e2c2cded08dc0f9b509f4106888dfc0f84dbe856a74a7dce8556",
+          "source_request_fingerprint": "ffd075d512f9c1af9b21bb9595b0f01c8c9d57b05ed950a4fd49cd5c3dc4dea4",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 데이터베이스 체크리스트에는 계정관리, 접근관리, 옵션관리, 패치관리, 감사관리 항목이 포함되어 있다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:a3159eeb22879967:4529644bb7b303aa4af95e62",
+          "quote": "분류\n번호\n취약점 점검 항목\n등급\n",
+          "quote_start": 0,
+          "quote_end": 19,
+          "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+          "sha256": "a3159eeb228799678e146447a070ba3c6f609e9723667c1fe768c75cf76b325c",
+          "file_name": "한국주택금융공사_2021_부동산 등기정보 시스템 구축_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 3637 / BodyText/Section0 / paragraph 3638 / BodyText/Section0 / paragraph 3639 / BodyText/Section0 / paragraph 3640",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3637:record:558261",
+              "locator": "BodyText/Section0 / paragraph 3637",
+              "char_start": 0,
+              "char_end": 2,
+              "chunk_start": 0,
+              "chunk_end": 2,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0067",
+              "row": 0,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3638:record:558402",
+              "locator": "BodyText/Section0 / paragraph 3638",
+              "char_start": 0,
+              "char_end": 2,
+              "chunk_start": 3,
+              "chunk_end": 5,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0067",
+              "row": 0,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3639:record:558543",
+              "locator": "BodyText/Section0 / paragraph 3639",
+              "char_start": 0,
+              "char_end": 9,
+              "chunk_start": 6,
+              "chunk_end": 15,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0067",
+              "row": 0,
+              "col": 2
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3640:record:558698",
+              "locator": "BodyText/Section0 / paragraph 3640",
+              "char_start": 0,
+              "char_end": 2,
+              "chunk_start": 16,
+              "chunk_end": 18,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0067",
+              "row": 0,
+              "col": 3
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E103",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "5f19f0177151e2c2cded08dc0f9b509f4106888dfc0f84dbe856a74a7dce8556",
+          "source_request_fingerprint": "ffd075d512f9c1af9b21bb9595b0f01c8c9d57b05ed950a4fd49cd5c3dc4dea4",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:a3159eeb22879967:4529644bb7b303aa4af95e62",
+          "quote": "중\n접근관리\nD-7\n원격에서 DB 서버로의 접속 통제 및 관리\n",
+          "quote_start": 271,
+          "quote_end": 306,
+          "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+          "sha256": "a3159eeb228799678e146447a070ba3c6f609e9723667c1fe768c75cf76b325c",
+          "file_name": "한국주택금융공사_2021_부동산 등기정보 시스템 구축_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 3671 / BodyText/Section0 / paragraph 3674 / BodyText/Section0 / paragraph 3675 / BodyText/Section0 / paragraph 3676",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3671:record:563549",
+              "locator": "BodyText/Section0 / paragraph 3671",
+              "char_start": 0,
+              "char_end": 1,
+              "chunk_start": 271,
+              "chunk_end": 272,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0067",
+              "row": 6,
+              "col": 3
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3674:record:563950",
+              "locator": "BodyText/Section0 / paragraph 3674",
+              "char_start": 0,
+              "char_end": 4,
+              "chunk_start": 273,
+              "chunk_end": 277,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0067",
+              "row": 7,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3675:record:564095",
+              "locator": "BodyText/Section0 / paragraph 3675",
+              "char_start": 0,
+              "char_end": 3,
+              "chunk_start": 278,
+              "chunk_end": 281,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0067",
+              "row": 7,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3676:record:564238",
+              "locator": "BodyText/Section0 / paragraph 3676",
+              "char_start": 0,
+              "char_end": 23,
+              "chunk_start": 282,
+              "chunk_end": 305,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0067",
+              "row": 7,
+              "col": 2
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E109",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "5f19f0177151e2c2cded08dc0f9b509f4106888dfc0f84dbe856a74a7dce8556",
+          "source_request_fingerprint": "ffd075d512f9c1af9b21bb9595b0f01c8c9d57b05ed950a4fd49cd5c3dc4dea4",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:a3159eeb22879967:4529644bb7b303aa4af95e62",
+          "quote": "관리자 이외의 사용자가 오라클 리스너의 접속을 통해 리스너 로그 및 trace 파일에 대한 변경이 가능하지 않는가?\n하\n옵션관리\nD-15\n",
+          "quote_start": 629,
+          "quote_end": 706,
+          "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+          "sha256": "a3159eeb228799678e146447a070ba3c6f609e9723667c1fe768c75cf76b325c",
+          "file_name": "한국주택금융공사_2021_부동산 등기정보 시스템 구축_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 3711 / BodyText/Section0 / paragraph 3712 / BodyText/Section0 / paragraph 3715 / BodyText/Section0 / paragraph 3716",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3711:record:569877",
+              "locator": "BodyText/Section0 / paragraph 3711",
+              "char_start": 0,
+              "char_end": 64,
+              "chunk_start": 629,
+              "chunk_end": 693,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0067",
+              "row": 14,
+              "col": 2
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3712:record:570222",
+              "locator": "BodyText/Section0 / paragraph 3712",
+              "char_start": 0,
+              "char_end": 1,
+              "chunk_start": 694,
+              "chunk_end": 695,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0067",
+              "row": 14,
+              "col": 3
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3715:record:570623",
+              "locator": "BodyText/Section0 / paragraph 3715",
+              "char_start": 0,
+              "char_end": 4,
+              "chunk_start": 696,
+              "chunk_end": 700,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0067",
+              "row": 15,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3716:record:570768",
+              "locator": "BodyText/Section0 / paragraph 3716",
+              "char_start": 0,
+              "char_end": 4,
+              "chunk_start": 701,
+              "chunk_end": 705,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0067",
+              "row": 15,
+              "col": 1
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E115",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "5f19f0177151e2c2cded08dc0f9b509f4106888dfc0f84dbe856a74a7dce8556",
+          "source_request_fingerprint": "ffd075d512f9c1af9b21bb9595b0f01c8c9d57b05ed950a4fd49cd5c3dc4dea4",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:a3159eeb22879967:2e9abf8741cbc4d03efd0ebc",
+          "quote": "하\n패치관리\nD-21\n데이터베이스에 대해 최신 보안패치와 밴더 권고사항을 모두 적용\n",
+          "quote_start": 239,
+          "quote_end": 286,
+          "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+          "sha256": "a3159eeb228799678e146447a070ba3c6f609e9723667c1fe768c75cf76b325c",
+          "file_name": "한국주택금융공사_2021_부동산 등기정보 시스템 구축_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 3743 / BodyText/Section0 / paragraph 3746 / BodyText/Section0 / paragraph 3747 / BodyText/Section0 / paragraph 3748",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3743:record:575025",
+              "locator": "BodyText/Section0 / paragraph 3743",
+              "char_start": 0,
+              "char_end": 1,
+              "chunk_start": 239,
+              "chunk_end": 240,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0067",
+              "row": 20,
+              "col": 3
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3746:record:575426",
+              "locator": "BodyText/Section0 / paragraph 3746",
+              "char_start": 0,
+              "char_end": 4,
+              "chunk_start": 241,
+              "chunk_end": 245,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0067",
+              "row": 21,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3747:record:575571",
+              "locator": "BodyText/Section0 / paragraph 3747",
+              "char_start": 0,
+              "char_end": 4,
+              "chunk_start": 246,
+              "chunk_end": 250,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0067",
+              "row": 21,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3748:record:575716",
+              "locator": "BodyText/Section0 / paragraph 3748",
+              "char_start": 0,
+              "char_end": 34,
+              "chunk_start": 251,
+              "chunk_end": 285,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0067",
+              "row": 21,
+              "col": 2
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E123",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "5f19f0177151e2c2cded08dc0f9b509f4106888dfc0f84dbe856a74a7dce8556",
+          "source_request_fingerprint": "ffd075d512f9c1af9b21bb9595b0f01c8c9d57b05ed950a4fd49cd5c3dc4dea4",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:a3159eeb22879967:2e9abf8741cbc4d03efd0ebc",
+          "quote": "감사관리\nD-23\nAudit Table은 데이터베이스 관리자 계정에 속해 있도록 설정되어 있는가?\n하\n",
+          "quote_start": 329,
+          "quote_end": 386,
+          "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+          "sha256": "a3159eeb228799678e146447a070ba3c6f609e9723667c1fe768c75cf76b325c",
+          "file_name": "한국주택금융공사_2021_부동산 등기정보 시스템 구축_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 3757 / BodyText/Section0 / paragraph 3758 / BodyText/Section0 / paragraph 3759 / BodyText/Section0 / paragraph 3760",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3757:record:577151",
+              "locator": "BodyText/Section0 / paragraph 3757",
+              "char_start": 0,
+              "char_end": 4,
+              "chunk_start": 329,
+              "chunk_end": 333,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0067",
+              "row": 23,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3758:record:577296",
+              "locator": "BodyText/Section0 / paragraph 3758",
+              "char_start": 0,
+              "char_end": 4,
+              "chunk_start": 334,
+              "chunk_end": 338,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0067",
+              "row": 23,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3759:record:577441",
+              "locator": "BodyText/Section0 / paragraph 3759",
+              "char_start": 0,
+              "char_end": 44,
+              "chunk_start": 339,
+              "chunk_end": 383,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0067",
+              "row": 23,
+              "col": 2
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3760:record:577710",
+              "locator": "BodyText/Section0 / paragraph 3760",
+              "char_start": 0,
+              "char_end": 1,
+              "chunk_start": 384,
+              "chunk_end": 385,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0067",
+              "row": 23,
+              "col": 3
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E125",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "5f19f0177151e2c2cded08dc0f9b509f4106888dfc0f84dbe856a74a7dce8556",
+          "source_request_fingerprint": "ffd075d512f9c1af9b21bb9595b0f01c8c9d57b05ed950a4fd49cd5c3dc4dea4",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 네트워크 체크리스트는 제시되어 있으나, 제공된 범위에서는 세부 점검 항목이 보이지 않는다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:a3159eeb22879967:89fb387feb9a59c80ba8ccc9",
+          "quote": "장비도입 보안 점검 체크리스트 - 네트워크",
+          "quote_start": 0,
+          "quote_end": 23,
+          "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+          "sha256": "a3159eeb228799678e146447a070ba3c6f609e9723667c1fe768c75cf76b325c",
+          "file_name": "한국주택금융공사_2021_부동산 등기정보 시스템 구축_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 3769",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3769:record:579330",
+              "locator": "BodyText/Section0 / paragraph 3769",
+              "char_start": 0,
+              "char_end": 23,
+              "chunk_start": 0,
+              "chunk_end": 23,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E127",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "5f19f0177151e2c2cded08dc0f9b509f4106888dfc0f84dbe856a74a7dce8556",
+          "source_request_fingerprint": "ffd075d512f9c1af9b21bb9595b0f01c8c9d57b05ed950a4fd49cd5c3dc4dea4",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:a3159eeb22879967:3274662623bc577ab6e7c214",
+          "quote": "■ 납품업체 : ㅇㅇㅇ\n■ 확인자   : ㅇㅇㅇ\n■ 장비명   : ㅇㅇㅇㅇㅇㅇ\n■ 점검일시 : 20ㅇㅇ.  .  .",
+          "quote_start": 0,
+          "quote_end": 64,
+          "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+          "sha256": "a3159eeb228799678e146447a070ba3c6f609e9723667c1fe768c75cf76b325c",
+          "file_name": "한국주택금융공사_2021_부동산 등기정보 시스템 구축_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 3773 / BodyText/Section0 / paragraph 3774 / BodyText/Section0 / paragraph 3775 / BodyText/Section0 / paragraph 3776",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3773:record:579941",
+              "locator": "BodyText/Section0 / paragraph 3773",
+              "char_start": 0,
+              "char_end": 12,
+              "chunk_start": 0,
+              "chunk_end": 12,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0068",
+              "row": 0,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3774:record:580051",
+              "locator": "BodyText/Section0 / paragraph 3774",
+              "char_start": 0,
+              "char_end": 13,
+              "chunk_start": 13,
+              "chunk_end": 26,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0068",
+              "row": 0,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3775:record:580163",
+              "locator": "BodyText/Section0 / paragraph 3775",
+              "char_start": 0,
+              "char_end": 16,
+              "chunk_start": 27,
+              "chunk_end": 43,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0068",
+              "row": 0,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3776:record:580289",
+              "locator": "BodyText/Section0 / paragraph 3776",
+              "char_start": 0,
+              "char_end": 20,
+              "chunk_start": 44,
+              "chunk_end": 64,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0068",
+              "row": 0,
+              "col": 1
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E128",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "5f19f0177151e2c2cded08dc0f9b509f4106888dfc0f84dbe856a74a7dce8556",
+          "source_request_fingerprint": "ffd075d512f9c1af9b21bb9595b0f01c8c9d57b05ed950a4fd49cd5c3dc4dea4",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:a3159eeb22879967:b0e979b9a2cb09400ca92b75",
+          "quote": "□ 작성 방법\n- 충족여부는 ㅇ, ×, △, N/A 중 하나를 선택하여 입력\n· ㅇ : 모든 요건 만족, × : 요건 미충족(위험 수용)\n· △ : 요건을 만족하지 못하나 대체 보안 수단 적용, N/A : 해당 사항 없음\n",
+          "quote_start": 0,
+          "quote_end": 124,
+          "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+          "sha256": "a3159eeb228799678e146447a070ba3c6f609e9723667c1fe768c75cf76b325c",
+          "file_name": "한국주택금융공사_2021_부동산 등기정보 시스템 구축_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 3778 / BodyText/Section0 / paragraph 3779 / BodyText/Section0 / paragraph 3780 / BodyText/Section0 / paragraph 3781",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3778:record:580646",
+              "locator": "BodyText/Section0 / paragraph 3778",
+              "char_start": 0,
+              "char_end": 7,
+              "chunk_start": 0,
+              "chunk_end": 7,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0069",
+              "row": 0,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3779:record:580746",
+              "locator": "BodyText/Section0 / paragraph 3779",
+              "char_start": 0,
+              "char_end": 34,
+              "chunk_start": 8,
+              "chunk_end": 42,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0069",
+              "row": 0,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3780:record:580902",
+              "locator": "BodyText/Section0 / paragraph 3780",
+              "char_start": 0,
+              "char_end": 33,
+              "chunk_start": 43,
+              "chunk_end": 76,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0069",
+              "row": 0,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3781:record:581058",
+              "locator": "BodyText/Section0 / paragraph 3781",
+              "char_start": 0,
+              "char_end": 46,
+              "chunk_start": 77,
+              "chunk_end": 123,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0069",
+              "row": 0,
+              "col": 0
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E129",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "5f19f0177151e2c2cded08dc0f9b509f4106888dfc0f84dbe856a74a7dce8556",
+          "source_request_fingerprint": "ffd075d512f9c1af9b21bb9595b0f01c8c9d57b05ed950a4fd49cd5c3dc4dea4",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:a3159eeb22879967:b0e979b9a2cb09400ca92b75",
+          "quote": "· ×, △, N/A 입력 시 ‘비고’란에 관련 사항 기재",
+          "quote_start": 124,
+          "quote_end": 156,
+          "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+          "sha256": "a3159eeb228799678e146447a070ba3c6f609e9723667c1fe768c75cf76b325c",
+          "file_name": "한국주택금융공사_2021_부동산 등기정보 시스템 구축_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 3782",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:3782:record:581240",
+              "locator": "BodyText/Section0 / paragraph 3782",
+              "char_start": 0,
+              "char_end": 32,
+              "chunk_start": 124,
+              "chunk_end": 156,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0069",
+              "row": 0,
+              "col": 0
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E130",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "5f19f0177151e2c2cded08dc0f9b509f4106888dfc0f84dbe856a74a7dce8556",
+          "source_request_fingerprint": "ffd075d512f9c1af9b21bb9595b0f01c8c9d57b05ed950a4fd49cd5c3dc4dea4",
+          "source_origin": "source_units"
+        }
+      ]
+    }
+  ],
+  "rejected_claims": [
+    {
+      "claim_index": 1,
+      "field_id": "scope_requirements",
+      "reason": "field_or_source_validation_failed",
+      "raw_claim": {
+        "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+        "category": "other",
+        "text": "[scope_requirements|fact] 사업 수행 중 및 완료 후에도 한국주택금융공사 내부자료 및 정보를 누설하지 않아야 하고, 당사 제공 자료와 본 용역과 관련하여 생성된 자료는 과업 완료 후 삭제하고 모두 반납해야 한다.",
+        "citations": [
+          {
+            "chunk_id": "rfp:a3159eeb22879967:f071c3256d224e1519a8381a",
+            "quote": "보안  서약서(업체용)\n한국주택금융공사 귀중\n은                                  을 수행하면서 취득한 한국주택금융공사 내부자료 및 정보에 대하여 용역과업 수행 중 또는 과업 완료 후 그리고 본 용역참여자의 재직 중은 물론 퇴사 후에도 이를 누설하지 않을 것을 약속하며, 귀사에서 당사에 제공한 자료 및 본 용역과 관련하여 생성된 자료(문서, 디스켓 등)는 용역과업 완료 후 삭제하고, 귀사에 모두 반납하겠습니다.\n"
+          },
+          {
+            "chunk_id": "rfp:a3159eeb22879967:f071c3256d224e1519a8381a",
+            "quote": "또한, 당사는 하도급업체를 통한 사업 수행 시 하도급업체로 인해 발생하는 위반사항에 대하여 모든 책임을 부담하겠습니다..\n은 용역참여자를 포함하여 만약 이를 누설하거나 약속한 사항을 위반하였을 때에는 그 결과에 대하여 민∙형사상 모든 책임을 지겠습니다.\n20    년    월       일\n대표                        (인)"
+          }
+        ]
+      },
+      "raw_claim_is_unvalidated_diagnostic": true,
+      "batch_id": "B0007",
+      "rejection_id": "ffd075d512f9c1af-1"
+    }
+  ],
+  "missing_information": [
+    "[project_name]",
+    "[issuing_agency]",
+    "[purpose]",
+    "[budget_vat]",
+    "[duration]",
+    "[eligibility]",
+    "[submission_documents] 세부 목록",
+    "[submission_deadline]",
+    "[submission_method]",
+    "[evaluation]"
+  ],
+  "response_received": true,
+  "claims_checked": true,
+  "cache_hit": false,
+  "execution_mode": "live_openai",
+  "live_api": true,
+  "mapping_fingerprint": "5f19f0177151e2c2cded08dc0f9b509f4106888dfc0f84dbe856a74a7dce8556",
+  "original_usage": {
+    "input_tokens": 8910,
+    "output_tokens": 654,
+    "total_tokens": 9564,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "usage_reported": true,
+    "latency_ms": 4121.957666997332
+  },
+  "semantic_quality_verified": false
+}

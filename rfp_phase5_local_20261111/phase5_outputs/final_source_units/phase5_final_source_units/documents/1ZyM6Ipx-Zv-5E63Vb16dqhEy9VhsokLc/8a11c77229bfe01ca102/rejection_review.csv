@@ -1,0 +1,3 @@
+﻿거절ID,배치ID,항목,거절사유,검증실패모델주장_진단용,판정,메모
+65b7fea2d442d3f4-8,B0002,제출방식,field_or_source_validation_failed,"[submission_method|fact] 결과보고서 및 사업수행 과정에서 발생된 모든 산출물은 이메일로 제출하고, 필요시 출력본 또는 USB 저장장치에 저장 후 제출한다.",,
+65b7fea2d442d3f4-9,B0002,입찰 제출서류,field_or_source_validation_failed,"[submission_documents|fact] 착수계, 사업수행계획서, 주간보고서, 월간보고서, 회의결과보고서, 완료보고서, 정산보고서, 보안성준수보고서를 제시하고 있다.",,

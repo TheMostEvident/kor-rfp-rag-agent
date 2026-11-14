@@ -1,0 +1,1925 @@
+{
+  "run_fingerprint": "2d4266bf29bdbcad8ad199454c0d83ed0cac8a7ff4df207a8fe7ae6b4740bd00",
+  "jobs": {
+    "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu:B0001:e45124697ea1": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 26320,
+          "request_fingerprint": "e45124697ea138fdac028fe4b42148792fbf042bba86190e7543a1addf740748",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 26320,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 6814,
+            "reported_output_tokens": 1236,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 8050,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 8771.24949998688,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:33:18.628794+00:00",
+          "finished_at_utc": "2026-11-13T18:33:27.902651+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/e45124697ea138fdac028fe4b42148792fbf042bba86190e7543a1addf740748/3873b78a1331414fb2f72dd4e9fc2640.json",
+      "outcome_sha256": "77d5cd8acfe819bdf7a32ba45aeb349dd3abe20cb36cdcb3dc75fc62d639a28d",
+      "request_fingerprint": "e45124697ea138fdac028fe4b42148792fbf042bba86190e7543a1addf740748"
+    },
+    "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt:B0001:d2d62aeedbcd": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 34977,
+          "request_fingerprint": "d2d62aeedbcd25886f3ee107d6b061c062da815b9bc17023b1f77a2c49ceeebb",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 34977,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 9584,
+            "reported_output_tokens": 1108,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 10692,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 6590.3314579918515,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:33:27.979524+00:00",
+          "finished_at_utc": "2026-11-13T18:33:34.649332+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/d2d62aeedbcd25886f3ee107d6b061c062da815b9bc17023b1f77a2c49ceeebb/98d9c606a0d9420ab9eeb48271f7aca2.json",
+      "outcome_sha256": "0af0064fbf501da009c7deb9aed2c739bfc5944763d09dd5af84daa04d39bf5a",
+      "request_fingerprint": "d2d62aeedbcd25886f3ee107d6b061c062da815b9bc17023b1f77a2c49ceeebb"
+    },
+    "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt:B0002:83b3938105dc": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 34848,
+          "request_fingerprint": "83b3938105dc06cf9e5f56a68c102760610a91b28c206421cac5c0a6c7f96412",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 34848,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 9395,
+            "reported_output_tokens": 994,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 10389,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 7068.428250000579,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:33:34.667350+00:00",
+          "finished_at_utc": "2026-11-13T18:33:41.808611+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/83b3938105dc06cf9e5f56a68c102760610a91b28c206421cac5c0a6c7f96412/a2a14fb416e14e53a9978c2d444af291.json",
+      "outcome_sha256": "c28b0c731684a15bc82a7dd11eb0cc9bcbe72489c41818d7696713d9e8226d62",
+      "request_fingerprint": "83b3938105dc06cf9e5f56a68c102760610a91b28c206421cac5c0a6c7f96412"
+    },
+    "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt:B0003:0c35839ae14f": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 34627,
+          "request_fingerprint": "0c35839ae14f8e4b84510f32097281d608d43f88cb27f56245ad029ea24f9ebd",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 34627,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 9377,
+            "reported_output_tokens": 465,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 9842,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 3297.831333009526,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:33:41.827109+00:00",
+          "finished_at_utc": "2026-11-13T18:33:45.182475+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/0c35839ae14f8e4b84510f32097281d608d43f88cb27f56245ad029ea24f9ebd/857cff2d04af426ea2b731d1b3e7e943.json",
+      "outcome_sha256": "bb0c818cca46c5955e0c3a756fdabaf353e25bfe750254668848118f8dcff9e7",
+      "request_fingerprint": "0c35839ae14f8e4b84510f32097281d608d43f88cb27f56245ad029ea24f9ebd"
+    },
+    "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt:B0004:4fc353684264": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 32422,
+          "request_fingerprint": "4fc35368426455b454f9c87079d1032653446587f5ccb5549519fafb322b627f",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 32422,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 8831,
+            "reported_output_tokens": 891,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 9722,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 5278.258249993087,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:33:45.199026+00:00",
+          "finished_at_utc": "2026-11-13T18:33:50.548389+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/4fc35368426455b454f9c87079d1032653446587f5ccb5549519fafb322b627f/661e9ad87c1d408ea5e25aa526d9b687.json",
+      "outcome_sha256": "fa05c00e70671bbca8db7c87877bb7cb15526ba59c45263c9f4eda248cf75093",
+      "request_fingerprint": "4fc35368426455b454f9c87079d1032653446587f5ccb5549519fafb322b627f"
+    },
+    "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B:B0001:7b7f547a0ae4": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 34336,
+          "request_fingerprint": "7b7f547a0ae461dad224866725650342cdd0a2b43d2c730ecd5a0b8fb3ff2d38",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 34336,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 9061,
+            "reported_output_tokens": 834,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 9895,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 5139.610416998039,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:33:50.637120+00:00",
+          "finished_at_utc": "2026-11-13T18:33:55.874640+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/7b7f547a0ae461dad224866725650342cdd0a2b43d2c730ecd5a0b8fb3ff2d38/8a42fedb5073475fa4ef9b6295c63392.json",
+      "outcome_sha256": "90b9785b7e3fb609735e06340133ad797d77a6acaaeeed36a7a61c318cccd9f4",
+      "request_fingerprint": "7b7f547a0ae461dad224866725650342cdd0a2b43d2c730ecd5a0b8fb3ff2d38"
+    },
+    "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B:B0002:ae69ec98ccd3": {
+      "attempts": [
+        {
+          "status": "validation_failed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 34983,
+          "request_fingerprint": "ae69ec98ccd39acf95d98a67dda597cbd480e18714e7e2126827181ac0027a72",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 1,
+            "attempted_input_bytes": 34983,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 9090,
+            "reported_output_tokens": 1556,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 10646,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 9701.006374991266,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:33:55.887264+00:00",
+          "finished_at_utc": "2026-11-13T18:34:05.608769+00:00"
+        }
+      ],
+      "status": "validation_failed",
+      "outcome_file": "batches/ae69ec98ccd39acf95d98a67dda597cbd480e18714e7e2126827181ac0027a72/5e82af9079fb484eac336ed2386d17fb.json",
+      "outcome_sha256": "1dd2970c984a72a4a3229903bacfce1c257e46543a59d33ebd27479814e62a3a",
+      "request_fingerprint": "ae69ec98ccd39acf95d98a67dda597cbd480e18714e7e2126827181ac0027a72"
+    },
+    "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B:B0003:eee2cb45ea87": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 34921,
+          "request_fingerprint": "eee2cb45ea870a6356c003d1a51172e51e04e70442ea1e7c54a20baa44d1331b",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 34921,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 8798,
+            "reported_output_tokens": 83,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 8881,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 1707.9366669931915,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:34:05.640952+00:00",
+          "finished_at_utc": "2026-11-13T18:34:07.392398+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/eee2cb45ea870a6356c003d1a51172e51e04e70442ea1e7c54a20baa44d1331b/3e66281d5d25473088c4213d6d38e0ce.json",
+      "outcome_sha256": "6b42901c47cdfc1bb9837139f971c650472935162b3e8d8386c4cef247504083",
+      "request_fingerprint": "eee2cb45ea870a6356c003d1a51172e51e04e70442ea1e7c54a20baa44d1331b"
+    },
+    "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B:B0004:c487d6056cd8": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 34365,
+          "request_fingerprint": "c487d6056cd8dd620c0ad8b8da254d5afa4c0c7e168944f0547ce536581ab224",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 34365,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 8677,
+            "reported_output_tokens": 807,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 9484,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 5523.016082996037,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:34:07.404930+00:00",
+          "finished_at_utc": "2026-11-13T18:34:12.992217+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/c487d6056cd8dd620c0ad8b8da254d5afa4c0c7e168944f0547ce536581ab224/bc38da72e9594989be4613e1df86bba5.json",
+      "outcome_sha256": "b7fcc7755ac6260902ed499d07523dd31df89d39bb390dcf3797943843f25704",
+      "request_fingerprint": "c487d6056cd8dd620c0ad8b8da254d5afa4c0c7e168944f0547ce536581ab224"
+    },
+    "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B:B0005:dd90c31c9d81": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 34802,
+          "request_fingerprint": "dd90c31c9d816a3e573763093ff03da8bce169342b4d86da02c4330c7a710393",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 34802,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 8780,
+            "reported_output_tokens": 1715,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 10495,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 5670.730625002761,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:34:13.009815+00:00",
+          "finished_at_utc": "2026-11-13T18:34:18.766816+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/dd90c31c9d816a3e573763093ff03da8bce169342b4d86da02c4330c7a710393/a6ba77cf87274adc9c5deb7e05165d29.json",
+      "outcome_sha256": "a04de208113dbbbd366055ba3b0f3b72270f8d1bf9745fff4933f010cc8d8939",
+      "request_fingerprint": "dd90c31c9d816a3e573763093ff03da8bce169342b4d86da02c4330c7a710393"
+    },
+    "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B:B0006:bd7bb9cd9316": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 33529,
+          "request_fingerprint": "bd7bb9cd93166f10a5d44c57fc46ea24674aafd419e3f2513db04c597da019bf",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 33529,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 8581,
+            "reported_output_tokens": 1122,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 9703,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 6923.937833009404,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:34:18.777698+00:00",
+          "finished_at_utc": "2026-11-13T18:34:25.753782+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/bd7bb9cd93166f10a5d44c57fc46ea24674aafd419e3f2513db04c597da019bf/44561841590b4a0babc9beffbd3e380c.json",
+      "outcome_sha256": "623b42466a3aa4a3494b1666fb320a2acd94d46a6e8cf558bdb68095178cc2ac",
+      "request_fingerprint": "bd7bb9cd93166f10a5d44c57fc46ea24674aafd419e3f2513db04c597da019bf"
+    },
+    "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B:B0007:b195c0e0923d": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 34192,
+          "request_fingerprint": "b195c0e0923d7f5295f09939aa4c15026cd1bf810c18ede9c4834735ce02ed17",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 34192,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 8803,
+            "reported_output_tokens": 692,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 9495,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 4962.795209008618,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:34:25.770758+00:00",
+          "finished_at_utc": "2026-11-13T18:34:30.791736+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/b195c0e0923d7f5295f09939aa4c15026cd1bf810c18ede9c4834735ce02ed17/0658a1d77d4b4f29a1f6435dfe88dcb4.json",
+      "outcome_sha256": "2bccd51163e7c04d8aa14bcf29dfd45ccbae9f4c25d7fcfa2c94dbb2ebbc45d4",
+      "request_fingerprint": "b195c0e0923d7f5295f09939aa4c15026cd1bf810c18ede9c4834735ce02ed17"
+    },
+    "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B:B0008:b23f6f060141": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 33643,
+          "request_fingerprint": "b23f6f060141df364e7dc7fb4d536b1f01d6d1d9cac80c53e631dbed5f0de9bb",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 33643,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 8929,
+            "reported_output_tokens": 693,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 9622,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 3954.275416996097,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:34:30.810366+00:00",
+          "finished_at_utc": "2026-11-13T18:34:34.815839+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/b23f6f060141df364e7dc7fb4d536b1f01d6d1d9cac80c53e631dbed5f0de9bb/9f0a5d7e0b6a4109865f1baff542fd19.json",
+      "outcome_sha256": "3de13a959d75e6d2b088676ac4d41734c913cbc91efdb5c817cb36967dc2f769",
+      "request_fingerprint": "b23f6f060141df364e7dc7fb4d536b1f01d6d1d9cac80c53e631dbed5f0de9bb"
+    },
+    "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B:B0009:1d31a0c10a50": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 34877,
+          "request_fingerprint": "1d31a0c10a5024ae958cfde8beaf630dfaefe6eb937ce675b12e61e4227e5206",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 34877,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 9594,
+            "reported_output_tokens": 784,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 10378,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 5503.533458002494,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:34:34.840120+00:00",
+          "finished_at_utc": "2026-11-13T18:34:40.455154+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/1d31a0c10a5024ae958cfde8beaf630dfaefe6eb937ce675b12e61e4227e5206/3134fdd1fd704433b5c9d649ddf00b1d.json",
+      "outcome_sha256": "28dd7f01011e99a2b18e083f15e810498a9428aae52e4218fdf57721365f3494",
+      "request_fingerprint": "1d31a0c10a5024ae958cfde8beaf630dfaefe6eb937ce675b12e61e4227e5206"
+    },
+    "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B:B0010:5b2a90bd181b": {
+      "attempts": [
+        {
+          "status": "completed_with_rejections",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 34863,
+          "request_fingerprint": "5b2a90bd181b5de44f34f64a01a27e6234269c0655143ca7e14c756064bc0d5f",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 34863,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 9382,
+            "reported_output_tokens": 847,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 10229,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 5471.2070420064265,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:34:40.469379+00:00",
+          "finished_at_utc": "2026-11-13T18:34:46.004306+00:00"
+        }
+      ],
+      "status": "completed_with_rejections",
+      "outcome_file": "batches/5b2a90bd181b5de44f34f64a01a27e6234269c0655143ca7e14c756064bc0d5f/d61186cc48184d04bfed878e7827e34f.json",
+      "outcome_sha256": "b651cafdcb4329fc160c2244d921d1c09a852bd258f0cece9ddfc28e189188e2",
+      "request_fingerprint": "5b2a90bd181b5de44f34f64a01a27e6234269c0655143ca7e14c756064bc0d5f"
+    },
+    "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B:B0011:3475755287e8": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 34562,
+          "request_fingerprint": "3475755287e847a00afa940c29c61e519b916bb905d618e9ef2d26da8c9a8980",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 34562,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 9356,
+            "reported_output_tokens": 930,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 10286,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 6251.9582499953685,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:34:46.021178+00:00",
+          "finished_at_utc": "2026-11-13T18:34:52.360289+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/3475755287e847a00afa940c29c61e519b916bb905d618e9ef2d26da8c9a8980/0d965a45178149a7ae913c6c08ee21b2.json",
+      "outcome_sha256": "e2906fad8eb80abb9b0fb6360d04a71cedff1128d0c459589db2aa8294190a79",
+      "request_fingerprint": "3475755287e847a00afa940c29c61e519b916bb905d618e9ef2d26da8c9a8980"
+    },
+    "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B:B0012:0b5ac7ba31e7": {
+      "attempts": [
+        {
+          "status": "completed_with_rejections",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 34627,
+          "request_fingerprint": "0b5ac7ba31e76a5e39b467bfe806ae4dd89cbe07c8613804876b0b30a79a9fb8",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 34627,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 9157,
+            "reported_output_tokens": 872,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 10029,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 4384.789750009077,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:34:52.376313+00:00",
+          "finished_at_utc": "2026-11-13T18:34:56.811458+00:00"
+        }
+      ],
+      "status": "completed_with_rejections",
+      "outcome_file": "batches/0b5ac7ba31e76a5e39b467bfe806ae4dd89cbe07c8613804876b0b30a79a9fb8/4f37b4437bf34a3ebc8ad00d73f73b1f.json",
+      "outcome_sha256": "c4a9d4e0f6a9a47a6ce975a78ef30d112537c2a15c650e34e7b7d7773664ef7c",
+      "request_fingerprint": "0b5ac7ba31e76a5e39b467bfe806ae4dd89cbe07c8613804876b0b30a79a9fb8"
+    },
+    "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B:B0013:182efe006e86": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 33569,
+          "request_fingerprint": "182efe006e8660bf125391d7f38d93418809b4d6a498a4fe1b17df6eb885b5e1",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 33569,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 9245,
+            "reported_output_tokens": 61,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 9306,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 1673.8662499992643,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:34:56.831666+00:00",
+          "finished_at_utc": "2026-11-13T18:34:58.553223+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/182efe006e8660bf125391d7f38d93418809b4d6a498a4fe1b17df6eb885b5e1/306e592e54d44d2ebfc3049f594db7f6.json",
+      "outcome_sha256": "daead87bcd3b77a09e50177266937a80ee67c07cab01b6c03ab5ea1bd07ab178",
+      "request_fingerprint": "182efe006e8660bf125391d7f38d93418809b4d6a498a4fe1b17df6eb885b5e1"
+    },
+    "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B:B0014:794ac03428a4": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 33309,
+          "request_fingerprint": "794ac03428a416ed19294afb6e79edcd4c572d808e989c55bb939a6b49c25b5b",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 33309,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 8967,
+            "reported_output_tokens": 555,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 9522,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 2968.007082992699,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:34:58.575896+00:00",
+          "finished_at_utc": "2026-11-13T18:35:01.610408+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/794ac03428a416ed19294afb6e79edcd4c572d808e989c55bb939a6b49c25b5b/0a07e84ddb5d4d3fa62e5d59b33d243a.json",
+      "outcome_sha256": "8ef24b3cbbfb8f8e66a223d5dd564ab47b3b6be6d72e215be2042830d6f79c05",
+      "request_fingerprint": "794ac03428a416ed19294afb6e79edcd4c572d808e989c55bb939a6b49c25b5b"
+    },
+    "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B:B0015:8ea1f1dbc8c8": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 32896,
+          "request_fingerprint": "8ea1f1dbc8c8965a22caf7c89398010cd7d3d4c4f17013afe5418947fce7ce72",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 32896,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 8287,
+            "reported_output_tokens": 508,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 8795,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 3529.5344589976594,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:35:01.623454+00:00",
+          "finished_at_utc": "2026-11-13T18:35:05.187009+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/8ea1f1dbc8c8965a22caf7c89398010cd7d3d4c4f17013afe5418947fce7ce72/f63940fb0d4e45e69ac447b0c1c03563.json",
+      "outcome_sha256": "29d97c5db8526cb7edc937d09d8bf0823a2cc05adb8aeb9fbf263eb1e0c6f95f",
+      "request_fingerprint": "8ea1f1dbc8c8965a22caf7c89398010cd7d3d4c4f17013afe5418947fce7ce72"
+    },
+    "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B:B0016:d84b837eb6ff": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 13038,
+          "request_fingerprint": "d84b837eb6ff8a0a444dccabe8ae28adc5bb27f663b69312634ff82dc29c03fe",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 13038,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 3170,
+            "reported_output_tokens": 997,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 4167,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 9584.21325001109,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:35:05.198548+00:00",
+          "finished_at_utc": "2026-11-13T18:35:14.811607+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/d84b837eb6ff8a0a444dccabe8ae28adc5bb27f663b69312634ff82dc29c03fe/a64b203593fb4c4f814d263363b3bcbc.json",
+      "outcome_sha256": "4e15ff967c962310eee83bc3f7f64a70b77ca06a8657873de68662afcc4ab15c",
+      "request_fingerprint": "d84b837eb6ff8a0a444dccabe8ae28adc5bb27f663b69312634ff82dc29c03fe"
+    },
+    "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ:B0001:371978c9052f": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 34426,
+          "request_fingerprint": "371978c9052f1ee4513824eec8202e22faeb42df6afbb09a77a3cad22b3f4be2",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 34426,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 8666,
+            "reported_output_tokens": 616,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 9282,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 3969.564166996861,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:35:15.019717+00:00",
+          "finished_at_utc": "2026-11-13T18:35:19.050767+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/371978c9052f1ee4513824eec8202e22faeb42df6afbb09a77a3cad22b3f4be2/83cbb73013a94c1f861a984005779584.json",
+      "outcome_sha256": "9ac3ff7eba9d9a2c1b55f9c3b2fcc434aec97661394df7c96a0b1444887b678f",
+      "request_fingerprint": "371978c9052f1ee4513824eec8202e22faeb42df6afbb09a77a3cad22b3f4be2"
+    },
+    "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ:B0002:f99dc0b4e0bc": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 34128,
+          "request_fingerprint": "f99dc0b4e0bc487741b26520cbc5684e7de36b12197fe9ea8b1a73dfcb7f035f",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 34128,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 8639,
+            "reported_output_tokens": 1226,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 9865,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 6783.568750004633,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:35:19.064749+00:00",
+          "finished_at_utc": "2026-11-13T18:35:25.919676+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/f99dc0b4e0bc487741b26520cbc5684e7de36b12197fe9ea8b1a73dfcb7f035f/7fe29b9060884eb994803cc88c2d22fd.json",
+      "outcome_sha256": "0be0c1b883abc93eab2af13c442e95690a237fdba1d23db3d92cda954495d3ae",
+      "request_fingerprint": "f99dc0b4e0bc487741b26520cbc5684e7de36b12197fe9ea8b1a73dfcb7f035f"
+    },
+    "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ:B0003:b9c9eb646477": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 33317,
+          "request_fingerprint": "b9c9eb646477be5225fff92010f0970d47c18e3cc1cade5c64f1ea5b6aaa7850",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 33317,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 8503,
+            "reported_output_tokens": 824,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 9327,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 3824.310708005214,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:35:25.937280+00:00",
+          "finished_at_utc": "2026-11-13T18:35:29.820155+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/b9c9eb646477be5225fff92010f0970d47c18e3cc1cade5c64f1ea5b6aaa7850/e0b318a178ee4653a50bf94d949acb62.json",
+      "outcome_sha256": "f6f68a27bb5abbccb1f1b52c52c841bc5cdf7a4b3b538a91d13bad5a861b0c40",
+      "request_fingerprint": "b9c9eb646477be5225fff92010f0970d47c18e3cc1cade5c64f1ea5b6aaa7850"
+    },
+    "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ:B0004:808b2231fe64": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 34504,
+          "request_fingerprint": "808b2231fe6481cd190473119bb4093486d66aa58749ba0f839ddf5552074501",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 34504,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 9309,
+            "reported_output_tokens": 1013,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 10322,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 6025.698208002723,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:35:29.839250+00:00",
+          "finished_at_utc": "2026-11-13T18:35:35.943869+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/808b2231fe6481cd190473119bb4093486d66aa58749ba0f839ddf5552074501/f509194dab954fe783007ae8d6c5ed13.json",
+      "outcome_sha256": "217ac4b4e0583c188dde746acee04c880c272ff9fcab8b5fc1df676a3ce82f37",
+      "request_fingerprint": "808b2231fe6481cd190473119bb4093486d66aa58749ba0f839ddf5552074501"
+    },
+    "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ:B0005:2d6681574b78": {
+      "attempts": [
+        {
+          "status": "completed_with_rejections",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 33901,
+          "request_fingerprint": "2d6681574b78614e988a92b4e6dc8ae46cfc8842fa8afd49cebbf9d732cce700",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 33901,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 9091,
+            "reported_output_tokens": 439,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 9530,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 3167.3872920073336,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:35:35.960487+00:00",
+          "finished_at_utc": "2026-11-13T18:35:39.200229+00:00"
+        }
+      ],
+      "status": "completed_with_rejections",
+      "outcome_file": "batches/2d6681574b78614e988a92b4e6dc8ae46cfc8842fa8afd49cebbf9d732cce700/77810161bb294af1bf2f083c3a4fc870.json",
+      "outcome_sha256": "05362a68e46022db7cb049fe40beff4bcd56a290954858a39e14d0a2b1a45b4f",
+      "request_fingerprint": "2d6681574b78614e988a92b4e6dc8ae46cfc8842fa8afd49cebbf9d732cce700"
+    },
+    "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ:B0006:c7e023acf208": {
+      "attempts": [
+        {
+          "status": "completed_with_rejections",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 34207,
+          "request_fingerprint": "c7e023acf2086a87b6b65a5a78853c62d9165387c8674c10ecfb049171cb0bc3",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 34207,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 8965,
+            "reported_output_tokens": 742,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 9707,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 4395.280208002077,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:35:39.216652+00:00",
+          "finished_at_utc": "2026-11-13T18:35:43.667416+00:00"
+        }
+      ],
+      "status": "completed_with_rejections",
+      "outcome_file": "batches/c7e023acf2086a87b6b65a5a78853c62d9165387c8674c10ecfb049171cb0bc3/4e8cb0b00c48443ca8b592cd4ae40271.json",
+      "outcome_sha256": "ce9da966c87e1c94a6a9056d7014ab8989f53ce007bcbaa54362652deb21d029",
+      "request_fingerprint": "c7e023acf2086a87b6b65a5a78853c62d9165387c8674c10ecfb049171cb0bc3"
+    },
+    "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ:B0007:ffd075d512f9": {
+      "attempts": [
+        {
+          "status": "completed_with_rejections",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 32913,
+          "request_fingerprint": "ffd075d512f9c1af9b21bb9595b0f01c8c9d57b05ed950a4fd49cd5c3dc4dea4",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 32913,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 8910,
+            "reported_output_tokens": 654,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 9564,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 4121.957666997332,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:35:43.687288+00:00",
+          "finished_at_utc": "2026-11-13T18:35:47.855009+00:00"
+        }
+      ],
+      "status": "completed_with_rejections",
+      "outcome_file": "batches/ffd075d512f9c1af9b21bb9595b0f01c8c9d57b05ed950a4fd49cd5c3dc4dea4/308963d00f1449b3b0372277cc8f611f.json",
+      "outcome_sha256": "79913a0f87b62d0f1b2889863681c787927ece826a6e39ae651f35c74caf240e",
+      "request_fingerprint": "ffd075d512f9c1af9b21bb9595b0f01c8c9d57b05ed950a4fd49cd5c3dc4dea4"
+    },
+    "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ:B0008:e9a85cff6852": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 33060,
+          "request_fingerprint": "e9a85cff685288332c2add04b0415fb8a10f52b0e3b743541511f5d2496c6f0b",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 33060,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 9176,
+            "reported_output_tokens": 61,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 9237,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 1646.5269589971285,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:35:47.871214+00:00",
+          "finished_at_utc": "2026-11-13T18:35:49.555194+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/e9a85cff685288332c2add04b0415fb8a10f52b0e3b743541511f5d2496c6f0b/ac8c8f1573e24df18dcb5d9929d55702.json",
+      "outcome_sha256": "2fae837b18823d118eabe55aac54a69f736c99a097346be72e08406c48a260e2",
+      "request_fingerprint": "e9a85cff685288332c2add04b0415fb8a10f52b0e3b743541511f5d2496c6f0b"
+    },
+    "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ:B0009:ac0e07be4358": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 34928,
+          "request_fingerprint": "ac0e07be435837e95e84debf1b20f2c0ffd16cede2780349a77a3a36a3d53842",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 34928,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 8657,
+            "reported_output_tokens": 656,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 9313,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 4338.343625000562,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:35:49.571627+00:00",
+          "finished_at_utc": "2026-11-13T18:35:53.955724+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/ac0e07be435837e95e84debf1b20f2c0ffd16cede2780349a77a3a36a3d53842/dee5c6ab66594fe3a7b4358366390b52.json",
+      "outcome_sha256": "e338051941b5f2699f47841cfccc751981eaeaf7d1d8200d72773ba4af3f71c6",
+      "request_fingerprint": "ac0e07be435837e95e84debf1b20f2c0ffd16cede2780349a77a3a36a3d53842"
+    },
+    "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ:B0010:5ac8e54dc4c2": {
+      "attempts": [
+        {
+          "status": "completed_with_rejections",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 21460,
+          "request_fingerprint": "5ac8e54dc4c2e564b659fcde9dfe3f09543beb153d396998fd8f31d2e9c44187",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 21460,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 5486,
+            "reported_output_tokens": 993,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 6479,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 6474.07908301102,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:35:53.972204+00:00",
+          "finished_at_utc": "2026-11-13T18:36:00.496700+00:00"
+        }
+      ],
+      "status": "completed_with_rejections",
+      "outcome_file": "batches/5ac8e54dc4c2e564b659fcde9dfe3f09543beb153d396998fd8f31d2e9c44187/fb9aa29aaaf043adacc1a789b697e099.json",
+      "outcome_sha256": "11b19c700f3a99e264faba0763ef7fc0c6798507626e958ceb14551ca7c4620e",
+      "request_fingerprint": "5ac8e54dc4c2e564b659fcde9dfe3f09543beb153d396998fd8f31d2e9c44187"
+    },
+    "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38:B0001:cadf4f22bd4c": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 34933,
+          "request_fingerprint": "cadf4f22bd4c4763c1f44d47511a553183804bc6ed3d53ebf89d121673599384",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 34933,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 9522,
+            "reported_output_tokens": 742,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 10264,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 5210.582207990228,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:36:00.617327+00:00",
+          "finished_at_utc": "2026-11-13T18:36:05.907145+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/cadf4f22bd4c4763c1f44d47511a553183804bc6ed3d53ebf89d121673599384/a54be239f9f54871a1d4d46cb2ed22b4.json",
+      "outcome_sha256": "ba6363b0fd52b29c9dd1b75d4c4a5a50fa7b009f15492c9fe7036447163ecc75",
+      "request_fingerprint": "cadf4f22bd4c4763c1f44d47511a553183804bc6ed3d53ebf89d121673599384"
+    },
+    "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38:B0002:68f6a3cdbd19": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 34807,
+          "request_fingerprint": "68f6a3cdbd197b086e831573f5f852f8ea4cd148b944deb9fc60b7ecd393894c",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 34807,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 8686,
+            "reported_output_tokens": 858,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 9544,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 5615.894957998535,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:36:05.921175+00:00",
+          "finished_at_utc": "2026-11-13T18:36:11.586454+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/68f6a3cdbd197b086e831573f5f852f8ea4cd148b944deb9fc60b7ecd393894c/fb0b26af023c443390d394add6769309.json",
+      "outcome_sha256": "8a90fc86960fd6dbf1ae14b3a46bde5b1647cf28802056394b8f7ed92a28af9f",
+      "request_fingerprint": "68f6a3cdbd197b086e831573f5f852f8ea4cd148b944deb9fc60b7ecd393894c"
+    },
+    "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38:B0003:e31d2501104d": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 34608,
+          "request_fingerprint": "e31d2501104d4435bbf6c4df8a046f5adf96c5157a511f1e3218ccfc6fd8046d",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 34608,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 8768,
+            "reported_output_tokens": 1095,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 9863,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 4638.5569999984,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:36:11.608773+00:00",
+          "finished_at_utc": "2026-11-13T18:36:16.327139+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/e31d2501104d4435bbf6c4df8a046f5adf96c5157a511f1e3218ccfc6fd8046d/24b440cb2b3e46ffb070cd68607dc64d.json",
+      "outcome_sha256": "dd7bd21cc68914b1f96204ade6e198f3b7527d447091bdf42a4b92ea859cfaf2",
+      "request_fingerprint": "e31d2501104d4435bbf6c4df8a046f5adf96c5157a511f1e3218ccfc6fd8046d"
+    },
+    "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38:B0004:389ec00473fa": {
+      "attempts": [
+        {
+          "status": "completed_with_rejections",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 33648,
+          "request_fingerprint": "389ec00473fa516b491bf581295a5f325cd5015967828fe39c4bf2bcd8c76f0c",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 33648,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 8471,
+            "reported_output_tokens": 1173,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 9644,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 6444.084167000256,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:36:16.340345+00:00",
+          "finished_at_utc": "2026-11-13T18:36:22.834175+00:00"
+        }
+      ],
+      "status": "completed_with_rejections",
+      "outcome_file": "batches/389ec00473fa516b491bf581295a5f325cd5015967828fe39c4bf2bcd8c76f0c/0d56a98b9e9c4e4aa32631555fb6d7e0.json",
+      "outcome_sha256": "c605a8181a88fca2ef360122ed39d4c02cb48f63e9e7763a548c9da7d2694bd5",
+      "request_fingerprint": "389ec00473fa516b491bf581295a5f325cd5015967828fe39c4bf2bcd8c76f0c"
+    },
+    "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38:B0005:d750063cddb2": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 34516,
+          "request_fingerprint": "d750063cddb25eecb8f4cae91c42d1f16394f913596c20be867eeba49db590e1",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 34516,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 8937,
+            "reported_output_tokens": 467,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 9404,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 2539.209334005136,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:36:22.850383+00:00",
+          "finished_at_utc": "2026-11-13T18:36:25.432211+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/d750063cddb25eecb8f4cae91c42d1f16394f913596c20be867eeba49db590e1/df81b4e6c6f74bb7ae44b45bfb8f3997.json",
+      "outcome_sha256": "41a5a81862552493268cf766635cad23d05237e430523408b5f437fccfbb6bd9",
+      "request_fingerprint": "d750063cddb25eecb8f4cae91c42d1f16394f913596c20be867eeba49db590e1"
+    },
+    "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38:B0006:26f2bfd99418": {
+      "attempts": [
+        {
+          "status": "completed_with_rejections",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 34623,
+          "request_fingerprint": "26f2bfd99418913b3e22a6c3075d24d7c2e698852f3d6e8398124377f5da6dbc",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 34623,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 9246,
+            "reported_output_tokens": 1504,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 10750,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 7993.206667000777,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:36:25.452167+00:00",
+          "finished_at_utc": "2026-11-13T18:36:33.524049+00:00"
+        }
+      ],
+      "status": "completed_with_rejections",
+      "outcome_file": "batches/26f2bfd99418913b3e22a6c3075d24d7c2e698852f3d6e8398124377f5da6dbc/31b35e62467e4352ac897d21e02f1a0c.json",
+      "outcome_sha256": "06b1816a4b2797236c1fd9096d2f37bb1be9134e4abc4aebf7111efdd102b85b",
+      "request_fingerprint": "26f2bfd99418913b3e22a6c3075d24d7c2e698852f3d6e8398124377f5da6dbc"
+    },
+    "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38:B0007:769ec6ab060b": {
+      "attempts": [
+        {
+          "status": "completed_with_rejections",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 33894,
+          "request_fingerprint": "769ec6ab060b7cf02694c3b95134909db00a3f02655fbe44504cc2e767657a15",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 33894,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 8900,
+            "reported_output_tokens": 962,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 9862,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 7182.071874995017,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:36:33.540530+00:00",
+          "finished_at_utc": "2026-11-13T18:36:40.775112+00:00"
+        }
+      ],
+      "status": "completed_with_rejections",
+      "outcome_file": "batches/769ec6ab060b7cf02694c3b95134909db00a3f02655fbe44504cc2e767657a15/475599c723b646a3a945fc26f8385d94.json",
+      "outcome_sha256": "ed07170acbc84230e8c00bfb9a3d2ed7ddaf20db69e047a38a38ccdd1e5dd0a5",
+      "request_fingerprint": "769ec6ab060b7cf02694c3b95134909db00a3f02655fbe44504cc2e767657a15"
+    },
+    "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38:B0008:09df7c706c1f": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 33685,
+          "request_fingerprint": "09df7c706c1f50c0ce2dc62322cb685fb2a5d7874f58bb042e8f3de3c8c0fdc2",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 33685,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 9021,
+            "reported_output_tokens": 1024,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 10045,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 7198.757000005571,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:36:40.793564+00:00",
+          "finished_at_utc": "2026-11-13T18:36:48.058513+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/09df7c706c1f50c0ce2dc62322cb685fb2a5d7874f58bb042e8f3de3c8c0fdc2/3dd9634d04fa467aa08f09533f8a46e7.json",
+      "outcome_sha256": "3ade6fb768043940766ed8e3e4c81f0dc56619fa196da9e78d3e5f0fce9ea3bf",
+      "request_fingerprint": "09df7c706c1f50c0ce2dc62322cb685fb2a5d7874f58bb042e8f3de3c8c0fdc2"
+    },
+    "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38:B0009:914f8b201fc3": {
+      "attempts": [
+        {
+          "status": "completed_with_rejections",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 34327,
+          "request_fingerprint": "914f8b201fc30d5d32acaca24685c6b2d08a7040e7f8f568e2a53b8ea91a6e9b",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 34327,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 8921,
+            "reported_output_tokens": 827,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 9748,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 5524.402458002442,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:36:48.074810+00:00",
+          "finished_at_utc": "2026-11-13T18:36:53.654238+00:00"
+        }
+      ],
+      "status": "completed_with_rejections",
+      "outcome_file": "batches/914f8b201fc30d5d32acaca24685c6b2d08a7040e7f8f568e2a53b8ea91a6e9b/d147d6eef2cc4801b0cececdfd728a96.json",
+      "outcome_sha256": "d228cc462fcd6e6671ee815676f2e3eec1da548b29096d5f6083b865731c5452",
+      "request_fingerprint": "914f8b201fc30d5d32acaca24685c6b2d08a7040e7f8f568e2a53b8ea91a6e9b"
+    },
+    "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38:B0010:4e992b374155": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 34389,
+          "request_fingerprint": "4e992b37415575aff50bb0d3dae1a0db404a8c8b02e55f194271c1e2d5e4df86",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 34389,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 9286,
+            "reported_output_tokens": 330,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 9616,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 3945.32212500053,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:36:53.674692+00:00",
+          "finished_at_utc": "2026-11-13T18:36:57.670222+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/4e992b37415575aff50bb0d3dae1a0db404a8c8b02e55f194271c1e2d5e4df86/3cc973c848c640009514c526520943da.json",
+      "outcome_sha256": "0bd37a7b16bd35cb38302be0ed5fe566e0c48865bd0bed3a7ea49c5801ceaa7b",
+      "request_fingerprint": "4e992b37415575aff50bb0d3dae1a0db404a8c8b02e55f194271c1e2d5e4df86"
+    },
+    "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38:B0011:f5cccc0e486b": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 11636,
+          "request_fingerprint": "f5cccc0e486be229c15c0fe891201a10f9fb59101998ac5b952b560a952ff5bc",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 11636,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 2889,
+            "reported_output_tokens": 80,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 2969,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 1503.5653749946505,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:36:57.684953+00:00",
+          "finished_at_utc": "2026-11-13T18:36:59.203257+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/f5cccc0e486be229c15c0fe891201a10f9fb59101998ac5b952b560a952ff5bc/de8399d5cafc4e4f9dafb35118445988.json",
+      "outcome_sha256": "c4ebe259ec21856cb6b11f4b5cfb5a5c2734ff5562bf245be60aed1c18a052d6",
+      "request_fingerprint": "f5cccc0e486be229c15c0fe891201a10f9fb59101998ac5b952b560a952ff5bc"
+    },
+    "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0:B0001:b06498599386": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 33297,
+          "request_fingerprint": "b0649859938642d6ef883b9ccf15a530e09323e0c7ce0d69695d0cc4018dc951",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 33297,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 9388,
+            "reported_output_tokens": 754,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 10142,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 3566.6508750000503,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:36:59.354938+00:00",
+          "finished_at_utc": "2026-11-13T18:37:02.944692+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/b0649859938642d6ef883b9ccf15a530e09323e0c7ce0d69695d0cc4018dc951/fba4ea8e5e9b475a8e07473121a798e1.json",
+      "outcome_sha256": "18c43ab5df771c8772085a3ebc4bde715955a5582387a1de13545ae06fdf2547",
+      "request_fingerprint": "b0649859938642d6ef883b9ccf15a530e09323e0c7ce0d69695d0cc4018dc951"
+    },
+    "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0:B0002:867947f4829a": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 34587,
+          "request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 34587,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 9196,
+            "reported_output_tokens": 1418,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 10614,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 4957.132708004792,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:37:02.964023+00:00",
+          "finished_at_utc": "2026-11-13T18:37:07.958751+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff/2c66aa11541449acb1fc5dcdd7106ec5.json",
+      "outcome_sha256": "7ee624ae09cb30bc18889cba98fe21605dda50fddbc41c894bdebd01dd4d8922",
+      "request_fingerprint": "867947f4829aadceb2897e66127a7849b3611edd5e30a91025bec01ff05995ff"
+    },
+    "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0:B0003:3b6fe99e895d": {
+      "attempts": [
+        {
+          "status": "completed_with_rejections",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 33128,
+          "request_fingerprint": "3b6fe99e895d9f69dd34b2418d64558fa4adc01a6ac5d134003dd674beee8bd3",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 33128,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 8924,
+            "reported_output_tokens": 734,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 9658,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 5412.894416003837,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:37:07.975738+00:00",
+          "finished_at_utc": "2026-11-13T18:37:13.416798+00:00"
+        }
+      ],
+      "status": "completed_with_rejections",
+      "outcome_file": "batches/3b6fe99e895d9f69dd34b2418d64558fa4adc01a6ac5d134003dd674beee8bd3/f916ae5866c74dbf8bf6857e98898fad.json",
+      "outcome_sha256": "7f4e667d4e77c5c9cbb23bd69cbeb1b927083bcd83b23cc325a103cbfaf9bedc",
+      "request_fingerprint": "3b6fe99e895d9f69dd34b2418d64558fa4adc01a6ac5d134003dd674beee8bd3"
+    },
+    "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0:B0004:bae40f05213e": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 26885,
+          "request_fingerprint": "bae40f05213e92efd85f1db9353fef42f5057600b5d847997b10d53b04379a87",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 26885,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 7551,
+            "reported_output_tokens": 1626,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 9177,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 9743.438000004971,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:37:13.434533+00:00",
+          "finished_at_utc": "2026-11-13T18:37:23.209162+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/bae40f05213e92efd85f1db9353fef42f5057600b5d847997b10d53b04379a87/6c5a98058cf3443c8f098d36f2334262.json",
+      "outcome_sha256": "4af0bc8ccf4ec67d44d144323bd2e7a9a25c9a9100a524e7084496116298ff20",
+      "request_fingerprint": "bae40f05213e92efd85f1db9353fef42f5057600b5d847997b10d53b04379a87"
+    },
+    "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc:B0001:b728ccaa6409": {
+      "attempts": [
+        {
+          "status": "completed",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 33445,
+          "request_fingerprint": "b728ccaa640928f2c5eec400164923932366321a06b4a33831c4d1e9fe370670",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 33445,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 8223,
+            "reported_output_tokens": 864,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 9087,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 4006.5493329893798,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:37:23.315086+00:00",
+          "finished_at_utc": "2026-11-13T18:37:27.375916+00:00"
+        }
+      ],
+      "status": "completed",
+      "outcome_file": "batches/b728ccaa640928f2c5eec400164923932366321a06b4a33831c4d1e9fe370670/05049f416fc8417fad194fff78b21351.json",
+      "outcome_sha256": "8ae1c3a51bd2849b5b9aa3eee6b7746b8ca8dcbd899b4209f9df0921edd63e7d",
+      "request_fingerprint": "b728ccaa640928f2c5eec400164923932366321a06b4a33831c4d1e9fe370670"
+    },
+    "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc:B0002:65b7fea2d442": {
+      "attempts": [
+        {
+          "status": "completed_with_rejections",
+          "reserved_calls": 1,
+          "reserved_input_bytes": 32334,
+          "request_fingerprint": "65b7fea2d442d3f421c90c354776d7abedfa3a9e7228fe8410e1807776d49cad",
+          "retry_tag": "",
+          "cache_relative": "phase5_outputs/source_unit_cache",
+          "usage": {
+            "api_calls": 1,
+            "live_api_calls": 1,
+            "mock_calls": 0,
+            "cache_hits": 0,
+            "failed_attempts": 0,
+            "attempted_input_bytes": 32334,
+            "reserved_max_output_tokens": 6000,
+            "reported_input_tokens": 8549,
+            "reported_output_tokens": 831,
+            "reported_cached_input_tokens": 0,
+            "reported_total_tokens": 9380,
+            "usage_unknown_attempts": 0,
+            "request_latency_ms": 4932.440666001639,
+            "max_calls": 1000000,
+            "max_total_input_bytes": 1000000000,
+            "execution_mode": "live_openai",
+            "enabled": true,
+            "budget_unit": "UTF-8 serialized request bytes; not token count or currency",
+            "transport_decode_failures": 0,
+            "citation_transport": "rfp-source-units-v1"
+          },
+          "started_at_utc": "2026-11-13T18:37:27.394417+00:00",
+          "finished_at_utc": "2026-11-13T18:37:32.391748+00:00"
+        }
+      ],
+      "status": "completed_with_rejections",
+      "outcome_file": "batches/65b7fea2d442d3f421c90c354776d7abedfa3a9e7228fe8410e1807776d49cad/8248bac9cf494f1893983b683a8db27e.json",
+      "outcome_sha256": "2e6691b9576107ebbaca124519be91e0b800cc062b0e8bac7fd9ecb2fd04d7e8",
+      "request_fingerprint": "65b7fea2d442d3f421c90c354776d7abedfa3a9e7228fe8410e1807776d49cad"
+    }
+  }
+}

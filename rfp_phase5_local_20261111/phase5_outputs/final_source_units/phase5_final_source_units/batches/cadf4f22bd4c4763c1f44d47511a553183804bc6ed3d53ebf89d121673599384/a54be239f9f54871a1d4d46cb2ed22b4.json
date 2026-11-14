@@ -1,0 +1,1324 @@
+{
+  "batch_id": "B0001",
+  "job_key": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38:B0001:cadf4f22bd4c",
+  "source_chunk_ids": [
+    "rfp:a0429ca4da021105:6af1d42b5628ad27d0649968",
+    "rfp:a0429ca4da021105:469aed3eda8f4ba1d833b5c7",
+    "rfp:a0429ca4da021105:4c88f54793a0779f8bcd5c2f",
+    "rfp:a0429ca4da021105:4f70f56d9461a504bf48d0b4",
+    "rfp:a0429ca4da021105:d9fd1fbed27564002e7fd4a2",
+    "rfp:a0429ca4da021105:004bc377900bf50534061eda",
+    "rfp:a0429ca4da021105:b2a754dc4ee628660248a046",
+    "rfp:a0429ca4da021105:1ac615e95513713f099141ab",
+    "rfp:a0429ca4da021105:22f1836377dbc503cd011295",
+    "rfp:a0429ca4da021105:e2911afacfbdb16e5bcaa9b4",
+    "rfp:a0429ca4da021105:e14d4f2c90bfb648f14f0831",
+    "rfp:a0429ca4da021105:d55b5e41ea63a93173c09cfc",
+    "rfp:a0429ca4da021105:3c0c22b286dd693bea97bb17",
+    "rfp:a0429ca4da021105:60059c3c4d09bd70fa455c1c",
+    "rfp:a0429ca4da021105:4c2aa3ab8a8003c65fc63cef",
+    "rfp:a0429ca4da021105:40411d50748a66cf500fd227",
+    "rfp:a0429ca4da021105:213c93bc51259120df66a5c2",
+    "rfp:a0429ca4da021105:31e3e2b9222ca11ba85b0c14",
+    "rfp:a0429ca4da021105:e49d67fb1372b435c2e818e0",
+    "rfp:a0429ca4da021105:1d3eb81a34ef1423a48f4a49",
+    "rfp:a0429ca4da021105:6d0428279ce8ed1822085610",
+    "rfp:a0429ca4da021105:2da54e63c3d4b7f8869a8877",
+    "rfp:a0429ca4da021105:b74f7a0744c47c1c9b7ac2f6",
+    "rfp:a0429ca4da021105:528beec3ca25d8d365c9eff0",
+    "rfp:a0429ca4da021105:dd4bd2c27828fd76ec5a7b4d",
+    "rfp:a0429ca4da021105:7781ec398ca49d2fc0dbc6e1",
+    "rfp:a0429ca4da021105:14b433c36cbfc76bb822fd1c",
+    "rfp:a0429ca4da021105:23568819f2d0a2828d299a42",
+    "rfp:a0429ca4da021105:d64e15383b6dfba76679838a",
+    "rfp:a0429ca4da021105:b2a870cafe7504727892261c",
+    "rfp:a0429ca4da021105:b4cf3931c59fa1749d874bc4",
+    "rfp:a0429ca4da021105:e9c997a032ed7b024ef943a1",
+    "rfp:a0429ca4da021105:350efc3aa6a0d8b115523667",
+    "rfp:a0429ca4da021105:82a03ecee5b762b77706a03f"
+  ],
+  "request_fingerprint": "cadf4f22bd4c4763c1f44d47511a553183804bc6ed3d53ebf89d121673599384",
+  "kind": "source_units",
+  "status": "completed",
+  "claims": [
+    {
+      "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+      "category": "overview",
+      "text": "[project_name|fact] AI 기반 관광 B2C 플랫폼 통합 ISP 수립",
+      "citations": [
+        {
+          "chunk_id": "rfp:a0429ca4da021105:b2a754dc4ee628660248a046",
+          "quote": "□ 용 역 명: AI 기반 관광 B2C 플랫폼 통합 ISP 수립\n□ 용역기간: 계약체결일로부터 2026.10.30.(금) 까지\n(과업종료 후 정산 및 결과보고서 제출 시 까지)\n□ 계약방법: 제한경쟁입찰, 협상에 의한 계약\n",
+          "quote_start": 0,
+          "quote_end": 125,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 75 / BodyText/Section0 / paragraph 77 / BodyText/Section0 / paragraph 79",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:75:record:10994",
+              "locator": "BodyText/Section0 / paragraph 75",
+              "char_start": 0,
+              "char_end": 35,
+              "chunk_start": 0,
+              "chunk_end": 35,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:77:record:11230",
+              "locator": "BodyText/Section0 / paragraph 77",
+              "char_start": 0,
+              "char_end": 62,
+              "chunk_start": 36,
+              "chunk_end": 98,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:79:record:11588",
+              "locator": "BodyText/Section0 / paragraph 79",
+              "char_start": 0,
+              "char_end": 25,
+              "chunk_start": 99,
+              "chunk_end": 124,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E012",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "a1536b8b1770365154e76a0bed90cbcfd9bcae43f32e455cda8c317fec0e2b58",
+          "source_request_fingerprint": "cadf4f22bd4c4763c1f44d47511a553183804bc6ed3d53ebf89d121673599384",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:a0429ca4da021105:6af1d42b5628ad27d0649968",
+          "quote": "『AI 기반 관광 B2C 플랫폼\n통합 ISP 수립』\n용역 제안요청서",
+          "quote_start": 0,
+          "quote_end": 37,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 19 / BodyText/Section0 / paragraph 20 / BodyText/Section0 / paragraph 21",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:19:record:2622",
+              "locator": "BodyText/Section0 / paragraph 19",
+              "char_start": 0,
+              "char_end": 17,
+              "chunk_start": 0,
+              "chunk_end": 17,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0001",
+              "row": 1,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:20:record:2752",
+              "locator": "BodyText/Section0 / paragraph 20",
+              "char_start": 0,
+              "char_end": 10,
+              "chunk_start": 18,
+              "chunk_end": 28,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0001",
+              "row": 1,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:21:record:2858",
+              "locator": "BodyText/Section0 / paragraph 21",
+              "char_start": 0,
+              "char_end": 8,
+              "chunk_start": 29,
+              "chunk_end": 37,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0001",
+              "row": 1,
+              "col": 0
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E001",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "a1536b8b1770365154e76a0bed90cbcfd9bcae43f32e455cda8c317fec0e2b58",
+          "source_request_fingerprint": "cadf4f22bd4c4763c1f44d47511a553183804bc6ed3d53ebf89d121673599384",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+      "category": "overview",
+      "text": "[purpose|fact] KTO B2C채널 기능 재정의 및 VOC 창구 일원화를 통한 공사 AX 기반 조성 및 플랫폼 운영 효율성 제고",
+      "citations": [
+        {
+          "chunk_id": "rfp:a0429ca4da021105:d9fd1fbed27564002e7fd4a2",
+          "quote": "□ 추진목적\nㅇ (B2C 플랫폼 통합) KTO B2C채널 기능 재정의 및 VOC 창구 일원화를 통한 공사 AX 기반 조성 및 플랫폼 운영 효율성 제고\n- 공사 유일 B2C 채널로서의 플랫폼 기능 재정의\n- 효율적인 플랫폼 운영을 위한 자원 및 데이터 관리체계 설계\n",
+          "quote_start": 0,
+          "quote_end": 148,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 51 / BodyText/Section0 / paragraph 52 / BodyText/Section0 / paragraph 53 / BodyText/Section0 / paragraph 54",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:51:record:6779",
+              "locator": "BodyText/Section0 / paragraph 51",
+              "char_start": 0,
+              "char_end": 6,
+              "chunk_start": 0,
+              "chunk_end": 6,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:52:record:6877",
+              "locator": "BodyText/Section0 / paragraph 52",
+              "char_start": 0,
+              "char_end": 76,
+              "chunk_start": 7,
+              "chunk_end": 83,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:53:record:7185",
+              "locator": "BodyText/Section0 / paragraph 53",
+              "char_start": 0,
+              "char_end": 28,
+              "chunk_start": 84,
+              "chunk_end": 112,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:54:record:7341",
+              "locator": "BodyText/Section0 / paragraph 54",
+              "char_start": 0,
+              "char_end": 34,
+              "chunk_start": 113,
+              "chunk_end": 147,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E006",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "a1536b8b1770365154e76a0bed90cbcfd9bcae43f32e455cda8c317fec0e2b58",
+          "source_request_fingerprint": "cadf4f22bd4c4763c1f44d47511a553183804bc6ed3d53ebf89d121673599384",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 공사 B2C 채널 운영 조직 및 업무 프로세스 현황 분석, 공사 관광정보 채널 운영 현황 분석 및 통합·연계 방향 도출, 통합 회원 운영방안 및 개인정보 수집정책 정의, 통합 플랫폼 구조 및 데이터 활용 체계 설계, 단계별 채널 통합 실행 로드맵 수립, 통합 플랫폼 구축을 위한 목업 제시 및 제안요청서(RFP) 작성",
+      "citations": [
+        {
+          "chunk_id": "rfp:a0429ca4da021105:d9fd1fbed27564002e7fd4a2",
+          "quote": "- 관광 콘텐츠 및 서비스 이용 데이터를 활용하여 콘텐츠 및 마케팅 전략 고도화를 위한 데이터 환류 체계 구축 필요\n□ 추진내용\nㅇ 공사 B2C 채널 운영 조직 및 업무 프로세스 현황 분석 및 재설계\nㅇ 공사 관광정보 채널 운영 현황 분석 및 통합·연계 방향 도출\n",
+          "quote_start": 379,
+          "quote_end": 527,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 59 / BodyText/Section0 / paragraph 61 / BodyText/Section0 / paragraph 62 / BodyText/Section0 / paragraph 63",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:59:record:8489",
+              "locator": "BodyText/Section0 / paragraph 59",
+              "char_start": 0,
+              "char_end": 64,
+              "chunk_start": 379,
+              "chunk_end": 443,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:61:record:8841",
+              "locator": "BodyText/Section0 / paragraph 61",
+              "char_start": 0,
+              "char_end": 6,
+              "chunk_start": 444,
+              "chunk_end": 450,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:62:record:8939",
+              "locator": "BodyText/Section0 / paragraph 62",
+              "char_start": 0,
+              "char_end": 39,
+              "chunk_start": 451,
+              "chunk_end": 490,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:63:record:9105",
+              "locator": "BodyText/Section0 / paragraph 63",
+              "char_start": 0,
+              "char_end": 35,
+              "chunk_start": 491,
+              "chunk_end": 526,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E008",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "a1536b8b1770365154e76a0bed90cbcfd9bcae43f32e455cda8c317fec0e2b58",
+          "source_request_fingerprint": "cadf4f22bd4c4763c1f44d47511a553183804bc6ed3d53ebf89d121673599384",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:a0429ca4da021105:d9fd1fbed27564002e7fd4a2",
+          "quote": "ㅇ 통합 회원 운영방안 및 개인정보 수집정책 정의\nㅇ 통합 플랫폼 구조 및 데이터 활용 체계 설계\nㅇ 단계별 채널 통합 실행 로드맵 수립\nㅇ 통합 플랫폼 구축을 위한 목업 제시 및 제안요청서(RFP) 작성\n",
+          "quote_start": 527,
+          "quote_end": 642,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 64 / BodyText/Section0 / paragraph 65 / BodyText/Section0 / paragraph 66 / BodyText/Section0 / paragraph 67",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:64:record:9263",
+              "locator": "BodyText/Section0 / paragraph 64",
+              "char_start": 0,
+              "char_end": 27,
+              "chunk_start": 527,
+              "chunk_end": 554,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:65:record:9405",
+              "locator": "BodyText/Section0 / paragraph 65",
+              "char_start": 0,
+              "char_end": 26,
+              "chunk_start": 555,
+              "chunk_end": 581,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:66:record:9545",
+              "locator": "BodyText/Section0 / paragraph 66",
+              "char_start": 0,
+              "char_end": 21,
+              "chunk_start": 582,
+              "chunk_end": 603,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:67:record:9675",
+              "locator": "BodyText/Section0 / paragraph 67",
+              "char_start": 0,
+              "char_end": 37,
+              "chunk_start": 604,
+              "chunk_end": 641,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E009",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "a1536b8b1770365154e76a0bed90cbcfd9bcae43f32e455cda8c317fec0e2b58",
+          "source_request_fingerprint": "cadf4f22bd4c4763c1f44d47511a553183804bc6ed3d53ebf89d121673599384",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:a0429ca4da021105:dd4bd2c27828fd76ec5a7b4d",
+          "quote": "1) 공사 B2C 채널 운영 조직 및 업무 프로세스 현황 분석 및 재설계\nㅇ 공사 B2C 채널 운영 조직 및 업무 프로세스 현황 분석\nㅇ 통합 플랫폼 운영을 위한 업무 프로세스 재설계\nㅇ 통합 플랫폼 운영 조직 모델 설계\n",
+          "quote_start": 0,
+          "quote_end": 124,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 460 / BodyText/Section0 / paragraph 461 / BodyText/Section0 / paragraph 462 / BodyText/Section0 / paragraph 463",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:460:record:67673",
+              "locator": "BodyText/Section0 / paragraph 460",
+              "char_start": 0,
+              "char_end": 40,
+              "chunk_start": 0,
+              "chunk_end": 40,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:461:record:67839",
+              "locator": "BodyText/Section0 / paragraph 461",
+              "char_start": 0,
+              "char_end": 33,
+              "chunk_start": 41,
+              "chunk_end": 74,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:462:record:67993",
+              "locator": "BodyText/Section0 / paragraph 462",
+              "char_start": 0,
+              "char_end": 27,
+              "chunk_start": 75,
+              "chunk_end": 102,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:463:record:68135",
+              "locator": "BodyText/Section0 / paragraph 463",
+              "char_start": 0,
+              "char_end": 20,
+              "chunk_start": 103,
+              "chunk_end": 123,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E095",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "a1536b8b1770365154e76a0bed90cbcfd9bcae43f32e455cda8c317fec0e2b58",
+          "source_request_fingerprint": "cadf4f22bd4c4763c1f44d47511a553183804bc6ed3d53ebf89d121673599384",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:a0429ca4da021105:dd4bd2c27828fd76ec5a7b4d",
+          "quote": "ㅇ AI 기반 관광 데이터 관리 체계 설계\nㅇ 단계별 업무 전환 및 조직 변화 로드맵 수립\n2) 공사 관광정보 채널 운영 현황 분석 및 통합ㆍ연계 방향 도출\nㅇ 공사 관광정보 채널 운영 현황 종합 분석\n",
+          "quote_start": 124,
+          "quote_end": 237,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 464 / BodyText/Section0 / paragraph 465 / BodyText/Section0 / paragraph 467 / BodyText/Section0 / paragraph 468",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:464:record:68263",
+              "locator": "BodyText/Section0 / paragraph 464",
+              "char_start": 0,
+              "char_end": 23,
+              "chunk_start": 124,
+              "chunk_end": 147,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:465:record:68397",
+              "locator": "BodyText/Section0 / paragraph 465",
+              "char_start": 0,
+              "char_end": 26,
+              "chunk_start": 148,
+              "chunk_end": 174,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:467:record:68617",
+              "locator": "BodyText/Section0 / paragraph 467",
+              "char_start": 0,
+              "char_end": 36,
+              "chunk_start": 175,
+              "chunk_end": 211,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:468:record:68785",
+              "locator": "BodyText/Section0 / paragraph 468",
+              "char_start": 0,
+              "char_end": 24,
+              "chunk_start": 212,
+              "chunk_end": 236,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E096",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "a1536b8b1770365154e76a0bed90cbcfd9bcae43f32e455cda8c317fec0e2b58",
+          "source_request_fingerprint": "cadf4f22bd4c4763c1f44d47511a553183804bc6ed3d53ebf89d121673599384",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:a0429ca4da021105:dd4bd2c27828fd76ec5a7b4d",
+          "quote": "ㅇ 관련 부서 및 외부 전문가 인터뷰를 통한 의견수렴\nㅇ 공사 관광정보 채널 사용자 이용데이터 분석\nㅇ 외부 플랫폼 연계 현황 분석\nㅇ 해외 NTO 및 국내외 관광업계 플랫폼/챗봇 운영 대표사례 조사\n",
+          "quote_start": 237,
+          "quote_end": 349,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 469 / BodyText/Section0 / paragraph 470 / BodyText/Section0 / paragraph 471 / BodyText/Section0 / paragraph 472",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:469:record:68921",
+              "locator": "BodyText/Section0 / paragraph 469",
+              "char_start": 0,
+              "char_end": 29,
+              "chunk_start": 237,
+              "chunk_end": 266,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:470:record:69067",
+              "locator": "BodyText/Section0 / paragraph 470",
+              "char_start": 0,
+              "char_end": 25,
+              "chunk_start": 267,
+              "chunk_end": 292,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:471:record:69205",
+              "locator": "BodyText/Section0 / paragraph 471",
+              "char_start": 0,
+              "char_end": 17,
+              "chunk_start": 293,
+              "chunk_end": 310,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:472:record:69335",
+              "locator": "BodyText/Section0 / paragraph 472",
+              "char_start": 0,
+              "char_end": 37,
+              "chunk_start": 311,
+              "chunk_end": 348,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E097",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "a1536b8b1770365154e76a0bed90cbcfd9bcae43f32e455cda8c317fec0e2b58",
+          "source_request_fingerprint": "cadf4f22bd4c4763c1f44d47511a553183804bc6ed3d53ebf89d121673599384",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:a0429ca4da021105:dd4bd2c27828fd76ec5a7b4d",
+          "quote": "ㅇ VisitKorea 중심 플랫폼 통합 추진 방향 도출\nㅇ AI 기반 ‘여행비서’ 서비스 개발방향 도출\n3) 통합 회원 운영방안 및 개인정보 수집정책 정의\nㅇ 통합 회원 운영방안 및 개인정보 수집범위 등에 대한 정의\n",
+          "quote_start": 349,
+          "quote_end": 471,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 473 / BodyText/Section0 / paragraph 474 / BodyText/Section0 / paragraph 476 / BodyText/Section0 / paragraph 477",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:473:record:69497",
+              "locator": "BodyText/Section0 / paragraph 473",
+              "char_start": 0,
+              "char_end": 31,
+              "chunk_start": 349,
+              "chunk_end": 380,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:474:record:69647",
+              "locator": "BodyText/Section0 / paragraph 474",
+              "char_start": 0,
+              "char_end": 26,
+              "chunk_start": 381,
+              "chunk_end": 407,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:476:record:69867",
+              "locator": "BodyText/Section0 / paragraph 476",
+              "char_start": 0,
+              "char_end": 28,
+              "chunk_start": 408,
+              "chunk_end": 436,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:477:record:70009",
+              "locator": "BodyText/Section0 / paragraph 477",
+              "char_start": 0,
+              "char_end": 33,
+              "chunk_start": 437,
+              "chunk_end": 470,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E098",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "a1536b8b1770365154e76a0bed90cbcfd9bcae43f32e455cda8c317fec0e2b58",
+          "source_request_fingerprint": "cadf4f22bd4c4763c1f44d47511a553183804bc6ed3d53ebf89d121673599384",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:a0429ca4da021105:dd4bd2c27828fd76ec5a7b4d",
+          "quote": "4) 통합 플랫폼 구조 및 데이터 활용 체계 설계\nㅇ 통합 플랫폼 서비스 구조 설계\nㅇ 통합 플랫폼 운영을 위한 시스템 구성 방향 제시\nㅇ 통합 플랫폼 데이터 구조 설계\n",
+          "quote_start": 471,
+          "quote_end": 566,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 479 / BodyText/Section0 / paragraph 480 / BodyText/Section0 / paragraph 481 / BodyText/Section0 / paragraph 482",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:479:record:70243",
+              "locator": "BodyText/Section0 / paragraph 479",
+              "char_start": 0,
+              "char_end": 27,
+              "chunk_start": 471,
+              "chunk_end": 498,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:480:record:70383",
+              "locator": "BodyText/Section0 / paragraph 480",
+              "char_start": 0,
+              "char_end": 18,
+              "chunk_start": 499,
+              "chunk_end": 517,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:481:record:70507",
+              "locator": "BodyText/Section0 / paragraph 481",
+              "char_start": 0,
+              "char_end": 28,
+              "chunk_start": 518,
+              "chunk_end": 546,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:482:record:70651",
+              "locator": "BodyText/Section0 / paragraph 482",
+              "char_start": 0,
+              "char_end": 18,
+              "chunk_start": 547,
+              "chunk_end": 565,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E099",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "a1536b8b1770365154e76a0bed90cbcfd9bcae43f32e455cda8c317fec0e2b58",
+          "source_request_fingerprint": "cadf4f22bd4c4763c1f44d47511a553183804bc6ed3d53ebf89d121673599384",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:a0429ca4da021105:dd4bd2c27828fd76ec5a7b4d",
+          "quote": "ㅇ 콘텐츠 및 마케팅 활용을 위한 데이터 환류 구조 설계\nㅇ 통합 플랫폼 및 챗봇 운영에 따른 성과지표 제시\n5) 단계별 채널 통합 실행 로드맵 수립\nㅇ 단계별 채널 통합 추진 계획 수립\n",
+          "quote_start": 566,
+          "quote_end": 671,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 483 / BodyText/Section0 / paragraph 484 / BodyText/Section0 / paragraph 486 / BodyText/Section0 / paragraph 487",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:483:record:70775",
+              "locator": "BodyText/Section0 / paragraph 483",
+              "char_start": 0,
+              "char_end": 31,
+              "chunk_start": 566,
+              "chunk_end": 597,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:484:record:70925",
+              "locator": "BodyText/Section0 / paragraph 484",
+              "char_start": 0,
+              "char_end": 28,
+              "chunk_start": 598,
+              "chunk_end": 626,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:486:record:71157",
+              "locator": "BodyText/Section0 / paragraph 486",
+              "char_start": 0,
+              "char_end": 22,
+              "chunk_start": 627,
+              "chunk_end": 649,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:487:record:71295",
+              "locator": "BodyText/Section0 / paragraph 487",
+              "char_start": 0,
+              "char_end": 20,
+              "chunk_start": 650,
+              "chunk_end": 670,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E100",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "a1536b8b1770365154e76a0bed90cbcfd9bcae43f32e455cda8c317fec0e2b58",
+          "source_request_fingerprint": "cadf4f22bd4c4763c1f44d47511a553183804bc6ed3d53ebf89d121673599384",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:a0429ca4da021105:dd4bd2c27828fd76ec5a7b4d",
+          "quote": "ㅇ 통합 추진을 위한 단계별 예상 소요 기간 및 예산 도출\n6) 통합 플랫폼 구축을 위한 목업(Mock-up) 제시 및 제안요청서(RFP) 작성\nㅇ 주요 서비스 흐름을 반영한 핵심 서비스 화면(UI/UX) 목업 제시",
+          "quote_start": 671,
+          "quote_end": 791,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 488 / BodyText/Section0 / paragraph 490 / BodyText/Section0 / paragraph 491",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:488:record:71423",
+              "locator": "BodyText/Section0 / paragraph 488",
+              "char_start": 0,
+              "char_end": 32,
+              "chunk_start": 671,
+              "chunk_end": 703,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:490:record:71655",
+              "locator": "BodyText/Section0 / paragraph 490",
+              "char_start": 0,
+              "char_end": 47,
+              "chunk_start": 704,
+              "chunk_end": 751,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:491:record:71911",
+              "locator": "BodyText/Section0 / paragraph 491",
+              "char_start": 0,
+              "char_end": 39,
+              "chunk_start": 752,
+              "chunk_end": 791,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E101",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "a1536b8b1770365154e76a0bed90cbcfd9bcae43f32e455cda8c317fec0e2b58",
+          "source_request_fingerprint": "cadf4f22bd4c4763c1f44d47511a553183804bc6ed3d53ebf89d121673599384",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:a0429ca4da021105:7781ec398ca49d2fc0dbc6e1",
+          "quote": "진을 위한 단계별 예상 소요 기간 및 예산 도출\n6) 통합 플랫폼 구축을 위한 목업(Mock-up) 제시 및 제안요청서(RFP) 작성\nㅇ 주요 서비스 흐름을 반영한 핵심 서비스 화면(UI/UX) 목업 제시\nㅇ 플랫폼 구축 발주를 위한 과업 요구사항 정리 및 RFP 작성",
+          "quote_start": 0,
+          "quote_end": 150,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 488 / BodyText/Section0 / paragraph 490 / BodyText/Section0 / paragraph 491 / BodyText/Section0 / paragraph 492",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:488:record:71423",
+              "locator": "BodyText/Section0 / paragraph 488",
+              "char_start": 6,
+              "char_end": 32,
+              "chunk_start": 0,
+              "chunk_end": 26,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:490:record:71655",
+              "locator": "BodyText/Section0 / paragraph 490",
+              "char_start": 0,
+              "char_end": 47,
+              "chunk_start": 27,
+              "chunk_end": 74,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:491:record:71911",
+              "locator": "BodyText/Section0 / paragraph 491",
+              "char_start": 0,
+              "char_end": 39,
+              "chunk_start": 75,
+              "chunk_end": 114,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:492:record:72077",
+              "locator": "BodyText/Section0 / paragraph 492",
+              "char_start": 0,
+              "char_end": 35,
+              "chunk_start": 115,
+              "chunk_end": 150,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E102",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "a1536b8b1770365154e76a0bed90cbcfd9bcae43f32e455cda8c317fec0e2b58",
+          "source_request_fingerprint": "cadf4f22bd4c4763c1f44d47511a553183804bc6ed3d53ebf89d121673599384",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+      "category": "budget",
+      "text": "[budget_vat|fact] 금248,775,000원(금이억사천팔백칠십칠만오천원, VAT 포함)",
+      "citations": [
+        {
+          "chunk_id": "rfp:a0429ca4da021105:b2a754dc4ee628660248a046",
+          "quote": "□ 과업예산: 금248,775,000원(금이억사천팔백칠십칠만오천원, VAT 포함)\n□ [참고] 용역 사전설명회 계획 및 참가신청 안내\nㅇ (일    시) 4월 30일(목) 14시(예정)\nㅇ (장    소) 한국관광공사 서울센터 10층 중강의실\n",
+          "quote_start": 125,
+          "quote_end": 261,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 81 / BodyText/Section0 / paragraph 83 / BodyText/Section0 / paragraph 84 / BodyText/Section0 / paragraph 85",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:81:record:11804",
+              "locator": "BodyText/Section0 / paragraph 81",
+              "char_start": 0,
+              "char_end": 45,
+              "chunk_start": 125,
+              "chunk_end": 170,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:83:record:12070",
+              "locator": "BodyText/Section0 / paragraph 83",
+              "char_start": 0,
+              "char_end": 28,
+              "chunk_start": 171,
+              "chunk_end": 199,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:84:record:12212",
+              "locator": "BodyText/Section0 / paragraph 84",
+              "char_start": 0,
+              "char_end": 28,
+              "chunk_start": 200,
+              "chunk_end": 228,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:85:record:12358",
+              "locator": "BodyText/Section0 / paragraph 85",
+              "char_start": 0,
+              "char_end": 31,
+              "chunk_start": 229,
+              "chunk_end": 260,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E013",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "a1536b8b1770365154e76a0bed90cbcfd9bcae43f32e455cda8c317fec0e2b58",
+          "source_request_fingerprint": "cadf4f22bd4c4763c1f44d47511a553183804bc6ed3d53ebf89d121673599384",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+      "category": "duration",
+      "text": "[duration|fact] 계약체결일로부터 2026.10.30.(금) 까지 (과업종료 후 정산 및 결과보고서 제출 시 까지)",
+      "citations": [
+        {
+          "chunk_id": "rfp:a0429ca4da021105:b2a754dc4ee628660248a046",
+          "quote": "□ 용 역 명: AI 기반 관광 B2C 플랫폼 통합 ISP 수립\n□ 용역기간: 계약체결일로부터 2026.10.30.(금) 까지\n(과업종료 후 정산 및 결과보고서 제출 시 까지)\n□ 계약방법: 제한경쟁입찰, 협상에 의한 계약\n",
+          "quote_start": 0,
+          "quote_end": 125,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 75 / BodyText/Section0 / paragraph 77 / BodyText/Section0 / paragraph 79",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:75:record:10994",
+              "locator": "BodyText/Section0 / paragraph 75",
+              "char_start": 0,
+              "char_end": 35,
+              "chunk_start": 0,
+              "chunk_end": 35,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:77:record:11230",
+              "locator": "BodyText/Section0 / paragraph 77",
+              "char_start": 0,
+              "char_end": 62,
+              "chunk_start": 36,
+              "chunk_end": 98,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:79:record:11588",
+              "locator": "BodyText/Section0 / paragraph 79",
+              "char_start": 0,
+              "char_end": 25,
+              "chunk_start": 99,
+              "chunk_end": 124,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E012",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "a1536b8b1770365154e76a0bed90cbcfd9bcae43f32e455cda8c317fec0e2b58",
+          "source_request_fingerprint": "cadf4f22bd4c4763c1f44d47511a553183804bc6ed3d53ebf89d121673599384",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+      "category": "eligibility",
+      "text": "[eligibility|fact] 제한경쟁입찰, 협상에 의한 계약",
+      "citations": [
+        {
+          "chunk_id": "rfp:a0429ca4da021105:b2a754dc4ee628660248a046",
+          "quote": "□ 용 역 명: AI 기반 관광 B2C 플랫폼 통합 ISP 수립\n□ 용역기간: 계약체결일로부터 2026.10.30.(금) 까지\n(과업종료 후 정산 및 결과보고서 제출 시 까지)\n□ 계약방법: 제한경쟁입찰, 협상에 의한 계약\n",
+          "quote_start": 0,
+          "quote_end": 125,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 75 / BodyText/Section0 / paragraph 77 / BodyText/Section0 / paragraph 79",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:75:record:10994",
+              "locator": "BodyText/Section0 / paragraph 75",
+              "char_start": 0,
+              "char_end": 35,
+              "chunk_start": 0,
+              "chunk_end": 35,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:77:record:11230",
+              "locator": "BodyText/Section0 / paragraph 77",
+              "char_start": 0,
+              "char_end": 62,
+              "chunk_start": 36,
+              "chunk_end": 98,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:79:record:11588",
+              "locator": "BodyText/Section0 / paragraph 79",
+              "char_start": 0,
+              "char_end": 25,
+              "chunk_start": 99,
+              "chunk_end": 124,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E012",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "a1536b8b1770365154e76a0bed90cbcfd9bcae43f32e455cda8c317fec0e2b58",
+          "source_request_fingerprint": "cadf4f22bd4c4763c1f44d47511a553183804bc6ed3d53ebf89d121673599384",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+      "category": "submission",
+      "text": "[submission_deadline|fact] ~ 4월 29일(수) 15시",
+      "citations": [
+        {
+          "chunk_id": "rfp:a0429ca4da021105:b2a754dc4ee628660248a046",
+          "quote": "ㅇ (주요내용) 용역 과업 세부안내 및 질의응답\nㅇ (참가신청)\n- 신청기간: ~ 4월 29일(수) 15시\n- 신청방법: 아래 표 작성하여 이메일 신청(hjoooo@knto.or.kr)",
+          "quote_start": 405,
+          "quote_end": 508,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 90 / BodyText/Section0 / paragraph 91 / BodyText/Section0 / paragraph 92 / BodyText/Section0 / paragraph 93",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:90:record:13184",
+              "locator": "BodyText/Section0 / paragraph 90",
+              "char_start": 0,
+              "char_end": 26,
+              "chunk_start": 405,
+              "chunk_end": 431,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:91:record:13326",
+              "locator": "BodyText/Section0 / paragraph 91",
+              "char_start": 0,
+              "char_end": 8,
+              "chunk_start": 432,
+              "chunk_end": 440,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:92:record:13432",
+              "locator": "BodyText/Section0 / paragraph 92",
+              "char_start": 0,
+              "char_end": 23,
+              "chunk_start": 441,
+              "chunk_end": 464,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:93:record:13580",
+              "locator": "BodyText/Section0 / paragraph 93",
+              "char_start": 0,
+              "char_end": 43,
+              "chunk_start": 465,
+              "chunk_end": 508,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E015",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "a1536b8b1770365154e76a0bed90cbcfd9bcae43f32e455cda8c317fec0e2b58",
+          "source_request_fingerprint": "cadf4f22bd4c4763c1f44d47511a553183804bc6ed3d53ebf89d121673599384",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+      "category": "submission",
+      "text": "[submission_method|fact] 이메일 신청(hjoooo@knto.or.kr)",
+      "citations": [
+        {
+          "chunk_id": "rfp:a0429ca4da021105:b2a754dc4ee628660248a046",
+          "quote": "ㅇ (주요내용) 용역 과업 세부안내 및 질의응답\nㅇ (참가신청)\n- 신청기간: ~ 4월 29일(수) 15시\n- 신청방법: 아래 표 작성하여 이메일 신청(hjoooo@knto.or.kr)",
+          "quote_start": 405,
+          "quote_end": 508,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 90 / BodyText/Section0 / paragraph 91 / BodyText/Section0 / paragraph 92 / BodyText/Section0 / paragraph 93",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:90:record:13184",
+              "locator": "BodyText/Section0 / paragraph 90",
+              "char_start": 0,
+              "char_end": 26,
+              "chunk_start": 405,
+              "chunk_end": 431,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:91:record:13326",
+              "locator": "BodyText/Section0 / paragraph 91",
+              "char_start": 0,
+              "char_end": 8,
+              "chunk_start": 432,
+              "chunk_end": 440,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:92:record:13432",
+              "locator": "BodyText/Section0 / paragraph 92",
+              "char_start": 0,
+              "char_end": 23,
+              "chunk_start": 441,
+              "chunk_end": 464,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:93:record:13580",
+              "locator": "BodyText/Section0 / paragraph 93",
+              "char_start": 0,
+              "char_end": 43,
+              "chunk_start": 465,
+              "chunk_end": 508,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E015",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "a1536b8b1770365154e76a0bed90cbcfd9bcae43f32e455cda8c317fec0e2b58",
+          "source_request_fingerprint": "cadf4f22bd4c4763c1f44d47511a553183804bc6ed3d53ebf89d121673599384",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+      "category": "evaluation",
+      "text": "[evaluation|fact] 제공된 근거에서 평가기준에 대한 구체적 내용은 확인되지 않음",
+      "citations": [
+        {
+          "chunk_id": "rfp:a0429ca4da021105:469aed3eda8f4ba1d833b5c7",
+          "quote": "Ⅱ. 세부과업내용\t 7\nⅢ. 사업자 선정\t 36\nⅣ. 제안서 작성\t 43\nⅤ. 입찰관련서식\t 50",
+          "quote_start": 34,
+          "quote_end": 88,
+          "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+          "sha256": "a0429ca4da02110586ecf5396ca89edf17c53dd26db9b26671f0802892791a8e",
+          "file_name": "한국관광공사_2026_AI 기반 관광 B2C 플랫폼 통합 ISP 수립_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 38 / BodyText/Section0 / paragraph 39 / BodyText/Section0 / paragraph 40 / BodyText/Section0 / paragraph 41",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:38:record:4951",
+              "locator": "BodyText/Section0 / paragraph 38",
+              "char_start": 0,
+              "char_end": 12,
+              "chunk_start": 34,
+              "chunk_end": 46,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:39:record:5075",
+              "locator": "BodyText/Section0 / paragraph 39",
+              "char_start": 0,
+              "char_end": 13,
+              "chunk_start": 47,
+              "chunk_end": 60,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:40:record:5201",
+              "locator": "BodyText/Section0 / paragraph 40",
+              "char_start": 0,
+              "char_end": 13,
+              "chunk_start": 61,
+              "chunk_end": 74,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:41:record:5327",
+              "locator": "BodyText/Section0 / paragraph 41",
+              "char_start": 0,
+              "char_end": 13,
+              "chunk_start": 75,
+              "chunk_end": 88,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E003",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "a1536b8b1770365154e76a0bed90cbcfd9bcae43f32e455cda8c317fec0e2b58",
+          "source_request_fingerprint": "cadf4f22bd4c4763c1f44d47511a553183804bc6ed3d53ebf89d121673599384",
+          "source_origin": "source_units"
+        }
+      ]
+    }
+  ],
+  "rejected_claims": [],
+  "missing_information": [
+    "[issuing_agency] 이 묶음에서 발주기관을 명시적으로 확인할 수 있는 문구 미확인",
+    "[submission_documents] 입찰 제출서류 항목 미확인"
+  ],
+  "response_received": true,
+  "claims_checked": true,
+  "cache_hit": false,
+  "execution_mode": "live_openai",
+  "live_api": true,
+  "mapping_fingerprint": "a1536b8b1770365154e76a0bed90cbcfd9bcae43f32e455cda8c317fec0e2b58",
+  "original_usage": {
+    "input_tokens": 9522,
+    "output_tokens": 742,
+    "total_tokens": 10264,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "usage_reported": true,
+    "latency_ms": 5210.582207990228
+  },
+  "semantic_quality_verified": false
+}

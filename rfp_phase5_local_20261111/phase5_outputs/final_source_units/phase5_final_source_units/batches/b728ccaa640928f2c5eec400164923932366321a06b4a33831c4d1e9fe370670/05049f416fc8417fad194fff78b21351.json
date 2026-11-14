@@ -1,0 +1,1235 @@
+{
+  "batch_id": "B0001",
+  "job_key": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc:B0001:b728ccaa6409",
+  "source_chunk_ids": [
+    "rfp:3cd93bd8e0f92667:26737e41764fe60085a3d0ba",
+    "rfp:3cd93bd8e0f92667:6064a4b3cc27167805b973c1",
+    "rfp:3cd93bd8e0f92667:5da712ba4780ac54f90558f5",
+    "rfp:3cd93bd8e0f92667:5ccb7f0a719ed1d10c2c0267",
+    "rfp:3cd93bd8e0f92667:eb05ec4535dbc04ff68f1d92",
+    "rfp:3cd93bd8e0f92667:ed9e535830705cec8acd78fe",
+    "rfp:3cd93bd8e0f92667:9000055be2ea61b1bab465b7",
+    "rfp:3cd93bd8e0f92667:8601b0135f88ef1a4f162e56",
+    "rfp:3cd93bd8e0f92667:f6b5fb3b576f1fe064165452",
+    "rfp:3cd93bd8e0f92667:9157ddcc89f21ce38425ed85",
+    "rfp:3cd93bd8e0f92667:29252c774f7b3b380e840ec1",
+    "rfp:3cd93bd8e0f92667:578242fc02e05d8c8c64ddcc",
+    "rfp:3cd93bd8e0f92667:12c5a97b7cc8a95569dca9d8",
+    "rfp:3cd93bd8e0f92667:91cc80f7e589e494719ad4eb",
+    "rfp:3cd93bd8e0f92667:6fd18bdc3a5082e5858c7269",
+    "rfp:3cd93bd8e0f92667:a0ce635d7abf9e542dd53825",
+    "rfp:3cd93bd8e0f92667:3b7c8d04f0a5fdbee657c9b4",
+    "rfp:3cd93bd8e0f92667:66f3fbad85379bacccdb9924",
+    "rfp:3cd93bd8e0f92667:cb43a6a8d99fd0c897a12b6c",
+    "rfp:3cd93bd8e0f92667:5539810d3b09cb5ea5796829",
+    "rfp:3cd93bd8e0f92667:e527f3dc514a58d8939ed84d",
+    "rfp:3cd93bd8e0f92667:b9c6f3653cafd69e38552280"
+  ],
+  "request_fingerprint": "b728ccaa640928f2c5eec400164923932366321a06b4a33831c4d1e9fe370670",
+  "kind": "source_units",
+  "status": "completed",
+  "claims": [
+    {
+      "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+      "category": "overview",
+      "text": "[project_name|fact] 2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수",
+      "citations": [
+        {
+          "chunk_id": "rfp:3cd93bd8e0f92667:9000055be2ea61b1bab465b7",
+          "quote": "1. 개 요\no 사 업 명 : 2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수\no 사업기간 : 계약 체결일 ∼ 2026. 12. 31.\no 사 업 비 : 15,300,000,000원(금일백오십삼억원, 부가가치세포함)\n",
+          "quote_start": 0,
+          "quote_end": 135,
+          "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+          "sha256": "3cd93bd8e0f92667d7f0d681d7c64070f810f6ff0035f2ea564a7b56f19072c1",
+          "file_name": "한국정보통신진흥협회_2026_2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 51 / BodyText/Section0 / paragraph 53 / BodyText/Section0 / paragraph 55 / BodyText/Section0 / paragraph 57",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:51:record:6160",
+              "locator": "BodyText/Section0 / paragraph 51",
+              "char_start": 0,
+              "char_end": 6,
+              "chunk_start": 0,
+              "chunk_end": 6,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:53:record:6338",
+              "locator": "BodyText/Section0 / paragraph 53",
+              "char_start": 0,
+              "char_end": 50,
+              "chunk_start": 7,
+              "chunk_end": 57,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:55:record:6654",
+              "locator": "BodyText/Section0 / paragraph 55",
+              "char_start": 0,
+              "char_end": 31,
+              "chunk_start": 58,
+              "chunk_end": 89,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:57:record:6900",
+              "locator": "BodyText/Section0 / paragraph 57",
+              "char_start": 0,
+              "char_end": 44,
+              "chunk_start": 90,
+              "chunk_end": 134,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E010",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "528fd0349203a573874e71050d69339a4adc97986f8d30d1f30488bd3c90cfa3",
+          "source_request_fingerprint": "b728ccaa640928f2c5eec400164923932366321a06b4a33831c4d1e9fe370670",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:3cd93bd8e0f92667:6064a4b3cc27167805b973c1",
+          "quote": "사 업 명\n2026년「AI연구용 컴퓨팅 지원 프로젝트」\nGPU 자원 공급 및 유지보수\n운영기관\n",
+          "quote_start": 0,
+          "quote_end": 53,
+          "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+          "sha256": "3cd93bd8e0f92667d7f0d681d7c64070f810f6ff0035f2ea564a7b56f19072c1",
+          "file_name": "한국정보통신진흥협회_2026_2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 9 / BodyText/Section0 / paragraph 10 / BodyText/Section0 / paragraph 11 / BodyText/Section0 / paragraph 12",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:9:record:1164",
+              "locator": "BodyText/Section0 / paragraph 9",
+              "char_start": 0,
+              "char_end": 5,
+              "chunk_start": 0,
+              "chunk_end": 5,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0001",
+              "row": 0,
+              "col": 0
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:10:record:1311",
+              "locator": "BodyText/Section0 / paragraph 10",
+              "char_start": 0,
+              "char_end": 24,
+              "chunk_start": 6,
+              "chunk_end": 30,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0001",
+              "row": 0,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:11:record:1463",
+              "locator": "BodyText/Section0 / paragraph 11",
+              "char_start": 0,
+              "char_end": 16,
+              "chunk_start": 31,
+              "chunk_end": 47,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0001",
+              "row": 0,
+              "col": 1
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:12:record:1640",
+              "locator": "BodyText/Section0 / paragraph 12",
+              "char_start": 0,
+              "char_end": 4,
+              "chunk_start": 48,
+              "chunk_end": 52,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0001",
+              "row": 1,
+              "col": 0
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E002",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "528fd0349203a573874e71050d69339a4adc97986f8d30d1f30488bd3c90cfa3",
+          "source_request_fingerprint": "b728ccaa640928f2c5eec400164923932366321a06b4a33831c4d1e9fe370670",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+      "category": "overview",
+      "text": "[issuing_agency|fact] (사)한국정보통신진흥협회",
+      "citations": [
+        {
+          "chunk_id": "rfp:3cd93bd8e0f92667:6064a4b3cc27167805b973c1",
+          "quote": "(사)한국정보통신진흥협회",
+          "quote_start": 53,
+          "quote_end": 66,
+          "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+          "sha256": "3cd93bd8e0f92667d7f0d681d7c64070f810f6ff0035f2ea564a7b56f19072c1",
+          "file_name": "한국정보통신진흥협회_2026_2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 13",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:13:record:1785",
+              "locator": "BodyText/Section0 / paragraph 13",
+              "char_start": 0,
+              "char_end": 13,
+              "chunk_start": 53,
+              "chunk_end": 66,
+              "section": "BodyText/Section0",
+              "table_id": "BodyText/Section0:table:0001",
+              "row": 1,
+              "col": 1
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "FIRST_ROW_CONTEXT_IS_NOT_A_VERIFIED_COLUMN_HEADER",
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E003",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "528fd0349203a573874e71050d69339a4adc97986f8d30d1f30488bd3c90cfa3",
+          "source_request_fingerprint": "b728ccaa640928f2c5eec400164923932366321a06b4a33831c4d1e9fe370670",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+      "category": "overview",
+      "text": "[purpose|fact] 초거대 인공지능 모델 연구의 글로벌 경쟁 심화에 대응하여 초고성능 GPU 자원 확보와 안정적인 AI 연구환경 제공이 필요하다는 점이 사업 추진배경 및 필요성으로 제시되어 있다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:3cd93bd8e0f92667:9000055be2ea61b1bab465b7",
+          "quote": "2. 추진배경 및 필요성\no 초거대 인공지능 모델 연구의 글로벌 경쟁이 심화됨에 따라 해당 연구에 필수적인 초고성능 GPU 자원 확보 여부가 기술 격차로 직결되며, 국가 인공지능 역량의 핵심 요인으로 부각\no Large Language Model(LLM) 등 생성형 AI는 모델의 크기가 AI의 성능에 직접적으로 영향을 주기 때문에, 거대 AI 모델 연구를 위한 초고성능 GPU 자원 확보와 안정적인 AI 연구환경 제공 필요\n",
+          "quote_start": 135,
+          "quote_end": 373,
+          "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+          "sha256": "3cd93bd8e0f92667d7f0d681d7c64070f810f6ff0035f2ea564a7b56f19072c1",
+          "file_name": "한국정보통신진흥협회_2026_2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 59 / BodyText/Section0 / paragraph 61 / BodyText/Section0 / paragraph 63",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:59:record:7180",
+              "locator": "BodyText/Section0 / paragraph 59",
+              "char_start": 0,
+              "char_end": 13,
+              "chunk_start": 135,
+              "chunk_end": 148,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:61:record:7380",
+              "locator": "BodyText/Section0 / paragraph 61",
+              "char_start": 0,
+              "char_end": 100,
+              "chunk_start": 149,
+              "chunk_end": 249,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:63:record:7820",
+              "locator": "BodyText/Section0 / paragraph 63",
+              "char_start": 0,
+              "char_end": 122,
+              "chunk_start": 250,
+              "chunk_end": 372,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E011",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "528fd0349203a573874e71050d69339a4adc97986f8d30d1f30488bd3c90cfa3",
+          "source_request_fingerprint": "b728ccaa640928f2c5eec400164923932366321a06b4a33831c4d1e9fe370670",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:3cd93bd8e0f92667:9000055be2ea61b1bab465b7",
+          "quote": "o 초거대 인공지능 모델 연구를 위해 클라우드 기반의 GPU 자원을 포함한 대규모 AI컴퓨팅 인프라를 운영하여 국내 연구진에게 해당 자원을 효과적으로 지원하는 방안이 필요\no 학·연 등 인공지능 연구기관의 초거대 인공지능 모델 연구를 촉진하여 국가 인공지능 R&D 경쟁력 제고 및 인공지능 산업 경쟁력 강화\n3. 주요 사업내용\n",
+          "quote_start": 373,
+          "quote_end": 556,
+          "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+          "sha256": "3cd93bd8e0f92667d7f0d681d7c64070f810f6ff0035f2ea564a7b56f19072c1",
+          "file_name": "한국정보통신진흥협회_2026_2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 65 / BodyText/Section0 / paragraph 67 / BodyText/Section0 / paragraph 69",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:65:record:8336",
+              "locator": "BodyText/Section0 / paragraph 65",
+              "char_start": 0,
+              "char_end": 95,
+              "chunk_start": 373,
+              "chunk_end": 468,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:67:record:8782",
+              "locator": "BodyText/Section0 / paragraph 67",
+              "char_start": 0,
+              "char_end": 75,
+              "chunk_start": 469,
+              "chunk_end": 544,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:69:record:9152",
+              "locator": "BodyText/Section0 / paragraph 69",
+              "char_start": 0,
+              "char_end": 10,
+              "chunk_start": 545,
+              "chunk_end": 555,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E012",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "528fd0349203a573874e71050d69339a4adc97986f8d30d1f30488bd3c90cfa3",
+          "source_request_fingerprint": "b728ccaa640928f2c5eec400164923932366321a06b4a33831c4d1e9fe370670",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+      "category": "requirements",
+      "text": "[scope_requirements|fact] 클라우드 기반의 대규모 GPU 자원을 제공할 공급자를 선정해 계약체결 후 12월 31일까지 H100 등 GPU 최소 960장 이상 할당이 가능한 초고성능 연구용 AI컴퓨팅 인프라를 운영·지원하며, 참여 연구자가 자원을 할당받은 후 즉시 사용할 수 있어야 하고 장애 발생 시 신속한 조치가 필요하다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:3cd93bd8e0f92667:9000055be2ea61b1bab465b7",
+          "quote": "o 클라우드 기반의 대규모 GPU 자원을 제공할 공급자를 선정하여, 계약체결 후 12월 31일까지 H100 등 GPU 최소 960장 이상 할당이 가능한 초고성능 연구용 AI컴퓨팅 인프라 운영·지원\n※ 본 사업의 추진현황 및 예산 소진 상황에 따라 계약 종료일이 연장될 수 있음\no 참여 연구자가 자원을 할당받은 후 연구에 즉시 사용할 수 있도록 지원하고, 장애 등이 발생하였을 때 신속한 조치 진행",
+          "quote_start": 556,
+          "quote_end": 778,
+          "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+          "sha256": "3cd93bd8e0f92667d7f0d681d7c64070f810f6ff0035f2ea564a7b56f19072c1",
+          "file_name": "한국정보통신진흥협회_2026_2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 71 / BodyText/Section0 / paragraph 72 / BodyText/Section0 / paragraph 74",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:71:record:9346",
+              "locator": "BodyText/Section0 / paragraph 71",
+              "char_start": 0,
+              "char_end": 109,
+              "chunk_start": 556,
+              "chunk_end": 665,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:72:record:9740",
+              "locator": "BodyText/Section0 / paragraph 72",
+              "char_start": 0,
+              "char_end": 44,
+              "chunk_start": 666,
+              "chunk_end": 710,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:74:record:10002",
+              "locator": "BodyText/Section0 / paragraph 74",
+              "char_start": 0,
+              "char_end": 67,
+              "chunk_start": 711,
+              "chunk_end": 778,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E013",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "528fd0349203a573874e71050d69339a4adc97986f8d30d1f30488bd3c90cfa3",
+          "source_request_fingerprint": "b728ccaa640928f2c5eec400164923932366321a06b4a33831c4d1e9fe370670",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:3cd93bd8e0f92667:f6b5fb3b576f1fe064165452",
+          "quote": "1. 과업별 세부 요구사항\n□ 초고성능 연구용 컴퓨팅 자원 성능 및 개발환경\no AI 가속화기(GPU), CPU, 메모리, 스토리지, 네트워크로 구성된 자원을 서비스 시작시 제공하며, 연구자가 즉시 사용 가능해야 함\n※ 서비스 개시 전 연구자별 계정 생성 및 자원할당 등 연구환경 준비 완료 필수\n",
+          "quote_start": 0,
+          "quote_end": 166,
+          "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+          "sha256": "3cd93bd8e0f92667d7f0d681d7c64070f810f6ff0035f2ea564a7b56f19072c1",
+          "file_name": "한국정보통신진흥협회_2026_2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 80 / BodyText/Section0 / paragraph 82 / BodyText/Section0 / paragraph 84 / BodyText/Section0 / paragraph 85",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:80:record:10975",
+              "locator": "BodyText/Section0 / paragraph 80",
+              "char_start": 0,
+              "char_end": 14,
+              "chunk_start": 0,
+              "chunk_end": 14,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:82:record:11169",
+              "locator": "BodyText/Section0 / paragraph 82",
+              "char_start": 0,
+              "char_end": 27,
+              "chunk_start": 15,
+              "chunk_end": 42,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:84:record:11405",
+              "locator": "BodyText/Section0 / paragraph 84",
+              "char_start": 0,
+              "char_end": 77,
+              "chunk_start": 43,
+              "chunk_end": 120,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:85:record:11723",
+              "locator": "BodyText/Section0 / paragraph 85",
+              "char_start": 0,
+              "char_end": 44,
+              "chunk_start": 121,
+              "chunk_end": 165,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E015",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "528fd0349203a573874e71050d69339a4adc97986f8d30d1f30488bd3c90cfa3",
+          "source_request_fingerprint": "b728ccaa640928f2c5eec400164923932366321a06b4a33831c4d1e9fe370670",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:3cd93bd8e0f92667:f6b5fb3b576f1fe064165452",
+          "quote": "(연구환경 준비에 소요되는 시간은 자원제공 시간에 미포함)\no 공급자는 현재 보유 중인 컴퓨팅 자원(AI 가속화기 포함) 현황을 제시하고, 본 사업에 할당할 자원을 명확하게 제시 필요\n※ 본 사업에 할당할 자원은 국내 보유 중인 자원으로 제공하여야 함\no 공급자는 H100 등 GPU(A100 또는 H100 이상 모델 포함 가능) 최소 960장 이상을 제안하여야 하며, 계약체결시부터 12월 31일(최대 8개월 또는 예산소진시)까지 동적할당 방식으로 제공이 가능하여야 함\n",
+          "quote_start": 166,
+          "quote_end": 430,
+          "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+          "sha256": "3cd93bd8e0f92667d7f0d681d7c64070f810f6ff0035f2ea564a7b56f19072c1",
+          "file_name": "한국정보통신진흥협회_2026_2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 86 / BodyText/Section0 / paragraph 88 / BodyText/Section0 / paragraph 89 / BodyText/Section0 / paragraph 91",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:86:record:11905",
+              "locator": "BodyText/Section0 / paragraph 86",
+              "char_start": 0,
+              "char_end": 32,
+              "chunk_start": 166,
+              "chunk_end": 198,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:88:record:12147",
+              "locator": "BodyText/Section0 / paragraph 88",
+              "char_start": 0,
+              "char_end": 69,
+              "chunk_start": 199,
+              "chunk_end": 268,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:89:record:12449",
+              "locator": "BodyText/Section0 / paragraph 89",
+              "char_start": 0,
+              "char_end": 37,
+              "chunk_start": 269,
+              "chunk_end": 306,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:91:record:12697",
+              "locator": "BodyText/Section0 / paragraph 91",
+              "char_start": 0,
+              "char_end": 122,
+              "chunk_start": 307,
+              "chunk_end": 429,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E016",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "528fd0349203a573874e71050d69339a4adc97986f8d30d1f30488bd3c90cfa3",
+          "source_request_fingerprint": "b728ccaa640928f2c5eec400164923932366321a06b4a33831c4d1e9fe370670",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+      "category": "budget",
+      "text": "[budget_vat|fact] 사업비는 15,300,000,000원이며 부가가치세 포함으로 기재되어 있다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:3cd93bd8e0f92667:9000055be2ea61b1bab465b7",
+          "quote": "1. 개 요\no 사 업 명 : 2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수\no 사업기간 : 계약 체결일 ∼ 2026. 12. 31.\no 사 업 비 : 15,300,000,000원(금일백오십삼억원, 부가가치세포함)\n",
+          "quote_start": 0,
+          "quote_end": 135,
+          "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+          "sha256": "3cd93bd8e0f92667d7f0d681d7c64070f810f6ff0035f2ea564a7b56f19072c1",
+          "file_name": "한국정보통신진흥협회_2026_2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 51 / BodyText/Section0 / paragraph 53 / BodyText/Section0 / paragraph 55 / BodyText/Section0 / paragraph 57",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:51:record:6160",
+              "locator": "BodyText/Section0 / paragraph 51",
+              "char_start": 0,
+              "char_end": 6,
+              "chunk_start": 0,
+              "chunk_end": 6,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:53:record:6338",
+              "locator": "BodyText/Section0 / paragraph 53",
+              "char_start": 0,
+              "char_end": 50,
+              "chunk_start": 7,
+              "chunk_end": 57,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:55:record:6654",
+              "locator": "BodyText/Section0 / paragraph 55",
+              "char_start": 0,
+              "char_end": 31,
+              "chunk_start": 58,
+              "chunk_end": 89,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:57:record:6900",
+              "locator": "BodyText/Section0 / paragraph 57",
+              "char_start": 0,
+              "char_end": 44,
+              "chunk_start": 90,
+              "chunk_end": 134,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E010",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "528fd0349203a573874e71050d69339a4adc97986f8d30d1f30488bd3c90cfa3",
+          "source_request_fingerprint": "b728ccaa640928f2c5eec400164923932366321a06b4a33831c4d1e9fe370670",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+      "category": "duration",
+      "text": "[duration|fact] 사업기간은 계약 체결일 ∼ 2026. 12. 31.이다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:3cd93bd8e0f92667:9000055be2ea61b1bab465b7",
+          "quote": "1. 개 요\no 사 업 명 : 2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수\no 사업기간 : 계약 체결일 ∼ 2026. 12. 31.\no 사 업 비 : 15,300,000,000원(금일백오십삼억원, 부가가치세포함)\n",
+          "quote_start": 0,
+          "quote_end": 135,
+          "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+          "sha256": "3cd93bd8e0f92667d7f0d681d7c64070f810f6ff0035f2ea564a7b56f19072c1",
+          "file_name": "한국정보통신진흥협회_2026_2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 51 / BodyText/Section0 / paragraph 53 / BodyText/Section0 / paragraph 55 / BodyText/Section0 / paragraph 57",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:51:record:6160",
+              "locator": "BodyText/Section0 / paragraph 51",
+              "char_start": 0,
+              "char_end": 6,
+              "chunk_start": 0,
+              "chunk_end": 6,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:53:record:6338",
+              "locator": "BodyText/Section0 / paragraph 53",
+              "char_start": 0,
+              "char_end": 50,
+              "chunk_start": 7,
+              "chunk_end": 57,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:55:record:6654",
+              "locator": "BodyText/Section0 / paragraph 55",
+              "char_start": 0,
+              "char_end": 31,
+              "chunk_start": 58,
+              "chunk_end": 89,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:57:record:6900",
+              "locator": "BodyText/Section0 / paragraph 57",
+              "char_start": 0,
+              "char_end": 44,
+              "chunk_start": 90,
+              "chunk_end": 134,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E010",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "528fd0349203a573874e71050d69339a4adc97986f8d30d1f30488bd3c90cfa3",
+          "source_request_fingerprint": "b728ccaa640928f2c5eec400164923932366321a06b4a33831c4d1e9fe370670",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+      "category": "eligibility",
+      "text": "[eligibility|fact] 제안자는 H100 등 GPU(A100 또는 H100 이상 모델 포함 가능) 최소 960장 이상을 제안해야 하며, 최소 건수 960장 제공이 불가하면 입찰 참여가 불가하다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:3cd93bd8e0f92667:f6b5fb3b576f1fe064165452",
+          "quote": "(연구환경 준비에 소요되는 시간은 자원제공 시간에 미포함)\no 공급자는 현재 보유 중인 컴퓨팅 자원(AI 가속화기 포함) 현황을 제시하고, 본 사업에 할당할 자원을 명확하게 제시 필요\n※ 본 사업에 할당할 자원은 국내 보유 중인 자원으로 제공하여야 함\no 공급자는 H100 등 GPU(A100 또는 H100 이상 모델 포함 가능) 최소 960장 이상을 제안하여야 하며, 계약체결시부터 12월 31일(최대 8개월 또는 예산소진시)까지 동적할당 방식으로 제공이 가능하여야 함\n",
+          "quote_start": 166,
+          "quote_end": 430,
+          "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+          "sha256": "3cd93bd8e0f92667d7f0d681d7c64070f810f6ff0035f2ea564a7b56f19072c1",
+          "file_name": "한국정보통신진흥협회_2026_2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 86 / BodyText/Section0 / paragraph 88 / BodyText/Section0 / paragraph 89 / BodyText/Section0 / paragraph 91",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:86:record:11905",
+              "locator": "BodyText/Section0 / paragraph 86",
+              "char_start": 0,
+              "char_end": 32,
+              "chunk_start": 166,
+              "chunk_end": 198,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:88:record:12147",
+              "locator": "BodyText/Section0 / paragraph 88",
+              "char_start": 0,
+              "char_end": 69,
+              "chunk_start": 199,
+              "chunk_end": 268,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:89:record:12449",
+              "locator": "BodyText/Section0 / paragraph 89",
+              "char_start": 0,
+              "char_end": 37,
+              "chunk_start": 269,
+              "chunk_end": 306,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:91:record:12697",
+              "locator": "BodyText/Section0 / paragraph 91",
+              "char_start": 0,
+              "char_end": 122,
+              "chunk_start": 307,
+              "chunk_end": 429,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E016",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "528fd0349203a573874e71050d69339a4adc97986f8d30d1f30488bd3c90cfa3",
+          "source_request_fingerprint": "b728ccaa640928f2c5eec400164923932366321a06b4a33831c4d1e9fe370670",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:3cd93bd8e0f92667:f6b5fb3b576f1fe064165452",
+          "quote": "※ 제안하는 GPU 자원 최소 건수(960장) 제공 불가시에는 입찰 참여 불가\n※ A100 모델을 포함하여 제안할 경우, H100 이상 모델이 70%(672장) 이상이어야 함\n※ 계약기간 內 자원 미소진 시, 계약기간 이후 일정기간 동안(소진시까지) 추가 제공 또는 연구자가 활용 가능한 크레딧 형태로 제공하여야 함(운영기관 계획에 따라 연구자 추가 지원 예정)\n< 자원 제공 수량 제안 예시 >\n",
+          "quote_start": 430,
+          "quote_end": 652,
+          "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+          "sha256": "3cd93bd8e0f92667d7f0d681d7c64070f810f6ff0035f2ea564a7b56f19072c1",
+          "file_name": "한국정보통신진흥협회_2026_2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 92 / BodyText/Section0 / paragraph 93 / BodyText/Section0 / paragraph 94 / BodyText/Section0 / paragraph 96",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:92:record:13173",
+              "locator": "BodyText/Section0 / paragraph 92",
+              "char_start": 0,
+              "char_end": 43,
+              "chunk_start": 430,
+              "chunk_end": 473,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:93:record:13353",
+              "locator": "BodyText/Section0 / paragraph 93",
+              "char_start": 0,
+              "char_end": 53,
+              "chunk_start": 474,
+              "chunk_end": 527,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:94:record:13553",
+              "locator": "BodyText/Section0 / paragraph 94",
+              "char_start": 0,
+              "char_end": 104,
+              "chunk_start": 528,
+              "chunk_end": 632,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:96:record:14003",
+              "locator": "BodyText/Section0 / paragraph 96",
+              "char_start": 0,
+              "char_end": 18,
+              "chunk_start": 633,
+              "chunk_end": 651,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E017",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "528fd0349203a573874e71050d69339a4adc97986f8d30d1f30488bd3c90cfa3",
+          "source_request_fingerprint": "b728ccaa640928f2c5eec400164923932366321a06b4a33831c4d1e9fe370670",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+      "category": "submission",
+      "text": "[submission_documents|fact] 제공된 원문 범위에서는 입찰 제출서류의 구체적 목록이 확인되지 않는다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:3cd93bd8e0f92667:eb05ec4535dbc04ff68f1d92",
+          "quote": "목  차\nⅠ. 사업 개요\t 1\nⅡ. 제안 요청사항\t 2\nⅢ. 입찰 및 평가\t 11\n",
+          "quote_start": 0,
+          "quote_end": 46,
+          "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+          "sha256": "3cd93bd8e0f92667d7f0d681d7c64070f810f6ff0035f2ea564a7b56f19072c1",
+          "file_name": "한국정보통신진흥협회_2026_2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 33 / BodyText/Section0 / paragraph 36 / BodyText/Section0 / paragraph 39 / BodyText/Section0 / paragraph 42",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:33:record:4109",
+              "locator": "BodyText/Section0 / paragraph 33",
+              "char_start": 0,
+              "char_end": 4,
+              "chunk_start": 0,
+              "chunk_end": 4,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:36:record:4391",
+              "locator": "BodyText/Section0 / paragraph 36",
+              "char_start": 0,
+              "char_end": 11,
+              "chunk_start": 5,
+              "chunk_end": 16,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:39:record:4689",
+              "locator": "BodyText/Section0 / paragraph 39",
+              "char_start": 0,
+              "char_end": 13,
+              "chunk_start": 17,
+              "chunk_end": 30,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:42:record:4991",
+              "locator": "BodyText/Section0 / paragraph 42",
+              "char_start": 0,
+              "char_end": 14,
+              "chunk_start": 31,
+              "chunk_end": 45,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E007",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "528fd0349203a573874e71050d69339a4adc97986f8d30d1f30488bd3c90cfa3",
+          "source_request_fingerprint": "b728ccaa640928f2c5eec400164923932366321a06b4a33831c4d1e9fe370670",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:3cd93bd8e0f92667:eb05ec4535dbc04ff68f1d92",
+          "quote": "Ⅳ. 제안서 작성\t 15",
+          "quote_start": 46,
+          "quote_end": 59,
+          "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+          "sha256": "3cd93bd8e0f92667d7f0d681d7c64070f810f6ff0035f2ea564a7b56f19072c1",
+          "file_name": "한국정보통신진흥협회_2026_2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 45",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:45:record:5295",
+              "locator": "BodyText/Section0 / paragraph 45",
+              "char_start": 0,
+              "char_end": 13,
+              "chunk_start": 46,
+              "chunk_end": 59,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E008",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "528fd0349203a573874e71050d69339a4adc97986f8d30d1f30488bd3c90cfa3",
+          "source_request_fingerprint": "b728ccaa640928f2c5eec400164923932366321a06b4a33831c4d1e9fe370670",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+      "category": "submission",
+      "text": "[submission_deadline|fact] 제공된 원문 범위에서는 제출기한이 확인되지 않는다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:3cd93bd8e0f92667:eb05ec4535dbc04ff68f1d92",
+          "quote": "목  차\nⅠ. 사업 개요\t 1\nⅡ. 제안 요청사항\t 2\nⅢ. 입찰 및 평가\t 11\n",
+          "quote_start": 0,
+          "quote_end": 46,
+          "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+          "sha256": "3cd93bd8e0f92667d7f0d681d7c64070f810f6ff0035f2ea564a7b56f19072c1",
+          "file_name": "한국정보통신진흥협회_2026_2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 33 / BodyText/Section0 / paragraph 36 / BodyText/Section0 / paragraph 39 / BodyText/Section0 / paragraph 42",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:33:record:4109",
+              "locator": "BodyText/Section0 / paragraph 33",
+              "char_start": 0,
+              "char_end": 4,
+              "chunk_start": 0,
+              "chunk_end": 4,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:36:record:4391",
+              "locator": "BodyText/Section0 / paragraph 36",
+              "char_start": 0,
+              "char_end": 11,
+              "chunk_start": 5,
+              "chunk_end": 16,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:39:record:4689",
+              "locator": "BodyText/Section0 / paragraph 39",
+              "char_start": 0,
+              "char_end": 13,
+              "chunk_start": 17,
+              "chunk_end": 30,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:42:record:4991",
+              "locator": "BodyText/Section0 / paragraph 42",
+              "char_start": 0,
+              "char_end": 14,
+              "chunk_start": 31,
+              "chunk_end": 45,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E007",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "528fd0349203a573874e71050d69339a4adc97986f8d30d1f30488bd3c90cfa3",
+          "source_request_fingerprint": "b728ccaa640928f2c5eec400164923932366321a06b4a33831c4d1e9fe370670",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:3cd93bd8e0f92667:eb05ec4535dbc04ff68f1d92",
+          "quote": "Ⅳ. 제안서 작성\t 15",
+          "quote_start": 46,
+          "quote_end": 59,
+          "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+          "sha256": "3cd93bd8e0f92667d7f0d681d7c64070f810f6ff0035f2ea564a7b56f19072c1",
+          "file_name": "한국정보통신진흥협회_2026_2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 45",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:45:record:5295",
+              "locator": "BodyText/Section0 / paragraph 45",
+              "char_start": 0,
+              "char_end": 13,
+              "chunk_start": 46,
+              "chunk_end": 59,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E008",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "528fd0349203a573874e71050d69339a4adc97986f8d30d1f30488bd3c90cfa3",
+          "source_request_fingerprint": "b728ccaa640928f2c5eec400164923932366321a06b4a33831c4d1e9fe370670",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+      "category": "submission",
+      "text": "[submission_method|fact] 제공된 원문 범위에서는 제출방식이 확인되지 않는다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:3cd93bd8e0f92667:eb05ec4535dbc04ff68f1d92",
+          "quote": "목  차\nⅠ. 사업 개요\t 1\nⅡ. 제안 요청사항\t 2\nⅢ. 입찰 및 평가\t 11\n",
+          "quote_start": 0,
+          "quote_end": 46,
+          "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+          "sha256": "3cd93bd8e0f92667d7f0d681d7c64070f810f6ff0035f2ea564a7b56f19072c1",
+          "file_name": "한국정보통신진흥협회_2026_2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 33 / BodyText/Section0 / paragraph 36 / BodyText/Section0 / paragraph 39 / BodyText/Section0 / paragraph 42",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:33:record:4109",
+              "locator": "BodyText/Section0 / paragraph 33",
+              "char_start": 0,
+              "char_end": 4,
+              "chunk_start": 0,
+              "chunk_end": 4,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:36:record:4391",
+              "locator": "BodyText/Section0 / paragraph 36",
+              "char_start": 0,
+              "char_end": 11,
+              "chunk_start": 5,
+              "chunk_end": 16,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:39:record:4689",
+              "locator": "BodyText/Section0 / paragraph 39",
+              "char_start": 0,
+              "char_end": 13,
+              "chunk_start": 17,
+              "chunk_end": 30,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:42:record:4991",
+              "locator": "BodyText/Section0 / paragraph 42",
+              "char_start": 0,
+              "char_end": 14,
+              "chunk_start": 31,
+              "chunk_end": 45,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E007",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "528fd0349203a573874e71050d69339a4adc97986f8d30d1f30488bd3c90cfa3",
+          "source_request_fingerprint": "b728ccaa640928f2c5eec400164923932366321a06b4a33831c4d1e9fe370670",
+          "source_origin": "source_units"
+        },
+        {
+          "chunk_id": "rfp:3cd93bd8e0f92667:eb05ec4535dbc04ff68f1d92",
+          "quote": "Ⅳ. 제안서 작성\t 15",
+          "quote_start": 46,
+          "quote_end": 59,
+          "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+          "sha256": "3cd93bd8e0f92667d7f0d681d7c64070f810f6ff0035f2ea564a7b56f19072c1",
+          "file_name": "한국정보통신진흥협회_2026_2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 45",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:45:record:5295",
+              "locator": "BodyText/Section0 / paragraph 45",
+              "char_start": 0,
+              "char_end": 13,
+              "chunk_start": 46,
+              "chunk_end": 59,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E008",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "528fd0349203a573874e71050d69339a4adc97986f8d30d1f30488bd3c90cfa3",
+          "source_request_fingerprint": "b728ccaa640928f2c5eec400164923932366321a06b4a33831c4d1e9fe370670",
+          "source_origin": "source_units"
+        }
+      ]
+    },
+    {
+      "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+      "category": "evaluation",
+      "text": "[evaluation|fact] 제공된 원문 범위에서는 평가기준이 확인되지 않는다.",
+      "citations": [
+        {
+          "chunk_id": "rfp:3cd93bd8e0f92667:eb05ec4535dbc04ff68f1d92",
+          "quote": "목  차\nⅠ. 사업 개요\t 1\nⅡ. 제안 요청사항\t 2\nⅢ. 입찰 및 평가\t 11\n",
+          "quote_start": 0,
+          "quote_end": 46,
+          "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+          "sha256": "3cd93bd8e0f92667d7f0d681d7c64070f810f6ff0035f2ea564a7b56f19072c1",
+          "file_name": "한국정보통신진흥협회_2026_2026년 AI연구용 컴퓨팅 지원 프로젝트 GPU 자원 공급 및 유지보수_제안요청서.hwp",
+          "locator": "BodyText/Section0 / paragraph 33 / BodyText/Section0 / paragraph 36 / BodyText/Section0 / paragraph 39 / BodyText/Section0 / paragraph 42",
+          "source_ranges": [
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:33:record:4109",
+              "locator": "BodyText/Section0 / paragraph 33",
+              "char_start": 0,
+              "char_end": 4,
+              "chunk_start": 0,
+              "chunk_end": 4,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:36:record:4391",
+              "locator": "BodyText/Section0 / paragraph 36",
+              "char_start": 0,
+              "char_end": 11,
+              "chunk_start": 5,
+              "chunk_end": 16,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:39:record:4689",
+              "locator": "BodyText/Section0 / paragraph 39",
+              "char_start": 0,
+              "char_end": 13,
+              "chunk_start": 17,
+              "chunk_end": 30,
+              "section": "BodyText/Section0"
+            },
+            {
+              "collection": "blocks",
+              "block_id": "BodyText/Section0:paragraph:42:record:4991",
+              "locator": "BodyText/Section0 / paragraph 42",
+              "char_start": 0,
+              "char_end": 14,
+              "chunk_start": 31,
+              "chunk_end": 45,
+              "section": "BodyText/Section0"
+            }
+          ],
+          "source_method": "raw_parser",
+          "quality_flags": [
+            "document:HWP_LAYOUT_NOT_RENDERED",
+            "document:NON_TEXT_OBJECTS_PRESENT"
+          ],
+          "provenance_verified": true,
+          "semantic_entailment_verified": false,
+          "section": "BodyText/Section0",
+          "source_unit_alias": "E007",
+          "source_position_verified": true,
+          "source_unit_mapping_fingerprint": "528fd0349203a573874e71050d69339a4adc97986f8d30d1f30488bd3c90cfa3",
+          "source_request_fingerprint": "b728ccaa640928f2c5eec400164923932366321a06b4a33831c4d1e9fe370670",
+          "source_origin": "source_units"
+        }
+      ]
+    }
+  ],
+  "rejected_claims": [],
+  "missing_information": [
+    "[submission_documents] 입찰 제출서류의 구체적 목록 미확인",
+    "[submission_deadline] 제출기한 미확인",
+    "[submission_method] 제출방식 미확인",
+    "[evaluation] 평가기준 미확인"
+  ],
+  "response_received": true,
+  "claims_checked": true,
+  "cache_hit": false,
+  "execution_mode": "live_openai",
+  "live_api": true,
+  "mapping_fingerprint": "528fd0349203a573874e71050d69339a4adc97986f8d30d1f30488bd3c90cfa3",
+  "original_usage": {
+    "input_tokens": 8223,
+    "output_tokens": 864,
+    "total_tokens": 9087,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "usage_reported": true,
+    "latency_ms": 4006.5493329893798
+  },
+  "semantic_quality_verified": false
+}
