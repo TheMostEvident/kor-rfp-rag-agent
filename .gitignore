@@ -31,3 +31,7 @@ __pycache__/
 .ipynb_checkpoints/
 .pytest_cache/
 *.sqlite3*
+
+# Private rejected model responses; safe audit metadata stays in the run folder.
+**/recovery_diagnostics/
+
