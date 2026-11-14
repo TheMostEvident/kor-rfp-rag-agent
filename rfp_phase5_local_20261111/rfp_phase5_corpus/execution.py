@@ -9,6 +9,7 @@ from __future__ import annotations
 from dataclasses import replace
 from pathlib import Path
 import re
+import zipfile
 
 from rfp_phase5_final.catalog_audit import build_catalog, select_documents
 from rfp_phase5_final.engine import FinalConfig, read_json, write_json
@@ -25,6 +26,68 @@ class CorpusRun(RecoveryRun):
     def __init__(self,*args,**kwargs):
         super().__init__(*args,**kwargs)
         self._corpus_errors={}
+
+    def result(self, doc_id):
+        """Return the corrected document view; preserve frozen model output."""
+        from rfp_phase5_content.pipeline import rebuild_document_summary
+        from rfp_phase5_content.storage import save_content_result
+        from rfp_phase5_final.catalog_audit import get_validated_document_chunks
+        raw=super().result(doc_id)
+        document=self.env['registry'].documents_by_id[raw['doc_id']]
+        chunks=get_validated_document_chunks(self.env,raw['doc_id'])
+        corrected=rebuild_document_summary(raw,document,chunks,self.env['registry'])
+        return save_content_result(self.folder,raw,corrected)
+
+    def report(self, doc_ids, reviewer=''):
+        """Report derived content and its own review without rewriting final_report."""
+        from rfp_phase5_content.storage import assess_content_review, load_saved_result
+        selected=select_documents(self.env,doc_ids);cases=[]
+        for did in selected:
+            try:
+                result=self.result(did)
+                _,folder=load_saved_result(self.folder,did,content=True)
+                review=assess_content_review(folder,result,reviewer)
+                cases.append({'doc_id':did,'execution_status':result['execution_status'],
+                    'status':result['status'],'input_chunk_coverage':result['input_chunk_coverage'],
+                    'checked_chunk_coverage':result['checked_chunk_coverage'],
+                    'rejected_claim_count':len(result.get('rejected_claims',[])),
+                    'content_audit':result.get('content_audit',{}),'review':review,
+                    'result_path':str(folder/'result.json'),'review_path':str(folder/'review.csv')})
+            except (ValueError,TypeError,KeyError,RuntimeError,OSError) as error:
+                cases.append({'doc_id':did,'execution_status':'content_repair_failed',
+                    'status':'not_generated','error':self._error(error),
+                    'review':{'case_accepted':False,'human_review_completed':False}})
+        sample_ids={s['doc_id'] for s in (self.references or {}).get('samples',[])}
+        by_id={c['doc_id']:c for c in cases}
+        sample_passed=bool(sample_ids) and sample_ids.issubset(by_id) and all(
+            by_id[did]['review'].get('case_accepted') is True for did in sample_ids)
+        technical_path=self.folder/'all_document_plans.json'
+        catalog_path=self.folder/'catalog_audit.json'
+        technical=read_json(technical_path) if technical_path.exists() else {}
+        catalog=read_json(catalog_path) if catalog_path.exists() else {}
+        tests_path=self.folder/'offline_tests.json'
+        tests=read_json(tests_path) if tests_path.exists() else {}
+        reports_bound=all(r.get('run_fingerprint')==self.fingerprint for r in (technical,catalog,tests))
+        report={'version':'phase5-content-report-v1','run_fingerprint':self.fingerprint,
+            'phase5_sample_validation_passed':sample_passed and reports_bound
+                and technical.get('all_document_id_transport_passed') is True
+                and catalog.get('passed') is True and tests.get('passed') is True,
+            'all_document_id_transport_passed':technical.get('all_document_id_transport_passed',False),
+            'sample_review_passed':sample_passed,'cases':cases,'budget':self.budget_usage(),
+            'api_calls_by_report':0,'all_documents_semantic_quality_verified':False,
+            'scope':'문서 전체 맥락으로 보정한 요약과 해당 보정본의 별도 검토 기록. 원래 생성 기록은 보존합니다.'}
+        write_json(self.folder/'content_report.json',report)
+        return report
+
+    def export(self, doc_ids, reviewer=''):
+        """Export raw and corrected revisions to a separate content archive."""
+        self.report(doc_ids,reviewer)
+        target=self.folder.parent/(self.folder.name+'_content_results.zip')
+        with zipfile.ZipFile(target,'w',compression=zipfile.ZIP_DEFLATED) as archive:
+            for path in sorted(self.folder.rglob('*')):
+                if path.is_file() and path.suffix in {'.json','.csv','.md','.log'}:
+                    archive.write(path,self.folder.name+'/'+path.relative_to(self.folder).as_posix())
+        return target
 
     @staticmethod
     def _error(error):

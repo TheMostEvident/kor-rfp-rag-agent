@@ -1,0 +1,175 @@
+{
+  "version": "phase5-content-verification-20261115-v1",
+  "content_code_fingerprint": "ae9d94ed357fa0b44dd1dee08d20ea6572e2be96af521e6e4b036d099deaf586",
+  "canonical_source_rule_paths_checked": 99,
+  "original_document_ids_supported": 100,
+  "verbatim_source_candidates_validated": 5598,
+  "source_rule_errors": [],
+  "actual_saved_sample_documents_checked": 7,
+  "cases": [
+    {
+      "doc_id": "161LuHCu_ZzUIDue5yGL_rRKMUe10FZ38",
+      "input_result_fingerprint": "a6fca92acf20d161c94cbbd90883295bc732b9716b0d0e8d886c4b79f3b1e9fc",
+      "claims": 138,
+      "citations": 265,
+      "source_provenance_passed": true,
+      "original_result_preserved": true,
+      "generation_status_preserved": true,
+      "local_extraction_count": 90,
+      "filter_reason_counts": {
+        "submission_event_is_not_tender": 8,
+        "batch_absence_is_not_document_fact": 2,
+        "post_contract_or_certificate_application": 1,
+        "approval_or_execution_check_is_not_award_evaluation": 1,
+        "filename_is_not_project_name": 1,
+        "contract_or_form_purpose_is_not_project_purpose": 3,
+        "example_is_not_current_project_fact": 1,
+        "project_name_from_form_or_other_event": 3,
+        "contract_clause_is_not_tender_submission": 1,
+        "different_project_in_source_appendix": 8,
+        "other_contract_or_form_period": 3
+      }
+    },
+    {
+      "doc_id": "19K21s_OFwsevxfq9PJZFMSkNJVt9SPM0",
+      "input_result_fingerprint": "a9f8622d6aa3549275feb5b895567728003cc847501981eb9a50a478db026454",
+      "claims": 58,
+      "citations": 154,
+      "source_provenance_passed": true,
+      "original_result_preserved": true,
+      "generation_status_preserved": true,
+      "local_extraction_count": 28,
+      "filter_reason_counts": {
+        "procurement_type_or_contract_effect_is_not_delivery_route": 2,
+        "batch_absence_is_not_document_fact": 3,
+        "example_is_not_current_project_fact": 1
+      }
+    },
+    {
+      "doc_id": "1Eq8gIdUnnLRbbEBiaU29wYji2YglNNuu",
+      "input_result_fingerprint": "4d33bc4356175fff0818e11ba80b610b2b112542e04081a7c4a0214c2e6c1e9f",
+      "claims": 24,
+      "citations": 31,
+      "source_provenance_passed": true,
+      "original_result_preserved": true,
+      "generation_status_preserved": true,
+      "local_extraction_count": 17,
+      "filter_reason_counts": {
+        "department_is_not_issuing_organization": 1,
+        "submission_event_is_not_tender": 3
+      }
+    },
+    {
+      "doc_id": "1G2at8Un7y8JIn5awuVxqV7OOKIj7zT4B",
+      "input_result_fingerprint": "c9360581d20549c26c63e41eff8b7308a8e644b79e3772b9e5cb80b6e150ac43",
+      "claims": 105,
+      "citations": 199,
+      "source_provenance_passed": true,
+      "original_result_preserved": true,
+      "generation_status_preserved": true,
+      "local_extraction_count": 42,
+      "filter_reason_counts": {
+        "project_name_from_form_or_other_event": 12,
+        "heading_or_placeholder_is_not_fact": 6,
+        "submission_event_is_not_tender": 8,
+        "form_description_is_not_project_fact": 4,
+        "batch_absence_is_not_document_fact": 5,
+        "post_contract_or_certificate_application": 5,
+        "tender_submission_context_not_established": 1,
+        "event_schedule_is_not_agency": 1,
+        "approval_or_execution_check_is_not_award_evaluation": 3,
+        "different_project_in_source_appendix": 10,
+        "form_or_subcontract_value_is_not_project_budget": 1,
+        "contract_or_form_purpose_is_not_project_purpose": 2,
+        "user_description_or_scoring_is_not_qualification": 1,
+        "other_contract_or_form_period": 2
+      }
+    },
+    {
+      "doc_id": "1MxTCLhVvegbCCvqonlf95yO6pr4fYgaJ",
+      "input_result_fingerprint": "fbc06cba45c55df13b2b6f2d8c2511efc504fbdd23298423fdcaddc6a93b1441",
+      "claims": 78,
+      "citations": 127,
+      "source_provenance_passed": true,
+      "original_result_preserved": true,
+      "generation_status_preserved": true,
+      "local_extraction_count": 30,
+      "filter_reason_counts": {
+        "project_name_from_form_or_other_event": 10,
+        "different_project_in_source_appendix": 12,
+        "other_contract_or_form_period": 4,
+        "approval_or_execution_check_is_not_award_evaluation": 2,
+        "submission_event_is_not_tender": 5,
+        "batch_absence_is_not_document_fact": 1
+      }
+    },
+    {
+      "doc_id": "1Uy4SDf7e_NFKK9CbjL9uVO4ta_MQdeTt",
+      "input_result_fingerprint": "0188732b0dee551905b236b2998b59610cae2c0d06da0d5608cb193813c211ea",
+      "claims": 56,
+      "citations": 101,
+      "source_provenance_passed": true,
+      "original_result_preserved": true,
+      "generation_status_preserved": true,
+      "local_extraction_count": 33,
+      "filter_reason_counts": {
+        "project_name_from_form_or_other_event": 9,
+        "submission_event_is_not_tender": 2,
+        "batch_absence_is_not_document_fact": 1,
+        "example_is_not_current_project_fact": 1,
+        "user_description_or_scoring_is_not_qualification": 1,
+        "approval_or_execution_check_is_not_award_evaluation": 2,
+        "other_contract_or_form_period": 1
+      }
+    },
+    {
+      "doc_id": "1ZyM6Ipx-Zv-5E63Vb16dqhEy9VhsokLc",
+      "input_result_fingerprint": "8a11c77229bfe01ca1026b20be2d6cdfcbc316466afd89a994c1e5daffca6410",
+      "claims": 60,
+      "citations": 78,
+      "source_provenance_passed": true,
+      "original_result_preserved": true,
+      "generation_status_preserved": true,
+      "local_extraction_count": 47,
+      "filter_reason_counts": {
+        "batch_absence_is_not_document_fact": 4,
+        "example_is_not_current_project_fact": 1,
+        "project_name_from_form_or_other_event": 2
+      }
+    }
+  ],
+  "original_source_and_run_untouched": true,
+  "api_calls": 0,
+  "new_model_generations": 0,
+  "human_review_completed": false,
+  "all_documents_semantic_quality_verified": false,
+  "elapsed_seconds": 66.764,
+  "scope": "All99 canonical source rule paths and latest7 saved model outputs; source extraction is not new model generation or semantic certification.",
+  "regression_tests": {
+    "frozen_generation": 76,
+    "recovery": 14,
+    "corpus": 71,
+    "content_including_latest7": 67,
+    "total": 228,
+    "passed": true
+  },
+  "cli_actual_saved_documents": {
+    "selected": 7,
+    "repaired": 7,
+    "failed": 0,
+    "api_calls": 0
+  },
+  "frozen_generation_code_preserved": true,
+  "frozen_baseline_code_preserved": true,
+  "journal_outcomes_original_results_reviews_byte_identical": true,
+  "correction_features": [
+    "source_event_scope",
+    "other_project_appendix_isolation",
+    "batch_absence_not_fact",
+    "verbatim_source_condition_recovery",
+    "no_rejected_paraphrase_resurrection",
+    "source_money_typo_review",
+    "immutable_derived_outputs",
+    "existing_notebook_default_wiring"
+  ]
+}
