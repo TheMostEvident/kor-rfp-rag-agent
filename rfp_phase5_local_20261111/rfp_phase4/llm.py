@@ -108,6 +108,71 @@ _SAFE_API_CODES = frozenset({
 })
 _SAFE_RESPONSE_STATUSES = frozenset({'completed', 'incomplete', 'failed', 'cancelled', 'queued', 'in_progress'})
 _SAFE_INCOMPLETE_REASONS = frozenset({'max_output_tokens', 'content_filter', 'unknown'})
+_SCHEMA_DIAGNOSTIC_WORDS = frozenset('''invalid schema for response_format rfp_grounded_answer
+text format in context properties items additionalProperties required type object array string
+number integer boolean null enum const anyOf oneOf allOf not definitions defs ref root status
+claims missing_information doc_id category citations chunk_id quote overview budget duration
+eligibility requirements submission evaluation deliverables risks other answered partial
+insufficient_evidence is are was were must should be a an the and or of to by at with without
+as from only all each every any no that this these those it its has have not does do can cannot
+may will which when if then true false valid invalid allowed supported unsupported expected
+provided supplied missing extra unexpected duplicate duplicates value values member members
+key keys field fields property propertyNames name names definition keyword keywords constraint
+constraints include includes including included contain contains containing match matches set
+same distinct unique empty nonempty non-empty non-null non-negative list lists length size count
+total maximum minimum max min limit limits exceeded exceeds exceed greater less than more fewer
+too many much long short large small characters character chars strings enums constants depth
+nesting levels level nested schemas schema_id pattern patternProperties minLength maxLength
+minItems maxItems minimum maximum exclusiveMinimum exclusiveMaximum multipleOf format
+description title default examples unsupported_parameter starts start starting first identical
+discriminator branch branches top top-level use using used got found received enforce enforced
+strict requires require required requires omitting omitted error redacted tokens token tokenizer
+whitespace leading trailing printable control unicode ascii utf-8 utf8 bytes byte newline line
+linefeed carriage return tab escape escaped encoding encoded prefix prefixes suffix suffixes
+complex complexity grammar range character-set'''.lower().split())
+
+
+def _safe_schema_message(value):
+    """Keep the provider's schema rule/path, never arbitrary reflected strings.
+
+    Only canonical schema-error messages enter this channel. Words are drawn
+    from a fixed schema vocabulary; quoted source values, IDs, credentials,
+    unknown identifiers and non-ASCII text cannot become diagnostic content.
+    This is deliberately separate from the fixed user-facing error message.
+    """
+    if not isinstance(value, str) or not re.match(r'^Invalid schema\b', value, re.I):
+        return None
+    value = value[:12000]
+    # Drop quoted literals unless the entire literal is a known schema word.
+    value = re.sub(r'''(['"`])((?:\\.|(?!\1).)*?)\1''',
+        lambda m: m.group(0) if m.group(2).lower() in _SCHEMA_DIAGNOSTIC_WORDS else "'[redacted]'", value)
+    value = re.sub(r'[^\x20-\x7e]+', ' [redacted] ', value)
+    value = re.sub(r'[A-Za-z_$][A-Za-z0-9_$-]*',
+        lambda m: m.group(0) if m.group(0).lower() in _SCHEMA_DIAGNOSTIC_WORDS else '[redacted]', value)
+    value = re.sub(r'\d{7,}', '[redacted]', value)
+    return ' '.join(value.split())[:2400]
+
+
+def _http_error_details(error):
+    """Read documented SDK fields without printing the full exception/body."""
+    body = getattr(error, 'body', None)
+    if isinstance(body, Mapping) and isinstance(body.get('error'), Mapping):
+        body = body['error']
+    body = body if isinstance(body, Mapping) else {}
+    code = getattr(error, 'code', None) or body.get('code')
+    result = {'api_error_code': code} if isinstance(code, str) and code in _SAFE_API_CODES else {}
+    if code == 'invalid_json_schema' and getattr(error, 'status_code', None) == 400:
+        message = _safe_schema_message(body.get('message'))
+        result['schema_error_detail_available'] = message is not None
+        if message is not None:
+            result['schema_error_message'] = message
+        param = getattr(error, 'param', None) or body.get('param')
+        if param in ('text.format.schema', 'text.format', 'response_format', 'response_format.schema'):
+            result['api_error_param'] = param
+        request_id = getattr(error, 'request_id', None)
+        if isinstance(request_id, str) and re.fullmatch(r'req_[0-9a-f]{16,64}', request_id):
+            result['api_request_id'] = request_id
+    return result
 
 
 def safe_llm_diagnostic(error):
@@ -136,6 +201,17 @@ def safe_llm_diagnostic(error):
     fingerprint = raw.get('request_fingerprint')
     if isinstance(fingerprint, str) and re.fullmatch('[0-9a-f]{64}', fingerprint):
         result['request_fingerprint'] = fingerprint
+    if result.get('http_status') == 400 and result.get('api_error_code') == 'invalid_json_schema':
+        message = _safe_schema_message(raw.get('schema_error_message'))
+        if message is not None:
+            result['schema_error_message'] = message
+        if isinstance(raw.get('schema_error_detail_available'), bool):
+            result['schema_error_detail_available'] = raw['schema_error_detail_available']
+        if raw.get('api_error_param') in ('text.format.schema', 'text.format', 'response_format', 'response_format.schema'):
+            result['api_error_param'] = raw['api_error_param']
+        request_id = raw.get('api_request_id')
+        if isinstance(request_id, str) and re.fullmatch(r'req_[0-9a-f]{16,64}', request_id):
+            result['api_request_id'] = request_id
     return result
 
 
@@ -512,9 +588,7 @@ class OpenAIGroundedLLM:
                                        and not isinstance(status_code, bool) else 'api_request_failed')
                 diagnostic = {'code': diagnostic_code, 'http_status': status_code,
                               'response_received': received, 'request_fingerprint': prepared['fingerprint']}
-                api_code = getattr(error, 'code', None)
-                if isinstance(api_code, str) and api_code in _SAFE_API_CODES:
-                    diagnostic['api_error_code'] = api_code
+                diagnostic.update(_http_error_details(error))
                 raise LLMError(message, diagnostic=diagnostic) from None
             finally:
                 elapsed = (time.perf_counter() - started) * 1000

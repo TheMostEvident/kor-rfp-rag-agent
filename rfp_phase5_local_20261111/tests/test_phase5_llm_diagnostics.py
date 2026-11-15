@@ -106,6 +106,72 @@ class LLMDiagnosticTests(unittest.TestCase):
         self.assertEqual(diagnostic['http_status'], 429)
         self.assertEqual(diagnostic['api_error_code'], 'insufficient_quota')
 
+    def test_schema_rule_and_context_survive_without_reflected_values_or_extra_attempts(self):
+        error = HTTPFailure(400, 'invalid_json_schema')
+        error.body = {'message': "Invalid schema for response_format 'rfp_grounded_answer': "
+            "In context=('properties', 'claims', 'items', 'properties', 'citations', 'items', 'properties', 'quote'), "
+            "enum values must not contain trailing whitespace: 'SECRET_KEY private source'.",
+            'param': 'text.format.schema'}
+        error.request_id = 'req_' + 'a' * 32
+        llm, fake, diagnostic = self.fail(FakeClient(fail=error))
+        detail = diagnostic['schema_error_message']
+        self.assertIn("'quote'", detail)
+        self.assertIn('enum values must not contain trailing whitespace', detail)
+        self.assertNotIn('SECRET', json.dumps(diagnostic))
+        self.assertNotIn('private source', json.dumps(diagnostic))
+        self.assertTrue(diagnostic['schema_error_detail_available'])
+        self.assertEqual(diagnostic['api_error_param'], 'text.format.schema')
+        self.assertEqual(diagnostic['api_request_id'], error.request_id)
+        self.assertEqual(len(fake.calls), 1)
+        self.assertEqual(llm.usage_report()['failed_attempts'], 1)
+        self.assertFalse((self.cache / 'grounded_responses.sqlite3').exists())
+        # Runtime boundaries sanitize the same diagnostic more than once.
+        again = safe_llm_diagnostic(LLMError('ignored', diagnostic=diagnostic))
+        self.assertEqual(again, diagnostic)
+
+    def test_wrapped_sdk_body_can_supply_schema_code_and_detail(self):
+        error = HTTPFailure(400, None)
+        error.body = {'error': {'code': 'invalid_json_schema', 'message':
+            "Invalid schema for response_format 'rfp_grounded_answer': "
+            "In context=(), 'required' must include every key in properties.",
+            'param': 'text.format'}}
+        _, _, diagnostic = self.fail(FakeClient(fail=error))
+        self.assertEqual(diagnostic['api_error_code'], 'invalid_json_schema')
+        self.assertIn("'required' must include every key", diagnostic['schema_error_message'])
+        self.assertEqual(diagnostic['api_error_param'], 'text.format')
+
+    def test_old_or_unrecognized_provider_details_remain_explicitly_unavailable(self):
+        for body in ({'message': 'SECRET_KEY private source'}, {'message': ['SECRET_KEY']}, None):
+            with self.subTest(body=body):
+                error = HTTPFailure(400, 'invalid_json_schema')
+                error.body = body
+                error.request_id = 'req_SECRET_KEY'
+                error.param = 'SECRET_KEY'
+                _, _, diagnostic = self.fail(FakeClient(fail=error))
+                self.assertIs(diagnostic['schema_error_detail_available'], False)
+                self.assertNotIn('schema_error_message', diagnostic)
+                self.assertNotIn('api_error_param', diagnostic)
+                self.assertNotIn('api_request_id', diagnostic)
+                self.assertNotIn('SECRET', json.dumps(diagnostic))
+
+    def test_schema_message_is_bounded_and_unknown_words_are_redacted(self):
+        error = HTTPFailure(400, 'invalid_json_schema')
+        error.body = {'message': 'Invalid schema: SECRET_KEY 비밀원문 ' + 'enum values ' * 2000}
+        _, _, diagnostic = self.fail(FakeClient(fail=error))
+        self.assertLessEqual(len(diagnostic['schema_error_message']), 2400)
+        self.assertNotIn('SECRET', json.dumps(diagnostic))
+        self.assertNotIn('비밀원문', json.dumps(diagnostic, ensure_ascii=False))
+
+    def test_schema_details_cannot_be_injected_through_other_error_codes(self):
+        diagnostic = safe_llm_diagnostic(LLMError('ignored', diagnostic={
+            'code': 'api_http_error', 'http_status': 401, 'api_error_code': 'invalid_api_key',
+            'schema_error_message': 'Invalid schema: enum values are required',
+            'api_error_param': 'text.format.schema', 'schema_error_detail_available': True,
+            'api_request_id': 'req_' + 'a' * 32}))
+        self.assertNotIn('schema_error_message', diagnostic)
+        self.assertNotIn('schema_error_detail_available', diagnostic)
+        self.assertNotIn('api_error_param', diagnostic)
+
     def test_authentication_error_is_controlled(self):
         _, _, diagnostic = self.fail(FakeClient(fail=HTTPFailure(401, 'invalid_api_key')))
         self.assertEqual(diagnostic['code'], 'api_authentication_failed')

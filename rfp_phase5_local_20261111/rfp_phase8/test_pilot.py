@@ -174,6 +174,9 @@ class PilotTests(unittest.TestCase):
                 error = RuntimeError('PRIVATE_PROVIDER_BODY')
                 error.status_code = 400
                 error.code = 'invalid_json_schema'
+                error.body = {'message': "Invalid schema for response_format 'rfp_grounded_answer': "
+                    "In context=('properties', 'claims'), 'required' is required.",
+                    'param': 'text.format.schema'}
                 raise error
         pilot = PilotSession(self.env, client=SchemaRejected())
         path = Path(__file__).resolve().parents[1] / 'scripts/phase8_pilot.py'
@@ -193,6 +196,9 @@ class PilotTests(unittest.TestCase):
         details = session_report(pilot.folder)['failed_turn_diagnostics'][0]['error_diagnostic']
         self.assertEqual(details['http_status'], 400)
         self.assertEqual(details['api_error_code'], 'invalid_json_schema')
+        self.assertIn("'required' is required", details['schema_error_message'])
+        self.assertEqual(details['api_error_param'], 'text.format.schema')
+        self.assertIn("'required' is required", output.getvalue())
 
     def test_diagnostics_cli_reads_saved_records_without_bootstrap_key_or_model(self):
         self.ask()
