@@ -38,6 +38,12 @@ quote를 citations에 붙이세요. 숫자나 인용문을 고치거나 다른 �
 비교는 문서별로 조건을 분리하고, 근거 없는 우열 추천이나 임의 환산은 하지 마세요.
 summary_map은 전달된 묶음의 사실만 추출하며 전체 문서 의미를 다 읽었다고 주장하지 마세요.
 반드시 지정한 JSON schema로만 응답하세요."""
+CITATION_OPTION_INSTRUCTIONS = """이 요청은 citation_options 인용 선택지 계약을 사용합니다.
+응답 JSON의 citations[].quote에는 원문 문자열 대신 해당 청크의 citation_options[].ref ID를 넣으세요.
+서버가 이 ID를 선택지의 정확한 원문 인용문으로 치환한 뒤 출처를 검증합니다.
+이 전송 계약에서는 위의 정확한 원문 quote 요구를 ref ID 선택으로 이행합니다.
+주장 자체는 evidence.text로 뒷받침되어야 하고, 선택지의 인용문이 그 주장과 조건을 뒷받침하는지도 확인하세요.
+다른 문서나 청크의 ID를 붙이거나 사실 근거를 추측하지 마세요."""
 _CATEGORIES = {"overview", "budget", "duration", "eligibility", "requirements",
                "submission", "evaluation", "deliverables", "risks", "other"}
 
@@ -56,6 +62,7 @@ _DIAGNOSTIC_MESSAGES = {
     'api_key_missing': '현재 노트북 커널에 API 키가 설정되지 않았습니다.',
     'sdk_missing': '현재 노트북 커널에 OpenAI SDK가 설치되지 않았습니다.',
     'invalid_answer_structure': '모델 응답이 필수 답변 구조 검사를 통과하지 못했습니다.',
+    'citation_options_invalid': '입력 인용 선택지가 원문 또는 선택지 ID 규칙과 일치하지 않습니다.',
     'answer_status_claim_mismatch': '응답 상태와 주장 개수가 서로 맞지 않습니다.',
     'answered_with_missing': '미확인 항목이 있는데 응답이 전체 답변 완료로 표시되었습니다.',
     'partial_without_missing': '부분 답변으로 표시되었지만 미확인 항목이 없습니다.',
@@ -129,7 +136,7 @@ discriminator branch branches top top-level use using used got found received en
 strict requires require required requires omitting omitted error redacted tokens token tokenizer
 whitespace leading trailing printable control unicode ascii utf-8 utf8 bytes byte newline line
 linefeed carriage return tab escape escaped encoding encoded prefix prefixes suffix suffixes
-complex complexity grammar range character-set'''.lower().split())
+complex complexity grammar range character-set literal literals structured outputs'''.lower().split())
 
 
 def _safe_schema_message(value):
@@ -143,9 +150,14 @@ def _safe_schema_message(value):
     if not isinstance(value, str) or not re.match(r'^Invalid schema\b', value, re.I):
         return None
     value = value[:12000]
+    # Preserve technical character names even when the server uses literal
+    # control characters or their escaped spelling in a schema rejection.
+    for character, label in (('\n', 'newline'), ('\r', 'carriage return'), ('\t', 'tab')):
+        value = value.replace(character, ' ' + label + ' ')
+        value = value.replace(repr(character)[1:-1], label)
     # Drop quoted literals unless the entire literal is a known schema word.
     value = re.sub(r'''(['"`])((?:\\.|(?!\1).)*?)\1''',
-        lambda m: m.group(0) if m.group(2).lower() in _SCHEMA_DIAGNOSTIC_WORDS else "'[redacted]'", value)
+        lambda m: m.group(0) if m.group(2).strip().lower() in _SCHEMA_DIAGNOSTIC_WORDS else "'[redacted]'", value)
     value = re.sub(r'[^\x20-\x7e]+', ' [redacted] ', value)
     value = re.sub(r'[A-Za-z_$][A-Za-z0-9_$-]*',
         lambda m: m.group(0) if m.group(0).lower() in _SCHEMA_DIAGNOSTIC_WORDS else '[redacted]', value)
@@ -373,7 +385,7 @@ class OpenAIGroundedLLM:
             raise LLMError("Question must be nonempty and at most 16000 UTF-8 bytes")
         if not isinstance(evidence, (list, tuple)) or not evidence:
             raise LLMError("No evidence was provided; do not request an unsupported factual answer")
-        safe, seen = [], set()
+        safe, seen, quote_refs = [], set(), set()
         for chunk in evidence:
             if not isinstance(chunk, dict):
                 raise LLMError("Evidence must contain chunk objects")
@@ -387,7 +399,22 @@ class OpenAIGroundedLLM:
             if cid in seen:
                 raise LLMError("Duplicate chunk IDs in one request are not allowed")
             seen.add(cid)
-            safe.append({key: chunk.get(key) for key in ["chunk_id", "doc_id", "sha256", "file_name", "locator", "kind", "source_method", "quality_flags", "text"]})
+            item = {key: chunk.get(key) for key in ["chunk_id", "doc_id", "sha256", "file_name", "locator", "kind", "source_method", "quality_flags", "text"]}
+            if 'citation_options' in chunk:
+                options = chunk['citation_options']
+                if not isinstance(options, list) or not options or len(options) > 256:
+                    raise LLMError('Invalid citation options', diagnostic={'code': 'citation_options_invalid'})
+                item['citation_options'] = []
+                for option in options:
+                    if (not isinstance(option, dict) or set(option) != {'ref', 'quote'}
+                            or not isinstance(option['ref'], str) or not re.fullmatch(r'q[0-9]{4}', option['ref'])
+                            or option['ref'] in quote_refs or len(quote_refs) >= 256
+                            or not isinstance(option['quote'], str) or not option['quote'].strip()
+                            or option['quote'] not in text):
+                        raise LLMError('Invalid citation options', diagnostic={'code': 'citation_options_invalid'})
+                    quote_refs.add(option['ref'])
+                    item['citation_options'].append(dict(option))
+            safe.append(item)
         if schema is None:
             from .evidence import ANSWER_SCHEMA
             schema = ANSWER_SCHEMA
@@ -395,7 +422,8 @@ class OpenAIGroundedLLM:
             raise LLMError("A JSON object schema is required")
         try:
             body = {"model": self.config.model,
-                    "input": [{"role": "system", "content": SYSTEM_INSTRUCTIONS},
+                    "input": [{"role": "system", "content": SYSTEM_INSTRUCTIONS +
+                               ('\n' + CITATION_OPTION_INSTRUCTIONS if quote_refs else '')},
                               {"role": "user", "content": _json({"task": task, "question": question, "evidence": safe})}],
                     "text": {"format": {"type": "json_schema", "name": "rfp_grounded_answer", "schema": schema, "strict": True}},
                     "store": False, "max_output_tokens": self.config.max_output_tokens,

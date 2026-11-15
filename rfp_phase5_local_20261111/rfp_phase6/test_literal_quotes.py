@@ -3,6 +3,7 @@ import copy
 import hashlib
 import json
 import os
+import re
 from pathlib import Path
 import tempfile
 import unittest
@@ -11,7 +12,7 @@ from unittest.mock import patch
 from rfp_phase4.evidence import EvidenceRegistry
 from rfp_phase4.llm import LLMConfig, LLMError, OpenAIGroundedLLM, COMPARISON_DOCUMENT_TASK
 from rfp_phase6.literal_quotes import (QA_TASK, LiteralQuoteClient, accepts_citations,
-                                     literal_options, literal_schema)
+                                     literal_options, literal_schema, quote_references)
 from rfp_phase6.runtime import make_conversation
 from rfp_phase6.test_focus import GroundedClient, synthetic_environment
 
@@ -63,42 +64,40 @@ class LiteralQuoteTests(unittest.TestCase):
         chunks = copy.deepcopy(self.env['index'].get_document_chunks('A')[-1:])
         chunks[0]['text'] = '원문 자체의 표기 ... 를 그대로 보존한다.'
         schema = literal_schema(chunks)
-        self.assertEqual(citations(schema)['quote']['enum'], [chunks[0]['text']])
+        self.assertEqual(citations(schema)['quote']['enum'], ['q0001'])
+        self.assertEqual(quote_references(chunks)['q0001']['quote'], chunks[0]['text'])
 
     def test_flat_schema_and_local_binding_preserve_actual_chunk_ownership(self):
         chunks = self.env['index'].get_document_chunks('A')[-4:]
         schema = literal_schema(chunks)
         self.assertEqual(citations(schema)['chunk_id']['enum'], [c['chunk_id'] for c in chunks])
         self.assertFalse(schema['properties']['claims']['items']['properties']['citations']['items']['additionalProperties'])
-        for chunk in chunks:
-            for quote in literal_options(chunk['text']):
-                self.assertIn(quote, citations(schema)['quote']['enum'])
-                payload = {'status': 'answered', 'claims': [{
-                    'doc_id': 'A', 'category': 'requirements', 'text': quote,
-                    'citations': [{'chunk_id': chunk['chunk_id'], 'quote': quote}]}],
-                    'missing_information': []}
-                self.assertTrue(accepts_citations(payload, schema, chunks))
-                result = self.env['registry'].validate_answer(payload, chunks, allowed_doc_ids=['A'])
-                self.assertTrue(result['valid'], result['errors'])
+        for ref, choice in quote_references(chunks).items():
+            self.assertIn(ref, citations(schema)['quote']['enum'])
+            payload = {'status': 'answered', 'claims': [{
+                'doc_id': 'A', 'category': 'requirements', 'text': choice['quote'],
+                'citations': [{'chunk_id': choice['chunk_id'], 'quote': ref}]}],
+                'missing_information': []}
+            self.assertTrue(accepts_citations(payload, schema, chunks))
         self.assertEqual(ANSWER_BASELINE, self._schema_hash())
 
     def test_flat_field_enums_never_approve_a_cross_paired_quote(self):
         chunks = self.env['index'].get_document_chunks('A')[-4:]
         schema = literal_schema(chunks)
         first, second = chunks[0], chunks[-1]
-        quote = next(q for q in literal_options(first['text']) if q not in second['text'])
-        self.assertIn(quote, citations(schema)['quote']['enum'])
+        ref = next(r for r, c in quote_references(chunks).items() if c['chunk_id'] == first['chunk_id'])
+        self.assertIn(ref, citations(schema)['quote']['enum'])
         self.assertIn(second['chunk_id'], citations(schema)['chunk_id']['enum'])
         payload = {'claims': [{'doc_id': 'A', 'citations': [
-            {'chunk_id': second['chunk_id'], 'quote': quote}]}]}
+            {'chunk_id': second['chunk_id'], 'quote': ref}]}]}
         self.assertFalse(accepts_citations(payload, schema, chunks))
 
     def test_flat_field_enums_never_approve_a_cross_document_quote(self):
         chunks = self.env['index'].get_document_chunks('A')[-1:] + self.env['index'].get_document_chunks('B')[-1:]
         schema = literal_schema(chunks)
-        quote = literal_options(chunks[0]['text'])[0]
+        ref = next(iter(quote_references(chunks)))
         payload = {'claims': [{'doc_id': 'B', 'citations': [
-            {'chunk_id': chunks[0]['chunk_id'], 'quote': quote}]}]}
+            {'chunk_id': chunks[0]['chunk_id'], 'quote': ref}]}]}
         self.assertFalse(accepts_citations(payload, schema, chunks))
 
     def test_wire_schema_contains_only_existing_primitives_and_flat_enums(self):
@@ -118,33 +117,121 @@ class LiteralQuoteTests(unittest.TestCase):
                     self.assertEqual(len(node['enum']), len(set(node['enum'])))
         walk(schema)
 
-    def test_schema_rejection_is_reported_and_flat_requests_keep_single_attempts(self):
+    def test_wire_uses_ascii_references_and_preserves_source_text_and_menu_quotes(self):
+        wrapper, delegate, client = self.llm()
+        chunks = self.env['index'].get_document_chunks('A')[-4:]
+        before = copy.deepcopy(chunks)
+        result = wrapper.generate('qa', '구축 대상 업무는?', chunks)
+        body = client.bodies[0]
+        self.assertIn('citations[].quote에는 원문 문자열 대신', body['input'][0]['content'])
+        refs = citations(body['text']['format']['schema'])['quote']['enum']
+        self.assertTrue(all(re.fullmatch(r'q[0-9]{4}', ref) for ref in refs))
+        wire_chunks = json.loads(body['input'][1]['content'])['evidence']
+        self.assertEqual([c['text'] for c in wire_chunks], [c['text'] for c in chunks])
+        self.assertEqual([c['sha256'] for c in wire_chunks], [c['sha256'] for c in chunks])
+        menu = [(c, option) for c in wire_chunks for option in c['citation_options']]
+        self.assertEqual({o['ref'] for _, o in menu}, set(refs))
+        self.assertTrue(all(o['quote'] in c['text'] for c, o in menu))
+        self.assertTrue(any('\n' in o['quote'] for _, o in menu))
+        self.assertEqual(chunks, before)
+        self.assertTrue(result['literal_citation_contract']['reference_ids_resolved_locally'])
+        self.assertEqual(delegate.usage_report()['mock_calls'], 1)
+
+    def test_every_reference_is_expanded_before_registry_checks_and_after_cache_hits(self):
+        class AllOptionsClient(GroundedClient):
+            def create(inner, **body):
+                inner.bodies.append(body)
+                chunks = json.loads(body['input'][1]['content'])['evidence']
+                inner.raw_payload = {'status': 'answered', 'claims': [
+                    {'doc_id': c['doc_id'], 'category': 'requirements', 'text': option['quote'],
+                     'citations': [{'chunk_id': c['chunk_id'], 'quote': option['ref']}]}
+                    for c in chunks for option in c['citation_options']], 'missing_information': []}
+                return {'status': 'completed', 'output_text': json.dumps(inner.raw_payload), 'usage': None}
+        wrapper, delegate, client = self.llm(cache=True, client=AllOptionsClient())
+        chunks = self.env['index'].get_document_chunks('A')[-4:]
+        first = wrapper.generate('qa', '범위는?', chunks)
+        second = wrapper.generate('qa', '범위는?', chunks)
+        self.assertEqual(first['payload'], second['payload'])
+        expected = quote_references(chunks)
+        self.assertEqual(len(first['payload']['claims']), len(expected))
+        for raw, claim in zip(client.raw_payload['claims'], first['payload']['claims']):
+            ref = raw['citations'][0]['quote']
+            self.assertRegex(ref, r'^q[0-9]{4}$')
+            self.assertEqual(claim['citations'][0]['quote'], expected[ref]['quote'])
+        checked = self.env['registry'].validate_answer(first['payload'], chunks, allowed_doc_ids=['A'])
+        self.assertTrue(checked['valid'], checked['errors'])
+        self.assertTrue(second['cache_hit'])
+        self.assertEqual(len(client.bodies), 1)
+        self.assertEqual(delegate.usage_report()['cache_hits'], 1)
+
+    def test_valid_source_literal_and_unknown_reference_are_rejected_without_guessing(self):
+        class BadSelectionClient(GroundedClient):
+            def create(inner, **body):
+                result = super().create(**body)
+                payload = json.loads(result['output_text'])
+                chunks = json.loads(body['input'][1]['content'])['evidence']
+                payload['claims'][0]['citations'][0]['quote'] = (
+                    chunks[0]['text'] if inner.mode == 'literal' else 'q9999')
+                result['output_text'] = json.dumps(payload)
+                return result
+        chunks = self.env['index'].get_document_chunks('A')[-4:]
+        for mode in ('literal', 'unknown'):
+            with self.subTest(mode=mode):
+                wrapper, delegate, client = self.llm(client=BadSelectionClient(mode))
+                with self.assertRaises(LLMError):
+                    wrapper.generate('qa', '범위는?', chunks)
+                self.assertEqual(len(client.bodies), 1)
+                self.assertEqual(delegate.usage_report()['mock_calls'], 1)
+
+    def test_identical_source_strings_keep_distinct_reference_owners(self):
+        chunks = copy.deepcopy(self.env['index'].get_document_chunks('A')[-1:]
+                               + self.env['index'].get_document_chunks('B')[-1:])
+        for chunk in chunks:
+            chunk['text'] = '같은 원문 구절\n원문 소유자는 구별한다.'
+        refs = quote_references(chunks)
+        self.assertEqual(len(refs), 2)
+        self.assertEqual(refs['q0001']['quote'], refs['q0002']['quote'])
+        payload = {'claims': [{'doc_id': 'B', 'citations': [
+            {'chunk_id': chunks[1]['chunk_id'], 'quote': 'q0001'}]}]}
+        self.assertFalse(accepts_citations(payload, literal_schema(chunks), chunks))
+
+    def test_request_local_references_do_not_reuse_other_document_cache_entries(self):
+        wrapper, delegate, client = self.llm(cache=True)
+        chunks_a = self.env['index'].get_document_chunks('A')[-1:]
+        chunks_b = self.env['index'].get_document_chunks('B')[-1:]
+        a = wrapper.generate('qa', '조건은?', chunks_a)
+        b = wrapper.generate('qa', '조건은?', chunks_b)
+        again = wrapper.generate('qa', '조건은?', chunks_a)
+        self.assertNotEqual(a['request_fingerprint'], b['request_fingerprint'])
+        self.assertEqual(a['payload'], again['payload'])
+        self.assertNotEqual(a['payload'], b['payload'])
+        self.assertEqual(len(client.bodies), 2)
+        self.assertEqual(delegate.usage_report()['cache_hits'], 1)
+
+    def test_string_literal_rejection_is_reported_and_selectors_keep_single_attempts(self):
         class SchemaError(RuntimeError):
             status_code = 400
             code = 'invalid_json_schema'
-        class FlatOnlyClient(GroundedClient):
+            body = {'message': 'Invalid schema: newline is not allowed in string literals '
+                    'for structured outputs (strict=true).'}
+        class LiteralRestrictedClient(GroundedClient):
             attempts = 0
             def create(inner, **body):
                 inner.attempts += 1
                 schema = body['text']['format']['schema']
-                def union(node):
-                    if isinstance(node, dict):
-                        return 'anyOf' in node or any(union(v) for v in node.values())
-                    return isinstance(node, list) and any(union(v) for v in node)
-                if union(schema):
+                if any(any(ord(c) < 32 for c in q) for q in citations(schema)['quote']['enum']):
                     raise SchemaError('PRIVATE_PROVIDER_BODY')
                 return super().create(**body)
-        client = FlatOnlyClient()
+        client = LiteralRestrictedClient()
         wrapper, delegate, _ = self.llm(client=client)
         chunks = self.env['index'].get_document_chunks('A')[-4:]
         old_schema = literal_schema(chunks)
-        item = old_schema['properties']['claims']['items']['properties']['citations']
-        branch = copy.deepcopy(item['items'])
-        item['items'] = {'anyOf': [branch, copy.deepcopy(branch)]}
+        citations(old_schema)['quote']['enum'] = [c['quote'] for c in quote_references(chunks).values()]
         with self.assertRaises(LLMError) as caught:
             delegate.generate('qa', '사업 범위는?', chunks, schema=old_schema)
         self.assertEqual(caught.exception.diagnostic['http_status'], 400)
         self.assertEqual(caught.exception.diagnostic['api_error_code'], 'invalid_json_schema')
+        self.assertIn('string literals for structured outputs', caught.exception.diagnostic['schema_error_message'])
         self.assertEqual(client.attempts, 1)
         result = wrapper.generate('qa', '사업 범위는?', chunks)
         self.assertTrue(result['literal_citation_contract']['selection_valid'])

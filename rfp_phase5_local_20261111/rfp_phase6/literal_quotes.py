@@ -12,13 +12,14 @@ from rfp_phase4.evidence import ANSWER_SCHEMA
 from rfp_phase4.llm import COMPARISON_DOCUMENT_TASK, LLMError
 
 
-VERSION = 'work-scope-literal-quotes-v2'
-QA_TASK = 'qa_work_scope_literal_v2'
+VERSION = 'work-scope-literal-quotes-v3'
+QA_TASK = 'qa_work_scope_literal_v3'
 MAX_QUOTE_BYTES = 420
 MAX_OPTIONS = 256
-GUIDE = ('인용 선택 규칙(literal-quotes-v2): quote는 응답 스키마의 원문 선택지에서 그대로 고르고, '
-    '그 인용문이 실제로 들어 있는 입력 청크의 chunk_id를 함께 지정하세요. 서버에서 두 값의 '
-    '실제 연결을 다시 검사합니다. 여러 표 제목을 ... 또는 /로 '
+GUIDE = ('인용 선택 규칙(literal-quotes-v3): 각 evidence의 citation_options는 해당 원문의 '
+    '정확한 인용 선택지입니다. 응답 citations의 quote에는 원문 대신 해당 선택지의 ref '
+    '(예: q0001)만 넣고 그 선택지가 속한 chunk_id를 함께 지정하세요. 서버가 ref를 '
+    '정확한 원문 인용으로 변환한 뒤 문서와 청크 연결을 검사합니다. 여러 표 제목을 ... 또는 /로 '
     '이어 쓴 요약문을 인용문으로 만들지 마세요. 필요한 근거가 떨어져 있으면 별도 citations로 '
     '선택하세요. 구체적인 대상 업무·기능을 중심으로 핵심 내용을 정리하고 일반 성능·보안·평가 '
     '목록을 사업의 구체적인 대상 업무 대신 나열하지 마세요. 각 주장의 숫자·조건도 선택한 '
@@ -77,7 +78,7 @@ def literal_catalog(evidence):
 
 
 def literal_schema(evidence):
-    """Use ordinary enum fields; correlated pairs are enforced locally.
+    """Put short ASCII selectors in the wire schema, never source literals.
 
     Avoid repeated anyOf object branches. General JSON Schema validity does
     not by itself establish that the provider accepts a particular schema.
@@ -88,11 +89,18 @@ def literal_schema(evidence):
     claim['doc_id'] = {'type': 'string', 'enum': list(dict.fromkeys(c['doc_id'] for c in evidence))}
     citation = claim['citations']['items']['properties']
     citation['chunk_id'] = {'type': 'string', 'enum': list(catalog)}
-    quotes = list(dict.fromkeys(q for entry in catalog.values() for q in entry['quotes']))
-    if len(quotes) > 250 and sum(len(q) for q in quotes) > 15000:
-        raise ValueError('단일 인용 선택지 필드의 API 문자 수 상한을 넘었습니다.')
-    citation['quote'] = {'type': 'string', 'enum': quotes}
+    citation['quote'] = {'type': 'string', 'enum': list(quote_references(evidence))}
     return schema
+
+
+def quote_references(evidence):
+    """One request-local ID per exact, chunk-owned source excerpt."""
+    result = {}
+    for cid, chunk in literal_catalog(evidence).items():
+        for quote in chunk['quotes']:
+            result[f'q{len(result) + 1:04d}'] = {
+                'chunk_id': cid, 'doc_id': chunk['doc_id'], 'quote': quote}
+    return result
 
 
 def accepts_citations(payload, schema, evidence):
@@ -105,14 +113,14 @@ def accepts_citations(payload, schema, evidence):
     docs = set(properties['doc_id']['enum'])
     choices = properties['citations']['items']['properties']
     allowed_ids = set(choices['chunk_id']['enum'])
-    allowed_quotes = set(choices['quote']['enum'])
-    catalog = literal_catalog(evidence)
+    allowed_refs = set(choices['quote']['enum'])
+    references = quote_references(evidence)
     try:
         return all(claim['doc_id'] in docs and all(
-            cite['chunk_id'] in allowed_ids and cite['chunk_id'] in catalog
-            and catalog[cite['chunk_id']]['doc_id'] == claim['doc_id']
-            and cite['quote'] in allowed_quotes
-            and cite['quote'] in catalog[cite['chunk_id']]['text']
+            cite['chunk_id'] in allowed_ids and cite['quote'] in allowed_refs
+            and cite['quote'] in references
+            and references[cite['quote']]['doc_id'] == claim['doc_id']
+            and references[cite['quote']]['chunk_id'] == cite['chunk_id']
             for cite in claim['citations']) for claim in payload['claims'])
     except (KeyError, TypeError):
         return False
@@ -133,8 +141,13 @@ class LiteralQuoteClient:
             raise ValueError('사업 범위 인용 계약에 다른 응답 스키마를 섞을 수 없습니다.')
         if task not in {'qa', COMPARISON_DOCUMENT_TASK}:
             raise ValueError('지원하지 않는 인용 계약 작업입니다.')
+        annotated = copy.deepcopy(evidence)
+        references = quote_references(evidence)
+        for chunk in annotated:
+            chunk['citation_options'] = [{'ref': ref, 'quote': choice['quote']}
+                for ref, choice in references.items() if choice['chunk_id'] == chunk['chunk_id']]
         return {'task': QA_TASK if task == 'qa' else task,
-            'question': question + '\n\n' + GUIDE, 'evidence': evidence,
+            'question': question + '\n\n' + GUIDE, 'evidence': annotated,
             'schema': literal_schema(evidence)}
 
     def preflight_requests(self, requests):
@@ -150,10 +163,15 @@ class LiteralQuoteClient:
             raise LLMError('Model citation is outside the literal selection contract', diagnostic={
                 'code': 'invalid_answer_structure', 'request_fingerprint': result.get('request_fingerprint')})
         result = copy.deepcopy(result)
+        references = quote_references(evidence)
+        for claim in result['payload']['claims']:
+            for cite in claim['citations']:
+                cite['quote'] = references[cite['quote']]['quote']
         result['literal_citation_contract'] = {'version': VERSION,
             'quote_options': len(request['schema']['properties']['claims']['items']['properties']
                                  ['citations']['items']['properties']['quote']['enum']),
             'chunk_quote_binding_checked_locally': True,
+            'reference_ids_resolved_locally': True,
             'selection_valid': True, 'source_correctness_still_requires_registry': True,
             'semantic_correctness_verified': False}
         return result

@@ -162,6 +162,32 @@ class LLMDiagnosticTests(unittest.TestCase):
         self.assertNotIn('SECRET', json.dumps(diagnostic))
         self.assertNotIn('비밀원문', json.dumps(diagnostic, ensure_ascii=False))
 
+    def test_schema_character_names_and_string_literal_rule_are_not_redacted(self):
+        for value in ('\\n', '\n', "'\\n'", "'\n'"):
+            with self.subTest(value=repr(value)):
+                error = HTTPFailure(400, 'invalid_json_schema')
+                error.body = {'message': 'Invalid schema: ' + value +
+                    ' is not allowed in string literals for structured outputs (strict=true).'}
+                _, _, diagnostic = self.fail(FakeClient(fail=error))
+                self.assertIn('newline', diagnostic['schema_error_message'])
+                self.assertIn('string literals for structured outputs', diagnostic['schema_error_message'])
+
+    def test_invalid_citation_menu_is_blocked_before_dispatch(self):
+        valid = {'ref': 'q0001', 'quote': evidence()[0]['text']}
+        cases = [None, [], [dict(valid, ref='SECRET_KEY')],
+                 [dict(valid, quote='없는 원문')], [valid, valid],
+                 [dict(valid, unexpected='SECRET_KEY')]]
+        for options in cases:
+            with self.subTest(options=options):
+                llm, fake = self.make()
+                chunks = evidence()
+                chunks[0]['citation_options'] = options
+                with self.assertRaises(LLMError) as caught:
+                    self.generate(llm, chunks)
+                self.assertEqual(safe_llm_diagnostic(caught.exception)['code'], 'citation_options_invalid')
+                self.assertEqual(fake.calls, [])
+                self.assertEqual(llm.usage_report()['api_calls'], 0)
+
     def test_schema_details_cannot_be_injected_through_other_error_codes(self):
         diagnostic = safe_llm_diagnostic(LLMError('ignored', diagnostic={
             'code': 'api_http_error', 'http_status': 401, 'api_error_code': 'invalid_api_key',

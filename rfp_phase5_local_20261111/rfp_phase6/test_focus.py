@@ -67,7 +67,7 @@ class GroundedClient:
         choices = (schema.get('properties', {}).get('claims', {}).get('items', {}).get('properties', {})
                    .get('citations', {}).get('items', {}).get('properties', {}).get('quote', {}).get('enum'))
         if choices and self.mode != 'wrong_quote':
-            quote = next(q for q in choices if q in source['text'])
+            quote = next(option['ref'] for option in source['citation_options'] if option['ref'] in choices)
         payload = {'status': 'answered', 'claims': [{'doc_id': did, 'category': 'requirements',
             'text': source['text'], 'citations': [{'chunk_id': source['chunk_id'], 'quote': quote}]}],
             'missing_information': []}
