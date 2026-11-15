@@ -71,6 +71,56 @@ class PilotTests(unittest.TestCase):
         self.assertEqual(self.client.bodies, [])
         self.assertEqual(self.env['index'].get_metadata(), before)
 
+    def test_claim_hints_reach_record_review_and_report_without_extra_calls_or_approval(self):
+        from .test_claim_audit import NamedItemClient
+        from rfp_phase6.test_focus import synthetic_environment
+        root = self.env['root'] / 'scope_fixture'
+        root.mkdir()
+        env = synthetic_environment(root)
+        self.addCleanup(env['index'].close)
+        client = NamedItemClient()
+        pilot = PilotSession(env, client=client)
+        pilot.configure_generation(enabled=True, approved_doc_ids=['A'])
+        pilot.select(['A'])
+        record = pilot.submit('구체적인 구축 대상 업무 범위는?')
+        self.assertEqual(record['result']['execution_status'], 'completed')
+        audit = record['result']['claim_citation_audit']
+        self.assertEqual(audit['flagged_claim_indices'], [0])
+        self.assertFalse(audit['automatic_semantic_pass'])
+        self.assertEqual(review_template(record)['claim_citation_review']['flagged_claim_indices'], [0])
+        report = session_report(pilot.folder)
+        self.assertEqual(report['claim_citation_review']['claims_with_literal_anchor_gaps'], 1)
+        self.assertEqual(report['human_review_status'], 'review_pending')
+        self.assertEqual(report['execution_status'], 'records_complete')
+        self.assertEqual(len(client.bodies), 1)
+        self.assertEqual(report['usage']['live_api_calls'], 0)
+        self.assertNotIn('claim_citation_audit', json.dumps(client.bodies))
+
+    def test_old_saved_record_gets_read_only_claim_hints_without_generation_or_reviews(self):
+        from .test_claim_audit import NamedItemClient
+        from .pilot import digest, session_diagnostics
+        from rfp_phase6.test_focus import synthetic_environment
+        root = self.env['root'] / 'scope_fixture'
+        root.mkdir()
+        env = synthetic_environment(root)
+        self.addCleanup(env['index'].close)
+        pilot = PilotSession(env, client=NamedItemClient())
+        pilot.configure_generation(enabled=True, approved_doc_ids=['A'])
+        pilot.select(['A'])
+        record = pilot.submit('구체적인 구축 범위는?')
+        turn = pilot.folder / 'turns' / record['turn_id']
+        record['result'].pop('claim_citation_audit')
+        record['fingerprint'] = digest({k: v for k, v in record.items() if k != 'fingerprint'})
+        (turn / 'record.json').write_text(json.dumps(record))
+        (turn / 'human_review.json').write_text('unfinished review edit')
+        before = {p: p.read_bytes() for p in pilot.folder.rglob('*') if p.is_file()}
+        with patch('rfp_phase4.llm.OpenAIGroundedLLM.generate', side_effect=AssertionError('no API')), \
+                patch('socket.socket.connect', side_effect=AssertionError('no network')):
+            diagnostic = session_diagnostics(pilot.folder)
+        self.assertEqual(diagnostic['diagnostic_api_calls'], 0)
+        self.assertEqual(diagnostic['turns'][0]['claim_citation_audit']['flagged_claim_indices'], [0])
+        self.assertEqual(before, {p: p.read_bytes() for p in pilot.folder.rglob('*') if p.is_file()})
+
     def test_missing_or_unknown_live_scope_is_rejected(self):
         for ids in [[], ['UNKNOWN']]:
             with self.assertRaises(ValueError):

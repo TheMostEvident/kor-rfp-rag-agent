@@ -64,6 +64,38 @@ class ValidationTests(unittest.TestCase):
         self.assertFalse(report['mechanical_checks_passed'])
         self.assertEqual(len(report['session']['failed_turns']), 1)
 
+    def test_six_case_exercise_surfaces_claim_gaps_without_semantic_auto_pass(self):
+        from .test_claim_audit import NamedItemClient
+        client = NamedItemClient()
+        folder, report = run_validation(self.env, ['A'], enabled=True, approved_doc_ids=['A'], client=client)
+        self.assertEqual(report['executed_cases'], 6)
+        self.assertTrue(report['mechanical_checks_passed'])
+        self.assertGreater(report['claim_citation_review']['claims_with_literal_anchor_gaps'], 0)
+        self.assertFalse(report['automatic_semantic_pass'])
+        self.assertIsNone(report['semantic_accuracy'])
+        self.assertEqual(report['human_review_status'], 'review_pending')
+        self.assertEqual(report['session']['usage']['live_api_calls'], 0)
+        self.assertLessEqual(len(client.bodies), 5)
+        for body in client.bodies:
+            self.assertNotIn('claim_citation_audit', json.dumps(body))
+
+    def test_claim_diagnostics_are_recomputed_without_modifying_old_validation_reports(self):
+        from .pilot import digest
+        from .test_claim_audit import NamedItemClient
+        folder, report = run_validation(self.env, ['A'], enabled=True, approved_doc_ids=['A'], client=NamedItemClient())
+        path = folder / 'validation_report.json'
+        old = json.loads(path.read_text())
+        for row in old['rows']:
+            row.pop('claim_citation_audit')
+        old['report_fingerprint'] = digest({k: v for k, v in old.items() if k != 'report_fingerprint'})
+        path.write_text(json.dumps(old))
+        before = {p: p.read_bytes() for p in folder.rglob('*') if p.is_file()}
+        with patch('rfp_phase4.llm.OpenAIGroundedLLM.generate', side_effect=AssertionError('no API')):
+            updated = validation_status(folder, include_reviews=False)
+        self.assertGreater(updated['claim_citation_review']['claims_with_literal_anchor_gaps'], 0)
+        self.assertEqual(updated['diagnostics']['diagnostic_api_calls'], 0)
+        self.assertEqual(before, {p: p.read_bytes() for p in folder.rglob('*') if p.is_file()})
+
     def test_saved_diagnostics_expose_rejection_reason_without_showing_rejected_model_quotes(self):
         folder, report = run_validation(self.env, ['A'], enabled=True,
             approved_doc_ids=['A'], client=GroundedClient('wrong_quote'))

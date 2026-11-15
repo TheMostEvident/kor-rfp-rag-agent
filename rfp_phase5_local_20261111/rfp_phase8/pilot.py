@@ -22,6 +22,7 @@ from rfp_phase6.session import ConversationSession
 from rfp_phase7.evaluate import _load_summary
 from rfp_phase7.review import JUDGEMENTS
 from . import VERSION
+from .claim_audit import claim_citation_audit, claim_review_summary
 
 
 COUNTERS = ('api_calls', 'live_api_calls', 'mock_calls', 'cache_hits',
@@ -81,7 +82,11 @@ def review_template(record):
     return {'version': VERSION, 'turn_id': record['turn_id'],
         'result_fingerprint': record['fingerprint'], 'reviewer': '',
         'judgements': dict.fromkeys(JUDGEMENTS), 'notes': '',
-        'automatic_semantic_pass': False}
+        'automatic_semantic_pass': False,
+        'claim_citation_review': {'flagged_claim_indices':
+            claim_citation_audit(record['result'])['flagged_claim_indices'],
+            'instruction': '각 문장 전체가 그 문장에 붙은 인용으로 뒷받침되는지 확인하세요. '
+                '명칭 일치 신호가 있어도 조건·의미·누락은 별도로 검토해야 합니다.'}}
 
 
 def _check_review(record, review):
@@ -266,6 +271,8 @@ class PilotSession:
             'semantic_quality_verified': False}
 
     def _record(self, folder, question, result, before, started, *, request_id, submission_context):
+        result = copy.deepcopy(result)
+        result['claim_citation_audit'] = claim_citation_audit(result)
         after = self.chat.llm.usage_report()
         delta = {key: after[key] - before[key] for key in COUNTERS}
         origin = ('mock' if delta['mock_calls'] else 'mixed_live_cache' if delta['live_api_calls'] and delta['cache_hits']
@@ -336,6 +343,7 @@ def session_report(folder):
         'failed_turns': failures, 'failed_turn_diagnostics': [_failure_diagnostic(r) for r in records
             if r['result'].get('execution_status') in FAILED],
         'incomplete_turns': incomplete, 'usage': usage, 'latency': latencies,
+        'claim_citation_review': claim_review_summary([claim_citation_audit(r['result']) for r in records]),
         'human_review_status': 'review_complete' if reviews and len(completed) == len(reviews) else 'review_pending',
         'reviewable_turns': len(reviews), 'reviewed_turns': len(completed), 'fully_correct_reviewed_turns': correct,
         'accuracy_on_reviewed_live_turns': real_correct / len(real_completed) if real_completed else None,
@@ -348,6 +356,7 @@ def _failure_diagnostic(record):
     return {'turn_id': record['turn_id'], 'status': answer.get('status'),
         'execution_status': answer.get('execution_status'),
         'error_diagnostic': copy.deepcopy(answer.get('error_diagnostic')),
+        'claim_citation_audit': claim_citation_audit(answer),
         'validation_errors': copy.deepcopy((answer.get('validation') or {}).get('errors', []))}
 
 

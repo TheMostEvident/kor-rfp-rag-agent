@@ -55,6 +55,10 @@ def main(argv=None):
             record = pilot.submit(question)
             print(record['result'].get('markdown', ''))
             print('상태:', record['result']['status'], '/', record['result'].get('execution_status'))
+            flagged = (record['result'].get('claim_citation_audit') or {}).get('flagged_claim_indices', [])
+            if flagged:
+                print('인용 연결 검토 신호: 문장', ', '.join(str(i + 1) for i in flagged),
+                      '— 요구사항 명칭 누락 가능성을 해당 문장의 인용과 대조하세요.')
             if record['result'].get('error_diagnostic'):
                 print('오류 상세:', json.dumps(record['result']['error_diagnostic'], ensure_ascii=False))
             errors = (record['result'].get('validation') or {}).get('errors', [])

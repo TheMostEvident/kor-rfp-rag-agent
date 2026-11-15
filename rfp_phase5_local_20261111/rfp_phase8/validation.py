@@ -12,6 +12,7 @@ from pathlib import Path
 
 from rfp_phase7.evaluate import _citation_audit
 from .pilot import PilotSession, digest, load_json, read_record, session_report, write_new
+from .claim_audit import claim_citation_audit, claim_review_summary
 
 
 def validation_plan(doc_ids):
@@ -91,6 +92,7 @@ def run_validation(env, doc_ids, *, enabled=False, approved_doc_ids=None, client
         rows.append({'case_id': case['id'], 'turn_id': record['turn_id'],
             'result_fingerprint': record['fingerprint'], 'checks': checks,
             'citation_audit': audit, 'review_hint': case['review_hint'],
+            'claim_citation_audit': claim_citation_audit(result),
             'answer_correctness': None, 'semantic_correctness_verified': False})
         if pilot.halted:
             break
@@ -141,8 +143,10 @@ def validation_status(folder, *, include_reviews=True):
                 for item in answer.get('document_validation', [])],
             'error_diagnostic': copy.deepcopy(answer.get('error_diagnostic')),
             'model_request_fingerprint': (answer.get('generation') or {}).get('request_fingerprint'),
+            'claim_citation_audit': claim_citation_audit(answer),
             'rejected_model_text_displayed': False})
     result = copy.deepcopy(report)
+    result['claim_citation_review'] = claim_review_summary([d['claim_citation_audit'] for d in diagnostics])
     if include_reviews:
         result['session'] = session_report(folder)
         result['human_review_status'] = result['session']['human_review_status']
