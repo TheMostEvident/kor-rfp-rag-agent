@@ -1,4 +1,4 @@
-# RFP RAG 에이전트
++# RFP RAG 에이전트
 
 공공 입찰 RFP(제안요청서, hwp·pdf) 문서를 검색해서 질문에 답하고, 조건에 맞는 공고를 찾고, 공고의 핵심 내용을 요약해 주는 LangGraph 기반 RAG 에이전트입니다.
 
@@ -165,3 +165,8 @@ OPENAI_API_KEY=your_openai_api_key_here
 - **LLM & Embeddings:** OpenAI API (`python-dotenv` for environment management)
 - **Storage & Search:** SQLite3, NumPy / SciPy sparse/dense vector search
 - **Dependency Management:** `uv` (`pyproject.toml`, `uv.lock`)
+
+## 팀 공유용 코드
+
+RAG 실행에 필요한 Python 패키지와 실행 노트북 4개를 [team_handoff](team_handoff/README.md)에 정리했습니다. 원문 JSONL 입력부터 로컬 색인, 근거 답변·대화, 문서 전체 요약, 파일럿 검증까지 독립 실행할 수 있습니다. 과거 패치 노트북과 실제 데이터·색인·실행 로그는 팀 공유 폴더에 포함하지 않습니다. 팀 LangGraph/API 통합 경계와 검증 범위는 해당 README와 VALIDATION.md를 확인하세요.
+
